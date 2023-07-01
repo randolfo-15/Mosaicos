@@ -1,0 +1,2 @@
+/data/data/com.termux/files/usr/bin/llvm-ar qc libDp_stc.a CMakeFiles/Dp_stc.dir/display.cpp.o CMakeFiles/Dp_stc.dir/printables.cpp.o CMakeFiles/Dp_stc.dir/tema.cpp.o
+/data/data/com.termux/files/usr/bin/llvm-ranlib libDp_stc.a

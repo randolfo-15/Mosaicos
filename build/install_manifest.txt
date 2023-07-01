@@ -1,0 +1,1 @@
+/data/data/com.termux/files/home/Dp_rag/libDp_stc.a

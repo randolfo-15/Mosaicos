@@ -1,0 +1,8 @@
+digraph "printable" {
+node [
+  fontsize = "12"
+];
+    "node1" [ label = "printable", shape = hexagon ];
+    "node2" [ label = "tema", shape = hexagon ];
+    "node1" -> "node2"  // printable -> tema
+}

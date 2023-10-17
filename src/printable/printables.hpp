@@ -1,21 +1,17 @@
-#pragma once 
-
-#include "./tema.hpp"
-
 /*	
- * Objeto printable trata internamente 
- * configurações especiais de texto.
+ * Objeto printable trata internamente configurações especiais de texto.
  *
  */
 
-/*
- * Definir formato de texto 
- * segundo seu tema:
- */
+#ifndef  PRINTABLES_HPP 
+#define PRINTABLES_HPP 
+
+#include "../tema/tema.hpp" 
+
  enum modos{
 	       NORMAL,  //Padrão
-		   BOLD,    //Letra alterada
-		   SELECT,  //Fundo alterado
+		   BOLD,        //Letra alterada
+		   SELECT,     //Fundo alterado
 		   CUSTOM   //Custumizado
 };
 
@@ -75,3 +71,4 @@ class Printables{
 		THEME get_tema();		
 };
 
+#endif // printables.hpp

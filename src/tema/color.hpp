@@ -1,7 +1,12 @@
-#pragma once
+/*
+ * Arquivo de definição de cores e recursos da lib
+ *
+ */
+
+#ifndef COLOR_HPP
+#define COLOR_HPP
 
 #include <iostream>
-
 using std::cout;
 using std::cin;
 using std::string;
@@ -68,26 +73,10 @@ using cor=std::string;
 using cor_effect=std::string;
 using effect=std::string;
 
-class Tema{
-	string key_tm,   // →key
-		   bkg_tm,   // →bakyground
-		   bld_tm,   // →bold
-		   bkg2_tm   // →2° backgound
-	; 
-
-	public:		
-		Tema();
-		Tema(cor_effect key,cor bkg,cor bkg2,effect bold);
-		
-		string  key(string str="");
-		string  bkg(string str="");
-		string  bld(string str="");
-		string bkg2(string str="");	
-};
-
-
 namespace color{
 	using namespace COR::BKG;
 	using namespace COR::KEY;
 	using namespace COR::EFFECT;
 }
+
+#endif // color.hpp

@@ -1,0 +1,10 @@
+digraph "display" {
+node [
+  fontsize = "12"
+];
+    "node0" [ label = "display", shape = hexagon ];
+    "node1" [ label = "printable", shape = hexagon ];
+    "node0" -> "node1" [ style = dotted ] // display -> printable
+    "node2" [ label = "tema", shape = hexagon ];
+    "node1" -> "node2"  // printable -> tema
+}

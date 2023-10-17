@@ -1,4 +1,5 @@
-#pragma once
+#ifndef  DISPLAY_HPP
+#define DISPLAY_HPP
 
 #ifdef __unix__
 #define sys 0
@@ -6,7 +7,8 @@
 #define sys 1
 #endif
 
-#include "printables.hpp"
+#include "../printable/printables.hpp"
+
 #include <algorithm>
 #include <unistd.h> 
 #include <sys/wait.h>
@@ -253,3 +255,5 @@ Dp* operator<<(Dp*,Dp&);
 
 //remover display:
 Dp* operator>>(Dp*,Dp&);
+
+#endif // display.hpp

@@ -1,0 +1,34 @@
+digraph "Mosaicos" {
+node [
+  fontsize = "12"
+];
+subgraph clusterLegend {
+  label = "Legend";
+  color = black;
+  edge [ style = invis ];
+  legendNode0 [ label = "Executable", shape = egg ];
+  legendNode1 [ label = "Static Library", shape = octagon ];
+  legendNode2 [ label = "Shared Library", shape = doubleoctagon ];
+  legendNode3 [ label = "Module Library", shape = tripleoctagon ];
+  legendNode4 [ label = "Interface Library", shape = pentagon ];
+  legendNode5 [ label = "Object Library", shape = hexagon ];
+  legendNode6 [ label = "Unknown Library", shape = septagon ];
+  legendNode7 [ label = "Custom Target", shape = box ];
+  legendNode0 -> legendNode1 [ style = solid ];
+  legendNode0 -> legendNode2 [ style = solid ];
+  legendNode0 -> legendNode3;
+  legendNode1 -> legendNode4 [ label = "Interface", style = dashed ];
+  legendNode2 -> legendNode5 [ label = "Private", style = dotted ];
+  legendNode3 -> legendNode6 [ style = solid ];
+  legendNode0 -> legendNode7;
+}
+    "node0" [ label = "display", shape = hexagon ];
+    "node1" [ label = "printable", shape = hexagon ];
+    "node2" [ label = "tema", shape = hexagon ];
+    "node1" -> "node2"  // printable -> tema
+    "node0" -> "node1" [ style = dotted ] // display -> printable
+    "node3" [ label = "mosaico", shape = octagon ];
+    "node3" -> "node0" [ style = dotted ] // mosaico -> display
+    "node3" -> "node1" [ style = dotted ] // mosaico -> printable
+    "node3" -> "node2" [ style = dotted ] // mosaico -> tema
+}

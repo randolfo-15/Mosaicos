@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmosaico.a CMakeFiles/mosaico.dir/tema/tema.cpp.o CMakeFiles/mosaico.dir/printable/printables.cpp.o CMakeFiles/mosaico.dir/display/display.cpp.o tema/CMakeFiles/tema.dir/tema.cpp.o printable/CMakeFiles/printable.dir/printables.cpp.o printable/CMakeFiles/printable.dir/__/tema/tema.cpp.o display/CMakeFiles/display.dir/display.cpp.o display/CMakeFiles/display.dir/__/printable/printables.cpp.o display/CMakeFiles/display.dir/__/tema/tema.cpp.o
+/usr/bin/ranlib libmosaico.a

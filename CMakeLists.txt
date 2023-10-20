@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.24)
+cmake_minimum_required(VERSION 3.27)
 
 project(Mosaicos
         VERSION 1.0.0
@@ -8,3 +8,17 @@ project(Mosaicos
 )
 
 add_subdirectory(src)
+
+install(
+        TARGETS 
+                mosaico
+                tema
+                printable
+                display
+        ARCHIVE 
+                DESTINATION  ${CMAKE_SOURCE_DIR}
+                COMPONENT  lib
+        PUBLIC_HEADER 
+                DESTINATION ${CMAKE_SOURCE_DIR}/hrd
+                COMPONENT dev
+)

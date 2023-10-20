@@ -6,7 +6,8 @@
 #ifndef  PRINTABLES_HPP 
 #define PRINTABLES_HPP 
 
-#include "../tema/tema.hpp" 
+//#include "../tema/tema.hpp" 
+#include <tema.hpp>
 
  enum modos{
 	       NORMAL,  //Padrão

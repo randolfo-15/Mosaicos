@@ -1,8 +1,0 @@
-digraph "display" {
-node [
-  fontsize = "12"
-];
-    "node0" [ label = "display", shape = hexagon ];
-    "node3" [ label = "mosaico", shape = octagon ];
-    "node3" -> "node0" [ style = dotted ] // mosaico -> display
-}

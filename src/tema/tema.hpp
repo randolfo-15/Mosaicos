@@ -6,7 +6,8 @@
 #ifndef TEMA_HPP
 #define TEMA_HPP
 
-#include <color.hpp>
+#include "color.hpp"
+//#include <color.hpp>
 
 class Tema{
 	string key_tm,        // →key

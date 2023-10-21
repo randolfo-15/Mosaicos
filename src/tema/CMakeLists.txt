@@ -17,6 +17,5 @@ set_target_properties(tema
 
 target_include_directories(tema 
     PUBLIC  
-        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
-        $<INSTALL_INTERFACE:${CMAKE_SOURCE_DIR}/hrd>
+        ${CMAKE_CURRENT_SOURCE_DIR}
 )

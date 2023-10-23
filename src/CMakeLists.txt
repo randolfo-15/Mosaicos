@@ -1,21 +1,21 @@
-#Composição da lib Display :
+# Mosaicos :
 
- add_subdirectory(tema)
-
- add_subdirectory(printable)
-
- add_subdirectory(display)
+ add_library(mosaico STATIC)
  
- add_library(mosaico STATIC "")
- 
- #add_custom_target(a ALL COMMAND cmake -E echo "$<INSTALL_INTERFACE:Randolfo>")
- 
- set_target_properties(mosaico
-    PROPERTIES
-        POSITION_INDEPENDENT_CODE  1
-        SOVERSION ${PROJECT_VERSION_MAJOR}
-        OUTPUT_NAME "Mosaico"
-        DEBUG_POSTFIX "_d"
+ target_sources(mosaico
+    PUBLIC
+        tema.cpp
+        printables.cpp
+        display.cpp
+    PUBLIC FILE_SET HEADERS 
+        FILES 
+            tema.hpp
+            printables.hpp
+            display.hpp
+            color.hpp
 )
-
- target_link_libraries(mosaico PRIVATE tema printable display)
+ 
+ target_include_directories(mosaico
+    PUBLIC
+        ${CMAKE_CURRENT_SOURCE_DIR}
+ )

@@ -18,14 +18,10 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR})
 install(
         TARGETS 
                 mosaico
-                tema
-                printable
-                display   
         ARCHIVE 
-                DESTINATION  ${CMAKE_SOURCE_DIR}
-                COMPONENT  lib
-        PUBLIC_HEADER 
-                DESTINATION ${CMAKE_SOURCE_DIR}/hrd
-                COMPONENT dev
-
+                DESTINATION  ${CMAKE_SOURCE_DIR}/project
+                COMPONENT library
+        FILE_SET HEADERS 
+                COMPONENT include
+                DESTINATION  ${CMAKE_SOURCE_DIR}/project
 )

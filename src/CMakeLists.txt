@@ -1,8 +1,8 @@
 # Mosaicos :
 
- add_library(mosaico STATIC)
+ add_library(mosaicos STATIC)
  
- target_sources(mosaico
+ target_sources(mosaicos
     PUBLIC
         tema.cpp
         printables.cpp
@@ -15,7 +15,7 @@
             color.hpp
 )
  
- target_include_directories(mosaico
+ target_include_directories(mosaicos
     PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}
  )

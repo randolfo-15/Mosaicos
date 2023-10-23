@@ -17,11 +17,11 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR})
 
 install(
         TARGETS 
-                mosaico
+                mosaicos
         ARCHIVE 
                 DESTINATION  ${CMAKE_SOURCE_DIR}/project
                 COMPONENT library
         FILE_SET HEADERS 
                 COMPONENT include
-                DESTINATION  ${CMAKE_SOURCE_DIR}/project
+                DESTINATION  ${CMAKE_SOURCE_DIR}/project/mosaicos
 )

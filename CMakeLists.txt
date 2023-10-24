@@ -15,13 +15,20 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_LIBDIR})
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_LIBDIR})
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR})
 
+set(CMAKE_INSTALL_PREFIX ${CMAKE_SOURCE_DIR})
+
 install(
         TARGETS 
                 mosaicos
         ARCHIVE 
-                DESTINATION  ${CMAKE_SOURCE_DIR}/project
+                DESTINATION  project
                 COMPONENT library
         FILE_SET HEADERS 
                 COMPONENT include
-                DESTINATION  ${CMAKE_SOURCE_DIR}/project/mosaicos
+                DESTINATION  project/mosaicos
+)
+
+install(
+        FILES cmake/FindMosaicos.cmake 
+        DESTINATION project
 )

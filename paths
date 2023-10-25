@@ -1,0 +1,7 @@
+-- Install configuration: ""
+-- Installing: /usr/local/lib/libmosaicos.a
+-- Installing: /usr/local/include/mosaicos/tema.hpp
+-- Installing: /usr/local/include/mosaicos/printables.hpp
+-- Installing: /usr/local/include/mosaicos/display.hpp
+-- Installing: /usr/local/include/mosaicos/color.hpp
+-- Installing: /usr/local/lib/cmake/Mosaicos/FindMosaicos.cmake

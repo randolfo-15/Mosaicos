@@ -1,0 +1,7 @@
+/usr/local/lib/libmosaicos.a
+/usr/local/include/mosaicos/tema.hpp
+/usr/local/include/mosaicos/printables.hpp
+/usr/local/include/mosaicos/display.hpp
+/usr/local/include/mosaicos/color.hpp
+/lib/cmake/Mosaicos/MosaicosConfig.cmake
+/lib/cmake/Mosaicos/MosaicosConfigVersion.cmake

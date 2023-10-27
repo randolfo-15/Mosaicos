@@ -6,14 +6,17 @@ project(Mosaicos
         HOMEPAGE_URL "https://gitlab.com/Randolfo-15/dp_rag.git"
         LANGUAGES CXX
 )
-
 include(GNUInstallDirs)
+
+include(cmake/tools.cmake)
 
 add_subdirectory(src)
 
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_LIBDIR})
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_LIBDIR})
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR})
+
+install_file_config()
 
 install(
         TARGETS 
@@ -26,8 +29,14 @@ install(
                 DESTINATION  ${CMAKE_INSTALL_INCLUDEDIR}/mosaicos
 )
 
-install(
-        FILES cmake/FindMosaicos.cmake
-        DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/Mosaicos
-)
+if(UNIX)
+        set(path_config "/lib")
+else()
+        set(path_config " ${CMAKE_INSTALL_LIBDIR}")
+endif()
 
+install(FILES
+        "${CMAKE_CURRENT_BINARY_DIR}/MosaicosConfig.cmake"
+        "${CMAKE_CURRENT_BINARY_DIR}/MosaicosConfigVersion.cmake"
+        DESTINATION ${path_config}/cmake/Mosaicos
+)

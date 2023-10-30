@@ -1,2 +1,0 @@
-/usr/bin/ar qc libmosaicos.a CMakeFiles/mosaicos.dir/tema.cpp.o CMakeFiles/mosaicos.dir/printables.cpp.o CMakeFiles/mosaicos.dir/display.cpp.o
-/usr/bin/ranlib libmosaicos.a

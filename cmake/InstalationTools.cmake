@@ -2,10 +2,15 @@
 include(GNUInstallDirs)
 #------------------------------------------------- Defines -------------------------------------------------------
 set(path_config)
-if(UNIX)
+    if(${CMAKE_SYSTEM_NAME} STREQUAL "Linux")
         set(path_config "/lib/cmake/Mosaicos")
-else()
+        set(path_install "/usr/local/")
+    elseif(${CMAKE_SYSTEM_NAME} STREQUAL "Android")
+        set(path_install "/data/data/com.termux/files/usr")       
+        set(path_config "${path_install}/lib/cmake/Mosaicos")
+    else()
         set(path_config "${CMAKE_INSTALL_LIBDIR}/cmake/Mosaicos")
+        set(path_install "${CMAKE_INSTALL_PREFIX}")
 endif()
 
 #--------------------------------------------- Instal Configures ---------------------------------------------
@@ -17,7 +22,7 @@ macro(install_file_config)
     configure_package_config_file(
         "${CMAKE_CURRENT_LIST_DIR}/cmake/Config.cmake.in"
         "${CMAKE_BINARY_DIR}/Library/MosaicosConfig.cmake"
-        INSTALL_DESTINATION "${CMAKE_INSTALL_LIBDIR}/cmake/Mosaicos" 
+        INSTALL_DESTINATION ${path_config} 
     )
     
     # Definir versão da library:    
@@ -53,11 +58,11 @@ macro(install_library)
         TARGETS ${install_library_TARGETS_EXPORT}
         EXPORT mosaico_export
         ARCHIVE 
-                DESTINATION ${CMAKE_INSTALL_LIBDIR}
+                DESTINATION "${path_install}/lib"
                 COMPONENT lib
         FILE_SET HEADERS 
                 COMPONENT head
-                DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/mosaicos
+                DESTINATION "${path_install}/include/mosaicos"
     )
     
     

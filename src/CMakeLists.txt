@@ -1,9 +1,12 @@
 # Mosaicos :
+if(NOT SHARED_LIBRARY)
+    add_library(mosaicos STATIC)
+else()
+    add_library(mosaicos SHARED)
+endif()
 
- add_library(mosaicos STATIC)
- 
- target_sources(mosaicos
-    PUBLIC
+target_sources(mosaicos
+    PRIVATE
         tema.cpp
         printables.cpp
         display.cpp
@@ -15,9 +18,8 @@
             color.hpp
 )
  
- # set(INTERFACE_SOURCES ${CMAKE_INSTALL_INCLUDEDIR})
- target_include_directories(mosaicos
+target_include_directories(mosaicos
     PUBLIC
         "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>"
-        "$<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}"
+        "$<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>"
 )

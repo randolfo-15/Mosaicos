@@ -1,7 +1,5 @@
 @PACKAGE_INIT@
 
-include("${CMAKE_CURRENT_LIST_DIR}/MosaicosTargets.cmake")
-
-# find_dependency(ncurses) - Necessaria para implementações futuras.
+include(${CMAKE_CURRENT_LIST_DIR}/mosaicosTarget.cmake)
 
 check_required_components(mosaicos)

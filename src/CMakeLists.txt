@@ -21,5 +21,5 @@ target_sources(mosaicos
 target_include_directories(mosaicos
     PUBLIC
         "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>"
-        "$<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>"
+        "$<INSTALL_INTERFACE:${path_install}/include/mosaicos>"
 )

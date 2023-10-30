@@ -1,13 +1,15 @@
 #[[ Construção e definição de pacotes config ]]#
 include(GNUInstallDirs)
 #------------------------------------------------- Defines -------------------------------------------------------
-set(path_config)
+set(path_config " " CACHE STRING "CONFIG")
+set(path_install " " CACHE STRING "INSTALL")
     if(${CMAKE_SYSTEM_NAME} STREQUAL "Linux")
         set(path_config "/lib/cmake/Mosaicos")
         set(path_install "/usr/local/")
     elseif(${CMAKE_SYSTEM_NAME} STREQUAL "Android")
         set(path_install "/data/data/com.termux/files/usr")       
         set(path_config "${path_install}/lib/cmake/Mosaicos")
+        set(CMAKE_INSTALL_PREFIX "")
     else()
         set(path_config "${CMAKE_INSTALL_LIBDIR}/cmake/Mosaicos")
         set(path_install "${CMAKE_INSTALL_PREFIX}")

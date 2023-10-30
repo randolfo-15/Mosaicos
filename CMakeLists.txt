@@ -6,14 +6,14 @@ project(Mosaicos
         HOMEPAGE_URL "https://gitlab.com/Randolfo-15/dp_rag.git"
         LANGUAGES CXX
 )
+include(cmake/InstalationTools.cmake)
+
 # Diretorio de artefatos construidos:
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/Library)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/Library)
 option(SHARED_LIBRARY FALSE)
 
 add_subdirectory(src)
-
-include(cmake/InstalationTools.cmake)
 
 install_file_config()
 

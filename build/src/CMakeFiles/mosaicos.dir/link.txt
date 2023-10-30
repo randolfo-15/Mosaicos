@@ -1,0 +1,2 @@
+/data/data/com.termux/files/usr/bin/llvm-ar qc ../Library/libmosaicos.a CMakeFiles/mosaicos.dir/tema.cpp.o CMakeFiles/mosaicos.dir/printables.cpp.o CMakeFiles/mosaicos.dir/display.cpp.o
+/data/data/com.termux/files/usr/bin/llvm-ranlib ../Library/libmosaicos.a

@@ -1,0 +1,88 @@
+\doxysection{color.\+hpp}
+\hypertarget{color_8hpp_source}{}\label{color_8hpp_source}\index{src/color.hpp@{src/color.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ Arquivo\ de\ definição\ de\ cores\ e\ recursos\ da\ lib}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ COLOR\_HPP}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ COLOR\_HPP}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00010\ \textcolor{keyword}{using\ }std::cout;}
+\DoxyCodeLine{00011\ \textcolor{keyword}{using\ }std::cin;}
+\DoxyCodeLine{00012\ \textcolor{keyword}{using\ }std::string;}
+\DoxyCodeLine{00013\ \textcolor{keyword}{using\ }std::ostream;}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00016\ \textcolor{keyword}{using\ }std::vector;}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{namespace\ }COR\{}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{namespace\ }KEY\{}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ }
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \ BLACK\_KEY=\textcolor{stringliteral}{"{}\(\backslash\)033[30m"{}},}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \ RED\_KEY=\textcolor{stringliteral}{"{}\(\backslash\)033[31m"{}},}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \ GREEN\_KEY=\textcolor{stringliteral}{"{}\(\backslash\)033[32m"{}},}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \ YELLOW\_KEY=\textcolor{stringliteral}{"{}\(\backslash\)033[33m"{}},}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ BLUE\_KEY=\textcolor{stringliteral}{"{}\(\backslash\)033[34m"{}},}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ MAGENT\_KEY=\textcolor{stringliteral}{"{}\(\backslash\)033[35m"{}},}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ CYAN\_KEY=\textcolor{stringliteral}{"{}\(\backslash\)033[36m"{}},}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \ GRAY\_LIGHT\_KEY=\textcolor{stringliteral}{"{}\(\backslash\)033[37m"{}},}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \ RED\_LIGHT\_KEY=\textcolor{stringliteral}{"{}\(\backslash\)033[91m"{}},}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \ GREEN\_LIGHT\_KEY=\textcolor{stringliteral}{"{}\(\backslash\)033[92m"{}},}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \ YELLOW\_LIGHT\_KEY=\textcolor{stringliteral}{"{}\(\backslash\)033[93m"{}},}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \ BLUE\_LIGHT\_KEY=\textcolor{stringliteral}{"{}\(\backslash\)033[94m"{}},}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ MAGENT\_LIGHT\_KEY=\textcolor{stringliteral}{"{}\(\backslash\)033[95m"{}},}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \ CYAN\_LIGHT\_KEY=\textcolor{stringliteral}{"{}\(\backslash\)033[96m"{}},}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \ WHITE\_KEY=\textcolor{stringliteral}{"{}\(\backslash\)033[97m"{}},}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ GRAY\_KEY=\textcolor{stringliteral}{"{}\(\backslash\)033[90m"{}};}
+\DoxyCodeLine{00037\ \ \ \ \ \}}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{namespace\ }BKG\{}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \ BLACK\_BKG=\textcolor{stringliteral}{"{}\(\backslash\)033[40m"{}},}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \ GRAY\_LIGHT\_BKG=\textcolor{stringliteral}{"{}\(\backslash\)033[47m"{}},}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \ RED\_LIGHT\_BKG=\textcolor{stringliteral}{"{}\(\backslash\)033[101m"{}},}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ GREEN\_LIGHT\_BKG=\textcolor{stringliteral}{"{}\(\backslash\)033[102m"{}},}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \ YELLOW\_LIGHT\_BKG=\textcolor{stringliteral}{"{}\(\backslash\)033[103m"{}},}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \ BLUE\_LIGHT\_BKG=\textcolor{stringliteral}{"{}\(\backslash\)033[104m"{}},}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \ MAGENT\_LIGHT\_BKG=\textcolor{stringliteral}{"{}\(\backslash\)033[105m"{}},}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ CYAN\_LIGHT\_BKG=\textcolor{stringliteral}{"{}\(\backslash\)033[106m"{}},}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ RED\_BKG=\textcolor{stringliteral}{"{}\(\backslash\)033[41m"{}},}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \ GREEN\_BKG=\textcolor{stringliteral}{"{}\(\backslash\)033[42m"{}},}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ YELLOW\_BKG=\textcolor{stringliteral}{"{}\(\backslash\)033[43m"{}},}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \ BLUE\_BKG=\textcolor{stringliteral}{"{}\(\backslash\)033[44m"{}},}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \ MAGENT\_BKG=\textcolor{stringliteral}{"{}\(\backslash\)033[45m"{}},}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \ CYAN\_BKG=\textcolor{stringliteral}{"{}\(\backslash\)033[46m"{}},}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \ WHITE\_BKG=\textcolor{stringliteral}{"{}\(\backslash\)033[107m"{}},}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \ GRAY\_BKG=\textcolor{stringliteral}{"{}\(\backslash\)033[100m"{}};}
+\DoxyCodeLine{00056\ \ \ \ \ \}}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{namespace\ }EFFECT\{}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ }
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \ ITALIC=\textcolor{stringliteral}{"{}\(\backslash\)033[3m"{}},}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \ BLINK=\textcolor{stringliteral}{"{}\(\backslash\)033[5m"{}},}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \ DEFAULT\_BKG=\textcolor{stringliteral}{"{}\(\backslash\)033[49m"{}},}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ BOLD\_KEY=\textcolor{stringliteral}{"{}\(\backslash\)033[1m"{}},}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ DARK=\textcolor{stringliteral}{"{}\(\backslash\)033[2m"{}},}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \ UNDERLINE=\textcolor{stringliteral}{"{}\(\backslash\)033[4m"{}},}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \ REVERSE=\textcolor{stringliteral}{"{}\(\backslash\)033[7m"{}},}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ HIDDEN=\textcolor{stringliteral}{"{}\(\backslash\)033[8m"{}},}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ TACHADO=\textcolor{stringliteral}{"{}\(\backslash\)033[9m"{}},}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \ DEFAULT\_KEY=\textcolor{stringliteral}{"{}\(\backslash\)033[0;39m"{}};}
+\DoxyCodeLine{00069\ \ \ \ \ \}}
+\DoxyCodeLine{00070\ \}}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \textcolor{keyword}{using\ }cor=std::string;}
+\DoxyCodeLine{00073\ \textcolor{keyword}{using\ }cor\_effect=std::string;}
+\DoxyCodeLine{00074\ \textcolor{keyword}{using\ }effect=std::string;}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \textcolor{keyword}{namespace\ }color\{}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keyword}{using\ namespace\ }COR::BKG;}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keyword}{using\ namespace\ }COR::KEY;}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keyword}{using\ namespace\ }COR::EFFECT;}
+\DoxyCodeLine{00080\ \}}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ color.hpp}}
+
+\end{DoxyCode}

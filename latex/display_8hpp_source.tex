@@ -1,0 +1,266 @@
+\doxysection{display.\+hpp}
+\hypertarget{display_8hpp_source}{}\label{display_8hpp_source}\index{src/display.hpp@{src/display.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \ DISPLAY\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ DISPLAY\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#ifdef\ \_\_unix\_\_}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#define\ sys\ 0}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#elif\ }}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ sys\ 1}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}printables.hpp"{}}}
+\DoxyCodeLine{00011\ \textcolor{comment}{//\#include\ <printables.hpp>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <algorithm>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <unistd.h>}\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <sys/wait.h>}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00018\ \textcolor{keyword}{using\ }std::ifstream;}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <cstdlib>}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <sstream>}}
+\DoxyCodeLine{00022\ \textcolor{keyword}{using\ }std::stringstream;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{comment}{//Alias\ de\ função\ iniciar\ Display:}}
+\DoxyCodeLine{00025\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classDisplay}{Display}};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{comment}{//Abrevição\ do\ nome\ da\ classe:}}
+\DoxyCodeLine{00028\ \textcolor{keyword}{using\ }\mbox{\hyperlink{classDisplay}{Dp}}=\mbox{\hyperlink{classDisplay}{Display}};\ }
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00031\ \textcolor{comment}{//Funções\ de\ suporte:}}
+\DoxyCodeLine{00032\ \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00033\ \textcolor{keywordtype}{void}\ collect\_char(\textcolor{keywordtype}{string}*,\textcolor{keywordtype}{char},\textcolor{keywordtype}{int}\ i,\textcolor{keywordtype}{int}\ end);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00037\ \textcolor{comment}{//(Texto)}}
+\DoxyCodeLine{00038\ \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classTexto}{Texto}}\{}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{friend}\ \mbox{\hyperlink{classDisplay}{Dp}};}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{string}\ line;}
+\DoxyCodeLine{00043\ \ \ \ \ MODO\ modo;}
+\DoxyCodeLine{00044\ \ \ \ \ Func\_Obj\ fx;}
+\DoxyCodeLine{00045\ \ \ \ \ }
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{classTexto}{Texto}}(\textcolor{keywordtype}{string},MODO,Func\_Obj);}
+\DoxyCodeLine{00047\ \};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{comment}{//Modos\ de\ corte\ de\ texto:}}
+\DoxyCodeLine{00050\ \textcolor{keyword}{enum}\ slice\_mode\{SMART,JOUST\};}
+\DoxyCodeLine{00051\ \textcolor{keyword}{using\ }slice\_mode=\textcolor{keyword}{enum}\ slice\_mode;}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00054\ \textcolor{comment}{//(Espaço)}}
+\DoxyCodeLine{00055\ \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classSpace}{Space}}\{}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{friend}\ \mbox{\hyperlink{classDisplay}{Dp}};}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{string}\ spc\_str;}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{int}\ \ \ \ spc\_int;}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{char}\ \ \ spc\_chr;}
+\DoxyCodeLine{00062\ \ \ \ \ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ init(\textcolor{keywordtype}{int},\textcolor{keywordtype}{char});}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{int}\ \ value(\textcolor{keywordtype}{int}\ n=-\/1);}
+\DoxyCodeLine{00065\ \};}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00068\ \textcolor{comment}{//(Shadow)}}
+\DoxyCodeLine{00069\ \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00070\ \textcolor{keyword}{using\ }COR::BKG::GRAY\_BKG;}
+\DoxyCodeLine{00071\ \textcolor{keyword}{using\ }COR::EFFECT::DEFAULT\_BKG;}
+\DoxyCodeLine{00072\ \textcolor{keyword}{using\ }COR::EFFECT::DEFAULT\_KEY;}
+\DoxyCodeLine{00073\ \textcolor{keyword}{using\ }COR::BKG::WHITE\_BKG;}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classShadow}{Shadow}}\{}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keyword}{friend}\ \mbox{\hyperlink{classDisplay}{Dp}};}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{string}\ cor=COR::BKG::GRAY\_LIGHT\_BKG;}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{bool}\ \ start=\textcolor{keyword}{true};}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \ \ \ \ \mbox{\hyperlink{classShadow}{Shadow}}();\ }
+\DoxyCodeLine{00081\ \ \ \ \ \mbox{\hyperlink{classShadow}{Shadow}}(\textcolor{keywordtype}{string});}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{string}\ shade(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ size\_shadow();}
+\DoxyCodeLine{00085\ \};}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00088\ \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00089\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classDisplay}{Display}}:\textcolor{keyword}{public}\ \mbox{\hyperlink{classPrintables}{Printables}}\{}
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{comment}{//Operação\ de\ fluso\ de\ display:}}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keyword}{friend}\ \mbox{\hyperlink{classDisplay}{Dp}}*\ operator<<(\mbox{\hyperlink{classDisplay}{Dp}}*,\mbox{\hyperlink{classDisplay}{Dp}}\&);}
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keyword}{friend}\ \mbox{\hyperlink{classDisplay}{Dp}}*\ operator>>(\mbox{\hyperlink{classDisplay}{Dp}}*,\mbox{\hyperlink{classDisplay}{Dp}}\&);}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{comment}{//Buffer\ auxiliar:}}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ vector<Texto>\ buffer\_aux;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ vector<Display*>\ dps;}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{comment}{//Sombriamento:}}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classShadow}{Shadow}}\ sb,}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ no\_sb;}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{comment}{//Espaciais:}}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSpace}{Space}}\ w\_dp,\ \textcolor{comment}{//\ →\ Largura\ do\ display.\ \ \ }}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ x\_dp,\ \textcolor{comment}{//\ →\ Distanciamento\ horizontal.}}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ y\_dp,\ \textcolor{comment}{//\ →\ Distanciamento\ vertical.}}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b\_dp;\ \textcolor{comment}{//\ →\ Espaçamento\ texto.}}
+\DoxyCodeLine{00107\ \ \ \ \ }
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{comment}{//Tamanho\ sombra:}}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ sb\_side=2;}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{comment}{//Modos\ de\ Texto:\ \ \ }}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ slice\_mode\ corte=SMART;}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{comment}{//Inicialização:}}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ init\_default();}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ init\_compnents();}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00118\ \ \ \ \ \textcolor{comment}{//Escrita:}}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \textcolor{comment}{//1\ →\ Dividir\ texto\ e\ salvar\ linhas:}}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ format(\textcolor{keywordtype}{string},\textcolor{keywordtype}{size\_t},MODO,Func\_Obj);}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \textcolor{comment}{//½\ →\ Contar\ letras:}}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ n\_letter(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*);}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \textcolor{comment}{//2\ →\ Fatiar\ bloco\ de\ texto:}}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ slice\_text(\textcolor{keywordtype}{string},\textcolor{keywordtype}{size\_t});}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \textcolor{comment}{//3\ →\ Gravar\ em\ memoria\ auxiliar:\ \ \ }}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ write\_aux\_buffer(\textcolor{keywordtype}{string},MODO,Func\_Obj);}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \textcolor{comment}{//4\ →\ Atualizar\ largura:}}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \ \ update\_width(\textcolor{keywordtype}{int});\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00133\ \ \ \ \ }
+\DoxyCodeLine{00134\ \ \ \ \ \textcolor{comment}{//Exposição:}}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Salvar\ figura\ no\ buffer:}}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ draw();}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \textcolor{comment}{//1\ →\ Listar\ linhas:}}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ move\_buffer(\textcolor{keywordtype}{int}\ i,\textcolor{keywordtype}{int}\ end);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Contar\ caracter\ especial:\ \ \ \ \ \ \ //|}}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ loop(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *c);\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//|}}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//|}}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ size\_line(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *str);\ \ \ \textcolor{comment}{//|}}
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \textcolor{comment}{//2\ →\ Preenchaer\ linha}}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \ \ format\_line(\textcolor{keywordtype}{size\_t},\textcolor{keywordtype}{string},MODO,Func\_Obj);\ \ \ \ \ }
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \textcolor{comment}{//3\ →\ Sombrear\ base:}}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \ \ base\_shading();\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00151\ \ \ \ \ }
+\DoxyCodeLine{00152\ \ \ \ \ \textcolor{comment}{//Checar\ tamanho\ do\ terminal:}}
+\DoxyCodeLine{00153\ \ \ \ \ \textcolor{keywordtype}{bool}\ size\_terminal(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{00154\ \ \ \ \ }
+\DoxyCodeLine{00155\ \ \ \ \ \textcolor{comment}{//Erro\ ao\ criar\ display:}}
+\DoxyCodeLine{00156\ \ \ \ \ \textcolor{keywordtype}{void}\ erro\_exec(\textcolor{keywordtype}{string}\ str=\textcolor{stringliteral}{"{}Broken\ display"{}});}
+\DoxyCodeLine{00157\ \ \ \ \ }
+\DoxyCodeLine{00158\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00159\ \ \ \ \ \textcolor{comment}{//Fabricação:\ \ \ }}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classDisplay}{Display}}();}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classDisplay}{Display}}(\mbox{\hyperlink{classTema}{THEME}}*);}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classDisplay}{Display}}(\textcolor{keywordtype}{void}\ (*)(\mbox{\hyperlink{classDisplay}{Display}}*));}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Funçao\ de\ heard\ ?}}
+\DoxyCodeLine{00164\ }
+\DoxyCodeLine{00165\ \ \ \ \ \textcolor{comment}{//Iniciar:}}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ init\_mode(\textcolor{keywordtype}{void}\ (*)(\mbox{\hyperlink{classDisplay}{Display}}*));}
+\DoxyCodeLine{00167\ }
+\DoxyCodeLine{00168\ \ \ \ \ \textcolor{comment}{//0\ →\ Escrita:}}
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ write(\textcolor{keywordtype}{string},}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MODO\ m=NORMAL,}
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Func\_Obj\ fy=\textcolor{keyword}{nullptr}}
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ )\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00173\ \ \ \ \ }
+\DoxyCodeLine{00174\ \ \ \ \ \textcolor{comment}{//Exposição:\ \ \ \ }}
+\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ \textcolor{comment}{//0\ →\ Mostrar\ display:}}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ show();\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ show(\textcolor{keywordtype}{int}\ grupo,\textcolor{keywordtype}{int}\ x,\textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Atualizar\ Janela:}}
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ update();\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00182\ \ \ \ \ }
+\DoxyCodeLine{00183\ \ \ \ \ \textcolor{comment}{//Configurações:}}
+\DoxyCodeLine{00184\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ \ \ \ \ \ \ \ Display\ \ \ \ \ \ \ \ \ \ */}}
+\DoxyCodeLine{00185\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ shadow(\textcolor{keywordtype}{bool}\ x=\textcolor{keyword}{true});}
+\DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ side\_shadow(\textcolor{keywordtype}{int}\ x=-\/1);}
+\DoxyCodeLine{00187\ }
+\DoxyCodeLine{00188\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ \ \ \ \ \ \ \ Espaciais\ \ \ \ \ \ \ \ */}\ \ \ }
+\DoxyCodeLine{00189\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ →\ Saltar\ linha:}}
+\DoxyCodeLine{00191\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ skip\_line(\textcolor{keywordtype}{int}\ n=1);\ \ \ \ }
+\DoxyCodeLine{00192\ }
+\DoxyCodeLine{00193\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ →\ Deslocamento\ horizontal:}}
+\DoxyCodeLine{00194\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ dist\_x(\textcolor{keywordtype}{int}\ x=-\/1);\ \ }
+\DoxyCodeLine{00195\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00196\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ →\ Deslocamento\ vertical:}}
+\DoxyCodeLine{00197\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ dist\_y(\textcolor{keywordtype}{int}\ y=-\/1);}
+\DoxyCodeLine{00198\ }
+\DoxyCodeLine{00199\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ →\ Espaçamento\ texto:}}
+\DoxyCodeLine{00200\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ spacing(\textcolor{keywordtype}{int}\ t=-\/1);}
+\DoxyCodeLine{00201\ }
+\DoxyCodeLine{00202\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ →\ Largura\ do\ display:}}
+\DoxyCodeLine{00203\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ width(\textcolor{keywordtype}{int}\ w=-\/1);}
+\DoxyCodeLine{00204\ }
+\DoxyCodeLine{00205\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ \ \ \ \ \ \ Textuais\ \ \ \ \ \ \ \ \ \ */}}
+\DoxyCodeLine{00206\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00207\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Texto\ no\ formato\ justificado:}}
+\DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ distribution(slice\_mode);}
+\DoxyCodeLine{00209\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00210\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Nº\ de\ linhas:}}
+\DoxyCodeLine{00211\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ n\_lines();}
+\DoxyCodeLine{00212\ }
+\DoxyCodeLine{00213\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Limpar\ display:}}
+\DoxyCodeLine{00214\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ clear()\ \textcolor{keyword}{override};\ \ }
+\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Inserir\ texto:}}
+\DoxyCodeLine{00217\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ insert(\textcolor{keywordtype}{int}\ pos,}
+\DoxyCodeLine{00218\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ text,}
+\DoxyCodeLine{00219\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MODO\ m=NORMAL,}
+\DoxyCodeLine{00220\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Func\_Obj\ fx=\textcolor{keyword}{nullptr}\ }
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{00222\ }
+\DoxyCodeLine{00223\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ remove(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{00224\ }
+\DoxyCodeLine{00225\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ \ Aritmetica\ de\ displays:\ \ */}}
+\DoxyCodeLine{00226\ }
+\DoxyCodeLine{00227\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Auto-\/somar:}}
+\DoxyCodeLine{00228\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ operator+=(\mbox{\hyperlink{classDisplay}{Display}}\&);}
+\DoxyCodeLine{00229\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00230\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Auto-\/Subtrair}}
+\DoxyCodeLine{00231\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ operator-\/=(\mbox{\hyperlink{classDisplay}{Display}}\&);}
+\DoxyCodeLine{00232\ }
+\DoxyCodeLine{00233\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classDisplay}{Dp}}*\ operator<<(\mbox{\hyperlink{classDisplay}{Dp}}\&);}
+\DoxyCodeLine{00234\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classDisplay}{Dp}}*\ operator>>(\mbox{\hyperlink{classDisplay}{Dp}}\&);}
+\DoxyCodeLine{00235\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00236\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Find}}
+\DoxyCodeLine{00237\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classDisplay}{Dp}}*\ operator[](\textcolor{keywordtype}{int});}
+\DoxyCodeLine{00238\ }
+\DoxyCodeLine{00239\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Número\ de\ displays:}}
+\DoxyCodeLine{00240\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ n\_dps();}
+\DoxyCodeLine{00241\ }
+\DoxyCodeLine{00242\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Multiplicar:}}
+\DoxyCodeLine{00243\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ operator*=(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{00244\ \ \ \ \ }
+\DoxyCodeLine{00245\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ set\_color\_shadow(\textcolor{keywordtype}{string}\ cor);}
+\DoxyCodeLine{00246\ }
+\DoxyCodeLine{00247\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Size\ display:}}
+\DoxyCodeLine{00248\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ size\_display();}
+\DoxyCodeLine{00249\ }
+\DoxyCodeLine{00250\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Ler\ dados:}}
+\DoxyCodeLine{00251\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ read(\mbox{\hyperlink{classDisplay}{Dp}},vector<string>*questions,vector<string>*answers,\ \textcolor{keywordtype}{int}\ n=0);}
+\DoxyCodeLine{00252\ }
+\DoxyCodeLine{00253\ \};}
+\DoxyCodeLine{00254\ \textcolor{comment}{//Inserir\ display:}}
+\DoxyCodeLine{00255\ \mbox{\hyperlink{classDisplay}{Dp}}*\ operator<<(\mbox{\hyperlink{classDisplay}{Dp}}*,\mbox{\hyperlink{classDisplay}{Dp}}\&);}
+\DoxyCodeLine{00256\ }
+\DoxyCodeLine{00257\ \textcolor{comment}{//remover\ display:}}
+\DoxyCodeLine{00258\ \mbox{\hyperlink{classDisplay}{Dp}}*\ operator>>(\mbox{\hyperlink{classDisplay}{Dp}}*,\mbox{\hyperlink{classDisplay}{Dp}}\&);}
+\DoxyCodeLine{00259\ }
+\DoxyCodeLine{00260\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ display.hpp}}
+
+\end{DoxyCode}

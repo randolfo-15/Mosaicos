@@ -1,0 +1,171 @@
+\doxysection{Display Class Reference}
+\hypertarget{classDisplay}{}\label{classDisplay}\index{Display@{Display}}
+Inheritance diagram for Display\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classDisplay}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classDisplay_a511977ccfd53a2c9bfb5a4ddfb7d4f22}\label{classDisplay_a511977ccfd53a2c9bfb5a4ddfb7d4f22} 
+{\bfseries Display} (\mbox{\hyperlink{classTema}{THEME}} \texorpdfstring{$\ast$}{*})
+\item 
+\Hypertarget{classDisplay_a61a7cb16313ae61a5b5bae704c3d2617}\label{classDisplay_a61a7cb16313ae61a5b5bae704c3d2617} 
+{\bfseries Display} (void(\texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{classDisplay}{Display}} \texorpdfstring{$\ast$}{*}))
+\item 
+\Hypertarget{classDisplay_aeb035042209119f72f654d86bbfc9c98}\label{classDisplay_aeb035042209119f72f654d86bbfc9c98} 
+void {\bfseries init\+\_\+mode} (void(\texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{classDisplay}{Display}} \texorpdfstring{$\ast$}{*}))
+\item 
+void \mbox{\hyperlink{classDisplay_a285a9ba04db91c125f1f94016b734bd1}{write}} (string, MODO m=NORMAL, Func\+\_\+\+Obj fy=nullptr) override
+\item 
+\Hypertarget{classDisplay_a8f37df54881eebc4eba88190f77b854b}\label{classDisplay_a8f37df54881eebc4eba88190f77b854b} 
+void {\bfseries show} ()
+\item 
+\Hypertarget{classDisplay_a3cc249f036773c1c7fcda0418e128e91}\label{classDisplay_a3cc249f036773c1c7fcda0418e128e91} 
+void {\bfseries show} (int grupo, int x, int y)
+\item 
+\Hypertarget{classDisplay_ad2740b779d61e461c4dcaaf34f1fcd8f}\label{classDisplay_ad2740b779d61e461c4dcaaf34f1fcd8f} 
+void {\bfseries update} ()
+\item 
+\Hypertarget{classDisplay_a847a983130722a288cc98d3a31c9a627}\label{classDisplay_a847a983130722a288cc98d3a31c9a627} 
+void {\bfseries shadow} (bool x=true)
+\item 
+\Hypertarget{classDisplay_ae2f3a1caf8dc0cbd6db21350a909307e}\label{classDisplay_ae2f3a1caf8dc0cbd6db21350a909307e} 
+int {\bfseries side\+\_\+shadow} (int x=-\/1)
+\item 
+\Hypertarget{classDisplay_af9ef413a9ffdb0e7d1ec7ab8a5db6dad}\label{classDisplay_af9ef413a9ffdb0e7d1ec7ab8a5db6dad} 
+void {\bfseries skip\+\_\+line} (int n=1)
+\item 
+\Hypertarget{classDisplay_a57db6b43b6b5139f502fa2d3579873b9}\label{classDisplay_a57db6b43b6b5139f502fa2d3579873b9} 
+int {\bfseries dist\+\_\+x} (int x=-\/1)
+\item 
+\Hypertarget{classDisplay_ad0e710dfeb68db46e50535c23048d374}\label{classDisplay_ad0e710dfeb68db46e50535c23048d374} 
+int {\bfseries dist\+\_\+y} (int y=-\/1)
+\item 
+\Hypertarget{classDisplay_aec9a2ed1d0a7126b35fcd0027f844d40}\label{classDisplay_aec9a2ed1d0a7126b35fcd0027f844d40} 
+int {\bfseries spacing} (int t=-\/1)
+\item 
+\Hypertarget{classDisplay_a69cfd676fe09852c6812274343262dae}\label{classDisplay_a69cfd676fe09852c6812274343262dae} 
+int {\bfseries width} (int w=-\/1)
+\item 
+\Hypertarget{classDisplay_ae29d43f45d232ad7e1c599488c785a02}\label{classDisplay_ae29d43f45d232ad7e1c599488c785a02} 
+void {\bfseries distribution} (slice\+\_\+mode)
+\item 
+\Hypertarget{classDisplay_abbda06c9ac760da3a57cda21759f34ba}\label{classDisplay_abbda06c9ac760da3a57cda21759f34ba} 
+int {\bfseries n\+\_\+lines} ()
+\item 
+void \mbox{\hyperlink{classDisplay_a6e4dc43f1c034564ac82af9f1e093c21}{clear}} () override
+\item 
+\Hypertarget{classDisplay_ab554bd0444dc78ddc30bc1f5641d1545}\label{classDisplay_ab554bd0444dc78ddc30bc1f5641d1545} 
+void {\bfseries insert} (int pos, string text, MODO m=NORMAL, Func\+\_\+\+Obj fx=nullptr)
+\item 
+\Hypertarget{classDisplay_a47c733b9edbb8a86412eecce3488e852}\label{classDisplay_a47c733b9edbb8a86412eecce3488e852} 
+void {\bfseries remove} (int)
+\item 
+\Hypertarget{classDisplay_ac4f48a03a3d904142a7209955ace6f90}\label{classDisplay_ac4f48a03a3d904142a7209955ace6f90} 
+void {\bfseries operator+=} (\mbox{\hyperlink{classDisplay}{Display}} \&)
+\item 
+\Hypertarget{classDisplay_a07861e321bcac8bb52057681c9c76d46}\label{classDisplay_a07861e321bcac8bb52057681c9c76d46} 
+void {\bfseries operator-\/=} (\mbox{\hyperlink{classDisplay}{Display}} \&)
+\item 
+\Hypertarget{classDisplay_a708fb6ae2b69e95be23f043217ebfd6c}\label{classDisplay_a708fb6ae2b69e95be23f043217ebfd6c} 
+\mbox{\hyperlink{classDisplay}{Dp}} \texorpdfstring{$\ast$}{*} {\bfseries operator$<$$<$} (\mbox{\hyperlink{classDisplay}{Dp}} \&)
+\item 
+\Hypertarget{classDisplay_ac217c3a7ac162c8a0a0f9756bd089b2d}\label{classDisplay_ac217c3a7ac162c8a0a0f9756bd089b2d} 
+\mbox{\hyperlink{classDisplay}{Dp}} \texorpdfstring{$\ast$}{*} {\bfseries operator$>$$>$} (\mbox{\hyperlink{classDisplay}{Dp}} \&)
+\item 
+\Hypertarget{classDisplay_a6e962b1d2e5b5aa54ec0e7c284d23252}\label{classDisplay_a6e962b1d2e5b5aa54ec0e7c284d23252} 
+\mbox{\hyperlink{classDisplay}{Dp}} \texorpdfstring{$\ast$}{*} {\bfseries operator\mbox{[}$\,$\mbox{]}} (int)
+\item 
+\Hypertarget{classDisplay_a5d8f08dc31e9196bf4e98b43eaee0155}\label{classDisplay_a5d8f08dc31e9196bf4e98b43eaee0155} 
+int {\bfseries n\+\_\+dps} ()
+\item 
+\Hypertarget{classDisplay_ad9cf21fc0c3b62e96de18a146bec8b71}\label{classDisplay_ad9cf21fc0c3b62e96de18a146bec8b71} 
+void {\bfseries operator\texorpdfstring{$\ast$}{*}=} (int)
+\item 
+\Hypertarget{classDisplay_a5bdb3859326fe113497b296257446688}\label{classDisplay_a5bdb3859326fe113497b296257446688} 
+void {\bfseries set\+\_\+color\+\_\+shadow} (string cor)
+\item 
+\Hypertarget{classDisplay_a786ae770b38dc3b052941344a0fb339a}\label{classDisplay_a786ae770b38dc3b052941344a0fb339a} 
+int {\bfseries size\+\_\+display} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classPrintables}{Printables}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Printables} (\mbox{\hyperlink{classTema}{THEME}} \texorpdfstring{$\ast$}{*})
+\item 
+virtual void {\bfseries write} (void \texorpdfstring{$\ast$}{*}obj, Func\+\_\+\+Obj fx=nullptr)
+\item 
+virtual void {\bfseries read} (void \texorpdfstring{$\ast$}{*}obj, Func\+\_\+\+Obj fx=nullptr)
+\item 
+virtual void {\bfseries show} (string, vector$<$ string $>$ \texorpdfstring{$\ast$}{*}buf=nullptr)
+\item 
+int {\bfseries n\+\_\+lines} ()
+\item 
+void {\bfseries set\+\_\+tema} (\mbox{\hyperlink{classTema}{THEME}} \texorpdfstring{$\ast$}{*})
+\item 
+\mbox{\hyperlink{classTema}{THEME}} {\bfseries get\+\_\+tema} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classDisplay_aab9074ba7f7c639d4525d1d825597dda}\label{classDisplay_aab9074ba7f7c639d4525d1d825597dda} 
+static void {\bfseries read} (\mbox{\hyperlink{classDisplay}{Dp}}, vector$<$ string $>$ \texorpdfstring{$\ast$}{*}questions, vector$<$ string $>$ \texorpdfstring{$\ast$}{*}answers, int n=0)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classDisplay_a09bd0b0191c7dd576fc161186bc0d839}\label{classDisplay_a09bd0b0191c7dd576fc161186bc0d839} 
+\mbox{\hyperlink{classDisplay}{Dp}} \texorpdfstring{$\ast$}{*} {\bfseries operator$<$$<$} (\mbox{\hyperlink{classDisplay}{Dp}} \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{classDisplay}{Dp}} \&)
+\item 
+\Hypertarget{classDisplay_a83bd6d1d8ba0f72cd9ab0bdefe98fe64}\label{classDisplay_a83bd6d1d8ba0f72cd9ab0bdefe98fe64} 
+\mbox{\hyperlink{classDisplay}{Dp}} \texorpdfstring{$\ast$}{*} {\bfseries operator$>$$>$} (\mbox{\hyperlink{classDisplay}{Dp}} \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{classDisplay}{Dp}} \&)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classPrintables}{Printables}}}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries copy} (vector$<$ string $>$ \texorpdfstring{$\ast$}{*})
+\item 
+void {\bfseries loop} (int i, int end, vector$<$ string $>$ \texorpdfstring{$\ast$}{*}, string)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classPrintables}{Printables}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTema}{THEME}} \texorpdfstring{$\ast$}{*} {\bfseries th}
+\item 
+vector$<$ string $>$ {\bfseries buffer}
+\item 
+\mbox{\hyperlink{classTema}{THEME}} {\bfseries modelo}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classDisplay_a6e4dc43f1c034564ac82af9f1e093c21}\label{classDisplay_a6e4dc43f1c034564ac82af9f1e093c21} 
+\index{Display@{Display}!clear@{clear}}
+\index{clear@{clear}!Display@{Display}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Display\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classPrintables}{Printables}}.
+
+\Hypertarget{classDisplay_a285a9ba04db91c125f1f94016b734bd1}\label{classDisplay_a285a9ba04db91c125f1f94016b734bd1} 
+\index{Display@{Display}!write@{write}}
+\index{write@{write}!Display@{Display}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void Dp\+::write (\begin{DoxyParamCaption}\item[{string}]{text,  }\item[{MODO}]{m = {\ttfamily NORMAL},  }\item[{Func\+\_\+\+Obj}]{fy = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classPrintables}{Printables}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/display.\+hpp\item 
+src/display.\+cpp\end{DoxyCompactItemize}

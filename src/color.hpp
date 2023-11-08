@@ -31,35 +31,35 @@ namespace COR{
 			 MAGENT_KEY="\033[35m",                     ///< #F0F
 			 CYAN_KEY="\033[36m",                           ///< #0FF
 			 GRAY_LIGHT_KEY="\033[37m",              ///< #789 
-			 RED_LIGHT_KEY="\033[91m",                 ///< #F64
-             GREEN_LIGHT_KEY="\033[92m",
-			 YELLOW_LIGHT_KEY="\033[93m",
-			 BLUE_LIGHT_KEY="\033[94m",
-			 MAGENT_LIGHT_KEY="\033[95m",
-			 CYAN_LIGHT_KEY="\033[96m",
-			 WHITE_KEY="\033[97m",
-			 GRAY_KEY="\033[90m";
+			 RED_LIGHT_KEY="\033[91m",                 ///< #F66
+             GREEN_LIGHT_KEY="\033[92m",            ///< #6F6
+			 YELLOW_LIGHT_KEY="\033[93m",          ///< #FF6
+			 BLUE_LIGHT_KEY="\033[94m",               ///< #66F
+			 MAGENT_LIGHT_KEY="\033[95m",         ///< #F6F
+			 CYAN_LIGHT_KEY="\033[96m",               ///< #6FF
+			 WHITE_KEY="\033[97m",                          ///< #FFF
+			 GRAY_KEY="\033[90m";                             ///< #666
 }
 
 //!	 Conjunto de cores para background.
 	namespace BKG{
              const string
-			 BLACK_BKG="\033[40m",
-			 GRAY_LIGHT_BKG="\033[47m",
-			 RED_LIGHT_BKG="\033[101m",
-             GREEN_LIGHT_BKG="\033[102m",
-			 YELLOW_LIGHT_BKG="\033[103m",
-			 BLUE_LIGHT_BKG="\033[104m",
-			 MAGENT_LIGHT_BKG="\033[105m",
-			 CYAN_LIGHT_BKG="\033[106m",
-             RED_BKG="\033[41m",
-             GREEN_BKG="\033[42m",
-			 YELLOW_BKG="\033[43m",
-			 BLUE_BKG="\033[44m",
-			 MAGENT_BKG="\033[45m",
-			 CYAN_BKG="\033[46m",
-			 WHITE_BKG="\033[107m",
-			 GRAY_BKG="\033[100m";
+			 BLACK_BKG="\033[40m",                     ///< default
+			 GRAY_LIGHT_BKG="\033[47m",           ///< #666
+			 RED_LIGHT_BKG="\033[101m",           ///< #F66
+             GREEN_LIGHT_BKG="\033[102m",      ///< #6F6
+			 YELLOW_LIGHT_BKG="\033[103m",    ///< #FF6
+			 BLUE_LIGHT_BKG="\033[104m",          ///< #66F
+			 MAGENT_LIGHT_BKG="\033[105m",    ///< #F6F
+			 CYAN_LIGHT_BKG="\033[106m",          ///< #6FF
+             RED_BKG="\033[41m",                            ///< #F00
+             GREEN_BKG="\033[42m",                       ///< #0F0
+			 YELLOW_BKG="\033[43m",                     ///< #FF0
+			 BLUE_BKG="\033[44m",                           ///< #00F
+			 MAGENT_BKG="\033[45m",                    ///< #F0F
+			 CYAN_BKG="\033[46m",                          ///< #0FF
+			 WHITE_BKG="\033[107m",                      ///< #FFF
+			 GRAY_BKG="\033[100m";                         ///< #333
 }
 
 //!	 Conjunto de efeitos para terminal.

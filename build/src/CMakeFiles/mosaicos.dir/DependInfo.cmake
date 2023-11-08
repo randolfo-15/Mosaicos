@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/data/data/com.termux/files/home/Mosaicos/src/display.cpp" "src/CMakeFiles/mosaicos.dir/display.cpp.o" "gcc" "src/CMakeFiles/mosaicos.dir/display.cpp.o.d"
-  "/data/data/com.termux/files/home/Mosaicos/src/printables.cpp" "src/CMakeFiles/mosaicos.dir/printables.cpp.o" "gcc" "src/CMakeFiles/mosaicos.dir/printables.cpp.o.d"
-  "/data/data/com.termux/files/home/Mosaicos/src/tema.cpp" "src/CMakeFiles/mosaicos.dir/tema.cpp.o" "gcc" "src/CMakeFiles/mosaicos.dir/tema.cpp.o.d"
+  "/home/randolfo/Documentos/Mosaicos/src/display.cpp" "src/CMakeFiles/mosaicos.dir/display.cpp.o" "gcc" "src/CMakeFiles/mosaicos.dir/display.cpp.o.d"
+  "/home/randolfo/Documentos/Mosaicos/src/printables.cpp" "src/CMakeFiles/mosaicos.dir/printables.cpp.o" "gcc" "src/CMakeFiles/mosaicos.dir/printables.cpp.o.d"
+  "/home/randolfo/Documentos/Mosaicos/src/tema.cpp" "src/CMakeFiles/mosaicos.dir/tema.cpp.o" "gcc" "src/CMakeFiles/mosaicos.dir/tema.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

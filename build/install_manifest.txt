@@ -1,9 +1,0 @@
-/data/data/com.termux/files/usr/lib/cmake/Mosaicos/MosaicosConfig.cmake
-/data/data/com.termux/files/usr/lib/cmake/Mosaicos/MosaicosConfigVersion.cmake
-/data/data/com.termux/files/usr/lib/libmosaicos.a
-/data/data/com.termux/files/usr/include/mosaicos/tema.hpp
-/data/data/com.termux/files/usr/include/mosaicos/printables.hpp
-/data/data/com.termux/files/usr/include/mosaicos/display.hpp
-/data/data/com.termux/files/usr/include/mosaicos/color.hpp
-/data/data/com.termux/files/usr/lib/cmake/Mosaicos/mosaicosTarget.cmake
-/data/data/com.termux/files/usr/lib/cmake/Mosaicos/mosaicosTarget-relwithdebinfo.cmake

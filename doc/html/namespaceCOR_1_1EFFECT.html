@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -48,6 +52,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('namespaceCOR_1_1EFFECT.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -69,11 +90,6 @@ $(function() {
 </div>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespaceCOR.html">COR</a></li><li class="navelem"><a class="el" href="namespaceCOR_1_1EFFECT.html">EFFECT</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#var-members">Variables</a>  </div>
@@ -86,43 +102,198 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:af263217ef57df923e4f3a8f965227cc6" id="r_af263217ef57df923e4f3a8f965227cc6"><td class="memItemLeft" align="right" valign="top"><a id="af263217ef57df923e4f3a8f965227cc6" name="af263217ef57df923e4f3a8f965227cc6"></a>
-const string&#160;</td><td class="memItemRight" valign="bottom"><b>ITALIC</b> =&quot;\033[3m&quot;</td></tr>
+<tr class="memitem:af263217ef57df923e4f3a8f965227cc6" id="r_af263217ef57df923e4f3a8f965227cc6"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceCOR_1_1EFFECT.html#af263217ef57df923e4f3a8f965227cc6">ITALIC</a> =&quot;\033[3m&quot;</td></tr>
 <tr class="separator:af263217ef57df923e4f3a8f965227cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ea2f11d0938704695837e0abc5a37a6" id="r_a8ea2f11d0938704695837e0abc5a37a6"><td class="memItemLeft" align="right" valign="top"><a id="a8ea2f11d0938704695837e0abc5a37a6" name="a8ea2f11d0938704695837e0abc5a37a6"></a>
-const string&#160;</td><td class="memItemRight" valign="bottom"><b>BLINK</b> =&quot;\033[5m&quot;</td></tr>
+<tr class="memitem:a8ea2f11d0938704695837e0abc5a37a6" id="r_a8ea2f11d0938704695837e0abc5a37a6"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceCOR_1_1EFFECT.html#a8ea2f11d0938704695837e0abc5a37a6">BLINK</a> =&quot;\033[5m&quot;</td></tr>
 <tr class="separator:a8ea2f11d0938704695837e0abc5a37a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46ed7526579527e69b56a2ab737eca32" id="r_a46ed7526579527e69b56a2ab737eca32"><td class="memItemLeft" align="right" valign="top"><a id="a46ed7526579527e69b56a2ab737eca32" name="a46ed7526579527e69b56a2ab737eca32"></a>
-const string&#160;</td><td class="memItemRight" valign="bottom"><b>DEFAULT_BKG</b> =&quot;\033[49m&quot;</td></tr>
+<tr class="memitem:a46ed7526579527e69b56a2ab737eca32" id="r_a46ed7526579527e69b56a2ab737eca32"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceCOR_1_1EFFECT.html#a46ed7526579527e69b56a2ab737eca32">DEFAULT_BKG</a> =&quot;\033[49m&quot;</td></tr>
 <tr class="separator:a46ed7526579527e69b56a2ab737eca32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae15d8ebaaaa0503dc12bea82991fd218" id="r_ae15d8ebaaaa0503dc12bea82991fd218"><td class="memItemLeft" align="right" valign="top"><a id="ae15d8ebaaaa0503dc12bea82991fd218" name="ae15d8ebaaaa0503dc12bea82991fd218"></a>
-const string&#160;</td><td class="memItemRight" valign="bottom"><b>BOLD_KEY</b> =&quot;\033[1m&quot;</td></tr>
+<tr class="memitem:ae15d8ebaaaa0503dc12bea82991fd218" id="r_ae15d8ebaaaa0503dc12bea82991fd218"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceCOR_1_1EFFECT.html#ae15d8ebaaaa0503dc12bea82991fd218">BOLD_KEY</a> =&quot;\033[1m&quot;</td></tr>
 <tr class="separator:ae15d8ebaaaa0503dc12bea82991fd218"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b4c3a326ba7c0f0618d39aff8cfd41b" id="r_a1b4c3a326ba7c0f0618d39aff8cfd41b"><td class="memItemLeft" align="right" valign="top"><a id="a1b4c3a326ba7c0f0618d39aff8cfd41b" name="a1b4c3a326ba7c0f0618d39aff8cfd41b"></a>
-const string&#160;</td><td class="memItemRight" valign="bottom"><b>DARK</b> =&quot;\033[2m&quot;</td></tr>
+<tr class="memitem:a1b4c3a326ba7c0f0618d39aff8cfd41b" id="r_a1b4c3a326ba7c0f0618d39aff8cfd41b"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceCOR_1_1EFFECT.html#a1b4c3a326ba7c0f0618d39aff8cfd41b">DARK</a> =&quot;\033[2m&quot;</td></tr>
 <tr class="separator:a1b4c3a326ba7c0f0618d39aff8cfd41b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16befdd515132e2be49a082aa41a34ec" id="r_a16befdd515132e2be49a082aa41a34ec"><td class="memItemLeft" align="right" valign="top"><a id="a16befdd515132e2be49a082aa41a34ec" name="a16befdd515132e2be49a082aa41a34ec"></a>
-const string&#160;</td><td class="memItemRight" valign="bottom"><b>UNDERLINE</b> =&quot;\033[4m&quot;</td></tr>
+<tr class="memitem:a16befdd515132e2be49a082aa41a34ec" id="r_a16befdd515132e2be49a082aa41a34ec"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceCOR_1_1EFFECT.html#a16befdd515132e2be49a082aa41a34ec">UNDERLINE</a> =&quot;\033[4m&quot;</td></tr>
 <tr class="separator:a16befdd515132e2be49a082aa41a34ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b83b2bb17744087a1ef91fffc267760" id="r_a8b83b2bb17744087a1ef91fffc267760"><td class="memItemLeft" align="right" valign="top"><a id="a8b83b2bb17744087a1ef91fffc267760" name="a8b83b2bb17744087a1ef91fffc267760"></a>
-const string&#160;</td><td class="memItemRight" valign="bottom"><b>REVERSE</b> =&quot;\033[7m&quot;</td></tr>
+<tr class="memitem:a8b83b2bb17744087a1ef91fffc267760" id="r_a8b83b2bb17744087a1ef91fffc267760"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceCOR_1_1EFFECT.html#a8b83b2bb17744087a1ef91fffc267760">REVERSE</a> =&quot;\033[7m&quot;</td></tr>
 <tr class="separator:a8b83b2bb17744087a1ef91fffc267760"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab19ee6632f9b7d2413d4bd6c099e2bf" id="r_aab19ee6632f9b7d2413d4bd6c099e2bf"><td class="memItemLeft" align="right" valign="top"><a id="aab19ee6632f9b7d2413d4bd6c099e2bf" name="aab19ee6632f9b7d2413d4bd6c099e2bf"></a>
-const string&#160;</td><td class="memItemRight" valign="bottom"><b>HIDDEN</b> =&quot;\033[8m&quot;</td></tr>
+<tr class="memitem:aab19ee6632f9b7d2413d4bd6c099e2bf" id="r_aab19ee6632f9b7d2413d4bd6c099e2bf"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceCOR_1_1EFFECT.html#aab19ee6632f9b7d2413d4bd6c099e2bf">HIDDEN</a> =&quot;\033[8m&quot;</td></tr>
 <tr class="separator:aab19ee6632f9b7d2413d4bd6c099e2bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6b26b8b1c1ff8915c93ee3b461017ee" id="r_af6b26b8b1c1ff8915c93ee3b461017ee"><td class="memItemLeft" align="right" valign="top"><a id="af6b26b8b1c1ff8915c93ee3b461017ee" name="af6b26b8b1c1ff8915c93ee3b461017ee"></a>
-const string&#160;</td><td class="memItemRight" valign="bottom"><b>TACHADO</b> =&quot;\033[9m&quot;</td></tr>
+<tr class="memitem:af6b26b8b1c1ff8915c93ee3b461017ee" id="r_af6b26b8b1c1ff8915c93ee3b461017ee"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceCOR_1_1EFFECT.html#af6b26b8b1c1ff8915c93ee3b461017ee">TACHADO</a> =&quot;\033[9m&quot;</td></tr>
 <tr class="separator:af6b26b8b1c1ff8915c93ee3b461017ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac93f38df13ff267c974fdd2d3eaa0e09" id="r_ac93f38df13ff267c974fdd2d3eaa0e09"><td class="memItemLeft" align="right" valign="top"><a id="ac93f38df13ff267c974fdd2d3eaa0e09" name="ac93f38df13ff267c974fdd2d3eaa0e09"></a>
-const string&#160;</td><td class="memItemRight" valign="bottom"><b>DEFAULT_KEY</b> =&quot;\033[0;39m&quot;</td></tr>
+<tr class="memitem:ac93f38df13ff267c974fdd2d3eaa0e09" id="r_ac93f38df13ff267c974fdd2d3eaa0e09"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceCOR_1_1EFFECT.html#ac93f38df13ff267c974fdd2d3eaa0e09">DEFAULT_KEY</a> =&quot;\033[0;39m&quot;</td></tr>
 <tr class="separator:ac93f38df13ff267c974fdd2d3eaa0e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Conjunto de efeitos para terminal. </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Variable Documentation</h2>
+<a id="a8ea2f11d0938704695837e0abc5a37a6" name="a8ea2f11d0938704695837e0abc5a37a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ea2f11d0938704695837e0abc5a37a6">&#9670;&#160;</a></span>BLINK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string COR::EFFECT::BLINK =&quot;\033[5m&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="color_8hpp_source.html#l00069">69</a> of file <a class="el" href="color_8hpp_source.html">color.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ae15d8ebaaaa0503dc12bea82991fd218" name="ae15d8ebaaaa0503dc12bea82991fd218"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae15d8ebaaaa0503dc12bea82991fd218">&#9670;&#160;</a></span>BOLD_KEY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string COR::EFFECT::BOLD_KEY =&quot;\033[1m&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="color_8hpp_source.html#l00071">71</a> of file <a class="el" href="color_8hpp_source.html">color.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a1b4c3a326ba7c0f0618d39aff8cfd41b" name="a1b4c3a326ba7c0f0618d39aff8cfd41b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b4c3a326ba7c0f0618d39aff8cfd41b">&#9670;&#160;</a></span>DARK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string COR::EFFECT::DARK =&quot;\033[2m&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="color_8hpp_source.html#l00072">72</a> of file <a class="el" href="color_8hpp_source.html">color.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a46ed7526579527e69b56a2ab737eca32" name="a46ed7526579527e69b56a2ab737eca32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46ed7526579527e69b56a2ab737eca32">&#9670;&#160;</a></span>DEFAULT_BKG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string COR::EFFECT::DEFAULT_BKG =&quot;\033[49m&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="color_8hpp_source.html#l00070">70</a> of file <a class="el" href="color_8hpp_source.html">color.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ac93f38df13ff267c974fdd2d3eaa0e09" name="ac93f38df13ff267c974fdd2d3eaa0e09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac93f38df13ff267c974fdd2d3eaa0e09">&#9670;&#160;</a></span>DEFAULT_KEY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string COR::EFFECT::DEFAULT_KEY =&quot;\033[0;39m&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="color_8hpp_source.html#l00077">77</a> of file <a class="el" href="color_8hpp_source.html">color.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aab19ee6632f9b7d2413d4bd6c099e2bf" name="aab19ee6632f9b7d2413d4bd6c099e2bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab19ee6632f9b7d2413d4bd6c099e2bf">&#9670;&#160;</a></span>HIDDEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string COR::EFFECT::HIDDEN =&quot;\033[8m&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="color_8hpp_source.html#l00075">75</a> of file <a class="el" href="color_8hpp_source.html">color.hpp</a>.</p>
+
+</div>
+</div>
+<a id="af263217ef57df923e4f3a8f965227cc6" name="af263217ef57df923e4f3a8f965227cc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af263217ef57df923e4f3a8f965227cc6">&#9670;&#160;</a></span>ITALIC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string COR::EFFECT::ITALIC =&quot;\033[3m&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="color_8hpp_source.html#l00068">68</a> of file <a class="el" href="color_8hpp_source.html">color.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a8b83b2bb17744087a1ef91fffc267760" name="a8b83b2bb17744087a1ef91fffc267760"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b83b2bb17744087a1ef91fffc267760">&#9670;&#160;</a></span>REVERSE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string COR::EFFECT::REVERSE =&quot;\033[7m&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="color_8hpp_source.html#l00074">74</a> of file <a class="el" href="color_8hpp_source.html">color.hpp</a>.</p>
+
+</div>
+</div>
+<a id="af6b26b8b1c1ff8915c93ee3b461017ee" name="af6b26b8b1c1ff8915c93ee3b461017ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6b26b8b1c1ff8915c93ee3b461017ee">&#9670;&#160;</a></span>TACHADO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string COR::EFFECT::TACHADO =&quot;\033[9m&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="color_8hpp_source.html#l00076">76</a> of file <a class="el" href="color_8hpp_source.html">color.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a16befdd515132e2be49a082aa41a34ec" name="a16befdd515132e2be49a082aa41a34ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16befdd515132e2be49a082aa41a34ec">&#9670;&#160;</a></span>UNDERLINE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string COR::EFFECT::UNDERLINE =&quot;\033[4m&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="color_8hpp_source.html#l00073">73</a> of file <a class="el" href="color_8hpp_source.html">color.hpp</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceCOR.html">COR</a></li><li class="navelem"><a class="el" href="namespaceCOR_1_1EFFECT.html">EFFECT</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
 </body>
 </html>

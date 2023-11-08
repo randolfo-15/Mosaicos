@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -48,6 +52,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classDisplay.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -69,11 +90,12 @@ $(function() {
 </div>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classDisplay-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Display Class Reference</div></div>
@@ -85,153 +107,271 @@ Inheritance diagram for Display:</div>
  <div class="center">
   <img src="classDisplay.png" usemap="#Display_map" alt=""/>
   <map id="Display_map" name="Display_map">
-<area href="classPrintables.html" alt="Printables" shape="rect" coords="0,0,68,24"/>
+<area href="classPrintables.html" title="Caracteriza um termo, quanto a cor e efeitos." alt="Printables" shape="rect" coords="0,0,68,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a511977ccfd53a2c9bfb5a4ddfb7d4f22" id="r_a511977ccfd53a2c9bfb5a4ddfb7d4f22"><td class="memItemLeft" align="right" valign="top"><a id="a511977ccfd53a2c9bfb5a4ddfb7d4f22" name="a511977ccfd53a2c9bfb5a4ddfb7d4f22"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Display</b> (<a class="el" href="classTema.html">THEME</a> *)</td></tr>
+<tr class="memitem:a511977ccfd53a2c9bfb5a4ddfb7d4f22" id="r_a511977ccfd53a2c9bfb5a4ddfb7d4f22"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a511977ccfd53a2c9bfb5a4ddfb7d4f22">Display</a> (<a class="el" href="printables_8hpp.html#a49572a996aee8855b3ba8ad8469e8d22">THEME</a> *)</td></tr>
 <tr class="separator:a511977ccfd53a2c9bfb5a4ddfb7d4f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61a7cb16313ae61a5b5bae704c3d2617" id="r_a61a7cb16313ae61a5b5bae704c3d2617"><td class="memItemLeft" align="right" valign="top"><a id="a61a7cb16313ae61a5b5bae704c3d2617" name="a61a7cb16313ae61a5b5bae704c3d2617"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Display</b> (void(*)(<a class="el" href="classDisplay.html">Display</a> *))</td></tr>
+<tr class="memitem:a61a7cb16313ae61a5b5bae704c3d2617" id="r_a61a7cb16313ae61a5b5bae704c3d2617"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a61a7cb16313ae61a5b5bae704c3d2617">Display</a> (void(*)(<a class="el" href="classDisplay.html">Display</a> *))</td></tr>
 <tr class="separator:a61a7cb16313ae61a5b5bae704c3d2617"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb035042209119f72f654d86bbfc9c98" id="r_aeb035042209119f72f654d86bbfc9c98"><td class="memItemLeft" align="right" valign="top"><a id="aeb035042209119f72f654d86bbfc9c98" name="aeb035042209119f72f654d86bbfc9c98"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>init_mode</b> (void(*)(<a class="el" href="classDisplay.html">Display</a> *))</td></tr>
+<tr class="memitem:aeb035042209119f72f654d86bbfc9c98" id="r_aeb035042209119f72f654d86bbfc9c98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#aeb035042209119f72f654d86bbfc9c98">init_mode</a> (void(*)(<a class="el" href="classDisplay.html">Display</a> *))</td></tr>
 <tr class="separator:aeb035042209119f72f654d86bbfc9c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a285a9ba04db91c125f1f94016b734bd1" id="r_a285a9ba04db91c125f1f94016b734bd1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a285a9ba04db91c125f1f94016b734bd1">write</a> (string, MODO m=NORMAL, Func_Obj fy=nullptr) override</td></tr>
+<tr class="memitem:a285a9ba04db91c125f1f94016b734bd1" id="r_a285a9ba04db91c125f1f94016b734bd1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a285a9ba04db91c125f1f94016b734bd1">write</a> (string, <a class="el" href="printables_8hpp.html#a972bb187e61ca0dfa97d29c839af77c9">MODO</a> m=<a class="el" href="printables_8hpp.html#a2bc0dea73b5708f50d509e3b9b8eb709a50d1448013c6f17125caee18aa418af7">NORMAL</a>, <a class="el" href="printables_8hpp.html#a78c36b04d86ac15547835116ba747c7a">Func_Obj</a> fy=nullptr) override</td></tr>
+<tr class="memdesc:a285a9ba04db91c125f1f94016b734bd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write.  <br /></td></tr>
 <tr class="separator:a285a9ba04db91c125f1f94016b734bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f37df54881eebc4eba88190f77b854b" id="r_a8f37df54881eebc4eba88190f77b854b"><td class="memItemLeft" align="right" valign="top"><a id="a8f37df54881eebc4eba88190f77b854b" name="a8f37df54881eebc4eba88190f77b854b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>show</b> ()</td></tr>
+<tr class="memitem:a8f37df54881eebc4eba88190f77b854b" id="r_a8f37df54881eebc4eba88190f77b854b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a8f37df54881eebc4eba88190f77b854b">show</a> ()</td></tr>
 <tr class="separator:a8f37df54881eebc4eba88190f77b854b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cc249f036773c1c7fcda0418e128e91" id="r_a3cc249f036773c1c7fcda0418e128e91"><td class="memItemLeft" align="right" valign="top"><a id="a3cc249f036773c1c7fcda0418e128e91" name="a3cc249f036773c1c7fcda0418e128e91"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>show</b> (int grupo, int x, int y)</td></tr>
+<tr class="memitem:a3cc249f036773c1c7fcda0418e128e91" id="r_a3cc249f036773c1c7fcda0418e128e91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a3cc249f036773c1c7fcda0418e128e91">show</a> (int grupo, int x, int y)</td></tr>
 <tr class="separator:a3cc249f036773c1c7fcda0418e128e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2740b779d61e461c4dcaaf34f1fcd8f" id="r_ad2740b779d61e461c4dcaaf34f1fcd8f"><td class="memItemLeft" align="right" valign="top"><a id="ad2740b779d61e461c4dcaaf34f1fcd8f" name="ad2740b779d61e461c4dcaaf34f1fcd8f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> ()</td></tr>
+<tr class="memitem:ad2740b779d61e461c4dcaaf34f1fcd8f" id="r_ad2740b779d61e461c4dcaaf34f1fcd8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#ad2740b779d61e461c4dcaaf34f1fcd8f">update</a> ()</td></tr>
 <tr class="separator:ad2740b779d61e461c4dcaaf34f1fcd8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a847a983130722a288cc98d3a31c9a627" id="r_a847a983130722a288cc98d3a31c9a627"><td class="memItemLeft" align="right" valign="top"><a id="a847a983130722a288cc98d3a31c9a627" name="a847a983130722a288cc98d3a31c9a627"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>shadow</b> (bool x=true)</td></tr>
+<tr class="memitem:a847a983130722a288cc98d3a31c9a627" id="r_a847a983130722a288cc98d3a31c9a627"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a847a983130722a288cc98d3a31c9a627">shadow</a> (bool x=true)</td></tr>
 <tr class="separator:a847a983130722a288cc98d3a31c9a627"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2f3a1caf8dc0cbd6db21350a909307e" id="r_ae2f3a1caf8dc0cbd6db21350a909307e"><td class="memItemLeft" align="right" valign="top"><a id="ae2f3a1caf8dc0cbd6db21350a909307e" name="ae2f3a1caf8dc0cbd6db21350a909307e"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>side_shadow</b> (int x=-1)</td></tr>
+<tr class="memitem:ae2f3a1caf8dc0cbd6db21350a909307e" id="r_ae2f3a1caf8dc0cbd6db21350a909307e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#ae2f3a1caf8dc0cbd6db21350a909307e">side_shadow</a> (int x=-1)</td></tr>
 <tr class="separator:ae2f3a1caf8dc0cbd6db21350a909307e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9ef413a9ffdb0e7d1ec7ab8a5db6dad" id="r_af9ef413a9ffdb0e7d1ec7ab8a5db6dad"><td class="memItemLeft" align="right" valign="top"><a id="af9ef413a9ffdb0e7d1ec7ab8a5db6dad" name="af9ef413a9ffdb0e7d1ec7ab8a5db6dad"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>skip_line</b> (int n=1)</td></tr>
+<tr class="memitem:af9ef413a9ffdb0e7d1ec7ab8a5db6dad" id="r_af9ef413a9ffdb0e7d1ec7ab8a5db6dad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#af9ef413a9ffdb0e7d1ec7ab8a5db6dad">skip_line</a> (int n=1)</td></tr>
 <tr class="separator:af9ef413a9ffdb0e7d1ec7ab8a5db6dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57db6b43b6b5139f502fa2d3579873b9" id="r_a57db6b43b6b5139f502fa2d3579873b9"><td class="memItemLeft" align="right" valign="top"><a id="a57db6b43b6b5139f502fa2d3579873b9" name="a57db6b43b6b5139f502fa2d3579873b9"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>dist_x</b> (int x=-1)</td></tr>
+<tr class="memitem:a57db6b43b6b5139f502fa2d3579873b9" id="r_a57db6b43b6b5139f502fa2d3579873b9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a57db6b43b6b5139f502fa2d3579873b9">dist_x</a> (int x=-1)</td></tr>
 <tr class="separator:a57db6b43b6b5139f502fa2d3579873b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0e710dfeb68db46e50535c23048d374" id="r_ad0e710dfeb68db46e50535c23048d374"><td class="memItemLeft" align="right" valign="top"><a id="ad0e710dfeb68db46e50535c23048d374" name="ad0e710dfeb68db46e50535c23048d374"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>dist_y</b> (int y=-1)</td></tr>
+<tr class="memitem:ad0e710dfeb68db46e50535c23048d374" id="r_ad0e710dfeb68db46e50535c23048d374"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#ad0e710dfeb68db46e50535c23048d374">dist_y</a> (int y=-1)</td></tr>
 <tr class="separator:ad0e710dfeb68db46e50535c23048d374"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec9a2ed1d0a7126b35fcd0027f844d40" id="r_aec9a2ed1d0a7126b35fcd0027f844d40"><td class="memItemLeft" align="right" valign="top"><a id="aec9a2ed1d0a7126b35fcd0027f844d40" name="aec9a2ed1d0a7126b35fcd0027f844d40"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>spacing</b> (int t=-1)</td></tr>
+<tr class="memitem:aec9a2ed1d0a7126b35fcd0027f844d40" id="r_aec9a2ed1d0a7126b35fcd0027f844d40"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#aec9a2ed1d0a7126b35fcd0027f844d40">spacing</a> (int t=-1)</td></tr>
 <tr class="separator:aec9a2ed1d0a7126b35fcd0027f844d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69cfd676fe09852c6812274343262dae" id="r_a69cfd676fe09852c6812274343262dae"><td class="memItemLeft" align="right" valign="top"><a id="a69cfd676fe09852c6812274343262dae" name="a69cfd676fe09852c6812274343262dae"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>width</b> (int w=-1)</td></tr>
+<tr class="memitem:a69cfd676fe09852c6812274343262dae" id="r_a69cfd676fe09852c6812274343262dae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a69cfd676fe09852c6812274343262dae">width</a> (int w=-1)</td></tr>
 <tr class="separator:a69cfd676fe09852c6812274343262dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae29d43f45d232ad7e1c599488c785a02" id="r_ae29d43f45d232ad7e1c599488c785a02"><td class="memItemLeft" align="right" valign="top"><a id="ae29d43f45d232ad7e1c599488c785a02" name="ae29d43f45d232ad7e1c599488c785a02"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>distribution</b> (slice_mode)</td></tr>
+<tr class="memitem:ae29d43f45d232ad7e1c599488c785a02" id="r_ae29d43f45d232ad7e1c599488c785a02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#ae29d43f45d232ad7e1c599488c785a02">distribution</a> (slice_mode)</td></tr>
 <tr class="separator:ae29d43f45d232ad7e1c599488c785a02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbda06c9ac760da3a57cda21759f34ba" id="r_abbda06c9ac760da3a57cda21759f34ba"><td class="memItemLeft" align="right" valign="top"><a id="abbda06c9ac760da3a57cda21759f34ba" name="abbda06c9ac760da3a57cda21759f34ba"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>n_lines</b> ()</td></tr>
+<tr class="memitem:abbda06c9ac760da3a57cda21759f34ba" id="r_abbda06c9ac760da3a57cda21759f34ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#abbda06c9ac760da3a57cda21759f34ba">n_lines</a> ()</td></tr>
 <tr class="separator:abbda06c9ac760da3a57cda21759f34ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e4dc43f1c034564ac82af9f1e093c21" id="r_a6e4dc43f1c034564ac82af9f1e093c21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a6e4dc43f1c034564ac82af9f1e093c21">clear</a> () override</td></tr>
+<tr class="memdesc:a6e4dc43f1c034564ac82af9f1e093c21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remoção.  <br /></td></tr>
 <tr class="separator:a6e4dc43f1c034564ac82af9f1e093c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab554bd0444dc78ddc30bc1f5641d1545" id="r_ab554bd0444dc78ddc30bc1f5641d1545"><td class="memItemLeft" align="right" valign="top"><a id="ab554bd0444dc78ddc30bc1f5641d1545" name="ab554bd0444dc78ddc30bc1f5641d1545"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>insert</b> (int pos, string text, MODO m=NORMAL, Func_Obj fx=nullptr)</td></tr>
+<tr class="memitem:ab554bd0444dc78ddc30bc1f5641d1545" id="r_ab554bd0444dc78ddc30bc1f5641d1545"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#ab554bd0444dc78ddc30bc1f5641d1545">insert</a> (int pos, string text, <a class="el" href="printables_8hpp.html#a972bb187e61ca0dfa97d29c839af77c9">MODO</a> m=<a class="el" href="printables_8hpp.html#a2bc0dea73b5708f50d509e3b9b8eb709a50d1448013c6f17125caee18aa418af7">NORMAL</a>, <a class="el" href="printables_8hpp.html#a78c36b04d86ac15547835116ba747c7a">Func_Obj</a> fx=nullptr)</td></tr>
 <tr class="separator:ab554bd0444dc78ddc30bc1f5641d1545"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47c733b9edbb8a86412eecce3488e852" id="r_a47c733b9edbb8a86412eecce3488e852"><td class="memItemLeft" align="right" valign="top"><a id="a47c733b9edbb8a86412eecce3488e852" name="a47c733b9edbb8a86412eecce3488e852"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>remove</b> (int)</td></tr>
+<tr class="memitem:a47c733b9edbb8a86412eecce3488e852" id="r_a47c733b9edbb8a86412eecce3488e852"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a47c733b9edbb8a86412eecce3488e852">remove</a> (int)</td></tr>
 <tr class="separator:a47c733b9edbb8a86412eecce3488e852"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4f48a03a3d904142a7209955ace6f90" id="r_ac4f48a03a3d904142a7209955ace6f90"><td class="memItemLeft" align="right" valign="top"><a id="ac4f48a03a3d904142a7209955ace6f90" name="ac4f48a03a3d904142a7209955ace6f90"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>operator+=</b> (<a class="el" href="classDisplay.html">Display</a> &amp;)</td></tr>
+<tr class="memitem:ac4f48a03a3d904142a7209955ace6f90" id="r_ac4f48a03a3d904142a7209955ace6f90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#ac4f48a03a3d904142a7209955ace6f90">operator+=</a> (<a class="el" href="classDisplay.html">Display</a> &amp;)</td></tr>
 <tr class="separator:ac4f48a03a3d904142a7209955ace6f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07861e321bcac8bb52057681c9c76d46" id="r_a07861e321bcac8bb52057681c9c76d46"><td class="memItemLeft" align="right" valign="top"><a id="a07861e321bcac8bb52057681c9c76d46" name="a07861e321bcac8bb52057681c9c76d46"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>operator-=</b> (<a class="el" href="classDisplay.html">Display</a> &amp;)</td></tr>
+<tr class="memitem:a07861e321bcac8bb52057681c9c76d46" id="r_a07861e321bcac8bb52057681c9c76d46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a07861e321bcac8bb52057681c9c76d46">operator-=</a> (<a class="el" href="classDisplay.html">Display</a> &amp;)</td></tr>
 <tr class="separator:a07861e321bcac8bb52057681c9c76d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a708fb6ae2b69e95be23f043217ebfd6c" id="r_a708fb6ae2b69e95be23f043217ebfd6c"><td class="memItemLeft" align="right" valign="top"><a id="a708fb6ae2b69e95be23f043217ebfd6c" name="a708fb6ae2b69e95be23f043217ebfd6c"></a>
-<a class="el" href="classDisplay.html">Dp</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (<a class="el" href="classDisplay.html">Dp</a> &amp;)</td></tr>
+<tr class="memitem:a708fb6ae2b69e95be23f043217ebfd6c" id="r_a708fb6ae2b69e95be23f043217ebfd6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDisplay.html">Dp</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a708fb6ae2b69e95be23f043217ebfd6c">operator&lt;&lt;</a> (<a class="el" href="classDisplay.html">Dp</a> &amp;)</td></tr>
 <tr class="separator:a708fb6ae2b69e95be23f043217ebfd6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac217c3a7ac162c8a0a0f9756bd089b2d" id="r_ac217c3a7ac162c8a0a0f9756bd089b2d"><td class="memItemLeft" align="right" valign="top"><a id="ac217c3a7ac162c8a0a0f9756bd089b2d" name="ac217c3a7ac162c8a0a0f9756bd089b2d"></a>
-<a class="el" href="classDisplay.html">Dp</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;&gt;</b> (<a class="el" href="classDisplay.html">Dp</a> &amp;)</td></tr>
+<tr class="memitem:ac217c3a7ac162c8a0a0f9756bd089b2d" id="r_ac217c3a7ac162c8a0a0f9756bd089b2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDisplay.html">Dp</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#ac217c3a7ac162c8a0a0f9756bd089b2d">operator&gt;&gt;</a> (<a class="el" href="classDisplay.html">Dp</a> &amp;)</td></tr>
 <tr class="separator:ac217c3a7ac162c8a0a0f9756bd089b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e962b1d2e5b5aa54ec0e7c284d23252" id="r_a6e962b1d2e5b5aa54ec0e7c284d23252"><td class="memItemLeft" align="right" valign="top"><a id="a6e962b1d2e5b5aa54ec0e7c284d23252" name="a6e962b1d2e5b5aa54ec0e7c284d23252"></a>
-<a class="el" href="classDisplay.html">Dp</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (int)</td></tr>
+<tr class="memitem:a6e962b1d2e5b5aa54ec0e7c284d23252" id="r_a6e962b1d2e5b5aa54ec0e7c284d23252"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDisplay.html">Dp</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a6e962b1d2e5b5aa54ec0e7c284d23252">operator[]</a> (int)</td></tr>
 <tr class="separator:a6e962b1d2e5b5aa54ec0e7c284d23252"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d8f08dc31e9196bf4e98b43eaee0155" id="r_a5d8f08dc31e9196bf4e98b43eaee0155"><td class="memItemLeft" align="right" valign="top"><a id="a5d8f08dc31e9196bf4e98b43eaee0155" name="a5d8f08dc31e9196bf4e98b43eaee0155"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>n_dps</b> ()</td></tr>
+<tr class="memitem:a5d8f08dc31e9196bf4e98b43eaee0155" id="r_a5d8f08dc31e9196bf4e98b43eaee0155"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a5d8f08dc31e9196bf4e98b43eaee0155">n_dps</a> ()</td></tr>
 <tr class="separator:a5d8f08dc31e9196bf4e98b43eaee0155"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9cf21fc0c3b62e96de18a146bec8b71" id="r_ad9cf21fc0c3b62e96de18a146bec8b71"><td class="memItemLeft" align="right" valign="top"><a id="ad9cf21fc0c3b62e96de18a146bec8b71" name="ad9cf21fc0c3b62e96de18a146bec8b71"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>operator*=</b> (int)</td></tr>
+<tr class="memitem:ad9cf21fc0c3b62e96de18a146bec8b71" id="r_ad9cf21fc0c3b62e96de18a146bec8b71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#ad9cf21fc0c3b62e96de18a146bec8b71">operator*=</a> (int)</td></tr>
 <tr class="separator:ad9cf21fc0c3b62e96de18a146bec8b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bdb3859326fe113497b296257446688" id="r_a5bdb3859326fe113497b296257446688"><td class="memItemLeft" align="right" valign="top"><a id="a5bdb3859326fe113497b296257446688" name="a5bdb3859326fe113497b296257446688"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_color_shadow</b> (string <a class="el" href="color_8hpp.html#a34143b09aa16905007c1a2f375ba536b">cor</a>)</td></tr>
+<tr class="memitem:a5bdb3859326fe113497b296257446688" id="r_a5bdb3859326fe113497b296257446688"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a5bdb3859326fe113497b296257446688">set_color_shadow</a> (string <a class="el" href="color_8hpp.html#a34143b09aa16905007c1a2f375ba536b">cor</a>)</td></tr>
 <tr class="separator:a5bdb3859326fe113497b296257446688"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a786ae770b38dc3b052941344a0fb339a" id="r_a786ae770b38dc3b052941344a0fb339a"><td class="memItemLeft" align="right" valign="top"><a id="a786ae770b38dc3b052941344a0fb339a" name="a786ae770b38dc3b052941344a0fb339a"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>size_display</b> ()</td></tr>
+<tr class="memitem:a786ae770b38dc3b052941344a0fb339a" id="r_a786ae770b38dc3b052941344a0fb339a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a786ae770b38dc3b052941344a0fb339a">size_display</a> ()</td></tr>
 <tr class="separator:a786ae770b38dc3b052941344a0fb339a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classPrintables"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classPrintables')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classPrintables.html">Printables</a></td></tr>
-<tr class="memitem:ac1b1355c704cd5ffc31d7b81e3cb778e inherit pub_methods_classPrintables" id="r_ac1b1355c704cd5ffc31d7b81e3cb778e"><td class="memItemLeft" align="right" valign="top">
-&#160;</td><td class="memItemRight" valign="bottom"><b>Printables</b> (<a class="el" href="classTema.html">THEME</a> *)</td></tr>
+<tr class="memitem:ac1b1355c704cd5ffc31d7b81e3cb778e inherit pub_methods_classPrintables" id="r_ac1b1355c704cd5ffc31d7b81e3cb778e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrintables.html#ac1b1355c704cd5ffc31d7b81e3cb778e">Printables</a> (<a class="el" href="printables_8hpp.html#a49572a996aee8855b3ba8ad8469e8d22">THEME</a> *)</td></tr>
 <tr class="separator:ac1b1355c704cd5ffc31d7b81e3cb778e inherit pub_methods_classPrintables"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29d48f1e32c78bcb9fcc4cf2e9489c04 inherit pub_methods_classPrintables" id="r_a29d48f1e32c78bcb9fcc4cf2e9489c04"><td class="memItemLeft" align="right" valign="top">
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> (void *obj, Func_Obj fx=nullptr)</td></tr>
+<tr class="memitem:a29d48f1e32c78bcb9fcc4cf2e9489c04 inherit pub_methods_classPrintables" id="r_a29d48f1e32c78bcb9fcc4cf2e9489c04"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrintables.html#a29d48f1e32c78bcb9fcc4cf2e9489c04">write</a> (void *obj, <a class="el" href="printables_8hpp.html#a78c36b04d86ac15547835116ba747c7a">Func_Obj</a> fx=nullptr)</td></tr>
+<tr class="memdesc:a29d48f1e32c78bcb9fcc4cf2e9489c04 inherit pub_methods_classPrintables"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write.  <br /></td></tr>
 <tr class="separator:a29d48f1e32c78bcb9fcc4cf2e9489c04 inherit pub_methods_classPrintables"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2267702423747ee90c5e76a5a4572005 inherit pub_methods_classPrintables" id="r_a2267702423747ee90c5e76a5a4572005"><td class="memItemLeft" align="right" valign="top">
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (void *obj, Func_Obj fx=nullptr)</td></tr>
+<tr class="memitem:a2267702423747ee90c5e76a5a4572005 inherit pub_methods_classPrintables" id="r_a2267702423747ee90c5e76a5a4572005"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrintables.html#a2267702423747ee90c5e76a5a4572005">read</a> (void *obj, <a class="el" href="printables_8hpp.html#a78c36b04d86ac15547835116ba747c7a">Func_Obj</a> fx=nullptr)</td></tr>
+<tr class="memdesc:a2267702423747ee90c5e76a5a4572005 inherit pub_methods_classPrintables"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read.  <br /></td></tr>
 <tr class="separator:a2267702423747ee90c5e76a5a4572005 inherit pub_methods_classPrintables"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bd4bbbd71372eb25926d5a9475337f9 inherit pub_methods_classPrintables" id="r_a7bd4bbbd71372eb25926d5a9475337f9"><td class="memItemLeft" align="right" valign="top">
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>show</b> (string, vector&lt; string &gt; *buf=nullptr)</td></tr>
+<tr class="memitem:a7bd4bbbd71372eb25926d5a9475337f9 inherit pub_methods_classPrintables" id="r_a7bd4bbbd71372eb25926d5a9475337f9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrintables.html#a7bd4bbbd71372eb25926d5a9475337f9">show</a> (string, vector&lt; string &gt; *buf=nullptr)</td></tr>
+<tr class="memdesc:a7bd4bbbd71372eb25926d5a9475337f9 inherit pub_methods_classPrintables"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show:  <br /></td></tr>
 <tr class="separator:a7bd4bbbd71372eb25926d5a9475337f9 inherit pub_methods_classPrintables"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc25e238610d2c6ecc1df5c0dc302f4a inherit pub_methods_classPrintables" id="r_abc25e238610d2c6ecc1df5c0dc302f4a"><td class="memItemLeft" align="right" valign="top">
-int&#160;</td><td class="memItemRight" valign="bottom"><b>n_lines</b> ()</td></tr>
+<tr class="memitem:abc25e238610d2c6ecc1df5c0dc302f4a inherit pub_methods_classPrintables" id="r_abc25e238610d2c6ecc1df5c0dc302f4a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrintables.html#abc25e238610d2c6ecc1df5c0dc302f4a">n_lines</a> ()</td></tr>
+<tr class="memdesc:abc25e238610d2c6ecc1df5c0dc302f4a inherit pub_methods_classPrintables"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gerais.  <br /></td></tr>
 <tr class="separator:abc25e238610d2c6ecc1df5c0dc302f4a inherit pub_methods_classPrintables"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cd2cb0174f745b0a81447ea878144d9 inherit pub_methods_classPrintables" id="r_a0cd2cb0174f745b0a81447ea878144d9"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_tema</b> (<a class="el" href="classTema.html">THEME</a> *)</td></tr>
+<tr class="memitem:a0cd2cb0174f745b0a81447ea878144d9 inherit pub_methods_classPrintables" id="r_a0cd2cb0174f745b0a81447ea878144d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrintables.html#a0cd2cb0174f745b0a81447ea878144d9">set_tema</a> (<a class="el" href="printables_8hpp.html#a49572a996aee8855b3ba8ad8469e8d22">THEME</a> *)</td></tr>
+<tr class="memdesc:a0cd2cb0174f745b0a81447ea878144d9 inherit pub_methods_classPrintables"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set printable.  <br /></td></tr>
 <tr class="separator:a0cd2cb0174f745b0a81447ea878144d9 inherit pub_methods_classPrintables"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a251a05bb85a5c790660c5eb1d97fc4de inherit pub_methods_classPrintables" id="r_a251a05bb85a5c790660c5eb1d97fc4de"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="classTema.html">THEME</a>&#160;</td><td class="memItemRight" valign="bottom"><b>get_tema</b> ()</td></tr>
+<tr class="memitem:a251a05bb85a5c790660c5eb1d97fc4de inherit pub_methods_classPrintables" id="r_a251a05bb85a5c790660c5eb1d97fc4de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="printables_8hpp.html#a49572a996aee8855b3ba8ad8469e8d22">THEME</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrintables.html#a251a05bb85a5c790660c5eb1d97fc4de">get_tema</a> ()</td></tr>
+<tr class="memdesc:a251a05bb85a5c790660c5eb1d97fc4de inherit pub_methods_classPrintables"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get printable.  <br /></td></tr>
 <tr class="separator:a251a05bb85a5c790660c5eb1d97fc4de inherit pub_methods_classPrintables"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aab9074ba7f7c639d4525d1d825597dda" id="r_aab9074ba7f7c639d4525d1d825597dda"><td class="memItemLeft" align="right" valign="top"><a id="aab9074ba7f7c639d4525d1d825597dda" name="aab9074ba7f7c639d4525d1d825597dda"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (<a class="el" href="classDisplay.html">Dp</a>, vector&lt; string &gt; *questions, vector&lt; string &gt; *answers, int n=0)</td></tr>
+<tr class="memitem:aab9074ba7f7c639d4525d1d825597dda" id="r_aab9074ba7f7c639d4525d1d825597dda"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#aab9074ba7f7c639d4525d1d825597dda">read</a> (<a class="el" href="classDisplay.html">Dp</a>, vector&lt; string &gt; *questions, vector&lt; string &gt; *answers, int n=0)</td></tr>
 <tr class="separator:aab9074ba7f7c639d4525d1d825597dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a652dc3b50ea2092c20ebe424e3d54780" id="r_a652dc3b50ea2092c20ebe424e3d54780"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a652dc3b50ea2092c20ebe424e3d54780">init_default</a> ()</td></tr>
+<tr class="separator:a652dc3b50ea2092c20ebe424e3d54780"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad22d3497e1350187870e994f9f5adf39" id="r_ad22d3497e1350187870e994f9f5adf39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#ad22d3497e1350187870e994f9f5adf39">init_compnents</a> ()</td></tr>
+<tr class="separator:ad22d3497e1350187870e994f9f5adf39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7a072440aae3ded1ea54d6641b692ea" id="r_ac7a072440aae3ded1ea54d6641b692ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#ac7a072440aae3ded1ea54d6641b692ea">format</a> (string, size_t, <a class="el" href="printables_8hpp.html#a972bb187e61ca0dfa97d29c839af77c9">MODO</a>, <a class="el" href="printables_8hpp.html#a78c36b04d86ac15547835116ba747c7a">Func_Obj</a>)</td></tr>
+<tr class="separator:ac7a072440aae3ded1ea54d6641b692ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43ed444780f5b7afc681c6ab0c767bf7" id="r_a43ed444780f5b7afc681c6ab0c767bf7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a43ed444780f5b7afc681c6ab0c767bf7">n_letter</a> (const char *)</td></tr>
+<tr class="separator:a43ed444780f5b7afc681c6ab0c767bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9368af43415f981e4d37316df485665" id="r_ac9368af43415f981e4d37316df485665"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#ac9368af43415f981e4d37316df485665">slice_text</a> (string, size_t)</td></tr>
+<tr class="separator:ac9368af43415f981e4d37316df485665"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f589f8a37172644db2de1450e9766b3" id="r_a7f589f8a37172644db2de1450e9766b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a7f589f8a37172644db2de1450e9766b3">write_aux_buffer</a> (string, <a class="el" href="printables_8hpp.html#a972bb187e61ca0dfa97d29c839af77c9">MODO</a>, <a class="el" href="printables_8hpp.html#a78c36b04d86ac15547835116ba747c7a">Func_Obj</a>)</td></tr>
+<tr class="separator:a7f589f8a37172644db2de1450e9766b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54b68897383da25eb9ad55d0bd06d9ed" id="r_a54b68897383da25eb9ad55d0bd06d9ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a54b68897383da25eb9ad55d0bd06d9ed">update_width</a> (int)</td></tr>
+<tr class="separator:a54b68897383da25eb9ad55d0bd06d9ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaf7e796530aa5177ff8e7e906ba82e3" id="r_aeaf7e796530aa5177ff8e7e906ba82e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#aeaf7e796530aa5177ff8e7e906ba82e3">draw</a> ()</td></tr>
+<tr class="separator:aeaf7e796530aa5177ff8e7e906ba82e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa332c9344226a809972904afa1386701" id="r_aa332c9344226a809972904afa1386701"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#aa332c9344226a809972904afa1386701">move_buffer</a> (int i, int end)</td></tr>
+<tr class="separator:aa332c9344226a809972904afa1386701"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a635eb4b97ef2b16a0de5f6f2e3541e49" id="r_a635eb4b97ef2b16a0de5f6f2e3541e49"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a635eb4b97ef2b16a0de5f6f2e3541e49">loop</a> (const char *c)</td></tr>
+<tr class="separator:a635eb4b97ef2b16a0de5f6f2e3541e49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5350401b3ebcc666c1a99acd0bbcc9f5" id="r_a5350401b3ebcc666c1a99acd0bbcc9f5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a5350401b3ebcc666c1a99acd0bbcc9f5">size_line</a> (const char *str)</td></tr>
+<tr class="separator:a5350401b3ebcc666c1a99acd0bbcc9f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaef5599f4f4eed30851d5a4f27763255" id="r_aaef5599f4f4eed30851d5a4f27763255"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#aaef5599f4f4eed30851d5a4f27763255">format_line</a> (size_t, string, <a class="el" href="printables_8hpp.html#a972bb187e61ca0dfa97d29c839af77c9">MODO</a>, <a class="el" href="printables_8hpp.html#a78c36b04d86ac15547835116ba747c7a">Func_Obj</a>)</td></tr>
+<tr class="separator:aaef5599f4f4eed30851d5a4f27763255"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebce1af4e438c1b8fea0fe1c664fcd90" id="r_aebce1af4e438c1b8fea0fe1c664fcd90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#aebce1af4e438c1b8fea0fe1c664fcd90">base_shading</a> ()</td></tr>
+<tr class="separator:aebce1af4e438c1b8fea0fe1c664fcd90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10ae6bf3fa1de5b8c52685b7c85f985d" id="r_a10ae6bf3fa1de5b8c52685b7c85f985d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a10ae6bf3fa1de5b8c52685b7c85f985d">size_terminal</a> (int)</td></tr>
+<tr class="separator:a10ae6bf3fa1de5b8c52685b7c85f985d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42f820e076e10ca334957909925ea01e" id="r_a42f820e076e10ca334957909925ea01e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a42f820e076e10ca334957909925ea01e">erro_exec</a> (string str=&quot;Broken display&quot;)</td></tr>
+<tr class="separator:a42f820e076e10ca334957909925ea01e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:afc7aa91b708dedd4c4d36a29d5e80e01" id="r_afc7aa91b708dedd4c4d36a29d5e80e01"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classTexto.html">Texto</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#afc7aa91b708dedd4c4d36a29d5e80e01">buffer_aux</a></td></tr>
+<tr class="separator:afc7aa91b708dedd4c4d36a29d5e80e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94d7e07559d28e21e196678df2797b48" id="r_a94d7e07559d28e21e196678df2797b48"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classDisplay.html">Display</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a94d7e07559d28e21e196678df2797b48">dps</a></td></tr>
+<tr class="separator:a94d7e07559d28e21e196678df2797b48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af535b0b770ae2d1929ea6c9a46a90f1e" id="r_af535b0b770ae2d1929ea6c9a46a90f1e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classShadow.html">Shadow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#af535b0b770ae2d1929ea6c9a46a90f1e">sb</a></td></tr>
+<tr class="separator:af535b0b770ae2d1929ea6c9a46a90f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e5bf4ad8bef55dcdecf2e27bca407d3" id="r_a9e5bf4ad8bef55dcdecf2e27bca407d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classShadow.html">Shadow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a9e5bf4ad8bef55dcdecf2e27bca407d3">no_sb</a></td></tr>
+<tr class="separator:a9e5bf4ad8bef55dcdecf2e27bca407d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a551c3bc553c2176fc03ee3e180cbce" id="r_a1a551c3bc553c2176fc03ee3e180cbce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSpace.html">Space</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a1a551c3bc553c2176fc03ee3e180cbce">w_dp</a></td></tr>
+<tr class="separator:a1a551c3bc553c2176fc03ee3e180cbce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a248ee5d172b9a3da728ba6da0ec6b4cf" id="r_a248ee5d172b9a3da728ba6da0ec6b4cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSpace.html">Space</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a248ee5d172b9a3da728ba6da0ec6b4cf">x_dp</a></td></tr>
+<tr class="separator:a248ee5d172b9a3da728ba6da0ec6b4cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d318fb6e11c8eb2ea212066fe0abf51" id="r_a6d318fb6e11c8eb2ea212066fe0abf51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSpace.html">Space</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a6d318fb6e11c8eb2ea212066fe0abf51">y_dp</a></td></tr>
+<tr class="separator:a6d318fb6e11c8eb2ea212066fe0abf51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa165266784a72d002200914c978cbb08" id="r_aa165266784a72d002200914c978cbb08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSpace.html">Space</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#aa165266784a72d002200914c978cbb08">b_dp</a></td></tr>
+<tr class="separator:aa165266784a72d002200914c978cbb08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace30785920a79e496a815cf209c0a96f" id="r_ace30785920a79e496a815cf209c0a96f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#ace30785920a79e496a815cf209c0a96f">sb_side</a> =2</td></tr>
+<tr class="separator:ace30785920a79e496a815cf209c0a96f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ba6660aec3dcb5fbacd1546fa96f227" id="r_a9ba6660aec3dcb5fbacd1546fa96f227"><td class="memItemLeft" align="right" valign="top">slice_mode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a9ba6660aec3dcb5fbacd1546fa96f227">corte</a> =SMART</td></tr>
+<tr class="separator:a9ba6660aec3dcb5fbacd1546fa96f227"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a09bd0b0191c7dd576fc161186bc0d839" id="r_a09bd0b0191c7dd576fc161186bc0d839"><td class="memItemLeft" align="right" valign="top"><a id="a09bd0b0191c7dd576fc161186bc0d839" name="a09bd0b0191c7dd576fc161186bc0d839"></a>
-<a class="el" href="classDisplay.html">Dp</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (<a class="el" href="classDisplay.html">Dp</a> *, <a class="el" href="classDisplay.html">Dp</a> &amp;)</td></tr>
+<tr class="memitem:a09bd0b0191c7dd576fc161186bc0d839" id="r_a09bd0b0191c7dd576fc161186bc0d839"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDisplay.html">Dp</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a09bd0b0191c7dd576fc161186bc0d839">operator&lt;&lt;</a> (<a class="el" href="classDisplay.html">Dp</a> *, <a class="el" href="classDisplay.html">Dp</a> &amp;)</td></tr>
 <tr class="separator:a09bd0b0191c7dd576fc161186bc0d839"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83bd6d1d8ba0f72cd9ab0bdefe98fe64" id="r_a83bd6d1d8ba0f72cd9ab0bdefe98fe64"><td class="memItemLeft" align="right" valign="top"><a id="a83bd6d1d8ba0f72cd9ab0bdefe98fe64" name="a83bd6d1d8ba0f72cd9ab0bdefe98fe64"></a>
-<a class="el" href="classDisplay.html">Dp</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;&gt;</b> (<a class="el" href="classDisplay.html">Dp</a> *, <a class="el" href="classDisplay.html">Dp</a> &amp;)</td></tr>
+<tr class="memitem:a83bd6d1d8ba0f72cd9ab0bdefe98fe64" id="r_a83bd6d1d8ba0f72cd9ab0bdefe98fe64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDisplay.html">Dp</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a83bd6d1d8ba0f72cd9ab0bdefe98fe64">operator&gt;&gt;</a> (<a class="el" href="classDisplay.html">Dp</a> *, <a class="el" href="classDisplay.html">Dp</a> &amp;)</td></tr>
 <tr class="separator:a83bd6d1d8ba0f72cd9ab0bdefe98fe64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classPrintables"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classPrintables')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classPrintables.html">Printables</a></td></tr>
-<tr class="memitem:abe1497dd03d96c5ba6b24c04ca65ef83 inherit pro_methods_classPrintables" id="r_abe1497dd03d96c5ba6b24c04ca65ef83"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>copy</b> (vector&lt; string &gt; *)</td></tr>
+<tr class="memitem:abe1497dd03d96c5ba6b24c04ca65ef83 inherit pro_methods_classPrintables" id="r_abe1497dd03d96c5ba6b24c04ca65ef83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrintables.html#abe1497dd03d96c5ba6b24c04ca65ef83">copy</a> (vector&lt; string &gt; *)</td></tr>
+<tr class="memdesc:abe1497dd03d96c5ba6b24c04ca65ef83 inherit pro_methods_classPrintables"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copiar dados.  <br /></td></tr>
 <tr class="separator:abe1497dd03d96c5ba6b24c04ca65ef83 inherit pro_methods_classPrintables"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaf4a15a7a4e9fe3c002560eb3ea0dbb inherit pro_methods_classPrintables" id="r_aaaf4a15a7a4e9fe3c002560eb3ea0dbb"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>loop</b> (int i, int end, vector&lt; string &gt; *, string)</td></tr>
+<tr class="memitem:aaaf4a15a7a4e9fe3c002560eb3ea0dbb inherit pro_methods_classPrintables" id="r_aaaf4a15a7a4e9fe3c002560eb3ea0dbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrintables.html#aaaf4a15a7a4e9fe3c002560eb3ea0dbb">loop</a> (int i, int end, vector&lt; string &gt; *, string)</td></tr>
+<tr class="memdesc:aaaf4a15a7a4e9fe3c002560eb3ea0dbb inherit pro_methods_classPrintables"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mover pelo buffer.  <br /></td></tr>
 <tr class="separator:aaaf4a15a7a4e9fe3c002560eb3ea0dbb inherit pro_methods_classPrintables"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classPrintables"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classPrintables')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classPrintables.html">Printables</a></td></tr>
-<tr class="memitem:a303106a7857ca28499f8cdf26454eeb8 inherit pro_attribs_classPrintables" id="r_a303106a7857ca28499f8cdf26454eeb8"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="classTema.html">THEME</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>th</b></td></tr>
+<tr class="memitem:a303106a7857ca28499f8cdf26454eeb8 inherit pro_attribs_classPrintables" id="r_a303106a7857ca28499f8cdf26454eeb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="printables_8hpp.html#a49572a996aee8855b3ba8ad8469e8d22">THEME</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrintables.html#a303106a7857ca28499f8cdf26454eeb8">th</a></td></tr>
+<tr class="memdesc:a303106a7857ca28499f8cdf26454eeb8 inherit pro_attribs_classPrintables"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value para tema.  <br /></td></tr>
 <tr class="separator:a303106a7857ca28499f8cdf26454eeb8 inherit pro_attribs_classPrintables"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa64ed490f90b08d7a8ba643d26a9165 inherit pro_attribs_classPrintables" id="r_afa64ed490f90b08d7a8ba643d26a9165"><td class="memItemLeft" align="right" valign="top">
-vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>buffer</b></td></tr>
+<tr class="memitem:afa64ed490f90b08d7a8ba643d26a9165 inherit pro_attribs_classPrintables" id="r_afa64ed490f90b08d7a8ba643d26a9165"><td class="memItemLeft" align="right" valign="top">vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrintables.html#afa64ed490f90b08d7a8ba643d26a9165">buffer</a></td></tr>
+<tr class="memdesc:afa64ed490f90b08d7a8ba643d26a9165 inherit pro_attribs_classPrintables"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer de dados.  <br /></td></tr>
 <tr class="separator:afa64ed490f90b08d7a8ba643d26a9165 inherit pro_attribs_classPrintables"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7139a0eea017ebca5ad089c80fc0fa65 inherit pro_attribs_classPrintables" id="r_a7139a0eea017ebca5ad089c80fc0fa65"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="classTema.html">THEME</a>&#160;</td><td class="memItemRight" valign="bottom"><b>modelo</b></td></tr>
+<tr class="memitem:a7139a0eea017ebca5ad089c80fc0fa65 inherit pro_attribs_classPrintables" id="r_a7139a0eea017ebca5ad089c80fc0fa65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="printables_8hpp.html#a49572a996aee8855b3ba8ad8469e8d22">THEME</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrintables.html#a7139a0eea017ebca5ad089c80fc0fa65">modelo</a></td></tr>
+<tr class="memdesc:a7139a0eea017ebca5ad089c80fc0fa65 inherit pro_attribs_classPrintables"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modelo referencial.  <br /></td></tr>
 <tr class="separator:a7139a0eea017ebca5ad089c80fc0fa65 inherit pro_attribs_classPrintables"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="display_8hpp_source.html#l00096">96</a> of file <a class="el" href="display_8hpp_source.html">display.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="afec8fd0111a7915ead06ec02b5f6d2f8" name="afec8fd0111a7915ead06ec02b5f6d2f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afec8fd0111a7915ead06ec02b5f6d2f8">&#9670;&#160;</a></span>Display() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dp::Display </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00013">13</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a511977ccfd53a2c9bfb5a4ddfb7d4f22" name="a511977ccfd53a2c9bfb5a4ddfb7d4f22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a511977ccfd53a2c9bfb5a4ddfb7d4f22">&#9670;&#160;</a></span>Display() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dp::Display </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="printables_8hpp.html#a49572a996aee8855b3ba8ad8469e8d22">THEME</a> *&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00016">16</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a61a7cb16313ae61a5b5bae704c3d2617" name="a61a7cb16313ae61a5b5bae704c3d2617"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61a7cb16313ae61a5b5bae704c3d2617">&#9670;&#160;</a></span>Display() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dp::Display </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(<a class="el" href="classDisplay.html">Display</a> *)&#160;</td>
+          <td class="paramname"><em>fx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00019">19</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aebce1af4e438c1b8fea0fe1c664fcd90" name="aebce1af4e438c1b8fea0fe1c664fcd90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebce1af4e438c1b8fea0fe1c664fcd90">&#9670;&#160;</a></span>base_shading()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Display::base_shading </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00306">306</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a6e4dc43f1c034564ac82af9f1e093c21" name="a6e4dc43f1c034564ac82af9f1e093c21"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6e4dc43f1c034564ac82af9f1e093c21">&#9670;&#160;</a></span>clear()</h2>
 
@@ -255,7 +395,999 @@ vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>buf
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="classPrintables.html">Printables</a>.</p>
+<p>Remoção. </p>
+
+<p>Reimplemented from <a class="el" href="classPrintables.html#a6b0fae94dbeadc4f7b22592df1c2679b">Printables</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00365">365</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a57db6b43b6b5139f502fa2d3579873b9" name="a57db6b43b6b5139f502fa2d3579873b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57db6b43b6b5139f502fa2d3579873b9">&#9670;&#160;</a></span>dist_x()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Dp::dist_x </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em> = <code>-1</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00348">348</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad0e710dfeb68db46e50535c23048d374" name="ad0e710dfeb68db46e50535c23048d374"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0e710dfeb68db46e50535c23048d374">&#9670;&#160;</a></span>dist_y()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Dp::dist_y </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em> = <code>-1</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00351">351</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae29d43f45d232ad7e1c599488c785a02" name="ae29d43f45d232ad7e1c599488c785a02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae29d43f45d232ad7e1c599488c785a02">&#9670;&#160;</a></span>distribution()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Display::distribution </td>
+          <td>(</td>
+          <td class="paramtype">slice_mode&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00359">359</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aeaf7e796530aa5177ff8e7e906ba82e3" name="aeaf7e796530aa5177ff8e7e906ba82e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaf7e796530aa5177ff8e7e906ba82e3">&#9670;&#160;</a></span>draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dp::draw </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00184">184</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a42f820e076e10ca334957909925ea01e" name="a42f820e076e10ca334957909925ea01e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42f820e076e10ca334957909925ea01e">&#9670;&#160;</a></span>erro_exec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dp::erro_exec </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>str</em> = <code>&quot;Broken&#160;display&quot;</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00054">54</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac7a072440aae3ded1ea54d6641b692ea" name="ac7a072440aae3ded1ea54d6641b692ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7a072440aae3ded1ea54d6641b692ea">&#9670;&#160;</a></span>format()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dp::format </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="printables_8hpp.html#a972bb187e61ca0dfa97d29c839af77c9">MODO</a>&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="printables_8hpp.html#a78c36b04d86ac15547835116ba747c7a">Func_Obj</a>&#160;</td>
+          <td class="paramname"><em>fx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00128">128</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aaef5599f4f4eed30851d5a4f27763255" name="aaef5599f4f4eed30851d5a4f27763255"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaef5599f4f4eed30851d5a4f27763255">&#9670;&#160;</a></span>format_line()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Display::format_line </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="printables_8hpp.html#a972bb187e61ca0dfa97d29c839af77c9">MODO</a>&#160;</td>
+          <td class="paramname"><em>modo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="printables_8hpp.html#a78c36b04d86ac15547835116ba747c7a">Func_Obj</a>&#160;</td>
+          <td class="paramname"><em>fx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00212">212</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad22d3497e1350187870e994f9f5adf39" name="ad22d3497e1350187870e994f9f5adf39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad22d3497e1350187870e994f9f5adf39">&#9670;&#160;</a></span>init_compnents()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dp::init_compnents </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00064">64</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a652dc3b50ea2092c20ebe424e3d54780" name="a652dc3b50ea2092c20ebe424e3d54780"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a652dc3b50ea2092c20ebe424e3d54780">&#9670;&#160;</a></span>init_default()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dp::init_default </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00072">72</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aeb035042209119f72f654d86bbfc9c98" name="aeb035042209119f72f654d86bbfc9c98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb035042209119f72f654d86bbfc9c98">&#9670;&#160;</a></span>init_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dp::init_mode </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(<a class="el" href="classDisplay.html">Display</a> *)&#160;</td>
+          <td class="paramname"><em>fx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00061">61</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab554bd0444dc78ddc30bc1f5641d1545" name="ab554bd0444dc78ddc30bc1f5641d1545"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab554bd0444dc78ddc30bc1f5641d1545">&#9670;&#160;</a></span>insert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Display::insert </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="printables_8hpp.html#a972bb187e61ca0dfa97d29c839af77c9">MODO</a>&#160;</td>
+          <td class="paramname"><em>m</em> = <code><a class="el" href="printables_8hpp.html#a2bc0dea73b5708f50d509e3b9b8eb709a50d1448013c6f17125caee18aa418af7">NORMAL</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="printables_8hpp.html#a78c36b04d86ac15547835116ba747c7a">Func_Obj</a>&#160;</td>
+          <td class="paramname"><em>fx</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00367">367</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a635eb4b97ef2b16a0de5f6f2e3541e49" name="a635eb4b97ef2b16a0de5f6f2e3541e49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a635eb4b97ef2b16a0de5f6f2e3541e49">&#9670;&#160;</a></span>loop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Dp::loop </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00170">170</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa332c9344226a809972904afa1386701" name="aa332c9344226a809972904afa1386701"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa332c9344226a809972904afa1386701">&#9670;&#160;</a></span>move_buffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Display::move_buffer </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00200">200</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5d8f08dc31e9196bf4e98b43eaee0155" name="a5d8f08dc31e9196bf4e98b43eaee0155"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d8f08dc31e9196bf4e98b43eaee0155">&#9670;&#160;</a></span>n_dps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Display::n_dps </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00407">407</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a43ed444780f5b7afc681c6ab0c767bf7" name="a43ed444780f5b7afc681c6ab0c767bf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43ed444780f5b7afc681c6ab0c767bf7">&#9670;&#160;</a></span>n_letter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Dp::n_letter </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00117">117</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abbda06c9ac760da3a57cda21759f34ba" name="abbda06c9ac760da3a57cda21759f34ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbda06c9ac760da3a57cda21759f34ba">&#9670;&#160;</a></span>n_lines()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Display::n_lines </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00361">361</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad9cf21fc0c3b62e96de18a146bec8b71" name="ad9cf21fc0c3b62e96de18a146bec8b71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9cf21fc0c3b62e96de18a146bec8b71">&#9670;&#160;</a></span>operator*=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Display::operator*= </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00411">411</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac4f48a03a3d904142a7209955ace6f90" name="ac4f48a03a3d904142a7209955ace6f90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4f48a03a3d904142a7209955ace6f90">&#9670;&#160;</a></span>operator+=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Display::operator+= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDisplay.html">Display</a> &amp;&#160;</td>
+          <td class="paramname"><em>dp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00388">388</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a07861e321bcac8bb52057681c9c76d46" name="a07861e321bcac8bb52057681c9c76d46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07861e321bcac8bb52057681c9c76d46">&#9670;&#160;</a></span>operator-=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Display::operator-= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDisplay.html">Display</a> &amp;&#160;</td>
+          <td class="paramname"><em>dp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00391">391</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a708fb6ae2b69e95be23f043217ebfd6c" name="a708fb6ae2b69e95be23f043217ebfd6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a708fb6ae2b69e95be23f043217ebfd6c">&#9670;&#160;</a></span>operator&lt;&lt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDisplay.html">Dp</a> * Display::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDisplay.html">Dp</a> &amp;&#160;</td>
+          <td class="paramname"><em>dp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00396">396</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac217c3a7ac162c8a0a0f9756bd089b2d" name="ac217c3a7ac162c8a0a0f9756bd089b2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac217c3a7ac162c8a0a0f9756bd089b2d">&#9670;&#160;</a></span>operator&gt;&gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDisplay.html">Dp</a> * Display::operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDisplay.html">Dp</a> &amp;&#160;</td>
+          <td class="paramname"><em>dp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00401">401</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6e962b1d2e5b5aa54ec0e7c284d23252" name="a6e962b1d2e5b5aa54ec0e7c284d23252"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e962b1d2e5b5aa54ec0e7c284d23252">&#9670;&#160;</a></span>operator[]()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDisplay.html">Dp</a> * Display::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00428">428</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aab9074ba7f7c639d4525d1d825597dda" name="aab9074ba7f7c639d4525d1d825597dda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab9074ba7f7c639d4525d1d825597dda">&#9670;&#160;</a></span>read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dp::read </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDisplay.html">Dp</a>&#160;</td>
+          <td class="paramname"><em>dp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; string &gt; *&#160;</td>
+          <td class="paramname"><em>questions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; string &gt; *&#160;</td>
+          <td class="paramname"><em>answers</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00435">435</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a47c733b9edbb8a86412eecce3488e852" name="a47c733b9edbb8a86412eecce3488e852"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47c733b9edbb8a86412eecce3488e852">&#9670;&#160;</a></span>remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Display::remove </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00380">380</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5bdb3859326fe113497b296257446688" name="a5bdb3859326fe113497b296257446688"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bdb3859326fe113497b296257446688">&#9670;&#160;</a></span>set_color_shadow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dp::set_color_shadow </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>cor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00335">335</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a847a983130722a288cc98d3a31c9a627" name="a847a983130722a288cc98d3a31c9a627"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a847a983130722a288cc98d3a31c9a627">&#9670;&#160;</a></span>shadow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dp::shadow </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>x</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00330">330</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8f37df54881eebc4eba88190f77b854b" name="a8f37df54881eebc4eba88190f77b854b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f37df54881eebc4eba88190f77b854b">&#9670;&#160;</a></span>show() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Display::show </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00191">191</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3cc249f036773c1c7fcda0418e128e91" name="a3cc249f036773c1c7fcda0418e128e91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cc249f036773c1c7fcda0418e128e91">&#9670;&#160;</a></span>show() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dp::show </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>grupo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00231">231</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae2f3a1caf8dc0cbd6db21350a909307e" name="ae2f3a1caf8dc0cbd6db21350a909307e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2f3a1caf8dc0cbd6db21350a909307e">&#9670;&#160;</a></span>side_shadow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Dp::side_shadow </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em> = <code>-1</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00331">331</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a786ae770b38dc3b052941344a0fb339a" name="a786ae770b38dc3b052941344a0fb339a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a786ae770b38dc3b052941344a0fb339a">&#9670;&#160;</a></span>size_display()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Dp::size_display </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00050">50</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5350401b3ebcc666c1a99acd0bbcc9f5" name="a5350401b3ebcc666c1a99acd0bbcc9f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5350401b3ebcc666c1a99acd0bbcc9f5">&#9670;&#160;</a></span>size_line()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Dp::size_line </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00176">176</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a10ae6bf3fa1de5b8c52685b7c85f985d" name="a10ae6bf3fa1de5b8c52685b7c85f985d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10ae6bf3fa1de5b8c52685b7c85f985d">&#9670;&#160;</a></span>size_terminal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Dp::size_terminal </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size_dp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00034">34</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af9ef413a9ffdb0e7d1ec7ab8a5db6dad" name="af9ef413a9ffdb0e7d1ec7ab8a5db6dad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9ef413a9ffdb0e7d1ec7ab8a5db6dad">&#9670;&#160;</a></span>skip_line()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dp::skip_line </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em> = <code>1</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00342">342</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac9368af43415f981e4d37316df485665" name="ac9368af43415f981e4d37316df485665"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9368af43415f981e4d37316df485665">&#9670;&#160;</a></span>slice_text()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Dp::slice_text </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00133">133</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aec9a2ed1d0a7126b35fcd0027f844d40" name="aec9a2ed1d0a7126b35fcd0027f844d40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec9a2ed1d0a7126b35fcd0027f844d40">&#9670;&#160;</a></span>spacing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Dp::spacing </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>t</em> = <code>-1</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00354">354</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad2740b779d61e461c4dcaaf34f1fcd8f" name="ad2740b779d61e461c4dcaaf34f1fcd8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2740b779d61e461c4dcaaf34f1fcd8f">&#9670;&#160;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Display::update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00319">319</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a54b68897383da25eb9ad55d0bd06d9ed" name="a54b68897383da25eb9ad55d0bd06d9ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54b68897383da25eb9ad55d0bd06d9ed">&#9670;&#160;</a></span>update_width()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dp::update_width </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00162">162</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a69cfd676fe09852c6812274343262dae" name="a69cfd676fe09852c6812274343262dae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69cfd676fe09852c6812274343262dae">&#9670;&#160;</a></span>width()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Dp::width </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em> = <code>-1</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00345">345</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
 
 </div>
 </div>
@@ -272,19 +1404,19 @@ vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>buf
           <td class="memname">void Dp::write </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>text</em>, </td>
+          <td class="paramname"><em>line</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">MODO&#160;</td>
-          <td class="paramname"><em>m</em> = <code>NORMAL</code>, </td>
+          <td class="paramtype"><a class="el" href="printables_8hpp.html#a972bb187e61ca0dfa97d29c839af77c9">MODO</a>&#160;</td>
+          <td class="paramname"><em>modo</em> = <code><a class="el" href="printables_8hpp.html#a2bc0dea73b5708f50d509e3b9b8eb709a50d1448013c6f17125caee18aa418af7">NORMAL</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Func_Obj&#160;</td>
-          <td class="paramname"><em>fy</em> = <code>nullptr</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="printables_8hpp.html#a78c36b04d86ac15547835116ba747c7a">Func_Obj</a>&#160;</td>
+          <td class="paramname"><em>fx</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -299,18 +1431,388 @@ vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>buf
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="classPrintables.html">Printables</a>.</p>
+<p>Write. </p>
+
+<p>Reimplemented from <a class="el" href="classPrintables.html#a97c42df3732f5e3acb6fb49d2059fed0">Printables</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00123">123</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7f589f8a37172644db2de1450e9766b3" name="a7f589f8a37172644db2de1450e9766b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f589f8a37172644db2de1450e9766b3">&#9670;&#160;</a></span>write_aux_buffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dp::write_aux_buffer </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="printables_8hpp.html#a972bb187e61ca0dfa97d29c839af77c9">MODO</a>&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="printables_8hpp.html#a78c36b04d86ac15547835116ba747c7a">Func_Obj</a>&#160;</td>
+          <td class="paramname"><em>fx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00151">151</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Symbol Documentation</h2>
+<a id="a09bd0b0191c7dd576fc161186bc0d839" name="a09bd0b0191c7dd576fc161186bc0d839"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09bd0b0191c7dd576fc161186bc0d839">&#9670;&#160;</a></span>operator&lt;&lt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDisplay.html">Dp</a> * operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDisplay.html">Dp</a> *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classDisplay.html">Dp</a> &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00416">416</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a83bd6d1d8ba0f72cd9ab0bdefe98fe64" name="a83bd6d1d8ba0f72cd9ab0bdefe98fe64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83bd6d1d8ba0f72cd9ab0bdefe98fe64">&#9670;&#160;</a></span>operator&gt;&gt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDisplay.html">Dp</a> * operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDisplay.html">Dp</a> *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classDisplay.html">Dp</a> &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00422">422</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aa165266784a72d002200914c978cbb08" name="aa165266784a72d002200914c978cbb08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa165266784a72d002200914c978cbb08">&#9670;&#160;</a></span>b_dp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSpace.html">Space</a> Display::b_dp</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8hpp_source.html#l00113">113</a> of file <a class="el" href="display_8hpp_source.html">display.hpp</a>.</p>
+
+</div>
+</div>
+<a id="afc7aa91b708dedd4c4d36a29d5e80e01" name="afc7aa91b708dedd4c4d36a29d5e80e01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc7aa91b708dedd4c4d36a29d5e80e01">&#9670;&#160;</a></span>buffer_aux</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;<a class="el" href="classTexto.html">Texto</a>&gt; Display::buffer_aux</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8hpp_source.html#l00102">102</a> of file <a class="el" href="display_8hpp_source.html">display.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a9ba6660aec3dcb5fbacd1546fa96f227" name="a9ba6660aec3dcb5fbacd1546fa96f227"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ba6660aec3dcb5fbacd1546fa96f227">&#9670;&#160;</a></span>corte</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">slice_mode Display::corte =SMART</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8hpp_source.html#l00119">119</a> of file <a class="el" href="display_8hpp_source.html">display.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a94d7e07559d28e21e196678df2797b48" name="a94d7e07559d28e21e196678df2797b48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94d7e07559d28e21e196678df2797b48">&#9670;&#160;</a></span>dps</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;<a class="el" href="classDisplay.html">Display</a>*&gt; Display::dps</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8hpp_source.html#l00103">103</a> of file <a class="el" href="display_8hpp_source.html">display.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a9e5bf4ad8bef55dcdecf2e27bca407d3" name="a9e5bf4ad8bef55dcdecf2e27bca407d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e5bf4ad8bef55dcdecf2e27bca407d3">&#9670;&#160;</a></span>no_sb</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classShadow.html">Shadow</a> Display::no_sb</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8hpp_source.html#l00107">107</a> of file <a class="el" href="display_8hpp_source.html">display.hpp</a>.</p>
+
+</div>
+</div>
+<a id="af535b0b770ae2d1929ea6c9a46a90f1e" name="af535b0b770ae2d1929ea6c9a46a90f1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af535b0b770ae2d1929ea6c9a46a90f1e">&#9670;&#160;</a></span>sb</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classShadow.html">Shadow</a> Display::sb</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8hpp_source.html#l00106">106</a> of file <a class="el" href="display_8hpp_source.html">display.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ace30785920a79e496a815cf209c0a96f" name="ace30785920a79e496a815cf209c0a96f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace30785920a79e496a815cf209c0a96f">&#9670;&#160;</a></span>sb_side</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Display::sb_side =2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8hpp_source.html#l00116">116</a> of file <a class="el" href="display_8hpp_source.html">display.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a1a551c3bc553c2176fc03ee3e180cbce" name="a1a551c3bc553c2176fc03ee3e180cbce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a551c3bc553c2176fc03ee3e180cbce">&#9670;&#160;</a></span>w_dp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSpace.html">Space</a> Display::w_dp</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8hpp_source.html#l00110">110</a> of file <a class="el" href="display_8hpp_source.html">display.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a248ee5d172b9a3da728ba6da0ec6b4cf" name="a248ee5d172b9a3da728ba6da0ec6b4cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a248ee5d172b9a3da728ba6da0ec6b4cf">&#9670;&#160;</a></span>x_dp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSpace.html">Space</a> Display::x_dp</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8hpp_source.html#l00111">111</a> of file <a class="el" href="display_8hpp_source.html">display.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a6d318fb6e11c8eb2ea212066fe0abf51" name="a6d318fb6e11c8eb2ea212066fe0abf51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d318fb6e11c8eb2ea212066fe0abf51">&#9670;&#160;</a></span>y_dp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSpace.html">Space</a> Display::y_dp</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8hpp_source.html#l00112">112</a> of file <a class="el" href="display_8hpp_source.html">display.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/<a class="el" href="display_8hpp_source.html">display.hpp</a></li>
-<li>src/<b>display.cpp</b></li>
+<li>src/<a class="el" href="display_8cpp_source.html">display.cpp</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classDisplay.html">Display</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
 </body>
 </html>

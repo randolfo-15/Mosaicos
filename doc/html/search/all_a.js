@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['yellow_5fkey_0',['YELLOW_KEY',['../color_8hpp.html#a393d7966929d8f0e0234c18ad0e17b6d',1,'COR::KEY']]]
+  ['printables_0',['Printables',['../classPrintables.html',1,'']]],
+  ['printables_2ecpp_1',['printables.cpp',['../printables_8cpp.html',1,'']]],
+  ['printables_2ehpp_2',['printables.hpp',['../printables_8hpp.html',1,'']]]
 ];

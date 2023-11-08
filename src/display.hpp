@@ -1,3 +1,10 @@
+/*!*****************************************************
+ *	\file display.hpp
+ * \brief ...
+ * \author Randolfo Augusto
+ * \date 21/09/22
+ ******************************************************/
+
 #ifndef  DISPLAY_HPP
 #define DISPLAY_HPP
 

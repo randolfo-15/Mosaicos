@@ -20,6 +20,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="icon.png"/></td>
   <td id="projectalign">
    <div id="projectname">Mosaicos<span id="projectnumber">&#160;1.0.0</span>
    </div>
@@ -82,38 +83,44 @@ $(document).ready(function() { init_codefold(0); });
   <div class="headertitle"><div class="title">tema.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> <span class="comment">/*</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">  * Arquivo que define a estrutura de temas usado pelos mosaicos </span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">  *</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">  */</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef TEMA_HPP</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define TEMA_HPP</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;color.hpp&quot;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">//#include &lt;color.hpp&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="classTema.html">   12</a></span><span class="keyword">class </span><a class="code hl_class" href="classTema.html">Tema</a>{</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keywordtype">string</span> key_tm,        <span class="comment">// →key</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>                bkg_tm,       <span class="comment">// →bakyground</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>                bld_tm,        <span class="comment">// →bold</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>                bkg2_tm      <span class="comment">// →2° backgound</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    ; </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">public</span>:     </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <a class="code hl_class" href="classTema.html">Tema</a>();</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <a class="code hl_class" href="classTema.html">Tema</a>(cor_effect key,cor bkg,cor bkg2,effect bold);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="keywordtype">string</span>  key(<span class="keywordtype">string</span> str=<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keywordtype">string</span>  bkg(<span class="keywordtype">string</span> str=<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keywordtype">string</span>  bld(<span class="keywordtype">string</span> str=<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keywordtype">string</span>  bkg2(<span class="keywordtype">string</span> str=<span class="stringliteral">&quot;&quot;</span>);    </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>};</div>
+<a href="tema_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*!*****************************************************</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> *  \brief  Arquivo de definição de temas das janelas.</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *  \file tema.hpp</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * \author Randolfo Augusto</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * \date 20/09/22</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> ******************************************************/</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef TEMA_HPP</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define TEMA_HPP</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="color_8hpp.html">color.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">//#include &lt;color.hpp&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classTema.html">   14</a></span><span class="keyword">class </span><a class="code hl_class" href="classTema.html">Tema</a>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordtype">string</span> key_tm,        </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>                bkg_tm,       </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>                bld_tm,        </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>                bkg2_tm      </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    ; </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">public</span>:     </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <a class="code hl_class" href="classTema.html">Tema</a>();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <a class="code hl_class" href="classTema.html">Tema</a>(<a class="code hl_typedef" href="color_8hpp.html#a11435c80cb348a1c3e34a110425c9ea7">cor_effect</a> key,<a class="code hl_typedef" href="color_8hpp.html#a34143b09aa16905007c1a2f375ba536b">cor</a> bkg,<a class="code hl_typedef" href="color_8hpp.html#a34143b09aa16905007c1a2f375ba536b">cor</a> bkg2,<a class="code hl_typedef" href="color_8hpp.html#abc283de21e11fab8989a35ab9a39b6f9">effect</a> bold);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keywordtype">string</span>  key(<span class="keywordtype">string</span> str=<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keywordtype">string</span>  bkg(<span class="keywordtype">string</span> str=<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordtype">string</span>  bld(<span class="keywordtype">string</span> str=<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keywordtype">string</span>  bkg2(<span class="keywordtype">string</span> str=<span class="stringliteral">&quot;&quot;</span>);    </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>};</div>
 </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#endif </span><span class="comment">// tema.hpp</span></div>
-<div class="ttc" id="aclassTema_html"><div class="ttname"><a href="classTema.html">Tema</a></div><div class="ttdef"><b>Definition</b> tema.hpp:12</div></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#endif </span><span class="comment">// tema.hpp</span></div>
+<div class="ttc" id="aclassTema_html"><div class="ttname"><a href="classTema.html">Tema</a></div><div class="ttdef"><b>Definition</b> tema.hpp:14</div></div>
+<div class="ttc" id="acolor_8hpp_html"><div class="ttname"><a href="color_8hpp.html">color.hpp</a></div><div class="ttdoc">Arquivo de definição de cores e recursos da lib.</div></div>
+<div class="ttc" id="acolor_8hpp_html_a11435c80cb348a1c3e34a110425c9ea7"><div class="ttname"><a href="color_8hpp.html#a11435c80cb348a1c3e34a110425c9ea7">cor_effect</a></div><div class="ttdeci">std::string cor_effect</div><div class="ttdoc">Nomeia uma variável que representa cor com efeito.</div><div class="ttdef"><b>Definition</b> color.hpp:82</div></div>
+<div class="ttc" id="acolor_8hpp_html_a34143b09aa16905007c1a2f375ba536b"><div class="ttname"><a href="color_8hpp.html#a34143b09aa16905007c1a2f375ba536b">cor</a></div><div class="ttdeci">std::string cor</div><div class="ttdoc">Nomeia uma variável que representa cor.</div><div class="ttdef"><b>Definition</b> color.hpp:81</div></div>
+<div class="ttc" id="acolor_8hpp_html_abc283de21e11fab8989a35ab9a39b6f9"><div class="ttname"><a href="color_8hpp.html#abc283de21e11fab8989a35ab9a39b6f9">effect</a></div><div class="ttdeci">std::string effect</div><div class="ttdoc">Nomeia uma variável que representa um efeito.</div><div class="ttdef"><b>Definition</b> color.hpp:83</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

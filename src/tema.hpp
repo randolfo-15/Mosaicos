@@ -1,7 +1,9 @@
- /*
-  * Arquivo que define a estrutura de temas usado pelos mosaicos 
-  *
-  */
+/*!*****************************************************
+ *	\brief  Arquivo de definição de temas das janelas.
+ *	\file tema.hpp
+ * \author Randolfo Augusto
+ * \date 20/09/22
+ ******************************************************/
  
 #ifndef TEMA_HPP
 #define TEMA_HPP
@@ -10,10 +12,10 @@
 //#include <color.hpp>
 
 class Tema{
-	string key_tm,        // →key
-		        bkg_tm,       // →bakyground
-				bld_tm,        // →bold
-		        bkg2_tm      // →2° backgound
+	string key_tm,        ///< →key
+		        bkg_tm,       ///< →bakyground
+				bld_tm,        ///< →bold
+		        bkg2_tm      ///< →2° backgound
 	; 
 
 	public:		

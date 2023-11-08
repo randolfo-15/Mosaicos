@@ -20,6 +20,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="icon.png"/></td>
   <td id="projectalign">
    <div id="projectname">Mosaicos<span id="projectnumber">&#160;1.0.0</span>
    </div>
@@ -82,88 +83,118 @@ $(document).ready(function() { init_codefold(0); });
   <div class="headertitle"><div class="title">color.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Arquivo de definição de cores e recursos da lib</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef COLOR_HPP</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define COLOR_HPP</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">using </span>std::cout;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">using </span>std::cin;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">using </span>std::string;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">using </span>std::ostream;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">using </span>std::vector;</div>
+<a href="color_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*!*****************************************************</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> *  \brief  Arquivo de definição de cores e recursos da lib</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *  \file color.hpp</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * \author Randolfo Augusto</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * \date 20/09/22</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> ******************************************************/</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef COLOR_HPP</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define COLOR_HPP</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">using </span>std::cout;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">using </span>std::cin;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">using </span>std::string;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">using </span>std::ostream;</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">namespace </span>COR{</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">namespace </span>KEY{</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>             <span class="keyword">const</span> <span class="keywordtype">string</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>             BLACK_KEY=<span class="stringliteral">&quot;\033[30m&quot;</span>,</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>             RED_KEY=<span class="stringliteral">&quot;\033[31m&quot;</span>,</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>             GREEN_KEY=<span class="stringliteral">&quot;\033[32m&quot;</span>,</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>             YELLOW_KEY=<span class="stringliteral">&quot;\033[33m&quot;</span>,</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>             BLUE_KEY=<span class="stringliteral">&quot;\033[34m&quot;</span>,</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>             MAGENT_KEY=<span class="stringliteral">&quot;\033[35m&quot;</span>,</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>             CYAN_KEY=<span class="stringliteral">&quot;\033[36m&quot;</span>,</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>             GRAY_LIGHT_KEY=<span class="stringliteral">&quot;\033[37m&quot;</span>,</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>             RED_LIGHT_KEY=<span class="stringliteral">&quot;\033[91m&quot;</span>,</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>             GREEN_LIGHT_KEY=<span class="stringliteral">&quot;\033[92m&quot;</span>,</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>             YELLOW_LIGHT_KEY=<span class="stringliteral">&quot;\033[93m&quot;</span>,</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>             BLUE_LIGHT_KEY=<span class="stringliteral">&quot;\033[94m&quot;</span>,</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>             MAGENT_LIGHT_KEY=<span class="stringliteral">&quot;\033[95m&quot;</span>,</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>             CYAN_LIGHT_KEY=<span class="stringliteral">&quot;\033[96m&quot;</span>,</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>             WHITE_KEY=<span class="stringliteral">&quot;\033[97m&quot;</span>,</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>             GRAY_KEY=<span class="stringliteral">&quot;\033[90m&quot;</span>;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    }</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">namespace </span>BKG{</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>             <span class="keyword">const</span> <span class="keywordtype">string</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>             BLACK_BKG=<span class="stringliteral">&quot;\033[40m&quot;</span>,</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>             GRAY_LIGHT_BKG=<span class="stringliteral">&quot;\033[47m&quot;</span>,</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>             RED_LIGHT_BKG=<span class="stringliteral">&quot;\033[101m&quot;</span>,</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>             GREEN_LIGHT_BKG=<span class="stringliteral">&quot;\033[102m&quot;</span>,</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>             YELLOW_LIGHT_BKG=<span class="stringliteral">&quot;\033[103m&quot;</span>,</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>             BLUE_LIGHT_BKG=<span class="stringliteral">&quot;\033[104m&quot;</span>,</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>             MAGENT_LIGHT_BKG=<span class="stringliteral">&quot;\033[105m&quot;</span>,</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>             CYAN_LIGHT_BKG=<span class="stringliteral">&quot;\033[106m&quot;</span>,</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>             RED_BKG=<span class="stringliteral">&quot;\033[41m&quot;</span>,</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>             GREEN_BKG=<span class="stringliteral">&quot;\033[42m&quot;</span>,</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>             YELLOW_BKG=<span class="stringliteral">&quot;\033[43m&quot;</span>,</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>             BLUE_BKG=<span class="stringliteral">&quot;\033[44m&quot;</span>,</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>             MAGENT_BKG=<span class="stringliteral">&quot;\033[45m&quot;</span>,</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>             CYAN_BKG=<span class="stringliteral">&quot;\033[46m&quot;</span>,</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>             WHITE_BKG=<span class="stringliteral">&quot;\033[107m&quot;</span>,</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>             GRAY_BKG=<span class="stringliteral">&quot;\033[100m&quot;</span>;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    }</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">namespace </span>EFFECT{</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="keyword">const</span> <span class="keywordtype">string</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>             ITALIC=<span class="stringliteral">&quot;\033[3m&quot;</span>,</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>             BLINK=<span class="stringliteral">&quot;\033[5m&quot;</span>,</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>             DEFAULT_BKG=<span class="stringliteral">&quot;\033[49m&quot;</span>,</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>             BOLD_KEY=<span class="stringliteral">&quot;\033[1m&quot;</span>,</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>             DARK=<span class="stringliteral">&quot;\033[2m&quot;</span>,</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>             UNDERLINE=<span class="stringliteral">&quot;\033[4m&quot;</span>,</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>             REVERSE=<span class="stringliteral">&quot;\033[7m&quot;</span>,</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>             HIDDEN=<span class="stringliteral">&quot;\033[8m&quot;</span>,</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>             TACHADO=<span class="stringliteral">&quot;\033[9m&quot;</span>,</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>             DEFAULT_KEY=<span class="stringliteral">&quot;\033[0;39m&quot;</span>;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    }</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>}</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">using </span>cor=std::string;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="keyword">using </span>cor_effect=std::string;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keyword">using </span>effect=std::string;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="keyword">namespace </span>color{</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keyword">using namespace </span>COR::BKG;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keyword">using namespace </span>COR::KEY;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">using namespace </span>COR::EFFECT;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>}</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="preprocessor">#endif </span><span class="comment">// color.hpp</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">using </span>std::vector;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="}">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="namespaceCOR.html">   22</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceCOR.html">COR</a>{</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">namespace </span>KEY{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>             <span class="keyword">const</span> <span class="keywordtype">string</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="color_8hpp.html#aa40565f7d021e9a7fe3d061fc256193e">   26</a></span>             <a class="code hl_variable" href="color_8hpp.html#aa40565f7d021e9a7fe3d061fc256193e">BLACK_KEY</a>=<span class="stringliteral">&quot;\033[30m&quot;</span>,                         </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="color_8hpp.html#a2e0eb6152eee44ae5327b7d50b84c8d7">   27</a></span>             <a class="code hl_variable" href="color_8hpp.html#a2e0eb6152eee44ae5327b7d50b84c8d7">RED_KEY</a>=<span class="stringliteral">&quot;\033[31m&quot;</span>,                             </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="color_8hpp.html#a6a4c6819fb3d51a3d84a099fc213f104">   28</a></span>             <a class="code hl_variable" href="color_8hpp.html#a6a4c6819fb3d51a3d84a099fc213f104">GREEN_KEY</a>=<span class="stringliteral">&quot;\033[32m&quot;</span>,                        </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="color_8hpp.html#a393d7966929d8f0e0234c18ad0e17b6d">   29</a></span>             <a class="code hl_variable" href="color_8hpp.html#a393d7966929d8f0e0234c18ad0e17b6d">YELLOW_KEY</a>=<span class="stringliteral">&quot;\033[33m&quot;</span>,                      </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="color_8hpp.html#adf6a82f2403a12f7d76897c205989f54">   30</a></span>             <a class="code hl_variable" href="color_8hpp.html#adf6a82f2403a12f7d76897c205989f54">BLUE_KEY</a>=<span class="stringliteral">&quot;\033[34m&quot;</span>,                           </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="color_8hpp.html#aadc6802cb97b4a7abc5caab485c8df5a">   31</a></span>             <a class="code hl_variable" href="color_8hpp.html#aadc6802cb97b4a7abc5caab485c8df5a">MAGENT_KEY</a>=<span class="stringliteral">&quot;\033[35m&quot;</span>,                     </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="color_8hpp.html#a483d9c75aaa690aa99c0ccdca6067c13">   32</a></span>             <a class="code hl_variable" href="color_8hpp.html#a483d9c75aaa690aa99c0ccdca6067c13">CYAN_KEY</a>=<span class="stringliteral">&quot;\033[36m&quot;</span>,                           </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="color_8hpp.html#aa080ae2e3fc1974baa1dbe6687cf91a9">   33</a></span>             <a class="code hl_variable" href="color_8hpp.html#aa080ae2e3fc1974baa1dbe6687cf91a9">GRAY_LIGHT_KEY</a>=<span class="stringliteral">&quot;\033[37m&quot;</span>,              </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="color_8hpp.html#ab98e839026dde87a9054cbe96f201e5e">   34</a></span>             <a class="code hl_variable" href="color_8hpp.html#ab98e839026dde87a9054cbe96f201e5e">RED_LIGHT_KEY</a>=<span class="stringliteral">&quot;\033[91m&quot;</span>,                 </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>             GREEN_LIGHT_KEY=<span class="stringliteral">&quot;\033[92m&quot;</span>,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>             YELLOW_LIGHT_KEY=<span class="stringliteral">&quot;\033[93m&quot;</span>,</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>             BLUE_LIGHT_KEY=<span class="stringliteral">&quot;\033[94m&quot;</span>,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>             MAGENT_LIGHT_KEY=<span class="stringliteral">&quot;\033[95m&quot;</span>,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>             CYAN_LIGHT_KEY=<span class="stringliteral">&quot;\033[96m&quot;</span>,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>             WHITE_KEY=<span class="stringliteral">&quot;\033[97m&quot;</span>,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>             GRAY_KEY=<span class="stringliteral">&quot;\033[90m&quot;</span>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>}</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="foldopen" id="foldopen00045" data-start="{" data-end="}">
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="namespaceCOR_1_1BKG.html">   45</a></span>    <span class="keyword">namespace </span>BKG{</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>             <span class="keyword">const</span> <span class="keywordtype">string</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>             BLACK_BKG=<span class="stringliteral">&quot;\033[40m&quot;</span>,</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>             GRAY_LIGHT_BKG=<span class="stringliteral">&quot;\033[47m&quot;</span>,</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>             RED_LIGHT_BKG=<span class="stringliteral">&quot;\033[101m&quot;</span>,</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>             GREEN_LIGHT_BKG=<span class="stringliteral">&quot;\033[102m&quot;</span>,</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>             YELLOW_LIGHT_BKG=<span class="stringliteral">&quot;\033[103m&quot;</span>,</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>             BLUE_LIGHT_BKG=<span class="stringliteral">&quot;\033[104m&quot;</span>,</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>             MAGENT_LIGHT_BKG=<span class="stringliteral">&quot;\033[105m&quot;</span>,</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>             CYAN_LIGHT_BKG=<span class="stringliteral">&quot;\033[106m&quot;</span>,</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>             RED_BKG=<span class="stringliteral">&quot;\033[41m&quot;</span>,</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>             GREEN_BKG=<span class="stringliteral">&quot;\033[42m&quot;</span>,</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>             YELLOW_BKG=<span class="stringliteral">&quot;\033[43m&quot;</span>,</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>             BLUE_BKG=<span class="stringliteral">&quot;\033[44m&quot;</span>,</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>             MAGENT_BKG=<span class="stringliteral">&quot;\033[45m&quot;</span>,</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>             CYAN_BKG=<span class="stringliteral">&quot;\033[46m&quot;</span>,</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>             WHITE_BKG=<span class="stringliteral">&quot;\033[107m&quot;</span>,</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>             GRAY_BKG=<span class="stringliteral">&quot;\033[100m&quot;</span>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
+</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="foldopen" id="foldopen00066" data-start="{" data-end="}">
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="namespaceCOR_1_1EFFECT.html">   66</a></span>    <span class="keyword">namespace </span>EFFECT{</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            <span class="keyword">const</span> <span class="keywordtype">string</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>             ITALIC=<span class="stringliteral">&quot;\033[3m&quot;</span>,</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>             BLINK=<span class="stringliteral">&quot;\033[5m&quot;</span>,</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>             DEFAULT_BKG=<span class="stringliteral">&quot;\033[49m&quot;</span>,</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>             BOLD_KEY=<span class="stringliteral">&quot;\033[1m&quot;</span>,</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>             DARK=<span class="stringliteral">&quot;\033[2m&quot;</span>,</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>             UNDERLINE=<span class="stringliteral">&quot;\033[4m&quot;</span>,</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>             REVERSE=<span class="stringliteral">&quot;\033[7m&quot;</span>,</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>             HIDDEN=<span class="stringliteral">&quot;\033[8m&quot;</span>,</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>             TACHADO=<span class="stringliteral">&quot;\033[9m&quot;</span>,</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>             DEFAULT_KEY=<span class="stringliteral">&quot;\033[0;39m&quot;</span>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }</div>
+</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>}</div>
+</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="color_8hpp.html#a34143b09aa16905007c1a2f375ba536b">   81</a></span><span class="keyword">using </span><a class="code hl_typedef" href="color_8hpp.html#a34143b09aa16905007c1a2f375ba536b">cor</a>=std::string;               </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="color_8hpp.html#a11435c80cb348a1c3e34a110425c9ea7">   82</a></span><span class="keyword">using </span><a class="code hl_typedef" href="color_8hpp.html#a11435c80cb348a1c3e34a110425c9ea7">cor_effect</a>=std::string;   </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="color_8hpp.html#abc283de21e11fab8989a35ab9a39b6f9">   83</a></span><span class="keyword">using </span><a class="code hl_typedef" href="color_8hpp.html#abc283de21e11fab8989a35ab9a39b6f9">effect</a>=std::string;           </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="foldopen" id="foldopen00086" data-start="{" data-end="}">
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="namespacecolor.html">   86</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacecolor.html">color</a>{</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespaceCOR_1_1BKG.html">COR::BKG</a>;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keyword">using namespace </span>COR::KEY;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespaceCOR_1_1EFFECT.html">COR::EFFECT</a>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>}</div>
+</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="preprocessor">#endif </span><span class="comment">// color.hpp</span></div>
+<div class="ttc" id="acolor_8hpp_html_a11435c80cb348a1c3e34a110425c9ea7"><div class="ttname"><a href="color_8hpp.html#a11435c80cb348a1c3e34a110425c9ea7">cor_effect</a></div><div class="ttdeci">std::string cor_effect</div><div class="ttdoc">Nomeia uma variável que representa cor com efeito.</div><div class="ttdef"><b>Definition</b> color.hpp:82</div></div>
+<div class="ttc" id="acolor_8hpp_html_a2e0eb6152eee44ae5327b7d50b84c8d7"><div class="ttname"><a href="color_8hpp.html#a2e0eb6152eee44ae5327b7d50b84c8d7">COR::KEY::RED_KEY</a></div><div class="ttdeci">const string RED_KEY</div><div class="ttdoc">#F00</div><div class="ttdef"><b>Definition</b> color.hpp:27</div></div>
+<div class="ttc" id="acolor_8hpp_html_a34143b09aa16905007c1a2f375ba536b"><div class="ttname"><a href="color_8hpp.html#a34143b09aa16905007c1a2f375ba536b">cor</a></div><div class="ttdeci">std::string cor</div><div class="ttdoc">Nomeia uma variável que representa cor.</div><div class="ttdef"><b>Definition</b> color.hpp:81</div></div>
+<div class="ttc" id="acolor_8hpp_html_a393d7966929d8f0e0234c18ad0e17b6d"><div class="ttname"><a href="color_8hpp.html#a393d7966929d8f0e0234c18ad0e17b6d">COR::KEY::YELLOW_KEY</a></div><div class="ttdeci">const string YELLOW_KEY</div><div class="ttdoc">#FF0</div><div class="ttdef"><b>Definition</b> color.hpp:29</div></div>
+<div class="ttc" id="acolor_8hpp_html_a483d9c75aaa690aa99c0ccdca6067c13"><div class="ttname"><a href="color_8hpp.html#a483d9c75aaa690aa99c0ccdca6067c13">COR::KEY::CYAN_KEY</a></div><div class="ttdeci">const string CYAN_KEY</div><div class="ttdoc">#0FF</div><div class="ttdef"><b>Definition</b> color.hpp:32</div></div>
+<div class="ttc" id="acolor_8hpp_html_a6a4c6819fb3d51a3d84a099fc213f104"><div class="ttname"><a href="color_8hpp.html#a6a4c6819fb3d51a3d84a099fc213f104">COR::KEY::GREEN_KEY</a></div><div class="ttdeci">const string GREEN_KEY</div><div class="ttdoc">#0F0</div><div class="ttdef"><b>Definition</b> color.hpp:28</div></div>
+<div class="ttc" id="acolor_8hpp_html_aa080ae2e3fc1974baa1dbe6687cf91a9"><div class="ttname"><a href="color_8hpp.html#aa080ae2e3fc1974baa1dbe6687cf91a9">COR::KEY::GRAY_LIGHT_KEY</a></div><div class="ttdeci">const string GRAY_LIGHT_KEY</div><div class="ttdoc">#789</div><div class="ttdef"><b>Definition</b> color.hpp:33</div></div>
+<div class="ttc" id="acolor_8hpp_html_aa40565f7d021e9a7fe3d061fc256193e"><div class="ttname"><a href="color_8hpp.html#aa40565f7d021e9a7fe3d061fc256193e">COR::KEY::BLACK_KEY</a></div><div class="ttdeci">const string BLACK_KEY</div><div class="ttdoc">default</div><div class="ttdef"><b>Definition</b> color.hpp:26</div></div>
+<div class="ttc" id="acolor_8hpp_html_aadc6802cb97b4a7abc5caab485c8df5a"><div class="ttname"><a href="color_8hpp.html#aadc6802cb97b4a7abc5caab485c8df5a">COR::KEY::MAGENT_KEY</a></div><div class="ttdeci">const string MAGENT_KEY</div><div class="ttdoc">#F0F</div><div class="ttdef"><b>Definition</b> color.hpp:31</div></div>
+<div class="ttc" id="acolor_8hpp_html_ab98e839026dde87a9054cbe96f201e5e"><div class="ttname"><a href="color_8hpp.html#ab98e839026dde87a9054cbe96f201e5e">COR::KEY::RED_LIGHT_KEY</a></div><div class="ttdeci">const string RED_LIGHT_KEY</div><div class="ttdoc">#F64</div><div class="ttdef"><b>Definition</b> color.hpp:34</div></div>
+<div class="ttc" id="acolor_8hpp_html_abc283de21e11fab8989a35ab9a39b6f9"><div class="ttname"><a href="color_8hpp.html#abc283de21e11fab8989a35ab9a39b6f9">effect</a></div><div class="ttdeci">std::string effect</div><div class="ttdoc">Nomeia uma variável que representa um efeito.</div><div class="ttdef"><b>Definition</b> color.hpp:83</div></div>
+<div class="ttc" id="acolor_8hpp_html_adf6a82f2403a12f7d76897c205989f54"><div class="ttname"><a href="color_8hpp.html#adf6a82f2403a12f7d76897c205989f54">COR::KEY::BLUE_KEY</a></div><div class="ttdeci">const string BLUE_KEY</div><div class="ttdoc">#00F</div><div class="ttdef"><b>Definition</b> color.hpp:30</div></div>
+<div class="ttc" id="anamespaceCOR_1_1BKG_html"><div class="ttname"><a href="namespaceCOR_1_1BKG.html">COR::BKG</a></div><div class="ttdoc">Conjunto de cores para background.</div><div class="ttdef"><b>Definition</b> color.hpp:45</div></div>
+<div class="ttc" id="anamespaceCOR_1_1EFFECT_html"><div class="ttname"><a href="namespaceCOR_1_1EFFECT.html">COR::EFFECT</a></div><div class="ttdoc">Conjunto de efeitos para terminal.</div><div class="ttdef"><b>Definition</b> color.hpp:66</div></div>
+<div class="ttc" id="anamespaceCOR_html"><div class="ttname"><a href="namespaceCOR.html">COR</a></div><div class="ttdoc">Conjunto de cores para foreground.</div><div class="ttdef"><b>Definition</b> color.hpp:22</div></div>
+<div class="ttc" id="anamespacecolor_html"><div class="ttname"><a href="namespacecolor.html">color</a></div><div class="ttdoc">Carrega todo o ambiente color.</div><div class="ttdef"><b>Definition</b> color.hpp:86</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

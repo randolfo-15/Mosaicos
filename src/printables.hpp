@@ -1,6 +1,6 @@
 /*!*****************************************************
  *	\file printables.hpp
-*	\brief  Implementa o conceito da classe printables
+* \brief Arquivo de definição da classe __Printables__
  * \author Randolfo Augusto
  * \date 21/09/22
  ******************************************************/
@@ -9,7 +9,6 @@
 #define PRINTABLES_HPP 
 
 #include <tema.hpp>
-
 using COR::EFFECT::DEFAULT_BKG;
 using COR::EFFECT::DEFAULT_KEY;
 
@@ -40,28 +39,26 @@ class Printables{
 	string spacing=cor_space+" "+cor_space;              ///< espaçamento inicial
 	
 	protected:
-		THEME*th;                                                               ///< Value para tema.
-		vector<string> buffer;                                           ///< Buffer de dados.
-		THEME modelo;                                                      ///< Modelo referencial.
+		THEME*th;                                                      ///< Value para tema.
+		vec_str buffer;                                                ///< Buffer de dados.
+		THEME modelo;                                             ///< Modelo referencial.
 
-		void copy(vector<string>*);                                  ///< Copiar dados.
-		void loop(vector<string>*,int size_buffer,int=0);  ///< Mover pelo buffer.
+		void copy(vec_str*);                                      ///< Copiar dados.
+		void loop(vec_str*,int size_buffer,int=0);  ///< Mover pelo buffer.
 		
-		virtual void  show(string spacing,vector<string>* buffer=nullptr);  ///< Descarrega o buffer, com espaçamento especifico.
-
 public:
-		
-		Printables();                         ///< Criar printable com tema default
-		Printables(THEME*);          ///< Criar printable com tema especifico:
+		Printables();                         
+		Printables(THEME*);          
 		~Printables();
 
 		
-		virtual void write(void* obj,Func_Obj fx=nullptr);          ///< Write
-		virtual void write(string,MODO,Func_Obj fx=nullptr);   ///< Write
+		virtual void write(void* obj,Func_Obj fx=nullptr);          ///< Escrita generica.
+		virtual void write(string,MODO,Func_Obj fx=nullptr);   ///< Escrita Padrão.
 		
-		virtual void read (void* obj,Func_Obj fx=nullptr);          ///< Read
+		virtual void read (void* obj,Func_Obj fx=nullptr);          ///< Leitura.
 		
-		virtual void show();  ///< Método simplificado de descarregar contéudo do buffer
+		virtual void  show(vec_str* buffer);  ///< Descarrega o buffer, com espaçamento externo.
+		virtual void show();                              ///< Descarrega buffer interno
 		
 		virtual void clear();  ///< Limpar beffer
 		
@@ -70,8 +67,8 @@ public:
 		void  set_tema(THEME*); ///< Alterar tema do printable
 		THEME get_tema();		     ///< Obter atual tema do printable
 
-		 void space(int); ///< Define o limite  espaçamento do texto.
-		 int    space();      ///< Recebe o limite  espaçamento do texto.
+		 void space(int); ///< Define o limite  espaçamento em relação ao texto.
+		 int    space();      ///< Recebe o limite  espaçamento em relação ao texto.
 	
 };
 

@@ -10,7 +10,7 @@
 <area shape="poly" id="edge8_Node000004_Node000004" title=" " alt="" coords="587,16,576,10,556,8,537,10,527,15,525,20,529,28,524,30,519,20,523,11,536,5,556,3,578,5,589,12"/>
 <area shape="rect" id="Node000005" href="$classDisplay.html#aeaf7e796530aa5177ff8e7e906ba82e3" title=" " alt="" coords="319,29,428,57"/>
 <area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="461,46,429,46,429,41,461,41"/>
-<area shape="rect" id="Node000006" href="$classDisplay.html#a129c2c095cb3e9ae4352d99dc34b1803" title="Método simplificado de descarregar contéudo do buffer." alt="" coords="160,29,271,57"/>
+<area shape="rect" id="Node000006" href="$classDisplay.html#a129c2c095cb3e9ae4352d99dc34b1803" title="Descarrega buffer interno." alt="" coords="160,29,271,57"/>
 <area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="304,46,271,46,271,41,304,41"/>
 <area shape="rect" id="Node000007" href="$classDisplay.html#aab9074ba7f7c639d4525d1d825597dda" title=" " alt="" coords="5,29,112,57"/>
 <area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="144,46,112,46,112,41,144,41"/>

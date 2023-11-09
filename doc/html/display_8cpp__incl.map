@@ -2,7 +2,7 @@
 <area shape="rect" id="Node000001" title=" " alt="" coords="364,5,481,33"/>
 <area shape="rect" id="Node000002" href="$display_8hpp.html" title="..." alt="" coords="375,81,470,109"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="425,34,425,65,420,65,420,34"/>
-<area shape="rect" id="Node000003" href="$printables_8hpp.html" title="Implementa o conceito da classe printables." alt="" coords="35,157,149,184"/>
+<area shape="rect" id="Node000003" href="$printables_8hpp.html" title="Arquivo de definição da classe Printables" alt="" coords="35,157,149,184"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="375,109,165,156,164,151,374,104"/>
 <area shape="rect" id="Node000008" title=" " alt="" coords="174,157,258,184"/>
 <area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="386,112,268,154,266,148,384,107"/>

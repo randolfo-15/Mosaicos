@@ -14,6 +14,6 @@ var searchData=
   ['blue_5flight_5fkey_11',['BLUE_LIGHT_KEY',['../namespaceCOR_1_1KEY.html#a906a3c2f779c763ca59c4ecc0650a4e1',1,'COR::KEY']]],
   ['bold_12',['BOLD',['../printables_8hpp.html#a2bc0dea73b5708f50d509e3b9b8eb709a39fc1130a1e2c8f8c1ad3deee8c0c5dc',1,'printables.hpp']]],
   ['bold_5fkey_13',['BOLD_KEY',['../namespaceCOR_1_1EFFECT.html#ae15d8ebaaaa0503dc12bea82991fd218',1,'COR::EFFECT']]],
-  ['buffer_14',['buffer',['../classPrintables.html#afa64ed490f90b08d7a8ba643d26a9165',1,'Printables']]],
+  ['buffer_14',['buffer',['../classPrintables.html#abb3a35dc4b588d0ff186627f84bf7360',1,'Printables']]],
   ['buffer_5faux_15',['buffer_aux',['../classDisplay.html#afc7aa91b708dedd4c4d36a29d5e80e01',1,'Display']]]
 ];

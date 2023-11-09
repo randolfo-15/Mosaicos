@@ -3,6 +3,7 @@ var color_8hpp =
     [ "cor", "color_8hpp.html#a34143b09aa16905007c1a2f375ba536b", null ],
     [ "cor_effect", "color_8hpp.html#a11435c80cb348a1c3e34a110425c9ea7", null ],
     [ "effect", "color_8hpp.html#abc283de21e11fab8989a35ab9a39b6f9", null ],
+    [ "vec_str", "color_8hpp.html#ab9694f4716cc551c42a4df1ff292a321", null ],
     [ "BLACK_BKG", "color_8hpp.html#a2fc0ecf164e5e4225ef42e022f97417a", null ],
     [ "BLACK_KEY", "color_8hpp.html#aa40565f7d021e9a7fe3d061fc256193e", null ],
     [ "BLINK", "color_8hpp.html#a8ea2f11d0938704695837e0abc5a37a6", null ],

@@ -2,7 +2,7 @@
 <area shape="rect" id="Node000001" title="Limpar beffer." alt="" coords="476,5,603,33"/>
 <area shape="rect" id="Node000002" href="$classDisplay.html#aeaf7e796530aa5177ff8e7e906ba82e3" title=" " alt="" coords="319,5,428,33"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="461,22,429,22,429,17,461,17"/>
-<area shape="rect" id="Node000003" href="$classDisplay.html#a129c2c095cb3e9ae4352d99dc34b1803" title="Método simplificado de descarregar contéudo do buffer." alt="" coords="160,5,271,33"/>
+<area shape="rect" id="Node000003" href="$classDisplay.html#a129c2c095cb3e9ae4352d99dc34b1803" title="Descarrega buffer interno." alt="" coords="160,5,271,33"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="304,22,271,22,271,17,304,17"/>
 <area shape="rect" id="Node000004" href="$classDisplay.html#aab9074ba7f7c639d4525d1d825597dda" title=" " alt="" coords="5,5,112,33"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="144,22,112,22,112,17,144,17"/>

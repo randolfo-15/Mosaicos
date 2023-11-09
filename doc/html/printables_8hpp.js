@@ -10,5 +10,6 @@ var printables_8hpp =
       [ "BOLD", "printables_8hpp.html#a2bc0dea73b5708f50d509e3b9b8eb709a39fc1130a1e2c8f8c1ad3deee8c0c5dc", null ],
       [ "SELECT", "printables_8hpp.html#a2bc0dea73b5708f50d509e3b9b8eb709a1697a91b22c2369eb2ba427c2d193329", null ],
       [ "CUSTOM", "printables_8hpp.html#a2bc0dea73b5708f50d509e3b9b8eb709a945d6010d321d9fe75cbba7b6f37f3b5", null ]
-    ] ]
+    ] ],
+    [ "cor_space", "printables_8hpp.html#a0d0044b2ec4254e842cbeabe8503a982", null ]
 ];

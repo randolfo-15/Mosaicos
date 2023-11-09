@@ -192,7 +192,7 @@ void Display::show(){
 	
 	if(size_terminal(size_display())){
 		draw();   
-		Printables::show(DEFAULT_BKG+DEFAULT_KEY+x_dp.spc_str);
+		Printables::show();
 	}else erro_exec();
 }
 
@@ -298,7 +298,7 @@ void Dp::show(int grupo,int x,int y)
 				i++;                  //Indice de objeto.
 		}
 		//Expõe saida:
-		Printables::show(DEFAULT_BKG+DEFAULT_KEY+x_dp.spc_str,&mult_buf);
+		Printables::show(&mult_buf);
 	}else erro_exec();
 }
 

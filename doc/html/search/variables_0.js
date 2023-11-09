@@ -9,6 +9,6 @@ var searchData=
   ['blue_5flight_5fbkg_6',['BLUE_LIGHT_BKG',['../namespaceCOR_1_1BKG.html#ac7563c2aaa87d03c33fb3dc5e19c6fc0',1,'COR::BKG']]],
   ['blue_5flight_5fkey_7',['BLUE_LIGHT_KEY',['../namespaceCOR_1_1KEY.html#a906a3c2f779c763ca59c4ecc0650a4e1',1,'COR::KEY']]],
   ['bold_5fkey_8',['BOLD_KEY',['../namespaceCOR_1_1EFFECT.html#ae15d8ebaaaa0503dc12bea82991fd218',1,'COR::EFFECT']]],
-  ['buffer_9',['buffer',['../classPrintables.html#afa64ed490f90b08d7a8ba643d26a9165',1,'Printables']]],
+  ['buffer_9',['buffer',['../classPrintables.html#abb3a35dc4b588d0ff186627f84bf7360',1,'Printables']]],
   ['buffer_5faux_10',['buffer_aux',['../classDisplay.html#afc7aa91b708dedd4c4d36a29d5e80e01',1,'Display']]]
 ];

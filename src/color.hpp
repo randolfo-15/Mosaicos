@@ -17,6 +17,7 @@ using std::ostream;
 
 #include <vector>
 using std::vector;
+using vec_str=std::vector<string>;
 
 //!	 Conjunto de cores para foreground.
 namespace COR{

@@ -4,7 +4,7 @@ var searchData=
   ['set_5ftema_1',['set_tema',['../classPrintables.html#a0cd2cb0174f745b0a81447ea878144d9',1,'Printables']]],
   ['shade_2',['shade',['../classShadow.html#ae824481bd96f3b094ebe08795d0f1f6e',1,'Shadow']]],
   ['shadow_3',['shadow',['../classShadow.html#a9d3360ddba26f0a9ca2d7d7ff52350d1',1,'Shadow::Shadow()'],['../classShadow.html#aaeac6c4c2348a8be20c1927846479608',1,'Shadow::Shadow(string)'],['../classDisplay.html#a847a983130722a288cc98d3a31c9a627',1,'Display::shadow(bool x=true)']]],
-  ['show_4',['show',['../classDisplay.html#a129c2c095cb3e9ae4352d99dc34b1803',1,'Display::show() override'],['../classDisplay.html#a3cc249f036773c1c7fcda0418e128e91',1,'Display::show(int grupo, int x, int y)'],['../classPrintables.html#a8fde41d6046a16dc24525d082a465cf4',1,'Printables::show(string spacing, vector&lt; string &gt; *buffer=nullptr)'],['../classPrintables.html#a5021d98f0c710bc71ff648412b4789a2',1,'Printables::show()']]],
+  ['show_4',['show',['../classDisplay.html#a129c2c095cb3e9ae4352d99dc34b1803',1,'Display::show() override'],['../classDisplay.html#a3cc249f036773c1c7fcda0418e128e91',1,'Display::show(int grupo, int x, int y)'],['../classPrintables.html#a13248f8a8a286726486bcdc9b4ee687e',1,'Printables::show(vec_str *buffer)'],['../classPrintables.html#a5021d98f0c710bc71ff648412b4789a2',1,'Printables::show()']]],
   ['side_5fshadow_5',['side_shadow',['../classDisplay.html#ae2f3a1caf8dc0cbd6db21350a909307e',1,'Display']]],
   ['size_5fdisplay_6',['size_display',['../classDisplay.html#a786ae770b38dc3b052941344a0fb339a',1,'Display']]],
   ['size_5fline_7',['size_line',['../classDisplay.html#a5350401b3ebcc666c1a99acd0bbcc9f5',1,'Display']]],

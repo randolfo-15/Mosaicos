@@ -1,0 +1,11 @@
+<map id="src/printables.hpp" name="src/printables.hpp">
+<area shape="rect" id="Node000001" title="Implementa o conceito da classe printables." alt="" coords="23,5,160,33"/>
+<area shape="rect" id="Node000002" href="$tema_8hpp.html" title="Arquivo de definição de temas das janelas." alt="" coords="50,81,133,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,34,94,65,89,65,89,34"/>
+<area shape="rect" id="Node000003" href="$color_8hpp.html" title="Arquivo de definição de cores e recursos da lib." alt="" coords="52,157,132,184"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="94,109,94,141,89,141,89,109"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,232,85,260"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="86,186,64,221,59,218,81,183"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="109,232,171,260"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="102,183,125,218,121,221,98,186"/>
+</map>

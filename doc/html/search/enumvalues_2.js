@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['normal_0',['NORMAL',['../printables_8hpp.html#a2bc0dea73b5708f50d509e3b9b8eb709a50d1448013c6f17125caee18aa418af7',1,'printables.hpp']]]
+  ['joust_0',['JOUST',['../display_8hpp.html#a3c64cfc93652f9ee27e999b3f1859b39acb6e60a0745b4ace673b25add4c310bd',1,'display.hpp']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['n_5flines_0',['n_lines',['../classPrintables.html#abc25e238610d2c6ecc1df5c0dc302f4a',1,'Printables']]]
+  ['get_5ftema_0',['get_tema',['../classPrintables.html#a251a05bb85a5c790660c5eb1d97fc4de',1,'Printables']]]
 ];

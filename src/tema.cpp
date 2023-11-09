@@ -1,6 +1,6 @@
 /*!*****************************************************
  *	\file tema.cpp
- *	\brief  Arquivo de implementação de temas das janelas.
+ *	\brief  Arquivo de implementação da classe tema
  * \author Randolfo Augusto
  * \date 20/09/22
  ******************************************************/
@@ -29,14 +29,14 @@ Tema
  *  \param key cor usada em foreground.
  *  \param bkj  cor usada em background.
  *  \param bkg2 cor usado no background em modo selecão.
- *  \param bold efeito usado em foreground.
+ *  \param efeito efeito usado em foreground.
  */ 
-Tema::Tema(cor_effect key,cor bkg,cor bkg2,effect bold)
+Tema::Tema(cor_effect new_key,cor new_bkg,cor new_bkg2,effect new_effect)
 {
-	component[TEMA_KEY]=key;
-	component[TEMA_BKG]=bkg;
-	component[TEMA_EFFECT]=bold;
-	component[TEMA_BKG2]=bkg2;
+	component[TEMA_KEY]=new_key;
+	component[TEMA_BKG]=new_bkg;
+	component[TEMA_EFFECT]=new_effect;
+	component[TEMA_BKG2]=new_bkg2;
 }
 
 

@@ -14,8 +14,7 @@
 #define sys 1
 #endif
 
-#include "printables.hpp"
-//#include <printables.hpp>
+#include <printables.hpp>
 
 #include <algorithm>
 #include <unistd.h> 
@@ -75,8 +74,6 @@ class Space{
 //(Shadow)
 //-------------------------------------------------------------
 using COR::BKG::GRAY_BKG;
-using COR::EFFECT::DEFAULT_BKG;
-using COR::EFFECT::DEFAULT_KEY;
 using COR::BKG::WHITE_BKG;
 
 class Shadow{
@@ -180,7 +177,7 @@ class Display:public Printables{
 	
 	//Exposição:	
 		//0 → Mostrar display:
-		void show();                  	
+		void show() override;                   	
 		
 		void show(int grupo,int x,int y);
 		

@@ -1,8 +1,11 @@
 var searchData=
 [
-  ['read_0',['read',['../classPrintables.html#a2267702423747ee90c5e76a5a4572005',1,'Printables']]],
-  ['red_5fbkg_1',['RED_BKG',['../namespaceCOR_1_1BKG.html#a59f9271c801492633286e695d7198b81',1,'COR::BKG']]],
-  ['red_5fkey_2',['RED_KEY',['../color_8hpp.html#a2e0eb6152eee44ae5327b7d50b84c8d7',1,'COR::KEY']]],
-  ['red_5flight_5fbkg_3',['RED_LIGHT_BKG',['../namespaceCOR_1_1BKG.html#acfbb54b54ea19b859573fdad4328c2ae',1,'COR::BKG']]],
-  ['red_5flight_5fkey_4',['RED_LIGHT_KEY',['../color_8hpp.html#ab98e839026dde87a9054cbe96f201e5e',1,'COR::KEY']]]
+  ['magent_5fbkg_0',['MAGENT_BKG',['../namespaceCOR_1_1BKG.html#a20d26a4d2979a565594408f2ffe0c789',1,'COR::BKG']]],
+  ['magent_5fkey_1',['MAGENT_KEY',['../namespaceCOR_1_1KEY.html#aadc6802cb97b4a7abc5caab485c8df5a',1,'COR::KEY']]],
+  ['magent_5flight_5fbkg_2',['MAGENT_LIGHT_BKG',['../namespaceCOR_1_1BKG.html#a41330d931b0bb1a183562435e92ebfe2',1,'COR::BKG']]],
+  ['magent_5flight_5fkey_3',['MAGENT_LIGHT_KEY',['../namespaceCOR_1_1KEY.html#a22288f4f512a18078a80e3e18c00b4dd',1,'COR::KEY']]],
+  ['modelo_4',['modelo',['../classPrintables.html#a7139a0eea017ebca5ad089c80fc0fa65',1,'Printables']]],
+  ['modo_5',['modo',['../classTexto.html#a9a7dc92cb9720bc9f595134d74a04f97',1,'Texto::modo'],['../printables_8hpp.html#a972bb187e61ca0dfa97d29c839af77c9',1,'MODO:&#160;printables.hpp']]],
+  ['modos_6',['modos',['../printables_8hpp.html#a2bc0dea73b5708f50d509e3b9b8eb709',1,'printables.hpp']]],
+  ['move_5fbuffer_7',['move_buffer',['../classDisplay.html#aa332c9344226a809972904afa1386701',1,'Display']]]
 ];

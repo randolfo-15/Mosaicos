@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['white_5fbkg_0',['WHITE_BKG',['../namespaceCOR_1_1BKG.html#aad02f593b6818d31d60910fd7836274c',1,'COR::BKG']]],
-  ['white_5fkey_1',['WHITE_KEY',['../color_8hpp.html#a5bfea3a73451537749b137bb34bd9785',1,'COR::KEY']]],
-  ['write_2',['write',['../classDisplay.html#a285a9ba04db91c125f1f94016b734bd1',1,'Display::write()'],['../classPrintables.html#a29d48f1e32c78bcb9fcc4cf2e9489c04',1,'Printables::write(void *obj, Func_Obj fx=nullptr)'],['../classPrintables.html#a97c42df3732f5e3acb6fb49d2059fed0',1,'Printables::write(string, MODO, Func_Obj fx=nullptr)']]]
+  ['printables_0',['printables',['../classPrintables.html',1,'Printables'],['../classPrintables.html#aff2861a1ce05ab3b54242d7755ecdfd5',1,'Printables::Printables()'],['../classPrintables.html#ac1b1355c704cd5ffc31d7b81e3cb778e',1,'Printables::Printables(THEME *)']]],
+  ['printables_2ecpp_1',['printables.cpp',['../printables_8cpp.html',1,'']]],
+  ['printables_2ehpp_2',['printables.hpp',['../printables_8hpp.html',1,'']]]
 ];

@@ -1,11 +1,8 @@
 var searchData=
 [
-  ['gray_5fbkg_0',['GRAY_BKG',['../namespaceCOR_1_1BKG.html#aafce58df5eb831e2ee1e69e51a35e093',1,'COR::BKG']]],
-  ['gray_5fkey_1',['GRAY_KEY',['../color_8hpp.html#aeefc6eceb81e05b6e9f911e681495c8e',1,'COR::KEY']]],
-  ['gray_5flight_5fbkg_2',['GRAY_LIGHT_BKG',['../namespaceCOR_1_1BKG.html#af8c5558ccc7418175acf96be518673ae',1,'COR::BKG']]],
-  ['gray_5flight_5fkey_3',['GRAY_LIGHT_KEY',['../color_8hpp.html#aa080ae2e3fc1974baa1dbe6687cf91a9',1,'COR::KEY']]],
-  ['green_5fbkg_4',['GREEN_BKG',['../namespaceCOR_1_1BKG.html#aadf4d4e0fb8d3d7941faa3889a1dc261',1,'COR::BKG']]],
-  ['green_5fkey_5',['GREEN_KEY',['../color_8hpp.html#a6a4c6819fb3d51a3d84a099fc213f104',1,'COR::KEY']]],
-  ['green_5flight_5fbkg_6',['GREEN_LIGHT_BKG',['../namespaceCOR_1_1BKG.html#a0c09d23dd20a7ad13bf1082ef0b3306c',1,'COR::BKG']]],
-  ['green_5flight_5fkey_7',['GREEN_LIGHT_KEY',['../color_8hpp.html#acba028e91a3aa515a1537653a4d26268',1,'COR::KEY']]]
+  ['dark_0',['DARK',['../namespaceCOR_1_1EFFECT.html#a1b4c3a326ba7c0f0618d39aff8cfd41b',1,'COR::EFFECT']]],
+  ['default_5fbkg_1',['DEFAULT_BKG',['../namespaceCOR_1_1EFFECT.html#a46ed7526579527e69b56a2ab737eca32',1,'COR::EFFECT']]],
+  ['default_5fkey_2',['DEFAULT_KEY',['../namespaceCOR_1_1EFFECT.html#ac93f38df13ff267c974fdd2d3eaa0e09',1,'COR::EFFECT']]],
+  ['dp_3',['dp',['../classTexto.html#ae71702683ff989ebae86b86d3955c161',1,'Texto::Dp'],['../classSpace.html#a000d70ba5e22eedb04b3b0330d3ce0ac',1,'Space::Dp'],['../classShadow.html#afccc2930cfc0e5a60bb0c90e40aa038b',1,'Shadow::Dp']]],
+  ['dps_4',['dps',['../classDisplay.html#a94d7e07559d28e21e196678df2797b48',1,'Display']]]
 ];

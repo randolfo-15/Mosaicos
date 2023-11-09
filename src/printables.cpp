@@ -1,6 +1,6 @@
 /*!*****************************************************
  *	\file printables.cpp
- * \brief ...
+ * \brief Define o conceito da classe printables
  * \author Randolfo Augusto
  * \date 21/09/22
  ******************************************************/
@@ -11,35 +11,29 @@
 //Fabricação:
 //--------------------------------------------------------
 
-//Cria ptb.:
-Printables::Printables(){
-	this->th=&modelo;
-}
+Printables::Printables(){ this->th=&modelo; }
 
-Printables::Printables(THEME *tema){
-	this->th=tema;	
-}
+Printables::Printables(THEME *tema){ this->th=tema;	}
 
-Printables::~Printables(){th=nullptr;}
+Printables::~Printables(){th=nullptr;} ///< Liberar referncia do ponteiro de tema
 
 //--------------------------------------------------------
 //Show:
 //--------------------------------------------------------
 
-//Mostrar contéudo:
+void Printables::show(){ show(spacing); }
+
 void Printables::show(string x,vector<string>* buf){
-	
 	(buf!=nullptr)?
-		loop(0,buf->size(),buf,x)
+		loop(buf,buf->size())
 		:
-		loop(0,buffer.size(),&buffer,x);	
+		loop(&buffer,buffer.size());	
 }
 
-void Printables::loop(int i,int end,vector<string>*buf,string x){
-	if(i<end) {
-		cout<<x<<buf->at(i)<<'\n';	
-		loop(i+1,end,buf,x);
-	}
+void Printables::loop(vector<string>*buf,int last_line,int line){
+	if(line>=last_line) return;
+	cout<<spacing<<buf->at(line)<<'\n';	
+	loop(buf,last_line,line+1);
 }
 
 //--------------------------------------------------------
@@ -99,3 +93,11 @@ void Printables::set_tema(THEME* tema){
 THEME Printables::get_tema(){
 	return *th;
 }
+
+void Printables::space(int limit){ 
+	spacing=cor_space;
+	while(limit-->0) spacing+=" ";
+	spacing+=cor_space;
+}
+
+int Printables::space(){ return  spacing.size(); } 

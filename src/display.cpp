@@ -3,7 +3,7 @@
  * \author Randolfo Augusto
  * \date 21/09/22
  ******************************************************/
-#include "display.hpp"
+#include <display.hpp>
 
 //--------------------------------------------------------
 //(Fabricação)
@@ -192,7 +192,7 @@ void Display::show(){
 	
 	if(size_terminal(size_display())){
 		draw();   
-		Printables::show(DEFAULT_BKG+DEFAULT_KEY+x_dp.spc_str);  
+		Printables::show(DEFAULT_BKG+DEFAULT_KEY+x_dp.spc_str);
 	}else erro_exec();
 }
 

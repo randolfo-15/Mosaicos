@@ -1,6 +1,6 @@
 /*!*****************************************************
  *	\file printables.hpp
-*	\brief  Caracteriza um termo, quanto a cor e efeitos
+*	\brief  Implementa o conceito da classe printables
  * \author Randolfo Augusto
  * \date 21/09/22
  ******************************************************/
@@ -9,6 +9,11 @@
 #define PRINTABLES_HPP 
 
 #include <tema.hpp>
+
+using COR::EFFECT::DEFAULT_BKG;
+using COR::EFFECT::DEFAULT_KEY;
+
+const string cor_space=DEFAULT_BKG+DEFAULT_KEY; ///< Define a cor do espaçamento.
 
 /// Modos de tratamento de um trecho de texto.
  enum modos{
@@ -30,20 +35,24 @@ using THEME= Tema;
 ///Função de loop generica:
 using Fx_loop = bool (*)(int);
 
-/// Caracteriza um termo, quanto a cor e efeitos
+/// Caracteriza uma letra, quanto a cor e efeitos
 class Printables{
+	string spacing=cor_space+" "+cor_space;              ///< espaçamento inicial
+	
 	protected:
 		THEME*th;                                                               ///< Value para tema.
 		vector<string> buffer;                                           ///< Buffer de dados.
 		THEME modelo;                                                      ///< Modelo referencial.
 
 		void copy(vector<string>*);                                  ///< Copiar dados.
-		void loop(int i,int end,vector<string>*,string); ///< Mover pelo buffer.
-	
-	public:
+		void loop(vector<string>*,int size_buffer,int=0);  ///< Mover pelo buffer.
 		
-		Printables();
-		Printables(THEME*);
+		virtual void  show(string spacing,vector<string>* buffer=nullptr);  ///< Descarrega o buffer, com espaçamento especifico.
+
+public:
+		
+		Printables();                         ///< Criar printable com tema default
+		Printables(THEME*);          ///< Criar printable com tema especifico:
 		~Printables();
 
 		
@@ -52,14 +61,18 @@ class Printables{
 		
 		virtual void read (void* obj,Func_Obj fx=nullptr);          ///< Read
 		
-		virtual void  show(string,vector<string>* buf=nullptr); ///< Show:
+		virtual void show();  ///< Método simplificado de descarregar contéudo do buffer
 		
-		virtual void clear();          ///< Remoção
+		virtual void clear();  ///< Limpar beffer
 		
-		int  n_lines();                      ///< Gerais
+		int  n_lines();              ///< Número de linhas atual.
 
-		void  set_tema(THEME*); ///< Set printable
-		THEME get_tema();		     ///< Get printable
+		void  set_tema(THEME*); ///< Alterar tema do printable
+		THEME get_tema();		     ///< Obter atual tema do printable
+
+		 void space(int); ///< Define o limite  espaçamento do texto.
+		 int    space();      ///< Recebe o limite  espaçamento do texto.
+	
 };
 
 #endif // printables.hpp

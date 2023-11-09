@@ -1,0 +1,19 @@
+<map id="Tema::check" name="Tema::check">
+<area shape="rect" id="Node000001" title="Método get_set geral para tratamento de atributos." alt="" coords="325,84,427,112"/>
+<area shape="rect" id="Node000002" href="$classTema.html#a30288c2cfc13d379e74b9b7f6a265215" title="(Get,Set) padrão para background." alt="" coords="185,5,273,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="334,78,255,36,258,31,336,74"/>
+<area shape="rect" id="Node000005" href="$classTema.html#af26a67246e24d52fdb4b8eca20d08057" title="(Get,Set) padrão para o modo seleção." alt="" coords="181,109,277,137"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="310,112,278,118,277,112,309,107"/>
+<area shape="rect" id="Node000006" href="$classTema.html#a305eb3c124d0428e56f52bf86786a518" title="(Get,Set) padrão para efeitos." alt="" coords="187,161,271,189"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="336,122,258,163,256,159,333,117"/>
+<area shape="rect" id="Node000007" href="$classTema.html#a1129d282a1160b3c0e681b5979bec80f" title="(Get,Set) padrão para foreground." alt="" coords="185,57,273,85"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="309,88,273,82,274,76,310,83"/>
+<area shape="rect" id="Node000003" href="$classDisplay.html#aab9074ba7f7c639d4525d1d825597dda" title=" " alt="" coords="16,19,122,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="169,27,123,31,122,25,169,21"/>
+<area shape="rect" id="Node000004" href="$classPrintables.html#a97c42df3732f5e3acb6fb49d2059fed0" title="Write." alt="" coords="5,84,133,112"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="186,43,100,86,98,81,184,38"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="165,116,133,111,134,105,166,111"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="184,157,98,115,101,110,186,152"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="169,60,122,48,123,43,170,54"/>
+<area shape="poly" id="edge10_Node000007_Node000004" title=" " alt="" coords="170,84,134,90,133,85,169,78"/>
+</map>

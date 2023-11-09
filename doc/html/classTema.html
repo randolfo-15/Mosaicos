@@ -104,6 +104,16 @@ $(document).ready(function(){initNavTree('classTema.html',''); initResizable(); 
  <a href="classTema.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="tema_8hpp_source.html">tema.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for Tema:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTema__coll__graph.png" border="0" usemap="#aTema_coll__map" alt="Collaboration graph"/></div>
+<map name="aTema_coll__map" id="aTema_coll__map">
+<area shape="rect" title="Define um conjunto de cores e comportamentos de uma janela." alt="" coords="6,98,63,126"/>
+<area shape="rect" title=" " alt="" coords="5,5,64,33"/>
+<area shape="poly" title=" " alt="" coords="37,48,37,98,32,98,32,48"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -178,25 +188,25 @@ Private Attributes</h2></td></tr>
           <td class="memname">Tema::Tema </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="color_8hpp.html#a11435c80cb348a1c3e34a110425c9ea7">cor_effect</a>&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
+          <td class="paramname"><em>new_key</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="color_8hpp.html#a34143b09aa16905007c1a2f375ba536b">cor</a>&#160;</td>
-          <td class="paramname"><em>bkg</em>, </td>
+          <td class="paramname"><em>new_bkg</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="color_8hpp.html#a34143b09aa16905007c1a2f375ba536b">cor</a>&#160;</td>
-          <td class="paramname"><em>bkg2</em>, </td>
+          <td class="paramname"><em>new_bkg2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="color_8hpp.html#abc283de21e11fab8989a35ab9a39b6f9">effect</a>&#160;</td>
-          <td class="paramname"><em>bold</em>&#160;</td>
+          <td class="paramname"><em>new_effect</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -214,7 +224,7 @@ Private Attributes</h2></td></tr>
     <tr><td class="paramname">key</td><td>cor usada em foreground. </td></tr>
     <tr><td class="paramname">bkj</td><td>cor usada em background. </td></tr>
     <tr><td class="paramname">bkg2</td><td>cor usado no background em modo selecão. </td></tr>
-    <tr><td class="paramname">bold</td><td>efeito usado em foreground. </td></tr>
+    <tr><td class="paramname">efeito</td><td>efeito usado em foreground. </td></tr>
   </table>
   </dd>
 </dl>
@@ -243,6 +253,28 @@ Private Attributes</h2></td></tr>
 <p>(Get,Set) padrão para background. </p>
 
 <p class="definition">Definition at line <a class="el" href="tema_8cpp_source.html#l00059">59</a> of file <a class="el" href="tema_8cpp_source.html">tema.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTema_a30288c2cfc13d379e74b9b7f6a265215_cgraph.png" border="0" usemap="#aclassTema_a30288c2cfc13d379e74b9b7f6a265215_cgraph" alt=""/></div>
+<map name="aclassTema_a30288c2cfc13d379e74b9b7f6a265215_cgraph" id="aclassTema_a30288c2cfc13d379e74b9b7f6a265215_cgraph">
+<area shape="rect" title="(Get,Set) padrão para background." alt="" coords="5,5,94,33"/>
+<area shape="rect" href="classTema.html#ad9e4a5f956f2f3791a259d2b50d37a88" title="Método get_set geral para tratamento de atributos." alt="" coords="142,5,244,33"/>
+<area shape="poly" title=" " alt="" coords="94,17,126,17,126,22,94,22"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTema_a30288c2cfc13d379e74b9b7f6a265215_icgraph.png" border="0" usemap="#aclassTema_a30288c2cfc13d379e74b9b7f6a265215_icgraph" alt=""/></div>
+<map name="aclassTema_a30288c2cfc13d379e74b9b7f6a265215_icgraph" id="aclassTema_a30288c2cfc13d379e74b9b7f6a265215_icgraph">
+<area shape="rect" title="(Get,Set) padrão para background." alt="" coords="181,32,269,60"/>
+<area shape="rect" href="classDisplay.html#aab9074ba7f7c639d4525d1d825597dda" title=" " alt="" coords="16,5,122,33"/>
+<area shape="poly" title=" " alt="" coords="165,38,122,31,123,26,166,33"/>
+<area shape="rect" href="classPrintables.html#a97c42df3732f5e3acb6fb49d2059fed0" title="Write." alt="" coords="5,57,133,85"/>
+<area shape="poly" title=" " alt="" coords="165,58,133,63,132,58,165,53"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -265,6 +297,26 @@ Private Attributes</h2></td></tr>
 <p>(Get,Set) padrão para o modo seleção. </p>
 
 <p class="definition">Definition at line <a class="el" href="tema_8cpp_source.html#l00063">63</a> of file <a class="el" href="tema_8cpp_source.html">tema.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTema_af26a67246e24d52fdb4b8eca20d08057_cgraph.png" border="0" usemap="#aclassTema_af26a67246e24d52fdb4b8eca20d08057_cgraph" alt=""/></div>
+<map name="aclassTema_af26a67246e24d52fdb4b8eca20d08057_cgraph" id="aclassTema_af26a67246e24d52fdb4b8eca20d08057_cgraph">
+<area shape="rect" title="(Get,Set) padrão para o modo seleção." alt="" coords="5,5,102,33"/>
+<area shape="rect" href="classTema.html#ad9e4a5f956f2f3791a259d2b50d37a88" title="Método get_set geral para tratamento de atributos." alt="" coords="150,5,252,33"/>
+<area shape="poly" title=" " alt="" coords="102,17,134,17,134,22,102,22"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTema_af26a67246e24d52fdb4b8eca20d08057_icgraph.png" border="0" usemap="#aclassTema_af26a67246e24d52fdb4b8eca20d08057_icgraph" alt=""/></div>
+<map name="aclassTema_af26a67246e24d52fdb4b8eca20d08057_icgraph" id="aclassTema_af26a67246e24d52fdb4b8eca20d08057_icgraph">
+<area shape="rect" title="(Get,Set) padrão para o modo seleção." alt="" coords="181,5,277,33"/>
+<area shape="rect" href="classPrintables.html#a97c42df3732f5e3acb6fb49d2059fed0" title="Write." alt="" coords="5,5,133,33"/>
+<area shape="poly" title=" " alt="" coords="165,22,133,22,133,17,165,17"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -287,6 +339,26 @@ Private Attributes</h2></td></tr>
 <p>(Get,Set) padrão para efeitos. </p>
 
 <p class="definition">Definition at line <a class="el" href="tema_8cpp_source.html#l00061">61</a> of file <a class="el" href="tema_8cpp_source.html">tema.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTema_a305eb3c124d0428e56f52bf86786a518_cgraph.png" border="0" usemap="#aclassTema_a305eb3c124d0428e56f52bf86786a518_cgraph" alt=""/></div>
+<map name="aclassTema_a305eb3c124d0428e56f52bf86786a518_cgraph" id="aclassTema_a305eb3c124d0428e56f52bf86786a518_cgraph">
+<area shape="rect" title="(Get,Set) padrão para efeitos." alt="" coords="5,5,90,33"/>
+<area shape="rect" href="classTema.html#ad9e4a5f956f2f3791a259d2b50d37a88" title="Método get_set geral para tratamento de atributos." alt="" coords="138,5,240,33"/>
+<area shape="poly" title=" " alt="" coords="90,17,122,17,122,22,90,22"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTema_a305eb3c124d0428e56f52bf86786a518_icgraph.png" border="0" usemap="#aclassTema_a305eb3c124d0428e56f52bf86786a518_icgraph" alt=""/></div>
+<map name="aclassTema_a305eb3c124d0428e56f52bf86786a518_icgraph" id="aclassTema_a305eb3c124d0428e56f52bf86786a518_icgraph">
+<area shape="rect" title="(Get,Set) padrão para efeitos." alt="" coords="181,5,265,33"/>
+<area shape="rect" href="classPrintables.html#a97c42df3732f5e3acb6fb49d2059fed0" title="Write." alt="" coords="5,5,133,33"/>
+<area shape="poly" title=" " alt="" coords="165,22,133,22,133,17,165,17"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -337,6 +409,30 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>valor do componente atual. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="tema_8cpp_source.html#l00051">51</a> of file <a class="el" href="tema_8cpp_source.html">tema.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTema_ad9e4a5f956f2f3791a259d2b50d37a88_icgraph.png" border="0" usemap="#aclassTema_ad9e4a5f956f2f3791a259d2b50d37a88_icgraph" alt=""/></div>
+<map name="aclassTema_ad9e4a5f956f2f3791a259d2b50d37a88_icgraph" id="aclassTema_ad9e4a5f956f2f3791a259d2b50d37a88_icgraph">
+<area shape="rect" title="Método get_set geral para tratamento de atributos." alt="" coords="325,84,427,112"/>
+<area shape="rect" href="classTema.html#a30288c2cfc13d379e74b9b7f6a265215" title="(Get,Set) padrão para background." alt="" coords="185,5,273,33"/>
+<area shape="poly" title=" " alt="" coords="334,78,255,36,258,31,336,74"/>
+<area shape="rect" href="classTema.html#af26a67246e24d52fdb4b8eca20d08057" title="(Get,Set) padrão para o modo seleção." alt="" coords="181,109,277,137"/>
+<area shape="poly" title=" " alt="" coords="310,112,278,118,277,112,309,107"/>
+<area shape="rect" href="classTema.html#a305eb3c124d0428e56f52bf86786a518" title="(Get,Set) padrão para efeitos." alt="" coords="187,161,271,189"/>
+<area shape="poly" title=" " alt="" coords="336,122,258,163,256,159,333,117"/>
+<area shape="rect" href="classTema.html#a1129d282a1160b3c0e681b5979bec80f" title="(Get,Set) padrão para foreground." alt="" coords="185,57,273,85"/>
+<area shape="poly" title=" " alt="" coords="309,88,273,82,274,76,310,83"/>
+<area shape="rect" href="classDisplay.html#aab9074ba7f7c639d4525d1d825597dda" title=" " alt="" coords="16,19,122,46"/>
+<area shape="poly" title=" " alt="" coords="169,27,123,31,122,25,169,21"/>
+<area shape="rect" href="classPrintables.html#a97c42df3732f5e3acb6fb49d2059fed0" title="Write." alt="" coords="5,84,133,112"/>
+<area shape="poly" title=" " alt="" coords="186,43,100,86,98,81,184,38"/>
+<area shape="poly" title=" " alt="" coords="165,116,133,111,134,105,166,111"/>
+<area shape="poly" title=" " alt="" coords="184,157,98,115,101,110,186,152"/>
+<area shape="poly" title=" " alt="" coords="169,60,122,48,123,43,170,54"/>
+<area shape="poly" title=" " alt="" coords="170,84,134,90,133,85,169,78"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -359,6 +455,28 @@ Private Attributes</h2></td></tr>
 <p>(Get,Set) padrão para foreground. </p>
 
 <p class="definition">Definition at line <a class="el" href="tema_8cpp_source.html#l00057">57</a> of file <a class="el" href="tema_8cpp_source.html">tema.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTema_a1129d282a1160b3c0e681b5979bec80f_cgraph.png" border="0" usemap="#aclassTema_a1129d282a1160b3c0e681b5979bec80f_cgraph" alt=""/></div>
+<map name="aclassTema_a1129d282a1160b3c0e681b5979bec80f_cgraph" id="aclassTema_a1129d282a1160b3c0e681b5979bec80f_cgraph">
+<area shape="rect" title="(Get,Set) padrão para foreground." alt="" coords="5,5,93,33"/>
+<area shape="rect" href="classTema.html#ad9e4a5f956f2f3791a259d2b50d37a88" title="Método get_set geral para tratamento de atributos." alt="" coords="141,5,243,33"/>
+<area shape="poly" title=" " alt="" coords="93,17,125,17,125,22,93,22"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTema_a1129d282a1160b3c0e681b5979bec80f_icgraph.png" border="0" usemap="#aclassTema_a1129d282a1160b3c0e681b5979bec80f_icgraph" alt=""/></div>
+<map name="aclassTema_a1129d282a1160b3c0e681b5979bec80f_icgraph" id="aclassTema_a1129d282a1160b3c0e681b5979bec80f_icgraph">
+<area shape="rect" title="(Get,Set) padrão para foreground." alt="" coords="181,32,268,60"/>
+<area shape="rect" href="classDisplay.html#aab9074ba7f7c639d4525d1d825597dda" title=" " alt="" coords="16,5,122,33"/>
+<area shape="poly" title=" " alt="" coords="165,38,122,31,123,26,166,33"/>
+<area shape="rect" href="classPrintables.html#a97c42df3732f5e3acb6fb49d2059fed0" title="Write." alt="" coords="5,57,133,85"/>
+<area shape="poly" title=" " alt="" coords="166,58,133,63,132,58,165,53"/>
+</map>
+</div>
 
 </div>
 </div>

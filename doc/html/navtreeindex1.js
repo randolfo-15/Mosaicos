@@ -1,6 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"printables_8hpp.html#aa9b8942bca34177235a3511726a34128":[2,0,0,4,2],
 "printables_8hpp_source.html":[2,0,0,4],
 "tema_8cpp.html":[2,0,0,5],
 "tema_8cpp_source.html":[2,0,0,5],

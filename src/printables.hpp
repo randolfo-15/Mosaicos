@@ -8,11 +8,14 @@
 #ifndef  PRINTABLES_HPP 
 #define PRINTABLES_HPP 
 
-#include <tema.hpp>
+//#include <tema.hpp>
+#include "tema.hpp"
+
 using COR::EFFECT::DEFAULT_BKG;
 using COR::EFFECT::DEFAULT_KEY;
 
-const string cor_space=DEFAULT_BKG+DEFAULT_KEY; ///< Define a cor do espaçamento.
+/// Define a cor do espaçamento.
+const string cor_space=DEFAULT_BKG+DEFAULT_KEY; 
 
 /// Modos de tratamento de um trecho de texto.
  enum modos{
@@ -28,29 +31,30 @@ using Func_Obj=void (*)(void*);
 ///Alias para modos:
 using MODO= enum modos;
 
-///Alias para Tema neutro:
-using THEME= Tema;
-
 ///Função de loop generica:
 using Fx_loop = bool (*)(int);
+
+ ///@{
+/*! Simplificação de chamada de classe*/ 
+class Printables; 
+using Pb=Printables; 
+///@}
 
 /// Caracteriza uma letra, quanto a cor e efeitos
 class Printables{
 	string spacing=cor_space+" "+cor_space;              ///< espaçamento inicial
 	
 	protected:
-		THEME*th;                                                      ///< Value para tema.
-		vec_str buffer;                                                ///< Buffer de dados.
-		THEME modelo;                                             ///< Modelo referencial.
+		THEME th;          ///< Value para tema.
+		vec_str buffer;   ///< Buffer de dados.
+		
 
 		void copy(vec_str*);                                      ///< Copiar dados.
-		void loop(vec_str*,int size_buffer,int=0);  ///< Mover pelo buffer.
-		
+		void print(vec_str*,int size_buffer,int=0);  ///< Mover pelo buffer.
+			
 public:
 		Printables();                         
-		Printables(THEME*);          
-		~Printables();
-
+		Printables(THEME);          
 		
 		virtual void write(void* obj,Func_Obj fx=nullptr);          ///< Escrita generica.
 		virtual void write(string,MODO,Func_Obj fx=nullptr);   ///< Escrita Padrão.
@@ -64,7 +68,7 @@ public:
 		
 		int  n_lines();              ///< Número de linhas atual.
 
-		void  set_tema(THEME*); ///< Alterar tema do printable
+		void  set_tema(THEME); ///< Alterar tema do printable
 		THEME get_tema();		     ///< Obter atual tema do printable
 
 		 void space(int); ///< Define o limite  espaçamento em relação ao texto.

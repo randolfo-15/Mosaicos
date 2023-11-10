@@ -11,11 +11,9 @@
 //Fabricação:
 //--------------------------------------------------------
 
-Printables::Printables(){ this->th=&modelo; }
+Printables::Printables(){}
 
-Printables::Printables(THEME *tema){ this->th=tema;	}
-
-Printables::~Printables(){th=nullptr;} ///< Liberar referncia do ponteiro de tema
+Printables::Printables(THEME tm):th(tm){}
 
 //--------------------------------------------------------
 //Show:
@@ -26,7 +24,7 @@ Printables::~Printables(){th=nullptr;} ///< Liberar referncia do ponteiro de tem
  * __________________________________________________________________________________
  *  \sa show(vec_str*)
  */
-void Printables::show(){ loop(&buffer,buffer.size()); }
+void Printables::show(){ print(&buffer,buffer.size()); }
 
 /*! Exibir
  * ======
@@ -35,7 +33,7 @@ void Printables::show(){ loop(&buffer,buffer.size()); }
  *  \param buf Conjunto de linhas externas que requer tratamento.
  *  \sa show(vec_str*)
  */
-void Printables::show(vec_str* buf){ loop(buf,buf->size()); }
+void Printables::show(vec_str* buf){ print(buf,buf->size()); }
 
 /*! Loop
  * =====
@@ -46,10 +44,10 @@ void Printables::show(vec_str* buf){ loop(buf,buf->size()); }
  *  \param last_line número total de linhas.
  *  \param line contador de linhas.
  */
-void Printables::loop(vec_str*buf,int last_line,int line){
+void Printables::print(vec_str*buf,int last_line,int line){
 	if(line>=last_line) return;
 	cout<<spacing<<buf->at(line)<<'\n';	
-	loop(buf,last_line,line+1);
+	print(buf,last_line,line+1);
 }
 
 //--------------------------------------------------------
@@ -93,10 +91,10 @@ void Printables::write(void* obj,Func_Obj fx){ fx(obj); }
 void Printables::write(string line,MODO modo,Func_Obj fx){
 	
 	switch (modo){
-		case CUSTOM: fx(&line);                      break;
-		case BOLD:   line=th->bkg() +th->bld()+line; break;
-		case SELECT: line=th->bkg2()+th->key()+line; break;
-		default:     line=th->bkg() +th->key()+line;
+		case CUSTOM: fx(&line);                                break;
+		case BOLD:   line=th.bkg() +th.bld()+line;   break;
+		case SELECT: line=th.bkg2()+th.key()+line; break;
+		default:          line=th.bkg() +th.key()+line;
 	}
 	
 	buffer.push_back(line);
@@ -123,10 +121,10 @@ void Printables::read(void* obj,Func_Obj fx){ fx(obj); }
 //Get ,Sets
 //--------------------------------------------------------
 /*!\param tema novo tema.*/
-void Printables::set_tema(THEME* tema){ this->th=tema; }
+void Printables::set_tema(THEME tema){ th=tema; }
 
 /*!\return tema atual do printable.*/
-THEME Printables::get_tema(){ return *th; }
+THEME Printables::get_tema(){ return th; }
 
 /*! Set → spacing
  * =============

@@ -1,20 +1,20 @@
 <map id="Display" name="Display">
-<area shape="rect" id="Node000001" title=" " alt="" coords="227,341,298,368"/>
-<area shape="rect" id="Node000002" href="$classPrintables.html" title="Caracteriza uma letra, quanto a cor e efeitos." alt="" coords="38,228,124,256"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,266,126,291,155,314,191,332,228,343,226,348,189,337,152,319,122,295,98,269"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="108,5,166,33"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="95,37,50,62,30,79,15,99,9,116,9,134,22,169,45,201,68,226,65,229,41,205,17,172,4,135,4,115,10,97,26,75,47,57,92,33"/>
-<area shape="rect" id="Node000004" href="$classTema.html" title="Define um conjunto de cores e comportamentos de uma janela." alt="" coords="78,98,135,126"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="99,44,88,58,86,67,87,77,98,96,93,99,82,79,80,67,83,56,95,41"/>
-<area shape="rect" id="Node000007" href="$classShadow.html" title=" " alt="" coords="149,153,221,181"/>
-<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="159,45,165,56,181,109,187,152,182,153,175,110,160,58,154,47"/>
-<area shape="rect" id="Node000008" href="$classSpace.html" title=" " alt="" coords="231,153,291,181"/>
-<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="180,39,200,55,221,79,237,106,259,151,254,153,232,109,216,83,197,59,177,43"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="91,140,87,150,81,192,82,228,77,228,76,192,82,149,86,138"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="322,228,449,256"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="361,268,279,342,275,338,358,264"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="473,228,625,256"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="514,266,462,293,401,319,348,336,299,348,297,343,346,331,399,314,459,288,512,261"/>
-<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="193,195,203,234,218,275,236,310,255,339,251,342,232,313,213,277,198,235,188,197"/>
-<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="264,196,265,340,260,340,259,196"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="215,334,286,362"/>
+<area shape="rect" id="Node000002" href="$classPrintables.html" title="Caracteriza uma letra, quanto a cor e efeitos." alt="" coords="26,222,112,249"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,259,113,285,142,308,179,326,216,337,214,342,177,331,140,313,110,289,86,263"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="89,5,148,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="77,41,41,65,25,81,14,99,9,115,9,132,20,166,39,196,58,219,54,223,34,200,15,168,3,133,3,115,9,97,21,77,37,61,74,36"/>
+<area shape="rect" id="Node000004" href="$classTema.html" title="Define um conjunto de cores e comportamentos de uma janela." alt="" coords="77,98,133,126"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="80,44,69,58,67,68,71,78,88,96,84,99,66,80,62,68,64,56,76,41"/>
+<area shape="rect" id="Node000007" href="$classShadow.html" title=" " alt="" coords="129,150,201,177"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="140,45,146,56,161,107,167,149,161,149,156,108,141,58,136,47"/>
+<area shape="rect" id="Node000008" href="$classSpace.html" title=" " alt="" coords="212,150,273,177"/>
+<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="161,39,182,55,201,79,218,104,240,148,235,150,213,107,197,82,178,59,158,43"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="99,142,75,222,70,220,94,140"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="309,222,437,249"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="349,262,267,336,263,332,346,258"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="461,222,613,249"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="502,259,449,286,389,313,335,330,287,342,285,337,334,325,387,308,447,282,500,255"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="174,192,185,229,200,268,221,304,242,332,238,335,217,307,195,271,180,230,169,193"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="246,193,252,334,247,334,241,193"/>
 </map>

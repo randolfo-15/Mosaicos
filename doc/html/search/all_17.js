@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7eprintables_0',['~Printables',['../classPrintables.html#ae627fb856e1a474ba19406b4be137533',1,'Printables']]]
+  ['→_20spacing_0',['→ spacing',['../classPrintables.html#autotoc_md7',1,'Get → spacing'],['../classPrintables.html#autotoc_md6',1,'Set → spacing']]]
 ];

@@ -1,7 +1,7 @@
 var classDisplay =
 [
     [ "Display", "classDisplay.html#afec8fd0111a7915ead06ec02b5f6d2f8", null ],
-    [ "Display", "classDisplay.html#a511977ccfd53a2c9bfb5a4ddfb7d4f22", null ],
+    [ "Display", "classDisplay.html#a1879b4f1c848ffbcc9736d0f9e6024c4", null ],
     [ "Display", "classDisplay.html#a61a7cb16313ae61a5b5bae704c3d2617", null ],
     [ "base_shading", "classDisplay.html#aebce1af4e438c1b8fea0fe1c664fcd90", null ],
     [ "clear", "classDisplay.html#a6e4dc43f1c034564ac82af9f1e093c21", null ],

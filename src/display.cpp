@@ -1,9 +1,10 @@
 /*!*****************************************************
  *	\file display.cpp
+ * \brief Arquivo de aplicação da classe display,shadow,space
  * \author Randolfo Augusto
  * \date 21/09/22
  ******************************************************/
-#include <display.hpp>
+#include "display.hpp"
 
 //--------------------------------------------------------
 //(Fabricação)
@@ -13,7 +14,7 @@
 Dp::Display():Printables(){init_default();}
 
 //Construtor com tema definido:
-Dp::Display(THEME *t):Printables(t){init_default();}
+Dp::Display(THEME t):Printables(t){init_default();}
 
 //Construtor Custumizado:
 Dp::Display(void (*fx)(Dp*)):Printables(){init_compnents(),fx(this);}

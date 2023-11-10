@@ -1,8 +1,8 @@
 <map id="Printables" name="Printables">
-<area shape="rect" id="Node000001" title="Caracteriza uma letra, quanto a cor e efeitos." alt="" coords="5,208,92,235"/>
+<area shape="rect" id="Node000001" title="Caracteriza uma letra, quanto a cor e efeitos." alt="" coords="5,191,92,218"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="19,5,78,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="47,49,42,98,44,159,49,207,44,208,38,159,37,98,42,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="47,49,42,98,44,149,49,190,44,191,39,149,37,98,42,48"/>
 <area shape="rect" id="Node000003" href="$classTema.html" title="Define um conjunto de cores e comportamentos de uma janela." alt="" coords="106,98,162,126"/>
 <area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="73,42,124,96,120,99,69,46"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="116,140,61,209,56,206,112,136"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="113,139,63,192,59,188,109,135"/>
 </map>

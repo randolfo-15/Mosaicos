@@ -9,7 +9,7 @@ var searchData=
   ['tema_5feffect_6',['TEMA_EFFECT',['../tema_8hpp.html#a34a2c423b3ea385bdb64e0dbba3f901ba240a7cd8423d6b7d394696c7c3e8bb7d',1,'tema.hpp']]],
   ['tema_5fkey_7',['TEMA_KEY',['../tema_8hpp.html#a34a2c423b3ea385bdb64e0dbba3f901badf1a55389be57e4acc4b16b7f192d1bf',1,'tema.hpp']]],
   ['texto_8',['texto',['../classTexto.html',1,'Texto'],['../classTexto.html#a3f65a0c46c91a68897a64a5d30424465',1,'Texto::Texto()']]],
-  ['th_9',['th',['../classPrintables.html#a303106a7857ca28499f8cdf26454eeb8',1,'Printables']]],
+  ['th_9',['th',['../classPrintables.html#a22601760067aef0a566c081cec5b329d',1,'Printables']]],
   ['theme_10',['THEME',['../printables_8hpp.html#a49572a996aee8855b3ba8ad8469e8d22',1,'printables.hpp']]],
   ['theme_5fattributes_11',['theme_attributes',['../tema_8hpp.html#a5e5e24c5f214a2c612ef94775408879e',1,'tema.hpp']]]
 ];

@@ -3,7 +3,7 @@ var searchData=
   ['dark_0',['DARK',['../namespaceCOR_1_1EFFECT.html#a1b4c3a326ba7c0f0618d39aff8cfd41b',1,'COR::EFFECT']]],
   ['default_5fbkg_1',['DEFAULT_BKG',['../namespaceCOR_1_1EFFECT.html#a46ed7526579527e69b56a2ab737eca32',1,'COR::EFFECT']]],
   ['default_5fkey_2',['DEFAULT_KEY',['../namespaceCOR_1_1EFFECT.html#ac93f38df13ff267c974fdd2d3eaa0e09',1,'COR::EFFECT']]],
-  ['display_3',['display',['../classDisplay.html#afec8fd0111a7915ead06ec02b5f6d2f8',1,'Display::Display()'],['../classDisplay.html#a511977ccfd53a2c9bfb5a4ddfb7d4f22',1,'Display::Display(THEME *)'],['../classDisplay.html#a61a7cb16313ae61a5b5bae704c3d2617',1,'Display::Display(void(*)(Display *))'],['../classDisplay.html',1,'Display']]],
+  ['display_3',['display',['../classDisplay.html#afec8fd0111a7915ead06ec02b5f6d2f8',1,'Display::Display()'],['../classDisplay.html#a1879b4f1c848ffbcc9736d0f9e6024c4',1,'Display::Display(THEME)'],['../classDisplay.html#a61a7cb16313ae61a5b5bae704c3d2617',1,'Display::Display(void(*)(Display *))'],['../classDisplay.html',1,'Display']]],
   ['display_2ecpp_4',['display.cpp',['../display_8cpp.html',1,'']]],
   ['display_2ehpp_5',['display.hpp',['../display_8hpp.html',1,'']]],
   ['dist_5fx_6',['dist_x',['../classDisplay.html#a57db6b43b6b5139f502fa2d3579873b9',1,'Display']]],

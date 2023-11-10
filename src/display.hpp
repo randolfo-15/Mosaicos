@@ -1,6 +1,6 @@
 /*!*****************************************************
  *	\file display.hpp
- * \brief ...
+ * \brief Arquivo de definição da classe display,shadow,space
  * \author Randolfo Augusto
  * \date 21/09/22
  ******************************************************/
@@ -14,7 +14,8 @@
 #define sys 1
 #endif
 
-#include <printables.hpp>
+//#include <printables.hpp>
+#include "printables.hpp"
 
 #include <algorithm>
 #include <unistd.h> 
@@ -162,7 +163,7 @@ class Display:public Printables{
 	public:
 	//Fabricação:	
 		Display();
-		Display(THEME*);
+		Display(THEME);
 		Display(void (*)(Display*));
 		//Funçao de heard ?
 

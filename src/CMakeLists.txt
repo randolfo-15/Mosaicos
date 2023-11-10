@@ -10,12 +10,13 @@ target_sources(mosaicos
         tema.cpp
         printables.cpp
         display.cpp
+        colour.cpp
     PUBLIC FILE_SET HEADERS 
         FILES 
             tema.hpp
             printables.hpp
             display.hpp
-            color.hpp
+            colour.hpp
 )
  
 target_include_directories(mosaicos

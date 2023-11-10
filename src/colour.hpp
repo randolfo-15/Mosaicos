@@ -12,6 +12,7 @@
 using colour = std::string;
 using effect  = std::string;
 
+
 //!	 Define a coloração de letras no terminal.
 struct Foreground{
 	

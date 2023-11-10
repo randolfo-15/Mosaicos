@@ -35,14 +35,20 @@ Tm::Theme(colour new_key,colour new_bkg,colour new_bkg2,effect new_effect)
 	palette[TM_EFFECT] = new_effect;
 }
 
-		colour key(){ return ""; }              
-		colour bkg();             ///< (Get) padrão para background. 
-		effect  eft();               ///< (Get) padrão para efeitos.
-		colour bkg2();           ///< (Get) padrão para o modo seleção. 
+		colour Tm::key(){ return palette[TM_KEY]; }              
+		
+		colour Tm::bkg(){ return palette[TM_BKG]; }
+		
+		effect  Tm::eft(){ return palette[TM_EFFECT]; }
+		
+		colour Tm::bkg2(){ return palette[TM_BKG2]; } 
 		
 		
-		void key(colour);      ///< (Set) padrão para foreground. 
-		void bkg(colour);     ///< (Set) padrão para background. 
-		void eft(effect);        ///< (Set) padrão para efeitos.
-		void bkg2(colour);   ///< (Set) padrão para o modo seleção. 
+		void Tm::key(colour clr){ if(Fg::is_colour(clr)) palette[TM_KEY]=clr; }      
+		
+		void Tm::bkg(colour clr){}      
+		
+		void Tm::eft(effect efc){}        
+		
+		void Tm::bkg2(colour clr){} 
 

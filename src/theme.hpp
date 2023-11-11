@@ -8,9 +8,10 @@
 #ifndef THEME_HPP
 #define THEME_HPP
 
+//#include <exception>
+
 //#include <color.hpp>
 #include "colour.hpp"
-using colors=std::string;
 
 /// Define o número de atributos de tema
 constexpr int attributes=4; 
@@ -28,9 +29,9 @@ enum  components{
 class Theme{
 	/// Paleta de cores que define o tema
 	colors palette[attributes]{
-		Fg::WHITE_KEY,
-		Bg::BLUE_BKG,
-		Bg::RED_BKG,
+		Fg::WHITE,
+		Bg::BLUE,
+		Bg::RED,
 		Ef::BOLD_KEY
 		
 	};
@@ -40,7 +41,12 @@ class Theme{
 		Theme();                                                                              
 		
 		/// Construtor custumizado. 
-		Theme(colour key,colour bkg,colour bkg2,effect efc);  
+		Theme(
+			Foreground key,
+		    Background bkg,
+			Background bkg2,
+		    Effect efc
+		);  
 		
 		colour key();              ///< (Get) padrão para foreground. 
 		colour bkg();             ///< (Get) padrão para background. 
@@ -52,6 +58,8 @@ class Theme{
 		void bkg(colour);     ///< (Set) padrão para background. 
 		void eft(effect);        ///< (Set) padrão para efeitos.
 		void bkg2(colour);   ///< (Set) padrão para o modo seleção. 
+
+	
 };using Tm=Theme;
 
 #endif // theme.hpp

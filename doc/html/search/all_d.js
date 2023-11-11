@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['operator_2a_3d_0',['operator*=',['../classDisplay.html#ad9cf21fc0c3b62e96de18a146bec8b71',1,'Display']]],
-  ['operator_2b_3d_1',['operator+=',['../classDisplay.html#ac4f48a03a3d904142a7209955ace6f90',1,'Display']]],
-  ['operator_2d_3d_2',['operator-=',['../classDisplay.html#a07861e321bcac8bb52057681c9c76d46',1,'Display']]],
-  ['operator_3c_3c_3',['operator&lt;&lt;',['../classDisplay.html#a09bd0b0191c7dd576fc161186bc0d839',1,'Display::operator&lt;&lt;'],['../classDisplay.html#a708fb6ae2b69e95be23f043217ebfd6c',1,'Display::operator&lt;&lt;(Dp &amp;)'],['../display_8cpp.html#aa4f957fb348668a79b9575ecc7c3e5a2',1,'operator&lt;&lt;(Dp *a, Dp &amp;b):&#160;display.cpp'],['../display_8hpp.html#a09bd0b0191c7dd576fc161186bc0d839',1,'operator&lt;&lt;(Dp *, Dp &amp;):&#160;display.cpp']]],
-  ['operator_3e_3e_4',['operator&gt;&gt;',['../classDisplay.html#a83bd6d1d8ba0f72cd9ab0bdefe98fe64',1,'Display::operator&gt;&gt;'],['../classDisplay.html#ac217c3a7ac162c8a0a0f9756bd089b2d',1,'Display::operator&gt;&gt;(Dp &amp;)'],['../display_8cpp.html#a5e50396e7e6fedea087b86f1fb146b62',1,'operator&gt;&gt;(Dp *a, Dp &amp;b):&#160;display.cpp'],['../display_8hpp.html#a83bd6d1d8ba0f72cd9ab0bdefe98fe64',1,'operator&gt;&gt;(Dp *, Dp &amp;):&#160;display.cpp']]],
-  ['operator_5b_5d_5',['operator[]',['../classDisplay.html#a6e962b1d2e5b5aa54ec0e7c284d23252',1,'Display']]]
+  ['n_5fdps_0',['n_dps',['../classDisplay.html#a5d8f08dc31e9196bf4e98b43eaee0155',1,'Display']]],
+  ['n_5fletter_1',['n_letter',['../classDisplay.html#a43ed444780f5b7afc681c6ab0c767bf7',1,'Display']]],
+  ['n_5flines_2',['n_lines',['../classDisplay.html#abbda06c9ac760da3a57cda21759f34ba',1,'Display::n_lines()'],['../classPrintables.html#abc25e238610d2c6ecc1df5c0dc302f4a',1,'Printables::n_lines()']]],
+  ['no_5fsb_3',['no_sb',['../classDisplay.html#a9e5bf4ad8bef55dcdecf2e27bca407d3',1,'Display']]],
+  ['normal_4',['NORMAL',['../printables_8hpp.html#a2bc0dea73b5708f50d509e3b9b8eb709a50d1448013c6f17125caee18aa418af7',1,'printables.hpp']]]
 ];

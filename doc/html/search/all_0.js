@@ -1,19 +1,4 @@
 var searchData=
 [
-  ['b_5fdp_0',['b_dp',['../classDisplay.html#aa165266784a72d002200914c978cbb08',1,'Display']]],
-  ['base_5fshading_1',['base_shading',['../classDisplay.html#aebce1af4e438c1b8fea0fe1c664fcd90',1,'Display']]],
-  ['bkg_2',['bkg',['../classTema.html#a30288c2cfc13d379e74b9b7f6a265215',1,'Tema']]],
-  ['bkg2_3',['bkg2',['../classTema.html#af26a67246e24d52fdb4b8eca20d08057',1,'Tema']]],
-  ['black_5fbkg_4',['BLACK_BKG',['../namespaceCOR_1_1BKG.html#a2fc0ecf164e5e4225ef42e022f97417a',1,'COR::BKG']]],
-  ['black_5fkey_5',['BLACK_KEY',['../namespaceCOR_1_1KEY.html#aa40565f7d021e9a7fe3d061fc256193e',1,'COR::KEY']]],
-  ['bld_6',['bld',['../classTema.html#a305eb3c124d0428e56f52bf86786a518',1,'Tema']]],
-  ['blink_7',['BLINK',['../namespaceCOR_1_1EFFECT.html#a8ea2f11d0938704695837e0abc5a37a6',1,'COR::EFFECT']]],
-  ['blue_5fbkg_8',['BLUE_BKG',['../namespaceCOR_1_1BKG.html#a36242893dd0c37d6839f54e1b6c4b9ff',1,'COR::BKG']]],
-  ['blue_5fkey_9',['BLUE_KEY',['../namespaceCOR_1_1KEY.html#adf6a82f2403a12f7d76897c205989f54',1,'COR::KEY']]],
-  ['blue_5flight_5fbkg_10',['BLUE_LIGHT_BKG',['../namespaceCOR_1_1BKG.html#ac7563c2aaa87d03c33fb3dc5e19c6fc0',1,'COR::BKG']]],
-  ['blue_5flight_5fkey_11',['BLUE_LIGHT_KEY',['../namespaceCOR_1_1KEY.html#a906a3c2f779c763ca59c4ecc0650a4e1',1,'COR::KEY']]],
-  ['bold_12',['BOLD',['../printables_8hpp.html#a2bc0dea73b5708f50d509e3b9b8eb709a39fc1130a1e2c8f8c1ad3deee8c0c5dc',1,'printables.hpp']]],
-  ['bold_5fkey_13',['BOLD_KEY',['../namespaceCOR_1_1EFFECT.html#ae15d8ebaaaa0503dc12bea82991fd218',1,'COR::EFFECT']]],
-  ['buffer_14',['buffer',['../classPrintables.html#abb3a35dc4b588d0ff186627f84bf7360',1,'Printables']]],
-  ['buffer_5faux_15',['buffer_aux',['../classDisplay.html#afc7aa91b708dedd4c4d36a29d5e80e01',1,'Display']]]
+  ['attributes_0',['attributes',['../theme_8hpp.html#a121d5dd7abcd2f47a140eb62972a216e',1,'theme.hpp']]]
 ];

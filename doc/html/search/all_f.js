@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['read_0',['read',['../classDisplay.html#aab9074ba7f7c639d4525d1d825597dda',1,'Display::read()'],['../classPrintables.html#a2267702423747ee90c5e76a5a4572005',1,'Printables::read()']]],
-  ['red_5fbkg_1',['RED_BKG',['../namespaceCOR_1_1BKG.html#a59f9271c801492633286e695d7198b81',1,'COR::BKG']]],
-  ['red_5fkey_2',['RED_KEY',['../namespaceCOR_1_1KEY.html#a2e0eb6152eee44ae5327b7d50b84c8d7',1,'COR::KEY']]],
-  ['red_5flight_5fbkg_3',['RED_LIGHT_BKG',['../namespaceCOR_1_1BKG.html#acfbb54b54ea19b859573fdad4328c2ae',1,'COR::BKG']]],
-  ['red_5flight_5fkey_4',['RED_LIGHT_KEY',['../namespaceCOR_1_1KEY.html#ab98e839026dde87a9054cbe96f201e5e',1,'COR::KEY']]],
-  ['remove_5',['remove',['../classDisplay.html#a47c733b9edbb8a86412eecce3488e852',1,'Display']]],
-  ['reverse_6',['REVERSE',['../namespaceCOR_1_1EFFECT.html#a8b83b2bb17744087a1ef91fffc267760',1,'COR::EFFECT']]]
+  ['padrão_3a_0',['Escrita Padrão:',['../classPrintables.html#autotoc_md4',1,'']]],
+  ['palette_1',['palette',['../classTheme.html#a4fb7abc7550925ce799a2230bbebef4c',1,'Theme']]],
+  ['pb_2',['Pb',['../printables_8hpp.html#a0925dd6499e4e1e54e4f971cecd0dee4',1,'printables.hpp']]],
+  ['print_3',['print',['../classPrintables.html#ade83fdd26df0afb83999a971fd39abb2',1,'Printables']]],
+  ['printables_4',['printables',['../classPrintables.html',1,'Printables'],['../classPrintables.html#aff2861a1ce05ab3b54242d7755ecdfd5',1,'Printables::Printables()'],['../classPrintables.html#a3ca3c9aab19d925298093834ec943030',1,'Printables::Printables(THEME)']]],
+  ['printables_2ecpp_5',['printables.cpp',['../printables_8cpp.html',1,'']]],
+  ['printables_2ehpp_6',['printables.hpp',['../printables_8hpp.html',1,'']]]
 ];

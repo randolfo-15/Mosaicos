@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['effect_0',['effect',['../color_8hpp.html#abc283de21e11fab8989a35ab9a39b6f9',1,'color.hpp']]]
+  ['dp_0',['Dp',['../display_8hpp.html#a39553f78f5afc73a07943d81ac8d6455',1,'display.hpp']]]
 ];

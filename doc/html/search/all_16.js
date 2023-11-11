@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['y_5fdp_0',['y_dp',['../classDisplay.html#a6d318fb6e11c8eb2ea212066fe0abf51',1,'Display']]],
-  ['yellow_5fbkg_1',['YELLOW_BKG',['../namespaceCOR_1_1BKG.html#a23fcca1934b1cfdfdf3cbcfdbf3fc97c',1,'COR::BKG']]],
-  ['yellow_5fkey_2',['YELLOW_KEY',['../namespaceCOR_1_1KEY.html#a393d7966929d8f0e0234c18ad0e17b6d',1,'COR::KEY']]],
-  ['yellow_5flight_5fbkg_3',['YELLOW_LIGHT_BKG',['../namespaceCOR_1_1BKG.html#a682bcc0c5c1a3635b1532d54d7b45c7a',1,'COR::BKG']]],
-  ['yellow_5flight_5fkey_4',['YELLOW_LIGHT_KEY',['../namespaceCOR_1_1KEY.html#a7c55dd66712389cdd10015a6c1d54230',1,'COR::KEY']]]
+  ['w_5fdp_0',['w_dp',['../classDisplay.html#a1a551c3bc553c2176fc03ee3e180cbce',1,'Display']]],
+  ['white_1',['white',['../structForeground.html#a9a6036f1752280dc252e348e8b461710',1,'Foreground::WHITE'],['../structBackground.html#ae63c058632fcc38a516b2a18bc1efe14',1,'Background::WHITE']]],
+  ['width_2',['width',['../classDisplay.html#a69cfd676fe09852c6812274343262dae',1,'Display']]],
+  ['write_3',['write',['../classDisplay.html#a285a9ba04db91c125f1f94016b734bd1',1,'Display::write()'],['../classPrintables.html#a29d48f1e32c78bcb9fcc4cf2e9489c04',1,'Printables::write(void *obj, Func_Obj fx=nullptr)'],['../classPrintables.html#a97c42df3732f5e3acb6fb49d2059fed0',1,'Printables::write(string, MODO, Func_Obj fx=nullptr)']]],
+  ['write_5faux_5fbuffer_4',['write_aux_buffer',['../classDisplay.html#a7f589f8a37172644db2de1450e9766b3',1,'Display']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['printables_0',['Printables',['../classPrintables.html',1,'']]]
+  ['display_0',['Display',['../classDisplay.html',1,'']]]
 ];

@@ -1,13 +1,10 @@
 var searchData=
 [
-  ['get_20→_20spacing_0',['Get → spacing',['../classPrintables.html#autotoc_md7',1,'']]],
-  ['get_5ftema_1',['get_tema',['../classPrintables.html#a251a05bb85a5c790660c5eb1d97fc4de',1,'Printables']]],
-  ['gray_5fbkg_2',['GRAY_BKG',['../namespaceCOR_1_1BKG.html#aafce58df5eb831e2ee1e69e51a35e093',1,'COR::BKG']]],
-  ['gray_5fkey_3',['GRAY_KEY',['../namespaceCOR_1_1KEY.html#aeefc6eceb81e05b6e9f911e681495c8e',1,'COR::KEY']]],
-  ['gray_5flight_5fbkg_4',['GRAY_LIGHT_BKG',['../namespaceCOR_1_1BKG.html#af8c5558ccc7418175acf96be518673ae',1,'COR::BKG']]],
-  ['gray_5flight_5fkey_5',['GRAY_LIGHT_KEY',['../namespaceCOR_1_1KEY.html#aa080ae2e3fc1974baa1dbe6687cf91a9',1,'COR::KEY']]],
-  ['green_5fbkg_6',['GREEN_BKG',['../namespaceCOR_1_1BKG.html#aadf4d4e0fb8d3d7941faa3889a1dc261',1,'COR::BKG']]],
-  ['green_5fkey_7',['GREEN_KEY',['../namespaceCOR_1_1KEY.html#a6a4c6819fb3d51a3d84a099fc213f104',1,'COR::KEY']]],
-  ['green_5flight_5fbkg_8',['GREEN_LIGHT_BKG',['../namespaceCOR_1_1BKG.html#a0c09d23dd20a7ad13bf1082ef0b3306c',1,'COR::BKG']]],
-  ['green_5flight_5fkey_9',['GREEN_LIGHT_KEY',['../namespaceCOR_1_1KEY.html#acba028e91a3aa515a1537653a4d26268',1,'COR::KEY']]]
+  ['fg_0',['Fg',['../colour_8hpp.html#a996f35833e13bdc262107b486cbc1815',1,'colour.hpp']]],
+  ['foreground_1',['foreground',['../structForeground.html',1,'Foreground'],['../structForeground.html#a171919d91ff4cb012942cca134ffb484',1,'Foreground::Foreground()'],['../structForeground.html#a10c0550c24dbaaa1baf684c382b98aad',1,'Foreground::Foreground(colour)']]],
+  ['format_2',['format',['../classDisplay.html#ac7a072440aae3ded1ea54d6641b692ea',1,'Display']]],
+  ['format_5fline_3',['format_line',['../classDisplay.html#aaef5599f4f4eed30851d5a4f27763255',1,'Display']]],
+  ['func_5fobj_4',['Func_Obj',['../printables_8hpp.html#a78c36b04d86ac15547835116ba747c7a',1,'printables.hpp']]],
+  ['fx_5',['fx',['../classTexto.html#a8f0ff713d0b31ab1e25ba0074ad4075a',1,'Texto']]],
+  ['fx_5floop_6',['Fx_loop',['../printables_8hpp.html#aa9b8942bca34177235a3511726a34128',1,'printables.hpp']]]
 ];

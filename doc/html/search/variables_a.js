@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['red_5fbkg_0',['RED_BKG',['../namespaceCOR_1_1BKG.html#a59f9271c801492633286e695d7198b81',1,'COR::BKG']]],
-  ['red_5fkey_1',['RED_KEY',['../namespaceCOR_1_1KEY.html#a2e0eb6152eee44ae5327b7d50b84c8d7',1,'COR::KEY']]],
-  ['red_5flight_5fbkg_2',['RED_LIGHT_BKG',['../namespaceCOR_1_1BKG.html#acfbb54b54ea19b859573fdad4328c2ae',1,'COR::BKG']]],
-  ['red_5flight_5fkey_3',['RED_LIGHT_KEY',['../namespaceCOR_1_1KEY.html#ab98e839026dde87a9054cbe96f201e5e',1,'COR::KEY']]],
-  ['reverse_4',['REVERSE',['../namespaceCOR_1_1EFFECT.html#a8b83b2bb17744087a1ef91fffc267760',1,'COR::EFFECT']]]
+  ['magent_0',['magent',['../structForeground.html#abad255549a5d6dc9ed71b2b6c7783c0e',1,'Foreground::MAGENT'],['../structBackground.html#ab7a68527e57ac75e3242672a159d1e50',1,'Background::MAGENT']]],
+  ['magent_5flight_1',['magent_light',['../structForeground.html#a5ce1ed24334117d84d210515a97e9d0f',1,'Foreground::MAGENT_LIGHT'],['../structBackground.html#adcd0e39f043e37b3d60e9d3bfd806f30',1,'Background::MAGENT_LIGHT']]],
+  ['modo_2',['modo',['../classTexto.html#a9a7dc92cb9720bc9f595134d74a04f97',1,'Texto']]]
 ];

@@ -1,0 +1,7 @@
+<map id="Foreground::is_colour" name="Foreground::is_colour">
+<area shape="rect" id="Node000001" title="Checa se uma string e um Foreground." alt="" coords="222,32,382,60"/>
+<area shape="rect" id="Node000002" href="$classTheme.html#ac404d40690fb785e4ac9f561bf95eec3" title="(Set) padrão para foreground." alt="" coords="41,5,138,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,36,138,28,139,23,206,31"/>
+<area shape="rect" id="Node000003" href="$structForeground.html#aa9e25d36193c0a5a68c6a7dcaef67430" title=" " alt="" coords="5,57,174,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="207,60,174,64,174,58,206,55"/>
+</map>

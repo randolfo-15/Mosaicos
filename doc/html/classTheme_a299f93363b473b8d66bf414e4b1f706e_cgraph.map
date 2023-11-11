@@ -1,0 +1,9 @@
+<map id="Theme::Theme" name="Theme::Theme">
+<area shape="rect" id="Node000001" title="Construtor custumizado." alt="" coords="5,57,125,85"/>
+<area shape="rect" id="Node000002" href="$structEffect.html#a068c319c2d22e1bd132fc258d7daf451" title=" " alt="" coords="193,5,310,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,54,184,35,186,40,118,59"/>
+<area shape="rect" id="Node000003" href="$structForeground.html#a7524abf32474e262c5c54041347d5292" title=" " alt="" coords="175,57,328,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="125,69,159,69,159,74,125,74"/>
+<area shape="rect" id="Node000004" href="$structBackground.html#aa0dabfd2e6db3c39d35eaefd0cc50878" title=" " alt="" coords="173,109,330,137"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="118,83,186,102,184,107,117,88"/>
+</map>

@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['leitura_0',['Leitura',['../classPrintables.html#autotoc_md5',1,'']]],
-  ['line_1',['line',['../classTexto.html#a08f1bb84687a4b86f9a790a444db7dfe',1,'Texto']]],
-  ['loop_2',['loop',['../classDisplay.html#a635eb4b97ef2b16a0de5f6f2e3541e49',1,'Display::loop()'],['../classPrintables.html#autotoc_md2',1,'Loop']]]
+  ['key_0',['key',['../classTheme.html#a4d61fd2bdadd4181ba4ae7a6ad50875c',1,'Theme::key()'],['../classTheme.html#ac404d40690fb785e4ac9f561bf95eec3',1,'Theme::key(colour)']]]
 ];

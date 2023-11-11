@@ -1,0 +1,9 @@
+<map id="Background::is_colour" name="Background::is_colour">
+<area shape="rect" id="Node000001" title="Checa se uma string e um Background." alt="" coords="226,57,390,85"/>
+<area shape="rect" id="Node000002" href="$classTheme.html#ad9c8071965be092bc48eabda819ce3cd" title="(Set) padrão para background." alt="" coords="42,5,141,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="231,56,141,34,142,28,233,50"/>
+<area shape="rect" id="Node000003" href="$classTheme.html#a7cf3a5224707901e586abfa798feefa0" title="(Set) padrão para o modo seleção." alt="" coords="38,57,145,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="210,74,145,74,145,69,210,69"/>
+<area shape="rect" id="Node000004" href="$structBackground.html#a1b438295426ff61e8ae956ea5270f73e" title=" " alt="" coords="5,109,178,137"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="233,92,153,111,152,106,232,87"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="src/colour.hpp" name="src/colour.hpp">
+<area shape="rect" id="Node000001" title="Arquivo de definição Foreground Background e Efeitos." alt="" coords="73,5,184,33"/>
+<area shape="rect" id="Node000002" href="$colour_8cpp.html" title="Implementa cores e efeitos da lib mosaicos." alt="" coords="5,81,116,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,46,75,82,71,79,104,43"/>
+<area shape="rect" id="Node000003" href="$theme_8hpp.html" title="Arquivo de definição de temas das janelas." alt="" coords="139,81,254,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="153,43,186,79,182,82,149,46"/>
+<area shape="rect" id="Node000004" href="$theme_8cpp.html" title="Arquivo de implementação da classe tema." alt="" coords="140,157,253,184"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="199,124,199,156,194,156,194,124"/>
+</map>

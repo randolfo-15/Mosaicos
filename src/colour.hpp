@@ -1,72 +1,24 @@
-/*!*****************************************************
- *	\brief  Arquivo de definição de cores e recursos da lib
+/*!***************************************************************
+ *	\brief  Arquivo de definição Foreground Background e Efeitos.
  *	\file colour.hpp
  * \author Randolfo Augusto
  * \date 20/09/22
- ******************************************************/
+ *****************************************************************/
 
 #ifndef COLOUR_HPP
 #define COLOUR_HPP
 
+#include <ostream>
+#include <regex>
+using std::regex;
+using std::regex_match;
+
 #include <iostream>
-using colour = std::string;
-using effect  = std::string;
-
-
-//!	 Define a coloração de letras no terminal.
-struct Foreground{
-	
-	/// Checa se uma string e um Foreground.
-	static bool is_colour(colour);  
-	
-	static const colour                      
-	
-			 BLACK_KEY,                         ///< default
-			 RED_KEY,                             ///< #F00
-			 GREEN_KEY,                        ///< #0F0
-			 YELLOW_KEY,                      ///< #FF0
-			 BLUE_KEY,                           ///< #00F
-			 MAGENT_KEY,                     ///< #F0F
-			 CYAN_KEY,                           ///< #0FF
-			 GRAY_LIGHT_KEY,              ///< #789 
-			 RED_LIGHT_KEY,                 ///< #F66
-             GREEN_LIGHT_KEY,            ///< #6F6
-			 YELLOW_LIGHT_KEY,          ///< #FF6
-			 BLUE_LIGHT_KEY,               ///< #66F
-			 MAGENT_LIGHT_KEY,         ///< #F6F
-			 CYAN_LIGHT_KEY,               ///< #6FF
-			 WHITE_KEY,                          ///< #FFF
-			 GRAY_KEY;                            ///< #666
-
-	
-};using Fg=Foreground; 
-
-/// Define a coloração de background de uma letra.
-struct Background{ 
-	
-	/// Checa se uma string e um Background.
-	static bool is_colour(colour);
-	
-	static const colour
-			 BLACK_BKG,                     ///< default
-			 GRAY_LIGHT_BKG,           ///< #666
-			 RED_LIGHT_BKG,             ///< #F66
-             GREEN_LIGHT_BKG,        ///< #6F6
-			 YELLOW_LIGHT_BKG,      ///< #FF6
-			 BLUE_LIGHT_BKG,           ///< #66F
-			 MAGENT_LIGHT_BKG,     ///< #F6F
-			 CYAN_LIGHT_BKG,           ///< #6FF
-             RED_BKG,                          ///< #F00
-             GREEN_BKG,                     ///< #0F0
-			 YELLOW_BKG,                   ///< #FF0
-			 BLUE_BKG,                        ///< #00F
-			 MAGENT_BKG,                  ///< #F0F
-			 CYAN_BKG,                        ///< #0FF
-			 WHITE_BKG,                      ///< #FFF
-			 GRAY_BKG;                        ///< #333
-
-	
-};using  Bg=Background;
+using colour =const std::string;
+using effect  =const std::string;
+using effects  =std::string;
+using colors = std::string;
+using std::ostream;
 
 /// Define quais efeitos uma letra possui.
 struct Effect{
@@ -74,8 +26,9 @@ struct Effect{
 	/// Checa se uma string e um efeito
 	static bool is_effect(effect);
 	
-	static const effect
-			ITALIC,
+	static  effect
+	
+			 ITALIC,
 			 BLINK,
 			 DEFAULT_BKG,
 			 BOLD_KEY,
@@ -85,7 +38,119 @@ struct Effect{
 			 HIDDEN,
 			 TACHADO,
 			 DEFAULT_KEY;
-
+	
+			 Effect();
+			 
+			 Effect(effect);
+			 
+			 void operator=(effect);
+			 
+			 effect cast_str();
+			 
+	private: 
+		/// Modelo de pesquisa regex.
+		static const std::string quest; 
+		
+		/// Define um efeito.
+		effects efc;
+		
+		friend ostream& operator<<(ostream& , const Effect&);
+		
 };using Ef=Effect;
+
+/// Imprime em cout um efeito.
+ostream& operator<<(ostream& , const Effect&);
+
+//!	 Define a coloração de letras no terminal.
+struct Foreground{
+	
+	/// Checa se uma string e um Foreground.
+	static bool is_colour(colour);  
+	
+	static  colour                      
+	
+			 BLACK,                   ///< default
+			 RED,                        ///< #F00
+			 GREEN,                   ///< #0F0
+			 YELLOW,                ///< #FF0
+			 BLUE,                     ///< #00F
+			 MAGENT,                     ///< #F0F
+			 CYAN,                     ///< #0FF
+			 GRAY_LIGHT,              ///< #789 
+			 RED_LIGHT,                 ///< #F66
+             GREEN_LIGHT,            ///< #6F6
+			 YELLOW_LIGHT,          ///< #FF6
+			 BLUE_LIGHT,               ///< #66F
+			 MAGENT_LIGHT,         ///< #F6F
+			 CYAN_LIGHT,               ///< #6FF
+			 WHITE,                    ///< #FFF
+			 GRAY;                      ///< #666
+
+			 Foreground();
+			 
+			 Foreground(colour);
+			 
+			 void operator=(colour);
+			 
+			 colour cast_str();
+			 
+			 private: 
+				
+				 /// Modelo de pesquisa regex.
+				 static const std::string quest; 
+			
+				/// Define  um background
+				 colors clr=Ef::DEFAULT_KEY;
+	
+				 friend ostream& operator<<(ostream& , const Foreground&);
+				 
+};using Fg=Foreground; 
+
+ostream& operator<<(ostream& , const Foreground&);
+
+/// Define a coloração de background de uma letra.
+struct Background{ 
+	
+	/// Checa se uma string e um Background.
+	static bool is_colour(colour);
+	
+	static  colour
+	
+			 BLACK,                ///< default
+			 GRAY_LIGHT,           ///< #666
+			 RED_LIGHT,             ///< #F66
+             GREEN_LIGHT,        ///< #6F6
+			 YELLOW_LIGHT,      ///< #FF6
+			 BLUE_LIGHT,           ///< #66F
+			 MAGENT_LIGHT,     ///< #F6F
+			 CYAN_LIGHT,           ///< #6FF
+             RED,                    ///< #F00
+             GREEN,               ///< #0F0
+			 YELLOW,             ///< #FF0
+			 BLUE,                   ///< #00F
+			 MAGENT,                  ///< #F0F
+			 CYAN,                   ///< #0FF
+			 WHITE,                 ///< #FFF
+			 GRAY;                   ///< #333
+			
+			 Background();
+			 
+			 Background(colour);
+			 
+			 void operator=(colour);
+			
+			 colour cast_str();
+			 
+			 private: 
+				/// Modelo de pesquisa regex.
+				 static const std::string quest;
+				 
+				 colors clr=Ef::DEFAULT_BKG;
+
+				 friend ostream& operator<<(ostream& , const Background&);
+				 
+};using  Bg=Background;
+
+ostream& operator<<(ostream& , const Background&);
 
 #endif // colour.hpp

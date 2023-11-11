@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['no_5fsb_0',['no_sb',['../classDisplay.html#a9e5bf4ad8bef55dcdecf2e27bca407d3',1,'Display']]]
+  ['line_0',['line',['../classTexto.html#a08f1bb84687a4b86f9a790a444db7dfe',1,'Texto']]]
 ];

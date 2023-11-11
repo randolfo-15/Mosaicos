@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['tema_2ecpp_0',['tema.cpp',['../tema_8cpp.html',1,'']]],
-  ['tema_2ehpp_1',['tema.hpp',['../tema_8hpp.html',1,'']]]
+  ['theme_2ecpp_0',['theme.cpp',['../theme_8cpp.html',1,'']]],
+  ['theme_2ehpp_1',['theme.hpp',['../theme_8hpp.html',1,'']]]
 ];

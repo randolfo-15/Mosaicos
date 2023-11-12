@@ -1,7 +1,5 @@
 <map id="Effect::is_effect" name="Effect::is_effect">
-<area shape="rect" id="Node000001" title="Checa se uma string e um efeito." alt="" coords="186,32,307,60"/>
-<area shape="rect" id="Node000002" href="$classTheme.html#afeaffb329e043ae2f49661cc4a82709c" title="(Set) padrão para efeitos." alt="" coords="26,5,117,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,37,117,29,118,23,171,32"/>
-<area shape="rect" id="Node000003" href="$structEffect.html#ae1af3f0468f32a25a67394429d55b4ab" title=" " alt="" coords="5,57,138,85"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="171,59,138,64,137,59,170,54"/>
+<area shape="rect" id="Node000001" title="Checa se uma string e um efeito." alt="" coords="186,5,307,33"/>
+<area shape="rect" id="Node000002" href="$structEffect.html#ae1af3f0468f32a25a67394429d55b4ab" title=" " alt="" coords="5,5,138,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,22,138,22,138,17,170,17"/>
 </map>

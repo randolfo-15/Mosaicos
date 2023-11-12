@@ -1,8 +1,12 @@
 var hierarchy =
 [
-    [ "Background", "structBackground.html", null ],
-    [ "Effect", "structEffect.html", null ],
-    [ "Foreground", "structForeground.html", null ],
+    [ "colors", null, [
+      [ "Background", "structBackground.html", null ],
+      [ "Foreground", "structForeground.html", null ]
+    ] ],
+    [ "effects", null, [
+      [ "Effect", "structEffect.html", null ]
+    ] ],
     [ "Printables", "classPrintables.html", [
       [ "Display", "classDisplay.html", null ]
     ] ],

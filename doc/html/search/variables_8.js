@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['italic_0',['ITALIC',['../structEffect.html#a02f0b3648ff70564e448a694bbe2ab25',1,'Effect']]]
+  ['line_0',['line',['../classTexto.html#a08f1bb84687a4b86f9a790a444db7dfe',1,'Texto']]]
 ];

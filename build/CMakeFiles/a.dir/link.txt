@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/a.dir/main.cpp.o -o a   -L/home/randolfo/Documentos/Mosaicos/mosaicos  -Wl,-rpath,/home/randolfo/Documentos/Mosaicos/mosaicos Library/libmosaicos.a 

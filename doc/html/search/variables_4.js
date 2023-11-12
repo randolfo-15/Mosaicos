@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['efc_0',['efc',['../structEffect.html#af02f15f4e44c32e2d9860850a7bcf018',1,'Effect']]]
+  ['fx_0',['fx',['../classTexto.html#a8f0ff713d0b31ab1e25ba0074ad4075a',1,'Texto']]]
 ];

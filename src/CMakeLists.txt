@@ -7,16 +7,17 @@ endif()
 
 target_sources(mosaicos
     PRIVATE
-        tema.cpp
-        printables.cpp
-        display.cpp
         colour.cpp
+        theme.cpp
+        #printables.cpp
+        #display.cpp
+        
     PUBLIC FILE_SET HEADERS 
         FILES 
-            tema.hpp
-            printables.hpp
-            display.hpp
             colour.hpp
+            theme.hpp
+            #printables.hpp
+            #display.hpp
 )
  
 target_include_directories(mosaicos

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['tachado_0',['TACHADO',['../structEffect.html#a86b0544c250321c489c1cc5e0a19817d',1,'Effect']]],
-  ['th_1',['th',['../classPrintables.html#a22601760067aef0a566c081cec5b329d',1,'Printables']]]
+  ['w_5fdp_0',['w_dp',['../classDisplay.html#a1a551c3bc553c2176fc03ee3e180cbce',1,'Display']]],
+  ['white_1',['white',['../structForeground.html#a9a6036f1752280dc252e348e8b461710',1,'Foreground::WHITE'],['../structBackground.html#ae63c058632fcc38a516b2a18bc1efe14',1,'Background::WHITE']]]
 ];

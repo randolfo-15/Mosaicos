@@ -8,9 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/randolfo/Documentos/Mosaicos/src/display.cpp" "src/CMakeFiles/mosaicos.dir/display.cpp.o" "gcc" "src/CMakeFiles/mosaicos.dir/display.cpp.o.d"
-  "/home/randolfo/Documentos/Mosaicos/src/printables.cpp" "src/CMakeFiles/mosaicos.dir/printables.cpp.o" "gcc" "src/CMakeFiles/mosaicos.dir/printables.cpp.o.d"
-  "/home/randolfo/Documentos/Mosaicos/src/tema.cpp" "src/CMakeFiles/mosaicos.dir/tema.cpp.o" "gcc" "src/CMakeFiles/mosaicos.dir/tema.cpp.o.d"
+  "/home/randolfo/Documentos/Mosaicos/src/colour.cpp" "src/CMakeFiles/mosaicos.dir/colour.cpp.o" "gcc" "src/CMakeFiles/mosaicos.dir/colour.cpp.o.d"
+  "/home/randolfo/Documentos/Mosaicos/src/theme.cpp" "src/CMakeFiles/mosaicos.dir/theme.cpp.o" "gcc" "src/CMakeFiles/mosaicos.dir/theme.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

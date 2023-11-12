@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['clr_0',['clr',['../structForeground.html#aed3007f35ad696629555462bb487c823',1,'Foreground::clr'],['../structBackground.html#a34915184ffa0d68ad5c8548a4e5b7854',1,'Background::clr']]],
-  ['cor_1',['cor',['../classShadow.html#a721893b25c18f14e543c8303fbbb72dd',1,'Shadow']]],
-  ['cor_5fspace_2',['cor_space',['../printables_8hpp.html#a0d0044b2ec4254e842cbeabe8503a982',1,'printables.hpp']]],
-  ['corte_3',['corte',['../classDisplay.html#a9ba6660aec3dcb5fbacd1546fa96f227',1,'Display']]],
-  ['cyan_4',['cyan',['../structForeground.html#ad71da98dd7c72226991cf7f13c9a9333',1,'Foreground::CYAN'],['../structBackground.html#aa013643038158d6d5ed8ba1286de693d',1,'Background::CYAN']]],
-  ['cyan_5flight_5',['cyan_light',['../structForeground.html#a264655070b917b5b3a236b7870060b23',1,'Foreground::CYAN_LIGHT'],['../structBackground.html#affd512a996361a9450f0b30d1e8630cc',1,'Background::CYAN_LIGHT']]]
+  ['dark_0',['DARK',['../structEffect.html#a199b50265d18536cb01c1db84b72918f',1,'Effect']]],
+  ['default_5fbkg_1',['DEFAULT_BKG',['../structEffect.html#a58919fdb68c17b0143b821c2b5f6650a',1,'Effect']]],
+  ['default_5fkey_2',['DEFAULT_KEY',['../structEffect.html#abee5039e5c6071f60234fc191a0f634d',1,'Effect']]],
+  ['dp_3',['dp',['../classTexto.html#ae71702683ff989ebae86b86d3955c161',1,'Texto::Dp'],['../classSpace.html#a000d70ba5e22eedb04b3b0330d3ce0ac',1,'Space::Dp'],['../classShadow.html#afccc2930cfc0e5a60bb0c90e40aa038b',1,'Shadow::Dp']]],
+  ['dps_4',['dps',['../classDisplay.html#a94d7e07559d28e21e196678df2797b48',1,'Display']]]
 ];

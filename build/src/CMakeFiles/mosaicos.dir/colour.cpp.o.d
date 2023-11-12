@@ -1,11 +1,8 @@
-src/CMakeFiles/mosaicos.dir/display.cpp.o: \
- /home/randolfo/Documentos/Mosaicos/src/display.cpp \
+src/CMakeFiles/mosaicos.dir/colour.cpp.o: \
+ /home/randolfo/Documentos/Mosaicos/src/colour.cpp \
  /usr/include/stdc-predef.h \
- /home/randolfo/Documentos/Mosaicos/src/display.hpp \
- /home/randolfo/Documentos/Mosaicos/src/printables.hpp \
- /home/randolfo/Documentos/Mosaicos/src/tema.hpp \
- /home/randolfo/Documentos/Mosaicos/src/color.hpp \
- /usr/include/c++/13.2.1/iostream \
+ /home/randolfo/Documentos/Mosaicos/src/colour.hpp \
+ /usr/include/c++/13.2.1/ostream \
  /usr/include/c++/13.2.1/bits/requires_hosted.h \
  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
@@ -14,8 +11,7 @@ src/CMakeFiles/mosaicos.dir/display.cpp.o: \
  /usr/include/sys/cdefs.h /usr/include/bits/long-double.h \
  /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
- /usr/include/c++/13.2.1/pstl/pstl_config.h \
- /usr/include/c++/13.2.1/ostream /usr/include/c++/13.2.1/ios \
+ /usr/include/c++/13.2.1/pstl/pstl_config.h /usr/include/c++/13.2.1/ios \
  /usr/include/c++/13.2.1/iosfwd /usr/include/c++/13.2.1/bits/stringfwd.h \
  /usr/include/c++/13.2.1/bits/memoryfwd.h \
  /usr/include/c++/13.2.1/bits/postypes.h /usr/include/c++/13.2.1/cwchar \
@@ -139,38 +135,50 @@ src/CMakeFiles/mosaicos.dir/display.cpp.o: \
  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/ctype_inline.h \
  /usr/include/c++/13.2.1/bits/locale_facets.tcc \
  /usr/include/c++/13.2.1/bits/basic_ios.tcc \
- /usr/include/c++/13.2.1/bits/ostream.tcc /usr/include/c++/13.2.1/istream \
- /usr/include/c++/13.2.1/bits/istream.tcc /usr/include/c++/13.2.1/vector \
+ /usr/include/c++/13.2.1/bits/ostream.tcc /usr/include/c++/13.2.1/regex \
+ /usr/include/c++/13.2.1/bitset /usr/include/c++/13.2.1/locale \
+ /usr/include/c++/13.2.1/bits/locale_facets_nonio.h \
+ /usr/include/c++/13.2.1/ctime \
+ /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/time_members.h \
+ /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/13.2.1/bits/codecvt.h \
+ /usr/include/c++/13.2.1/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/13.2.1/bits/locale_conv.h \
+ /usr/include/c++/13.2.1/sstream /usr/include/c++/13.2.1/istream \
+ /usr/include/c++/13.2.1/bits/istream.tcc \
+ /usr/include/c++/13.2.1/bits/sstream.tcc /usr/include/c++/13.2.1/stack \
+ /usr/include/c++/13.2.1/deque \
  /usr/include/c++/13.2.1/bits/stl_uninitialized.h \
- /usr/include/c++/13.2.1/bits/stl_vector.h \
- /usr/include/c++/13.2.1/bits/stl_bvector.h \
- /usr/include/c++/13.2.1/bits/vector.tcc \
- /usr/include/c++/13.2.1/algorithm \
+ /usr/include/c++/13.2.1/bits/stl_deque.h \
+ /usr/include/c++/13.2.1/bits/deque.tcc \
+ /usr/include/c++/13.2.1/bits/stl_stack.h \
+ /usr/include/c++/13.2.1/ext/aligned_buffer.h \
+ /usr/include/c++/13.2.1/bits/shared_ptr.h \
+ /usr/include/c++/13.2.1/bits/shared_ptr_base.h \
+ /usr/include/c++/13.2.1/bits/allocated_ptr.h \
+ /usr/include/c++/13.2.1/bits/unique_ptr.h \
+ /usr/include/c++/13.2.1/ext/concurrence.h \
+ /usr/include/c++/13.2.1/bits/std_function.h \
  /usr/include/c++/13.2.1/bits/stl_algo.h \
  /usr/include/c++/13.2.1/bits/algorithmfwd.h \
  /usr/include/c++/13.2.1/bits/stl_heap.h \
  /usr/include/c++/13.2.1/bits/uniform_int_dist.h \
  /usr/include/c++/13.2.1/bits/stl_tempbuf.h \
- /usr/include/c++/13.2.1/pstl/glue_algorithm_defs.h \
- /usr/include/c++/13.2.1/pstl/execution_defs.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
- /usr/include/bits/confname.h /usr/include/bits/getopt_posix.h \
- /usr/include/bits/getopt_core.h /usr/include/bits/unistd_ext.h \
- /usr/include/linux/close_range.h /usr/include/sys/wait.h \
- /usr/include/signal.h /usr/include/bits/signum-generic.h \
- /usr/include/bits/signum-arch.h /usr/include/bits/types/sig_atomic_t.h \
- /usr/include/bits/types/siginfo_t.h /usr/include/bits/types/__sigval_t.h \
- /usr/include/bits/siginfo-arch.h /usr/include/bits/siginfo-consts.h \
- /usr/include/bits/siginfo-consts-arch.h \
- /usr/include/bits/types/sigval_t.h /usr/include/bits/types/sigevent_t.h \
- /usr/include/bits/sigevent-consts.h /usr/include/bits/sigaction.h \
- /usr/include/bits/sigcontext.h /usr/include/bits/types/stack_t.h \
- /usr/include/sys/ucontext.h /usr/include/bits/sigstack.h \
- /usr/include/bits/sigstksz.h /usr/include/bits/ss_flags.h \
- /usr/include/bits/types/struct_sigstack.h /usr/include/bits/sigthread.h \
- /usr/include/bits/signal_ext.h /usr/include/bits/types/idtype_t.h \
- /usr/include/c++/13.2.1/fstream /usr/include/c++/13.2.1/bits/codecvt.h \
- /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
- /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
- /usr/include/c++/13.2.1/bits/fstream.tcc /usr/include/c++/13.2.1/sstream \
- /usr/include/c++/13.2.1/bits/sstream.tcc
+ /usr/include/c++/13.2.1/bits/stl_tree.h \
+ /usr/include/c++/13.2.1/bits/node_handle.h \
+ /usr/include/c++/13.2.1/bits/stl_map.h \
+ /usr/include/c++/13.2.1/bits/stl_vector.h \
+ /usr/include/c++/13.2.1/bits/stl_bvector.h \
+ /usr/include/c++/13.2.1/bits/vector.tcc \
+ /usr/include/c++/13.2.1/bits/regex_constants.h \
+ /usr/include/c++/13.2.1/bits/regex_error.h \
+ /usr/include/c++/13.2.1/bits/regex_automaton.h \
+ /usr/include/c++/13.2.1/bits/regex_automaton.tcc \
+ /usr/include/c++/13.2.1/bits/regex_scanner.h \
+ /usr/include/c++/13.2.1/bits/regex_scanner.tcc \
+ /usr/include/c++/13.2.1/bits/regex_compiler.h \
+ /usr/include/c++/13.2.1/bits/regex_compiler.tcc \
+ /usr/include/c++/13.2.1/bits/regex.h \
+ /usr/include/c++/13.2.1/bits/regex.tcc \
+ /usr/include/c++/13.2.1/bits/regex_executor.h \
+ /usr/include/c++/13.2.1/bits/regex_executor.tcc

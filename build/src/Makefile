@@ -175,77 +175,53 @@ mosaicos/fast:
 	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/build
 .PHONY : mosaicos/fast
 
-display.o: display.cpp.o
-.PHONY : display.o
+colour.o: colour.cpp.o
+.PHONY : colour.o
 
 # target to build an object file
-display.cpp.o:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/display.cpp.o
-.PHONY : display.cpp.o
+colour.cpp.o:
+	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/colour.cpp.o
+.PHONY : colour.cpp.o
 
-display.i: display.cpp.i
-.PHONY : display.i
+colour.i: colour.cpp.i
+.PHONY : colour.i
 
 # target to preprocess a source file
-display.cpp.i:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/display.cpp.i
-.PHONY : display.cpp.i
+colour.cpp.i:
+	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/colour.cpp.i
+.PHONY : colour.cpp.i
 
-display.s: display.cpp.s
-.PHONY : display.s
+colour.s: colour.cpp.s
+.PHONY : colour.s
 
 # target to generate assembly for a file
-display.cpp.s:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/display.cpp.s
-.PHONY : display.cpp.s
+colour.cpp.s:
+	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/colour.cpp.s
+.PHONY : colour.cpp.s
 
-printables.o: printables.cpp.o
-.PHONY : printables.o
+theme.o: theme.cpp.o
+.PHONY : theme.o
 
 # target to build an object file
-printables.cpp.o:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/printables.cpp.o
-.PHONY : printables.cpp.o
+theme.cpp.o:
+	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/theme.cpp.o
+.PHONY : theme.cpp.o
 
-printables.i: printables.cpp.i
-.PHONY : printables.i
-
-# target to preprocess a source file
-printables.cpp.i:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/printables.cpp.i
-.PHONY : printables.cpp.i
-
-printables.s: printables.cpp.s
-.PHONY : printables.s
-
-# target to generate assembly for a file
-printables.cpp.s:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/printables.cpp.s
-.PHONY : printables.cpp.s
-
-tema.o: tema.cpp.o
-.PHONY : tema.o
-
-# target to build an object file
-tema.cpp.o:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/tema.cpp.o
-.PHONY : tema.cpp.o
-
-tema.i: tema.cpp.i
-.PHONY : tema.i
+theme.i: theme.cpp.i
+.PHONY : theme.i
 
 # target to preprocess a source file
-tema.cpp.i:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/tema.cpp.i
-.PHONY : tema.cpp.i
+theme.cpp.i:
+	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/theme.cpp.i
+.PHONY : theme.cpp.i
 
-tema.s: tema.cpp.s
-.PHONY : tema.s
+theme.s: theme.cpp.s
+.PHONY : theme.s
 
 # target to generate assembly for a file
-tema.cpp.s:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/tema.cpp.s
-.PHONY : tema.cpp.s
+theme.cpp.s:
+	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/theme.cpp.s
+.PHONY : theme.cpp.s
 
 # Help Target
 help:
@@ -260,15 +236,12 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... mosaicos"
-	@echo "... display.o"
-	@echo "... display.i"
-	@echo "... display.s"
-	@echo "... printables.o"
-	@echo "... printables.i"
-	@echo "... printables.s"
-	@echo "... tema.o"
-	@echo "... tema.i"
-	@echo "... tema.s"
+	@echo "... colour.o"
+	@echo "... colour.i"
+	@echo "... colour.s"
+	@echo "... theme.o"
+	@echo "... theme.i"
+	@echo "... theme.s"
 .PHONY : help
 
 

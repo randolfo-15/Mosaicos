@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['magent_0',['magent',['../structForeground.html#abad255549a5d6dc9ed71b2b6c7783c0e',1,'Foreground::MAGENT'],['../structBackground.html#ab7a68527e57ac75e3242672a159d1e50',1,'Background::MAGENT']]],
-  ['magent_5flight_1',['magent_light',['../structForeground.html#a5ce1ed24334117d84d210515a97e9d0f',1,'Foreground::MAGENT_LIGHT'],['../structBackground.html#adcd0e39f043e37b3d60e9d3bfd806f30',1,'Background::MAGENT_LIGHT']]],
-  ['modo_2',['modo',['../classTexto.html#a9a7dc92cb9720bc9f595134d74a04f97',1,'Texto::modo'],['../printables_8hpp.html#a972bb187e61ca0dfa97d29c839af77c9',1,'MODO:&#160;printables.hpp']]],
-  ['modos_3',['modos',['../printables_8hpp.html#a2bc0dea73b5708f50d509e3b9b8eb709',1,'printables.hpp']]],
-  ['move_5fbuffer_4',['move_buffer',['../classDisplay.html#aa332c9344226a809972904afa1386701',1,'Display']]]
+  ['n_5fdps_0',['n_dps',['../classDisplay.html#a5d8f08dc31e9196bf4e98b43eaee0155',1,'Display']]],
+  ['n_5fletter_1',['n_letter',['../classDisplay.html#a43ed444780f5b7afc681c6ab0c767bf7',1,'Display']]],
+  ['n_5flines_2',['n_lines',['../classDisplay.html#abbda06c9ac760da3a57cda21759f34ba',1,'Display::n_lines()'],['../classPrintables.html#abc25e238610d2c6ecc1df5c0dc302f4a',1,'Printables::n_lines()']]],
+  ['no_5fsb_3',['no_sb',['../classDisplay.html#a9e5bf4ad8bef55dcdecf2e27bca407d3',1,'Display']]],
+  ['normal_4',['NORMAL',['../printables_8hpp.html#a2bc0dea73b5708f50d509e3b9b8eb709a50d1448013c6f17125caee18aa418af7',1,'printables.hpp']]]
 ];

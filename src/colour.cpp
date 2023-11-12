@@ -38,11 +38,9 @@ Ef::quest="[\[][1-9][m]|[\[][4][9][m]|[\[][0][\;][3][9][m]";
 
 //------------------------------- Method -------------------------------
 
-Ef::Effect(){}
+Ef::Effect():effects(){}
 			 
-Ef::Effect(effect efc){ *this=efc; }
-
-effect Ef::cast_str(){return this->efc;}
+Ef::Effect(effect efc):effects(efc){ *this=efc; }
 
 void Ef::operator=(effect efc){ (is_effect(efc))?(this->efc=efc):throw ; }
 			 
@@ -83,11 +81,9 @@ Fg::quest="[\[][39][0-7][m]";
 
 //------------------------------- Method -------------------------------
 
-Fg::Foreground(){}
+Fg::Foreground():colors(Ef::DEFAULT_KEY){}
 			 
-Fg::Foreground(colour clr){ *this=clr; }
-
-colour Fg::cast_str(){return this->clr;}
+Fg::Foreground(colour clr):colors(clr){ *this=clr; }
 
 void Fg::operator=(effect clr){ (is_colour(clr))?(this->clr=clr):throw ; }
 			 
@@ -125,14 +121,12 @@ Bg::GRAY="\033[100m",                   ///< #333
  *  de 0 - 7finalizado com .
  */
 Bg::quest="[\[][1][0][0-7][m]|[\]][4][0-7][m]";
-			
+
 //------------------------------- Method -------------------------------
 
-Bg::Background(){}
-			 
-colour Bg::cast_str(){return this->clr;}
-			 
-Bg::Background(colour clr){ *this=clr; }
+Bg::Background():colors(Ef::DEFAULT_BKG){}
+			 			 
+Bg::Background(colour clr):colors(clr){ *this=clr; }
 
 void Bg::operator=(colour clr){ (is_colour(clr))?(this->clr=clr):throw ; }
 			 

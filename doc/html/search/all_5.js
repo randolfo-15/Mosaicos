@@ -1,10 +1,9 @@
 var searchData=
 [
-  ['fg_0',['Fg',['../colour_8hpp.html#a996f35833e13bdc262107b486cbc1815',1,'colour.hpp']]],
-  ['foreground_1',['foreground',['../structForeground.html',1,'Foreground'],['../structForeground.html#a171919d91ff4cb012942cca134ffb484',1,'Foreground::Foreground()'],['../structForeground.html#a10c0550c24dbaaa1baf684c382b98aad',1,'Foreground::Foreground(colour)']]],
-  ['format_2',['format',['../classDisplay.html#ac7a072440aae3ded1ea54d6641b692ea',1,'Display']]],
-  ['format_5fline_3',['format_line',['../classDisplay.html#aaef5599f4f4eed30851d5a4f27763255',1,'Display']]],
-  ['func_5fobj_4',['Func_Obj',['../printables_8hpp.html#a78c36b04d86ac15547835116ba747c7a',1,'printables.hpp']]],
-  ['fx_5',['fx',['../classTexto.html#a8f0ff713d0b31ab1e25ba0074ad4075a',1,'Texto']]],
-  ['fx_5floop_6',['Fx_loop',['../printables_8hpp.html#aa9b8942bca34177235a3511726a34128',1,'printables.hpp']]]
+  ['get_20→_20spacing_0',['Get → spacing',['../classPrintables.html#autotoc_md7',1,'']]],
+  ['get_5ftema_1',['get_tema',['../classPrintables.html#a251a05bb85a5c790660c5eb1d97fc4de',1,'Printables']]],
+  ['gray_2',['gray',['../structForeground.html#a09462c79df8fd1ecf372a7f9a09f54a1',1,'Foreground::GRAY'],['../structBackground.html#ae71b76d7432c53b20636291a15f5713b',1,'Background::GRAY']]],
+  ['gray_5flight_3',['gray_light',['../structForeground.html#aa4d7dd8b672508e2a65a8a06dacea0a5',1,'Foreground::GRAY_LIGHT'],['../structBackground.html#abce8f0898df874bf6403898b35c60e08',1,'Background::GRAY_LIGHT']]],
+  ['green_4',['green',['../structForeground.html#af0cd423658f4e18a83733cee488fe395',1,'Foreground::GREEN'],['../structBackground.html#abb32719bb4f52647c7d9f66ae2ea00e9',1,'Background::GREEN']]],
+  ['green_5flight_5',['green_light',['../structForeground.html#a80752b77c4196e1c57d85dc96543fc2d',1,'Foreground::GREEN_LIGHT'],['../structBackground.html#a451dda15f0961673fce35ed417ec4b01',1,'Background::GREEN_LIGHT']]]
 ];

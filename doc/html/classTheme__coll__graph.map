@@ -1,0 +1,14 @@
+<map id="Theme" name="Theme">
+<area shape="rect" id="Node000001" title="Define um conjunto de cores e comportamentos de uma janela." alt="" coords="139,192,206,220"/>
+<area shape="rect" id="Node000002" href="$structForeground.html" title="Define a coloração de letras no terminal." alt="" coords="5,82,100,110"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,121,114,166,149,189,146,194,110,170,68,124"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="84,5,144,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="95,47,65,84,61,80,91,44"/>
+<area shape="rect" id="Node000004" href="$structBackground.html" title="Define a coloração de background de uma letra." alt="" coords="123,82,222,110"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="135,44,164,80,160,84,131,47"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="175,125,175,192,170,192,170,125"/>
+<area shape="rect" id="Node000005" href="$structEffect.html" title="Define quais efeitos uma letra possui." alt="" coords="246,82,304,110"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="268,126,256,148,240,170,206,194,203,189,236,166,252,145,263,123"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="243,5,308,33"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="278,48,278,82,273,82,273,48"/>
+</map>

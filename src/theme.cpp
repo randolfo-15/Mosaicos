@@ -7,6 +7,10 @@
 
 #include "theme.hpp" 
 
+//--------------------------------------------------------------
+// Manufacture
+//--------------------------------------------------------------
+
 /*!
  * Por padrão as cores(blue,red,  definem  o  background e  o  foreground 
  *  white e o efeito em negrito) são o padrão da classe tema, no entanto esta 
@@ -19,36 +23,42 @@ Tm::Theme(){}
 
 /*!
  *  É possivel definir outro padrão de cores ao se custumizar o construtor
+ *  e atribuir um novo jogo de cores e efeitos.
  * ____________________________________________________________________________________
- *  \param key cor usada em foreground.
- *  \param bkj  cor usada em background.
- *  \param bkg2 cor usado no background em modo selecão.
- *  \param efeito efeito usado em foreground.
+ *  \param new_key cor usada em foreground.
+ *  \param new_bkj  cor usada em background.
+ *  \param new_bkg2 cor usado no background em modo selecão.
+ *  \param new_efeito efeito usado em foreground.
  */ 
-Tm::Theme(Fg new_key,Bg new_bkg,Bg new_bkg2,Ef new_effect)
-{
-	palette[TM_KEY]       = new_key.cast_str();
-	palette[TM_BKG]      = new_bkg.cast_str();
-	palette[TM_BKG2]    = new_bkg2.cast_str();
-	palette[TM_EFFECT] = new_effect.cast_str();
-}
+Tm::Theme(Fg new_key,Bg new_bkg,Bg new_bkg2,Ef new_effect):
+	my_key(new_key),
+    my_bkg(new_bkg),
+	my_bkg2(new_bkg2),
+	my_efc(new_effect)
+	{}
 
-		colour Tm::key(){ return palette[TM_KEY]; }              
+//--------------------------------------------------------------
+// Get
+//--------------------------------------------------------------
+	
+Ef Tm::eft(){ return my_efc; }
+	
+Fg Tm::key(){ return my_key;  }              
 		
-		colour Tm::bkg(){ return palette[TM_BKG]; }
+Bg Tm::bkg(){ return my_bkg; }
 		
-		effect  Tm::eft(){ return palette[TM_EFFECT]; }
+Bg Tm::bkg2(){ return my_bkg2; } 
+
+//--------------------------------------------------------------
+// Set
+//--------------------------------------------------------------
+
+void Tm::eft(Ef new_efc) { my_efc=new_efc; }        
+
+void Tm::key(Fg new_key){ my_key=new_key; }      
 		
-		colour Tm::bkg2(){ return palette[TM_BKG2]; } 
+void Tm::bkg(Bg new_bkg){  my_bkg=new_bkg; }      
 		
+void Tm::bkg2(Bg new_bkg){ my_bkg2=new_bkg; }
 		
-		void Tm::key(colour clr){ ( Fg::is_colour(clr))? (palette[TM_KEY]=clr) : throw ; }      
-		
-		void Tm::bkg(colour clr){  (Bg::is_colour(clr))? (palette[TM_BKG]=clr) : throw; }      
-		
-		void Tm::bkg2(colour clr){ (Bg::is_colour(clr))? (palette[TM_BKG2]=clr) : throw;}
-		
-		void Tm::eft(effect efc) {    (Ef::is_effect(efc))? (palette[TM_BKG2]=efc) : throw; }        
-		
-		 
 

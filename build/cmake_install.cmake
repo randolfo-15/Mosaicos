@@ -76,7 +76,7 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "head" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/usr/local/include/mosaicos/tema.hpp;/usr/local/include/mosaicos/printables.hpp;/usr/local/include/mosaicos/display.hpp;/usr/local/include/mosaicos/color.hpp")
+   "/usr/local/include/mosaicos/colour.hpp;/usr/local/include/mosaicos/theme.hpp")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
@@ -84,10 +84,8 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "head" OR NOT CMAKE_INSTALL_COMPONENT)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   file(INSTALL DESTINATION "/usr/local/include/mosaicos" TYPE FILE FILES
-    "/home/randolfo/Documentos/Mosaicos/src/tema.hpp"
-    "/home/randolfo/Documentos/Mosaicos/src/printables.hpp"
-    "/home/randolfo/Documentos/Mosaicos/src/display.hpp"
-    "/home/randolfo/Documentos/Mosaicos/src/color.hpp"
+    "/home/randolfo/Documentos/Mosaicos/src/colour.hpp"
+    "/home/randolfo/Documentos/Mosaicos/src/theme.hpp"
     )
 endif()
 

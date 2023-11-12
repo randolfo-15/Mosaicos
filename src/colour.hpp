@@ -16,121 +16,69 @@ using std::regex;
 using std::regex_match;
 
 #include <string>
-using colour =const std::string;
 using effect  =const std::string;
-using effects  =std::string;
-using colors = std::string;
+using nivel= unsigned char;
 
-struct Colour{
-	static  colour                      
+class Colour{
+public: 
+	/*
+	colour                      
 		BLACK,                   ///< default
 		RED,                        ///< #F00
 		GREEN,                   ///< #0F0
 		YELLOW,                ///< #FF0
 		BLUE,                     ///< #00F
-		MAGENT,                     ///< #F0F
+		MAGENTA,            ///< #F0F
 		CYAN,                     ///< #0FF
-		GRAY_LIGHT,              ///< #789 
-		RED_LIGHT,                 ///< #F66
-		GREEN_LIGHT,            ///< #6F6
-		YELLOW_LIGHT,          ///< #FF6
-		BLUE_LIGHT,               ///< #66F
-		MAGENT_LIGHT,         ///< #F6F
-		CYAN_LIGHT,               ///< #6FF
 		WHITE,                    ///< #FFF
 		GRAY;                      ///< #666
+	*/
+	//bool is_colour(colors);
+	//static const std::string quest;
 	
-	static bool is_colour(colors);
+	void red(nivel);
+	void green(nivel);
+	void blue(nivel);
+	nivel red();
+	nivel green();
+	nivel blue();
+	void contrast(nivel);
+	nivel contrast();
+	
+	// +,-,+=,-=,[] -> suporte a operadores
 	
 };using Clr = Colour;
+
+namespace  Colors {
+struct Red:public Colour{Red();};
+struct Green:public Colour{Green();};
+struct Blue:public Colour{Blue();};
+struct White:public Colour{White();};
+
+	
+};namespace Cls =Colors;
 
 //------------------------------------------------------------------------------
 // Effect
 //------------------------------------------------------------------------------
 
 /// Define quais efeitos uma letra possui.
-struct Effect:public effects{
+struct Highlight{ 
+	Highlight(effect); 
 	
-	/// Checa se uma string e um efeito
-	
-	static  effect
-			 ITALIC,
-			 BLINK,
-			 DEFAULT_BKG,
-			 BOLD_KEY,
-			 DARK,
-			 UNDERLINE,
-			 REVERSE,
-			 HIDDEN,
-			 TACHADO,
-			 DEFAULT_KEY;
-	
-			 Effect();
-			 
-			 Effect(effect);
-			 
-			 void operator=(effect);
-			 
-	private: 
-		/// Modelo de pesquisa regex.
-		static const std::string quest; 
+}; using Hl=Highlight;
+
+namespace Effect{
+
+		class Italic: public Highlight{};
+		class Blink: public Highlight{};
+		class Bold: public  Highlight{}; 
+		class Dark: public  Highlight{};
+		class Hidden:public Highlight{};
+		class Reverse:public Highlight{};
+		class Tachado:public Highlight{};
+		class Underline:public Highlight{};
 		
-		/// Define um efeito.
-		effects efc;
-		
-		friend ostream& operator<<(ostream& , const Effect&);
-		
-};using Ef=Effect;
-
-/// Imprime em cout um efeito.
-ostream& operator<<(ostream& , const Effect&);
-
-//------------------------------------------------------------------------------
-// Foreground
-//------------------------------------------------------------------------------
-
-//!	 Define a coloração de letras no terminal.
-struct Foreground:public colors{
-	
-	Foreground();
-	Foreground(colour);
-			 
-	void operator=(colour);
-	friend ostream& operator<<(ostream& , const Foreground&);
-	
-private: 
-				
-	/// Define  um background
-	colors clr=Ef::DEFAULT_KEY;
-
-};using Fg=Foreground; 
-
-ostream& operator<<(ostream& , const Foreground&);
-
-//------------------------------------------------------------------------------
-// Background
-//------------------------------------------------------------------------------
-
-/// Define a coloração de background de uma letra.
-struct Background:public colors{ 
-	
-	/// Checa se uma string e um Background.
-	static bool is_colour(colour);
-			
-	Background();
-	Background(colour);
-			 
-	void operator=(colour);
-	friend ostream& operator<<(ostream& , const Background&);
-			 
-private: 
-	
-	void cast_ground(colors);
-				 
-	colors clr=Ef::DEFAULT_BKG;
-	
-};using  Bg=Background;
-
-ostream& operator<<(ostream& , const Background&);
+} namespace Efc = Effect;
 
 #endif // colour.hpp

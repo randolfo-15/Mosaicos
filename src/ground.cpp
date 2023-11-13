@@ -19,6 +19,6 @@ void Gd::copy(Clr new_clr){
     clr[B]=std::to_string(new_clr.blue());
 }
 
-Gd::colouring Gd::express(){ return clr[HEAD]+clr[PLAN]+";"+clr[R]+";"+clr[G]+";"+clr[B]+";"+clr[Efcts]+clr[SIG]; }
+Gd::colouring Gd::express(){ return clr[HEAD]+clr[PLAN]+SG+clr[R]+SG+clr[G]+SG+clr[B]+SG+clr[Efcts]+clr[SIG]; }
 
 Gd::colouring Gd::express(colouring efc){ return clr[HEAD]+efc+clr[SIG]; }

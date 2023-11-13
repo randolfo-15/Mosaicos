@@ -17,7 +17,8 @@ class Ground:public Str{
             using colouring=std::string;
 
             const char HEAD_GROUND[5]="\033",
-                                END[2]="m";
+                                END[2]="m",
+                                SG[2]=";";;
 
         enum components{
             HEAD,       ///< Cabeçario padrão para cores (033)
@@ -38,17 +39,6 @@ public:
         virtual colouring operator!()=0;
         
     protected: 
-        std::string clr[7]{
-            HEAD_GROUND,    ///< HEAD
-            "",                             ///< PLAN
-            "",                             ///< R
-            "",                             ///< G
-            "",                             ///< B
-            "",                             ///< Effects
-            END                         ///< SIG
-        };
-    
-        friend std::ostream& operator<<(std::ostream& , const Ground&);
         colouring express();
         colouring express(colouring);
         
@@ -62,7 +52,5 @@ public:
         
     
 };using  Gd=Ground;
-
-std::ostream& operator<<(std::ostream& ,Ground&);
 
 #endif // ground.hpp

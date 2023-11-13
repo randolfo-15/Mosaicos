@@ -8,32 +8,23 @@
 #ifndef COLOUR_HPP
 #define COLOUR_HPP
 
-class Colour{
-	public:
-		using nivel= unsigned char;
-		enum tons{RED,GREEN,BLUE,MAX=255,MIN=0};
-
-		nivel tom[3];
-
-		static bool check(nivel);
-	
-	private:
-			//int media();
-			
-	public: 
+struct Colour{
+	using nivel= unsigned char;
+	using nivel_red=unsigned char;
+	using nivel_green=unsigned char;
+	using nivel_blue=unsigned char;
+		
+		const nivel MAX=255;
 		
 		Colour();
-		Colour(nivel,nivel,nivel);
-	
-		// Tonalidade
-		void red(nivel);        ///< Set → red;
-		void green(nivel);   ///< Set → green
-		void blue(nivel);      ///< Set → blue
-	
-		nivel red();               ///< Get ← red
-		nivel green();          ///< Get  ← green
-		nivel blue();            ///< Get   ← blue
-	
+		Colour(nivel_red,nivel_blue,nivel_green);
+		
+		nivel  red=MAX,
+				  green=MAX,
+				  blue=MAX;
+	private:	
+		
+		//int media();
 		//Luminosidade:
 		//void contrast(nivel);   ///< Set → brilho
 		//nivel contrast();           ///< Get ← brilho
@@ -57,6 +48,5 @@ struct Black:public Colour{ Black();};
 struct Gray:public Colour{Gray();};
 
 };namespace Cls =Colors;
-
 
 #endif // colour.hpp

@@ -7,6 +7,7 @@ endif()
 
 target_sources(mosaicos
     PRIVATE
+        str.cpp
         colour.cpp
         effect.cpp
         ground.cpp

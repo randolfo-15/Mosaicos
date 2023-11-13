@@ -9,19 +9,19 @@
 
 #include "ground.hpp"
 
-const char HEAD_BACKGROUND[]="48;2";
-const char DEFALT_BACKGROUND[]="49";
-
 class Background:public Ground{
-
-    void init() override;
+    public:
+        const char HEAD_BACKGROUND[5]="48;2",
+                            DEFAULT_BACKGROUND[3]="49";
+        
+        void init() override;
     
     public:
         Background();
         Background(Colour);
         
         void  standard() override;        
-        virtual colouring operator!() override;
+        colouring operator!() override;
         
 };using Bg=Background;
 

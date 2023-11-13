@@ -62,7 +62,7 @@ if(NOT CMAKE_VERSION VERSION_LESS "3.23.0")
       FILE_SET "HEADERS"
       TYPE "HEADERS"
       BASE_DIRS "${_IMPORT_PREFIX}//usr/local/include/mosaicos"
-      FILES "${_IMPORT_PREFIX}//usr/local/include/mosaicos/colour.hpp" "${_IMPORT_PREFIX}//usr/local/include/mosaicos/theme.hpp"
+      FILES "${_IMPORT_PREFIX}//usr/local/include/mosaicos/str.hpp" "${_IMPORT_PREFIX}//usr/local/include/mosaicos/colour.hpp" "${_IMPORT_PREFIX}//usr/local/include/mosaicos/effect.cpp" "${_IMPORT_PREFIX}//usr/local/include/mosaicos/ground.cpp" "${_IMPORT_PREFIX}//usr/local/include/mosaicos/foreground.cpp" "${_IMPORT_PREFIX}//usr/local/include/mosaicos/background.cpp"
   )
 else()
   set_property(TARGET Mosaicos::mosaicos

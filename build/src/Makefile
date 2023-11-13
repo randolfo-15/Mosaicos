@@ -199,30 +199,6 @@ colour.cpp.s:
 	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/colour.cpp.s
 .PHONY : colour.cpp.s
 
-theme.o: theme.cpp.o
-.PHONY : theme.o
-
-# target to build an object file
-theme.cpp.o:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/theme.cpp.o
-.PHONY : theme.cpp.o
-
-theme.i: theme.cpp.i
-.PHONY : theme.i
-
-# target to preprocess a source file
-theme.cpp.i:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/theme.cpp.i
-.PHONY : theme.cpp.i
-
-theme.s: theme.cpp.s
-.PHONY : theme.s
-
-# target to generate assembly for a file
-theme.cpp.s:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/theme.cpp.s
-.PHONY : theme.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -239,9 +215,6 @@ help:
 	@echo "... colour.o"
 	@echo "... colour.i"
 	@echo "... colour.s"
-	@echo "... theme.o"
-	@echo "... theme.i"
-	@echo "... theme.s"
 .PHONY : help
 
 

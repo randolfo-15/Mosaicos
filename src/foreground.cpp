@@ -6,17 +6,24 @@
  *****************************************************************/
 
 #include "foreground.hpp"
+#include "colour.hpp"
+#include "ground.hpp"
 
+Fg::Foreground():Ground(Cls::Red()){ init();}
 
-Fg::Foreground():Ground(Cls::White;){}
+Fg::Foreground(Colour new_clr):Ground(new_clr){ init();}
 
-Fg::Foreground(colour new_clr):Ground(new_clr){}
-
-Fg::Foreground(colour new_clr,effect new_efc):
+Fg::Foreground(Colour new_clr,Hl new_efc):
     Ground(new_clr),
     my_efc(new_efc)
-    {}
+    {init();}
         
-colour Fg::cast_ground() {return "";}
+void Fg::init(){
+    clr[HEAD]=HEAD_FOREGROUND;
+    clr[Efcts]=my_efc;
+    assign(express());
+}
 
-colour Fg::standard(){ return "\033[0;39m";}
+void  Fg::standard(){clr[Efcts]=DEFAULT_FOREGROUND; }
+
+Fg::colouring Fg::operator!(){return express(DEFAULT_FOREGROUND);}

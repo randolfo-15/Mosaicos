@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['effect_0',['Effect',['../structEffect.html',1,'']]]
+  ['dark_0',['Dark',['../classEffect_1_1Dark.html',1,'Effect']]],
+  ['display_1',['Display',['../classDisplay.html',1,'']]]
 ];

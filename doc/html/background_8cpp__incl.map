@@ -1,0 +1,15 @@
+<map id="src/background.cpp" name="src/background.cpp">
+<area shape="rect" id="Node000001" title="Arquivo de implementação Background." alt="" coords="75,5,222,33"/>
+<area shape="rect" id="Node000002" href="$background_8hpp.html" title="Arquivo de definição Background." alt="" coords="86,81,211,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,34,151,65,146,65,146,34"/>
+<area shape="rect" id="Node000003" href="$ground_8hpp.html" title="Arquivo de definição ground." alt="" coords="101,157,196,184"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="151,109,151,141,146,141,146,109"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,232,81,260"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="131,187,75,226,72,221,128,183"/>
+<area shape="rect" id="Node000005" href="$colour_8hpp.html" title="Arquivo de definição Foreground Background e Efeitos." alt="" coords="104,232,193,260"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="151,185,151,217,146,217,146,185"/>
+<area shape="rect" id="Node000006" href="$str_8hpp.html" title="Arquivo de definição do modelo de string usado." alt="" coords="217,232,282,260"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="168,183,221,221,218,225,165,187"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="221,308,279,336"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="252,261,252,292,247,292,247,261"/>
+</map>

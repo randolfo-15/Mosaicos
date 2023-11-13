@@ -1,0 +1,9 @@
+<map id="Printables::write" name="Printables::write">
+<area shape="rect" id="Node000001" title="Escrita Padrão." alt="" coords="5,57,133,85"/>
+<area shape="rect" id="Node000002" href="$classTheme.html#a81d341d03b42db7e439d282dda3368d9" title="(Get) padrão para background." alt="" coords="185,5,283,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,54,173,36,174,41,116,59"/>
+<area shape="rect" id="Node000003" href="$classTheme.html#a186344d5d5d1e9276e6a711a2174f045" title="(Get) padrão para o modo seleção." alt="" coords="181,57,287,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="133,69,165,69,165,74,133,74"/>
+<area shape="rect" id="Node000004" href="$classTheme.html#ae4a574fd109c5060a08d8e095d0ab613" title="(Get) padrão para foreground." alt="" coords="185,109,283,137"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="116,83,174,102,173,107,115,88"/>
+</map>

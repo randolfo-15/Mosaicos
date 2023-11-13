@@ -1,0 +1,9 @@
+<map id="Ground::copy" name="Ground::copy">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,57,113,85"/>
+<area shape="rect" id="Node000002" href="$classColour.html#acff2217e503aabc09c81ba43178aa935" title=" " alt="" coords="165,5,265,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,54,156,36,157,41,104,59"/>
+<area shape="rect" id="Node000003" href="$classColour.html#a910caf2a80d5a73e65fbccf8744cb5e4" title=" " alt="" coords="161,57,269,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="113,69,145,69,145,74,113,74"/>
+<area shape="rect" id="Node000004" href="$classColour.html#a8533f264534c973c59b12461ce54f983" title=" " alt="" coords="169,109,261,137"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="104,83,157,101,156,106,102,88"/>
+</map>

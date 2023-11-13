@@ -13,7 +13,7 @@
 
 Printables::Printables(){}
 
-Printables::Printables(THEME tm):th(tm){}
+Printables::Printables(Tm tm):th(tm){}
 
 //--------------------------------------------------------
 //Show:
@@ -33,7 +33,7 @@ void Printables::show(){ print(&buffer,buffer.size()); }
  *  \param buf Conjunto de linhas externas que requer tratamento.
  *  \sa show(vec_str*)
  */
-void Printables::show(vec_str* buf){ print(buf,buf->size()); }
+void Printables::show(std::vector<std::string>* buf){ print(buf,buf->size()); }
 
 /*! Loop
  * =====
@@ -44,9 +44,9 @@ void Printables::show(vec_str* buf){ print(buf,buf->size()); }
  *  \param last_line número total de linhas.
  *  \param line contador de linhas.
  */
-void Printables::print(vec_str*buf,int last_line,int line){
+void Printables::print(std::vector<std::string>*buf,int last_line,int line){
 	if(line>=last_line) return;
-	cout<<spacing<<buf->at(line)<<'\n';	
+	std::cout<<spacing<<buf->at(line)<<'\n';	
 	print(buf,last_line,line+1);
 }
 
@@ -54,7 +54,7 @@ void Printables::print(vec_str*buf,int last_line,int line){
 //Geral:
 //--------------------------------------------------------
 
-void Printables::copy(vector<string>* copy){ *copy=buffer; } 
+void Printables::copy(std::vector<std::string>* copy){ *copy=buffer; } 
 
 int Printables::n_lines(){return buffer.size();} 
 
@@ -88,7 +88,7 @@ void Printables::write(void* obj,Func_Obj fx){ fx(obj); }
  * \param modo Define como caracterizar uma linha.
  * \param fx Função para casos de tratamento custumizado para uma linha.
  */
-void Printables::write(string line,MODO modo,Func_Obj fx){
+void Printables::write(std::string line,MODO modo,Func_Obj fx){
 	
 	switch (modo){
 		case CUSTOM: fx(&line);                                break;
@@ -121,10 +121,10 @@ void Printables::read(void* obj,Func_Obj fx){ fx(obj); }
 //Get ,Sets
 //--------------------------------------------------------
 /*!\param tema novo tema.*/
-void Printables::set_tema(THEME tema){ th=tema; }
+void Printables::set_tema(Tm tema){ th=tema; }
 
 /*!\return tema atual do printable.*/
-THEME Printables::get_tema(){ return th; }
+Tm Printables::get_tema(){ return th; }
 
 /*! Set → spacing
  * =============

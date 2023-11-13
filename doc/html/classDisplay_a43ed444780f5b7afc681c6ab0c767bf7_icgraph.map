@@ -1,7 +1,7 @@
 <map id="Display::n_letter" name="Display::n_letter">
 <area shape="rect" id="Node000001" title=" " alt="" coords="347,32,474,60"/>
 <area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="439,19,429,13,411,11,394,13,384,17,382,23,386,30,381,33,377,23,380,14,392,7,411,5,431,8,441,14"/>
-<area shape="rect" id="Node000002" href="$classDisplay.html#a285a9ba04db91c125f1f94016b734bd1" title="Escrita Padrão." alt="" coords="189,32,299,60"/>
+<area shape="rect" id="Node000002" href="$classDisplay.html#a285a9ba04db91c125f1f94016b734bd1" title=" " alt="" coords="189,32,299,60"/>
 <area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="332,49,299,49,299,43,332,43"/>
 <area shape="rect" id="Node000003" href="$classDisplay.html#aab9074ba7f7c639d4525d1d825597dda" title=" " alt="" coords="20,5,126,33"/>
 <area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="173,38,126,30,127,25,174,32"/>

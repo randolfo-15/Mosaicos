@@ -1,7 +1,11 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,32,66,60"/>
-<area shape="rect" id="Node000001" href="$structBackground.html" title="Define a coloração de background de uma letra." alt="" coords="114,5,212,33"/>
-<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="80,34,113,27,114,32,81,39"/>
-<area shape="rect" id="Node000002" href="$structForeground.html" title="Define a coloração de letras no terminal." alt="" coords="116,57,210,85"/>
-<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="81,52,116,59,115,64,80,57"/>
+<area shape="rect" id="Node000000" href="$classColour.html" title=" " alt="" coords="5,84,69,112"/>
+<area shape="rect" id="Node000001" href="$structColors_1_1Blue.html" title=" " alt="" coords="122,5,221,33"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="69,73,115,44,139,31,141,36,118,48,72,77"/>
+<area shape="rect" id="Node000002" href="$structColors_1_1Green.html" title=" " alt="" coords="117,57,226,85"/>
+<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="84,86,116,79,117,85,85,91"/>
+<area shape="rect" id="Node000003" href="$structColors_1_1Red.html" title=" " alt="" coords="124,109,219,137"/>
+<area shape="poly" id="edge3_Node000000_Node000003" title=" " alt="" coords="85,104,124,112,123,117,84,109"/>
+<area shape="rect" id="Node000004" href="$structColors_1_1White.html" title=" " alt="" coords="117,161,226,189"/>
+<area shape="poly" id="edge4_Node000000_Node000004" title=" " alt="" coords="73,118,118,146,141,158,139,163,115,151,71,123"/>
 </map>

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['texto_0',['Texto',['../classTexto.html',1,'']]],
-  ['theme_1',['Theme',['../classTheme.html',1,'']]]
+  ['italic_0',['Italic',['../classEffect_1_1Italic.html',1,'Effect']]]
 ];

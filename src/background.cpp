@@ -11,8 +11,11 @@ Bg::Background():Ground(Cls::Blue()){ init(); }
 
 Bg::Background(Colour new_clr):Ground(new_clr){ init(); }
         
-void Bg::init(){clr[HEAD]=HEAD_BACKGROUND;}
+void Bg::init(){
+    clr[HEAD]=HEAD_BACKGROUND;
+    assign(express());
+}
         
-void Bg::standard(){ clr[Efcts]=DEFALT_BACKGROUND; }
+void Bg::standard(){ clr[Efcts]=DEFAULT_BACKGROUND; }
 
-colouring Bg::operator!(){ return expression(DEFALT_BACKGROUND); }
+Bg::colouring Bg::operator!(){ return express(DEFAULT_BACKGROUND); }

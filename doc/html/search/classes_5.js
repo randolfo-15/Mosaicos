@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['shadow_0',['Shadow',['../classShadow.html',1,'']]],
-  ['space_1',['Space',['../classSpace.html',1,'']]]
+  ['hidden_0',['Hidden',['../classEffect_1_1Hidden.html',1,'Effect']]],
+  ['highlight_1',['Highlight',['../structHighlight.html',1,'']]]
 ];

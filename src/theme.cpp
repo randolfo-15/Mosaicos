@@ -30,7 +30,7 @@ Tm::Theme(){}
  *  \param new_bkg2 cor usado no background em modo selecão.
  *  \param new_efeito efeito usado em foreground.
  */ 
-Tm::Theme(Fg new_key,Bg new_bkg,Bg new_bkg2,Ef new_effect):
+Tm::Theme(Fg new_key,Bg new_bkg,Bg new_bkg2,Hl new_effect):
 	my_key(new_key),
     my_bkg(new_bkg),
 	my_bkg2(new_bkg2),
@@ -41,7 +41,7 @@ Tm::Theme(Fg new_key,Bg new_bkg,Bg new_bkg2,Ef new_effect):
 // Get
 //--------------------------------------------------------------
 	
-Ef Tm::eft(){ return my_efc; }
+Hl Tm::eft(){ return my_efc; }
 	
 Fg Tm::key(){ return my_key;  }              
 		
@@ -53,7 +53,7 @@ Bg Tm::bkg2(){ return my_bkg2; }
 // Set
 //--------------------------------------------------------------
 
-void Tm::eft(Ef new_efc) { my_efc=new_efc; }        
+void Tm::eft(Hl new_efc) { my_efc=new_efc; }        
 
 void Tm::key(Fg new_key){ my_key=new_key; }      
 		

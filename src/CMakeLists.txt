@@ -8,14 +8,23 @@ endif()
 target_sources(mosaicos
     PRIVATE
         colour.cpp
-        theme.cpp
+        effect.cpp
+        ground.cpp
+        foreground.cpp
+        background.cpp
+        #theme.cpp
         #printables.cpp
         #display.cpp
         
     PUBLIC FILE_SET HEADERS 
         FILES 
+            str.hpp
             colour.hpp
-            theme.hpp
+            effect.cpp
+            ground.cpp
+            foreground.cpp
+            background.cpp
+            #theme.hpp
             #printables.hpp
             #display.hpp
 )

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['ef_0',['Ef',['../colour_8hpp.html#a0190c20c243df19536a9865ffaba0b26',1,'colour.hpp']]],
-  ['effect_1',['effect',['../colour_8hpp.html#a315f507c6472246e9bdc5f5c26406e5d',1,'colour.hpp']]],
-  ['effects_2',['effects',['../colour_8hpp.html#a73225187506f2dd788d7f41ef95e54f5',1,'colour.hpp']]]
+  ['fg_0',['Fg',['../foreground_8hpp.html#a996f35833e13bdc262107b486cbc1815',1,'foreground.hpp']]],
+  ['func_5fobj_1',['Func_Obj',['../printables_8hpp.html#a78c36b04d86ac15547835116ba747c7a',1,'printables.hpp']]],
+  ['fx_5floop_2',['Fx_loop',['../printables_8hpp.html#aa9b8942bca34177235a3511726a34128',1,'printables.hpp']]]
 ];

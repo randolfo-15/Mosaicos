@@ -1,0 +1,11 @@
+<map id="src/ground.hpp" name="src/ground.hpp">
+<area shape="rect" id="Node000001" title="Arquivo de definição ground." alt="" coords="90,5,207,33"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,81,81,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,36,75,74,72,70,128,31"/>
+<area shape="rect" id="Node000003" href="$colour_8hpp.html" title="Arquivo de definição Foreground Background e Efeitos." alt="" coords="104,81,193,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="151,34,151,65,146,65,146,34"/>
+<area shape="rect" id="Node000004" href="$str_8hpp.html" title="Arquivo de definição do modelo de string usado." alt="" coords="217,81,282,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="168,31,221,70,218,74,165,36"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="221,157,279,184"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="252,109,252,141,247,141,247,109"/>
+</map>

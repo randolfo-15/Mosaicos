@@ -8,23 +8,26 @@
 #define FOREGROUND_HPP
 
 #include "colour.hpp"
+#include "effect.hpp"
 #include "ground.hpp"
 
 class Foreground:public Ground{
+    public:
+        const char HEAD_FOREGROUND[5]="38;2",
+                            DEFAULT_FOREGROUND[5]="0;39";
+
+        void init() override;
     
     public:
         Foreground();
         Foreground(Colour);
-        Foreground(Colour,Efc::Highlight);
+        Foreground(Colour,Highlight);
         
-        
+        colouring operator!() override;
         void standard() override;
         
-        effect efc();          ///< Get ← effect
-        void efc(effect);   ///<  Set → effect
-        
     private:
-        effect my_efc;
+        Highlight my_efc;
 
 };using Fg= Foreground;
 

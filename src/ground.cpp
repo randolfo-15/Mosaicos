@@ -11,14 +11,14 @@ Gd::Ground(Colour new_clr){ copy(new_clr); }
 
 void Gd::operator=(Colour new_clr){ copy(new_clr); }
 
-ostream& operator<<(ostream& out,Ground& gd){ return out<<gd.expression(); }
+std::ostream& operator<<(std::ostream& out,Ground& gd){ return out<<gd.express(); }
 
 void Gd::copy(Clr new_clr){
-    clr[R]=to_string(new_clr.red());
-    clr[G]=to_string(new_clr.green());
-    clr[B]=to_string(new_clr.blue());
+    clr[R]=std::to_string(new_clr.red());
+    clr[G]=std::to_string(new_clr.green());
+    clr[B]=std::to_string(new_clr.blue());
 }
 
-colouring Gd::expression(){ return clr[HEAD]+clr[PLAN]+";"+clr[R]+";"+clr[G]+";"+clr[B]+";"+clr[Efcts]+clr[SIG]; }
+Gd::colouring Gd::express(){ return clr[HEAD]+clr[PLAN]+";"+clr[R]+";"+clr[G]+";"+clr[B]+";"+clr[Efcts]+clr[SIG]; }
 
-colouring Gd::expression(colouring efc){ return clr[HEAD]+efc+clr[SIG]; }
+Gd::colouring Gd::express(colouring efc){ return clr[HEAD]+efc+clr[SIG]; }

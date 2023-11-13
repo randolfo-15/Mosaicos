@@ -1,0 +1,11 @@
+<map id="Ground::operator=" name="Ground::operator=">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,57,148,85"/>
+<area shape="rect" id="Node000002" href="$structGround.html#ae837409536d6f3d972216a321a61e39d" title=" " alt="" coords="196,57,303,85"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,69,180,69,180,74,148,74"/>
+<area shape="rect" id="Node000003" href="$classColour.html#acff2217e503aabc09c81ba43178aa935" title=" " alt="" coords="356,5,455,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="292,54,346,36,348,41,294,59"/>
+<area shape="rect" id="Node000004" href="$classColour.html#a910caf2a80d5a73e65fbccf8744cb5e4" title=" " alt="" coords="351,57,459,85"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="303,69,336,69,336,74,303,74"/>
+<area shape="rect" id="Node000005" href="$classColour.html#a8533f264534c973c59b12461ce54f983" title=" " alt="" coords="359,109,451,137"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="294,83,348,101,346,106,292,88"/>
+</map>

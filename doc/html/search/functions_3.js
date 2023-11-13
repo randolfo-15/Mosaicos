@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['effect_0',['effect',['../structEffect.html#a2f0e4177fa7cf880bef55a3d294df1d0',1,'Effect::Effect()'],['../structEffect.html#a70bc29b72f9edc5d1b4dd3b48daff147',1,'Effect::Effect(effect)']]],
-  ['eft_1',['eft',['../classTheme.html#a747889f9c9c6ba438332fa06dbd9b6c1',1,'Theme::eft()'],['../classTheme.html#a4ef8c5204dcea64b22cf9d32a35d4c89',1,'Theme::eft(Effect)']]],
-  ['erro_5fexec_2',['erro_exec',['../classDisplay.html#a42f820e076e10ca334957909925ea01e',1,'Display']]]
+  ['eft_0',['eft',['../classTheme.html#a941fc8015cabeaed8e7fc3e970fa49ca',1,'Theme::eft()'],['../classTheme.html#ade5badfde255df1daef900adeea5ff67',1,'Theme::eft(Highlight)']]],
+  ['erro_5fexec_1',['erro_exec',['../classDisplay.html#a42f820e076e10ca334957909925ea01e',1,'Display']]],
+  ['express_2',['express',['../structGround.html#a6df1e645af90ff873d2a22f8965c45e7',1,'Ground::express()'],['../structGround.html#a9f9a6928ba88aeddf187aea5bee5387d',1,'Ground::express(colouring)']]]
 ];

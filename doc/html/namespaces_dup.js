@@ -1,5 +1,5 @@
 var namespaces_dup =
 [
-    [ "color", "namespacecolor.html", null ],
-    [ "COR", "namespaceCOR.html", "namespaceCOR" ]
+    [ "Colors", "namespaceColors.html", "namespaceColors" ],
+    [ "Effect", "namespaceEffect.html", "namespaceEffect" ]
 ];

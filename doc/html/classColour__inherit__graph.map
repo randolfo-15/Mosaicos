@@ -1,0 +1,11 @@
+<map id="Colour" name="Colour">
+<area shape="rect" id="Node000001" title=" " alt="" coords="214,5,277,33"/>
+<area shape="rect" id="Node000002" href="$structColors_1_1Blue.html" title=" " alt="" coords="5,81,105,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,41,90,83,88,78,199,36"/>
+<area shape="rect" id="Node000003" href="$structColors_1_1Green.html" title=" " alt="" coords="128,81,238,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="227,47,196,82,192,79,223,43"/>
+<area shape="rect" id="Node000004" href="$structColors_1_1Red.html" title=" " alt="" coords="262,81,357,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="269,43,300,79,296,82,265,47"/>
+<area shape="rect" id="Node000005" href="$structColors_1_1White.html" title=" " alt="" coords="381,81,489,109"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="293,36,402,78,400,83,291,41"/>
+</map>

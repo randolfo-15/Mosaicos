@@ -1,5 +1,29 @@
 <map id="src/printables.hpp" name="src/printables.hpp">
-<area shape="rect" id="Node000001" title="Arquivo de definição da classe Printables" alt="" coords="5,5,143,33"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="32,81,116,109"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,34,77,65,71,65,71,34"/>
+<area shape="rect" id="Node000001" title="Arquivo de definição da classe Printables" alt="" coords="71,5,208,33"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,81,85,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,36,75,73,72,69,121,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="109,81,171,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="142,34,142,65,137,65,137,34"/>
+<area shape="rect" id="Node000004" href="$theme_8hpp.html" title="Arquivo de definição de temas das janelas." alt="" coords="195,81,287,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="159,31,212,70,209,74,156,36"/>
+<area shape="rect" id="Node000005" href="$colour_8hpp.html" title="Arquivo de definição Foreground Background e Efeitos." alt="" coords="148,308,236,336"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="218,111,192,131,171,158,163,192,164,229,171,263,182,293,177,294,166,265,159,230,157,192,167,156,188,127,215,107"/>
+<area shape="rect" id="Node000006" href="$foreground_8hpp.html" title="Arquivo de definição Foreground." alt="" coords="181,157,301,184"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="244,109,244,141,238,141,238,109"/>
+<area shape="rect" id="Node000012" href="$background_8hpp.html" title="Arquivo de definição Background." alt="" coords="325,157,450,184"/>
+<area shape="poly" id="edge14_Node000004_Node000012" title=" " alt="" coords="268,107,349,147,347,152,266,112"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="238,186,221,233,202,294,197,293,216,231,233,184"/>
+<area shape="rect" id="Node000007" href="$effect_8hpp.html" title="Arquivo de definição efeitos." alt="" coords="230,232,316,260"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="249,184,264,217,259,219,244,186"/>
+<area shape="rect" id="Node000010" href="$ground_8hpp.html" title="Arquivo de definição ground." alt="" coords="341,232,435,260"/>
+<area shape="poly" id="edge10_Node000006_Node000010" title=" " alt="" coords="268,182,349,223,347,228,266,187"/>
+<area shape="rect" id="Node000008" href="$str_8hpp.html" title="Arquivo de definição do modelo de string usado." alt="" coords="260,308,326,336"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="279,260,288,292,283,294,274,261"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="264,384,322,411"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="296,336,296,368,290,368,290,336"/>
+<area shape="poly" id="edge12_Node000010_Node000005" title=" " alt="" coords="354,263,242,305,240,300,352,258"/>
+<area shape="poly" id="edge13_Node000010_Node000008" title=" " alt="" coords="372,263,323,300,320,296,369,258"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="350,308,425,336"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="390,261,390,292,385,292,385,261"/>
+<area shape="poly" id="edge15_Node000012_Node000010" title=" " alt="" coords="390,185,390,217,385,217,385,185"/>
 </map>

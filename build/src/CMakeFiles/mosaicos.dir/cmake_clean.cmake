@@ -3,8 +3,6 @@ file(REMOVE_RECURSE
   "../Library/libmosaicos.pdb"
   "CMakeFiles/mosaicos.dir/colour.cpp.o"
   "CMakeFiles/mosaicos.dir/colour.cpp.o.d"
-  "CMakeFiles/mosaicos.dir/theme.cpp.o"
-  "CMakeFiles/mosaicos.dir/theme.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

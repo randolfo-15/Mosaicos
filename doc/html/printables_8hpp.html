@@ -94,23 +94,48 @@ $(document).ready(function(){initNavTree('printables_8hpp.html',''); initResizab
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle"><div class="title">printables.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
 <p>Arquivo de definição da classe <b><a class="el" href="classPrintables.html" title="Caracteriza uma letra, quanto a cor e efeitos.">Printables</a></b>  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;tema.hpp&quot;</code><br />
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;<a class="el" href="theme_8hpp_source.html">theme.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for printables.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="printables_8hpp__incl.png" border="0" usemap="#asrc_2printables_8hpp" alt=""/></div>
 <map name="asrc_2printables_8hpp" id="asrc_2printables_8hpp">
-<area shape="rect" title="Arquivo de definição da classe Printables" alt="" coords="5,5,143,33"/>
-<area shape="rect" title=" " alt="" coords="32,81,116,109"/>
-<area shape="poly" title=" " alt="" coords="77,34,77,65,71,65,71,34"/>
+<area shape="rect" title="Arquivo de definição da classe Printables" alt="" coords="71,5,208,33"/>
+<area shape="rect" title=" " alt="" coords="5,81,85,109"/>
+<area shape="poly" title=" " alt="" coords="124,36,75,73,72,69,121,31"/>
+<area shape="rect" title=" " alt="" coords="109,81,171,109"/>
+<area shape="poly" title=" " alt="" coords="142,34,142,65,137,65,137,34"/>
+<area shape="rect" href="theme_8hpp.html" title="Arquivo de definição de temas das janelas." alt="" coords="195,81,287,109"/>
+<area shape="poly" title=" " alt="" coords="159,31,212,70,209,74,156,36"/>
+<area shape="rect" href="colour_8hpp.html" title="Arquivo de definição Foreground Background e Efeitos." alt="" coords="148,308,236,336"/>
+<area shape="poly" title=" " alt="" coords="218,111,192,131,171,158,163,192,164,229,171,263,182,293,177,294,166,265,159,230,157,192,167,156,188,127,215,107"/>
+<area shape="rect" href="foreground_8hpp.html" title="Arquivo de definição Foreground." alt="" coords="181,157,301,184"/>
+<area shape="poly" title=" " alt="" coords="244,109,244,141,238,141,238,109"/>
+<area shape="rect" href="background_8hpp.html" title="Arquivo de definição Background." alt="" coords="325,157,450,184"/>
+<area shape="poly" title=" " alt="" coords="268,107,349,147,347,152,266,112"/>
+<area shape="poly" title=" " alt="" coords="238,186,221,233,202,294,197,293,216,231,233,184"/>
+<area shape="rect" href="effect_8hpp.html" title="Arquivo de definição efeitos." alt="" coords="230,232,316,260"/>
+<area shape="poly" title=" " alt="" coords="249,184,264,217,259,219,244,186"/>
+<area shape="rect" href="ground_8hpp.html" title="Arquivo de definição ground." alt="" coords="341,232,435,260"/>
+<area shape="poly" title=" " alt="" coords="268,182,349,223,347,228,266,187"/>
+<area shape="rect" href="str_8hpp.html" title="Arquivo de definição do modelo de string usado." alt="" coords="260,308,326,336"/>
+<area shape="poly" title=" " alt="" coords="279,260,288,292,283,294,274,261"/>
+<area shape="rect" title=" " alt="" coords="264,384,322,411"/>
+<area shape="poly" title=" " alt="" coords="296,336,296,368,290,368,290,336"/>
+<area shape="poly" title=" " alt="" coords="354,263,242,305,240,300,352,258"/>
+<area shape="poly" title=" " alt="" coords="372,263,323,300,320,296,369,258"/>
+<area shape="rect" title=" " alt="" coords="350,308,425,336"/>
+<area shape="poly" title=" " alt="" coords="390,261,390,292,385,292,385,261"/>
+<area shape="poly" title=" " alt="" coords="390,185,390,217,385,217,385,185"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -158,14 +183,8 @@ Enumerations</h2></td></tr>
 , <a class="el" href="printables_8hpp.html#a2bc0dea73b5708f50d509e3b9b8eb709a1697a91b22c2369eb2ba427c2d193329">SELECT</a>
 , <a class="el" href="printables_8hpp.html#a2bc0dea73b5708f50d509e3b9b8eb709a945d6010d321d9fe75cbba7b6f37f3b5">CUSTOM</a>
  }</td></tr>
-<tr class="memdesc:a2bc0dea73b5708f50d509e3b9b8eb709"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modos de tratamento de um trecho de texto.  <a href="printables_8hpp.html#a2bc0dea73b5708f50d509e3b9b8eb709">More...</a><br /></td></tr>
+<tr class="memdesc:a2bc0dea73b5708f50d509e3b9b8eb709"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a cor do espaçamento.  <a href="printables_8hpp.html#a2bc0dea73b5708f50d509e3b9b8eb709">More...</a><br /></td></tr>
 <tr class="separator:a2bc0dea73b5708f50d509e3b9b8eb709"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a0d0044b2ec4254e842cbeabe8503a982" id="r_a0d0044b2ec4254e842cbeabe8503a982"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="printables_8hpp.html#a0d0044b2ec4254e842cbeabe8503a982">cor_space</a> =DEFAULT_BKG+DEFAULT_KEY</td></tr>
-<tr class="memdesc:a0d0044b2ec4254e842cbeabe8503a982"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a cor do espaçamento.  <br /></td></tr>
-<tr class="separator:a0d0044b2ec4254e842cbeabe8503a982"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Arquivo de definição da classe <b><a class="el" href="classPrintables.html" title="Caracteriza uma letra, quanto a cor e efeitos.">Printables</a></b> </p>
@@ -189,7 +208,7 @@ Variables</h2></td></tr>
 
 <p>Alias para função geral: </p>
 
-<p class="definition">Definition at line <a class="el" href="printables_8hpp_source.html#l00029">29</a> of file <a class="el" href="printables_8hpp_source.html">printables.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="printables_8hpp_source.html#l00032">32</a> of file <a class="el" href="printables_8hpp_source.html">printables.hpp</a>.</p>
 
 </div>
 </div>
@@ -207,7 +226,7 @@ Variables</h2></td></tr>
 
 <p>Função de loop generica: </p>
 
-<p class="definition">Definition at line <a class="el" href="printables_8hpp_source.html#l00035">35</a> of file <a class="el" href="printables_8hpp_source.html">printables.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="printables_8hpp_source.html#l00038">38</a> of file <a class="el" href="printables_8hpp_source.html">printables.hpp</a>.</p>
 
 </div>
 </div>
@@ -225,7 +244,7 @@ Variables</h2></td></tr>
 
 <p>Alias para modos: </p>
 
-<p class="definition">Definition at line <a class="el" href="printables_8hpp_source.html#l00032">32</a> of file <a class="el" href="printables_8hpp_source.html">printables.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="printables_8hpp_source.html#l00035">35</a> of file <a class="el" href="printables_8hpp_source.html">printables.hpp</a>.</p>
 
 </div>
 </div>
@@ -241,7 +260,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="printables_8hpp_source.html#l00040">40</a> of file <a class="el" href="printables_8hpp_source.html">printables.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="printables_8hpp_source.html#l00043">43</a> of file <a class="el" href="printables_8hpp_source.html">printables.hpp</a>.</p>
 
 </div>
 </div>
@@ -258,6 +277,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Define a cor do espaçamento. </p>
 <p>Modos de tratamento de um trecho de texto. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2bc0dea73b5708f50d509e3b9b8eb709a50d1448013c6f17125caee18aa418af7" name="a2bc0dea73b5708f50d509e3b9b8eb709a50d1448013c6f17125caee18aa418af7"></a>NORMAL&#160;</td><td class="fielddoc"><p>Padrão. </p>
@@ -270,26 +290,7 @@ Variables</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="printables_8hpp_source.html#l00021">21</a> of file <a class="el" href="printables_8hpp_source.html">printables.hpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a0d0044b2ec4254e842cbeabe8503a982" name="a0d0044b2ec4254e842cbeabe8503a982"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d0044b2ec4254e842cbeabe8503a982">&#9670;&#160;</a></span>cor_space</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const string cor_space =DEFAULT_BKG+DEFAULT_KEY</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Define a cor do espaçamento. </p>
-
-<p class="definition">Definition at line <a class="el" href="printables_8hpp_source.html#l00018">18</a> of file <a class="el" href="printables_8hpp_source.html">printables.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="printables_8hpp_source.html#l00024">24</a> of file <a class="el" href="printables_8hpp_source.html">printables.hpp</a>.</p>
 
 </div>
 </div>

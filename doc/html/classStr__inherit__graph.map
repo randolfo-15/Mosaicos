@@ -1,0 +1,29 @@
+<map id="Str" name="Str">
+<area shape="rect" id="Node000001" title=" " alt="" coords="140,161,179,189"/>
+<area shape="rect" id="Node000003" href="$structGround.html" title="Define a coloração de background de uma letra." alt="" coords="233,57,301,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="184,148,249,84,253,87,188,152"/>
+<area shape="rect" id="Node000006" href="$structHighlight.html" title=" " alt="" coords="227,265,307,293"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="188,198,253,263,249,267,184,202"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,161,92,189"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,173,139,173,139,178,107,178"/>
+<area shape="rect" id="Node000004" href="$classBackground.html" title=" " alt="" coords="371,5,469,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="315,52,376,31,378,36,317,57"/>
+<area shape="rect" id="Node000005" href="$classForeground.html" title=" " alt="" coords="373,57,467,85"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="317,69,372,69,372,74,317,74"/>
+<area shape="rect" id="Node000007" href="$classEffect_1_1Blink.html" title=" " alt="" coords="370,109,470,137"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="279,250,309,199,329,172,354,148,374,135,377,140,357,152,333,175,313,202,283,253"/>
+<area shape="rect" id="Node000008" href="$classEffect_1_1Bold.html" title=" " alt="" coords="372,161,468,189"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="290,253,319,226,354,200,378,187,380,192,357,204,323,230,294,257"/>
+<area shape="rect" id="Node000009" href="$classEffect_1_1Dark.html" title=" " alt="" coords="371,213,469,241"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="321,258,376,239,378,244,323,263"/>
+<area shape="rect" id="Node000010" href="$classEffect_1_1Hidden.html" title=" " alt="" coords="364,265,476,293"/>
+<area shape="poly" id="edge9_Node000006_Node000010" title=" " alt="" coords="323,277,364,277,364,282,323,282"/>
+<area shape="rect" id="Node000011" href="$classEffect_1_1Italic.html" title=" " alt="" coords="371,317,469,345"/>
+<area shape="poly" id="edge10_Node000006_Node000011" title=" " alt="" coords="323,295,378,314,376,319,321,300"/>
+<area shape="rect" id="Node000012" href="$classEffect_1_1Reverse.html" title=" " alt="" coords="360,369,480,397"/>
+<area shape="poly" id="edge11_Node000006_Node000012" title=" " alt="" coords="294,302,323,329,357,354,380,366,378,371,354,359,319,333,290,306"/>
+<area shape="rect" id="Node000013" href="$classEffect_1_1Tachado.html" title=" " alt="" coords="360,421,480,449"/>
+<area shape="poly" id="edge12_Node000006_Node000013" title=" " alt="" coords="283,306,313,357,333,383,357,406,377,419,374,423,354,411,329,387,309,360,279,308"/>
+<area shape="rect" id="Node000014" href="$classEffect_1_1Underline.html" title=" " alt="" coords="355,473,485,501"/>
+<area shape="poly" id="edge13_Node000006_Node000014" title=" " alt="" coords="278,308,289,342,305,382,328,423,357,459,375,471,372,475,354,462,323,426,300,384,284,344,273,309"/>
+</map>

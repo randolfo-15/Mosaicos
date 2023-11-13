@@ -76,7 +76,7 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "head" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/usr/local/include/mosaicos/colour.hpp;/usr/local/include/mosaicos/theme.hpp")
+   "/usr/local/include/mosaicos/str.hpp;/usr/local/include/mosaicos/colour.hpp;/usr/local/include/mosaicos/effect.cpp;/usr/local/include/mosaicos/ground.cpp;/usr/local/include/mosaicos/foreground.cpp;/usr/local/include/mosaicos/background.cpp")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
@@ -84,8 +84,12 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "head" OR NOT CMAKE_INSTALL_COMPONENT)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   file(INSTALL DESTINATION "/usr/local/include/mosaicos" TYPE FILE FILES
+    "/home/randolfo/Documentos/Mosaicos/src/str.hpp"
     "/home/randolfo/Documentos/Mosaicos/src/colour.hpp"
-    "/home/randolfo/Documentos/Mosaicos/src/theme.hpp"
+    "/home/randolfo/Documentos/Mosaicos/src/effect.cpp"
+    "/home/randolfo/Documentos/Mosaicos/src/ground.cpp"
+    "/home/randolfo/Documentos/Mosaicos/src/foreground.cpp"
+    "/home/randolfo/Documentos/Mosaicos/src/background.cpp"
     )
 endif()
 

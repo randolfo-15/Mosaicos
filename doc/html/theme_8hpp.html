@@ -101,20 +101,34 @@ $(document).ready(function(){initNavTree('theme_8hpp.html',''); initResizable();
 <p>Arquivo de definição de temas das janelas.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="colour_8hpp_source.html">colour.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="foreground_8hpp_source.html">foreground.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="background_8hpp_source.html">background.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for theme.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="theme_8hpp__incl.png" border="0" usemap="#asrc_2theme_8hpp" alt=""/></div>
 <map name="asrc_2theme_8hpp" id="asrc_2theme_8hpp">
-<area shape="rect" title="Arquivo de definição de temas das janelas." alt="" coords="77,5,191,33"/>
-<area shape="rect" href="colour_8hpp.html" title="Arquivo de definição Foreground Background e Efeitos." alt="" coords="90,81,178,109"/>
-<area shape="poly" title=" " alt="" coords="136,34,136,65,131,65,131,34"/>
-<area shape="rect" title=" " alt="" coords="5,157,81,184"/>
-<area shape="poly" title=" " alt="" coords="119,111,73,149,69,145,116,107"/>
-<area shape="rect" title=" " alt="" coords="105,157,163,184"/>
-<area shape="poly" title=" " alt="" coords="136,109,136,141,131,141,131,109"/>
-<area shape="rect" title=" " alt="" coords="187,157,246,184"/>
-<area shape="poly" title=" " alt="" coords="150,107,192,144,189,148,147,111"/>
+<area shape="rect" title="Arquivo de definição de temas das janelas." alt="" coords="42,5,156,33"/>
+<area shape="rect" href="colour_8hpp.html" title="Arquivo de definição Foreground Background e Efeitos." alt="" coords="5,232,94,260"/>
+<area shape="poly" title=" " alt="" coords="76,36,50,55,29,82,20,117,22,153,29,188,40,217,34,219,24,189,16,154,15,116,24,80,46,51,73,31"/>
+<area shape="rect" href="foreground_8hpp.html" title="Arquivo de definição Foreground." alt="" coords="39,81,159,109"/>
+<area shape="poly" title=" " alt="" coords="102,34,102,65,96,65,96,34"/>
+<area shape="rect" href="background_8hpp.html" title="Arquivo de definição Background." alt="" coords="183,81,308,109"/>
+<area shape="poly" title=" " alt="" coords="126,31,207,71,205,76,124,36"/>
+<area shape="poly" title=" " alt="" coords="96,110,79,158,60,219,55,217,74,156,91,108"/>
+<area shape="rect" href="effect_8hpp.html" title="Arquivo de definição efeitos." alt="" coords="88,157,174,184"/>
+<area shape="poly" title=" " alt="" coords="107,108,122,141,117,144,102,110"/>
+<area shape="rect" href="ground_8hpp.html" title="Arquivo de definição ground." alt="" coords="198,157,293,184"/>
+<area shape="poly" title=" " alt="" coords="126,107,207,147,205,152,124,112"/>
+<area shape="rect" href="str_8hpp.html" title="Arquivo de definição do modelo de string usado." alt="" coords="118,232,184,260"/>
+<area shape="poly" title=" " alt="" coords="137,184,146,217,141,218,132,186"/>
+<area shape="rect" title=" " alt="" coords="122,308,180,336"/>
+<area shape="poly" title=" " alt="" coords="154,261,154,292,148,292,148,261"/>
+<area shape="poly" title=" " alt="" coords="211,187,99,229,97,224,210,182"/>
+<area shape="poly" title=" " alt="" coords="230,187,181,225,178,221,227,183"/>
+<area shape="rect" title=" " alt="" coords="208,232,283,260"/>
+<area shape="poly" title=" " alt="" coords="248,185,248,217,243,217,243,185"/>
+<area shape="poly" title=" " alt="" coords="248,109,248,141,243,141,243,109"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -122,9 +136,17 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="theme_8hpp__dep__incl.png" border="0" usemap="#asrc_2theme_8hppdep" alt=""/></div>
 <map name="asrc_2theme_8hppdep" id="asrc_2theme_8hppdep">
-<area shape="rect" title="Arquivo de definição de temas das janelas." alt="" coords="5,5,120,33"/>
-<area shape="rect" href="theme_8cpp.html" title="Arquivo de implementação da classe tema." alt="" coords="6,81,119,109"/>
-<area shape="poly" title=" " alt="" coords="65,49,65,81,60,81,60,49"/>
+<area shape="rect" title="Arquivo de definição de temas das janelas." alt="" coords="156,5,271,33"/>
+<area shape="rect" href="printables_8hpp.html" title="Arquivo de definição da classe Printables" alt="" coords="70,81,207,109"/>
+<area shape="poly" title=" " alt="" coords="191,46,154,82,150,79,187,42"/>
+<area shape="rect" href="theme_8cpp.html" title="Arquivo de implementação da classe tema." alt="" coords="231,81,345,109"/>
+<area shape="poly" title=" " alt="" coords="240,42,277,79,273,82,236,46"/>
+<area shape="rect" href="display_8hpp.html" title="Arquivo de definição da classe display,shadow,space." alt="" coords="5,157,123,184"/>
+<area shape="poly" title=" " alt="" coords="116,122,79,158,75,154,112,118"/>
+<area shape="rect" href="printables_8cpp.html" title="Arquivo de Implementação da classe Printables" alt="" coords="147,157,283,184"/>
+<area shape="poly" title=" " alt="" coords="165,118,203,154,199,158,161,121"/>
+<area shape="rect" href="display_8cpp.html" title="Arquivo de aplicação da classe display,shadow,space." alt="" coords="6,232,122,260"/>
+<area shape="poly" title=" " alt="" coords="67,200,67,232,61,232,61,200"/>
 </map>
 </div>
 </div>
@@ -161,7 +183,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="theme_8hpp_source.html#l00047">47</a> of file <a class="el" href="theme_8hpp_source.html">theme.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="theme_8hpp_source.html#l00048">48</a> of file <a class="el" href="theme_8hpp_source.html">theme.hpp</a>.</p>
 
 </div>
 </div>

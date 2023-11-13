@@ -7,18 +7,29 @@
 
 #include "ground.hpp"
 
-Gd::Ground(Colour new_clr){ copy(new_clr); }
+//------------------------------------------------------------------------------------------------
+// Constrir
+//------------------------------------------------------------------------------------------------
+Gd::Ground(Clr clr):Str(7){ init(clr); }
 
-void Gd::operator=(Colour new_clr){ copy(new_clr); }
-
-std::ostream& operator<<(std::ostream& out,Ground& gd){ return out<<gd.express(); }
-
-void Gd::copy(Clr new_clr){
-    clr[R]=std::to_string(new_clr.red());
-    clr[G]=std::to_string(new_clr.green());
-    clr[B]=std::to_string(new_clr.blue());
+void Gd::init(Clr clr){
+    buf[HEAD]=HEAD_GROUND;
+    copy_colour(clr);
+    buf[TAIL]=END;
 }
 
-Gd::colouring Gd::express(){ return clr[HEAD]+clr[PLAN]+SG+clr[R]+SG+clr[G]+SG+clr[B]+SG+clr[Efcts]+clr[SIG]; }
+void Gd::copy_colour(Clr new_clr){
+    buf[R]=std::to_string(new_clr.red)+l_l;
+    buf[G]=std::to_string(new_clr.green)+l_l;
+    buf[B]=std::to_string(new_clr.blue)+l_l;
+}
 
-Gd::colouring Gd::express(colouring efc){ return clr[HEAD]+efc+clr[SIG]; }
+//------------------------------------------------------------------------------------------------
+// Atribuir
+//------------------------------------------------------------------------------------------------
+void Gd::operator=(Clr clr){ copy_colour(clr); }
+Gd Gd::operator!(){
+    Gd copy=*this;
+    copy.buf[Efcts]="";
+    return copy;
+}

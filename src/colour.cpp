@@ -7,8 +7,11 @@
 
 #include "colour.hpp"
 
-/*/Luminosidade:
-void Clr::contrast(nivel value){}
+/*
+ //------------------------------------------------------------------------------------------
+ // Luminosidade:
+//------------------------------------------------------------------------------------------
+ void Clr::contrast(nivel value){}
 Clr::nivel Clr::contrast(){ return media(); }
 
 int Clr::media(){
@@ -16,6 +19,7 @@ int Clr::media(){
     return (soma*100)/(765);
 }
 */
+
 using namespace Cls;
 Red::Red():Colour(255,0,0){}
 Green::Green():Colour(0,255,0){}

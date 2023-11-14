@@ -14,14 +14,14 @@ struct Colour{
 	using nivel_green=unsigned char;
 	using nivel_blue=unsigned char;
 		
-		const nivel MAX=255;
+	const nivel MAX=255;
 		
-		Colour();
-		Colour(nivel_red,nivel_blue,nivel_green);
+	Colour();
+	Colour(nivel_red,nivel_blue,nivel_green);
 		
-		nivel  red=MAX,
-				  green=MAX,
-				  blue=MAX;
+	nivel  red=MAX,
+			  green=MAX,
+			  blue=MAX;
 	private:	
 		
 		//int media();

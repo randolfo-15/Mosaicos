@@ -1,2 +1,2 @@
-/usr/bin/ar qc ../Library/libmosaicos.a CMakeFiles/mosaicos.dir/colour.cpp.o
+/usr/bin/ar qc ../Library/libmosaicos.a CMakeFiles/mosaicos.dir/str.cpp.o CMakeFiles/mosaicos.dir/colour.cpp.o
 /usr/bin/ranlib ../Library/libmosaicos.a

@@ -9,10 +9,8 @@
 
 #include "str.hpp"
 
-class Ground;
-
 class Highlight:public Str{
-	friend class Ground;
+
 	public:
 		Highlight();
 	

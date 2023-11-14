@@ -7,8 +7,12 @@
 
 #include "background.hpp"
 #include "ground.hpp"
+const char
+    Bg::PLAN[6]="48;2;",
+    Bg::COLORLESS[3]="49";
 
 Bg::Background():Ground(Cls::Blue(),Bg::PLAN,COLORLESS){}
 
 Bg::Background(Colour new_clr):Ground(new_clr,Bg::PLAN,COLORLESS){}
-        
+    
+void Bg::operator=(Hlg){}    

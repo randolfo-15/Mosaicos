@@ -7,6 +7,10 @@
 
 #include "ground.hpp"
 
+const char Gd::BEG[5]="\033[",
+                    Gd::l_l[2]=";",
+                    Gd::END[2]="m";
+
 //------------------------------------------------------------------------------------------------
 // Constrir
 //------------------------------------------------------------------------------------------------
@@ -33,10 +37,5 @@ void Gd::copy_colour(Clr new_clr){
 // Atribuir
 //------------------------------------------------------------------------------------------------
 void Gd::operator=(Clr clr){ copy_colour(clr); }
-void Gd::operator=(Gd gd){  }
 
 std::string Gd::operator!(){ return buf[HEAD]+colorless+buf[TAIL];}
-
-Hlg Gd::effect(){return Hlg(buf[Efcts]);}
-void Gd::effect(Hlg efc){ buf[Efcts]=efc(); }
-

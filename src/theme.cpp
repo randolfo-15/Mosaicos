@@ -6,7 +6,6 @@
  ******************************************************/
 
 #include "theme.hpp" 
-#include "colour.hpp"
 
 //--------------------------------------------------------------
 // Manufacture
@@ -51,10 +50,10 @@ str Tm::bkg2(){ return my_bkg2(); }
 // Set
 //--------------------------------------------------------------
 
-void Tm::key(Hlg efc){ my_key.effect(efc); }      
+void Tm::key(Hlg efc){ my_key=efc; }      
 		
-void Tm::bkg(Clr clr){  my_bkg=clr; }      
+void Tm::key(Clr clr){ my_key=clr; }
 		
-void Tm::bkg2(Clr clr){ my_bkg2=clr; }
+void Tm::bkg(Clr clr){my_bkg=clr;}      
 		
-
+void Tm::bkg2(Clr clr){my_bkg2=clr;}

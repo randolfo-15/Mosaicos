@@ -39,9 +39,11 @@ class Theme{
 		std::string bkg();     ///< (Get) padrão para background. 
 		std::string bkg2();   ///< (Get) padrão para o modo seleção. 
 		
-		void key(Highlight);      ///< (Set) padrão para foreground. 
-		void bkg(Colour);     ///< (Set) padrão para background. 
-		void bkg2(Colour);   ///< (Set) padrão para o modo seleção. 
+		void key(Highlight);  ///< (Set) padrão para foreground. 
+		void key(Colour);       ///< (Set) modificar a cor da letra.
+		
+		void bkg(Colour);            ///< (Set) padrão para background. 
+		void bkg2(Colour);         ///< (Set) padrão para o modo seleção. 
 
 };using Tm=Theme;
 

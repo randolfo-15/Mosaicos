@@ -10,13 +10,18 @@
 #include "ground.hpp"
 
 class Background:public Ground{
+    
+    /// Background não suporta gerar efeitos, logo são isolados.
+    void operator=(Highlight) override;
+    
     public:
-        const char PLAN[6]="48;2;",
-                            COLORLESS[3]="49";
+        static const char 
+            PLAN[6],
+            COLORLESS[3];
                             
         Background();
         Background(Colour);
-        
+
 };using Bg=Background;
 
 #endif // background.hpp

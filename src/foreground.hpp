@@ -13,12 +13,15 @@
 
 class Foreground:public Ground{
     public:
-        const char PLAN[6]="38;2;",
-                            COLORLESS[5]="0;39";
+        static const char 
+            PLAN[6],
+            COLORLESS[5];
 
         Foreground();
         Foreground(Colour);
         Foreground(Colour,Highlight);
+        
+        void operator=(Highlight) override;
         
 };using Fg= Foreground;
 

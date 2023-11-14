@@ -15,21 +15,18 @@
 class Ground:public Str{
     public:
         void operator=(Colour);
-        void operator=(Ground);
         
-        // Método para definir e receber efeitos ...
-        Highlight effect();
-        void effect(Highlight);
+        virtual void operator=(Highlight);
         
         std::string operator!();
         
     protected: 
         Ground(Colour,const char* plan,const char* clss,Highlight=Hlg());
         
-        const char 
-            BEG[5]="\033[",
-            l_l[2]=";",
-            END[2]="m";
+        static const char 
+            BEG[5],
+            l_l[2],
+            END[2];
 
         enum components{
             HEAD,       ///< Cabeçario padrão para cores (033)

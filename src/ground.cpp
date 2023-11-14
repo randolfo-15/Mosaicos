@@ -10,11 +10,16 @@
 //------------------------------------------------------------------------------------------------
 // Constrir
 //------------------------------------------------------------------------------------------------
-Gd::Ground(Clr clr):Str(7){ init(clr); }
+Gd::Ground(Clr clr,const char*plan,const char*clss,Hlg efc):
+    Str(7),
+    colorless(clss)
+    { init(clr,plan,efc); }
 
-void Gd::init(Clr clr){
-    buf[HEAD]=HEAD_GROUND;
+void Gd::init(Clr clr,const char* plan,Hlg efc){
+    buf[HEAD]=BEG;
+    buf[PLAN]=plan;
     copy_colour(clr);
+    buf[Efcts]=efc();
     buf[TAIL]=END;
 }
 
@@ -28,8 +33,10 @@ void Gd::copy_colour(Clr new_clr){
 // Atribuir
 //------------------------------------------------------------------------------------------------
 void Gd::operator=(Clr clr){ copy_colour(clr); }
-Gd Gd::operator!(){
-    Gd copy=*this;
-    copy.buf[Efcts]="";
-    return copy;
-}
+void Gd::operator=(Gd gd){  }
+
+std::string Gd::operator!(){ return buf[HEAD]+colorless+buf[TAIL];}
+
+Hlg Gd::effect(){return Hlg(buf[Efcts]);}
+void Gd::effect(Hlg efc){ buf[Efcts]=efc(); }
+

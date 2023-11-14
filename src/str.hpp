@@ -24,8 +24,9 @@ class Str{
         
         friend std::string operator+(std::string,Str);
         std::string operator+(std::string);
-        void operator=(std::string);
-        void operator+=(std::string);
+        std::string operator()();
+        //void operator=(std::string);
+        //void operator+=(std::string);
         friend std::ostream& operator<<(std::ostream&,Str);
 };
 

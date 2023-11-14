@@ -6,16 +6,9 @@
  *****************************************************************/
 
 #include "background.hpp"
+#include "ground.hpp"
 
-Bg::Background():Ground(Cls::Blue()){ init(); }
+Bg::Background():Ground(Cls::Blue(),Bg::PLAN,COLORLESS){}
 
-Bg::Background(Colour new_clr):Ground(new_clr){ init(); }
+Bg::Background(Colour new_clr):Ground(new_clr,Bg::PLAN,COLORLESS){}
         
-void Bg::init(){
-    clr[HEAD]=HEAD_BACKGROUND;
-    assign(express());
-}
-        
-void Bg::standard(){ clr[Efcts]=DEFAULT_BACKGROUND; }
-
-Bg::colouring Bg::operator!(){ return express(DEFAULT_BACKGROUND); }

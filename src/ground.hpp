@@ -9,19 +9,25 @@
 
 #include "str.hpp"
 #include "colour.hpp"
+#include "effect.hpp"
 
 /// Define a coloração de background de uma letra.
-class Ground:public Str{ 
+class Ground:public Str{
     public:
         void operator=(Colour);
-        Ground operator!();
+        void operator=(Ground);
+        
+        // Método para definir e receber efeitos ...
+        Highlight effect();
+        void effect(Highlight);
+        
+        std::string operator!();
         
     protected: 
-        Ground();
-        Ground(Colour);
+        Ground(Colour,const char* plan,const char* clss,Highlight=Hlg());
         
         const char 
-            HEAD_GROUND[5]="\033[",
+            BEG[5]="\033[",
             l_l[2]=";",
             END[2]="m";
 
@@ -34,12 +40,11 @@ class Ground:public Str{
             Efcts,         ///< Define um conjunto de efeitos 
             TAIL            ///< Siguino de termino de formula (m)
         };
-        virtual  void init();
         
-private:
+    private:
         void copy_colour(Colour);
+        void init(Colour,const char*,Hlg);
         std::string colorless;
-        void init(Colour);
         
 };using  Gd=Ground;
 

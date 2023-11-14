@@ -12,6 +12,7 @@
 
 //#include <color.hpp>
 #include "colour.hpp"
+#include "effect.hpp"
 #include "foreground.hpp"
 #include "background.hpp"
 	
@@ -21,7 +22,7 @@ class Theme{
 	Foreground my_key   = Colors::White();
 	Background my_bkg  = Colors::Blue();
 	Background my_bkg2= Colors::Red();
-	Highlight      my_efc    = Effect::Bold();
+
 		
 	public:		
 		/// Construtor padrão.
@@ -31,20 +32,17 @@ class Theme{
 		Theme(
 			Foreground key,
 		    Background bkg,
-			Background bkg2,
-		    Highlight efc
+			Background bkg2
 		);  
 		
-		Foreground key();      ///< (Get) padrão para foreground. 
-		Background bkg();     ///< (Get) padrão para background. 
-		Background bkg2();   ///< (Get) padrão para o modo seleção. 
-		Highlight eft();            ///< (Get) padrão para efeitos.
+		std::string key();      ///< (Get) padrão para foreground. 
+		std::string bkg();     ///< (Get) padrão para background. 
+		std::string bkg2();   ///< (Get) padrão para o modo seleção. 
 		
-		void key(Foreground);      ///< (Set) padrão para foreground. 
-		void bkg(Background);     ///< (Set) padrão para background. 
-		void bkg2(Background);   ///< (Set) padrão para o modo seleção. 
-		void eft(Highlight);            ///< (Set) padrão para efeitos.
-		
+		void key(Highlight);      ///< (Set) padrão para foreground. 
+		void bkg(Colour);     ///< (Set) padrão para background. 
+		void bkg2(Colour);   ///< (Set) padrão para o modo seleção. 
+
 };using Tm=Theme;
 
 #endif // theme.hpp

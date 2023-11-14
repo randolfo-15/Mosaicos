@@ -16,7 +16,7 @@ int Clr::media(){
     return (soma*100)/(765);
 }
 */
-
-Cls::Red::Red():Colour(255,0,0){}
-Cls::Green::Green():Colour(0,255,0){}
-Cls::Blue::Blue():Colour(0,0,255){}
+using namespace Cls;
+Red::Red():Colour(255,0,0){}
+Green::Green():Colour(0,255,0){}
+Blue::Blue():Colour(0,0,255){}

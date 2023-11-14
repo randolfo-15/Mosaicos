@@ -8,23 +8,25 @@
 #define EFFECT_HPP
 
 #include "str.hpp"
-#include <vector>
+
+class Ground;
 
 class Highlight:public Str{
+	friend class Ground;
 	public:
-		const char SG[2]=";";
-	
 		Highlight();
 	
 		Highlight operator+(Highlight);
 		void operator+=(Highlight);
 	
 	protected:
+		const char SG[2]=";";
 		Highlight(std::string);
-}; using Hl=Highlight;
+		
+}; using Hlg=Highlight;
 
 namespace Effect{
-
+		struct Normal:public Highlight{Normal();};
 		struct Italic: public Highlight{ Italic(); };
 		struct Blink: public Highlight{ Blink(); };
 		struct Bold: public  Highlight{ Bold(); }; 

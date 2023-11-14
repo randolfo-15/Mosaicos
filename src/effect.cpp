@@ -6,25 +6,32 @@
  ******************************************************/
 #include "effect.hpp"
 
-/* 
+Hlg::Highlight(){}
 
-Ef::ITALIC="\033[3m",
-Ef::BLINK="\033[5m",
-Ef::DEFAULT_BKG="\033[49m",
-Ef::BOLD_KEY="\033[1m",
-Ef::DARK="\033[2m",
-Ef::UNDERLINE="\033[4m",
-Ef::REVERSE="\033[7m",
-Ef::HIDDEN="\033[8m",
-Ef::TACHADO="\033[9m",
-Ef::DEFAULT_KEY="\033[0;39m",
-*/
+Hlg::Highlight(std::string efc):Str(efc){}
+
+Hlg Hlg::operator+(Hlg efc){ return Hlg(my_str()+SG+efc.my_str()); }
+
+void Hlg::operator+=(Hlg efc){ buf.push_back(SG+efc); }
+
+using namespace Efc;
+
+Normal::Normal():Hlg("0"){}
+
+Bold::Bold():Hlg("1"){} 
+
+Dark::Dark():Hlg("2"){}
+
+Italic::Italic():Hlg("3"){}
+
+Underline::Underline():Hlg("4"){}
+
+Blink::Blink():Hlg("5"){}
+
+Reverse::Reverse():Hlg("7"){} 
+
+Hidden::Hidden():Hlg("8"){}
+
+Tachado::Tachado():Hlg("9"){}
 
 
-Hl::Highlight(){}
-
-Hl::Highlight(std::string efc):Str(efc){}
-
-Hl Hl::operator+(Hl efc){ return Hl(my_str()+SG+efc.my_str()); }
-
-void Hl::operator+=(Hl efc){ buf.push_back(SG+efc); }

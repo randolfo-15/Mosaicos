@@ -6,6 +6,7 @@
  ******************************************************/
 
 #include "theme.hpp" 
+#include "colour.hpp"
 
 //--------------------------------------------------------------
 // Manufacture
@@ -28,37 +29,32 @@ Tm::Theme(){}
  *  \param new_key cor usada em foreground.
  *  \param new_bkj  cor usada em background.
  *  \param new_bkg2 cor usado no background em modo selecão.
- *  \param new_efeito efeito usado em foreground.
  */ 
-Tm::Theme(Fg new_key,Bg new_bkg,Bg new_bkg2,Hl new_effect):
+Tm::Theme(Fg new_key,Bg new_bkg,Bg new_bkg2):
 	my_key(new_key),
     my_bkg(new_bkg),
-	my_bkg2(new_bkg2),
-	my_efc(new_effect)
+	my_bkg2(new_bkg2)
 	{}
 
 //--------------------------------------------------------------
 // Get
 //--------------------------------------------------------------
-	
-Hl Tm::eft(){ return my_efc; }
-	
-Fg Tm::key(){ return my_key;  }              
+using str=std::string;	
+
+str Tm::key(){ return my_key();  }              
 		
-Bg Tm::bkg(){ return my_bkg; }
+str Tm::bkg(){ return my_bkg(); }
 		
-Bg Tm::bkg2(){ return my_bkg2; } 
+str Tm::bkg2(){ return my_bkg2(); } 
 
 //--------------------------------------------------------------
 // Set
 //--------------------------------------------------------------
 
-void Tm::eft(Hl new_efc) { my_efc=new_efc; }        
-
-void Tm::key(Fg new_key){ my_key=new_key; }      
+void Tm::key(Hlg efc){ my_key.effect(efc); }      
 		
-void Tm::bkg(Bg new_bkg){  my_bkg=new_bkg; }      
+void Tm::bkg(Clr clr){  my_bkg=clr; }      
 		
-void Tm::bkg2(Bg new_bkg){ my_bkg2=new_bkg; }
+void Tm::bkg2(Clr clr){ my_bkg2=clr; }
 		
 

@@ -11,17 +11,11 @@
 
 class Background:public Ground{
     public:
-        const char HEAD_BACKGROUND[5]="48;2",
-                            DEFAULT_BACKGROUND[3]="49";
-        
-        void init() override;
-    
-    public:
+        const char PLAN[6]="48;2;",
+                            COLORLESS[3]="49";
+                            
         Background();
         Background(Colour);
-        
-        void  standard() override;        
-        colouring operator!() override;
         
 };using Bg=Background;
 

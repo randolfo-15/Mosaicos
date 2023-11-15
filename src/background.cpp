@@ -17,8 +17,3 @@ const char
 Bg::Background():Ground(Cls::Blue(),Bg::PLAN,COLORLESS){}
 
 Bg::Background(Colour new_clr):Ground(new_clr,Bg::PLAN,COLORLESS){}
-
-//------------------------------------------------------------------------------------------------
-// Assign
-//------------------------------------------------------------------------------------------------
-void Bg::operator=(Hlg){}    

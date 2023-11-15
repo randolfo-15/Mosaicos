@@ -9,74 +9,45 @@
 #define PRINTABLES_HPP 
 
 #include <iostream>
-#include <vector>
+#include "foreground.hpp"
+#include "background.hpp"
 
-//#include <tema.hpp>
-#include "theme.hpp"
-
-//using COR::EFFECT::DEFAULT_BKG;
-//using COR::EFFECT::DEFAULT_KEY;
-
-/// Define a cor do espaçamento.
-//const string cor_space=DEFAULT_BKG+DEFAULT_KEY; 
-
-/// Modos de tratamento de um trecho de texto.
- enum modos{
-	       NORMAL,  ///< Padrão
-		   BOLD,        ///< Letra alterada
-		   SELECT,     ///< Fundo alterado
-		   CUSTOM   ///< Custumizado
-};
-
-///Alias para função geral:
-using Func_Obj=void (*)(void*);
-
-///Alias para modos:
-using MODO= enum modos;
-
-///Função de loop generica:
-using Fx_loop = bool (*)(int);
-
- ///@{
-/*! Simplificação de chamada de classe*/ 
-class Printables; 
-using Pb=Printables; 
-///@}
-
-/// Caracteriza uma letra, quanto a cor e efeitos
-class Printables{
-	string spacing=cor_space+" "+cor_space;              ///< espaçamento inicial
-	
+/// Produzir textos coloridos, e que suportem efeitos.
+class Printables:public Str{
 	protected:
-		Tm th;          ///< Value para tema.
-		std::vector<std::string> buffer;   ///< Buffer de dados.
-		
-
-		void copy(std::vector<std::string>*);                                      ///< Copiar dados.
+		void copy(std::vector<std::string>*);                                       ///< Copiar dados.
 		void print(std::vector<std::string>*,int size_buffer,int=0);  ///< Mover pelo buffer.
-			
-public:
-		Printables();                         
-		Printables(Theme);          
 		
-		virtual void write(void* obj,Func_Obj fx=nullptr);          ///< Escrita generica.
-		virtual void write(std::string,MODO,Func_Obj fx=nullptr);   ///< Escrita Padrão.
-		
-		virtual void read (void* obj,Func_Obj fx=nullptr);          ///< Leitura.
-		
-		virtual void  show(std::vector<std::string>* buffer);  ///< Descarrega o buffer, com espaçamento externo.
-		virtual void show();                                                              ///< Descarrega buffer interno
-		
-		virtual void clear();  ///< Limpar beffer
-		
-		int  n_lines();              ///< Número de linhas atual.
-
-		void  set_tema(Theme); ///< Alterar tema do printable
-		Theme get_tema();		     ///< Obter atual tema do printable
-
-		 void space(int); ///< Define o limite  espaçamento em relação ao texto.
-		 int    space();      ///< Recebe o limite  espaçamento em relação ao texto.
+		virtual void  show(std::vector<std::string>* buffer);           ///< Descarrega o buffer, com espaçamento externo.	
 	
-};
+	public:
+		Printables();                         
+		
+		///< Escrita que preserva as ultimas caractesriticas de Fg, e Bg.
+		
+		//     Field: Bg,Fg → dft
+		// → Write(str)
+		// → Write(Bg,str) ?
+		// → Write(Fg,str) ?
+		// → Write(Fg,Bg,str) ?
+		
+		// → Read(str)
+		// → Read(Bg,str) ?
+		// → Read(Fg,str) ?
+		// → Read(Fg,Bg,str) ?
+		
+		// Ter novas abordagens:
+		//virtual void show();  Pb
+		// scan() → Sc
+		
+		// virtual void clear();  ///< Limpar beffer ? mas limpar o que
+		
+		//int  n_lines();   → Método de break(brk). Ou ! , para printable → Pb
+
+		 // Onde posicionar ? → ios_rag
+		//point(shot,shot), pos[][] sib -> [][] , Horizontal, vertical
+		//point(short), pos[] sib   ->  [],  , Horizontal
+	
+};using Pb=Printables;
 
 #endif // printables.hpp

@@ -11,17 +11,16 @@
 #include "effect.hpp"
 #include "ground.hpp"
 
-class Foreground:public Ground{
-    public:
-        static const char 
-            PLAN[6],
-            COLORLESS[5];
+struct Foreground:public Ground{
+    static const char 
+        PLAN[6],
+        COLORLESS[5];
 
-        Foreground();
-        Foreground(Colour);
-        Foreground(Colour,Highlight);
+    Foreground();
+    Foreground(Colour);
+    Foreground(Colour,Highlight);
         
-        void operator=(Highlight) override;
+    void operator=(Highlight);
         
 };using Fg= Foreground;
 

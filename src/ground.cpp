@@ -12,7 +12,7 @@ const char Gd::BEG[5]="\033[",
                     Gd::END[2]="m";
 
 //------------------------------------------------------------------------------------------------
-// Constrir
+// Build
 //------------------------------------------------------------------------------------------------
 Gd::Ground(Clr clr,const char*plan,const char*clss,Hlg efc):
     Str(7),
@@ -28,14 +28,17 @@ void Gd::init(Clr clr,const char* plan,Hlg efc){
 }
 
 void Gd::copy_colour(Clr new_clr){
-    buf[R]=std::to_string(new_clr.red)+l_l;
-    buf[G]=std::to_string(new_clr.green)+l_l;
-    buf[B]=std::to_string(new_clr.blue)+l_l;
+    buf[R]=std::to_string(new_clr.red())+l_l;
+    buf[G]=std::to_string(new_clr.green())+l_l;
+    buf[B]=std::to_string(new_clr.blue())+l_l;
 }
 
 //------------------------------------------------------------------------------------------------
-// Atribuir
+// Assign
 //------------------------------------------------------------------------------------------------
 void Gd::operator=(Clr clr){ copy_colour(clr); }
 
+//------------------------------------------------------------------------------------------------
+// Deny
+//------------------------------------------------------------------------------------------------
 std::string Gd::operator!(){ return buf[HEAD]+colorless+buf[TAIL];}

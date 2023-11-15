@@ -19,8 +19,8 @@
 /// Define um conjunto de cores e comportamentos de uma janela.
 class Theme{
 	/// Paleta de cores que define o tema
-	Foreground my_key   = Colors::White();
-	Background my_bkg  = Colors::Blue();
+	Foreground my_key   = Fg(Cls::White(),Efc::Normal());
+	Background my_bkg1= Colors::Blue();
 	Background my_bkg2= Colors::Red();
 
 		
@@ -31,18 +31,18 @@ class Theme{
 		/// Construtor custumizado. 
 		Theme(
 			Foreground key,
-		    Background bkg,
+		    Background bkg1,
 			Background bkg2
 		);  
 		
-		std::string key();      ///< (Get) padrão para foreground. 
-		std::string bkg();     ///< (Get) padrão para background. 
-		std::string bkg2();   ///< (Get) padrão para o modo seleção. 
+		std::string key();        ///< (Get) padrão para foreground. 
+		std::string bkg1();     ///< (Get) padrão para background. 
+		std::string bkg2();     ///< (Get) padrão para o modo seleção. 
 		
 		void key(Highlight);  ///< (Set) padrão para foreground. 
 		void key(Colour);       ///< (Set) modificar a cor da letra.
 		
-		void bkg(Colour);            ///< (Set) padrão para background. 
+		void bkg1(Colour);            ///< (Set) padrão para background. 
 		void bkg2(Colour);         ///< (Set) padrão para o modo seleção. 
 
 };using Tm=Theme;

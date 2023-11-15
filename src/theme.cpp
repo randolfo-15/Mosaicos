@@ -8,7 +8,7 @@
 #include "theme.hpp" 
 
 //--------------------------------------------------------------
-// Manufacture
+// Build
 //--------------------------------------------------------------
 
 /*!
@@ -31,29 +31,29 @@ Tm::Theme(){}
  */ 
 Tm::Theme(Fg new_key,Bg new_bkg,Bg new_bkg2):
 	my_key(new_key),
-    my_bkg(new_bkg),
+    my_bkg1(new_bkg),
 	my_bkg2(new_bkg2)
 	{}
 
 //--------------------------------------------------------------
-// Get
+// Getting
 //--------------------------------------------------------------
 using str=std::string;	
 
 str Tm::key(){ return my_key();  }              
 		
-str Tm::bkg(){ return my_bkg(); }
+str Tm::bkg1(){ return my_bkg1(); }
 		
 str Tm::bkg2(){ return my_bkg2(); } 
 
 //--------------------------------------------------------------
-// Set
+// Setting
 //--------------------------------------------------------------
 
 void Tm::key(Hlg efc){ my_key=efc; }      
 		
 void Tm::key(Clr clr){ my_key=clr; }
 		
-void Tm::bkg(Clr clr){my_bkg=clr;}      
+void Tm::bkg1(Clr clr){my_bkg1=clr;}      
 		
 void Tm::bkg2(Clr clr){my_bkg2=clr;}

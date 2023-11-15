@@ -16,7 +16,7 @@ class Ground:public Str{
     public:
         void operator=(Colour);
         
-        virtual void operator=(Highlight);
+        virtual void operator=(Highlight)=0;
         
         std::string operator!();
         

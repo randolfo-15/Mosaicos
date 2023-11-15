@@ -14,22 +14,49 @@ struct Colour{
 	using nivel_green=unsigned char;
 	using nivel_blue=unsigned char;
 		
-	const nivel MAX=255;
+	static const nivel 
+		MAX,
+		MIN,
+		HALF,
+	    BASE;
 		
 	Colour();
+	Colour(Colour&);
+	Colour(Colour&&);
 	Colour(nivel_red,nivel_blue,nivel_green);
-		
-	nivel  red=MAX,
-			  green=MAX,
-			  blue=MAX;
+	
+	void red(nivel);
+	void green(nivel);
+	void blue(nivel);
+	
+	nivel red(); 
+	nivel green();
+	nivel blue();
+	
+	Colour operator+(Colour);
+	Colour operator+(nivel);
+	void operator+=(Colour);
+	void operator+=(nivel);
+	void operator++();
+	
+	Colour operator-(Colour);
+	Colour operator-(nivel);
+	void operator-=(Colour);
+	void operator-=(nivel);
+	void operator--();
+	
+	void operator=(Colour);
+	
 	private:	
 		
-		//int media();
-		//Luminosidade:
-		//void contrast(nivel);   ///< Set → brilho
-		//nivel contrast();           ///< Get ← brilho
-	
-	// +,-,+=,-=,[] -> suporte a operadores
+		/// Somatorio de propriedades das cores.
+		Colour sum(const nivel*,const nivel*,bool,Colour=Colour(),int=0); 
+
+		enum RGB{RED,GREEN,BLUE};
+		
+		nivel rgb[3]={MAX,MAX,MAX};
+		
+		static const nivel pixel[3];
 		
 };using Clr = Colour;
 

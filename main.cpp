@@ -7,14 +7,16 @@ using namespace Cls;
 using namespace Efc;
 
 int main(){
-    //Tm tm;
-    string b;
-    Bg bg;
-    for(int i=0;i<255;i+=3){
-        bg=(Yellow()+Red());
-        b+=bg+" ";
-        
+    Bg bg=Cyan();
+    Bg b=Red();
+    Bg d=Yellow()+Red();
+    for(int i=0;i<255;i++) {
+        bg=Cyan()-i;
+        d=(Yellow()+Red())-i;
+        cout<<bg+"                     "+!bg<<b+"                                 "+!b<<d+"                                 "+!d<<'\n';
+        if(i==244) i=0;
+        for(int i=0;i<15555555;i++);
     }
-    cout<<b<<'\n';
     return 0;
+    
 }

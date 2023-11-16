@@ -46,7 +46,7 @@ struct Colour{
 	
 	void operator=(Colour);
 
-	private:	
+	private:
 		/// Verifica o Max, e Min aceito para uma cor
 		nivel check(short);
 		/// Somatorio de propriedades das cores.

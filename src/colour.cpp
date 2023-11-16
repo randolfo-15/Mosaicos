@@ -73,15 +73,11 @@ void Clr::operator-=(Clr clr){ *this=sum(this->rgb,clr.rgb,false); }
 void Clr::operator=(Clr clr){ for(int i=0;i<BASE;i++) rgb[i]=clr.rgb[i]; }
 
 Clr Clr::sum(const nivel* clr0,const nivel* clr1,bool operation, Clr clr,int i){ 
-    for(;i<BASE;i++) clr.rgb[i]=(operation)?check(clr0[i]+clr1[i]):check(clr0[i]-clr1[i]);  
+    for(;i<BASE;i++) clr.rgb[i]=(operation)?((clr0[i]+clr1[i])/2):(check(clr0[i]-clr1[i]));  
     return clr;
 }
 
-Clr::nivel Clr::check(short n){
-    if(n>MAX) return MAX;
-    else if(n<MIN) return MIN;
-    else return n;
-}
+Clr::nivel Clr::check(short n){ return (n<0)?0:n; }
 
 //------------------------------------------------------------------------------------------------
 // Derived

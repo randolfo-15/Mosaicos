@@ -21,8 +21,7 @@ struct Colour{
 	    BASE;
 		
 	Colour();
-	Colour(Colour&);
-	Colour(Colour&&);
+	
 	Colour(nivel_red,nivel_blue,nivel_green);
 	
 	void red(nivel);
@@ -46,9 +45,10 @@ struct Colour{
 	void operator--();
 	
 	void operator=(Colour);
-	
+
 	private:	
-		
+		/// Verifica o Max, e Min aceito para uma cor
+		nivel check(short);
 		/// Somatorio de propriedades das cores.
 		Colour sum(const nivel*,const nivel*,bool,Colour=Colour(),int=0); 
 

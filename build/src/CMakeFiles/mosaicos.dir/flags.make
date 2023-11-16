@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/randolfo/Documentos/Mosaicos/src
 
-CXX_FLAGS = 
+CXX_FLAGS = -g
 

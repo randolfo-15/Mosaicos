@@ -1,4 +1,4 @@
 var structColors_1_1Blue =
 [
-    [ "Blue", "structColors_1_1Blue.html#ac8975fe121f0fe460783c2263c36bd90", null ]
+    [ "Blue", "structColors_1_1Blue.html#a9d651f490444e19870d08ef55f51255c", null ]
 ];

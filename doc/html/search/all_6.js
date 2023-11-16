@@ -1,10 +1,8 @@
 var searchData=
 [
-  ['head_0',['HEAD',['../ground_8hpp.html#a34a2c423b3ea385bdb64e0dbba3f901ba0b0955668575b21eb0ab2272aef49f76',1,'ground.hpp']]],
-  ['head_5fbackground_1',['HEAD_BACKGROUND',['../background_8hpp.html#af2fc619c334f1e6479d65ddca4313dd7',1,'background.hpp']]],
-  ['head_5fforeground_2',['HEAD_FOREGROUND',['../foreground_8hpp.html#a0ce8174766525031647d07b913d59c33',1,'foreground.hpp']]],
-  ['head_5fground_3',['HEAD_GROUND',['../ground_8hpp.html#aeeea139c30834c29703bcf2e9c22b609',1,'ground.hpp']]],
-  ['hidden_4',['Hidden',['../classEffect_1_1Hidden.html',1,'Effect']]],
-  ['highlight_5',['Highlight',['../structHighlight.html',1,'']]],
-  ['hl_6',['Hl',['../effect_8hpp.html#a9be2ea3dde13f799419e2e02f6ee78dd',1,'effect.hpp']]]
+  ['half_0',['HALF',['../structColour.html#a34d10be481972fe523f9118f802e0e8f',1,'Colour']]],
+  ['head_1',['HEAD',['../classGround.html#a1fdde7f2564d9e271e1d5560135288f6aeef4a97fb1d3b8e4c8633eabfa6a81d1',1,'Ground']]],
+  ['hidden_2',['hidden',['../structEffect_1_1Hidden.html',1,'Effect::Hidden'],['../structEffect_1_1Hidden.html#a190393a3d5bebebb72a0ede6b0798138',1,'Effect::Hidden::Hidden()']]],
+  ['highlight_3',['highlight',['../classHighlight.html',1,'Highlight'],['../classHighlight.html#ac9f3842d0e9abb83dfa9bcee498d1d0b',1,'Highlight::Highlight()'],['../classHighlight.html#af98fcc7bac39fcb2d045f84494fcd6fd',1,'Highlight::Highlight(std::string)']]],
+  ['hlg_4',['Hlg',['../effect_8hpp.html#a7ccc0febbb931e2be4f87bce35658bb3',1,'effect.hpp']]]
 ];

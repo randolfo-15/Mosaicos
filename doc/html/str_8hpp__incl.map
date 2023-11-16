@@ -1,5 +1,9 @@
 <map id="src/str.hpp" name="src/str.hpp">
-<area shape="rect" id="Node000001" title="Arquivo de definição do modelo de string usado." alt="" coords="5,5,94,33"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="20,81,79,109"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="52,34,52,65,47,65,47,34"/>
+<area shape="rect" id="Node000001" title="Arquivo de definição do modelo de string usado." alt="" coords="74,5,163,33"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,81,64,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,36,63,73,59,69,102,32"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="87,81,150,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="121,34,121,65,116,65,116,34"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="174,81,250,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="137,31,185,69,182,73,134,36"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="Colors::Blue" name="Colors::Blue">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,81,105,109"/>
-<area shape="rect" id="Node000002" href="$classColour.html" title=" " alt="" coords="23,5,87,33"/>
+<area shape="rect" id="Node000002" href="$structColour.html" title=" " alt="" coords="23,5,87,33"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="58,49,58,81,52,81,52,49"/>
 </map>

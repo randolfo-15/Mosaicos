@@ -10,12 +10,14 @@
 #include "ground.hpp"
 
 struct Background:public Ground{
-    static const char 
+    static const char
         PLAN[6],
-        COLORLESS[3];
+        CLSS[3];
                             
     Background();
     Background(Colour);
+
+    private: void operator=(Highlight) override;
 
 };using Bg=Background;
 

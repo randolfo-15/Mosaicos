@@ -1,14 +1,12 @@
 <map id="Printables::print" name="Printables::print">
-<area shape="rect" id="Node000001" title="Mover pelo buffer." alt="" coords="495,57,620,85"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="587,44,577,38,557,36,540,38,530,43,528,48,532,56,527,58,522,48,526,39,538,33,558,31,578,33,590,40"/>
-<area shape="rect" id="Node000002" href="$classPrintables.html#a5021d98f0c710bc71ff648412b4789a2" title="Descarrega buffer interno." alt="" coords="319,31,447,58"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="479,62,447,57,448,52,480,57"/>
-<area shape="rect" id="Node000006" href="$classPrintables.html#a516e602e8aac68ab47f138dc9d8ed586" title="Descarrega o buffer, com espaçamento externo." alt="" coords="319,83,447,110"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="480,85,448,90,447,85,479,80"/>
-<area shape="rect" id="Node000003" href="$classDisplay.html#a129c2c095cb3e9ae4352d99dc34b1803" title="Descarrega buffer interno." alt="" coords="160,5,271,33"/>
-<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="303,35,271,30,272,25,304,30"/>
+<area shape="rect" id="Node000001" title="Mover pelo buffer." alt="" coords="495,32,620,60"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="587,19,577,13,557,11,540,13,530,17,528,23,532,30,527,33,522,23,526,14,538,7,558,5,578,8,590,14"/>
+<area shape="rect" id="Node000002" href="$classPrintables.html#a516e602e8aac68ab47f138dc9d8ed586" title="Descarrega o buffer, com espaçamento externo." alt="" coords="319,32,447,60"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="479,49,448,49,448,43,479,43"/>
+<area shape="rect" id="Node000003" href="$classDisplay.html#a129c2c095cb3e9ae4352d99dc34b1803" title=" " alt="" coords="160,5,271,33"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="303,36,271,31,272,25,304,31"/>
 <area shape="rect" id="Node000005" href="$classDisplay.html#a3cc249f036773c1c7fcda0418e128e91" title=" " alt="" coords="160,57,271,85"/>
-<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="304,60,272,65,271,60,303,55"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="304,61,272,65,271,60,303,55"/>
 <area shape="rect" id="Node000004" href="$classDisplay.html#aab9074ba7f7c639d4525d1d825597dda" title=" " alt="" coords="5,5,112,33"/>
 <area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="144,22,112,22,112,17,144,17"/>
 </map>

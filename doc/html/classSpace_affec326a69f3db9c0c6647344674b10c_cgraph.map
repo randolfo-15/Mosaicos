@@ -1,8 +1,5 @@
 <map id="Space::init" name="Space::init">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,95,57"/>
-<area shape="rect" id="Node000002" href="$classSpace.html#a1b8718ecc0abd13227c9e6cd5ab28ebf" title=" " alt="" coords="143,29,247,57"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,41,127,41,127,46,95,46"/>
-<area shape="rect" id="Node000003" href="$display_8cpp.html#ac2b2a52938b5a24dded8a1f8f8d763fa" title=" " alt="" coords="295,29,394,57"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="248,41,279,41,279,46,248,46"/>
-<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="318,30,314,20,317,11,328,5,345,3,362,5,372,11,369,16,361,10,345,8,330,10,321,14,319,20,323,28"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,95,33"/>
+<area shape="rect" id="Node000002" href="$classSpace.html#a1b8718ecc0abd13227c9e6cd5ab28ebf" title=" " alt="" coords="143,5,247,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,17,127,17,127,22,95,22"/>
 </map>

@@ -1,29 +1,27 @@
 <map id="src/printables.hpp" name="src/printables.hpp">
-<area shape="rect" id="Node000001" title="Arquivo de definição da classe Printables" alt="" coords="71,5,208,33"/>
+<area shape="rect" id="Node000001" title="Arquivo de definição da classe Printables" alt="" coords="103,5,240,33"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,81,85,109"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,36,75,73,72,69,121,31"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="109,81,171,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="142,34,142,65,137,65,137,34"/>
-<area shape="rect" id="Node000004" href="$theme_8hpp.html" title="Arquivo de definição de temas das janelas." alt="" coords="195,81,287,109"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="159,31,212,70,209,74,156,36"/>
-<area shape="rect" id="Node000005" href="$colour_8hpp.html" title="Arquivo de definição Foreground Background e Efeitos." alt="" coords="148,308,236,336"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="218,111,192,131,171,158,163,192,164,229,171,263,182,293,177,294,166,265,159,230,157,192,167,156,188,127,215,107"/>
-<area shape="rect" id="Node000006" href="$foreground_8hpp.html" title="Arquivo de definição Foreground." alt="" coords="181,157,301,184"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="244,109,244,141,238,141,238,109"/>
-<area shape="rect" id="Node000012" href="$background_8hpp.html" title="Arquivo de definição Background." alt="" coords="325,157,450,184"/>
-<area shape="poly" id="edge14_Node000004_Node000012" title=" " alt="" coords="268,107,349,147,347,152,266,112"/>
-<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="238,186,221,233,202,294,197,293,216,231,233,184"/>
-<area shape="rect" id="Node000007" href="$effect_8hpp.html" title="Arquivo de definição efeitos." alt="" coords="230,232,316,260"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="249,184,264,217,259,219,244,186"/>
-<area shape="rect" id="Node000010" href="$ground_8hpp.html" title="Arquivo de definição ground." alt="" coords="341,232,435,260"/>
-<area shape="poly" id="edge10_Node000006_Node000010" title=" " alt="" coords="268,182,349,223,347,228,266,187"/>
-<area shape="rect" id="Node000008" href="$str_8hpp.html" title="Arquivo de definição do modelo de string usado." alt="" coords="260,308,326,336"/>
-<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="279,260,288,292,283,294,274,261"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="264,384,322,411"/>
-<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="296,336,296,368,290,368,290,336"/>
-<area shape="poly" id="edge12_Node000010_Node000005" title=" " alt="" coords="354,263,242,305,240,300,352,258"/>
-<area shape="poly" id="edge13_Node000010_Node000008" title=" " alt="" coords="372,263,323,300,320,296,369,258"/>
-<area shape="rect" id="Node000011" title=" " alt="" coords="350,308,425,336"/>
-<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="390,261,390,292,385,292,385,261"/>
-<area shape="poly" id="edge15_Node000012_Node000010" title=" " alt="" coords="390,185,390,217,385,217,385,185"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,36,82,75,79,71,148,31"/>
+<area shape="rect" id="Node000003" href="$foreground_8hpp.html" title="Arquivo de definição Foreground." alt="" coords="258,81,379,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="199,31,280,71,278,76,197,36"/>
+<area shape="rect" id="Node000011" href="$background_8hpp.html" title="Arquivo de definição Background." alt="" coords="109,81,234,109"/>
+<area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="174,34,174,65,169,65,169,34"/>
+<area shape="rect" id="Node000004" href="$colour_8hpp.html" title="Arquivo de definição Foreground Background e Efeitos." alt="" coords="188,232,276,260"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="313,110,270,186,250,220,245,217,265,183,309,107"/>
+<area shape="rect" id="Node000005" href="$effect_8hpp.html" title="Arquivo de definição efeitos." alt="" coords="301,232,387,260"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="323,108,342,216,336,217,318,109"/>
+<area shape="rect" id="Node000010" href="$ground_8hpp.html" title="Arquivo de definição ground." alt="" coords="162,157,256,184"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="300,111,243,150,240,146,297,107"/>
+<area shape="rect" id="Node000006" href="$str_8hpp.html" title="Arquivo de definição do modelo de string usado." alt="" coords="214,308,279,336"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="328,263,277,301,274,297,325,258"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="133,384,192,411"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="233,338,190,375,187,371,230,334"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="215,384,278,411"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="249,336,249,368,244,368,244,336"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="302,384,377,411"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="265,334,313,372,310,376,261,338"/>
+<area shape="poly" id="edge11_Node000010_Node000004" title=" " alt="" coords="216,184,226,217,221,218,211,186"/>
+<area shape="poly" id="edge12_Node000010_Node000005" title=" " alt="" coords="234,183,308,223,306,227,232,187"/>
+<area shape="poly" id="edge10_Node000010_Node000006" title=" " alt="" coords="200,186,179,220,175,240,178,259,192,280,211,297,208,301,188,283,173,261,169,240,175,218,195,183"/>
+<area shape="poly" id="edge14_Node000011_Node000010" title=" " alt="" coords="181,108,198,142,193,144,176,110"/>
 </map>

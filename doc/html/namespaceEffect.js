@@ -1,11 +1,12 @@
 var namespaceEffect =
 [
-    [ "Blink", "classEffect_1_1Blink.html", null ],
-    [ "Bold", "classEffect_1_1Bold.html", null ],
-    [ "Dark", "classEffect_1_1Dark.html", null ],
-    [ "Hidden", "classEffect_1_1Hidden.html", null ],
-    [ "Italic", "classEffect_1_1Italic.html", null ],
-    [ "Reverse", "classEffect_1_1Reverse.html", null ],
-    [ "Tachado", "classEffect_1_1Tachado.html", null ],
-    [ "Underline", "classEffect_1_1Underline.html", null ]
+    [ "Blink", "structEffect_1_1Blink.html", "structEffect_1_1Blink" ],
+    [ "Bold", "structEffect_1_1Bold.html", "structEffect_1_1Bold" ],
+    [ "Dark", "structEffect_1_1Dark.html", "structEffect_1_1Dark" ],
+    [ "Hidden", "structEffect_1_1Hidden.html", "structEffect_1_1Hidden" ],
+    [ "Italic", "structEffect_1_1Italic.html", "structEffect_1_1Italic" ],
+    [ "Normal", "structEffect_1_1Normal.html", "structEffect_1_1Normal" ],
+    [ "Reverse", "structEffect_1_1Reverse.html", "structEffect_1_1Reverse" ],
+    [ "Tachado", "structEffect_1_1Tachado.html", "structEffect_1_1Tachado" ],
+    [ "Underline", "structEffect_1_1Underline.html", "structEffect_1_1Underline" ]
 ];

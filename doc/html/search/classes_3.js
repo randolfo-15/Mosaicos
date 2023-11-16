@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['foreground_0',['Foreground',['../classForeground.html',1,'']]]
+  ['foreground_0',['Foreground',['../structForeground.html',1,'']]]
 ];

@@ -1,11 +1,7 @@
 var searchData=
 [
-  ['operator_21_0',['operator!',['../classForeground.html#a72060025d9406801c122e31428a71444',1,'Foreground::operator!()'],['../classBackground.html#addb936f86b701b964d4be7a886f7c91d',1,'Background::operator!()'],['../structGround.html#a5f11f45efb657f9e8992a6cfef1691f9',1,'Ground::operator!()']]],
-  ['operator_2a_3d_1',['operator*=',['../classDisplay.html#ad9cf21fc0c3b62e96de18a146bec8b71',1,'Display']]],
-  ['operator_2b_3d_2',['operator+=',['../classDisplay.html#ac4f48a03a3d904142a7209955ace6f90',1,'Display']]],
-  ['operator_2d_3d_3',['operator-=',['../classDisplay.html#a07861e321bcac8bb52057681c9c76d46',1,'Display']]],
-  ['operator_3c_3c_4',['operator&lt;&lt;',['../classDisplay.html#a708fb6ae2b69e95be23f043217ebfd6c',1,'Display::operator&lt;&lt;()'],['../colour_8cpp.html#a4a087bba94e2afea667a8277d916ccc3',1,'operator&lt;&lt;(ostream &amp;out, const Ef &amp;ef):&#160;colour.cpp'],['../colour_8cpp.html#ae79d3a90b6c21cc354921c8e53a5d457',1,'operator&lt;&lt;(ostream &amp;out, const Fg &amp;frg):&#160;colour.cpp'],['../colour_8cpp.html#a9eba55ab485748e46aa9c0f5e3bfa9b9',1,'operator&lt;&lt;(ostream &amp;out, const Bg &amp;bkg):&#160;colour.cpp'],['../display_8cpp.html#aa4f957fb348668a79b9575ecc7c3e5a2',1,'operator&lt;&lt;(Dp *a, Dp &amp;b):&#160;display.cpp'],['../display_8hpp.html#a09bd0b0191c7dd576fc161186bc0d839',1,'operator&lt;&lt;(Dp *, Dp &amp;):&#160;display.cpp'],['../ground_8cpp.html#af988c72c7cf3275fe726ac364b2659af',1,'operator&lt;&lt;(std::ostream &amp;out, Ground &amp;gd):&#160;ground.cpp'],['../ground_8hpp.html#a1c58d1cad6806b21d4a8b930e1fc6ebb',1,'operator&lt;&lt;(std::ostream &amp;, Ground &amp;):&#160;ground.cpp']]],
-  ['operator_3d_5',['operator=',['../structGround.html#ab18f774d4f95a4c3426a71177f28a6a9',1,'Ground']]],
-  ['operator_3e_3e_6',['operator&gt;&gt;',['../display_8hpp.html#a83bd6d1d8ba0f72cd9ab0bdefe98fe64',1,'operator&gt;&gt;(Dp *, Dp &amp;):&#160;display.cpp'],['../display_8cpp.html#a5e50396e7e6fedea087b86f1fb146b62',1,'operator&gt;&gt;(Dp *a, Dp &amp;b):&#160;display.cpp'],['../classDisplay.html#ac217c3a7ac162c8a0a0f9756bd089b2d',1,'Display::operator&gt;&gt;(Dp &amp;)']]],
-  ['operator_5b_5d_7',['operator[]',['../classDisplay.html#a6e962b1d2e5b5aa54ec0e7c284d23252',1,'Display']]]
+  ['n_5fdps_0',['n_dps',['../classDisplay.html#a5d8f08dc31e9196bf4e98b43eaee0155',1,'Display']]],
+  ['n_5fletter_1',['n_letter',['../classDisplay.html#a43ed444780f5b7afc681c6ab0c767bf7',1,'Display']]],
+  ['n_5flines_2',['n_lines',['../classDisplay.html#abbda06c9ac760da3a57cda21759f34ba',1,'Display']]],
+  ['normal_3',['Normal',['../structEffect_1_1Normal.html#af62e51ec40dc2eedc3b9ca49ebdc7197',1,'Effect::Normal']]]
 ];

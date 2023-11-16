@@ -1,8 +1,7 @@
 var structForeground =
 [
     [ "Foreground", "structForeground.html#a171919d91ff4cb012942cca134ffb484", null ],
-    [ "Foreground", "structForeground.html#a10c0550c24dbaaa1baf684c382b98aad", null ],
-    [ "operator=", "structForeground.html#aa9e25d36193c0a5a68c6a7dcaef67430", null ],
-    [ "operator<<", "structForeground.html#a0d5a3a15014e3b4898ec80ff85a3d4e9", null ],
-    [ "clr", "structForeground.html#aed3007f35ad696629555462bb487c823", null ]
+    [ "Foreground", "structForeground.html#af3268dce7dd69b766cab07370dc86c93", null ],
+    [ "Foreground", "structForeground.html#ae1a45010e090bd31ff3b05e04fdba2d4", null ],
+    [ "operator=", "structForeground.html#af0841a5d04c9e08aac4cea771e82fb97", null ]
 ];

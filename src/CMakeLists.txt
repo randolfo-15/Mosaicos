@@ -13,7 +13,7 @@ target_sources(mosaicos
         ground.cpp
         foreground.cpp
         background.cpp
-        #theme.cpp
+        theme.cpp
         #printables.cpp
         #display.cpp
         
@@ -21,11 +21,11 @@ target_sources(mosaicos
         FILES 
             str.hpp
             colour.hpp
-            effect.cpp
-            ground.cpp
-            foreground.cpp
-            background.cpp
-            #theme.hpp
+            effect.hpp
+            ground.hpp
+            foreground.hpp
+            background.hpp
+            theme.hpp
             #printables.hpp
             #display.hpp
 )

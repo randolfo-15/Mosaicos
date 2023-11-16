@@ -175,6 +175,30 @@ mosaicos/fast:
 	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/build
 .PHONY : mosaicos/fast
 
+background.o: background.cpp.o
+.PHONY : background.o
+
+# target to build an object file
+background.cpp.o:
+	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/background.cpp.o
+.PHONY : background.cpp.o
+
+background.i: background.cpp.i
+.PHONY : background.i
+
+# target to preprocess a source file
+background.cpp.i:
+	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/background.cpp.i
+.PHONY : background.cpp.i
+
+background.s: background.cpp.s
+.PHONY : background.s
+
+# target to generate assembly for a file
+background.cpp.s:
+	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/background.cpp.s
+.PHONY : background.cpp.s
+
 colour.o: colour.cpp.o
 .PHONY : colour.o
 
@@ -198,6 +222,78 @@ colour.s: colour.cpp.s
 colour.cpp.s:
 	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/colour.cpp.s
 .PHONY : colour.cpp.s
+
+effect.o: effect.cpp.o
+.PHONY : effect.o
+
+# target to build an object file
+effect.cpp.o:
+	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/effect.cpp.o
+.PHONY : effect.cpp.o
+
+effect.i: effect.cpp.i
+.PHONY : effect.i
+
+# target to preprocess a source file
+effect.cpp.i:
+	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/effect.cpp.i
+.PHONY : effect.cpp.i
+
+effect.s: effect.cpp.s
+.PHONY : effect.s
+
+# target to generate assembly for a file
+effect.cpp.s:
+	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/effect.cpp.s
+.PHONY : effect.cpp.s
+
+foreground.o: foreground.cpp.o
+.PHONY : foreground.o
+
+# target to build an object file
+foreground.cpp.o:
+	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/foreground.cpp.o
+.PHONY : foreground.cpp.o
+
+foreground.i: foreground.cpp.i
+.PHONY : foreground.i
+
+# target to preprocess a source file
+foreground.cpp.i:
+	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/foreground.cpp.i
+.PHONY : foreground.cpp.i
+
+foreground.s: foreground.cpp.s
+.PHONY : foreground.s
+
+# target to generate assembly for a file
+foreground.cpp.s:
+	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/foreground.cpp.s
+.PHONY : foreground.cpp.s
+
+ground.o: ground.cpp.o
+.PHONY : ground.o
+
+# target to build an object file
+ground.cpp.o:
+	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/ground.cpp.o
+.PHONY : ground.cpp.o
+
+ground.i: ground.cpp.i
+.PHONY : ground.i
+
+# target to preprocess a source file
+ground.cpp.i:
+	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/ground.cpp.i
+.PHONY : ground.cpp.i
+
+ground.s: ground.cpp.s
+.PHONY : ground.s
+
+# target to generate assembly for a file
+ground.cpp.s:
+	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/ground.cpp.s
+.PHONY : ground.cpp.s
 
 str.o: str.cpp.o
 .PHONY : str.o
@@ -223,6 +319,30 @@ str.cpp.s:
 	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/str.cpp.s
 .PHONY : str.cpp.s
 
+theme.o: theme.cpp.o
+.PHONY : theme.o
+
+# target to build an object file
+theme.cpp.o:
+	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/theme.cpp.o
+.PHONY : theme.cpp.o
+
+theme.i: theme.cpp.i
+.PHONY : theme.i
+
+# target to preprocess a source file
+theme.cpp.i:
+	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/theme.cpp.i
+.PHONY : theme.cpp.i
+
+theme.s: theme.cpp.s
+.PHONY : theme.s
+
+# target to generate assembly for a file
+theme.cpp.s:
+	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/theme.cpp.s
+.PHONY : theme.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -236,12 +356,27 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... mosaicos"
+	@echo "... background.o"
+	@echo "... background.i"
+	@echo "... background.s"
 	@echo "... colour.o"
 	@echo "... colour.i"
 	@echo "... colour.s"
+	@echo "... effect.o"
+	@echo "... effect.i"
+	@echo "... effect.s"
+	@echo "... foreground.o"
+	@echo "... foreground.i"
+	@echo "... foreground.s"
+	@echo "... ground.o"
+	@echo "... ground.i"
+	@echo "... ground.s"
 	@echo "... str.o"
 	@echo "... str.i"
 	@echo "... str.s"
+	@echo "... theme.o"
+	@echo "... theme.i"
+	@echo "... theme.s"
 .PHONY : help
 
 

@@ -6,19 +6,20 @@
  *****************************************************************/
 
 #include "foreground.hpp"
+#include "colour.hpp"
 
-const char 
+const char
     Fg::PLAN[6]="38;2;",
-    Fg::COLORLESS[5]="0;39";
+    Fg::CLSS[5]="0;39";
 
 //------------------------------------------------------------------------------------------------
 // Build
 //------------------------------------------------------------------------------------------------
-Fg::Foreground():Ground(Cls::Red(),Fg::PLAN,COLORLESS){}
+Fg::Foreground():Ground(Cls::Green(),Fg::PLAN,CLSS){}
 
-Fg::Foreground(Colour new_clr):Ground(new_clr,Fg::PLAN,COLORLESS){}
+Fg::Foreground(Colour new_clr):Ground(new_clr,Fg::PLAN,CLSS){}
 
-Fg::Foreground(Colour new_clr,Hlg efc):Ground(new_clr,Fg::PLAN,COLORLESS,efc){}
+Fg::Foreground(Colour new_clr,Hlg efc):Ground(new_clr,Fg::PLAN,CLSS,efc){}
 
 //------------------------------------------------------------------------------------------------
 // Assign

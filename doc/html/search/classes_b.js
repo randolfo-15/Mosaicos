@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['underline_0',['Underline',['../classEffect_1_1Underline.html',1,'Effect']]]
+  ['shadow_0',['Shadow',['../classShadow.html',1,'']]],
+  ['space_1',['Space',['../classSpace.html',1,'']]],
+  ['str_2',['Str',['../classStr.html',1,'']]]
 ];

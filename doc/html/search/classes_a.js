@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['tachado_0',['Tachado',['../classEffect_1_1Tachado.html',1,'Effect']]],
-  ['texto_1',['Texto',['../classTexto.html',1,'']]],
-  ['theme_2',['Theme',['../classTheme.html',1,'']]]
+  ['red_0',['Red',['../structColors_1_1Red.html',1,'Colors']]],
+  ['reverse_1',['Reverse',['../structEffect_1_1Reverse.html',1,'Effect']]]
 ];

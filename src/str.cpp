@@ -13,7 +13,7 @@
 
 Str::Str(){}
 
-Str::Str(size_t size){buf.reserve(size);}
+Str::Str(size_t size){buf.resize(size);}
 
 Str::Str(std::string new_str){buf.push_back(new_str);}
 

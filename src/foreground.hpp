@@ -12,15 +12,15 @@
 #include "ground.hpp"
 
 struct Foreground:public Ground{
-    static const char 
+    static const char
         PLAN[6],
-        COLORLESS[5];
+        CLSS[5];
 
     Foreground();
     Foreground(Colour);
     Foreground(Colour,Highlight);
         
-    void operator=(Highlight);
+    void operator=(Highlight) override;
         
 };using Fg= Foreground;
 

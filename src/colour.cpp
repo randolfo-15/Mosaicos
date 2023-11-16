@@ -18,10 +18,8 @@ const Clr::nivel
 // Build
 //------------------------------------------------------------------------------------------------    
 Clr::Colour(){}
-    
-Clr::Colour(Colour& clr){ *this=clr; }
 
-Clr::Colour(Colour&& clr){ *this=clr; }    
+Clr::Colour(nivel r,nivel g,nivel b){ rgb[RED]=r; rgb[GREEN]=g; rgb[BLUE]=b; }
 
 //------------------------------------------------------------------------------------------------
 // Setting
@@ -53,12 +51,12 @@ void Clr::operator+=(nivel n){ nivel pixels[BASE]={n,n,n}; *this=sum(rgb,pixels,
 
 void Clr::operator++(){*this=sum(rgb,pixel,true);}
 
-void Clr::operator+=(Clr clr){*this=sum(this->rgb,clr.rgb,false);}
+void Clr::operator+=(Clr clr){*this=sum(this->rgb,clr.rgb,true);}
 
 //------------------------------------------------------------------------------------------------
 // Subtraion
 //------------------------------------------------------------------------------------------------
-Colour Clr::operator-(Clr clr){return sum(this->rgb,clr.rgb,true);}
+Colour Clr::operator-(Clr clr){return sum(this->rgb,clr.rgb,false);}
 
 Colour Clr::operator-(nivel n){ nivel pixels[BASE]={n,n,n}; return sum(rgb,pixels,false);}
 
@@ -75,7 +73,14 @@ void Clr::operator-=(Clr clr){ *this=sum(this->rgb,clr.rgb,false); }
 void Clr::operator=(Clr clr){ for(int i=0;i<BASE;i++) rgb[i]=clr.rgb[i]; }
 
 Clr Clr::sum(const nivel* clr0,const nivel* clr1,bool operation, Clr clr,int i){ 
-    for(;i<BASE;i++) clr.rgb[i]=(operation)?(clr0[i]+clr1[i]):(clr0[i]-clr1[i]);  return clr;
+    for(;i<BASE;i++) clr.rgb[i]=(operation)?check(clr0[i]+clr1[i]):check(clr0[i]-clr1[i]);  
+    return clr;
+}
+
+Clr::nivel Clr::check(short n){
+    if(n>MAX) return MAX;
+    else if(n<MIN) return MIN;
+    else return n;
 }
 
 //------------------------------------------------------------------------------------------------

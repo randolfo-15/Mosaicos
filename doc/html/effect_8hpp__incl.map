@@ -1,7 +1,11 @@
 <map id="src/effect.hpp" name="src/effect.hpp">
-<area shape="rect" id="Node000001" title="Arquivo de definição efeitos." alt="" coords="5,5,115,33"/>
-<area shape="rect" id="Node000002" href="$str_8hpp.html" title="Arquivo de definição do modelo de string usado." alt="" coords="27,81,93,109"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="63,34,63,65,57,65,57,34"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="31,157,89,184"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="63,109,63,141,57,141,57,109"/>
+<area shape="rect" id="Node000001" title="Arquivo de definição efeitos." alt="" coords="64,5,173,33"/>
+<area shape="rect" id="Node000002" href="$str_8hpp.html" title="Arquivo de definição do modelo de string usado." alt="" coords="86,81,151,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,34,121,65,116,65,116,34"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,157,64,184"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="105,111,63,148,59,144,102,107"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="87,157,150,184"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="121,109,121,141,116,141,116,109"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="174,157,250,184"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="137,107,185,145,182,149,134,111"/>
 </map>

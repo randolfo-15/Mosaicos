@@ -1,19 +1,33 @@
 <map id="src/effect.hpp" name="src/effect.hpp">
-<area shape="rect" id="Node000001" title="Arquivo de definição efeitos." alt="" coords="98,5,207,33"/>
-<area shape="rect" id="Node000002" href="$foreground_8hpp.html" title="Arquivo de definição Foreground." alt="" coords="81,81,224,109"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,49,155,81,150,81,150,49"/>
-<area shape="rect" id="Node000003" href="$foreground_8cpp.html" title="Arquivo de implementação Foreground." alt="" coords="5,157,148,184"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="130,121,92,158,88,154,126,118"/>
-<area shape="rect" id="Node000004" href="$theme_8hpp.html" title="Arquivo de definição de temas das janelas." alt="" coords="171,157,286,184"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="179,118,217,154,213,158,175,121"/>
-<area shape="rect" id="Node000005" href="$printables_8hpp.html" title="Arquivo de definição da classe Printables" alt="" coords="85,232,223,260"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="206,198,169,234,165,230,202,194"/>
-<area shape="rect" id="Node000009" href="$theme_8cpp.html" title="Arquivo de implementação da classe tema." alt="" coords="247,232,360,260"/>
-<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="255,194,292,230,288,234,251,198"/>
-<area shape="rect" id="Node000006" href="$display_8hpp.html" title="Arquivo de definição da classe display,shadow,space." alt="" coords="21,308,138,336"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="131,273,94,309,91,306,128,269"/>
-<area shape="rect" id="Node000008" href="$printables_8cpp.html" title="Arquivo de Implementação da classe Printables" alt="" coords="162,308,298,336"/>
-<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="180,269,218,306,215,309,176,273"/>
-<area shape="rect" id="Node000007" href="$display_8cpp.html" title="Arquivo de aplicação da classe display,shadow,space." alt="" coords="21,384,137,411"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="82,351,82,383,77,383,77,351"/>
+<area shape="rect" id="Node000001" title="Arquivo de definição efeitos." alt="" coords="287,5,397,33"/>
+<area shape="rect" id="Node000002" href="$effect_8cpp.html" title="Arquivo de implementação efeitos." alt="" coords="148,81,256,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="305,43,228,83,225,78,302,38"/>
+<area shape="rect" id="Node000003" href="$foreground_8hpp.html" title="Arquivo de definição Foreground." alt="" coords="149,157,292,184"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="324,47,233,158,229,154,320,43"/>
+<area shape="rect" id="Node000009" href="$theme_8hpp.html" title="Arquivo de definição de temas das janelas." alt="" coords="333,232,447,260"/>
+<area shape="poly" id="edge17_Node000001_Node000009" title=" " alt="" coords="412,31,466,47,523,72,577,107,600,130,619,155,624,171,618,186,596,198,553,211,448,236,447,231,551,206,594,193,615,183,619,171,614,158,596,133,573,112,521,77,464,52,411,36"/>
+<area shape="rect" id="Node000011" href="$ground_8hpp.html" title="Arquivo de definição ground." alt="" coords="331,81,449,109"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="361,45,384,79,379,82,356,48"/>
+<area shape="rect" id="Node000004" href="$foreground_8cpp.html" title="Arquivo de implementação Foreground." alt="" coords="5,232,148,260"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="182,194,103,234,101,230,180,189"/>
+<area shape="rect" id="Node000005" href="$printables_8hpp.html" title="Arquivo de definição da classe Printables" alt="" coords="172,232,309,260"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="231,199,240,231,234,233,225,200"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="266,188,361,229,359,234,264,193"/>
+<area shape="rect" id="Node000006" href="$display_8hpp.html" title="Arquivo de definição da classe display,shadow,space." alt="" coords="186,308,303,336"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="245,276,246,307,241,308,239,276"/>
+<area shape="rect" id="Node000008" href="$printables_8cpp.html" title="Arquivo de Implementação da classe Printables" alt="" coords="26,308,162,336"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="202,270,121,310,119,305,200,265"/>
+<area shape="rect" id="Node000007" href="$display_8cpp.html" title="Arquivo de aplicação da classe display,shadow,space." alt="" coords="186,384,303,411"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="247,351,247,383,242,383,242,351"/>
+<area shape="rect" id="Node000010" href="$theme_8cpp.html" title="Arquivo de implementação da classe tema." alt="" coords="333,308,447,336"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="393,276,393,308,387,308,387,276"/>
+<area shape="poly" id="edge15_Node000011_Node000003" title=" " alt="" coords="347,118,252,159,249,154,345,113"/>
+<area shape="rect" id="Node000012" href="$background_8hpp.html" title="Arquivo de definição Background." alt="" coords="316,157,464,184"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="393,124,393,156,387,156,387,124"/>
+<area shape="rect" id="Node000014" href="$ground_8cpp.html" title="Arquivo de implementação de ground." alt="" coords="488,157,604,184"/>
+<area shape="poly" id="edge16_Node000011_Node000014" title=" " alt="" coords="432,113,519,154,517,159,430,118"/>
+<area shape="poly" id="edge13_Node000012_Node000005" title=" " alt="" coords="351,194,268,234,266,229,348,189"/>
+<area shape="poly" id="edge14_Node000012_Node000009" title=" " alt="" coords="393,200,393,232,387,232,387,200"/>
+<area shape="rect" id="Node000013" href="$background_8cpp.html" title="Arquivo de implementação Background." alt="" coords="471,232,618,260"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="432,189,518,229,516,234,430,194"/>
 </map>

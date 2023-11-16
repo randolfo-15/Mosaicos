@@ -1,17 +1,17 @@
 <map id="src/background.hpp" name="src/background.hpp">
-<area shape="rect" id="Node000001" title="Arquivo de definição Background." alt="" coords="82,5,231,33"/>
+<area shape="rect" id="Node000001" title="Arquivo de definição Background." alt="" coords="172,5,320,33"/>
 <area shape="rect" id="Node000002" href="$background_8cpp.html" title="Arquivo de implementação Background." alt="" coords="5,81,153,109"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,46,95,83,91,79,130,42"/>
-<area shape="rect" id="Node000003" href="$theme_8hpp.html" title="Arquivo de definição de temas das janelas." alt="" coords="177,81,291,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="183,42,222,79,218,83,179,46"/>
-<area shape="rect" id="Node000004" href="$printables_8hpp.html" title="Arquivo de definição da classe Printables" alt="" coords="90,157,228,184"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="211,122,174,158,170,154,207,118"/>
-<area shape="rect" id="Node000008" href="$theme_8cpp.html" title="Arquivo de implementação da classe tema." alt="" coords="252,157,365,184"/>
-<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="260,118,297,154,293,158,256,122"/>
-<area shape="rect" id="Node000005" href="$display_8hpp.html" title="Arquivo de definição da classe display,shadow,space." alt="" coords="26,232,143,260"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="137,198,99,234,96,230,133,194"/>
-<area shape="rect" id="Node000007" href="$printables_8cpp.html" title="Arquivo de Implementação da classe Printables" alt="" coords="167,232,303,260"/>
-<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="185,193,223,230,220,234,182,197"/>
-<area shape="rect" id="Node000006" href="$display_8cpp.html" title="Arquivo de aplicação da classe display,shadow,space." alt="" coords="26,308,143,336"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="87,276,87,308,82,308,82,276"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="203,42,110,83,107,78,201,37"/>
+<area shape="rect" id="Node000003" href="$printables_8hpp.html" title="Arquivo de definição da classe Printables" alt="" coords="177,81,314,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="248,49,248,81,243,81,243,49"/>
+<area shape="rect" id="Node000007" href="$theme_8hpp.html" title="Arquivo de definição de temas das janelas." alt="" coords="338,81,452,109"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="287,38,370,78,367,83,285,43"/>
+<area shape="rect" id="Node000004" href="$display_8hpp.html" title="Arquivo de definição da classe display,shadow,space." alt="" coords="36,157,154,184"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="206,118,123,159,121,154,204,113"/>
+<area shape="rect" id="Node000006" href="$printables_8cpp.html" title="Arquivo de Implementação da classe Printables" alt="" coords="178,157,314,184"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="248,124,248,156,243,156,243,124"/>
+<area shape="rect" id="Node000005" href="$display_8cpp.html" title="Arquivo de aplicação da classe display,shadow,space." alt="" coords="37,232,153,260"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="98,200,98,232,92,232,92,200"/>
+<area shape="rect" id="Node000008" href="$theme_8cpp.html" title="Arquivo de implementação da classe tema." alt="" coords="338,157,452,184"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="398,124,398,156,392,156,392,124"/>
 </map>

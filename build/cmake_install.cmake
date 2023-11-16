@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "")
+    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -76,7 +76,7 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "head" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/usr/local/include/mosaicos/str.hpp;/usr/local/include/mosaicos/colour.hpp;/usr/local/include/mosaicos/effect.cpp;/usr/local/include/mosaicos/ground.cpp;/usr/local/include/mosaicos/foreground.cpp;/usr/local/include/mosaicos/background.cpp")
+   "/usr/local/include/mosaicos/str.hpp;/usr/local/include/mosaicos/colour.hpp;/usr/local/include/mosaicos/effect.hpp;/usr/local/include/mosaicos/ground.hpp;/usr/local/include/mosaicos/foreground.hpp;/usr/local/include/mosaicos/background.hpp;/usr/local/include/mosaicos/theme.hpp")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
@@ -86,10 +86,11 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "head" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "/usr/local/include/mosaicos" TYPE FILE FILES
     "/home/randolfo/Documentos/Mosaicos/src/str.hpp"
     "/home/randolfo/Documentos/Mosaicos/src/colour.hpp"
-    "/home/randolfo/Documentos/Mosaicos/src/effect.cpp"
-    "/home/randolfo/Documentos/Mosaicos/src/ground.cpp"
-    "/home/randolfo/Documentos/Mosaicos/src/foreground.cpp"
-    "/home/randolfo/Documentos/Mosaicos/src/background.cpp"
+    "/home/randolfo/Documentos/Mosaicos/src/effect.hpp"
+    "/home/randolfo/Documentos/Mosaicos/src/ground.hpp"
+    "/home/randolfo/Documentos/Mosaicos/src/foreground.hpp"
+    "/home/randolfo/Documentos/Mosaicos/src/background.hpp"
+    "/home/randolfo/Documentos/Mosaicos/src/theme.hpp"
     )
 endif()
 
@@ -119,16 +120,16 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   file(INSTALL DESTINATION "/lib/cmake/Mosaicos" TYPE FILE FILES "/home/randolfo/Documentos/Mosaicos/build/CMakeFiles/Export/b8df47184eae61beb73d121f47255704/mosaicosTarget.cmake")
-  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^()$")
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-     "/lib/cmake/Mosaicos/mosaicosTarget-noconfig.cmake")
+     "/lib/cmake/Mosaicos/mosaicosTarget-debug.cmake")
     if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "/lib/cmake/Mosaicos" TYPE FILE FILES "/home/randolfo/Documentos/Mosaicos/build/CMakeFiles/Export/b8df47184eae61beb73d121f47255704/mosaicosTarget-noconfig.cmake")
+    file(INSTALL DESTINATION "/lib/cmake/Mosaicos" TYPE FILE FILES "/home/randolfo/Documentos/Mosaicos/build/CMakeFiles/Export/b8df47184eae61beb73d121f47255704/mosaicosTarget-debug.cmake")
   endif()
 endif()
 

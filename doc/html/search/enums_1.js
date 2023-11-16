@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['modos_0',['modos',['../printables_8hpp.html#a2bc0dea73b5708f50d509e3b9b8eb709',1,'printables.hpp']]]
+  ['rgb_0',['RGB',['../structColour.html#a75f9c790990a9046a85618397708adf0',1,'Colour']]]
 ];

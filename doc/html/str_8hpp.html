@@ -92,7 +92,8 @@ $(document).ready(function(){initNavTree('str_8hpp.html',''); initResizable(); }
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">str.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -100,14 +101,20 @@ $(document).ready(function(){initNavTree('str_8hpp.html',''); initResizable(); }
 <p>Arquivo de definição do modelo de string usado.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;string&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;ostream&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for str.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="str_8hpp__incl.png" border="0" usemap="#asrc_2str_8hpp" alt=""/></div>
 <map name="asrc_2str_8hpp" id="asrc_2str_8hpp">
-<area shape="rect" title="Arquivo de definição do modelo de string usado." alt="" coords="5,5,94,33"/>
-<area shape="rect" title=" " alt="" coords="20,81,79,109"/>
-<area shape="poly" title=" " alt="" coords="52,34,52,65,47,65,47,34"/>
+<area shape="rect" title="Arquivo de definição do modelo de string usado." alt="" coords="74,5,163,33"/>
+<area shape="rect" title=" " alt="" coords="5,81,64,109"/>
+<area shape="poly" title=" " alt="" coords="105,36,63,73,59,69,102,32"/>
+<area shape="rect" title=" " alt="" coords="87,81,150,109"/>
+<area shape="poly" title=" " alt="" coords="121,34,121,65,116,65,116,34"/>
+<area shape="rect" title=" " alt="" coords="174,81,250,109"/>
+<area shape="poly" title=" " alt="" coords="137,31,185,69,182,73,134,36"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -115,36 +122,42 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="str_8hpp__dep__incl.png" border="0" usemap="#asrc_2str_8hppdep" alt=""/></div>
 <map name="asrc_2str_8hppdep" id="asrc_2str_8hppdep">
-<area shape="rect" title="Arquivo de definição do modelo de string usado." alt="" coords="183,5,272,33"/>
-<area shape="rect" href="effect_8hpp.html" title="Arquivo de definição efeitos." alt="" coords="242,81,352,109"/>
-<area shape="poly" title=" " alt="" coords="252,43,286,79,283,82,248,46"/>
-<area shape="rect" href="ground_8hpp.html" title="Arquivo de definição ground." alt="" coords="101,81,218,109"/>
-<area shape="poly" title=" " alt="" coords="207,46,174,82,170,79,203,43"/>
-<area shape="rect" href="foreground_8hpp.html" title="Arquivo de definição Foreground." alt="" coords="197,157,341,184"/>
-<area shape="poly" title=" " alt="" coords="289,124,276,157,271,155,284,122"/>
-<area shape="rect" href="foreground_8cpp.html" title="Arquivo de implementação Foreground." alt="" coords="88,232,231,260"/>
-<area shape="poly" title=" " alt="" coords="238,196,180,234,177,230,235,191"/>
-<area shape="rect" href="theme_8hpp.html" title="Arquivo de definição de temas das janelas." alt="" coords="254,232,369,260"/>
-<area shape="poly" title=" " alt="" coords="286,197,306,231,302,233,282,199"/>
-<area shape="rect" href="printables_8hpp.html" title="Arquivo de definição da classe Printables" alt="" coords="168,308,306,336"/>
-<area shape="poly" title=" " alt="" coords="289,273,252,309,248,306,285,269"/>
-<area shape="rect" href="theme_8cpp.html" title="Arquivo de implementação da classe tema." alt="" coords="330,308,443,336"/>
-<area shape="poly" title=" " alt="" coords="338,269,375,306,371,309,334,273"/>
-<area shape="rect" href="display_8hpp.html" title="Arquivo de definição da classe display,shadow,space." alt="" coords="104,384,221,411"/>
-<area shape="poly" title=" " alt="" coords="214,349,177,385,174,381,211,345"/>
-<area shape="rect" href="printables_8cpp.html" title="Arquivo de Implementação da classe Printables" alt="" coords="245,384,381,411"/>
-<area shape="poly" title=" " alt="" coords="263,345,301,381,298,385,259,348"/>
-<area shape="rect" href="display_8cpp.html" title="Arquivo de aplicação da classe display,shadow,space." alt="" coords="104,459,220,487"/>
-<area shape="poly" title=" " alt="" coords="165,427,165,459,160,459,160,427"/>
-<area shape="poly" title=" " alt="" coords="193,116,251,154,248,158,190,120"/>
-<area shape="poly" title=" " alt="" coords="162,124,162,232,157,232,157,124"/>
-<area shape="rect" href="background_8hpp.html" title="Arquivo de definição Background." alt="" coords="364,157,512,184"/>
-<area shape="poly" title=" " alt="" coords="224,110,389,154,388,159,223,116"/>
-<area shape="rect" href="ground_8cpp.html" title="Arquivo de implementação de ground." alt="" coords="5,157,122,184"/>
-<area shape="poly" title=" " alt="" coords="132,121,82,158,79,154,129,116"/>
-<area shape="poly" title=" " alt="" coords="404,195,335,234,333,230,401,190"/>
-<area shape="rect" href="background_8cpp.html" title="Arquivo de implementação Background." alt="" coords="393,232,540,260"/>
-<area shape="poly" title=" " alt="" coords="451,198,464,231,459,233,446,200"/>
+<area shape="rect" title="Arquivo de definição do modelo de string usado." alt="" coords="281,5,369,33"/>
+<area shape="rect" href="effect_8hpp.html" title="Arquivo de definição efeitos." alt="" coords="177,81,286,109"/>
+<area shape="poly" title=" " alt="" coords="298,45,250,83,246,78,295,41"/>
+<area shape="rect" href="ground_8hpp.html" title="Arquivo de definição ground." alt="" coords="269,157,386,184"/>
+<area shape="poly" title=" " alt="" coords="328,48,330,156,325,156,323,48"/>
+<area shape="rect" href="str_8cpp.html" title="Arquivo de implementação do modelo de string usado." alt="" coords="363,81,450,109"/>
+<area shape="poly" title=" " alt="" coords="352,42,394,79,390,83,349,46"/>
+<area shape="rect" href="effect_8cpp.html" title="Arquivo de implementação efeitos." alt="" coords="5,157,114,184"/>
+<area shape="poly" title=" " alt="" coords="188,118,91,159,89,154,186,113"/>
+<area shape="rect" href="foreground_8hpp.html" title="Arquivo de definição Foreground." alt="" coords="189,232,333,260"/>
+<area shape="poly" title=" " alt="" coords="240,123,261,231,256,232,234,124"/>
+<area shape="rect" href="theme_8hpp.html" title="Arquivo de definição de temas das janelas." alt="" coords="204,308,318,336"/>
+<area shape="poly" title=" " alt="" coords="214,122,195,151,179,186,171,223,173,241,179,259,189,273,202,286,232,305,229,310,199,290,185,277,174,261,168,243,166,223,174,185,190,149,209,120"/>
+<area shape="poly" title=" " alt="" coords="262,116,312,154,309,158,259,121"/>
+<area shape="rect" href="foreground_8cpp.html" title="Arquivo de implementação Foreground." alt="" coords="38,308,180,336"/>
+<area shape="poly" title=" " alt="" coords="221,269,137,310,135,305,219,265"/>
+<area shape="rect" href="printables_8hpp.html" title="Arquivo de definição da classe Printables" alt="" coords="342,308,479,336"/>
+<area shape="poly" title=" " alt="" coords="302,265,385,305,383,310,300,270"/>
+<area shape="poly" title=" " alt="" coords="264,276,264,308,258,308,258,276"/>
+<area shape="rect" href="display_8hpp.html" title="Arquivo de definição da classe display,shadow,space." alt="" coords="502,384,620,411"/>
+<area shape="poly" title=" " alt="" coords="452,340,535,381,533,386,449,345"/>
+<area shape="rect" href="printables_8cpp.html" title="Arquivo de Implementação da classe Printables" alt="" coords="342,384,478,411"/>
+<area shape="poly" title=" " alt="" coords="413,351,413,383,408,383,408,351"/>
+<area shape="rect" href="display_8cpp.html" title="Arquivo de aplicação da classe display,shadow,space." alt="" coords="503,459,619,487"/>
+<area shape="poly" title=" " alt="" coords="564,427,564,459,558,459,558,427"/>
+<area shape="rect" href="theme_8cpp.html" title="Arquivo de implementação da classe tema." alt="" coords="204,384,318,411"/>
+<area shape="poly" title=" " alt="" coords="264,351,264,383,258,383,258,351"/>
+<area shape="poly" title=" " alt="" coords="307,198,275,234,271,230,303,194"/>
+<area shape="rect" href="background_8hpp.html" title="Arquivo de definição Background." alt="" coords="356,232,504,260"/>
+<area shape="poly" title=" " alt="" coords="360,192,414,230,410,234,357,196"/>
+<area shape="rect" href="ground_8cpp.html" title="Arquivo de implementação de ground." alt="" coords="528,232,644,260"/>
+<area shape="poly" title=" " alt="" coords="389,186,541,229,539,234,387,192"/>
+<area shape="poly" title=" " alt="" coords="425,276,416,308,411,307,420,274"/>
+<area shape="poly" title=" " alt="" coords="387,269,292,310,290,305,385,264"/>
+<area shape="rect" href="background_8cpp.html" title="Arquivo de implementação Background." alt="" coords="503,308,651,336"/>
+<area shape="poly" title=" " alt="" coords="471,265,552,305,550,310,469,270"/>
 </map>
 </div>
 </div>
@@ -154,6 +167,13 @@ This graph shows which files directly or indirectly include this file:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStr.html">Str</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a5ed76691a689688a2374de00c970dc9b" id="r_a5ed76691a689688a2374de00c970dc9b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str_8hpp.html#a5ed76691a689688a2374de00c970dc9b">operator+</a> (std::string, <a class="el" href="classStr.html">Str</a>)</td></tr>
+<tr class="separator:a5ed76691a689688a2374de00c970dc9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a304d2d736c18f5dd32552ba7a78d359d" id="r_a304d2d736c18f5dd32552ba7a78d359d"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str_8hpp.html#a304d2d736c18f5dd32552ba7a78d359d">operator&lt;&lt;</a> (std::ostream &amp;, <a class="el" href="classStr.html">Str</a>)</td></tr>
+<tr class="separator:a304d2d736c18f5dd32552ba7a78d359d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Arquivo de definição do modelo de string usado. </p>
@@ -162,7 +182,68 @@ Classes</h2></td></tr>
 <dl class="section date"><dt>Date</dt><dd>21/09/22 </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="str_8hpp_source.html">str.hpp</a>.</p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a5ed76691a689688a2374de00c970dc9b" name="a5ed76691a689688a2374de00c970dc9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ed76691a689688a2374de00c970dc9b">&#9670;&#160;</a></span>operator+()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string operator+ </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>new_str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classStr.html">Str</a>&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="str_8cpp_source.html#l00025">25</a> of file <a class="el" href="str_8cpp_source.html">str.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a304d2d736c18f5dd32552ba7a78d359d" name="a304d2d736c18f5dd32552ba7a78d359d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a304d2d736c18f5dd32552ba7a78d359d">&#9670;&#160;</a></span>operator&lt;&lt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classStr.html">Str</a>&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="str_8cpp_source.html#l00030">30</a> of file <a class="el" href="str_8cpp_source.html">str.cpp</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

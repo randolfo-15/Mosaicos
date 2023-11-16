@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['th_0',['th',['../classPrintables.html#a2861021f3a7e8d9ae516f12715bc1b54',1,'Printables']]]
+  ['rgb_0',['rgb',['../structColour.html#a7ba74b55466a0f66e9dd7eb2a05e177d',1,'Colour']]]
 ];

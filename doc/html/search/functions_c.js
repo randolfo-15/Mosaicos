@@ -1,5 +1,16 @@
 var searchData=
 [
-  ['print_0',['print',['../classPrintables.html#aaa47d6a4ec7aa93afc20e694ef9ae706',1,'Printables']]],
-  ['printables_1',['printables',['../classPrintables.html#aff2861a1ce05ab3b54242d7755ecdfd5',1,'Printables::Printables()'],['../classPrintables.html#a1009bb4a49ec9bcd082d4bf189319ad6',1,'Printables::Printables(Theme)']]]
+  ['operator_21_0',['operator!',['../classGround.html#a371e5277c42c56ec574217857fd06da0',1,'Ground']]],
+  ['operator_28_29_1',['operator()',['../classStr.html#a96cc740f29e1c5931e6dce04cd6e123c',1,'Str']]],
+  ['operator_2a_3d_2',['operator*=',['../classDisplay.html#ad9cf21fc0c3b62e96de18a146bec8b71',1,'Display']]],
+  ['operator_2b_3',['operator+',['../str_8cpp.html#a3d7de936d77f917326fdd4e39eaf58f9',1,'operator+(std::string new_str, Str str):&#160;str.cpp'],['../str_8hpp.html#a5ed76691a689688a2374de00c970dc9b',1,'operator+(std::string, Str):&#160;str.cpp'],['../classStr.html#a736290c51a3a937a3592dbc690855b8e',1,'Str::operator+()'],['../classHighlight.html#a74970bf21af542eb966adf5b0fa8fdb5',1,'Highlight::operator+()'],['../structColour.html#a47528bd91920784dca5319e2ab8a8738',1,'Colour::operator+(nivel)'],['../structColour.html#aee0dfded9aee4493f696b5233bdfc2fd',1,'Colour::operator+(Colour)']]],
+  ['operator_2b_2b_4',['operator++',['../structColour.html#a4140fe524dc3e4e9f6c0167590ef81a7',1,'Colour']]],
+  ['operator_2b_3d_5',['operator+=',['../structColour.html#a9d4d083e54929a298682e418370876b0',1,'Colour::operator+=(Colour)'],['../structColour.html#a28479ec5dfd054460aae350ea12411af',1,'Colour::operator+=(nivel)'],['../classDisplay.html#ac4f48a03a3d904142a7209955ace6f90',1,'Display::operator+=()'],['../classHighlight.html#afd1632e64af86b26412418ae14435011',1,'Highlight::operator+=()']]],
+  ['operator_2d_6',['operator-',['../structColour.html#a54b9aa4d19906547a633b0b7d3e6e43e',1,'Colour::operator-(Colour)'],['../structColour.html#a581ad8cf25162b06419292db39ab77f5',1,'Colour::operator-(nivel)']]],
+  ['operator_2d_2d_7',['operator--',['../structColour.html#afdc6696279d5ad3d27d7867b7bbaf0cd',1,'Colour']]],
+  ['operator_2d_3d_8',['operator-=',['../structColour.html#a29ee3e4ad4284a49a31aa8011590c36c',1,'Colour::operator-=()'],['../classDisplay.html#a07861e321bcac8bb52057681c9c76d46',1,'Display::operator-=()'],['../structColour.html#a0c143797a6cdb21c9dfa531ff3014541',1,'Colour::operator-=()']]],
+  ['operator_3c_3c_9',['operator&lt;&lt;',['../classDisplay.html#a708fb6ae2b69e95be23f043217ebfd6c',1,'Display::operator&lt;&lt;()'],['../display_8cpp.html#aa4f957fb348668a79b9575ecc7c3e5a2',1,'operator&lt;&lt;(Dp *a, Dp &amp;b):&#160;display.cpp'],['../display_8hpp.html#a09bd0b0191c7dd576fc161186bc0d839',1,'operator&lt;&lt;(Dp *, Dp &amp;):&#160;display.cpp'],['../str_8cpp.html#a3e378e90212816f7550a2b313841191a',1,'operator&lt;&lt;(std::ostream &amp;out, Str str):&#160;str.cpp'],['../str_8hpp.html#a304d2d736c18f5dd32552ba7a78d359d',1,'operator&lt;&lt;(std::ostream &amp;, Str):&#160;str.cpp']]],
+  ['operator_3d_10',['operator=',['../structColour.html#a7f9f133999b65f0392a8bf3a49af9359',1,'Colour::operator=()'],['../structForeground.html#af0841a5d04c9e08aac4cea771e82fb97',1,'Foreground::operator=()'],['../classGround.html#a0919428c906d7d43558e722b9a684935',1,'Ground::operator=()']]],
+  ['operator_3e_3e_11',['operator&gt;&gt;',['../classDisplay.html#ac217c3a7ac162c8a0a0f9756bd089b2d',1,'Display::operator&gt;&gt;()'],['../display_8cpp.html#a5e50396e7e6fedea087b86f1fb146b62',1,'operator&gt;&gt;(Dp *a, Dp &amp;b):&#160;display.cpp'],['../display_8hpp.html#a83bd6d1d8ba0f72cd9ab0bdefe98fe64',1,'operator&gt;&gt;(Dp *, Dp &amp;):&#160;display.cpp']]],
+  ['operator_5b_5d_12',['operator[]',['../classDisplay.html#a6e962b1d2e5b5aa54ec0e7c284d23252',1,'Display']]]
 ];

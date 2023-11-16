@@ -8,12 +8,20 @@ project(Mosaicos
 )
 include(cmake/InstalationTools.cmake)
 
+# Tipo de compilação:
+set(CMAKE_BUILD_TYPE "Debug")
+
 # Diretorio de artefatos construidos:
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/Library)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/Library)
 option(SHARED_LIBRARY FALSE)
 
 add_subdirectory(src)
+
+add_executable(main main.cpp)
+
+target_link_libraries(main PRIVATE mosaicos)
+target_include_directories(main PRIVATE mosaicos)
 
 install_file_config()
 

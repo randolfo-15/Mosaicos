@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['slice_5fmode_0',['slice_mode',['../display_8hpp.html#a9850bd23621dd1e3ba9ed54b6ee7cef9',1,'display.hpp']]]
+  ['tm_0',['Tm',['../theme_8hpp.html#a7158349f22ece2d8e787601d902885da',1,'theme.hpp']]]
 ];

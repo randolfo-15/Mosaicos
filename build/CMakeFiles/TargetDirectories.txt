@@ -1,3 +1,4 @@
+/home/randolfo/Documentos/Mosaicos/build/CMakeFiles/main.dir
 /home/randolfo/Documentos/Mosaicos/build/CMakeFiles/edit_cache.dir
 /home/randolfo/Documentos/Mosaicos/build/CMakeFiles/rebuild_cache.dir
 /home/randolfo/Documentos/Mosaicos/build/CMakeFiles/list_install_components.dir

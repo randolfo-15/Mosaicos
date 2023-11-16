@@ -1,12 +1,9 @@
 <map id="Display::Display" name="Display::Display">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,132,57"/>
-<area shape="rect" id="Node000002" href="$classDisplay.html#ad22d3497e1350187870e994f9f5adf39" title=" " alt="" coords="180,29,357,57"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,41,164,41,164,46,132,46"/>
-<area shape="rect" id="Node000003" href="$classSpace.html#affec326a69f3db9c0c6647344674b10c" title=" " alt="" coords="405,29,494,57"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="357,41,390,41,390,46,357,46"/>
-<area shape="rect" id="Node000004" href="$classSpace.html#a1b8718ecc0abd13227c9e6cd5ab28ebf" title=" " alt="" coords="542,29,647,57"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="495,41,527,41,527,46,495,46"/>
-<area shape="rect" id="Node000005" href="$display_8cpp.html#ac2b2a52938b5a24dded8a1f8f8d763fa" title=" " alt="" coords="695,29,794,57"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="647,41,679,41,679,46,647,46"/>
-<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="718,30,714,20,717,11,727,5,744,3,762,5,772,11,769,16,760,10,744,8,729,10,721,14,719,20,723,28"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,132,33"/>
+<area shape="rect" id="Node000002" href="$classDisplay.html#ad22d3497e1350187870e994f9f5adf39" title=" " alt="" coords="180,5,357,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,17,164,17,164,22,132,22"/>
+<area shape="rect" id="Node000003" href="$classSpace.html#affec326a69f3db9c0c6647344674b10c" title=" " alt="" coords="405,5,494,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="357,17,390,17,390,22,357,22"/>
+<area shape="rect" id="Node000004" href="$classSpace.html#a1b8718ecc0abd13227c9e6cd5ab28ebf" title=" " alt="" coords="542,5,647,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="495,17,527,17,527,22,495,22"/>
 </map>

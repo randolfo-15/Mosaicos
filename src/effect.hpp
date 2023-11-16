@@ -18,7 +18,7 @@ class Highlight:public Str{
 		void operator+=(Highlight);
 	
 	protected:
-		const char SG[2]=";";
+		const std::string SG=";";
 		Highlight(std::string);
 		
 }; using Hlg=Highlight;

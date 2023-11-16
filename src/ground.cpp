@@ -6,15 +6,17 @@
  *****************************************************************/
 
 #include "ground.hpp"
+using std::to_string;
 
-const char Gd::BEG[5]="\033[",
-                    Gd::l_l[2]=";",
-                    Gd::END[2]="m";
+const char 
+    Gd::BEG[6]="\033[",
+    Gd::l_l[2]=";",
+    Gd::END[2]="m";
 
 //------------------------------------------------------------------------------------------------
 // Build
 //------------------------------------------------------------------------------------------------
-Gd::Ground(Clr clr,const char*plan,const char*clss,Hlg efc):
+Gd::Ground(Clr clr,const char* plan,const char* clss,Hlg efc):
     Str(7),
     colorless(clss)
     { init(clr,plan,efc); }
@@ -28,9 +30,9 @@ void Gd::init(Clr clr,const char* plan,Hlg efc){
 }
 
 void Gd::copy_colour(Clr new_clr){
-    buf[R]=std::to_string(new_clr.red())+l_l;
-    buf[G]=std::to_string(new_clr.green())+l_l;
-    buf[B]=std::to_string(new_clr.blue())+l_l;
+    buf[R]=to_string(new_clr.red())+l_l;
+    buf[G]=to_string(new_clr.green())+l_l;
+    buf[B]=to_string(new_clr.blue());
 }
 
 //------------------------------------------------------------------------------------------------

@@ -15,14 +15,13 @@
 class Ground:public Str{
     public:
         void operator=(Colour);
-    
         std::string operator!();
         
     protected: 
         Ground(Colour,const char* plan,const char* clss,Highlight=Hlg());
         
         static const char 
-            BEG[5],
+            BEG[6],
             l_l[2],
             END[2];
 
@@ -36,9 +35,11 @@ class Ground:public Str{
             TAIL            ///< Siguino de termino de formula (m)
         };
         
+        virtual void operator=(Highlight)=0;
     private:
         void copy_colour(Colour);
         void init(Colour,const char*,Hlg);
+        
         std::string colorless;
         
 };using  Gd=Ground;

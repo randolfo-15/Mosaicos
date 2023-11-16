@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['get_5ftema_0',['get_tema',['../classPrintables.html#a37fc7e5ebe5839f2e15fb5c4019b67aa',1,'Printables']]],
-  ['green_1',['green',['../classColour.html#a910caf2a80d5a73e65fbccf8744cb5e4',1,'Colour::green(nivel)'],['../classColour.html#ac060e921eaf2d698f210baf8212cbe68',1,'Colour::green()'],['../structColors_1_1Green.html#ae51e678e57858af3f488b9ff63b8bd19',1,'Colors::Green::Green()']]],
-  ['ground_2',['Ground',['../structGround.html#adb5645c1dd3e5db0d546fbc3477da238',1,'Ground']]]
+  ['gray_0',['Gray',['../structColors_1_1Gray.html#a8a6019838ebef08f77616da4bb92fa03',1,'Colors::Gray']]],
+  ['green_1',['green',['../structColors_1_1Green.html#a7cab789a98cb94ed2981ff58390b8d45',1,'Colors::Green::Green()'],['../structColour.html#a7828ec8ad9b877a93298a671bc44e03b',1,'Colour::green(nivel)'],['../structColour.html#a420810d3406c60010965da6a880c9efa',1,'Colour::green()']]],
+  ['ground_2',['Ground',['../classGround.html#a6c458d7eacc7fed8ed340d53811ff083',1,'Ground']]]
 ];

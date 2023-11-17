@@ -41,11 +41,11 @@ Tm::Theme(Fg new_key,Bg new_bkg,Bg new_bkg2):
 //--------------------------------------------------------------
 	
 
-string Tm::key(){ return my_key();  }              
+Fg Tm::key(){ return my_key;  }              
 		
-string Tm::bkg1(){ return my_bkg1(); }
+Bg Tm::bkg1(){ return my_bkg1; }
 		
-string Tm::bkg2(){ return my_bkg2(); } 
+Bg Tm::bkg2(){ return my_bkg2; } 
 
 //--------------------------------------------------------------
 // Setting

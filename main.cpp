@@ -23,10 +23,13 @@ int main(){
     Clr c=Green();
     
     Hlg h=Blink()+Underline();
+    h-=Blink();
+    Clr clr=Red()+Magenta();
     
-    Fg fg(c,h);
-    
-    cout<<fg<<"Ola mundo!!!"<<'\n';
+    Tm t;
+    t.bkg1(clr);
+    t.key(h);
+    cout<<t.bkg1()<<t.key()<<"Ola mundo!!!"<<'\n';
     
     return 0;
     

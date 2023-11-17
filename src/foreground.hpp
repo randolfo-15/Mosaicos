@@ -12,7 +12,7 @@
 struct Foreground:public Ground{
     static const char
         PLAN[6],
-        CLSS[5];
+        CLSS[3];
 
     Foreground();
     Foreground(Colour);

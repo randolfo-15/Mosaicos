@@ -25,8 +25,8 @@ int main(){
     Hlg h=Blink()+Underline();
     
     Fg fg(c,h);
-   string s=fg; 
-    cout<<s<<"Ola mundo!!!"<<'\n';
+    
+    cout<<fg<<"Ola mundo!!!"<<'\n';
     
     return 0;
     

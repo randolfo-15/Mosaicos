@@ -14,11 +14,7 @@ struct Colour{
 	using nivel_green=unsigned char;
 	using nivel_blue=unsigned char;
 		
-	static const nivel 
-		MAX,
-		MIN,
-		HALF,
-	    BASE;
+
 		
 	Colour();
 	
@@ -45,10 +41,18 @@ struct Colour{
 	void operator--();
 	
 	void operator=(Colour);
-
+	
+	protected:
+		static const nivel 
+		MAX,
+		MIN,
+		HALF,
+	    BASE;
+		
 	private:
 		/// Verifica o Max, e Min aceito para uma cor
 		nivel check(short);
+		
 		/// Somatorio de propriedades das cores.
 		Colour sum(const nivel*,const nivel*,bool,Colour=Colour(),int=0); 
 

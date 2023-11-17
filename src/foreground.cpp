@@ -6,7 +6,7 @@
  *****************************************************************/
 
 #include "foreground.hpp"
-#include "colour.hpp"
+
 
 const char
     Fg::PLAN[6]="38;2;",

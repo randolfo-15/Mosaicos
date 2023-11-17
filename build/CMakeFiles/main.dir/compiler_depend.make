@@ -72,8 +72,10 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
   /usr/include/bits/wchar.h \
   /usr/include/bits/wctype-wchar.h \
   /usr/include/bits/wordsize.h \
+  /usr/include/c++/13.2.1/algorithm \
   /usr/include/c++/13.2.1/backward/binders.h \
   /usr/include/c++/13.2.1/bit \
+  /usr/include/c++/13.2.1/bits/algorithmfwd.h \
   /usr/include/c++/13.2.1/bits/alloc_traits.h \
   /usr/include/c++/13.2.1/bits/allocator.h \
   /usr/include/c++/13.2.1/bits/basic_ios.h \
@@ -114,20 +116,24 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
   /usr/include/c++/13.2.1/bits/refwrap.h \
   /usr/include/c++/13.2.1/bits/requires_hosted.h \
   /usr/include/c++/13.2.1/bits/std_abs.h \
+  /usr/include/c++/13.2.1/bits/stl_algo.h \
   /usr/include/c++/13.2.1/bits/stl_algobase.h \
   /usr/include/c++/13.2.1/bits/stl_bvector.h \
   /usr/include/c++/13.2.1/bits/stl_construct.h \
   /usr/include/c++/13.2.1/bits/stl_function.h \
+  /usr/include/c++/13.2.1/bits/stl_heap.h \
   /usr/include/c++/13.2.1/bits/stl_iterator.h \
   /usr/include/c++/13.2.1/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13.2.1/bits/stl_iterator_base_types.h \
   /usr/include/c++/13.2.1/bits/stl_pair.h \
+  /usr/include/c++/13.2.1/bits/stl_tempbuf.h \
   /usr/include/c++/13.2.1/bits/stl_uninitialized.h \
   /usr/include/c++/13.2.1/bits/stl_vector.h \
   /usr/include/c++/13.2.1/bits/streambuf.tcc \
   /usr/include/c++/13.2.1/bits/streambuf_iterator.h \
   /usr/include/c++/13.2.1/bits/string_view.tcc \
   /usr/include/c++/13.2.1/bits/stringfwd.h \
+  /usr/include/c++/13.2.1/bits/uniform_int_dist.h \
   /usr/include/c++/13.2.1/bits/uses_allocator.h \
   /usr/include/c++/13.2.1/bits/uses_allocator_args.h \
   /usr/include/c++/13.2.1/bits/utility.h \
@@ -155,6 +161,8 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
   /usr/include/c++/13.2.1/istream \
   /usr/include/c++/13.2.1/new \
   /usr/include/c++/13.2.1/ostream \
+  /usr/include/c++/13.2.1/pstl/execution_defs.h \
+  /usr/include/c++/13.2.1/pstl/glue_algorithm_defs.h \
   /usr/include/c++/13.2.1/pstl/pstl_config.h \
   /usr/include/c++/13.2.1/stdexcept \
   /usr/include/c++/13.2.1/streambuf \
@@ -277,6 +285,8 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
 
 /usr/include/c++/13.2.1/exception:
 
+/usr/include/c++/13.2.1/pstl/glue_algorithm_defs.h:
+
 /usr/include/c++/13.2.1/cwctype:
 
 /usr/include/c++/13.2.1/cwchar:
@@ -288,6 +298,8 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
 /usr/include/c++/13.2.1/cctype:
 
 /usr/include/c++/13.2.1/bits/uses_allocator.h:
+
+/usr/include/c++/13.2.1/bits/stringfwd.h:
 
 /usr/include/bits/types/struct_timespec.h:
 
@@ -315,6 +327,8 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
 
 /usr/include/bits/types/__locale_t.h:
 
+/usr/include/c++/13.2.1/algorithm:
+
 /usr/include/c++/13.2.1/bits/locale_facets.tcc:
 
 /usr/include/bits/types/__FILE.h:
@@ -330,6 +344,8 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
 /usr/include/bits/types/error_t.h:
 
 /usr/include/bits/stdint-intn.h:
+
+/usr/include/c++/13.2.1/pstl/execution_defs.h:
 
 /usr/include/asm/errno.h:
 
@@ -401,6 +417,8 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
 
 /home/randolfo/Documentos/Mosaicos/src/foreground.hpp:
 
+/usr/include/c++/13.2.1/bits/uniform_int_dist.h:
+
 /home/randolfo/Documentos/Mosaicos/src/theme.hpp:
 
 /usr/include/c++/13.2.1/bits/nested_exception.h:
@@ -457,6 +475,12 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
 
 /usr/include/bits/floatn.h:
 
+/usr/include/c++/13.2.1/debug/assertions.h:
+
+/usr/include/c++/13.2.1/bits/string_view.tcc:
+
+/usr/include/bits/pthreadtypes.h:
+
 /usr/include/gnu/stubs.h:
 
 /usr/include/c++/13.2.1/bits/range_access.h:
@@ -509,6 +533,8 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
 
 /usr/include/c++/13.2.1/cstddef:
 
+/usr/include/c++/13.2.1/bits/algorithmfwd.h:
+
 /usr/include/c++/13.2.1/bits/ptr_traits.h:
 
 /usr/include/features-time64.h:
@@ -553,6 +579,10 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
 
 /usr/include/c++/13.2.1/bits/memoryfwd.h:
 
+/usr/include/c++/13.2.1/bits/streambuf.tcc:
+
+/usr/include/c++/13.2.1/bits/postypes.h:
+
 /usr/include/bits/wchar.h:
 
 /usr/include/c++/13.2.1/bits/predefined_ops.h:
@@ -565,21 +595,9 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
 
 /usr/include/c++/13.2.1/bits/std_abs.h:
 
-/usr/include/c++/13.2.1/bits/stl_algobase.h:
+/usr/include/c++/13.2.1/bits/stl_algo.h:
 
-/usr/include/c++/13.2.1/bits/stl_vector.h:
-
-/usr/include/c++/13.2.1/bits/stl_construct.h:
-
-/usr/include/c++/13.2.1/string_view:
-
-/usr/include/bits/types/clockid_t.h:
-
-/usr/include/c++/13.2.1/bits/stl_uninitialized.h:
-
-/usr/include/c++/13.2.1/bits/postypes.h:
-
-/usr/include/c++/13.2.1/bits/streambuf.tcc:
+/usr/include/c++/13.2.1/bits/streambuf_iterator.h:
 
 /usr/include/bits/setjmp.h:
 
@@ -587,12 +605,18 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
 
 /usr/include/c++/13.2.1/bits/stl_iterator_base_funcs.h:
 
-/usr/include/c++/13.2.1/bits/streambuf_iterator.h:
+/usr/include/c++/13.2.1/bits/stl_algobase.h:
 
-/usr/include/c++/13.2.1/debug/assertions.h:
+/usr/include/c++/13.2.1/bits/stl_vector.h:
 
-/usr/include/bits/pthreadtypes.h:
+/usr/include/c++/13.2.1/bits/stl_construct.h:
 
-/usr/include/c++/13.2.1/bits/string_view.tcc:
+/usr/include/c++/13.2.1/bits/stl_heap.h:
 
-/usr/include/c++/13.2.1/bits/stringfwd.h:
+/usr/include/c++/13.2.1/bits/stl_tempbuf.h:
+
+/usr/include/c++/13.2.1/string_view:
+
+/usr/include/bits/types/clockid_t.h:
+
+/usr/include/c++/13.2.1/bits/stl_uninitialized.h:

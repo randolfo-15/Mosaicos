@@ -6,6 +6,7 @@
  ******************************************************/
 
 #include "theme.hpp" 
+using std::string;
 
 //--------------------------------------------------------------
 // Build
@@ -38,13 +39,13 @@ Tm::Theme(Fg new_key,Bg new_bkg,Bg new_bkg2):
 //--------------------------------------------------------------
 // Getting
 //--------------------------------------------------------------
-using str=std::string;	
+	
 
-str Tm::key(){ return my_key();  }              
+string Tm::key(){ return my_key();  }              
 		
-str Tm::bkg1(){ return my_bkg1(); }
+string Tm::bkg1(){ return my_bkg1(); }
 		
-str Tm::bkg2(){ return my_bkg2(); } 
+string Tm::bkg2(){ return my_bkg2(); } 
 
 //--------------------------------------------------------------
 // Setting

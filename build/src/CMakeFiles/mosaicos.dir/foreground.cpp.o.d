@@ -2,8 +2,7 @@ src/CMakeFiles/mosaicos.dir/foreground.cpp.o: \
  /home/randolfo/Documentos/Mosaicos/src/foreground.cpp \
  /usr/include/stdc-predef.h \
  /home/randolfo/Documentos/Mosaicos/src/foreground.hpp \
- /home/randolfo/Documentos/Mosaicos/src/colour.hpp \
- /home/randolfo/Documentos/Mosaicos/src/effect.hpp \
+ /home/randolfo/Documentos/Mosaicos/src/ground.hpp \
  /home/randolfo/Documentos/Mosaicos/src/str.hpp \
  /usr/include/c++/13.2.1/string \
  /usr/include/c++/13.2.1/bits/requires_hosted.h \
@@ -144,4 +143,13 @@ src/CMakeFiles/mosaicos.dir/foreground.cpp.o: \
  /usr/include/c++/13.2.1/bits/locale_facets.tcc \
  /usr/include/c++/13.2.1/bits/basic_ios.tcc \
  /usr/include/c++/13.2.1/bits/ostream.tcc \
- /home/randolfo/Documentos/Mosaicos/src/ground.hpp
+ /home/randolfo/Documentos/Mosaicos/src/colour.hpp \
+ /home/randolfo/Documentos/Mosaicos/src/effect.hpp \
+ /usr/include/c++/13.2.1/algorithm \
+ /usr/include/c++/13.2.1/bits/stl_algo.h \
+ /usr/include/c++/13.2.1/bits/algorithmfwd.h \
+ /usr/include/c++/13.2.1/bits/stl_heap.h \
+ /usr/include/c++/13.2.1/bits/uniform_int_dist.h \
+ /usr/include/c++/13.2.1/bits/stl_tempbuf.h \
+ /usr/include/c++/13.2.1/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/13.2.1/pstl/execution_defs.h

@@ -7,8 +7,6 @@
 #ifndef  FOREGROUND_HPP
 #define FOREGROUND_HPP
 
-#include "colour.hpp"
-#include "effect.hpp"
 #include "ground.hpp"
 
 struct Foreground:public Ground{

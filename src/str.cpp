@@ -6,49 +6,39 @@
  ******************************************************/
 
 #include "str.hpp"
+using std::string;
 
 //----------------------------------------------------------------------------------
-// Construir
+// Build
 //----------------------------------------------------------------------------------
 
 Str::Str(){}
 
 Str::Str(size_t size){buf.resize(size);}
 
-Str::Str(std::string new_str){buf.push_back(new_str);}
+Str::Str(string new_str){buf.push_back(new_str);}
 
 //----------------------------------------------------------------------------------
-// Converter
+// Cast
 //----------------------------------------------------------------------------------
-std::string Str::my_str(std::string soma){
-    for(auto str:buf) soma+=str;
-    return soma;
-}
+string Str::str(string soma){ for(auto st:buf) soma+=st; return soma; }
+
 //----------------------------------------------------------------------------------
-// Adicionar
+// Addition
 //----------------------------------------------------------------------------------
-std::string Str::operator+(std::string new_str){ return my_str()+new_str; }
+string Str::operator+(string new_str){ return str()+new_str; }
     
-std::string operator+(std::string new_str,Str str){ return new_str+str.my_str(); }
-    
+string operator+(string new_str,Str st){ return new_str+st.str(); }
+
+void Str::operator+=(string st){ buf.push_back(st); }
+        
 //----------------------------------------------------------------------------------
-// Atribuir
-//----------------------------------------------------------------------------------
-/*
-void Str::operator=(std::string new_str){
-    buf.clear();
-    buf.push_back(new_str);
-}
-    
-void Str::operator+=(std::string new_str){buf.push_back(new_str);}
-*/
-//----------------------------------------------------------------------------------
-// Exibir
+// Show
 //----------------------------------------------------------------------------------
 
-std::ostream& operator<<(std::ostream& out,Str str){ return out<<str.my_str(); }
+std::ostream& operator<<(std::ostream& out,Str st){ return out<<st.str(); }
 
 //----------------------------------------------------------------------------------
 // Get
 //----------------------------------------------------------------------------------
-std::string Str::operator()(){return my_str();}
+string Str::operator()(){return str();}

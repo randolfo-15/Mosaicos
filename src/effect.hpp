@@ -7,20 +7,34 @@
 #ifndef EFFECT_HPP
 #define EFFECT_HPP
 
-#include "str.hpp"
+#include <string>
+#include <vector>
+#include <algorithm>
 
-class Highlight:public Str{
+class Ground;
+class Foreground;
 
+class Highlight{
+	friend Ground;
+	friend Foreground;	
+	
+	std::vector<int> buf;
+	
 	public:
 		Highlight();
 	
 		Highlight operator+(Highlight);
 		void operator+=(Highlight);
-	
-	protected:
-		const std::string SG=";";
-		Highlight(std::string);
 		
+		Highlight operator-(Highlight);
+		void operator-=(Highlight);
+		
+	protected:
+		std::string operator()();
+		Highlight(int);
+		
+	private:
+		std::string str(std::string="");
 }; using Hlg=Highlight;
 
 namespace Effect{

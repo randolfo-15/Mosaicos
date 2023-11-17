@@ -11,11 +11,13 @@
 #include "colour.hpp"
 #include "effect.hpp"
 
+
 /// Define a coloração de background de uma letra.
 class Ground:public Str{
     public:
         void operator=(Colour);
         std::string operator!();
+        std::string operator()();
         
     protected: 
         Ground(Colour,const char* plan,const char* clss,Highlight=Hlg());

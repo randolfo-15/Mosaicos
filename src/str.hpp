@@ -12,24 +12,25 @@
 #include <ostream>
 
 class Str{
-
+    
     protected:
         std::vector<std::string> buf;
-        std::string my_str(std::string="");
+        std::string str(std::string="");
+        std::string operator()();
         
-    public:
         Str();
         Str(size_t);
         Str(std::string);
-        
+    
+    public:
         friend std::string operator+(std::string,Str);
         std::string operator+(std::string);
-        std::string operator()();
-        //void operator=(std::string);
-        //void operator+=(std::string);
+        void operator+=(std::string);
+        
         friend std::ostream& operator<<(std::ostream&,Str);
 };
 
+std::string operator-(std::string,Str);
 std::string operator+(std::string,Str);
 std::ostream& operator<<(std::ostream&,Str);
 

@@ -49,3 +49,4 @@ std::string Gd::operator!(){ return buf[HEAD]+colorless+buf[TAIL];}
 // Getting
 //------------------------------------------------------------------------------------------------
 std::string Gd::operator()(){return str();}
+

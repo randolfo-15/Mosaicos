@@ -11,21 +11,17 @@
 #include "colour.hpp"
 #include "effect.hpp"
 
-class Theme;
-
 /// Define a coloração de background de uma letra.
-class Ground:public Str{
-    friend Theme;
-    
+class Ground:public Str{    
     public:
         void operator=(Colour);
-        std::string operator!();
+        virtual void operator=(Highlight)=0;
         
     protected:
+        std::string operator!();  /// Problematico ...!!! \warning
         
         Ground(Colour,const char* plan,const char* clss,Highlight=Hlg());
         
-        virtual void operator=(Highlight)=0;
         std::string operator()();
         
         static const char 
@@ -45,6 +41,7 @@ class Ground:public Str{
         
     private:
         void copy_colour(Colour);
+        
         void init(Colour,const char*,Hlg);
         
         std::string colorless;

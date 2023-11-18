@@ -7,8 +7,6 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
   /home/randolfo/Documentos/Mosaicos/src/effect.hpp \
   /home/randolfo/Documentos/Mosaicos/src/foreground.hpp \
   /home/randolfo/Documentos/Mosaicos/src/ground.hpp \
-  /home/randolfo/Documentos/Mosaicos/src/ios_rag.hpp \
-  /home/randolfo/Documentos/Mosaicos/src/printables.hpp \
   /home/randolfo/Documentos/Mosaicos/src/str.hpp \
   /home/randolfo/Documentos/Mosaicos/src/theme.hpp \
   /usr/include/alloca.h \
@@ -98,7 +96,6 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
   /usr/include/c++/13.2.1/bits/hash_bytes.h \
   /usr/include/c++/13.2.1/bits/invoke.h \
   /usr/include/c++/13.2.1/bits/ios_base.h \
-  /usr/include/c++/13.2.1/bits/istream.tcc \
   /usr/include/c++/13.2.1/bits/locale_classes.h \
   /usr/include/c++/13.2.1/bits/locale_classes.tcc \
   /usr/include/c++/13.2.1/bits/locale_facets.h \
@@ -159,8 +156,6 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
   /usr/include/c++/13.2.1/initializer_list \
   /usr/include/c++/13.2.1/ios \
   /usr/include/c++/13.2.1/iosfwd \
-  /usr/include/c++/13.2.1/iostream \
-  /usr/include/c++/13.2.1/istream \
   /usr/include/c++/13.2.1/new \
   /usr/include/c++/13.2.1/ostream \
   /usr/include/c++/13.2.1/pstl/execution_defs.h \
@@ -271,8 +266,6 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
 
 /usr/include/c++/13.2.1/new:
 
-/usr/include/c++/13.2.1/iostream:
-
 /usr/include/c++/13.2.1/ios:
 
 /usr/include/c++/13.2.1/initializer_list:
@@ -303,6 +296,14 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
 
 /usr/include/c++/13.2.1/bits/stringfwd.h:
 
+/usr/include/bits/types/struct_timespec.h:
+
+/usr/include/bits/types/struct_sched_param.h:
+
+/usr/include/ctype.h:
+
+/usr/include/bits/waitflags.h:
+
 /usr/include/c++/13.2.1/bits/exception_defines.h:
 
 /usr/include/c++/13.2.1/bits/stl_function.h:
@@ -312,12 +313,6 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
 /usr/include/bits/types/cookie_io_functions_t.h:
 
 /usr/include/bits/sched.h:
-
-/usr/include/c++/13.2.1/string_view:
-
-/usr/include/c++/13.2.1/bits/stl_uninitialized.h:
-
-/usr/include/bits/types/clockid_t.h:
 
 /usr/include/bits/atomic_wide_counter.h:
 
@@ -337,27 +332,21 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
 
 /usr/include/bits/types/FILE.h:
 
-/usr/include/c++/13.2.1/bits/stl_tempbuf.h:
-
-/home/randolfo/Documentos/Mosaicos/src/printables.hpp:
-
 /usr/include/c++/13.2.1/typeinfo:
-
-/usr/include/c++/13.2.1/istream:
 
 /usr/include/bits/types/error_t.h:
 
 /usr/include/bits/stdint-intn.h:
+
+/usr/include/c++/13.2.1/pstl/execution_defs.h:
+
+/usr/include/asm/errno.h:
 
 /usr/include/c++/13.2.1/clocale:
 
 /usr/include/bits/endian.h:
 
 /home/randolfo/Documentos/Mosaicos/src/colour.hpp:
-
-/usr/include/c++/13.2.1/pstl/execution_defs.h:
-
-/usr/include/asm/errno.h:
 
 /usr/include/bits/thread-shared-types.h:
 
@@ -377,14 +366,6 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
 
 /usr/include/bits/types/struct___jmp_buf_tag.h:
 
-/usr/include/bits/types/__fpos64_t.h:
-
-/usr/include/bits/types/locale_t.h:
-
-/usr/include/c++/13.2.1/bits/allocator.h:
-
-/usr/include/bits/select.h:
-
 /usr/include/c++/13.2.1/type_traits:
 
 /usr/include/bits/types/clock_t.h:
@@ -401,8 +382,6 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
 
 /usr/include/bits/locale.h:
 
-/usr/include/c++/13.2.1/bits/istream.tcc:
-
 /usr/include/bits/struct_rwlock.h:
 
 /usr/include/bits/types/struct_itimerspec.h:
@@ -413,11 +392,17 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
 
 /usr/include/bits/types/struct_FILE.h:
 
+/usr/include/bits/types/__fpos64_t.h:
+
+/usr/include/bits/types/locale_t.h:
+
+/usr/include/c++/13.2.1/bits/allocator.h:
+
+/usr/include/bits/select.h:
+
 /usr/include/bits/types.h:
 
 /home/randolfo/Documentos/Mosaicos/src/str.hpp:
-
-/home/randolfo/Documentos/Mosaicos/src/ios_rag.hpp:
 
 /usr/include/bits/libc-header-start.h:
 
@@ -493,14 +478,6 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
 
 /usr/include/bits/pthreadtypes-arch.h:
 
-/usr/include/bits/types/struct_sched_param.h:
-
-/usr/include/ctype.h:
-
-/usr/include/bits/waitflags.h:
-
-/usr/include/bits/types/struct_timespec.h:
-
 /usr/include/bits/types/timer_t.h:
 
 /home/randolfo/Documentos/Mosaicos/src/ground.hpp:
@@ -508,12 +485,6 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
 /usr/include/bits/types/wint_t.h:
 
 /usr/include/c++/13.2.1/bits/stl_pair.h:
-
-/usr/include/bits/timesize.h:
-
-/usr/include/c++/13.2.1/bits/localefwd.h:
-
-/usr/include/bits/waitstatus.h:
 
 /usr/include/c++/13.2.1/backward/binders.h:
 
@@ -583,6 +554,12 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
 
 /usr/include/c++/13.2.1/bits/locale_classes.h:
 
+/usr/include/bits/timesize.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/c++/13.2.1/bits/localefwd.h:
+
 /usr/include/c++/13.2.1/cstdio:
 
 /usr/include/alloca.h:
@@ -626,3 +603,11 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
 /usr/include/c++/13.2.1/bits/stl_construct.h:
 
 /usr/include/c++/13.2.1/bits/stl_heap.h:
+
+/usr/include/c++/13.2.1/bits/stl_tempbuf.h:
+
+/usr/include/c++/13.2.1/string_view:
+
+/usr/include/bits/types/clockid_t.h:
+
+/usr/include/c++/13.2.1/bits/stl_uninitialized.h:

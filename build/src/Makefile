@@ -223,6 +223,30 @@ colour.cpp.s:
 	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/colour.cpp.s
 .PHONY : colour.cpp.s
 
+directions_rag.o: directions_rag.cpp.o
+.PHONY : directions_rag.o
+
+# target to build an object file
+directions_rag.cpp.o:
+	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/directions_rag.cpp.o
+.PHONY : directions_rag.cpp.o
+
+directions_rag.i: directions_rag.cpp.i
+.PHONY : directions_rag.i
+
+# target to preprocess a source file
+directions_rag.cpp.i:
+	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/directions_rag.cpp.i
+.PHONY : directions_rag.cpp.i
+
+directions_rag.s: directions_rag.cpp.s
+.PHONY : directions_rag.s
+
+# target to generate assembly for a file
+directions_rag.cpp.s:
+	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/directions_rag.cpp.s
+.PHONY : directions_rag.cpp.s
+
 effect.o: effect.cpp.o
 .PHONY : effect.o
 
@@ -362,6 +386,9 @@ help:
 	@echo "... colour.o"
 	@echo "... colour.i"
 	@echo "... colour.s"
+	@echo "... directions_rag.o"
+	@echo "... directions_rag.i"
+	@echo "... directions_rag.s"
 	@echo "... effect.o"
 	@echo "... effect.i"
 	@echo "... effect.s"

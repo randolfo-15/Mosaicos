@@ -2,13 +2,13 @@
  *	\file printables.hpp
 * \brief Arquivo de definição da classe __Printables__
  * \author Randolfo Augusto
- * \date 21/09/22
+ * \date 18/10/22
  ******************************************************/
 
 #ifndef  PRINTABLES_HPP 
 #define PRINTABLES_HPP 
 
-#include "ios_rag.hpp"
+
 
 template <typename T>
 class Printables:public IOs<T>{
@@ -21,9 +21,18 @@ class Printables:public IOs<T>{
 	*/
 	public:
 		Printables();
+		Printables(int side);
+		Printables(int top,int side);
+		Printables(Background,Foreground,int);
+		Printables(Background,Foreground,int,int);
+		Printables(std::initializer_list<Bg>,std::initializer_list<Fg>);
+		Printables(std::initializer_list<Bg>,std::initializer_list<Fg>,int);
+		Printables(std::initializer_list<Bg>,std::initializer_list<Fg>,int,int);
 		
+		void operator<<(T);
 		
 	private:
+
 		
 		///< Escrita que preserva as ultimas caractesriticas de Fg, e Bg.
 		
@@ -52,7 +61,34 @@ class Printables:public IOs<T>{
 	
 };template <typename T> using Pb=Printables<T>;
 
+//------------------------------------------------------------------------------------------------
+// Build
+//------------------------------------------------------------------------------------------------
 template <typename T>
 Printables<T>::Printables():IOs<T>(){}
+
+template <typename T>		
+Printables<T>::Printables(int side):IOs<T>(side){}
+
+template <typename T>		
+Printables<T>::Printables(int  top,int side):IOs<T>(top,side){}
+
+template <typename T>		
+Printables<T>::Printables(Bg bg,Fg fg,int  side):IOs<T>(side),Tm(bg,fg){}
+
+template <typename T>		
+Printables<T>::Printables(Bg bg,Fg fg,int top,int side):IOs<T>(top,side),Tm(bg,fg){}
+
+template <typename T>		
+Printables<T>::Printables(std::initializer_list<Bg> bg,std::initializer_list<Fg> fg):IOs<T>(),Tm(bg,fg){}
+
+template <typename T>		
+Printables<T>::Printables(std::initializer_list<Bg> bg,std::initializer_list<Fg> fg,int side):IOs<T>(side),Tm(bg,fg){}
+
+template <typename T>		
+Printables<T>::Printables(std::initializer_list<Bg> bg,std::initializer_list<Fg> fg,int top,int side):IOs<T>(top,side),Tm(bg,fg){}
+
+template <typename T>		
+void Printables<T>::operator<<(T t){}
 
 #endif // printables.hpp

@@ -12,7 +12,6 @@
 #include <ostream>
 
 class Str{
-    
     protected:
         std::vector<std::string> buf;
         std::string str(std::string="");

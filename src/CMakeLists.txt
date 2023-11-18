@@ -14,6 +14,7 @@ target_sources(mosaicos
         foreground.cpp
         background.cpp
         theme.cpp
+        directions_rag.cpp
         #ios_rag.cpp
         #printables.cpp
         #display.cpp
@@ -27,8 +28,9 @@ target_sources(mosaicos
             foreground.hpp
             background.hpp
             theme.hpp
-            ios_rag.hpp
-            printables.hpp
+            directions_rag.hpp
+            #printables.hpp
+            #scaniables.hpp
             #display.hpp
 )
  

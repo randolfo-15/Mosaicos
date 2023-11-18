@@ -8,8 +8,6 @@ CMakeFiles/main.dir/main.cpp.o
  /home/randolfo/Documentos/Mosaicos/src/effect.hpp
  /home/randolfo/Documentos/Mosaicos/src/foreground.hpp
  /home/randolfo/Documentos/Mosaicos/src/ground.hpp
- /home/randolfo/Documentos/Mosaicos/src/ios_rag.hpp
- /home/randolfo/Documentos/Mosaicos/src/printables.hpp
  /home/randolfo/Documentos/Mosaicos/src/str.hpp
  /home/randolfo/Documentos/Mosaicos/src/theme.hpp
  /usr/include/alloca.h
@@ -99,7 +97,6 @@ CMakeFiles/main.dir/main.cpp.o
  /usr/include/c++/13.2.1/bits/hash_bytes.h
  /usr/include/c++/13.2.1/bits/invoke.h
  /usr/include/c++/13.2.1/bits/ios_base.h
- /usr/include/c++/13.2.1/bits/istream.tcc
  /usr/include/c++/13.2.1/bits/locale_classes.h
  /usr/include/c++/13.2.1/bits/locale_classes.tcc
  /usr/include/c++/13.2.1/bits/locale_facets.h
@@ -160,8 +157,6 @@ CMakeFiles/main.dir/main.cpp.o
  /usr/include/c++/13.2.1/initializer_list
  /usr/include/c++/13.2.1/ios
  /usr/include/c++/13.2.1/iosfwd
- /usr/include/c++/13.2.1/iostream
- /usr/include/c++/13.2.1/istream
  /usr/include/c++/13.2.1/new
  /usr/include/c++/13.2.1/ostream
  /usr/include/c++/13.2.1/pstl/execution_defs.h

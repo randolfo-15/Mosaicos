@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/mosaicos.dir/background.cpp.o.d"
   "CMakeFiles/mosaicos.dir/colour.cpp.o"
   "CMakeFiles/mosaicos.dir/colour.cpp.o.d"
+  "CMakeFiles/mosaicos.dir/directions_rag.cpp.o"
+  "CMakeFiles/mosaicos.dir/directions_rag.cpp.o.d"
   "CMakeFiles/mosaicos.dir/effect.cpp.o"
   "CMakeFiles/mosaicos.dir/effect.cpp.o.d"
   "CMakeFiles/mosaicos.dir/foreground.cpp.o"

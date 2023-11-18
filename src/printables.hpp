@@ -10,9 +10,8 @@
 
 #include "ios_rag.hpp"
 
-
-/// Produzir textos coloridos, e que suportem efeitos.
-class Printables:public IOs{
+template <typename T>
+class Printables:public IOs<T>{
 	/*
 	protected:
 		void copy(std::vector<std::string>*);                                       ///< Copiar dados.
@@ -22,6 +21,7 @@ class Printables:public IOs{
 	*/
 	public:
 		Printables();
+		
 		
 	private:
 		
@@ -50,6 +50,9 @@ class Printables:public IOs{
 		//point(shot,shot), pos[][] sib -> [][] , Horizontal, vertical
 		//point(short), pos[] sib   ->  [],  , Horizontal
 	
-};using Pb=Printables;
+};template <typename T> using Pb=Printables<T>;
+
+template <typename T>
+Printables<T>::Printables():IOs<T>(){}
 
 #endif // printables.hpp

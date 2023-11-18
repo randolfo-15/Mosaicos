@@ -11,8 +11,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/mosaicos.dir/foreground.cpp.o.d"
   "CMakeFiles/mosaicos.dir/ground.cpp.o"
   "CMakeFiles/mosaicos.dir/ground.cpp.o.d"
-  "CMakeFiles/mosaicos.dir/ios_rag.cpp.o"
-  "CMakeFiles/mosaicos.dir/ios_rag.cpp.o.d"
   "CMakeFiles/mosaicos.dir/str.cpp.o"
   "CMakeFiles/mosaicos.dir/str.cpp.o.d"
   "CMakeFiles/mosaicos.dir/theme.cpp.o"

@@ -22,7 +22,7 @@ class Theme{
 	public:		
 		/// Construtor padrão.
 		Theme();                                                                              
-		Theme(Foreground,Background);  
+		Theme(Background,Foreground);  
 		Theme(std::initializer_list<Bg>,std::initializer_list<Fg>);
 		
 		

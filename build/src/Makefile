@@ -295,30 +295,6 @@ ground.cpp.s:
 	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/ground.cpp.s
 .PHONY : ground.cpp.s
 
-ios_rag.o: ios_rag.cpp.o
-.PHONY : ios_rag.o
-
-# target to build an object file
-ios_rag.cpp.o:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/ios_rag.cpp.o
-.PHONY : ios_rag.cpp.o
-
-ios_rag.i: ios_rag.cpp.i
-.PHONY : ios_rag.i
-
-# target to preprocess a source file
-ios_rag.cpp.i:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/ios_rag.cpp.i
-.PHONY : ios_rag.cpp.i
-
-ios_rag.s: ios_rag.cpp.s
-.PHONY : ios_rag.s
-
-# target to generate assembly for a file
-ios_rag.cpp.s:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/ios_rag.cpp.s
-.PHONY : ios_rag.cpp.s
-
 str.o: str.cpp.o
 .PHONY : str.o
 
@@ -395,9 +371,6 @@ help:
 	@echo "... ground.o"
 	@echo "... ground.i"
 	@echo "... ground.s"
-	@echo "... ios_rag.o"
-	@echo "... ios_rag.i"
-	@echo "... ios_rag.s"
 	@echo "... str.o"
 	@echo "... str.i"
 	@echo "... str.s"

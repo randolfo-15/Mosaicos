@@ -15,18 +15,18 @@ using Fgs=std::initializer_list<Fg>;
 // Build
 //--------------------------------------------------------------
 Tm::Theme(){
-	fgs[0]=Cls::White();
-	bgs[0]=Cls::Blue();
+	bgs.resize(1);
+	fgs.resize(1);
 }
 
-Tm::Theme(Fg new_fg,Bg new_bg){
+Tm::Theme(Bg new_bg,Fg new_fg){
 	fgs.push_back(new_fg);
 	bgs.push_back(new_bg);
 }
 
 Tm::Theme(Bgs baks,Fgs fors){
 	bgs.assign(baks.begin(),baks.end());
-	bgs.assign(fors.begin(),fors.end());
+	fgs.assign(fors.begin(),fors.end());
 }
 
 //--------------------------------------------------------------

@@ -15,17 +15,18 @@ class Theme;
 
 /// Define a coloração de background de uma letra.
 class Ground:public Str{
-    
     friend Theme;
     
     public:
         void operator=(Colour);
         std::string operator!();
         
-        
     protected:
         
         Ground(Colour,const char* plan,const char* clss,Highlight=Hlg());
+        
+        virtual void operator=(Highlight)=0;
+        std::string operator()();
         
         static const char 
             BEG[6],
@@ -41,9 +42,6 @@ class Ground:public Str{
             Efcts,         ///< Define um conjunto de efeitos 
             TAIL            ///< Siguino de termino de formula (m)
         };
-        
-        virtual void operator=(Highlight)=0;
-        std::string operator()();
         
     private:
         void copy_colour(Colour);

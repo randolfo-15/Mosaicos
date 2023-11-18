@@ -13,7 +13,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/randolfo/Documentos/Mosaicos/src/effect.cpp" "src/CMakeFiles/mosaicos.dir/effect.cpp.o" "gcc" "src/CMakeFiles/mosaicos.dir/effect.cpp.o.d"
   "/home/randolfo/Documentos/Mosaicos/src/foreground.cpp" "src/CMakeFiles/mosaicos.dir/foreground.cpp.o" "gcc" "src/CMakeFiles/mosaicos.dir/foreground.cpp.o.d"
   "/home/randolfo/Documentos/Mosaicos/src/ground.cpp" "src/CMakeFiles/mosaicos.dir/ground.cpp.o" "gcc" "src/CMakeFiles/mosaicos.dir/ground.cpp.o.d"
-  "/home/randolfo/Documentos/Mosaicos/src/ios_rag.cpp" "src/CMakeFiles/mosaicos.dir/ios_rag.cpp.o" "gcc" "src/CMakeFiles/mosaicos.dir/ios_rag.cpp.o.d"
   "/home/randolfo/Documentos/Mosaicos/src/str.cpp" "src/CMakeFiles/mosaicos.dir/str.cpp.o" "gcc" "src/CMakeFiles/mosaicos.dir/str.cpp.o.d"
   "/home/randolfo/Documentos/Mosaicos/src/theme.cpp" "src/CMakeFiles/mosaicos.dir/theme.cpp.o" "gcc" "src/CMakeFiles/mosaicos.dir/theme.cpp.o.d"
   )

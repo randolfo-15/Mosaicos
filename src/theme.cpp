@@ -6,55 +6,43 @@
  ******************************************************/
 
 #include "theme.hpp" 
+#include "colour.hpp"
 using std::string;
+using Bgs=std::initializer_list<Bg>;
+using Fgs=std::initializer_list<Fg>;
 
 //--------------------------------------------------------------
 // Build
 //--------------------------------------------------------------
+Tm::Theme(){
+	fgs[0]=Cls::White();
+	bgs[0]=Cls::Blue();
+}
 
-/*!
- * Por padrão as cores(blue,red,  definem  o  background e  o  foreground 
- *  white e o efeito em negrito) são o padrão da classe tema, no entanto esta 
- * coloração   tende  a  ter  mudança significativas   conforme o padrão de cores 
- * do terminal.
- * ______________________________________________________________________________________
- * \sa Tema(colour,colour,colour,effect);
- */
-Tm::Theme(){}
+Tm::Theme(Fg new_fg,Bg new_bg){
+	fgs.push_back(new_fg);
+	bgs.push_back(new_bg);
+}
 
-/*!
- *  É possivel definir outro padrão de cores ao se custumizar o construtor
- *  e atribuir um novo jogo de cores e efeitos.
- * ____________________________________________________________________________________
- *  \param new_key cor usada em foreground.
- *  \param new_bkj  cor usada em background.
- *  \param new_bkg2 cor usado no background em modo selecão.
- */ 
-Tm::Theme(Fg new_key,Bg new_bkg,Bg new_bkg2):
-	my_key(new_key),
-    my_bkg1(new_bkg),
-	my_bkg2(new_bkg2)
-	{}
+Tm::Theme(Bgs baks,Fgs fors){
+	bgs.assign(baks.begin(),baks.end());
+	bgs.assign(fors.begin(),fors.end());
+}
 
 //--------------------------------------------------------------
 // Getting
 //--------------------------------------------------------------
-	
-
-Fg Tm::key(){ return my_key;  }              
+Fg Tm::fg(int i){ return fgs[i];  }              
 		
-Bg Tm::bkg1(){ return my_bkg1; }
+Bg Tm::bg(int i){ return bgs[i]; }
 		
-Bg Tm::bkg2(){ return my_bkg2; } 
-
 //--------------------------------------------------------------
 // Setting
 //--------------------------------------------------------------
+void Tm::fg(Hlg efc,int i){ fgs[i]=efc; }      
+		
+void Tm::fg(Clr clr,int i){ fgs[i]=clr; }
+		
+void Tm::bg(Clr clr,int i){bgs[i]=clr;}      
+		
 
-void Tm::key(Hlg efc){ my_key=efc; }      
-		
-void Tm::key(Clr clr){ my_key=clr; }
-		
-void Tm::bkg1(Clr clr){my_bkg1=clr;}      
-		
-void Tm::bkg2(Clr clr){my_bkg2=clr;}

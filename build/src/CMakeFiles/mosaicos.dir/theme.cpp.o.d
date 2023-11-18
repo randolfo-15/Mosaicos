@@ -2,8 +2,9 @@ src/CMakeFiles/mosaicos.dir/theme.cpp.o: \
  /home/randolfo/Documentos/Mosaicos/src/theme.cpp \
  /usr/include/stdc-predef.h \
  /home/randolfo/Documentos/Mosaicos/src/theme.hpp \
- /home/randolfo/Documentos/Mosaicos/src/colour.hpp \
- /home/randolfo/Documentos/Mosaicos/src/effect.hpp \
+ /home/randolfo/Documentos/Mosaicos/src/foreground.hpp \
+ /home/randolfo/Documentos/Mosaicos/src/ground.hpp \
+ /home/randolfo/Documentos/Mosaicos/src/str.hpp \
  /usr/include/c++/13.2.1/string \
  /usr/include/c++/13.2.1/bits/requires_hosted.h \
  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -108,20 +109,8 @@ src/CMakeFiles/mosaicos.dir/theme.cpp.o: \
  /usr/include/c++/13.2.1/bits/stl_uninitialized.h \
  /usr/include/c++/13.2.1/bits/stl_vector.h \
  /usr/include/c++/13.2.1/bits/stl_bvector.h \
- /usr/include/c++/13.2.1/bits/vector.tcc \
- /usr/include/c++/13.2.1/algorithm \
- /usr/include/c++/13.2.1/bits/stl_algo.h \
- /usr/include/c++/13.2.1/bits/algorithmfwd.h \
- /usr/include/c++/13.2.1/bits/stl_heap.h \
- /usr/include/c++/13.2.1/bits/uniform_int_dist.h \
- /usr/include/c++/13.2.1/bits/stl_tempbuf.h \
- /usr/include/c++/13.2.1/pstl/glue_algorithm_defs.h \
- /usr/include/c++/13.2.1/pstl/execution_defs.h \
- /home/randolfo/Documentos/Mosaicos/src/foreground.hpp \
- /home/randolfo/Documentos/Mosaicos/src/ground.hpp \
- /home/randolfo/Documentos/Mosaicos/src/str.hpp \
- /usr/include/c++/13.2.1/ostream /usr/include/c++/13.2.1/ios \
- /usr/include/c++/13.2.1/exception \
+ /usr/include/c++/13.2.1/bits/vector.tcc /usr/include/c++/13.2.1/ostream \
+ /usr/include/c++/13.2.1/ios /usr/include/c++/13.2.1/exception \
  /usr/include/c++/13.2.1/bits/exception_ptr.h \
  /usr/include/c++/13.2.1/bits/cxxabi_init_exception.h \
  /usr/include/c++/13.2.1/typeinfo \
@@ -155,4 +144,14 @@ src/CMakeFiles/mosaicos.dir/theme.cpp.o: \
  /usr/include/c++/13.2.1/bits/locale_facets.tcc \
  /usr/include/c++/13.2.1/bits/basic_ios.tcc \
  /usr/include/c++/13.2.1/bits/ostream.tcc \
+ /home/randolfo/Documentos/Mosaicos/src/colour.hpp \
+ /home/randolfo/Documentos/Mosaicos/src/effect.hpp \
+ /usr/include/c++/13.2.1/algorithm \
+ /usr/include/c++/13.2.1/bits/stl_algo.h \
+ /usr/include/c++/13.2.1/bits/algorithmfwd.h \
+ /usr/include/c++/13.2.1/bits/stl_heap.h \
+ /usr/include/c++/13.2.1/bits/uniform_int_dist.h \
+ /usr/include/c++/13.2.1/bits/stl_tempbuf.h \
+ /usr/include/c++/13.2.1/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/13.2.1/pstl/execution_defs.h \
  /home/randolfo/Documentos/Mosaicos/src/background.hpp

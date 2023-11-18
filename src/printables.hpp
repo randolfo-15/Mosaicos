@@ -8,20 +8,22 @@
 #ifndef  PRINTABLES_HPP 
 #define PRINTABLES_HPP 
 
-#include <iostream>
-#include "foreground.hpp"
-#include "background.hpp"
+#include "ios_rag.hpp"
+
 
 /// Produzir textos coloridos, e que suportem efeitos.
-class Printables:public Str{
+class Printables:public IOs{
+	/*
 	protected:
 		void copy(std::vector<std::string>*);                                       ///< Copiar dados.
 		void print(std::vector<std::string>*,int size_buffer,int=0);  ///< Mover pelo buffer.
 		
 		virtual void  show(std::vector<std::string>* buffer);           ///< Descarrega o buffer, com espaçamento externo.	
-	
+	*/
 	public:
-		Printables();                         
+		Printables();
+		
+	private:
 		
 		///< Escrita que preserva as ultimas caractesriticas de Fg, e Bg.
 		

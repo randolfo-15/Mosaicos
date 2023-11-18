@@ -1,7 +1,7 @@
 var searchData=
 [
   ['fg_0',['Fg',['../foreground_8hpp.html#a996f35833e13bdc262107b486cbc1815',1,'foreground.hpp']]],
-  ['foreground_1',['foreground',['../structForeground.html',1,'Foreground'],['../structForeground.html#a171919d91ff4cb012942cca134ffb484',1,'Foreground::Foreground()'],['../structForeground.html#af3268dce7dd69b766cab07370dc86c93',1,'Foreground::Foreground(Colour)'],['../structForeground.html#ae1a45010e090bd31ff3b05e04fdba2d4',1,'Foreground::Foreground(Colour, Highlight)']]],
+  ['foreground_1',['foreground',['../structForeground.html',1,'Foreground'],['../classHighlight.html#abac724e022f15822798ba77df3c5a119',1,'Highlight::Foreground'],['../structForeground.html#a171919d91ff4cb012942cca134ffb484',1,'Foreground::Foreground()'],['../structForeground.html#af3268dce7dd69b766cab07370dc86c93',1,'Foreground::Foreground(Colour)'],['../structForeground.html#ae1a45010e090bd31ff3b05e04fdba2d4',1,'Foreground::Foreground(Colour, Highlight)']]],
   ['foreground_2ecpp_2',['foreground.cpp',['../foreground_8cpp.html',1,'']]],
   ['foreground_2ehpp_3',['foreground.hpp',['../foreground_8hpp.html',1,'']]],
   ['format_4',['format',['../classDisplay.html#ac7a072440aae3ded1ea54d6641b692ea',1,'Display']]],

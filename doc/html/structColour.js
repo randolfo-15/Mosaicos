@@ -10,11 +10,10 @@ var structColour =
       [ "BLUE", "structColour.html#a75f9c790990a9046a85618397708adf0acf43caf0a85a2a4ed0aa1ed399850e22", null ]
     ] ],
     [ "Colour", "structColour.html#aa54b6a3943c429f54ecd6d9634b3f13c", null ],
-    [ "Colour", "structColour.html#a45d096bd3713f561c8576fd412ceb17b", null ],
-    [ "Colour", "structColour.html#a89165a966f62989560ddbacbc5e9cdce", null ],
-    [ "Colour", "structColour.html#adc53d4565dd315bee3a31dfaf1a81a80", null ],
+    [ "Colour", "structColour.html#ab2c8410bcabafb84cdacc70978e6ffe7", null ],
     [ "blue", "structColour.html#ad474b81a90cabd535fe1c190d8becf99", null ],
     [ "blue", "structColour.html#a7a9d445a6099579e04ea7308899a82ba", null ],
+    [ "check", "structColour.html#aef8c6ee662ec6221a03113a44d18878e", null ],
     [ "green", "structColour.html#a420810d3406c60010965da6a880c9efa", null ],
     [ "green", "structColour.html#a7828ec8ad9b877a93298a671bc44e03b", null ],
     [ "operator+", "structColour.html#aee0dfded9aee4493f696b5233bdfc2fd", null ],

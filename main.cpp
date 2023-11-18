@@ -2,34 +2,14 @@
 #include "src/effect.hpp"
 #include "src/theme.hpp"
 #include <iostream>
+#include "src/printables.hpp"
 
 using namespace std;
 using namespace Cls;
 using namespace Efc;
 
 int main(){
-    /* Teste colour
-    Bg bg=Cyan();
-    Bg b=Red();
-    Bg d=Yellow()+Red();
-    for(int i=0;i<255;i++) {
-        bg=Cyan()-i;
-        d=(Yellow()+Red())-i;
-        cout<<bg+"                     "+!bg<<b+"                                 "+!b<<d+"                                 "+!d<<'\n';
-        if(i==244) i=0;
-        for(int i=0;i<15555555;i++);
-    }
-    */
-    Clr c=Green();
-    
-    Hlg h=Blink()+Underline();
-    h-=Blink();
-    Clr clr=Red()+Magenta();
-    
-    Tm t;
-    t.bkg1(clr);
-    t.key(h);
-    cout<<t.bkg1()<<t.key()<<"Ola mundo!!!"<<'\n';
+    Pb pb;
     
     return 0;
     

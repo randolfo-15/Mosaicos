@@ -16,6 +16,6 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "printables.hpp", "printables_8hpp.html", "printables_8hpp" ],
     [ "str.cpp", "str_8cpp.html", "str_8cpp" ],
     [ "str.hpp", "str_8hpp.html", "str_8hpp" ],
-    [ "theme.cpp", "theme_8cpp.html", "theme_8cpp" ],
+    [ "theme.cpp", "theme_8cpp.html", null ],
     [ "theme.hpp", "theme_8hpp.html", "theme_8hpp" ]
 ];

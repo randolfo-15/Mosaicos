@@ -1,7 +1,5 @@
 <map id="Effect::Blink" name="Effect::Blink">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,157,105,184"/>
-<area shape="rect" id="Node000002" href="$classHighlight.html" title=" " alt="" coords="15,81,95,109"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="58,124,58,156,52,156,52,124"/>
-<area shape="rect" id="Node000003" href="$classStr.html" title=" " alt="" coords="35,5,75,33"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="58,49,58,81,52,81,52,49"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,81,105,109"/>
+<area shape="rect" id="Node000002" href="$classHighlight.html" title=" " alt="" coords="15,5,95,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="58,49,58,81,52,81,52,49"/>
 </map>

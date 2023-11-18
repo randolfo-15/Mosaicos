@@ -1,23 +1,21 @@
 <map id="Highlight" name="Highlight">
-<area shape="rect" id="Node000001" title=" " alt="" coords="93,213,173,241"/>
-<area shape="rect" id="Node000003" href="$structEffect_1_1Blink.html" title=" " alt="" coords="236,5,335,33"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="139,197,149,163,166,122,189,81,219,44,237,31,240,36,223,48,193,84,171,124,154,165,144,199"/>
-<area shape="rect" id="Node000004" href="$structEffect_1_1Bold.html" title=" " alt="" coords="238,57,333,85"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="145,198,174,147,195,120,219,96,239,83,242,88,223,100,199,123,179,150,149,201"/>
-<area shape="rect" id="Node000005" href="$structEffect_1_1Dark.html" title=" " alt="" coords="237,109,334,137"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="156,201,185,174,220,148,243,135,246,140,222,152,188,178,159,205"/>
-<area shape="rect" id="Node000006" href="$structEffect_1_1Hidden.html" title=" " alt="" coords="230,161,342,189"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="187,206,242,187,243,192,188,211"/>
-<area shape="rect" id="Node000007" href="$structEffect_1_1Italic.html" title=" " alt="" coords="237,213,335,241"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="189,225,236,225,236,230,189,230"/>
-<area shape="rect" id="Node000008" href="$structEffect_1_1Normal.html" title=" " alt="" coords="229,265,343,293"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="188,243,243,262,242,267,187,248"/>
-<area shape="rect" id="Node000009" href="$structEffect_1_1Reverse.html" title=" " alt="" coords="226,317,345,345"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="159,250,188,277,222,302,246,314,243,319,220,307,185,281,156,254"/>
-<area shape="rect" id="Node000010" href="$structEffect_1_1Tachado.html" title=" " alt="" coords="226,369,345,397"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="149,254,179,305,199,331,223,354,242,367,239,371,219,359,195,335,174,308,145,256"/>
-<area shape="rect" id="Node000011" href="$structEffect_1_1Underline.html" title=" " alt="" coords="221,421,350,449"/>
-<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="144,256,154,290,171,330,193,371,223,407,240,419,237,423,219,410,189,374,166,332,149,292,139,257"/>
-<area shape="rect" id="Node000002" href="$classStr.html" title=" " alt="" coords="5,213,45,241"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="60,225,92,225,92,230,60,230"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,213,86,241"/>
+<area shape="rect" id="Node000002" href="$structEffect_1_1Blink.html" title=" " alt="" coords="149,5,248,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="51,197,62,163,79,122,102,81,132,44,150,31,153,36,135,48,106,84,83,124,67,165,56,199"/>
+<area shape="rect" id="Node000003" href="$structEffect_1_1Bold.html" title=" " alt="" coords="151,57,246,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="57,198,87,147,108,120,132,96,152,83,155,88,135,100,112,123,91,150,62,201"/>
+<area shape="rect" id="Node000004" href="$structEffect_1_1Dark.html" title=" " alt="" coords="150,109,247,137"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="68,201,98,174,132,148,156,135,158,140,135,152,101,178,72,205"/>
+<area shape="rect" id="Node000005" href="$structEffect_1_1Hidden.html" title=" " alt="" coords="142,161,255,189"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="99,206,154,187,156,192,101,211"/>
+<area shape="rect" id="Node000006" href="$structEffect_1_1Italic.html" title=" " alt="" coords="149,213,248,241"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="101,225,149,225,149,230,101,230"/>
+<area shape="rect" id="Node000007" href="$structEffect_1_1Normal.html" title=" " alt="" coords="141,265,256,293"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="101,243,156,262,154,267,99,248"/>
+<area shape="rect" id="Node000008" href="$structEffect_1_1Reverse.html" title=" " alt="" coords="139,317,258,345"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="72,250,101,277,135,302,158,314,156,319,132,307,98,281,68,254"/>
+<area shape="rect" id="Node000009" href="$structEffect_1_1Tachado.html" title=" " alt="" coords="139,369,258,397"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="62,254,91,305,112,331,135,354,155,367,152,371,132,359,108,335,87,308,57,256"/>
+<area shape="rect" id="Node000010" href="$structEffect_1_1Underline.html" title=" " alt="" coords="134,421,263,449"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="56,256,67,290,83,330,106,371,135,407,153,419,150,423,132,410,102,374,79,332,62,292,51,257"/>
 </map>

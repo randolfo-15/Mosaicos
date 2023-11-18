@@ -13,8 +13,6 @@
 
 Printables::Printables(){}
 
-Printables::Printables(Tm tm):th(tm){}
-
 //--------------------------------------------------------
 //Show:
 //--------------------------------------------------------
@@ -24,7 +22,7 @@ Printables::Printables(Tm tm):th(tm){}
  * __________________________________________________________________________________
  *  \sa show(vec_str*)
  */
-void Printables::show(){ print(&buffer,buffer.size()); }
+//void Printables::show(){ print(&buffer,buffer.size()); }
 
 /*! Exibir
  * ======
@@ -33,7 +31,7 @@ void Printables::show(){ print(&buffer,buffer.size()); }
  *  \param buf Conjunto de linhas externas que requer tratamento.
  *  \sa show(vec_str*)
  */
-void Printables::show(std::vector<std::string>* buf){ print(buf,buf->size()); }
+//void Printables::show(std::vector<std::string>* buf){ print(buf,buf->size()); }
 
 /*! Loop
  * =====
@@ -44,6 +42,7 @@ void Printables::show(std::vector<std::string>* buf){ print(buf,buf->size()); }
  *  \param last_line número total de linhas.
  *  \param line contador de linhas.
  */
+/*
 void Printables::print(std::vector<std::string>*buf,int last_line,int line){
 	if(line>=last_line) return;
 	std::cout<<spacing<<buf->at(line)<<'\n';	
@@ -54,11 +53,11 @@ void Printables::print(std::vector<std::string>*buf,int last_line,int line){
 //Geral:
 //--------------------------------------------------------
 
-void Printables::copy(std::vector<std::string>* copy){ *copy=buffer; } 
+//void Printables::copy(std::vector<std::string>* copy){ *copy=buffer; } 
 
-int Printables::n_lines(){return buffer.size();} 
+//int Printables::n_lines(){return buffer.size();} 
 
-void Printables::clear(){ buffer.clear(); } 
+//void Printables::clear(){ buffer.clear(); } 
 
 //--------------------------------------------------------
 //Write:
@@ -75,7 +74,7 @@ void Printables::clear(){ buffer.clear(); }
  * \param obj objeto qualquer .
  * \param fx função que trata o obj.
  */
-void Printables::write(void* obj,Func_Obj fx){ fx(obj); }
+//void Printables::write(void* obj,Func_Obj fx){ fx(obj); }
 
 /*! Escrita Padrão:
  * =============
@@ -88,6 +87,7 @@ void Printables::write(void* obj,Func_Obj fx){ fx(obj); }
  * \param modo Define como caracterizar uma linha.
  * \param fx Função para casos de tratamento custumizado para uma linha.
  */
+/*
 void Printables::write(std::string line,MODO modo,Func_Obj fx){
 	
 	switch (modo){
@@ -115,15 +115,19 @@ void Printables::write(std::string line,MODO modo,Func_Obj fx){
  * \param obj objeto qualquer .
  * \param fx função que trata o obj.
  */
+/*
 void Printables::read(void* obj,Func_Obj fx){ fx(obj); }
 
 //--------------------------------------------------------
 //Get ,Sets
 //--------------------------------------------------------
 /*!\param tema novo tema.*/
-void Printables::set_tema(Tm tema){ th=tema; }
+
+/*
+ * void Printables::set_tema(Tm tema){ th=tema; }
 
 /*!\return tema atual do printable.*/
+/*
 Tm Printables::get_tema(){ return th; }
 
 /*! Set → spacing
@@ -133,6 +137,7 @@ Tm Printables::get_tema(){ return th; }
  *  \param limit número de caracteres que representaõ o espaçamento
  *  \sa space() 
  */
+/*
 void Printables::space(int limit){ 
 	spacing=cor_space;
 	while(limit-->0) spacing+=" ";
@@ -146,4 +151,5 @@ void Printables::space(int limit){
  *  \return número de caracteres que representão o espaçamento.
  *  \sa space(int)
  */
-int Printables::space(){ return  spacing.size()-(cor_space.size()*2); } 
+
+//int Printables::space(){ return  spacing.size()-(cor_space.size()*2); } 

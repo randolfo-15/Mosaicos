@@ -1,22 +1,23 @@
 <map id="src/foreground.cpp" name="src/foreground.cpp">
-<area shape="rect" id="Node000001" title="Arquivo de implementação Foreground." alt="" coords="61,5,203,33"/>
-<area shape="rect" id="Node000002" href="$foreground_8hpp.html" title="Arquivo de definição Foreground." alt="" coords="72,81,192,109"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,34,135,65,130,65,130,34"/>
-<area shape="rect" id="Node000003" href="$colour_8hpp.html" title="Arquivo de definição Foreground Background e Efeitos." alt="" coords="5,232,94,260"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="118,111,96,132,76,158,63,188,56,218,51,217,58,186,71,155,92,128,114,107"/>
-<area shape="rect" id="Node000004" href="$effect_8hpp.html" title="Arquivo de definição efeitos." alt="" coords="169,232,255,260"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="151,107,173,128,193,155,205,186,212,217,207,218,200,188,189,158,169,132,147,111"/>
-<area shape="rect" id="Node000009" href="$ground_8hpp.html" title="Arquivo de definição ground." alt="" coords="85,157,179,184"/>
-<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="135,109,135,141,130,141,130,109"/>
-<area shape="rect" id="Node000005" href="$str_8hpp.html" title="Arquivo de definição do modelo de string usado." alt="" coords="140,308,205,336"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="207,262,189,296,184,293,203,259"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="59,384,117,411"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="159,338,116,375,113,371,155,334"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="141,384,203,411"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="175,336,175,368,170,368,170,336"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="228,384,303,411"/>
-<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="190,334,239,372,236,376,187,338"/>
-<area shape="poly" id="edge10_Node000009_Node000003" title=" " alt="" coords="119,187,77,224,74,220,116,183"/>
-<area shape="poly" id="edge11_Node000009_Node000004" title=" " alt="" coords="148,183,188,220,185,224,145,187"/>
-<area shape="poly" id="edge9_Node000009_Node000005" title=" " alt="" coords="138,184,167,292,162,294,133,185"/>
+<area shape="rect" id="Node000001" title="Arquivo de implementação Foreground." alt="" coords="164,5,307,33"/>
+<area shape="rect" id="Node000002" href="$foreground_8hpp.html" title="Arquivo de definição Foreground." alt="" coords="175,81,296,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="238,34,238,65,233,65,233,34"/>
+<area shape="rect" id="Node000003" href="$ground_8hpp.html" title="Arquivo de definição ground." alt="" coords="188,157,283,184"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="238,109,238,141,233,141,233,109"/>
+<area shape="rect" id="Node000004" href="$str_8hpp.html" title="Arquivo de definição do modelo de string usado." alt="" coords="203,232,268,260"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="238,185,238,217,233,217,233,185"/>
+<area shape="rect" id="Node000008" href="$colour_8hpp.html" title="Arquivo de definição Foreground Background e Efeitos." alt="" coords="293,232,381,260"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="255,183,308,221,305,225,252,187"/>
+<area shape="rect" id="Node000009" href="$effect_8hpp.html" title="Arquivo de definição efeitos." alt="" coords="92,232,179,260"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="219,187,167,225,164,221,216,183"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="114,308,173,336"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="221,263,173,300,170,296,217,258"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="196,308,259,336"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="237,261,233,293,228,292,231,260"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="283,308,359,336"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="252,259,296,296,292,300,249,263"/>
+<area shape="poly" id="edge9_Node000009_Node000005" title=" " alt="" coords="140,260,143,292,138,293,134,261"/>
+<area shape="poly" id="edge10_Node000009_Node000006" title=" " alt="" coords="154,258,201,296,198,300,150,263"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="5,308,90,336"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="121,263,76,300,73,296,118,258"/>
 </map>

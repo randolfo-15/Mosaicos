@@ -1,5 +1,5 @@
 var str_8cpp =
 [
-    [ "operator+", "str_8cpp.html#a3d7de936d77f917326fdd4e39eaf58f9", null ],
-    [ "operator<<", "str_8cpp.html#a3e378e90212816f7550a2b313841191a", null ]
+    [ "operator+", "str_8cpp.html#a2e0fb0e433a15a57deaa0fa6afbf2bf8", null ],
+    [ "operator<<", "str_8cpp.html#a7bbd2da04105bd6609c9fc2712c5f4a0", null ]
 ];

@@ -11,23 +11,23 @@ var hierarchy =
       [ "Colors::White", "structColors_1_1White.html", null ],
       [ "Colors::Yellow", "structColors_1_1Yellow.html", null ]
     ] ],
+    [ "Highlight", "classHighlight.html", [
+      [ "Effect::Blink", "structEffect_1_1Blink.html", null ],
+      [ "Effect::Bold", "structEffect_1_1Bold.html", null ],
+      [ "Effect::Dark", "structEffect_1_1Dark.html", null ],
+      [ "Effect::Hidden", "structEffect_1_1Hidden.html", null ],
+      [ "Effect::Italic", "structEffect_1_1Italic.html", null ],
+      [ "Effect::Normal", "structEffect_1_1Normal.html", null ],
+      [ "Effect::Reverse", "structEffect_1_1Reverse.html", null ],
+      [ "Effect::Tachado", "structEffect_1_1Tachado.html", null ],
+      [ "Effect::Underline", "structEffect_1_1Underline.html", null ]
+    ] ],
     [ "Shadow", "classShadow.html", null ],
     [ "Space", "classSpace.html", null ],
     [ "Str", "classStr.html", [
       [ "Ground", "classGround.html", [
         [ "Background", "structBackground.html", null ],
         [ "Foreground", "structForeground.html", null ]
-      ] ],
-      [ "Highlight", "classHighlight.html", [
-        [ "Effect::Blink", "structEffect_1_1Blink.html", null ],
-        [ "Effect::Bold", "structEffect_1_1Bold.html", null ],
-        [ "Effect::Dark", "structEffect_1_1Dark.html", null ],
-        [ "Effect::Hidden", "structEffect_1_1Hidden.html", null ],
-        [ "Effect::Italic", "structEffect_1_1Italic.html", null ],
-        [ "Effect::Normal", "structEffect_1_1Normal.html", null ],
-        [ "Effect::Reverse", "structEffect_1_1Reverse.html", null ],
-        [ "Effect::Tachado", "structEffect_1_1Tachado.html", null ],
-        [ "Effect::Underline", "structEffect_1_1Underline.html", null ]
       ] ],
       [ "Printables", "classPrintables.html", [
         [ "Display", "classDisplay.html", null ]

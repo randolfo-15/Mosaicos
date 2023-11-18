@@ -7,6 +7,5 @@ var searchData=
   ['move_5fbuffer_4',['move_buffer',['../classDisplay.html#aa332c9344226a809972904afa1386701',1,'Display']]],
   ['my_5fbkg1_5',['my_bkg1',['../classTheme.html#ad0a3a2ff35aac98e48cbbad92fb26bbd',1,'Theme']]],
   ['my_5fbkg2_6',['my_bkg2',['../classTheme.html#a14dbc6d591c1daab55e3aad2ab2d05fe',1,'Theme']]],
-  ['my_5fkey_7',['my_key',['../classTheme.html#ace612eb5e3e36c7716288ec332527d38',1,'Theme']]],
-  ['my_5fstr_8',['my_str',['../classStr.html#a87b061d4cc9828eea587097b233347b1',1,'Str']]]
+  ['my_5fkey_7',['my_key',['../classTheme.html#ace612eb5e3e36c7716288ec332527d38',1,'Theme']]]
 ];

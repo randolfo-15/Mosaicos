@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['underline_0',['UNDERLINE',['../structEffect.html#a67c23f600614bfad34bf63efb174366f',1,'Effect']]]
+  ['x_5fdp_0',['x_dp',['../classDisplay.html#a248ee5d172b9a3da728ba6da0ec6b4cf',1,'Display']]]
 ];

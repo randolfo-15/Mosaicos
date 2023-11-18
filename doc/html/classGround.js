@@ -13,6 +13,9 @@ var classGround =
     [ "copy_colour", "classGround.html#a2e498551ca8c12f67df861026b1921ac", null ],
     [ "init", "classGround.html#af2a69055746aea9c213c69d460ef379a", null ],
     [ "operator!", "classGround.html#a371e5277c42c56ec574217857fd06da0", null ],
+    [ "operator()", "classGround.html#ade1d1d84b40d4019b0b815d0ff9cfd88", null ],
     [ "operator=", "classGround.html#a0919428c906d7d43558e722b9a684935", null ],
-    [ "colorless", "classGround.html#a42cdd723e1ac02c5d1e2d3a8a01f7a53", null ]
+    [ "operator=", "classGround.html#ab6a0422856d70afd9ae39f1166e7878d", null ],
+    [ "colorless", "classGround.html#a42cdd723e1ac02c5d1e2d3a8a01f7a53", null ],
+    [ "Theme", "classGround.html#aab62b7e5d1c6d4efe89e4ee11c20da1a", null ]
 ];

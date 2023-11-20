@@ -23,15 +23,22 @@ var annotated_dup =
       [ "Underline", "structEffect_1_1Underline.html", "structEffect_1_1Underline" ]
     ] ],
     [ "Background", "structBackground.html", "structBackground" ],
+    [ "Clear", "structClear.html", "structClear" ],
+    [ "Clear_line", "structClear__line.html", "structClear__line" ],
+    [ "Clear_screen", "structClear__screen.html", "structClear__screen" ],
     [ "Colour", "structColour.html", "structColour" ],
+    [ "Directions", "structDirections.html", "structDirections" ],
     [ "Display", "classDisplay.html", "classDisplay" ],
+    [ "Down", "structDown.html", "structDown" ],
     [ "Foreground", "structForeground.html", "structForeground" ],
     [ "Ground", "classGround.html", "classGround" ],
     [ "Highlight", "classHighlight.html", "classHighlight" ],
-    [ "Printables", "classPrintables.html", "classPrintables" ],
+    [ "Left", "structLeft.html", "structLeft" ],
+    [ "Line", "classLine.html", "classLine" ],
+    [ "Rigth", "structRigth.html", "structRigth" ],
     [ "Shadow", "classShadow.html", "classShadow" ],
     [ "Space", "classSpace.html", "classSpace" ],
     [ "Str", "classStr.html", "classStr" ],
-    [ "Texto", "classTexto.html", "classTexto" ],
-    [ "Theme", "classTheme.html", "classTheme" ]
+    [ "Theme", "classTheme.html", "classTheme" ],
+    [ "Up", "structUp.html", "structUp" ]
 ];

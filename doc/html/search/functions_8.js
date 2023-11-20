@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['key_0',['key',['../classTheme.html#ae4a574fd109c5060a08d8e095d0ab613',1,'Theme::key()'],['../classTheme.html#a7f710440a8a710a52a320b6c416509cb',1,'Theme::key(Highlight)'],['../classTheme.html#ad1d45e41bc0f7e385a26504bd713d4c1',1,'Theme::key(Colour)']]]
+  ['left_0',['Left',['../structLeft.html#a7be426d69a518c62081500f5a787b4f9',1,'Left']]],
+  ['line_1',['Line',['../classLine.html#ae1c0f1486149b9fdae0c398526b42939',1,'Line']]],
+  ['loop_2',['loop',['../classDisplay.html#a635eb4b97ef2b16a0de5f6f2e3541e49',1,'Display']]]
 ];

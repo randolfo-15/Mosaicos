@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['foreground_0',['Foreground',['../classHighlight.html#abac724e022f15822798ba77df3c5a119',1,'Highlight']]],
-  ['fx_1',['fx',['../classTexto.html#a8f0ff713d0b31ab1e25ba0074ad4075a',1,'Texto']]]
+  ['efc_0',['Efc',['../effect_8hpp.html#a8b3e8bd86017573700a1fc3e0d704c9c',1,'effect.hpp']]],
+  ['end_1',['END',['../classGround.html#af5fad8b9ca051f5d5dc03260d327629b',1,'Ground']]]
 ];

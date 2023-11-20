@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['efc_0',['Efc',['../effect_8hpp.html#a8b3e8bd86017573700a1fc3e0d704c9c',1,'effect.hpp']]],
-  ['end_1',['END',['../classGround.html#af5fad8b9ca051f5d5dc03260d327629b',1,'Ground']]]
+  ['dp_0',['dp',['../classLine.html#acc58d8a43f92410332b5c4d250e276df',1,'Line::Dp'],['../classShadow.html#afccc2930cfc0e5a60bb0c90e40aa038b',1,'Shadow::Dp'],['../classSpace.html#a000d70ba5e22eedb04b3b0330d3ce0ac',1,'Space::Dp']]],
+  ['dps_1',['dps',['../classDisplay.html#ac60ca6bf3465fee2a42ce8170f363eef',1,'Display']]]
 ];

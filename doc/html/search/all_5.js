@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['g_0',['G',['../classGround.html#a1fdde7f2564d9e271e1d5560135288f6a62985b56ecf373ba94b61d4d314783c4',1,'Ground']]],
-  ['gd_1',['Gd',['../ground_8hpp.html#a1a7d4023be4d634350c166db80a24906',1,'ground.hpp']]],
-  ['get_20→_20spacing_2',['Get → spacing',['..//home/randolfo/Documentos/Mosaicos/src/printables.cpp#autotoc_md7',1,'']]],
-  ['gray_3',['gray',['../structColors_1_1Gray.html',1,'Colors::Gray'],['../structColors_1_1Gray.html#a8a6019838ebef08f77616da4bb92fa03',1,'Colors::Gray::Gray()']]],
-  ['green_4',['green',['../structColors_1_1Green.html',1,'Colors::Green'],['../structColour.html#a7828ec8ad9b877a93298a671bc44e03b',1,'Colour::green(nivel)'],['../structColour.html#a420810d3406c60010965da6a880c9efa',1,'Colour::green()'],['../structColour.html#a75f9c790990a9046a85618397708adf0aa2d14e4bd3f93d6dd4dbdbd5a32f0d0d',1,'Colour::GREEN'],['../structColors_1_1Green.html#a7cab789a98cb94ed2981ff58390b8d45',1,'Colors::Green::Green()']]],
-  ['ground_5',['ground',['../classGround.html',1,'Ground'],['../classHighlight.html#acff8036737746b8d2557801ce2c314e5',1,'Highlight::Ground'],['../classGround.html#a6c458d7eacc7fed8ed340d53811ff083',1,'Ground::Ground()']]],
-  ['ground_2ecpp_6',['ground.cpp',['../ground_8cpp.html',1,'']]],
-  ['ground_2ehpp_7',['ground.hpp',['../ground_8hpp.html',1,'']]]
+  ['fg_0',['fg',['../foreground_8hpp.html#a996f35833e13bdc262107b486cbc1815',1,'Fg:&#160;foreground.hpp'],['../classLine.html#a4e72c7f86987c09fa5b6a12643fd34fc',1,'Line::fg'],['../classTheme.html#a768a835053905a8322ddc8655180a702',1,'Theme::fg(int=0)'],['../classTheme.html#a06ff93255be6d08818b6a3b512e81504',1,'Theme::fg(Highlight, int=0)'],['../classTheme.html#af0f8ed35aa6134842faa17eaff7470c1',1,'Theme::fg(Colour, int=0)']]],
+  ['fgs_1',['fgs',['../theme_8cpp.html#a287b204be8ffefa7d1273d5d432901d3',1,'Fgs:&#160;theme.cpp'],['../classTheme.html#ab3c6c95a3e4fb564ded49011b37c3884',1,'Theme::fgs']]],
+  ['flag_2',['flag',['../structClear.html#aab25920843aca28971495e0392878b64',1,'Clear']]],
+  ['foreground_3',['foreground',['../classHighlight.html#abac724e022f15822798ba77df3c5a119',1,'Highlight::Foreground'],['../structForeground.html#ae1a45010e090bd31ff3b05e04fdba2d4',1,'Foreground::Foreground(Colour, Highlight)'],['../structForeground.html#a12fa105a66218701e58f068269bac2b9',1,'Foreground::Foreground(Highlight)'],['../structForeground.html#af3268dce7dd69b766cab07370dc86c93',1,'Foreground::Foreground(Colour)'],['../structForeground.html#a171919d91ff4cb012942cca134ffb484',1,'Foreground::Foreground()'],['../structForeground.html',1,'Foreground']]],
+  ['foreground_2ecpp_4',['foreground.cpp',['../foreground_8cpp.html',1,'']]],
+  ['foreground_2ehpp_5',['foreground.hpp',['../foreground_8hpp.html',1,'']]],
+  ['format_6',['format',['../classDisplay.html#a205d5608025e26b8c824b913c44edcae',1,'Display']]],
+  ['format_5fline_7',['format_line',['../classDisplay.html#ae2f0fe8e1cb1473424b4780ce99546a2',1,'Display']]]
 ];

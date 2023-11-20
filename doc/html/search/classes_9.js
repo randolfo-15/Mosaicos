@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['printables_0',['Printables',['../classPrintables.html',1,'']]]
+  ['normal_0',['Normal',['../structEffect_1_1Normal.html',1,'Effect']]]
 ];

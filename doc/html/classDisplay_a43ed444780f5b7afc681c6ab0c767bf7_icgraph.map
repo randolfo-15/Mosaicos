@@ -1,10 +1,4 @@
 <map id="Display::n_letter" name="Display::n_letter">
-<area shape="rect" id="Node000001" title=" " alt="" coords="347,32,474,60"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="439,19,429,13,411,11,394,13,384,17,382,23,386,30,381,33,377,23,380,14,392,7,411,5,431,8,441,14"/>
-<area shape="rect" id="Node000002" href="$classDisplay.html#a285a9ba04db91c125f1f94016b734bd1" title=" " alt="" coords="189,32,299,60"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="332,49,299,49,299,43,332,43"/>
-<area shape="rect" id="Node000003" href="$classDisplay.html#aab9074ba7f7c639d4525d1d825597dda" title=" " alt="" coords="20,5,126,33"/>
-<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="173,38,126,30,127,25,174,32"/>
-<area shape="rect" id="Node000004" href="$classDisplay.html#af9ef413a9ffdb0e7d1ec7ab8a5db6dad" title=" " alt="" coords="5,57,141,85"/>
-<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="174,59,141,64,140,59,173,54"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,133,57"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="90,16,82,10,69,8,56,10,50,14,48,20,51,28,46,30,42,20,45,11,54,5,69,3,84,5,93,11"/>
 </map>

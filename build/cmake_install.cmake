@@ -76,7 +76,7 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "head" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/usr/local/include/mosaicos/str.hpp;/usr/local/include/mosaicos/colour.hpp;/usr/local/include/mosaicos/effect.hpp;/usr/local/include/mosaicos/ground.hpp;/usr/local/include/mosaicos/foreground.hpp;/usr/local/include/mosaicos/background.hpp;/usr/local/include/mosaicos/theme.hpp;/usr/local/include/mosaicos/directions_rag.hpp")
+   "/usr/local/include/mosaicos/str.hpp;/usr/local/include/mosaicos/colour.hpp;/usr/local/include/mosaicos/effect.hpp;/usr/local/include/mosaicos/ground.hpp;/usr/local/include/mosaicos/foreground.hpp;/usr/local/include/mosaicos/background.hpp;/usr/local/include/mosaicos/theme.hpp;/usr/local/include/mosaicos/directions_rag.hpp;/usr/local/include/mosaicos/clear_rag.hpp;/usr/local/include/mosaicos/display_rag.hpp")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
@@ -92,6 +92,8 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "head" OR NOT CMAKE_INSTALL_COMPONENT)
     "/home/randolfo/Documentos/Mosaicos/src/background.hpp"
     "/home/randolfo/Documentos/Mosaicos/src/theme.hpp"
     "/home/randolfo/Documentos/Mosaicos/src/directions_rag.hpp"
+    "/home/randolfo/Documentos/Mosaicos/src/clear_rag.hpp"
+    "/home/randolfo/Documentos/Mosaicos/src/display_rag.hpp"
     )
 endif()
 

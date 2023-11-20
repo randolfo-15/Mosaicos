@@ -14,10 +14,9 @@ target_sources(mosaicos
         foreground.cpp
         background.cpp
         theme.cpp
-        directions_rag.cpp
-        #ios_rag.cpp
-        #printables.cpp
-        #display.cpp
+        directions.cpp
+        clear.cpp
+        display.cpp
         
     PUBLIC FILE_SET HEADERS 
         FILES 
@@ -29,9 +28,8 @@ target_sources(mosaicos
             background.hpp
             theme.hpp
             directions_rag.hpp
-            #printables.hpp
-            #scaniables.hpp
-            #display.hpp
+            clear_rag.hpp
+            display_rag.hpp
 )
  
 target_include_directories(mosaicos

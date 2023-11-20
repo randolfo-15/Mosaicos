@@ -14,10 +14,11 @@
 
 /// Define um conjunto de cores e comportamentos de uma janela.
 class Theme{
-	
-	std::vector<Fg>  fgs;
-	std::vector<Bg> bgs;
-
+	protected:
+		friend std::ostream& operator<<(std::ostream&,Theme);
+		
+		std::vector<Fg>  fgs;
+		std::vector<Bg> bgs;
 		
 	public:		
 		/// Construtor padrão.
@@ -34,6 +35,10 @@ class Theme{
 		
 		void bg(Colour,int=0);            ///< (Set) padrão para background. 
 		
+		
+		
 };using Tm=Theme;
+
+std::ostream& operator<<(std::ostream&,Theme);
 
 #endif // theme.hpp

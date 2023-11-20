@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['magenta_0',['Magenta',['../structColors_1_1Magenta.html',1,'Colors']]]
+  ['left_0',['Left',['../structLeft.html',1,'']]],
+  ['line_1',['Line',['../classLine.html',1,'']]]
 ];

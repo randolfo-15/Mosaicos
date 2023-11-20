@@ -16,6 +16,7 @@ struct Foreground:public Ground{
 
     Foreground();
     Foreground(Colour);
+    Foreground(Highlight);
     Foreground(Colour,Highlight);
         
     void operator=(Highlight) override;

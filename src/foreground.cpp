@@ -7,7 +7,6 @@
 
 #include "foreground.hpp"
 
-
 const char
     Fg::PLAN[6]="38;2;",
     Fg::CLSS[3]="39";
@@ -15,7 +14,9 @@ const char
 //------------------------------------------------------------------------------------------------
 // Build
 //------------------------------------------------------------------------------------------------
-Fg::Foreground():Ground(Cls::Green(),Fg::PLAN,CLSS){}
+Fg::Foreground():Gd(Cls::Green(),Fg::PLAN,CLSS){}
+
+Fg::Foreground(Highlight efc):Gd(Cls::Green(),Fg::PLAN,CLSS){*this=efc;}
 
 Fg::Foreground(Colour new_clr):Ground(new_clr,Fg::PLAN,CLSS){}
 

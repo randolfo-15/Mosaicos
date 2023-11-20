@@ -5,5 +5,5 @@ var classSpace =
     [ "Dp", "classSpace.html#a000d70ba5e22eedb04b3b0330d3ce0ac", null ],
     [ "spc_chr", "classSpace.html#a410ac4d995786362569fbac397196bf2", null ],
     [ "spc_int", "classSpace.html#aa6ea6dd7d09c38c9af7f9193b2a9de2a", null ],
-    [ "spc_str", "classSpace.html#ae9dfa351b89dd9b2c316c3f22781e11a", null ]
+    [ "spc_str", "classSpace.html#ab2af23907883bc081461de573b27032a", null ]
 ];

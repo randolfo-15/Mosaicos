@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['pixel_0',['pixel',['../structColour.html#ab4ddd5bcabe322a2f817c131b0bb9dd1',1,'Colour']]],
-  ['plan_1',['plan',['../structBackground.html#a92f55f5a6fdf27360f18757bf3b1418c',1,'Background::PLAN'],['../structForeground.html#afe2c161c58ec2c09c9a32b39c07b52e9',1,'Foreground::PLAN']]]
+  ['n_0',['n',['../classShadow.html#a537c0b2377fdf970a2f4abfabca9ea4b',1,'Shadow']]],
+  ['no_5fsb_1',['no_sb',['../classDisplay.html#a9e5bf4ad8bef55dcdecf2e27bca407d3',1,'Display']]]
 ];

@@ -62,7 +62,7 @@ if(NOT CMAKE_VERSION VERSION_LESS "3.23.0")
       FILE_SET "HEADERS"
       TYPE "HEADERS"
       BASE_DIRS "${_IMPORT_PREFIX}//usr/local/include/mosaicos"
-      FILES "${_IMPORT_PREFIX}//usr/local/include/mosaicos/str.hpp" "${_IMPORT_PREFIX}//usr/local/include/mosaicos/colour.hpp" "${_IMPORT_PREFIX}//usr/local/include/mosaicos/effect.hpp" "${_IMPORT_PREFIX}//usr/local/include/mosaicos/ground.hpp" "${_IMPORT_PREFIX}//usr/local/include/mosaicos/foreground.hpp" "${_IMPORT_PREFIX}//usr/local/include/mosaicos/background.hpp" "${_IMPORT_PREFIX}//usr/local/include/mosaicos/theme.hpp" "${_IMPORT_PREFIX}//usr/local/include/mosaicos/directions_rag.hpp"
+      FILES "${_IMPORT_PREFIX}//usr/local/include/mosaicos/str.hpp" "${_IMPORT_PREFIX}//usr/local/include/mosaicos/colour.hpp" "${_IMPORT_PREFIX}//usr/local/include/mosaicos/effect.hpp" "${_IMPORT_PREFIX}//usr/local/include/mosaicos/ground.hpp" "${_IMPORT_PREFIX}//usr/local/include/mosaicos/foreground.hpp" "${_IMPORT_PREFIX}//usr/local/include/mosaicos/background.hpp" "${_IMPORT_PREFIX}//usr/local/include/mosaicos/theme.hpp" "${_IMPORT_PREFIX}//usr/local/include/mosaicos/directions_rag.hpp" "${_IMPORT_PREFIX}//usr/local/include/mosaicos/clear_rag.hpp" "${_IMPORT_PREFIX}//usr/local/include/mosaicos/display_rag.hpp"
   )
 else()
   set_property(TARGET Mosaicos::mosaicos

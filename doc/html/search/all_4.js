@@ -1,10 +1,11 @@
 var searchData=
 [
-  ['fg_0',['Fg',['../foreground_8hpp.html#a996f35833e13bdc262107b486cbc1815',1,'foreground.hpp']]],
-  ['foreground_1',['foreground',['../structForeground.html',1,'Foreground'],['../classHighlight.html#abac724e022f15822798ba77df3c5a119',1,'Highlight::Foreground'],['../structForeground.html#a171919d91ff4cb012942cca134ffb484',1,'Foreground::Foreground()'],['../structForeground.html#af3268dce7dd69b766cab07370dc86c93',1,'Foreground::Foreground(Colour)'],['../structForeground.html#ae1a45010e090bd31ff3b05e04fdba2d4',1,'Foreground::Foreground(Colour, Highlight)']]],
-  ['foreground_2ecpp_2',['foreground.cpp',['../foreground_8cpp.html',1,'']]],
-  ['foreground_2ehpp_3',['foreground.hpp',['../foreground_8hpp.html',1,'']]],
-  ['format_4',['format',['../classDisplay.html#ac7a072440aae3ded1ea54d6641b692ea',1,'Display']]],
-  ['format_5fline_5',['format_line',['../classDisplay.html#aaef5599f4f4eed30851d5a4f27763255',1,'Display']]],
-  ['fx_6',['fx',['../classTexto.html#a8f0ff713d0b31ab1e25ba0074ad4075a',1,'Texto']]]
+  ['efc_0',['Efc',['../effect_8hpp.html#a8b3e8bd86017573700a1fc3e0d704c9c',1,'effect.hpp']]],
+  ['efcts_1',['Efcts',['../classGround.html#a1fdde7f2564d9e271e1d5560135288f6a1e78f5d49e4ef3dde5f0aae5d80e693b',1,'Ground']]],
+  ['effect_2',['Effect',['../namespaceEffect.html',1,'']]],
+  ['effect_2ecpp_3',['effect.cpp',['../effect_8cpp.html',1,'']]],
+  ['effect_2ehpp_4',['effect.hpp',['../effect_8hpp.html',1,'']]],
+  ['end_5',['END',['../classGround.html#af5fad8b9ca051f5d5dc03260d327629b',1,'Ground']]],
+  ['engine_6',['engine',['../classDisplay.html#aab1bec4505c607b75e1880f7c410c62e',1,'Display']]],
+  ['erro_5fexec_7',['erro_exec',['../classDisplay.html#ad29661fa38048b125d3bcd78e4848b43',1,'Display']]]
 ];

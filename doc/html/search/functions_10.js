@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['tachado_0',['Tachado',['../structEffect_1_1Tachado.html#a210a96794316c4e7bcebe6e222b58b6e',1,'Effect::Tachado']]],
-  ['texto_1',['Texto',['../classTexto.html#a3f65a0c46c91a68897a64a5d30424465',1,'Texto']]],
-  ['theme_2',['theme',['../classTheme.html#a5d7feac4139d10f0c8249cd81bf6f9b9',1,'Theme::Theme()'],['../classTheme.html#a2f8831fb2d671666b474dfda0845037f',1,'Theme::Theme(Foreground key, Background bkg1, Background bkg2)']]]
+  ['underline_0',['Underline',['../structEffect_1_1Underline.html#a886f9d8885e782d0453cd7d2158ece84',1,'Effect::Underline']]],
+  ['up_1',['Up',['../structUp.html#a2b70e91d4b927442c67b34f87d7e49cc',1,'Up']]],
+  ['update_2',['update',['../classDisplay.html#ad2740b779d61e461c4dcaaf34f1fcd8f',1,'Display']]],
+  ['update_5fwidth_3',['update_width',['../classDisplay.html#a54b68897383da25eb9ad55d0bd06d9ed',1,'Display']]]
 ];

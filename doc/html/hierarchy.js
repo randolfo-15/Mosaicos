@@ -1,5 +1,9 @@
 var hierarchy =
 [
+    [ "Clear", "structClear.html", [
+      [ "Clear_line", "structClear__line.html", null ],
+      [ "Clear_screen", "structClear__screen.html", null ]
+    ] ],
     [ "Colour", "structColour.html", [
       [ "Colors::Black", "structColors_1_1Black.html", null ],
       [ "Colors::Blue", "structColors_1_1Blue.html", null ],
@@ -11,6 +15,7 @@ var hierarchy =
       [ "Colors::White", "structColors_1_1White.html", null ],
       [ "Colors::Yellow", "structColors_1_1Yellow.html", null ]
     ] ],
+    [ "Display", "classDisplay.html", null ],
     [ "Highlight", "classHighlight.html", [
       [ "Effect::Blink", "structEffect_1_1Blink.html", null ],
       [ "Effect::Bold", "structEffect_1_1Bold.html", null ],
@@ -22,17 +27,20 @@ var hierarchy =
       [ "Effect::Tachado", "structEffect_1_1Tachado.html", null ],
       [ "Effect::Underline", "structEffect_1_1Underline.html", null ]
     ] ],
+    [ "Line", "classLine.html", null ],
     [ "Shadow", "classShadow.html", null ],
     [ "Space", "classSpace.html", null ],
     [ "Str", "classStr.html", [
+      [ "Directions", "structDirections.html", [
+        [ "Down", "structDown.html", null ],
+        [ "Left", "structLeft.html", null ],
+        [ "Rigth", "structRigth.html", null ],
+        [ "Up", "structUp.html", null ]
+      ] ],
       [ "Ground", "classGround.html", [
         [ "Background", "structBackground.html", null ],
         [ "Foreground", "structForeground.html", null ]
-      ] ],
-      [ "Printables", "classPrintables.html", [
-        [ "Display", "classDisplay.html", null ]
       ] ]
     ] ],
-    [ "Texto", "classTexto.html", null ],
     [ "Theme", "classTheme.html", null ]
 ];

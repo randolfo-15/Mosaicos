@@ -93,48 +93,49 @@ $(document).ready(function(){initNavTree('theme_8hpp.html',''); initResizable();
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">theme.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
 <p>Arquivo de definição de temas das janelas.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="colour_8hpp_source.html">colour.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="effect_8hpp_source.html">effect.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="foreground_8hpp_source.html">foreground.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="foreground_8hpp_source.html">foreground.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="background_8hpp_source.html">background.hpp</a>&quot;</code><br />
+<code>#include &lt;initializer_list&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for theme.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="theme_8hpp__incl.png" border="0" usemap="#asrc_2theme_8hpp" alt=""/></div>
 <map name="asrc_2theme_8hpp" id="asrc_2theme_8hpp">
-<area shape="rect" title="Arquivo de definição de temas das janelas." alt="" coords="127,5,241,33"/>
-<area shape="rect" href="colour_8hpp.html" title="Arquivo de definição Foreground Background e Efeitos." alt="" coords="5,232,94,260"/>
-<area shape="poly" title=" " alt="" coords="127,31,79,49,58,64,41,82,28,116,26,152,32,187,41,217,36,219,27,188,21,152,23,114,37,80,55,60,77,45,125,26"/>
-<area shape="rect" href="effect_8hpp.html" title="Arquivo de definição efeitos." alt="" coords="278,232,365,260"/>
-<area shape="poly" title=" " alt="" coords="243,26,293,44,316,59,334,80,348,114,350,152,344,188,335,219,330,217,339,187,345,152,343,115,330,82,312,63,290,49,241,31"/>
-<area shape="rect" href="foreground_8hpp.html" title="Arquivo de definição Foreground." alt="" coords="51,81,171,109"/>
-<area shape="poly" title=" " alt="" coords="173,35,136,72,133,68,169,32"/>
-<area shape="rect" href="background_8hpp.html" title="Arquivo de definição Background." alt="" coords="195,81,320,109"/>
-<area shape="poly" title=" " alt="" coords="199,32,236,68,232,72,195,35"/>
-<area shape="rect" title=" " alt="" coords="200,308,259,336"/>
-<area shape="poly" title=" " alt="" coords="307,263,259,300,256,296,303,258"/>
-<area shape="rect" title=" " alt="" coords="282,308,345,336"/>
-<area shape="poly" title=" " alt="" coords="323,261,319,293,314,292,317,260"/>
-<area shape="rect" title=" " alt="" coords="369,308,453,336"/>
-<area shape="poly" title=" " alt="" coords="339,258,385,296,382,300,336,263"/>
-<area shape="rect" href="ground_8hpp.html" title="Arquivo de definição ground." alt="" coords="174,157,269,184"/>
-<area shape="poly" title=" " alt="" coords="132,107,191,146,188,150,129,111"/>
-<area shape="poly" title=" " alt="" coords="192,187,95,228,93,223,190,182"/>
-<area shape="poly" title=" " alt="" coords="241,183,293,221,290,225,238,187"/>
-<area shape="rect" href="str_8hpp.html" title="Arquivo de definição do modelo de string usado." alt="" coords="189,232,254,260"/>
-<area shape="poly" title=" " alt="" coords="224,185,224,217,219,217,219,185"/>
-<area shape="poly" title=" " alt="" coords="226,260,229,292,224,293,220,261"/>
-<area shape="poly" title=" " alt="" coords="240,258,287,296,284,300,236,263"/>
-<area shape="rect" title=" " alt="" coords="101,308,177,336"/>
-<area shape="poly" title=" " alt="" coords="208,263,167,300,163,296,205,259"/>
-<area shape="poly" title=" " alt="" coords="253,110,237,144,232,141,249,108"/>
+<area shape="rect" title="Arquivo de definição de temas das janelas." alt="" coords="240,5,354,33"/>
+<area shape="rect" href="foreground_8hpp.html" title="Arquivo de definição Foreground." alt="" coords="237,81,357,109"/>
+<area shape="poly" title=" " alt="" coords="300,34,300,65,294,65,294,34"/>
+<area shape="rect" href="background_8hpp.html" title="Arquivo de definição Background." alt="" coords="88,81,213,109"/>
+<area shape="poly" title=" " alt="" coords="272,36,191,76,188,71,269,31"/>
+<area shape="rect" title=" " alt="" coords="381,81,490,109"/>
+<area shape="poly" title=" " alt="" coords="323,31,399,71,396,76,320,36"/>
+<area shape="rect" href="ground_8hpp.html" title="Arquivo de definição ground." alt="" coords="176,157,271,184"/>
+<area shape="poly" title=" " alt="" coords="286,111,249,147,245,144,282,107"/>
+<area shape="rect" href="str_8hpp.html" title="Arquivo de definição do modelo de string usado." alt="" coords="292,232,358,260"/>
+<area shape="poly" title=" " alt="" coords="243,183,296,221,293,225,240,187"/>
+<area shape="rect" href="colour_8hpp.html" title="Arquivo de definição Foreground Background e Efeitos." alt="" coords="179,232,268,260"/>
+<area shape="poly" title=" " alt="" coords="226,185,226,217,221,217,221,185"/>
+<area shape="rect" href="effect_8hpp.html" title="Arquivo de definição efeitos." alt="" coords="68,232,155,260"/>
+<area shape="poly" title=" " alt="" coords="205,187,145,226,142,222,202,183"/>
+<area shape="rect" title=" " alt="" coords="200,308,258,336"/>
+<area shape="poly" title=" " alt="" coords="309,263,260,300,256,296,306,258"/>
+<area shape="rect" title=" " alt="" coords="114,308,176,336"/>
+<area shape="poly" title=" " alt="" coords="294,263,191,305,189,300,292,258"/>
+<area shape="rect" title=" " alt="" coords="287,308,363,336"/>
+<area shape="poly" title=" " alt="" coords="328,261,328,292,322,292,322,261"/>
+<area shape="poly" title=" " alt="" coords="227,260,229,292,224,293,222,261"/>
+<area shape="poly" title=" " alt="" coords="134,258,197,298,194,302,131,263"/>
+<area shape="poly" title=" " alt="" coords="120,259,135,293,130,295,115,262"/>
+<area shape="rect" title=" " alt="" coords="5,308,90,336"/>
+<area shape="poly" title=" " alt="" coords="102,262,71,298,67,294,98,259"/>
+<area shape="poly" title=" " alt="" coords="165,107,202,144,198,147,161,111"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -142,9 +143,13 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="theme_8hpp__dep__incl.png" border="0" usemap="#asrc_2theme_8hppdep" alt=""/></div>
 <map name="asrc_2theme_8hppdep" id="asrc_2theme_8hppdep">
-<area shape="rect" title="Arquivo de definição de temas das janelas." alt="" coords="5,5,120,33"/>
-<area shape="rect" href="theme_8cpp.html" title="Arquivo de implementação da classe tema." alt="" coords="6,81,119,109"/>
-<area shape="poly" title=" " alt="" coords="65,49,65,81,60,81,60,49"/>
+<area shape="rect" title="Arquivo de definição de temas das janelas." alt="" coords="99,5,214,33"/>
+<area shape="rect" href="display__rag_8hpp.html" title="Arquivo de definição da classe display,shadow,space." alt="" coords="5,81,153,109"/>
+<area shape="poly" title=" " alt="" coords="133,46,95,83,91,79,130,42"/>
+<area shape="rect" href="theme_8cpp.html" title="Arquivo de implementação da classe tema." alt="" coords="177,81,290,109"/>
+<area shape="poly" title=" " alt="" coords="183,42,222,79,218,83,179,46"/>
+<area shape="rect" href="display_8cpp.html" title="Arquivo de aplicação da classe display,shadow,space." alt="" coords="21,157,137,184"/>
+<area shape="poly" title=" " alt="" coords="82,124,82,156,76,156,76,124"/>
 </map>
 </div>
 </div>
@@ -160,6 +165,11 @@ Classes</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:a7158349f22ece2d8e787601d902885da" id="r_a7158349f22ece2d8e787601d902885da"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="theme_8hpp.html#a7158349f22ece2d8e787601d902885da">Tm</a> = <a class="el" href="classTheme.html">Theme</a></td></tr>
 <tr class="separator:a7158349f22ece2d8e787601d902885da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ad203dcc433c24058246fcd76233e5483" id="r_ad203dcc433c24058246fcd76233e5483"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="theme_8hpp.html#ad203dcc433c24058246fcd76233e5483">operator&lt;&lt;</a> (std::ostream &amp;, <a class="el" href="classTheme.html">Theme</a>)</td></tr>
+<tr class="separator:ad203dcc433c24058246fcd76233e5483"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Arquivo de definição de temas das janelas. </p>
@@ -181,7 +191,38 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="theme_8hpp_source.html#l00045">45</a> of file <a class="el" href="theme_8hpp_source.html">theme.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="theme_8hpp_source.html#l00040">40</a> of file <a class="el" href="theme_8hpp_source.html">theme.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ad203dcc433c24058246fcd76233e5483" name="ad203dcc433c24058246fcd76233e5483"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad203dcc433c24058246fcd76233e5483">&#9670;&#160;</a></span>operator&lt;&lt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classTheme.html">Theme</a>&#160;</td>
+          <td class="paramname"><em>tm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="theme_8cpp_source.html#l00018">18</a> of file <a class="el" href="theme_8cpp_source.html">theme.cpp</a>.</p>
 
 </div>
 </div>

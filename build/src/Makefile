@@ -199,6 +199,30 @@ background.cpp.s:
 	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/background.cpp.s
 .PHONY : background.cpp.s
 
+clear.o: clear.cpp.o
+.PHONY : clear.o
+
+# target to build an object file
+clear.cpp.o:
+	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/clear.cpp.o
+.PHONY : clear.cpp.o
+
+clear.i: clear.cpp.i
+.PHONY : clear.i
+
+# target to preprocess a source file
+clear.cpp.i:
+	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/clear.cpp.i
+.PHONY : clear.cpp.i
+
+clear.s: clear.cpp.s
+.PHONY : clear.s
+
+# target to generate assembly for a file
+clear.cpp.s:
+	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/clear.cpp.s
+.PHONY : clear.cpp.s
+
 colour.o: colour.cpp.o
 .PHONY : colour.o
 
@@ -223,29 +247,53 @@ colour.cpp.s:
 	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/colour.cpp.s
 .PHONY : colour.cpp.s
 
-directions_rag.o: directions_rag.cpp.o
-.PHONY : directions_rag.o
+directions.o: directions.cpp.o
+.PHONY : directions.o
 
 # target to build an object file
-directions_rag.cpp.o:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/directions_rag.cpp.o
-.PHONY : directions_rag.cpp.o
+directions.cpp.o:
+	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/directions.cpp.o
+.PHONY : directions.cpp.o
 
-directions_rag.i: directions_rag.cpp.i
-.PHONY : directions_rag.i
+directions.i: directions.cpp.i
+.PHONY : directions.i
 
 # target to preprocess a source file
-directions_rag.cpp.i:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/directions_rag.cpp.i
-.PHONY : directions_rag.cpp.i
+directions.cpp.i:
+	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/directions.cpp.i
+.PHONY : directions.cpp.i
 
-directions_rag.s: directions_rag.cpp.s
-.PHONY : directions_rag.s
+directions.s: directions.cpp.s
+.PHONY : directions.s
 
 # target to generate assembly for a file
-directions_rag.cpp.s:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/directions_rag.cpp.s
-.PHONY : directions_rag.cpp.s
+directions.cpp.s:
+	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/directions.cpp.s
+.PHONY : directions.cpp.s
+
+display.o: display.cpp.o
+.PHONY : display.o
+
+# target to build an object file
+display.cpp.o:
+	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/display.cpp.o
+.PHONY : display.cpp.o
+
+display.i: display.cpp.i
+.PHONY : display.i
+
+# target to preprocess a source file
+display.cpp.i:
+	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/display.cpp.i
+.PHONY : display.cpp.i
+
+display.s: display.cpp.s
+.PHONY : display.s
+
+# target to generate assembly for a file
+display.cpp.s:
+	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/display.cpp.s
+.PHONY : display.cpp.s
 
 effect.o: effect.cpp.o
 .PHONY : effect.o
@@ -383,12 +431,18 @@ help:
 	@echo "... background.o"
 	@echo "... background.i"
 	@echo "... background.s"
+	@echo "... clear.o"
+	@echo "... clear.i"
+	@echo "... clear.s"
 	@echo "... colour.o"
 	@echo "... colour.i"
 	@echo "... colour.s"
-	@echo "... directions_rag.o"
-	@echo "... directions_rag.i"
-	@echo "... directions_rag.s"
+	@echo "... directions.o"
+	@echo "... directions.i"
+	@echo "... directions.s"
+	@echo "... display.o"
+	@echo "... display.i"
+	@echo "... display.s"
 	@echo "... effect.o"
 	@echo "... effect.i"
 	@echo "... effect.s"

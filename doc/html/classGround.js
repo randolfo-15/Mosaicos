@@ -16,6 +16,5 @@ var classGround =
     [ "operator()", "classGround.html#ade1d1d84b40d4019b0b815d0ff9cfd88", null ],
     [ "operator=", "classGround.html#a0919428c906d7d43558e722b9a684935", null ],
     [ "operator=", "classGround.html#ab6a0422856d70afd9ae39f1166e7878d", null ],
-    [ "colorless", "classGround.html#a42cdd723e1ac02c5d1e2d3a8a01f7a53", null ],
-    [ "Theme", "classGround.html#aab62b7e5d1c6d4efe89e4ee11c20da1a", null ]
+    [ "colorless", "classGround.html#a42cdd723e1ac02c5d1e2d3a8a01f7a53", null ]
 ];

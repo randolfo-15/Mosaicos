@@ -1,7 +1,6 @@
 CMakeFiles/main.dir/main.cpp.o: \
  /home/randolfo/Documentos/Mosaicos/main.cpp /usr/include/stdc-predef.h \
  /home/randolfo/Documentos/Mosaicos/src/colour.hpp \
- /home/randolfo/Documentos/Mosaicos/src/effect.hpp \
  /usr/include/c++/13.2.1/string \
  /usr/include/c++/13.2.1/bits/requires_hosted.h \
  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -102,7 +101,9 @@ CMakeFiles/main.dir/main.cpp.o: \
  /usr/include/c++/13.2.1/cstddef \
  /usr/include/c++/13.2.1/bits/uses_allocator.h \
  /usr/include/c++/13.2.1/bits/uses_allocator_args.h \
- /usr/include/c++/13.2.1/tuple /usr/include/c++/13.2.1/vector \
+ /usr/include/c++/13.2.1/tuple \
+ /home/randolfo/Documentos/Mosaicos/src/effect.hpp \
+ /usr/include/c++/13.2.1/vector \
  /usr/include/c++/13.2.1/bits/stl_uninitialized.h \
  /usr/include/c++/13.2.1/bits/stl_vector.h \
  /usr/include/c++/13.2.1/bits/stl_bvector.h \
@@ -156,4 +157,34 @@ CMakeFiles/main.dir/main.cpp.o: \
  /usr/include/c++/13.2.1/bits/ostream.tcc \
  /home/randolfo/Documentos/Mosaicos/src/colour.hpp \
  /home/randolfo/Documentos/Mosaicos/src/effect.hpp \
- /home/randolfo/Documentos/Mosaicos/src/background.hpp
+ /home/randolfo/Documentos/Mosaicos/src/background.hpp \
+ /home/randolfo/Documentos/Mosaicos/src/directions_rag.hpp \
+ /usr/include/c++/13.2.1/iostream /usr/include/c++/13.2.1/istream \
+ /usr/include/c++/13.2.1/bits/istream.tcc \
+ /home/randolfo/Documentos/Mosaicos/src/clear_rag.hpp \
+ /home/randolfo/Documentos/Mosaicos/src/directions_rag.hpp \
+ /home/randolfo/Documentos/Mosaicos/src/display_rag.hpp \
+ /usr/include/unistd.h /usr/include/bits/posix_opt.h \
+ /usr/include/bits/environments.h /usr/include/bits/confname.h \
+ /usr/include/bits/getopt_posix.h /usr/include/bits/getopt_core.h \
+ /usr/include/bits/unistd_ext.h /usr/include/linux/close_range.h \
+ /usr/include/sys/wait.h /usr/include/signal.h \
+ /usr/include/bits/signum-generic.h /usr/include/bits/signum-arch.h \
+ /usr/include/bits/types/sig_atomic_t.h \
+ /usr/include/bits/types/siginfo_t.h /usr/include/bits/types/__sigval_t.h \
+ /usr/include/bits/siginfo-arch.h /usr/include/bits/siginfo-consts.h \
+ /usr/include/bits/siginfo-consts-arch.h \
+ /usr/include/bits/types/sigval_t.h /usr/include/bits/types/sigevent_t.h \
+ /usr/include/bits/sigevent-consts.h /usr/include/bits/sigaction.h \
+ /usr/include/bits/sigcontext.h /usr/include/bits/types/stack_t.h \
+ /usr/include/sys/ucontext.h /usr/include/bits/sigstack.h \
+ /usr/include/bits/sigstksz.h /usr/include/bits/ss_flags.h \
+ /usr/include/bits/types/struct_sigstack.h /usr/include/bits/sigthread.h \
+ /usr/include/bits/signal_ext.h /usr/include/bits/types/idtype_t.h \
+ /usr/include/c++/13.2.1/sstream /usr/include/c++/13.2.1/bits/sstream.tcc \
+ /usr/include/c++/13.2.1/fstream /usr/include/c++/13.2.1/bits/codecvt.h \
+ /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
+ /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
+ /usr/include/c++/13.2.1/bits/fstream.tcc \
+ /home/randolfo/Documentos/Mosaicos/src/theme.hpp \
+ /home/randolfo/Documentos/Mosaicos/src/clear_rag.hpp

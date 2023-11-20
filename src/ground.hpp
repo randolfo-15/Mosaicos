@@ -16,10 +16,9 @@ class Ground:public Str{
     public:
         void operator=(Colour);
         virtual void operator=(Highlight)=0;
+        std::string operator!();
         
     protected:
-        std::string operator!();  /// Problematico ...!!! \warning
-        
         Ground(Colour,const char* plan,const char* clss,Highlight=Hlg());
         
         std::string operator()();

@@ -1,9 +1,5 @@
 <map id="src/colour.hpp" name="src/colour.hpp">
-<area shape="rect" id="Node000001" title="Arquivo de definição Foreground Background e Efeitos." alt="" coords="78,5,189,33"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,81,81,109"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,36,73,73,69,69,116,31"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="105,81,163,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="136,34,136,65,131,65,131,34"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="187,81,246,109"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="150,32,192,69,189,73,147,36"/>
+<area shape="rect" id="Node000001" title="Arquivo de definição Foreground Background e Efeitos." alt="" coords="5,5,117,33"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="32,81,90,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="64,34,64,65,58,65,58,34"/>
 </map>

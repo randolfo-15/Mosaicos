@@ -1,0 +1,7 @@
+<map id="Clear" name="Clear">
+<area shape="rect" id="Node000001" title=" " alt="" coords="81,5,136,33"/>
+<area shape="rect" id="Node000002" href="$structClear__line.html" title=" " alt="" coords="5,81,92,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,47,61,82,57,79,86,44"/>
+<area shape="rect" id="Node000003" href="$structClear__screen.html" title=" " alt="" coords="116,81,221,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="131,44,160,79,156,82,127,47"/>
+</map>

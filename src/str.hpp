@@ -21,12 +21,11 @@ class Str{
         Str(size_t);
         Str(std::string);
 
-        friend std::string operator+(std::string,Str);
-        std::string operator+(std::string);
         void operator+=(std::string);
         
     public:
-
+        friend std::string operator+(std::string,Str);
+        std::string operator+(std::string);
         
         friend std::ostream& operator<<(std::ostream&,Str);
 };

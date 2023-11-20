@@ -45,4 +45,7 @@ void Tm::fg(Clr clr,int i){ fgs[i]=clr; }
 		
 void Tm::bg(Clr clr,int i){bgs[i]=clr;}      
 		
-
+//--------------------------------------------------------------
+// Show
+//--------------------------------------------------------------		
+std::ostream& operator<<(std::ostream& out,Theme tm){ return out<<tm.bgs[0]<<tm.fgs[0]; }

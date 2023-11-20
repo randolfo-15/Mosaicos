@@ -8,6 +8,8 @@
 #ifndef COLOUR_HPP
 #define COLOUR_HPP
 
+#include <string>
+
 struct Colour{
 	using nivel= unsigned char;
 	using nivel_red=unsigned char;
@@ -19,6 +21,8 @@ struct Colour{
 	Colour();
 	
 	Colour(nivel_red,nivel_blue,nivel_green);
+	
+	static std::string br();
 	
 	void red(nivel);
 	void green(nivel);
@@ -63,6 +67,8 @@ struct Colour{
 		static const nivel pixel[3];
 		
 };using Clr = Colour;
+
+
 
 namespace  Colors {
 	

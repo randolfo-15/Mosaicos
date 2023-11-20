@@ -4,6 +4,7 @@
  * \author Randolfo Augusto
  * \date 21/09/22
  ******************************************************/
+
 #include "directions_rag.hpp"
 #include "display_rag.hpp"
 #include "effect.hpp"
@@ -27,38 +28,8 @@ Dp::Display(Tm theme):tm(theme){init_default();}
 //------------------------------------------------------------------------------------------------
 // Line
 //------------------------------------------------------------------------------------------------
-Line::Line(Hlg efc, string str):line(str),fg(efc){}
+Line::Line(Hlg efc, string st):str(st),fg(efc){}
 
-//------------------------------------------------------------------------------------------------
-// Shadow
-//------------------------------------------------------------------------------------------------
-
-//Construtor de sombras:
-Shadow::Shadow(){}
-Shadow::Shadow(Clr clr):bg(clr){}
-Shadow::Shadow(int size):n(size){}
-Shadow::Shadow(Clr clr,int size):bg(clr),n(size){}
-
-//--------------------------------------------------------
-// Getting
-//--------------------------------------------------------
-Bg Shadow::clr(){return bg;}
-int Shadow::size(){return n;}
-
-//--------------------------------------------------------
-// Setting
-//--------------------------------------------------------
-void Shadow::clr(Clr clr){bg=clr;}
-void Shadow::size(int value){n=value;}
-
-//--------------------------------------------------------
-// Methods
-//--------------------------------------------------------
-string Shadow::shade(int n,string sd){ 
-	sd=bg+" ";
-	while(n--) sd+=" ";
-	return sd;
-}
 /*
 //--------------------------------------------------------
 //(Size Terminal)
@@ -80,7 +51,7 @@ bool Dp::size_terminal(int size_dp){
 */ 
 
 int Dp::size_display(){
-	return (w_dp.value()+x_dp.value()+(2*b_dp.value())+sb_side+((int)true));  /// \warning A sombra precisa dessa flag???
+	return (w+x+(2*b)+sb_side+((int)true));  
 }
 
 void Dp::erro_exec(string str){cout<<str<<'\n';}
@@ -91,10 +62,10 @@ void Dp::erro_exec(string str){cout<<str<<'\n';}
 
 //Inicicialzar componetes comuns:
 void Dp::init_compnents(){
-	w_dp.init(21,' ');
-	x_dp.init(2,' ');
-	y_dp.init(2,'\n');
-	b_dp.init(2, ' ');
+	w=21;
+	x=2;
+	y=2;
+	b=2;
 }
 
 //Inicialização Padrão:
@@ -111,21 +82,6 @@ void collect_char(string* str,char c,int i,int end){
 		collect_char(str,c,i+1,end);
 	}
 }
-//Iniciar e configurar space:
-int Space::value(int n){
-	if(n>=0){
-		spc_int=n;
-		spc_str.clear();
-		collect_char(&spc_str,spc_chr,0,n);
-	}		
-	return spc_int;
-}
-
-
-//Modo de inicicializar espaço:
-void Space::init(int a,char b){
-	this->spc_chr=b;value(a);
-}
 
 //------------------------------------------------------------------------------------------------
 // Write
@@ -137,9 +93,9 @@ void Dp::format(string text,size_t size,Hlg efc){ write_aux_buffer(slice_text(te
 
 //Definir pontos de salto de linha:
 string Dp::slice_text(string t,size_t size){
-	int n=size/w_dp.spc_int;	
+	int n=size/w;	
 	while(n>0){
-		size_t pos=n*w_dp.spc_int;
+		size_t pos=n*w;
 		
 		//Busca inicio da Palavra:
 		if((t.find(' ')!=-1)&&!corte)
@@ -165,9 +121,7 @@ void Dp::write_aux_buffer(string text,Hlg efc){
 }
 
 //Atualizar Largura:
-void  Dp::update_width(int size){
-	if(w_dp.spc_int<size) w_dp.value(size);      
-}
+void  Dp::update_width(int size){ if(w<size) w=size; }
 
 
 //--------------------------------------------------------
@@ -185,7 +139,7 @@ void Display::show(){
 	
 	//if(size_terminal(size_display())){
 		draw();   
-		engine(); //Printables::show(); /// \warning Motor simples de exibiçãp
+		engine(); 
 	//}else erro_exec();
 }
 
@@ -193,32 +147,15 @@ void Display::show(){
 // Draw
 //--------------------------------------------------------
 void Dp::draw(){
-	C_sn::total();
-	move_buffer(0,asst_buf.size());              
-	base_shading();
-}
-
-//--------------------------------------------------------
-// Engine
-//--------------------------------------------------------
-void Dp::engine(){
-	cout<<down;
-	for(string line:main_buf) 
-		cout<<rigth
-				<<tm
-			    <<line
-			    <<tm
-				<<Clr::br()<<'\n';
+	Clear_screen::total();                                          ///< Limpa o terminal.
+	move_buffer();                                                     ///< Lê o contéudo do buffer.
+	base_shading();                                                   ///< Desenha a base da sombra.
 }
 
 //--------------------------------------------------------
 // Read Buffer
 //--------------------------------------------------------
-void Display::move_buffer(int i,int end){
-	if(i>=end) return; 
-		format_line(i,asst_buf[i].line,asst_buf[i].fg); 
-		move_buffer(i+1,end);	
-}
+void Display::move_buffer(int i){ for(Line ln:asst_buf) format_line(i++,ln.str,ln.fg); }
 
 //--------------------------------------------------------
 // Format line
@@ -226,18 +163,20 @@ void Display::move_buffer(int i,int end){
 void Display::format_line(size_t i,string line,Fg fg){
 	 
 	//Desenhar lado esquerdo a line:	
-	string aux=b_dp.spc_str+fg+line;
+	string aux=fill(b,tm.bg())+fg+line;
+	//b_dp.spc_str+fg+line;
 	
 	//Definir N° caracter que completa janela:
-	int limit=w_dp.value()-line.size()+b_dp.value()+size_line(line.c_str())+1;
+	int limit=w-line.size()+b+size_line(line.c_str())+1;
 	
 	//Desenhar lado direito a line
 	aux+=Clr::br()+tm.bg()+tm.fg();
 	while(limit--) aux.push_back(' ');
 		
 	// Desenha sombra lateral
-	if(sb_on) aux+=(i)?sb.shade(sb_side):!tm.bg(); 
-		
+	if(sb_on) aux+=(i)?fill(sb_side,shade):!tm.bg(); 
+	
+	
 	main_buf.push_back(aux);
 }
 
@@ -253,11 +192,33 @@ int Dp::loop(const char *c){
 }
 
 //--------------------------------------------------------
+// Engine
+//--------------------------------------------------------
+
+void Dp::engine(){
+	cout<<down;
+	for(string line:main_buf) 
+		cout<<rigth
+				<<tm
+			    <<line
+			    <<tm
+				<<Clr::br()<<'\n';
+}
+
+
+//--------------------------------------------------------
 // Base shadow
 //--------------------------------------------------------
 void Display::base_shading(){	
-	if(sb_on) main_buf.push_back(Rigth(sb_side)+sb.shade(w_dp.spc_int+2*b_dp.spc_int+1));
+	//if(sb_on) main_buf.push_back(Rigth(sb_side)+sb.shade(w_dp.spc_int+2*b_dp.spc_int+1));
+	if(sb_on) main_buf.push_back(Rigth(sb_side)+fill(w+2*b+1,shade));
 	main_buf.push_back(Clr::br());
+}
+
+string Dp::fill(int count,Bg bg){
+	string str=bg.str();
+	while(count--) str+=" ";
+	return str;
 }
 
 
@@ -346,7 +307,7 @@ void Dp::show(int grupo,int x,int y)
 void Display::update(){
 	
 	//(sys)?system("cls"):(system("clear"));
-	cout<<y_dp.spc_str;	
+	//cout<<y_dp.spc_str;	
 }
 
 //--------------------------------------------------------
@@ -370,7 +331,10 @@ void Dp::set_color_shadow(string cor){
 void Dp::skip_line(int n){while(n-->0) write(Efc::Bold()," ");}
 
 //Largura do display:
-int Dp::width(int n){return w_dp.value((n>0)?n:-1);}
+int Dp::width(int n){
+	if(n>=0) w=n;
+	return w;
+}
 
 //Distanciamneto horizontal:
 int Dp::dist_x(int n){
@@ -385,7 +349,10 @@ int Dp::dist_y(int n){
 }
 
 //Espacamento do texto:
-int Dp::spacing(int n){return b_dp.value(n);}
+int Dp::spacing(int n){
+	if(n>=0) b=n;
+	return b;
+}
 
 //*********************** Texto *************************
 

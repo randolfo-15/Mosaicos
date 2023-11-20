@@ -10,8 +10,9 @@
 #include <string>
 #include <vector>
 #include <ostream>
-
+class Display;
 class Str{
+    friend Display;
     protected:
         std::vector<std::string> buf;
         std::string str(std::string="");

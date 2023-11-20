@@ -6,11 +6,13 @@
 #include "src/clear_rag.hpp"
 #include "src/display_rag.hpp"
 
+
 using namespace std;
 using namespace Cls;
 using namespace Efc;
 
 int main(){
+        
         Dp dp;
         dp.dist_x(10);
         dp.dist_y(11);

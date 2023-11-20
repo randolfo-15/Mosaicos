@@ -34,7 +34,7 @@ void collect_char(std::string*,char,int i,int end);
 //-------------------------------------------------------------
 class Line{
 	friend Dp;
-	std::string line;
+	std::string str;
 	Foreground fg;
 	
 	Line(Highlight,std::string);
@@ -46,51 +46,14 @@ using slice_mode=enum slice_mode;
 
 
 //-------------------------------------------------------------
-//(Shadow)
-//-------------------------------------------------------------
-class Shadow{
-	friend Dp;
-	Bg bg=Colour(160,160,160);
-	int  n=2;
-	
-	//Build:
-	Shadow();
-	Shadow(int);
-	Shadow(Colour);
-	Shadow(Colour,int);
-	
-	// Get:
-	Bg clr();
-	int size();
-	
-	// Set:
-	void clr(Colour);
-	void size(int);
-	
-	// Shade:
-	std::string shade(int,std::string="");
-};
-
-//-------------------------------------------------------------
-//(Espaço)
-//-------------------------------------------------------------
-
-class Space{
-	friend Dp;
-	std::string spc_str;
-	int    spc_int;
-	char   spc_chr;
-	
-	void init(int,char);
-	int  value(int n=-1);
-};
-
-
-//-------------------------------------------------------------
 //-------------------------------------------------------------
 class Display{
 	// Theme:
 	Theme tm;
+	Bg shade=Colour(110,110,110);
+	
+	std::string fill(int,Bg);
+	
 	//Operação de fluso de display:
 	friend Dp* operator<<(Dp*,Dp&);
 	friend Dp* operator>>(Dp*,Dp&);
@@ -101,7 +64,7 @@ class Display{
 		std::vector<Dp*> dps;
 
 	//Sombriamento:
-		Shadow sb;
+		//Shadow sb;
 			   bool sb_on=true;
 
 	// Directions:
@@ -115,11 +78,11 @@ class Display{
 		slice_mode corte=SMART;
 
 		//Espaciais:
-		Space 
-			  w_dp, // → Largura do display.	
-		      x_dp, // → Distanciamento horizontal.
-			  y_dp, // → Distanciamento vertical.
-		      b_dp; // → Espaçamento texto.
+		int   
+			w, // → Largura do display.	
+			x, // → Distanciamento horizontal.
+			y, // → Distanciamento vertical.
+			b; // → Espaçamento texto.
 
 		
 	//Inicialização:
@@ -149,7 +112,7 @@ class Display{
 		void draw();
 				
 		//1 → Listar linhas:
-		void move_buffer(int i,int end);                   
+		void move_buffer(int=0);                   
 		
 		//Contar caracter especial:       //|
 		int loop(const char *c);          //|

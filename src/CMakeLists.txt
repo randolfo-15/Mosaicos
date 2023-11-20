@@ -18,6 +18,7 @@ target_sources(mosaicos
         clear.cpp
         display.cpp
         
+        
     PUBLIC FILE_SET HEADERS 
         FILES 
             str.hpp
@@ -30,6 +31,7 @@ target_sources(mosaicos
             directions_rag.hpp
             clear_rag.hpp
             display_rag.hpp
+            
 )
  
 target_include_directories(mosaicos

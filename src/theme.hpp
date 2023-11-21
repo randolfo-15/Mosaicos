@@ -14,8 +14,10 @@
 
 /// Define um conjunto de cores e comportamentos de uma janela.
 class Theme{
+	friend Display;
 	protected:
 		friend std::ostream& operator<<(std::ostream&,Theme);
+		std::string operator()();
 		
 		std::vector<Fg>  fgs;
 		std::vector<Bg> bgs;
@@ -27,13 +29,13 @@ class Theme{
 		Theme(std::initializer_list<Bg>,std::initializer_list<Fg>);
 		
 		
-		Foreground fg(int=0);        ///< (Get) padrão para foreground. 
-		Background bg(int=0);     ///< (Get) padrão para background. 
+		Foreground fg(int=0);         ///< (Get) padrão para foreground. 
+		Background bg(int=0);        ///< (Get) padrão para background. 
 		
-		void fg(Highlight,int=0);  ///< (Set) padrão para foreground. 
-		void fg(Colour,int=0);       ///< (Set) modificar a cor da letra.
+		void fg(Highlight,int=0);    ///< (Set) padrão para foreground. 
+		void fg(Colour,int=0);         ///< (Set) modificar a cor da letra.
 		
-		void bg(Colour,int=0);            ///< (Set) padrão para background. 
+		void bg(Colour,int=0);        ///< (Set) padrão para background. 
 		
 		
 		

@@ -13,8 +13,10 @@
 #include <cstdlib>
 #include <sstream>
 #include <fstream>
+#include "background.hpp"
 #include "colour.hpp"
 #include "effect.hpp"
+#include "foreground.hpp"
 #include "theme.hpp"
 #include "directions_rag.hpp"
 #include "clear_rag.hpp"
@@ -22,23 +24,9 @@
 ///Alias de função iniciar Display:
 class Display;
 ///Abrevição do nome da classe:
-using Dp=Display; 
+ 
 
-//------------------------------------------------------------
-//Funções de suporte:
-//-------------------------------------------------------------
-/*void collect_char(std::string*,char,int i,int end);*/
 
-//-------------------------------------------------------------
-// Textos
-//-------------------------------------------------------------
-class Line{
-	friend Dp;
-	std::string str;
-	Foreground fg;
-	
-	Line(Highlight,std::string);
-};
 
 //Modos de corte de texto:
 enum slice_mode{SMART,JOUST};
@@ -50,12 +38,17 @@ class Display{
 //------------------------------------------------------------------------------------------------
 // Fields
 //------------------------------------------------------------------------------------------------
+	struct Line{                                                     ///< Define a custumização de uma linha
+		std::string str;
+		std::string efc;
+	};
+	
 	Theme tm;                                                        ///< Tema do display.
 	Bg shade=Colour(110,110,110);                    ///< Cor da sombra.
 	
 	std::vector<Line> asst_buf;	                        ///< Buffer de tratamento de strings.
 	std::vector<std::string> main_buf;             ///< Buffer de exibição.
-	std::vector<Dp*> dps;                                    ///< Buffer para multplos display.
+	std::vector<Display*> dps;                            ///< Buffer para multplos display.
 
 	bool shading=true;                                          /// Criar sombra.
 
@@ -81,16 +74,18 @@ class Display{
 // Write
 //-------------------------------------------------------------
 public:
-	void write(Hlg,std::string);                                                 ///< Modo de escrita custumizado.
-	
-	void write(std::string);                                                         ///< Mode de escrita padrão
+	void write(std::string);                                                        ///< Mode de escrita padrão
+	void write(Foreground,std::string);                                  ///< foreground custumizado.
+	void write(Background,std::string);                                 ///< background custumizado.
+	void write(Background,Foreground,std::string);           ///< Com foreground e background custumizado.
+	                                                        
 	
 private:
-	void format(std::string,size_t,Hlg);                                    ///< Dividir texto e salvar linhas.
+	void format(std::string,std::string,size_t);                      ///< Dividir texto e salvar linhas.
 		
 	std::string slice_text(std::string,size_t);                           ///<  Fatiar bloco de texto.
 		
-	void write_aux_buffer(std::string,Hlg,std::string="");   ///< Gravar em memoria auxiliar.
+	void write_aux_buffer(std::string,std::string,std::string="");   ///< Gravar em memoria auxiliar.
 
 	void   update_width(int);                                                       ///< Atualizar largura do display.
 	
@@ -107,7 +102,7 @@ private:
 	int size_line(const char *str);   
 
 	//2 → Preenchaer linha
-	void   format_line(std::string,Fg);     
+	void   format_line(std::string,std::string);     
 	
 	void draw_shadow(int,int=1);
 	
@@ -180,8 +175,8 @@ public:
 //-------------------------------------------------------------
 
 	//Operação de fluso de display:
-	friend Dp* operator<<(Dp*,Dp&);
-	friend Dp* operator>>(Dp*,Dp&);
+	friend Display* operator<<(Display*,Display&);
+	friend Display* operator>>(Display*,Display&);
 	
 	//Auto-somar:
 	void operator+=(Display&);
@@ -189,11 +184,11 @@ public:
 	//Auto-Subtrair
 	void operator-=(Display&);
 
-	Dp* operator<<(Dp&);
-	Dp* operator>>(Dp&);
+	Display* operator<<(Display&);
+	Display* operator>>(Display&);
 		
 	//Find
-	Dp* operator[](int);
+	Display* operator[](int);
 
 	//Número de displays:
 	int n_dps();
@@ -209,7 +204,8 @@ public:
 	//Ler dados:
 	//static void read(Dp,std::vector<string>*questions,std::vector<string>*answers, int n=0);
 
-};
+};using Dp=Display;
+
 //Inserir display:
 Dp* operator<<(Dp*,Dp&);
 

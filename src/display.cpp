@@ -5,10 +5,7 @@
  * \date 21/09/22
  ******************************************************/
 
-#include "directions_rag.hpp"
 #include "display_rag.hpp"
-#include "effect.hpp"
-
 using std::string;
 using std::cout;
 
@@ -21,19 +18,18 @@ Dp::Display(){}
 Dp::Display(Tm theme):tm(theme){} 
 
 //------------------------------------------------------------------------------------------------
-// Line
-//------------------------------------------------------------------------------------------------
-Line::Line(Hlg efc, string st):str(st),fg(efc){}
-
-//------------------------------------------------------------------------------------------------
 // Write
 //------------------------------------------------------------------------------------------------
 
-void Dp::write(Hlg efc,string line){ format(line,line.size(),efc); }
+void Dp::write(Fg  fg,string str){ format(str,fg.str(),str.size()); }
 
-void Dp::write(string line){ format(line,line.size() ,Hlg() ); }
+void Dp::write(Bg bg,string str){ format(str,bg.str(),str.size()); }
 
-void Dp::format(string text,size_t size,Hlg efc){ write_aux_buffer(slice_text(text,size),efc); }
+void Dp::write(Bg bg,Fg fg,string str){ format(str,bg.str()+fg.str(),str.size()); }
+
+void Dp::write(string str){ format(str,"",str.size()); }
+
+void Dp::format(string str,string efc,size_t size){ write_aux_buffer(slice_text(str,size),efc); }
 
 string Dp::slice_text(string line,size_t size){
 	for(int n=size/w, pos=size; n>0 ; n--){
@@ -43,11 +39,11 @@ string Dp::slice_text(string line,size_t size){
 	return line;
 }
 
-void Dp::write_aux_buffer(string text,Hlg efc,string line){
+void Dp::write_aux_buffer(string text,string efc,string line){
 	std::stringstream sstr(text);                                                                   ///< 1 Recebe o coteudo da linha.
 	while(getline(sstr,line,'\n')){                                                                     ///< 2 Busca por interrupções.
 		update_width(line.size());                                                                      ///< 3 Atualiza o tamanho do display.
-		asst_buf.push_back(Line(efc,line));                                                      ///< 4 Adiciona nova linha ao buffer aux.
+		asst_buf.push_back({line,efc});                                                           ///< 4 Adiciona nova linha ao buffer aux.
 	}
 }
 
@@ -75,21 +71,23 @@ void Dp::draw(){
 //--------------------------------------------------------
 // Draw Display
 //--------------------------------------------------------
-void Display::draw_display(){ for(Line ln:asst_buf) format_line(ln.str,ln.fg); }
+void Display::draw_display(){ for(Line ln:asst_buf) format_line(ln.str,ln.efc); }
 
 //--------------------------------------------------------
 // Format line
 //--------------------------------------------------------
-void Display::format_line(string line,Fg fg){
+void Display::format_line(string line,string efc){
 	 
 	//Desenhar lado esquerdo a line:	
-	string aux=fill(b,tm.bg())+fg+line;
+	string aux=fill(b,tm.bg())+efc+line;
+	
+	// Encerra efeitos
+	aux+=Clr::br()+tm();
 	
 	//Definir N° caracter que completa janela:
 	int limit=w-line.size()+b+size_line(line.c_str());
 	
 	//Desenhar lado direito a line
-	aux+=Clr::br()+tm.bg()+tm.fg();
 	while(limit--) aux.push_back(' ');
 	
 	main_buf.push_back(aux);
@@ -281,7 +279,7 @@ void Display::insert(int pos,Hlg efc,string t){
 	string line;
 	while(getline(sstr,line,'\n')){
 		update_width(line.size());
-		asst_buf.insert(asst_buf.begin()+pos,Line(efc,line));
+		//asst_buf.insert(asst_buf.begin()+pos,{line,tm});      ///\warning Não estamos passando o tema do objeto!!!
 		pos++;
 	}
 }

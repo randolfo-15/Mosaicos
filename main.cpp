@@ -14,13 +14,12 @@ using namespace Efc;
 int main(){
         
         Dp dp;
-        dp.dist_x(10);
-        dp.dist_y(11);
-        dp.write(Bold()+Blink()," a");
-        dp.write(Blink()," a");
-        dp.write(Underline()," Olaaaaaaaaaaaá \n");
-        dp.write(Hlg()," a");
-        dp.write(Tachado()," a");
+        dp.write("");
+        dp.write(Underline(),"Olá mundo");
+        dp.write(Bold(),"Olá Adoração fora\ndo normal");
+        dp.write("sseção de pirokadaaão");
+        dp.write(Tachado(),"fim");
+        dp.write("");
         dp.show();
         
         return 0;

@@ -27,7 +27,7 @@ using Dp=Display;
 //------------------------------------------------------------
 //Funções de suporte:
 //-------------------------------------------------------------
-void collect_char(std::string*,char,int i,int end);
+/*void collect_char(std::string*,char,int i,int end);*/
 
 //-------------------------------------------------------------
 // Textos
@@ -131,7 +131,7 @@ class Display{
 	//Erro ao criar display:
 	void erro_exec(std::string str="Broken display");
 	
-	public:
+public:
 	//Fabricação:	
 		Display();
 		Display(Theme);
@@ -141,7 +141,7 @@ class Display{
 
 	//0 → Escrita:
 		void write(Hlg,std::string);
-	
+		void write(std::string);
 	//Exposição:	
 		//0 → Mostrar display:
 		void show();                   	

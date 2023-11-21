@@ -50,9 +50,7 @@ bool Dp::size_terminal(int size_dp){
 }
 */ 
 
-int Dp::size_display(){
-	return (w+x+(2*b)+sb_side+((int)true));  
-}
+int Dp::size_display(){ return w+x+(2*b)+sb_side+sb_on;  }
 
 void Dp::erro_exec(string str){cout<<str<<'\n';}
 
@@ -71,22 +69,15 @@ void Dp::init_compnents(){
 //Inicialização Padrão:
 void Dp::init_default(){ init_compnents(); }
 
-//--------------------------------------------------------
-//(Métodos estrangeiros)
-//--------------------------------------------------------
-
-//Coletar char:
-void collect_char(string* str,char c,int i,int end){
-	if(i<end) {
-		str->push_back(c);
-		collect_char(str,c,i+1,end);
-	}
-}
 
 //------------------------------------------------------------------------------------------------
 // Write
 //------------------------------------------------------------------------------------------------
-void Dp::write(Hlg efc,string text){ format(text,n_letter(text.c_str()),efc); }
+
+void Dp::write(Hlg efc,string line){ format(line,line.size()/*n_letter(text.c_str())*/,efc); }
+
+void Dp::write(string line){ format(line,line.size() ,Hlg() ); }
+
 
 //Configurar Texto:
 void Dp::format(string text,size_t size,Hlg efc){ write_aux_buffer(slice_text(text,size),efc); }
@@ -98,12 +89,11 @@ string Dp::slice_text(string t,size_t size){
 		size_t pos=n*w;
 		
 		//Busca inicio da Palavra:
-		if((t.find(' ')!=-1)&&!corte)
-			while(t[pos-1]!=' ')pos--;
+		if((t.find(' ')!=-1)&&!corte) while(t[pos-1]!=' ')pos--;
 		
 		//Inserir '\n':	
-		if((pos>0)&&(pos<size-1))
-			t.insert(t.begin()+pos,'\n');
+		if((pos>0)&&(pos<size-1)) t.insert(t.begin()+pos,'\n');
+		
 		n--;	
 	}
 	return t;
@@ -164,7 +154,6 @@ void Display::format_line(size_t i,string line,Fg fg){
 	 
 	//Desenhar lado esquerdo a line:	
 	string aux=fill(b,tm.bg())+fg+line;
-	//b_dp.spc_str+fg+line;
 	
 	//Definir N° caracter que completa janela:
 	int limit=w-line.size()+b+size_line(line.c_str())+1;

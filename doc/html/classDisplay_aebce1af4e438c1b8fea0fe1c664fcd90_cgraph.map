@@ -1,8 +1,9 @@
 <map id="Display::base_shading" name="Display::base_shading">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,172,57"/>
-<area shape="rect" id="Node000002" href="$classShadow.html#ae824481bd96f3b094ebe08795d0f1f6e" title=" " alt="" coords="220,29,338,57"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,41,204,41,204,46,172,46"/>
-<area shape="rect" id="Node000003" href="$display_8cpp.html#ac2b2a52938b5a24dded8a1f8f8d763fa" title=" " alt="" coords="386,29,485,57"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="338,41,370,41,370,46,338,46"/>
-<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="408,30,404,20,407,11,418,5,436,3,454,5,464,11,462,16,452,10,436,8,420,10,411,14,409,20,413,28"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,32,172,60"/>
+<area shape="rect" id="Node000002" href="$structColour.html#aaa9d78c6f845863d4c2df60b31b1966a" title=" " alt="" coords="224,5,309,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,31,209,25,209,30,173,36"/>
+<area shape="rect" id="Node000003" href="$classDisplay.html#ad0e52097ee8d0d2ae09b70e51ec26ca6" title="Preencher espaços:" alt="" coords="220,57,313,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="173,55,205,60,204,65,172,60"/>
+<area shape="rect" id="Node000004" href="$classStr.html#ad6486869a2adf20144d9df643c425876" title=" " alt="" coords="361,57,425,85"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="314,69,345,69,345,74,314,74"/>
 </map>

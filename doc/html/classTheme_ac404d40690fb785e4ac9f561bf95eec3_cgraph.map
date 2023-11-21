@@ -1,5 +1,0 @@
-<map id="Theme::key" name="Theme::key">
-<area shape="rect" id="Node000001" title="(Set) padrão para foreground." alt="" coords="5,5,103,33"/>
-<area shape="rect" id="Node000002" href="$structForeground.html#af98b5edf50a9d9732134c105ebd1819e" title="Checa se uma string e um Foreground." alt="" coords="151,5,311,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,17,135,17,135,22,103,22"/>
-</map>

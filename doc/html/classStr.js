@@ -9,5 +9,6 @@ var classStr =
     [ "str", "classStr.html#ad6486869a2adf20144d9df643c425876", null ],
     [ "operator+", "classStr.html#a5ed76691a689688a2374de00c970dc9b", null ],
     [ "operator<<", "classStr.html#a304d2d736c18f5dd32552ba7a78d359d", null ],
-    [ "buf", "classStr.html#a4341a1c0aceed341927d20f078126968", null ]
+    [ "buf", "classStr.html#a4341a1c0aceed341927d20f078126968", null ],
+    [ "Display", "classStr.html#a039e217d87f0758d04860e4ddc5bb619", null ]
 ];

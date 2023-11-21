@@ -36,8 +36,6 @@ var annotated_dup =
     [ "Left", "structLeft.html", "structLeft" ],
     [ "Line", "classLine.html", "classLine" ],
     [ "Rigth", "structRigth.html", "structRigth" ],
-    [ "Shadow", "classShadow.html", "classShadow" ],
-    [ "Space", "classSpace.html", "classSpace" ],
     [ "Str", "classStr.html", "classStr" ],
     [ "Theme", "classTheme.html", "classTheme" ],
     [ "Up", "structUp.html", "structUp" ]

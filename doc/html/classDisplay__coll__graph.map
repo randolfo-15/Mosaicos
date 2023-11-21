@@ -1,18 +1,21 @@
 <map id="Display" name="Display">
-<area shape="rect" id="Node000001" title=" " alt="" coords="97,455,167,482"/>
-<area shape="rect" id="Node000002" href="$classTheme.html" title="Define um conjunto de cores e comportamentos de uma janela." alt="" coords="5,345,72,373"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="62,383,123,453,119,456,58,386"/>
-<area shape="rect" id="Node000003" href="$classShadow.html" title=" " alt="" coords="96,345,168,373"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="135,388,135,455,129,455,129,388"/>
-<area shape="rect" id="Node000004" href="$structBackground.html" title=" " alt="" coords="72,201,170,229"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="126,245,134,344,128,345,121,245"/>
-<area shape="rect" id="Node000005" href="$classGround.html" title="Define a coloração de background de uma letra." alt="" coords="83,98,151,126"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="121,141,123,201,118,201,116,141"/>
-<area shape="rect" id="Node000006" href="$classStr.html" title=" " alt="" coords="54,5,93,33"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="84,47,94,73,109,96,105,99,89,75,79,49"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="149,5,208,33"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="138,41,121,58,116,78,117,98,112,98,111,77,117,56,135,37"/>
-<area shape="rect" id="Node000008" href="$classSpace.html" title=" " alt="" coords="179,150,239,177"/>
-<area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="187,48,209,149,204,150,182,49"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="215,192,218,240,216,302,205,368,195,401,181,432,170,446,157,456,154,452,166,442,176,429,190,399,200,367,211,301,213,240,210,192"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="129,268,199,295"/>
+<area shape="rect" id="Node000002" href="$classTheme.html" title="Define um conjunto de cores e comportamentos de uma janela." alt="" coords="5,175,72,203"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,210,107,241,143,265,141,269,104,246,64,215"/>
+<area shape="rect" id="Node000003" href="$structBackground.html" title=" " alt="" coords="259,175,357,203"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="281,214,235,246,192,269,189,265,232,241,278,210"/>
+<area shape="rect" id="Node000004" href="$classGround.html" title="Define a coloração de background de uma letra." alt="" coords="272,98,341,126"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="310,141,310,175,305,175,304,141"/>
+<area shape="rect" id="Node000005" href="$classStr.html" title=" " alt="" coords="212,5,252,33"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="254,44,298,96,294,99,250,47"/>
+<area shape="rect" id="Node000008" href="$structDirections.html" title=" " alt="" coords="162,98,249,126"/>
+<area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="226,48,212,98,206,97,221,47"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="277,5,336,33"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="309,48,309,98,304,98,304,48"/>
+<area shape="rect" id="Node000007" href="$structRigth.html" title=" " alt="" coords="96,175,152,203"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="132,217,140,243,155,266,150,268,135,245,127,219"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="182,138,140,177,136,173,178,134"/>
+<area shape="rect" id="Node000009" href="$structDown.html" title=" " alt="" coords="176,175,234,203"/>
+<area shape="poly" id="edge10_Node000009_Node000008" title=" " alt="" coords="208,141,208,175,203,175,203,141"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="195,218,172,268,167,266,190,216"/>
 </map>

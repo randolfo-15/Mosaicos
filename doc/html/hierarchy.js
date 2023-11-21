@@ -28,8 +28,6 @@ var hierarchy =
       [ "Effect::Underline", "structEffect_1_1Underline.html", null ]
     ] ],
     [ "Line", "classLine.html", null ],
-    [ "Shadow", "classShadow.html", null ],
-    [ "Space", "classSpace.html", null ],
     [ "Str", "classStr.html", [
       [ "Directions", "structDirections.html", [
         [ "Down", "structDown.html", null ],

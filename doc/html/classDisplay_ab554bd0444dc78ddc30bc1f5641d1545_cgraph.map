@@ -1,9 +1,0 @@
-<map id="Display::insert" name="Display::insert">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,32,120,60"/>
-<area shape="rect" id="Node000002" href="$classDisplay.html#ac9368af43415f981e4d37316df485665" title=" " alt="" coords="180,5,321,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,35,164,29,165,34,120,40"/>
-<area shape="rect" id="Node000003" href="$classDisplay.html#a54b68897383da25eb9ad55d0bd06d9ed" title=" " alt="" coords="168,57,333,85"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="120,51,152,55,152,61,120,56"/>
-<area shape="rect" id="Node000004" href="$classSpace.html#a1b8718ecc0abd13227c9e6cd5ab28ebf" title=" " alt="" coords="381,57,485,85"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="333,69,365,69,365,74,333,74"/>
-</map>

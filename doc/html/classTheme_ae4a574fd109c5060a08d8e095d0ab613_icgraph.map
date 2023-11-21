@@ -1,7 +1,0 @@
-<map id="Theme::key" name="Theme::key">
-<area shape="rect" id="Node000001" title="(Get) padrão para foreground." alt="" coords="181,32,278,60"/>
-<area shape="rect" id="Node000002" href="$classDisplay.html#aab9074ba7f7c639d4525d1d825597dda" title=" " alt="" coords="16,5,122,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,38,122,31,123,25,166,33"/>
-<area shape="rect" id="Node000003" href="$classPrintables.html#a75157038c9ccf318dfcba6e7200bbefd" title="Escrita Padrão." alt="" coords="5,57,133,85"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="166,59,133,64,133,58,165,53"/>
-</map>

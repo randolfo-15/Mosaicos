@@ -6,6 +6,5 @@ var searchData=
   ['effect_2ecpp_3',['effect.cpp',['../effect_8cpp.html',1,'']]],
   ['effect_2ehpp_4',['effect.hpp',['../effect_8hpp.html',1,'']]],
   ['end_5',['END',['../classGround.html#af5fad8b9ca051f5d5dc03260d327629b',1,'Ground']]],
-  ['engine_6',['engine',['../classDisplay.html#aab1bec4505c607b75e1880f7c410c62e',1,'Display']]],
-  ['erro_5fexec_7',['erro_exec',['../classDisplay.html#ad29661fa38048b125d3bcd78e4848b43',1,'Display']]]
+  ['engine_6',['engine',['../classDisplay.html#aab1bec4505c607b75e1880f7c410c62e',1,'Display']]]
 ];

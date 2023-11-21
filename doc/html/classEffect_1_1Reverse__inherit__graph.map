@@ -1,9 +1,0 @@
-<map id="Effect::Reverse" name="Effect::Reverse">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,232,125,260"/>
-<area shape="rect" id="Node000002" href="$structHighlight.html" title=" " alt="" coords="25,157,105,184"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="68,200,68,232,62,232,62,200"/>
-<area shape="rect" id="Node000003" href="$classStr.html" title=" " alt="" coords="45,81,85,109"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="68,124,68,156,62,156,62,124"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="22,5,108,33"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="68,49,68,81,62,81,62,49"/>
-</map>

@@ -1,9 +1,0 @@
-<map id="Display::init_mode" name="Display::init_mode">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,148,33"/>
-<area shape="rect" id="Node000002" href="$classDisplay.html#ad22d3497e1350187870e994f9f5adf39" title=" " alt="" coords="196,5,373,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,17,180,17,180,22,148,22"/>
-<area shape="rect" id="Node000003" href="$classSpace.html#affec326a69f3db9c0c6647344674b10c" title=" " alt="" coords="421,5,510,33"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="373,17,406,17,406,22,373,22"/>
-<area shape="rect" id="Node000004" href="$classSpace.html#a1b8718ecc0abd13227c9e6cd5ab28ebf" title=" " alt="" coords="558,5,663,33"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="511,17,543,17,543,22,511,22"/>
-</map>

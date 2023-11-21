@@ -17,6 +17,7 @@ int main(){
         dp.write("");
         dp.write(Underline(),"Olá mundo");
         dp.write(Bold(),"Olá Adoração fora\ndo normal");
+        dp.write("11111111111111111111111 111111111111111111111111111");
         dp.write("sseção de pirokadaaão");
         dp.write(Tachado(),"fim");
         dp.write("");

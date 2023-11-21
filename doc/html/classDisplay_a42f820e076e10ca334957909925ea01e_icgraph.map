@@ -1,9 +1,0 @@
-<map id="Display::erro_exec" name="Display::erro_exec">
-<area shape="rect" id="Node000001" title=" " alt="" coords="319,32,459,60"/>
-<area shape="rect" id="Node000002" href="$classDisplay.html#a129c2c095cb3e9ae4352d99dc34b1803" title=" " alt="" coords="160,5,271,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="303,35,271,30,272,25,304,30"/>
-<area shape="rect" id="Node000004" href="$classDisplay.html#a3cc249f036773c1c7fcda0418e128e91" title=" " alt="" coords="160,57,271,85"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="304,61,272,66,271,60,303,56"/>
-<area shape="rect" id="Node000003" href="$classDisplay.html#aab9074ba7f7c639d4525d1d825597dda" title=" " alt="" coords="5,5,112,33"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="144,22,112,22,112,17,144,17"/>
-</map>

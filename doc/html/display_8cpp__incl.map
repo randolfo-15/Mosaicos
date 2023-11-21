@@ -1,56 +1,57 @@
 <map id="src/display.cpp" name="src/display.cpp">
-<area shape="rect" id="Node000001" title="Arquivo de aplicação da classe display,shadow,space." alt="" coords="756,5,873,33"/>
-<area shape="rect" id="Node000002" href="$display__rag_8hpp.html" title="Arquivo de definição da classe display,shadow,space." alt="" coords="576,81,701,109"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="784,36,685,77,683,72,782,31"/>
-<area shape="rect" id="Node000010" href="$effect_8hpp.html" title="Arquivo de definição efeitos." alt="" coords="665,384,751,411"/>
-<area shape="poly" id="edge32_Node000001_Node000010" title=" " alt="" coords="827,32,846,60,864,99,874,142,873,164,866,186,852,203,837,213,820,220,803,234,777,268,754,305,721,371,717,368,749,303,773,265,799,230,817,216,834,208,849,199,861,183,868,163,869,143,859,100,841,63,822,35"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="527,157,601,184"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="627,111,590,147,586,144,623,107"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="676,157,764,184"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="655,107,696,144,693,148,651,111"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="788,157,852,184"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="672,107,775,148,773,153,670,112"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="5,157,80,184"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="576,103,366,122,233,138,95,159,94,154,232,132,366,116,576,98"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="104,157,176,184"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="576,106,404,127,195,159,192,160,191,155,194,154,403,122,575,100"/>
-<area shape="rect" id="Node000008" href="$colour_8hpp.html" title="Arquivo de definição Foreground Background e Efeitos." alt="" coords="482,384,571,411"/>
-<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="576,98,494,105,448,113,400,125,353,143,310,166,272,196,241,234,233,250,230,265,232,279,238,292,260,315,294,336,336,353,382,366,468,385,467,390,380,371,334,358,292,340,257,319,233,295,227,280,225,265,228,248,236,231,268,192,307,162,351,138,398,120,446,108,494,100,576,93"/>
-<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="644,108,704,368,699,369,639,110"/>
-<area shape="rect" id="Node000013" href="$theme_8hpp.html" title="Arquivo de definição de temas das janelas." alt="" coords="412,157,503,184"/>
-<area shape="poly" id="edge13_Node000002_Node000013" title=" " alt="" coords="607,112,504,153,502,148,605,107"/>
-<area shape="rect" id="Node000020" href="$directions__rag_8hpp.html" title="Arquivo de definição da classe Directions" alt="" coords="984,308,1125,336"/>
-<area shape="poly" id="edge25_Node000002_Node000020" title=" " alt="" coords="702,99,793,117,842,133,889,154,936,186,978,224,1038,294,1034,297,974,228,933,190,887,159,840,138,792,122,701,105"/>
-<area shape="rect" id="Node000021" href="$clear__rag_8hpp.html" title="Arquivo de definição da classe Directions" alt="" coords="813,232,923,260"/>
-<area shape="poly" id="edge27_Node000002_Node000021" title=" " alt="" coords="702,102,798,122,839,137,866,155,874,169,878,186,877,217,872,217,873,186,869,171,862,158,837,142,796,127,701,107"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="740,459,798,487"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="571,409,726,456,724,461,569,414"/>
-<area shape="poly" id="edge10_Node000010_Node000009" title=" " alt="" coords="721,410,751,446,747,449,717,414"/>
-<area shape="rect" id="Node000011" title=" " alt="" coords="822,459,884,487"/>
-<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="735,410,815,450,813,454,733,414"/>
-<area shape="rect" id="Node000012" title=" " alt="" coords="631,459,715,487"/>
-<area shape="poly" id="edge12_Node000010_Node000012" title=" " alt="" coords="704,413,688,446,683,444,699,411"/>
-<area shape="rect" id="Node000014" href="$foreground_8hpp.html" title="Arquivo de definição Foreground." alt="" coords="250,232,371,260"/>
-<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="432,187,351,228,349,223,430,182"/>
-<area shape="rect" id="Node000018" href="$background_8hpp.html" title="Arquivo de definição Background." alt="" coords="395,232,520,260"/>
-<area shape="poly" id="edge22_Node000013_Node000018" title=" " alt="" coords="460,185,460,217,455,217,455,185"/>
-<area shape="rect" id="Node000019" title=" " alt="" coords="544,232,653,260"/>
-<area shape="poly" id="edge24_Node000013_Node000019" title=" " alt="" coords="484,183,561,222,559,227,481,187"/>
-<area shape="rect" id="Node000015" href="$ground_8hpp.html" title="Arquivo de definição ground." alt="" coords="479,308,574,336"/>
-<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="350,258,475,300,473,305,348,263"/>
-<area shape="poly" id="edge20_Node000015_Node000008" title=" " alt="" coords="529,336,529,368,524,368,524,336"/>
-<area shape="poly" id="edge21_Node000015_Node000010" title=" " alt="" coords="560,334,663,375,661,380,558,339"/>
-<area shape="rect" id="Node000016" href="$str_8hpp.html" title="Arquivo de definição do modelo de string usado." alt="" coords="843,384,909,411"/>
-<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="575,330,828,383,827,389,573,336"/>
-<area shape="poly" id="edge17_Node000016_Node000009" title=" " alt="" coords="858,414,802,453,799,448,855,410"/>
-<area shape="poly" id="edge18_Node000016_Node000011" title=" " alt="" coords="874,413,864,445,859,444,869,411"/>
-<area shape="rect" id="Node000017" title=" " alt="" coords="909,459,984,487"/>
-<area shape="poly" id="edge19_Node000016_Node000017" title=" " alt="" coords="890,410,926,446,922,450,887,414"/>
-<area shape="poly" id="edge23_Node000018_Node000015" title=" " alt="" coords="471,259,506,295,502,298,468,262"/>
-<area shape="poly" id="edge26_Node000020_Node000016" title=" " alt="" coords="1024,339,923,380,921,375,1022,334"/>
-<area shape="poly" id="edge28_Node000021_Node000009" title=" " alt="" coords="874,260,878,295,878,316,873,337,865,352,856,363,834,385,788,448,784,445,830,382,852,359,861,350,868,335,872,315,873,295,868,261"/>
-<area shape="poly" id="edge29_Node000021_Node000017" title=" " alt="" coords="883,259,901,280,917,307,930,343,939,380,948,443,942,444,934,380,925,344,912,309,896,283,879,262"/>
-<area shape="poly" id="edge31_Node000021_Node000020" title=" " alt="" coords="902,258,1008,300,1007,305,900,263"/>
-<area shape="rect" id="Node000022" title=" " alt="" coords="779,308,858,336"/>
-<area shape="poly" id="edge30_Node000021_Node000022" title=" " alt="" coords="861,262,838,296,834,293,857,259"/>
+<area shape="rect" id="Node000001" title="Arquivo de aplicação da classe display,shadow,space." alt="" coords="163,5,280,33"/>
+<area shape="rect" id="Node000002" href="$directions__rag_8hpp.html" title="Arquivo de definição da classe Directions" alt="" coords="520,232,661,260"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="225,33,229,64,240,105,258,147,271,166,287,182,366,201,505,227,504,233,365,207,284,187,267,169,254,150,235,107,224,65,220,34"/>
+<area shape="rect" id="Node000007" href="$display__rag_8hpp.html" title="Arquivo de definição da classe display,shadow,space." alt="" coords="389,81,513,109"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="263,31,396,73,394,78,262,36"/>
+<area shape="rect" id="Node000014" href="$effect_8hpp.html" title="Arquivo de definição efeitos." alt="" coords="285,384,371,411"/>
+<area shape="poly" id="edge33_Node000001_Node000014" title=" " alt="" coords="165,36,113,54,62,81,41,99,23,119,12,143,8,169,8,247,10,268,15,285,35,316,66,341,103,359,145,373,189,383,269,392,269,397,188,388,144,378,101,364,63,345,31,320,10,288,5,269,3,248,3,169,7,141,19,117,37,95,59,77,111,49,163,31"/>
+<area shape="rect" id="Node000003" href="$str_8hpp.html" title="Arquivo de definição do modelo de string usado." alt="" coords="441,384,506,411"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="583,262,495,373,491,370,579,259"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="491,459,549,487"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="484,410,506,445,501,448,479,413"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="396,459,458,487"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="467,413,445,448,441,445,463,410"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="665,459,740,487"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="507,407,651,453,649,458,505,412"/>
+<area shape="poly" id="edge27_Node000007_Node000002" title=" " alt="" coords="389,111,347,123,312,139,300,149,293,159,293,170,299,182,321,190,373,202,505,227,504,232,372,207,320,195,296,186,288,171,288,158,296,145,309,135,345,118,387,106"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="310,157,383,184"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="434,111,379,150,376,146,431,107"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="407,157,494,184"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="453,109,453,141,448,141,448,109"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="519,157,583,184"/>
+<area shape="poly" id="edge9_Node000007_Node000010" title=" " alt="" coords="470,107,522,145,519,150,467,111"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="607,157,681,184"/>
+<area shape="poly" id="edge10_Node000007_Node000011" title=" " alt="" coords="486,107,597,148,595,153,484,112"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="705,157,778,184"/>
+<area shape="poly" id="edge11_Node000007_Node000012" title=" " alt="" coords="504,107,691,153,689,158,503,112"/>
+<area shape="rect" id="Node000013" href="$colour_8hpp.html" title="Arquivo de definição Foreground Background e Efeitos." alt="" coords="531,384,619,411"/>
+<area shape="poly" id="edge12_Node000007_Node000013" title=" " alt="" coords="514,95,589,101,672,111,745,128,773,140,791,155,802,171,808,188,809,205,806,222,789,254,761,285,727,313,689,339,618,379,615,374,686,335,723,309,757,281,784,251,801,220,804,204,803,189,797,174,787,158,770,145,743,133,671,116,589,106,513,101"/>
+<area shape="poly" id="edge14_Node000007_Node000014" title=" " alt="" coords="388,100,306,104,214,114,133,131,103,143,83,158,68,183,64,207,70,231,84,259,101,283,121,304,170,338,222,363,271,380,269,385,220,368,167,343,118,308,97,286,79,261,65,233,59,207,63,181,79,155,100,139,131,126,213,108,305,98,388,94"/>
+<area shape="rect" id="Node000016" href="$theme_8hpp.html" title="Arquivo de definição de temas das janelas." alt="" coords="93,157,184,184"/>
+<area shape="poly" id="edge18_Node000007_Node000016" title=" " alt="" coords="395,112,200,158,199,152,394,107"/>
+<area shape="rect" id="Node000021" href="$clear__rag_8hpp.html" title="Arquivo de definição da classe Directions" alt="" coords="852,157,961,184"/>
+<area shape="poly" id="edge28_Node000007_Node000021" title=" " alt="" coords="514,103,834,154,837,155,836,160,833,159,513,108"/>
+<area shape="poly" id="edge13_Node000013_Node000004" title=" " alt="" coords="567,413,541,448,537,445,563,410"/>
+<area shape="poly" id="edge15_Node000014_Node000004" title=" " alt="" coords="363,409,477,453,476,458,361,414"/>
+<area shape="poly" id="edge16_Node000014_Node000005" title=" " alt="" coords="347,410,399,448,396,452,344,414"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="286,459,370,487"/>
+<area shape="poly" id="edge17_Node000014_Node000015" title=" " alt="" coords="331,412,331,444,325,444,325,412"/>
+<area shape="rect" id="Node000017" href="$foreground_8hpp.html" title="Arquivo de definição Foreground." alt="" coords="243,232,363,260"/>
+<area shape="poly" id="edge19_Node000016_Node000017" title=" " alt="" coords="169,182,261,223,259,228,167,187"/>
+<area shape="rect" id="Node000019" href="$background_8hpp.html" title="Arquivo de definição Background." alt="" coords="93,232,219,260"/>
+<area shape="poly" id="edge24_Node000016_Node000019" title=" " alt="" coords="144,184,152,216,147,218,139,186"/>
+<area shape="rect" id="Node000020" title=" " alt="" coords="387,232,496,260"/>
+<area shape="poly" id="edge26_Node000016_Node000020" title=" " alt="" coords="185,180,373,226,372,231,184,186"/>
+<area shape="rect" id="Node000018" href="$ground_8hpp.html" title="Arquivo de definição ground." alt="" coords="281,308,375,336"/>
+<area shape="poly" id="edge20_Node000017_Node000018" title=" " alt="" coords="310,260,321,292,316,294,305,261"/>
+<area shape="poly" id="edge21_Node000018_Node000003" title=" " alt="" coords="355,334,435,374,433,379,353,339"/>
+<area shape="poly" id="edge22_Node000018_Node000013" title=" " alt="" coords="373,334,517,376,515,381,371,339"/>
+<area shape="poly" id="edge23_Node000018_Node000014" title=" " alt="" coords="331,336,331,368,325,368,325,336"/>
+<area shape="poly" id="edge25_Node000019_Node000018" title=" " alt="" coords="188,258,284,299,282,304,186,263"/>
+<area shape="poly" id="edge32_Node000021_Node000002" title=" " alt="" coords="852,187,663,231,661,226,851,182"/>
+<area shape="poly" id="edge29_Node000021_Node000004" title=" " alt="" coords="914,184,922,220,921,241,914,261,880,307,839,345,792,378,743,405,693,427,645,444,565,466,564,461,643,439,691,422,740,400,789,374,836,341,877,303,910,259,916,240,917,221,909,185"/>
+<area shape="poly" id="edge30_Node000021_Node000006" title=" " alt="" coords="924,183,943,204,958,231,977,282,987,326,987,347,983,368,974,390,958,413,945,425,925,434,872,450,812,462,756,469,756,464,811,457,871,445,923,430,942,420,954,410,969,387,978,367,982,347,982,327,972,284,954,233,939,207,920,187"/>
+<area shape="rect" id="Node000022" title=" " alt="" coords="820,232,900,260"/>
+<area shape="poly" id="edge31_Node000021_Node000022" title=" " alt="" coords="901,186,879,221,874,218,896,183"/>
 </map>

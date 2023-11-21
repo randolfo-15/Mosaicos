@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['w_5fdp_0',['w_dp',['../classDisplay.html#a1a551c3bc553c2176fc03ee3e180cbce',1,'Display']]]
+  ['x_0',['x',['../classDisplay.html#ac28e56ecf7afa5d14bee4e17e46e81be',1,'Display']]]
 ];

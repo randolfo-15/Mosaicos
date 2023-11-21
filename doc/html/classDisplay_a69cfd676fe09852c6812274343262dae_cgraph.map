@@ -1,7 +1,0 @@
-<map id="Display::width" name="Display::width">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,119,33"/>
-<area shape="rect" id="Node000002" href="$classSpace.html#a1b8718ecc0abd13227c9e6cd5ab28ebf" title=" " alt="" coords="167,5,271,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,17,151,17,151,22,119,22"/>
-<area shape="rect" id="Node000003" href="$display__rag_8hpp.html#a0b454f107fed3df57a87963ce9e373e5" title=" " alt="" coords="319,5,418,33"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="272,17,303,17,303,22,272,22"/>
-</map>

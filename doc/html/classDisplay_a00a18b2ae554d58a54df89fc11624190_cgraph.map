@@ -1,0 +1,20 @@
+<map id="Display::move_buffer" name="Display::move_buffer">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,109,165,137"/>
+<area shape="rect" id="Node000002" href="$classDisplay.html#ae2f0fe8e1cb1473424b4780ce99546a2" title=" " alt="" coords="213,109,365,137"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,121,197,121,197,126,165,126"/>
+<area shape="rect" id="Node000003" href="$classTheme.html#a9c96eee9fbb56e755bb4a9055df87b7a" title="(Get) padrão para background." alt="" coords="435,5,525,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="309,107,355,76,412,43,425,37,427,42,414,48,358,81,312,111"/>
+<area shape="rect" id="Node000004" href="$structColour.html#aaa9d78c6f845863d4c2df60b31b1966a" title=" " alt="" coords="438,57,522,85"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="342,106,422,84,424,89,343,111"/>
+<area shape="rect" id="Node000005" href="$classTheme.html#a768a835053905a8322ddc8655180a702" title="(Get) padrão para foreground." alt="" coords="437,109,524,137"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="365,121,421,121,421,126,365,126"/>
+<area shape="rect" id="Node000006" href="$classDisplay.html#ad0e52097ee8d0d2ae09b70e51ec26ca6" title="Preencher espaços:" alt="" coords="434,161,527,189"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="343,135,419,156,418,161,342,140"/>
+<area shape="rect" id="Node000008" href="$classDisplay.html#a5350401b3ebcc666c1a99acd0bbcc9f5" title=" " alt="" coords="413,219,547,246"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="313,135,414,198,435,209,433,214,412,203,310,140"/>
+<area shape="rect" id="Node000007" href="$classStr.html#ad6486869a2adf20144d9df643c425876" title=" " alt="" coords="616,155,680,182"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="527,171,600,168,600,173,527,176"/>
+<area shape="rect" id="Node000009" href="$classDisplay.html#a635eb4b97ef2b16a0de5f6f2e3541e49" title=" " alt="" coords="595,231,701,258"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="548,235,580,237,580,242,548,240"/>
+<area shape="poly" id="edge9_Node000009_Node000009" title=" " alt="" coords="619,231,614,222,618,212,629,206,648,204,668,207,679,213,676,218,666,212,648,209,631,211,622,216,619,221,623,229"/>
+</map>

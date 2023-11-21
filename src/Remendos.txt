@@ -1,0 +1,8 @@
+Contava letras:
+
+Talvez seja o problema para contagem de caracter especial.
+
+int Dp::n_letter(const char* l){
+	if(!l[0]) return 0;
+	return ((l[0]!='\n')?1:0)+n_letter(l+1);
+}

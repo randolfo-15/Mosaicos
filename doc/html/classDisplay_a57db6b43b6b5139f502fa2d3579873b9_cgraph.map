@@ -1,7 +1,5 @@
 <map id="Display::dist_x" name="Display::dist_x">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,122,33"/>
-<area shape="rect" id="Node000002" href="$classSpace.html#a1b8718ecc0abd13227c9e6cd5ab28ebf" title=" " alt="" coords="170,5,274,33"/>
+<area shape="rect" id="Node000001" title="Deslocamento horizontal:" alt="" coords="5,5,122,33"/>
+<area shape="rect" id="Node000002" href="$structDirections.html#a59be9044cae925f334b715d990ee6681" title=" " alt="" coords="170,5,291,33"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,17,154,17,154,22,122,22"/>
-<area shape="rect" id="Node000003" href="$display__rag_8hpp.html#a0b454f107fed3df57a87963ce9e373e5" title=" " alt="" coords="322,5,421,33"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="275,17,306,17,306,22,275,22"/>
 </map>

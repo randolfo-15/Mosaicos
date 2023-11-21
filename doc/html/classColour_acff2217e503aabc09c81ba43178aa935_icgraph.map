@@ -1,9 +1,0 @@
-<map id="Colour::blue" name="Colour::blue">
-<area shape="rect" id="Node000001" title=" " alt="" coords="351,32,450,60"/>
-<area shape="rect" id="Node000002" href="$structGround.html#ae837409536d6f3d972216a321a61e39d" title=" " alt="" coords="196,32,303,60"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="335,49,304,49,304,43,335,43"/>
-<area shape="rect" id="Node000003" href="$structGround.html#adb5645c1dd3e5db0d546fbc3477da238" title=" " alt="" coords="15,5,138,33"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="180,38,138,31,139,26,180,33"/>
-<area shape="rect" id="Node000004" href="$structGround.html#ab18f774d4f95a4c3426a71177f28a6a9" title=" " alt="" coords="5,57,148,85"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="180,59,149,63,148,58,180,53"/>
-</map>

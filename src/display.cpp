@@ -13,114 +13,45 @@ using std::string;
 using std::cout;
 
 
-//--------------------------------------------------------
-//(Fabricação)
-//--------------------------------------------------------
+//------------------------------------------------------------------------------------------------
+// Build
+//------------------------------------------------------------------------------------------------
+Dp::Display(){}
 
-//Construtor Padrão:
-Dp::Display(){init_default();}
-
-//Construtor com tema definido:
-Dp::Display(Tm theme):tm(theme){init_default();} 
-
-//***************** Construtor externos ******************
+Dp::Display(Tm theme):tm(theme){} 
 
 //------------------------------------------------------------------------------------------------
 // Line
 //------------------------------------------------------------------------------------------------
 Line::Line(Hlg efc, string st):str(st),fg(efc){}
 
-/*
-//--------------------------------------------------------
-//(Size Terminal)
-//--------------------------------------------------------
-bool Dp::size_terminal(int size_dp){
-	
-	string term="term.txt",cmd;	
-	cmd="tput cols >"+term;
-	//system(cmd.c_str());
-	ifstream f;
-	f.open(term);
-	//if(!f) return false;
-	int size_term=0;
-	f>>size_term;
-	std::remove(term.c_str());
-//	return (size_dp<=size_term)?true:false;
-	return true;	
-}
-*/ 
-
-int Dp::size_display(){ return w+x+(2*b)+sb_side+sb_on;  }
-
-void Dp::erro_exec(string str){cout<<str<<'\n';}
-
-//--------------------------------------------------------
-//(Inicialização)
-//--------------------------------------------------------
-
-//Inicicialzar componetes comuns:
-void Dp::init_compnents(){
-	w=21;
-	x=2;
-	y=2;
-	b=2;
-}
-
-//Inicialização Padrão:
-void Dp::init_default(){ init_compnents(); }
-
-
 //------------------------------------------------------------------------------------------------
 // Write
 //------------------------------------------------------------------------------------------------
 
-void Dp::write(Hlg efc,string line){ format(line,line.size()/*n_letter(text.c_str())*/,efc); }
+void Dp::write(Hlg efc,string line){ format(line,line.size(),efc); }
 
 void Dp::write(string line){ format(line,line.size() ,Hlg() ); }
 
-
-//Configurar Texto:
 void Dp::format(string text,size_t size,Hlg efc){ write_aux_buffer(slice_text(text,size),efc); }
 
-//Definir pontos de salto de linha:
-string Dp::slice_text(string t,size_t size){
-	int n=size/w;	
-	while(n>0){
-		size_t pos=n*w;
-		
-		//Busca inicio da Palavra:
-		if((t.find(' ')!=-1)&&!corte) while(t[pos-1]!=' ')pos--;
-		
-		//Inserir '\n':	
-		if((pos>0)&&(pos<size-1)) t.insert(t.begin()+pos,'\n');
-		
-		n--;	
+string Dp::slice_text(string line,size_t size){
+	for(int n=size/w, pos=size; n>0 ; n--){
+		if((line.find(' ')!=-1)&&!corte) while(line[pos-1]!=' ') pos--;               ///< 1 	Busca inicio da Palavra:
+		if((pos>0)&&(pos<size-1)) line.insert(line.begin()+pos,'\n');            ///< 2 Inserir '\n'
 	}
-	return t;
+	return line;
 }
 
-//Gravar dados no buffer auxiliar:
-void Dp::write_aux_buffer(string text,Hlg efc){
-	text.push_back('\n');
-	std::stringstream sstr(text);
-	string line;
-	while(getline(sstr,line,'\n')){
-		update_width(line.size());
-		asst_buf.push_back(Line(efc,line));
+void Dp::write_aux_buffer(string text,Hlg efc,string line){
+	std::stringstream sstr(text);                                                                   ///< 1 Recebe o coteudo da linha.
+	while(getline(sstr,line,'\n')){                                                                     ///< 2 Busca por interrupções.
+		update_width(line.size());                                                                      ///< 3 Atualiza o tamanho do display.
+		asst_buf.push_back(Line(efc,line));                                                      ///< 4 Adiciona nova linha ao buffer aux.
 	}
 }
 
-//Atualizar Largura:
 void  Dp::update_width(int size){ if(w<size) w=size; }
-
-
-//--------------------------------------------------------
-// Count letters 
-//--------------------------------------------------------
-int Dp::n_letter(const char* l){
-	if(!l[0]) return 0;
-	return ((l[0]!='\n')?1:0)+n_letter(l+1);
-}
 
 //------------------------------------------------------------------------------------------------
 // Show
@@ -133,38 +64,33 @@ void Display::show(){
 	//}else erro_exec();
 }
 
-//--------------------------------------------------------
+//------------------------------------------------------------------------------------------------
 // Draw
-//--------------------------------------------------------
+//------------------------------------------------------------------------------------------------
 void Dp::draw(){
-	Clear_screen::total();                                          ///< Limpa o terminal.
-	move_buffer();                                                     ///< Lê o contéudo do buffer.
-	base_shading();                                                   ///< Desenha a base da sombra.
+	draw_display();                                                                 
+	if(shading) draw_shadow(main_buf.size());
 }
 
 //--------------------------------------------------------
-// Read Buffer
+// Draw Display
 //--------------------------------------------------------
-void Display::move_buffer(int i){ for(Line ln:asst_buf) format_line(i++,ln.str,ln.fg); }
+void Display::draw_display(){ for(Line ln:asst_buf) format_line(ln.str,ln.fg); }
 
 //--------------------------------------------------------
 // Format line
 //--------------------------------------------------------
-void Display::format_line(size_t i,string line,Fg fg){
+void Display::format_line(string line,Fg fg){
 	 
 	//Desenhar lado esquerdo a line:	
 	string aux=fill(b,tm.bg())+fg+line;
 	
 	//Definir N° caracter que completa janela:
-	int limit=w-line.size()+b+size_line(line.c_str())+1;
+	int limit=w-line.size()+b+size_line(line.c_str());
 	
 	//Desenhar lado direito a line
 	aux+=Clr::br()+tm.bg()+tm.fg();
 	while(limit--) aux.push_back(' ');
-		
-	// Desenha sombra lateral
-	if(sb_on) aux+=(i)?fill(sb_side,shade):!tm.bg(); 
-	
 	
 	main_buf.push_back(aux);
 }
@@ -181,8 +107,16 @@ int Dp::loop(const char *c){
 }
 
 //--------------------------------------------------------
-// Engine
+// Draw Shadow
 //--------------------------------------------------------
+void Dp::draw_shadow(int limit,int i){
+	for(;i<limit;i++) main_buf[i]+=fill(sb_side,shade);
+	main_buf.push_back(Rigth(sb_side)+fill(size(),shade));
+}
+
+//------------------------------------------------------------------------------------------------
+// Engine
+//------------------------------------------------------------------------------------------------
 
 void Dp::engine(){
 	cout<<down;
@@ -194,22 +128,13 @@ void Dp::engine(){
 				<<Clr::br()<<'\n';
 }
 
-
-//--------------------------------------------------------
-// Base shadow
-//--------------------------------------------------------
-void Display::base_shading(){	
-	//if(sb_on) main_buf.push_back(Rigth(sb_side)+sb.shade(w_dp.spc_int+2*b_dp.spc_int+1));
-	if(sb_on) main_buf.push_back(Rigth(sb_side)+fill(w+2*b+1,shade));
-	main_buf.push_back(Clr::br());
-}
-
 string Dp::fill(int count,Bg bg){
 	string str=bg.str();
 	while(count--) str+=" ";
 	return str;
 }
 
+int Dp::size(){ return w+b+sb_side;  }
 
 /*
 void Dp::show(int grupo,int x,int y)
@@ -293,11 +218,7 @@ void Dp::show(int grupo,int x,int y)
 
 
 //Limpar janela, e posicioanr display:
-void Display::update(){
-	
-	//(sys)?system("cls"):(system("clear"));
-	//cout<<y_dp.spc_str;	
-}
+void Display::update(){ cout<<Clear_screen::total()<<down;}
 
 //--------------------------------------------------------
 //(Configurações)
@@ -347,11 +268,9 @@ int Dp::spacing(int n){
 
 //Modo de corte:
 void Display::distribution(slice_mode x){corte=x;}
-/*
-int Display::n_lines(){
-	return buffer_aux.size()+((sb.start)?1:0);
-}
-*/
+
+int Display::n_lines(){ return asst_buf.size()+shading; }
+
 void Display::clear(){asst_buf.clear();}
 
 void Display::insert(int pos,Hlg efc,string t){
@@ -367,9 +286,8 @@ void Display::insert(int pos,Hlg efc,string t){
 	}
 }
 
-void Display::remove(int pos){
-	asst_buf.erase(asst_buf.begin()+pos);
-}
+void Display::remove(int pos){ asst_buf.erase(asst_buf.begin()+pos); }
+
 //-------------------------------------------------------------
 //(Aritimética de displays)
 //-------------------------------------------------------------
@@ -465,3 +383,22 @@ void Dp::read(Dp dp,vector<string> *pg,vector<string> *rp,int sl){
 		}else dp.update();
 }
 */
+/*
+//--------------------------------------------------------
+//(Size Terminal)
+//--------------------------------------------------------
+bool Dp::size_terminal(int size_dp){
+	
+	string term="term.txt",cmd;	
+	cmd="tput cols >"+term;
+	//system(cmd.c_str());
+	ifstream f;
+	f.open(term);
+	//if(!f) return false;
+	int size_term=0;
+	f>>size_term;
+	std::remove(term.c_str());
+//	return (size_dp<=size_term)?true:false;
+	return true;	
+}
+*/ 

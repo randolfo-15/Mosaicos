@@ -1,7 +1,0 @@
-<map id="Printables" name="Printables">
-<area shape="rect" id="Node000001" title="Produzir textos coloridos, e que suportem efeitos." alt="" coords="5,81,92,109"/>
-<area shape="rect" id="Node000003" href="$classDisplay.html" title=" " alt="" coords="13,157,84,184"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="51,124,51,156,46,156,46,124"/>
-<area shape="rect" id="Node000002" href="$classStr.html" title=" " alt="" coords="29,5,68,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="51,49,51,81,46,81,46,49"/>
-</map>

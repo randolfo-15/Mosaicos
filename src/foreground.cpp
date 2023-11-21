@@ -14,9 +14,9 @@ const char
 //------------------------------------------------------------------------------------------------
 // Build
 //------------------------------------------------------------------------------------------------
-Fg::Foreground():Gd(Cls::Green(),Fg::PLAN,CLSS){}
+Fg::Foreground():Gd(Cls::White(),Fg::PLAN,CLSS){}
 
-Fg::Foreground(Highlight efc):Gd(Cls::Green(),Fg::PLAN,CLSS){*this=efc;}
+Fg::Foreground(Highlight efc):Gd(Cls::White(),Fg::PLAN,CLSS){*this=efc;}
 
 Fg::Foreground(Colour new_clr):Ground(new_clr,Fg::PLAN,CLSS){}
 

@@ -20,16 +20,21 @@ Dp::Display(Tm theme):tm(theme){}
 //------------------------------------------------------------------------------------------------
 // Write
 //------------------------------------------------------------------------------------------------
+void Dp::write(string str){ format(str,""); }
 
-void Dp::write(Fg  fg,string str){ format(str,fg.str(),str.size()); }
+void Dp::write(Fg  fg,string str){ format(str,fg.str()); }
 
-void Dp::write(Bg bg,string str){ format(str,bg.str(),str.size()); }
+void Dp::write(Bg bg,string str){ format(str,bg.str()); }
 
-void Dp::write(Bg bg,Fg fg,string str){ format(str,bg.str()+fg.str(),str.size()); }
+void Dp::write(Bg bg,Fg fg,string str){ format(str,bg.str()+fg.str()); }
 
-void Dp::write(string str){ format(str,"",str.size()); }
+void Dp::write(Clr clr,string str){ format(str,Bg(clr).str()); }
 
-void Dp::format(string str,string efc,size_t size){ write_aux_buffer(slice_text(str,size),efc); }
+void Dp:: write(Hlg efc,string str){ format(str,Fg(efc).str()); }
+
+void Dp::write(Clr  clr,Hlg efc,string str){ format(str,Bg(clr).str()+Fg(efc).str()); }
+
+void Dp::format(string str,string efc){ write_aux_buffer(slice_text(str,str.size()),efc); }
 
 string Dp::slice_text(string line,size_t size){
 	for(int n=size/w, pos=size; n>0 ; n--){
@@ -43,7 +48,7 @@ void Dp::write_aux_buffer(string text,string efc,string line){
 	std::stringstream sstr(text);                                                                   ///< 1 Recebe o coteudo da linha.
 	while(getline(sstr,line,'\n')){                                                                     ///< 2 Busca por interrupções.
 		update_width(line.size());                                                                      ///< 3 Atualiza o tamanho do display.
-		asst_buf.push_back({line,efc});                                                           ///< 4 Adiciona nova linha ao buffer aux.
+		asst_buf.push_back({line,efc});                                                            ///< 4 Adiciona nova linha ao buffer aux.
 	}
 }
 
@@ -53,11 +58,8 @@ void  Dp::update_width(int size){ if(w<size) w=size; }
 // Show
 //------------------------------------------------------------------------------------------------
 void Display::show(){
-	
-	//if(size_terminal(size_display())){
-		draw();   
-		engine(); 
-	//}else erro_exec();
+	draw();   
+	engine(); 
 }
 
 //------------------------------------------------------------------------------------------------
@@ -71,18 +73,18 @@ void Dp::draw(){
 //--------------------------------------------------------
 // Draw Display
 //--------------------------------------------------------
-void Display::draw_display(){ for(Line ln:asst_buf) format_line(ln.str,ln.efc); }
+void Display::draw_display(){ for(Line ln:asst_buf) draw_line(ln.str,ln.efc,tm.bg()); }
 
 //--------------------------------------------------------
 // Format line
 //--------------------------------------------------------
-void Display::format_line(string line,string efc){
+void Display::draw_line(string line,string efc,Bg bg){
 	 
 	//Desenhar lado esquerdo a line:	
-	string aux=fill(b,tm.bg())+efc+line;
+	string aux=fill(b,bg)+efc+line;
 	
 	// Encerra efeitos
-	aux+=Clr::br()+tm();
+	aux+=Clr::br()+bg+tm.fg();
 	
 	//Definir N° caracter que completa janela:
 	int limit=w-line.size()+b+size_line(line.c_str());
@@ -218,13 +220,15 @@ void Dp::show(int grupo,int x,int y)
 //Limpar janela, e posicioanr display:
 void Display::update(){ cout<<Clear_screen::total()<<down;}
 
+void Dp::shadow(bool value){shading=value;}
+
 //--------------------------------------------------------
 //(Configurações)
 //--------------------------------------------------------
 
 //*********************** Display ************************
 /*
-void Dp::shadow(bool x){sb.start=x;}
+
 int  Dp::side_shadow(int x){
 	return sb_side=(x>0&&x<w_dp.spc_int)?(x):sb_side;
 }

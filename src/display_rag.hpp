@@ -43,7 +43,11 @@ class Display{
 		std::string efc;
 	};
 	
-	Theme tm;                                                        ///< Tema do display.
+	Theme tm={                                                    ///< Tema do display
+		Bg(Cls::Red()),
+		Fg(Cls::White())
+	};       
+	
 	Bg shade=Colour(110,110,110);                    ///< Cor da sombra.
 	
 	std::vector<Line> asst_buf;	                        ///< Buffer de tratamento de strings.
@@ -74,20 +78,22 @@ class Display{
 // Write
 //-------------------------------------------------------------
 public:
-	void write(std::string);                                                        ///< Mode de escrita padrão
-	void write(Foreground,std::string);                                  ///< foreground custumizado.
-	void write(Background,std::string);                                 ///< background custumizado.
-	void write(Background,Foreground,std::string);           ///< Com foreground e background custumizado.
-	                                                        
+	void write(std::string);                                                                    ///< Mode de escrita padrão
+	void write(Foreground,std::string);                                              ///< foreground custumizado.
+	void write(Background,std::string);                                             ///< background custumizado.
+	void write(Background,Foreground,std::string);                       ///< Com foreground e background custumizado.
+	void write(Colour,std::string);                                                        ///< Com uma cor de letra especifica
+	void write(Highlight,std::string);                                                   ///< Com um efeito de letra especifico.
+	void write(Colour,Highlight,std::string);                                      ///< Com com uma cor e efeito de letra especifica.
 	
 private:
-	void format(std::string,std::string,size_t);                      ///< Dividir texto e salvar linhas.
+	void format(std::string str,std::string efc);                                  ///< Dividir texto e salvar linhas.
 		
-	std::string slice_text(std::string,size_t);                           ///<  Fatiar bloco de texto.
+	std::string slice_text(std::string,size_t);                                        ///<  Fatiar bloco de texto.
 		
 	void write_aux_buffer(std::string,std::string,std::string="");   ///< Gravar em memoria auxiliar.
 
-	void   update_width(int);                                                       ///< Atualizar largura do display.
+	void   update_width(int);                                                                      ///< Atualizar largura do display.
 	
 //-------------------------------------------------------------
 // Show
@@ -102,7 +108,7 @@ private:
 	int size_line(const char *str);   
 
 	//2 → Preenchaer linha
-	void   format_line(std::string,std::string);     
+	void   draw_line(std::string,std::string,Bg);     
 	
 	void draw_shadow(int,int=1);
 	
@@ -134,7 +140,8 @@ public:
 	
 	//Configurações:
 	/*        Display          */
-	void shadow(bool x=true);
+	void shadow(bool);
+	
 	int side_shadow(int x=-1);
 
 	/*        Espaciais        */	

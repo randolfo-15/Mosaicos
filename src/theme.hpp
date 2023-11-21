@@ -16,11 +16,11 @@
 class Theme{
 	friend Display;
 	protected:
-		friend std::ostream& operator<<(std::ostream&,Theme);
-		std::string operator()();
-		
 		std::vector<Fg>  fgs;
 		std::vector<Bg> bgs;
+		
+		friend std::ostream& operator<<(std::ostream&,Theme);
+		std::string operator()();
 		
 	public:		
 		/// Construtor padrão.

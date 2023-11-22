@@ -15,9 +15,15 @@ int main(){
         Tm tm={Bg(Blue()+150),Fg(Underline())};
         
         Dp dp;
-        dp.show(Fg(Reverse()),"Olá mundo!!!");
-        dp.show(Bg(Magenta()),"Randolfo!!!");
-        dp.show(Bg(Yellow()),Fg(Blink()),"pedro papel tesoura!!!");
+        dp.title("Title...");
+        dp.write("text ......");
+        dp.write("text ......");
+        dp.subtitle("subtitle");
+        dp.write("Outro objeto");
+        dp.write("text ......");
+        dp.write("text ......");
+        dp.write("end ......");
+        dp.show();
         
         return 0;
 }

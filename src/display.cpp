@@ -17,6 +17,7 @@ const char Dp::BOLD[]="\33[1m";
 Dp::Display(){}
 
 Dp::Display(Tm theme):tm(theme){} 
+
 //------------------------------------------------------------------------------------------------
 // Headings and subheadings
 //------------------------------------------------------------------------------------------------
@@ -70,24 +71,9 @@ void Dp::write_aux_buffer(string text,string efc,int th,string line){
 	}
 }
 
-void  Dp::update_width(int size){ if(w<size) w=size; }
-
 //------------------------------------------------------------------------------------------------
 // Show
 //------------------------------------------------------------------------------------------------
-void Dp::print(prints option,Bg* bg,Fg* fg,std::string str){
-	switch (option) {
-		case STR: write(str);                break;
-		case BKG: write(*bg,str);       break;
-		case FRG: write(*fg,str);         break;
-		case BFG: write(*bg,*fg,str); break;
-		case DFT:;
-	}
-	draw_display();
-	engine();
-	clear_memory();
-}
-
 void Dp::show(){print(DFT,&tm.bgs[DFT],&tm.fgs[DFT]); }
 
 void Dp::show(string str){ print(STR,&tm.bgs[DFT],&tm.fgs[DFT],str); }
@@ -98,34 +84,89 @@ void Dp::show(Bg bg,string str){ print(BKG,&bg,&tm.fgs[DFT],str); }
 
 void Dp::show(Bg bg,Fg fg,string str){ print(BFG,&bg,&fg,str); }
 
+void Dp::print(prints option,Bg* bg,Fg* fg,std::string str){
+	switch (option) {
+		case STR:write(str);                action();  break;
+		case BKG:write(*bg,str);       action();  break;
+		case FRG:write(*fg,str);         action();  break;
+		case BFG:write(*bg,*fg,str); action();  break;
+		case DFT:action();
+	}
+}
+
+void Display::update(){ cout<<Clear_screen::total()<<down;}
+
+//------------------------------------------------------------------------------------------------
+// Menu action
+//------------------------------------------------------------------------------------------------
+void Dp::action(){
+	draw_display();                           ///< 1.
+	engine(main_buf.size());           ///< 2.
+	clear();                                          ///< 3.
+}
+
 //------------------------------------------------------------------------------------------------
 // Draw Display
 //------------------------------------------------------------------------------------------------
 void Display::draw_display(){ for(Line ln:asst_buf) draw_line(ln.str,ln.efc,tm.bg(ln.theme)); }
 
-//--------------------------------------------------------
-// Format line
-//--------------------------------------------------------
 void Display::draw_line(string line,string efc,Bg bg){
-	 
-	//Desenhar lado esquerdo a line:	
-	string aux=fill(b,bg)+efc+line;
-	
-	// Encerra efeitos
-	aux+=Clr::br()+bg+tm.fg();
-	
-	//Definir N° caracter que completa janela:
-	int limit=w-line.size()+b+size_line(line.c_str());
-	
-	//Desenhar lado direito a line
-	while(limit--) aux.push_back(' ');
-	
-	main_buf.push_back(aux);
+	string aux=fill(b,bg)+efc+line;                                            ///< Desenhar lado esquerdo a line.
+	aux+=Clr::br()+bg+tm.fg();                                                  ///< Encerra efeitos
+	int limit=w-line.size()+b+size_line(line.c_str());                ///< Definir N° caracter que completa janela.
+	while(limit--) aux.push_back(' ');                                       ///< Desenhar lado direito a line
+	main_buf.push_back(aux);                                                  ///< Salva o contéudo 
 }
 
-//--------------------------------------------------------
-// Size line
-//--------------------------------------------------------
+string Dp::fill(int count,Bg bg){
+	string str=bg.str();
+	while(count--) str+=' ';
+	return str;
+}
+
+//------------------------------------------------------------------------------------------------
+// Engene
+//------------------------------------------------------------------------------------------------
+void Dp::engine(int size,int i){
+	cout<<down;
+	/*
+	 * for(string& line:main_buf) 
+		cout<<rigth
+				<<tm()
+				<<line
+				<<tm()
+				<<Clr::br()<<'\n';
+    */
+	for(;i<size-1;i++)
+		cout<<rigth
+			    <<tm()
+				<<main_buf[i]
+				<<tm()
+				<<Clr::br()<<'\n';
+			cout<<rigth
+			    <<tm()
+				<<main_buf[i]
+				<<tm()
+				<<Clr::br();
+}
+
+//------------------------------------------------------------------------------------------------
+// Memory
+//------------------------------------------------------------------------------------------------
+void Dp::clear(){
+	asst_buf.resize(0);
+	main_buf.resize(0);
+}
+
+int Display::n_dps(){return dps.size();}
+
+int Display::n_lines(){ return asst_buf.size(); }
+
+//------------------------------------------------------------------------------------------------
+// Space
+//------------------------------------------------------------------------------------------------
+void  Dp::update_width(int size){ if(w<size) w=size; }
+
 int Dp::size_line(const char *vet){ return loop(vet)/2; }
 
 int Dp::loop(const char *c){
@@ -134,34 +175,24 @@ int Dp::loop(const char *c){
 	else return 0+loop(c+1);
 }
 
+///\warning Precisamos descobrir o tamanho do terminal e redesenhar janela.
+void Dp::width(int n){if(n>=0) w=n; } 
 
-//------------------------------------------------------------------------------------------------
-// Engine
-//------------------------------------------------------------------------------------------------
+int Dp::width(){ return w+b;}
 
-void Dp::engine(){
-	cout<<down;
-	for(string line:main_buf) 
-		cout<<rigth
-				<<tm
-			    <<line
-			    <<tm
-				<<Clr::br()<<'\n';
-}
+void Dp::horizontal(int n){ x=n;}
 
+int Dp::horizontal(){return x; }
 
-string Dp::fill(int count,Bg bg,string ctr){
-	string str=bg.str();
-	while(count--) str+=ctr;
-	return str;
-}
+void Dp::vertical(int n){ y=n;}
 
-int Dp::size(){ return w+b;  }
+int Dp::vertical(){return y;}
 
-void Dp::clear_memory(){
-	asst_buf.clear();
-	main_buf.clear();
-}
+void Dp::edge(int n){ b=n; }
+
+int Dp::edge(){ return b;}
+
+///\warning
 
 /*
 void Dp::show(int grupo,int x,int y)
@@ -240,67 +271,9 @@ void Dp::show(int grupo,int x,int y)
 }
 */
 
-//Insere sombreamento inferior:
-
-
-
-//Limpar janela, e posicioanr display:
-void Display::update(){ cout<<Clear_screen::total()<<down;}
-
-
-
-//--------------------------------------------------------
-//(Configurações)
-//--------------------------------------------------------
-
-//*********************** Display ************************
-/*
-
-int  Dp::side_shadow(int x){
-	return sb_side=(x>0&&x<w_dp.spc_int)?(x):sb_side;
-}
-
-void Dp::set_color_shadow(string cor){
-	this->sb.cor=cor;
-}
-*/
-//********************* Espaciasis ***********************
-
-//Criar linhas vazais no display
-void Dp::skip_line(int n){while(n-->0) write(Efc::Bold()," ");}
-
-//Largura do display:
-int Dp::width(int n){
-	if(n>=0) w=n;
-	return w;
-}
-
-//Distanciamneto horizontal:
-int Dp::dist_x(int n){
-	if(n>=0) rigth=n;
-	return rigth.size();
-}
-
-//Distanciamento vertical:
-int Dp::dist_y(int n){
-	if(n>=0) down=n;
-	return down.size();
-}
-
-//Espacamento do texto:
-int Dp::spacing(int n){
-	if(n>=0) b=n;
-	return b;
-}
-
 //*********************** Texto *************************
-
 //Modo de corte:
 void Display::distribution(slice_mode x){corte=x;}
-
-int Display::n_lines(){ return asst_buf.size(); }
-
-void Display::clear(){asst_buf.clear();}
 
 void Display::insert(int pos,Hlg efc,string t){
 	
@@ -318,7 +291,7 @@ void Display::insert(int pos,Hlg efc,string t){
 void Display::remove(int pos){ asst_buf.erase(asst_buf.begin()+pos); }
 
 //-------------------------------------------------------------
-//(Aritimética de displays)
+// Operator
 //-------------------------------------------------------------
 
 //Autosomar:
@@ -339,11 +312,6 @@ Dp* Display::operator>>(Dp& dp){
 	*this-=dp;
 	return this;
 }
-
-//Número de displays:
-int Display::n_dps(){return dps.size();}
-
-
 
 void Display::operator*=(int n){
 	while(n-->0) dps.push_back(this);	

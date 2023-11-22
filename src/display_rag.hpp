@@ -27,24 +27,10 @@ using slice_mode=enum slice_mode;
 
 class Display{
 //------------------------------------------------------------------------------------------------
-// Fields
-//------------------------------------------------------------------------------------------------
-
-//-------------------------------------------------------------
-// Shows
-//-------------------------------------------------------------
-enum prints{
-	DFT,                                                            ///< Exibe contéudo do buffer.
-	STR,                                                            ///< Exibe uma string
-	BKG,                                                            ///< Exibir com background modificado.
-	FRG,                                                            ///< Exibir com foreground modificado.
-	BFG                                                             ///< Exibir foreground  e background modificado.
-};
-	
-//-------------------------------------------------------------
-// Text
-//-------------------------------------------------------------	
-	Theme tm=Theme(                                    ///< Tema do display                                     
+// Build
+//------------------------------------------------------------------------------------------------	
+private:
+		Theme tm=Theme(                                    ///< Tema do display                                     
 		{
 			Cls::Red(),                                       ///< Fundo principal 
 		    Cls::Blue(),                                      ///< Fundo para titulos 
@@ -54,34 +40,15 @@ enum prints{
 			Cls::White(),                                    ///< Foreground padrão
 		}
 	);
+		
+public:	
+	Display();
+	Display(Theme);
 	
-	struct Line{                                                ///< Define a custumização de uma linha
-		std::string str;                                       ///< Conteudo da linha 
-		std::string efc;                                       ///< efeito da linha
-		int theme;                                                ///< Tipo de linha(Titulo,subtitulos,normal)
-	};
-	
-	
-	enum Titles{
-		NORMAL=0,                                               /// Background padrão
-		TITLE=1,                                                      /// Background para títulos
-		SUBTITLES=2                                              /// Background de subtitulos           
-	};
-	
-	slice_mode corte=SMART;                            ///< Modo de organização de texto.
-	
-	static const char BOLD[];                               ///< String do comando bold
-//-------------------------------------------------------------
-// Buffer
-//-------------------------------------------------------------		
-
-	std::vector<Line> asst_buf;	                        ///< Buffer de tratamento de strings.
-	std::vector<std::string> main_buf;             ///< Buffer de exibição.
-	std::vector<Display*> dps;                            ///< Buffer para multplos display.
-
-//-------------------------------------------------------------
+//------------------------------------------------------------------------------------------------
 // Space
-//-------------------------------------------------------------	
+//------------------------------------------------------------------------------------------------	
+private:
 	Rigth rigth=2;                                                     ///< Deslocamento para direita.
 	Down down=2;                                                   ///< Deslocamento para baixo.
 	
@@ -90,65 +57,55 @@ enum prints{
 		x=2,                                                                   ///< Distanciamento horizontal.
 		y=2,                                                                   ///< Distanciamento vertical.
 		b=2;                                                                   ///< Espaçamento texto.
+		
+public:	
+	void horizontal(int x);
+	int horizontal();
+		
+	void vertical(int y);
+	int vertical();
+	
+	void edge(int);
+	int edge();
+	
+	int width();
+	void width(int);
 	
 //------------------------------------------------------------------------------------------------
-// Methods
-//------------------------------------------------------------------------------------------------		
-		
-//-------------------------------------------------------------
 // Write
-//-------------------------------------------------------------
+//------------------------------------------------------------------------------------------------
+private:
+	static const char BOLD[];                                                                     ///< String do comando bold
+	struct Line{                                                                                            ///< Define a custumização de uma linha
+		std::string str;                                                                                   ///< Conteudo da linha 
+		std::string efc;                                                                                  ///< efeito da linha
+		int theme;                                                                                           ///< Tipo de linha(Titulo,subtitulos,normal)
+	};
+	
+	slice_mode corte=SMART;                                                                   ///< Modo de organização de texto.
+	
+	void format(std::string str,std::string efc,int);                               ///< Dividir texto e salvar linhas.
+		
+	std::string slice_text(std::string,size_t);                                            ///<  Fatiar bloco de texto.
+		
+	void write_aux_buffer(std::string,std::string,int,std::string=""); ///< Gravar em memoria auxiliar.
+
+	void   update_width(int);                                                                        ///< Atualizar largura do display.
+
 public:
 	void write(std::string);                                                                           ///< Mode de escrita padrão
 	void write(Foreground,std::string);                                                     ///< foreground custumizado.
 	void write(Background,std::string);                                                    ///< background custumizado.
 	void write(Background,Foreground,std::string);                              ///< Com foreground e background custumizado.
-	void write(Colour,std::string);                                                               ///< Com uma cor de letra especifica
-	void write(Highlight,std::string);                                                          ///< Com um efeito de letra especifico.
-	void write(Colour,Highlight,std::string);                                              ///< Com com uma cor e efeito de letra especifica.
-	
-private:
-	void format(std::string str,std::string efc,int);                                   ///< Dividir texto e salvar linhas.
-		
-	std::string slice_text(std::string,size_t);                                               ///<  Fatiar bloco de texto.
-		
-	void write_aux_buffer(std::string,std::string,int,std::string="");    ///< Gravar em memoria auxiliar.
+	void write(Colour,std::string);                                                              ///< Com uma cor de letra especifica
+	void write(Highlight,std::string);                                                         ///< Com um efeito de letra especifico.
+	void write(Colour,Highlight,std::string);                                            ///< Com com uma cor e efeito de letra especifica.
 
-	void   update_width(int);                                                                            ///< Atualizar largura do display.
-	
 //-------------------------------------------------------------
-// Show
-//-------------------------------------------------------------	
-	void draw_display();                   
-		
-	//Contar caracter especial:       
-	int loop(const char *c);          
-                                                        
-	int size_line(const char *str);   
-
-	//2 → Preenchaer linha
-	void   draw_line(std::string,std::string,Bg);     
-	
-	
-	
-	//Checar tamanho do terminal:
-	bool size_terminal(int);
-	
-	/// Preencher espaços:	
-	std::string fill(int,Bg,std::string=" ");
-		
-	/// Motor de animação da janelas: 
-	void engine();
-	
-	void print(prints,Bg*,Fg*,std::string="");
-	
-//------------------------------------------------------------------------------------------------
 // Headings and subheadings
-//------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------
+private:
 	bool check_bg(int);
-	void clear_memory();
-	
-	
 public:
 	void title(std::string,int=TITLE);
 	void title(Foreground,std::string,int=TITLE);
@@ -156,104 +113,89 @@ public:
 	
 	void subtitle(std::string,int=SUBTITLES);
 	void subtitle(Foreground,std::string,int=SUBTITLES);
-	void subtitle(Highlight,std::string,int=SUBTITLES);
+	void subtitle(Highlight,std::string,int=SUBTITLES);	
 	
-	//Fabricação:	
-	Display();
-	Display(Theme);
+	///static void read(Dp,std::vector<string>*questions,std::vector<string>*answers, int n=0);    \warning
 	
-	//Exposição:	
-	//0 → Mostrar display:
+	void distribution(slice_mode);                                                                                                            ///< \warning
+		
+	void insert(int pos,Highlight,std::string text);                                                                                 ///< \warning
+
+	void remove(int);	                                                                                                                                  ///< \warning
+//------------------------------------------------------------------------------------------------
+// Memory
+//------------------------------------------------------------------------------------------------		
+private:
+	std::vector<Line> asst_buf;	                        ///< Buffer de tratamento de strings.
+	std::vector<std::string> main_buf;             ///< Buffer de exibição.
+	std::vector<Display*> dps;                            ///< Buffer para multplos display.
+	
+public:
+	int n_lines();
+	int n_dps();
+	void clear();
+
+//------------------------------------------------------------------------------------------------
+// Show
+//------------------------------------------------------------------------------------------------	
+private:
+	enum prints{
+		DFT,                                                                                             ///< Exibe contéudo do buffer.
+		STR,                                                                                             ///< Exibe uma string
+		BKG,                                                                                            ///< Exibir com background modificado.
+		FRG,                                                                                             ///< Exibir com foreground modificado.
+		BFG                                                                                              ///< Exibir foreground  e background modificado.
+	};
+
+	enum Titles{
+		NORMAL=0,                                                                               /// Background padrão
+		TITLE=1,                                                                                      /// Background para títulos
+		SUBTITLES=2                                                                             /// Background de subtitulos           
+	};
+
+	void draw_display();                   
+		
+	int loop(const char *c);                                                                  ///< Contar caracter especial:          
+                                                        
+	int size_line(const char *str);                                                                 
+
+	void   draw_line(std::string,std::string,Bg);     
+	
+	bool size_terminal(int);                                                                  ///< \warning
+	
+	std::string fill(int,Bg);                                                                    ///< Preencher espaços:
+		
+	void engine(int,int=0);                                                                    ///< Motor de animação da janelas:
+	
+	void print(prints,Bg*,Fg*,std::string="");                                   ///< Distribui os modos de exibição.
+	
+	void action();                                                                                     ///< Expoe o contéudo
+	
+public:
 	void show();                   	
 	void show(std::string);
 	void show(Foreground,std::string);
 	void show(Background,std::string);
-	void show(Background,Foreground,std::string);
-
-	/*void show(int grupo,int x,int y);*/
+	void show(Background,Foreground,std::string);	
 	
-	//Atualizar Janela:
-	void update();         
+	void update();    ///\note ????
 	
-	//Configurações:
-	/*        Display          */
-	
-	
-	int side_shadow(int x=-1);
-
-	/*        Espaciais        */	
-		
-	// → Saltar linha:
-	void skip_line(int n=1);	
-
-	///  Deslocamento horizontal:
-	int dist_x(int x=-1);  
-		
-	/// Deslocamento vertical:
-	int dist_y(int y=-1);
-
-	// → Espaçamento texto:
-	int spacing(int t=-1);
-
-	// → Largura do display:
-	int width(int w=-1);
-
-	/*       Textuais          */
-		
-	//Texto no formato justificado:
-	void distribution(slice_mode);
-		
-	//Nº de linhas:
-	int n_lines();
-
-	//Limpar display:
-	void clear();	
-		
-	//Inserir texto:
-	void insert(int pos,Highlight,std::string text);
-
-	void remove(int);
-
-//-------------------------------------------------------------
+//------------------------------------------------------------------------------------------------
 // Operations:
-//-------------------------------------------------------------
-
-	//Operação de fluso de display:
+//------------------------------------------------------------------------------------------------
+public:
 	friend Display* operator<<(Display*,Display&);
 	friend Display* operator>>(Display*,Display&);
-	
-	//Auto-somar:
 	void operator+=(Display&);
-		
-	//Auto-Subtrair
 	void operator-=(Display&);
-
 	Display* operator<<(Display&);
 	Display* operator>>(Display&);
-		
-	//Find
-	Display* operator[](int);
-
-	//Número de displays:
-	int n_dps();
-
-	//Multiplicar:
-	void operator*=(int);
-	
-	void set_color_shadow(Colour);
-
-	//Size display:
-	int size();
-
-	//Ler dados:
-	//static void read(Dp,std::vector<string>*questions,std::vector<string>*answers, int n=0);
+	Display* operator[](int);                 //Find.
+	void operator*=(int);                       //Multiplicar.
 
 };using Dp=Display;
 
-//Inserir display:
-Dp* operator<<(Dp*,Dp&);
-
-//remover display:
-Dp* operator>>(Dp*,Dp&);
+Dp* operator<<(Dp*,Dp&);  //Inserir display:
+Dp* operator>>(Dp*,Dp&);  //remover display:
 
 #endif // display_rag.hpp

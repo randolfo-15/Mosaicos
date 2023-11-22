@@ -16,25 +16,33 @@ using std::cout;
 Dp::Display(){}
 
 Dp::Display(Tm theme):tm(theme){} 
+//------------------------------------------------------------------------------------------------
+// Headings and subheadings
+//------------------------------------------------------------------------------------------------
+
+void Dp::title(string str){format(str,"",TITLE);}
+
+void Dp::subtitle(string str,int){ format(str,"",SUBTITLES); }
+
 
 //------------------------------------------------------------------------------------------------
 // Write
 //------------------------------------------------------------------------------------------------
-void Dp::write(string str){ format(str,""); }
+void Dp::write(string str){ format(str,"",NORMAL); }
 
-void Dp::write(Fg  fg,string str){ format(str,fg.str()); }
+void Dp::write(Fg  fg,string str){ format(str,fg.str(),NORMAL); }
 
-void Dp::write(Bg bg,string str){ format(str,bg.str()); }
+void Dp::write(Bg bg,string str){ format(str,bg.str(),NORMAL); }
 
-void Dp::write(Bg bg,Fg fg,string str){ format(str,bg.str()+fg.str()); }
+void Dp::write(Bg bg,Fg fg,string str){ format(str,bg.str()+fg.str(),NORMAL); }
 
-void Dp::write(Clr clr,string str){ format(str,Bg(clr).str()); }
+void Dp::write(Clr clr,string str){ format(str,Bg(clr).str(),NORMAL); }
 
-void Dp:: write(Hlg efc,string str){ format(str,Fg(efc).str()); }
+void Dp:: write(Hlg efc,string str){ format(str,Fg(efc).str(),NORMAL); }
 
-void Dp::write(Clr  clr,Hlg efc,string str){ format(str,Bg(clr).str()+Fg(efc).str()); }
+void Dp::write(Clr  clr,Hlg efc,string str){ format(str,Bg(clr).str()+Fg(efc).str(),NORMAL); }
 
-void Dp::format(string str,string efc){ write_aux_buffer(slice_text(str,str.size()),efc); }
+void Dp::format(string str,string efc,int th){ write_aux_buffer(slice_text(str,str.size()),efc,th); }
 
 string Dp::slice_text(string line,size_t size){
 	for(int n=size/w, pos=size; n>0 ; n--){
@@ -44,11 +52,11 @@ string Dp::slice_text(string line,size_t size){
 	return line;
 }
 
-void Dp::write_aux_buffer(string text,string efc,string line){
+void Dp::write_aux_buffer(string text,string efc,int th,string line){
 	std::stringstream sstr(text);                                                                   ///< 1 Recebe o coteudo da linha.
 	while(getline(sstr,line,'\n')){                                                                     ///< 2 Busca por interrupções.
 		update_width(line.size());                                                                      ///< 3 Atualiza o tamanho do display.
-		asst_buf.push_back({line,efc});                                                            ///< 4 Adiciona nova linha ao buffer aux.
+		asst_buf.push_back({line,efc,th});                                                        ///< 4 Adiciona nova linha ao buffer aux.
 	}
 }
 
@@ -73,7 +81,7 @@ void Dp::draw(){
 //--------------------------------------------------------
 // Draw Display
 //--------------------------------------------------------
-void Display::draw_display(){ for(Line ln:asst_buf) draw_line(ln.str,ln.efc,tm.bg()); }
+void Display::draw_display(){ for(Line ln:asst_buf) draw_line(ln.str,ln.efc,tm.bg(ln.theme)); }
 
 //--------------------------------------------------------
 // Format line
@@ -110,8 +118,8 @@ int Dp::loop(const char *c){
 // Draw Shadow
 //--------------------------------------------------------
 void Dp::draw_shadow(int limit,int i){
-	for(;i<limit;i++) main_buf[i]+=fill(sb_side,shade);
-	main_buf.push_back(Rigth(sb_side)+fill(size(),shade));
+	for(;i<limit;i++) main_buf[i]+=fill(sb_side,shade,fg_shadow);
+	main_buf.push_back(Rigth(sb_side)+fill(size(),shade,fg_shadow));
 }
 
 //------------------------------------------------------------------------------------------------
@@ -128,9 +136,10 @@ void Dp::engine(){
 				<<Clr::br()<<'\n';
 }
 
-string Dp::fill(int count,Bg bg){
+
+string Dp::fill(int count,Bg bg,string ctr){
 	string str=bg.str();
-	while(count--) str+=" ";
+	while(count--) str+=ctr;
 	return str;
 }
 

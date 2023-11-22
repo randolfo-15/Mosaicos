@@ -41,14 +41,27 @@ class Display{
 	struct Line{                                                     ///< Define a custumização de uma linha
 		std::string str;
 		std::string efc;
+		int theme;
 	};
 	
-	Theme tm={                                                    ///< Tema do display
-		Bg(Cls::Red()),
-		Fg(Cls::White())
-	};       
+	Theme tm=Theme(                                     ///< Tema do display                                     
+		{
+			Cls::Red(),                                       ///< Fundo principal 
+		    Cls::Blue(),                                      ///< Fundo para titulos 
+			Cls::Blue()-115                               ///< Fundo para subtitulos
+		},
+		{
+			Cls::Green()
+		}
+	);                                
+		
+	enum Titles{
+		NORMAL=0,                                               /// Background padrão
+		TITLE=1,                                                      /// Background para títulos
+		SUBTITLES=2                                              /// Background de subtitulos           
+	};
 	
-	Bg shade=Colour(110,110,110);                    ///< Cor da sombra.
+	Bg shade=Cls::Black();                              ///< Cor da sombra.
 	
 	std::vector<Line> asst_buf;	                        ///< Buffer de tratamento de strings.
 	std::vector<std::string> main_buf;             ///< Buffer de exibição.
@@ -69,7 +82,7 @@ class Display{
 		y=2,                                                                   ///< Distanciamento vertical.
 		b=2;                                                                   ///< Espaçamento texto.
 
-		
+		const std::string fg_shadow="░";                 ///< Detable do sombreamento
 //------------------------------------------------------------------------------------------------
 // Methods
 //------------------------------------------------------------------------------------------------		
@@ -78,22 +91,22 @@ class Display{
 // Write
 //-------------------------------------------------------------
 public:
-	void write(std::string);                                                                    ///< Mode de escrita padrão
-	void write(Foreground,std::string);                                              ///< foreground custumizado.
-	void write(Background,std::string);                                             ///< background custumizado.
-	void write(Background,Foreground,std::string);                       ///< Com foreground e background custumizado.
-	void write(Colour,std::string);                                                        ///< Com uma cor de letra especifica
-	void write(Highlight,std::string);                                                   ///< Com um efeito de letra especifico.
-	void write(Colour,Highlight,std::string);                                      ///< Com com uma cor e efeito de letra especifica.
+	void write(std::string);                                                                           ///< Mode de escrita padrão
+	void write(Foreground,std::string);                                                     ///< foreground custumizado.
+	void write(Background,std::string);                                                    ///< background custumizado.
+	void write(Background,Foreground,std::string);                              ///< Com foreground e background custumizado.
+	void write(Colour,std::string);                                                               ///< Com uma cor de letra especifica
+	void write(Highlight,std::string);                                                          ///< Com um efeito de letra especifico.
+	void write(Colour,Highlight,std::string);                                              ///< Com com uma cor e efeito de letra especifica.
 	
 private:
-	void format(std::string str,std::string efc);                                  ///< Dividir texto e salvar linhas.
+	void format(std::string str,std::string efc,int);                                   ///< Dividir texto e salvar linhas.
 		
-	std::string slice_text(std::string,size_t);                                        ///<  Fatiar bloco de texto.
+	std::string slice_text(std::string,size_t);                                               ///<  Fatiar bloco de texto.
 		
-	void write_aux_buffer(std::string,std::string,std::string="");   ///< Gravar em memoria auxiliar.
+	void write_aux_buffer(std::string,std::string,int,std::string="");    ///< Gravar em memoria auxiliar.
 
-	void   update_width(int);                                                                      ///< Atualizar largura do display.
+	void   update_width(int);                                                                            ///< Atualizar largura do display.
 	
 //-------------------------------------------------------------
 // Show
@@ -116,18 +129,31 @@ private:
 	bool size_terminal(int);
 	
 	/// Preencher espaços:	
-	std::string fill(int,Bg);
+	std::string fill(int,Bg,std::string=" ");
 		
 	/// Motor de animação da janelas: 
 	void engine();
 	
-	
-public:
-	//Fabricação:	
-	Display();
-	Display(Theme);
+
 	
 
+	
+public:
+
+//------------------------------------------------------------------------------------------------
+// Headings and subheadings
+//------------------------------------------------------------------------------------------------
+
+void title(std::string);
+
+void subtitle(std::string,int=SUBTITLES);
+
+//Fabricação:	
+	Display();
+	Display(Theme);
+private:
+	void init_theme();
+public:
 	
 	//Exposição:	
 	//0 → Mostrar display:

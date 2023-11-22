@@ -29,6 +29,15 @@ class Display{
 //------------------------------------------------------------------------------------------------
 // Fields
 //------------------------------------------------------------------------------------------------
+
+//-------------------------------------------------------------
+// Shows
+//-------------------------------------------------------------
+enum prints{
+	BKG,
+	FRG,
+	BFG
+};
 	
 //-------------------------------------------------------------
 // Text
@@ -37,7 +46,7 @@ class Display{
 		{
 			Cls::Red(),                                       ///< Fundo principal 
 		    Cls::Blue(),                                      ///< Fundo para titulos 
-			Cls::Blue()-115                               ///< Fundo para subtitulos
+			Cls::Blue()-135                               ///< Fundo para subtitulos
 		},
 		{
 			Cls::White(),                                    ///< Foreground padrão
@@ -59,6 +68,7 @@ class Display{
 	
 	slice_mode corte=SMART;                            ///< Modo de organização de texto.
 	
+	static const char BOLD[];                               ///< String do comando bold
 //-------------------------------------------------------------
 // Buffer
 //-------------------------------------------------------------		
@@ -78,19 +88,6 @@ class Display{
 		x=2,                                                                   ///< Distanciamento horizontal.
 		y=2,                                                                   ///< Distanciamento vertical.
 		b=2;                                                                   ///< Espaçamento texto.
-
-//-------------------------------------------------------------
-// Shadow
-//-------------------------------------------------------------
-	bool shading=false;                                  /// Criar sombra.
-	
-	int side_sdw=2;                                            ///< Tamanho da sombra lateral.	
-	
-	Bg bg_sdw=Cls::Black();                        ///< Cor do background da sombra.
-	
-	Fg fg_sdw=Cls::White();                         ///< Cor do foreground da sombra .
-	
-	const std::string str_sdw="░";                   ///< Detable do sombreamento (░,╳,╬,┋,┼,╪,╫,╏,╋)
 	
 //------------------------------------------------------------------------------------------------
 // Methods
@@ -120,8 +117,6 @@ private:
 //-------------------------------------------------------------
 // Show
 //-------------------------------------------------------------	
-	void draw();                                                        
-				
 	void draw_display();                   
 		
 	//Contar caracter especial:       
@@ -132,7 +127,7 @@ private:
 	//2 → Preenchaer linha
 	void   draw_line(std::string,std::string,Bg);     
 	
-	void draw_shadow(int,int=1);
+	
 	
 	//Checar tamanho do terminal:
 	bool size_terminal(int);
@@ -143,14 +138,24 @@ private:
 	/// Motor de animação da janelas: 
 	void engine();
 	
+	void print(Bg*,Fg*,std::string str);
+	
 //------------------------------------------------------------------------------------------------
 // Headings and subheadings
 //------------------------------------------------------------------------------------------------
+	bool check_bg(int);
+	void clear_memory();
+	
+	
 public:
-	void title(std::string);
-
+	void title(std::string,int=TITLE);
+	void title(Foreground,std::string,int=TITLE);
+	void title(Highlight,std::string,int=TITLE);
+	
 	void subtitle(std::string,int=SUBTITLES);
-
+	void subtitle(Foreground,std::string,int=SUBTITLES);
+	void subtitle(Highlight,std::string,int=SUBTITLES);
+	
 	//Fabricação:	
 	Display();
 	Display(Theme);
@@ -158,7 +163,11 @@ public:
 	//Exposição:	
 	//0 → Mostrar display:
 	void show();                   	
-		
+	void show(std::string);
+	void show(Foreground,std::string);
+	void show(Background,std::string);
+	void show(Background,Foreground,std::string);
+	
 	/*void show(int grupo,int x,int y);*/
 	
 	//Atualizar Janela:
@@ -166,7 +175,7 @@ public:
 	
 	//Configurações:
 	/*        Display          */
-	void shadow(bool);
+	
 	
 	int side_shadow(int x=-1);
 

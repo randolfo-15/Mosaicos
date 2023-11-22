@@ -9,6 +9,7 @@
 using std::string;
 using std::cout;
 
+const char Dp::BOLD[]="\33[1m";
 
 //------------------------------------------------------------------------------------------------
 // Build
@@ -20,10 +21,19 @@ Dp::Display(Tm theme):tm(theme){}
 // Headings and subheadings
 //------------------------------------------------------------------------------------------------
 
-void Dp::title(string str){format(str,"",TITLE);}
+void Dp::title(string str,int bg){ if(check_bg(bg)) format(str,BOLD,bg);}
 
-void Dp::subtitle(string str,int){ format(str,"",SUBTITLES); }
+void Dp::title(Fg fg,string str,int bg){ if(check_bg(bg)) format(str,fg.str(),bg); }
 
+void Dp::title(Hlg efc,string str,int bg){ if(check_bg(bg)) format(str,Fg(efc).str(),bg); }
+
+void Dp::subtitle(string str,int bg){ if(check_bg(bg))format(str,BOLD,bg); }
+
+void Dp::subtitle(Fg fg,string str,int bg){ if(check_bg(bg)) format(str,fg.str(),bg); }
+
+void Dp::subtitle(Hlg efc,string str,int bg){ if(check_bg(bg)) format(str,Fg(efc).str(),bg); }
+
+bool Dp:: check_bg(int bg){return (bg<tm.bgs.size())?true:throw;}
 
 //------------------------------------------------------------------------------------------------
 // Write
@@ -65,22 +75,46 @@ void  Dp::update_width(int size){ if(w<size) w=size; }
 //------------------------------------------------------------------------------------------------
 // Show
 //------------------------------------------------------------------------------------------------
-void Display::show(){
-	draw();   
+void Dp::print(Bg* bg,Fg* fg,std::string str){
+	switch (1) {
+		case BKG: write(*bg,str);       break;
+		case FRG: write(*fg,str);         break;
+		case BFG: write(*bg,*fg,str); break;
+		default:    write(str);
+	}
+	draw_display();
+	engine();
+	clear_memory();
+}
+
+void Dp::show(){
+	draw_display();   
 	engine(); 
 }
 
-//------------------------------------------------------------------------------------------------
-// Draw
-//------------------------------------------------------------------------------------------------
-void Dp::draw(){
-	draw_display();                                                                 
-	if(shading) draw_shadow(main_buf.size());
+void Dp::show(string str){
+	write(str);
+	draw_display();
+	engine();
+	clear_memory();
 }
 
-//--------------------------------------------------------
+void Dp::show(Fg fg,string str){
+	write(fg,str);
+	draw_display();
+	engine();
+	clear_memory();
+}
+
+void Dp::show(Bg bg,string str){
+	write(bg,str);
+	draw_display();
+	engine();
+	clear_memory();
+}
+//------------------------------------------------------------------------------------------------
 // Draw Display
-//--------------------------------------------------------
+//------------------------------------------------------------------------------------------------
 void Display::draw_display(){ for(Line ln:asst_buf) draw_line(ln.str,ln.efc,tm.bg(ln.theme)); }
 
 //--------------------------------------------------------
@@ -114,13 +148,6 @@ int Dp::loop(const char *c){
 	else return 0+loop(c+1);
 }
 
-//--------------------------------------------------------
-// Draw Shadow
-//--------------------------------------------------------
-void Dp::draw_shadow(int limit,int i){
-	for(;i<limit;i++) main_buf[i]+=fg_sdw+fill(side_sdw,bg_sdw,str_sdw);
-	main_buf.push_back(Rigth(side_sdw)+fg_sdw.str()+fill(size(),bg_sdw,str_sdw));
-}
 
 //------------------------------------------------------------------------------------------------
 // Engine
@@ -143,7 +170,12 @@ string Dp::fill(int count,Bg bg,string ctr){
 	return str;
 }
 
-int Dp::size(){ return w+b+side_sdw;  }
+int Dp::size(){ return w+b;  }
+
+void Dp::clear_memory(){
+	asst_buf.clear();
+	main_buf.clear();
+}
 
 /*
 void Dp::show(int grupo,int x,int y)
@@ -229,7 +261,7 @@ void Dp::show(int grupo,int x,int y)
 //Limpar janela, e posicioanr display:
 void Display::update(){ cout<<Clear_screen::total()<<down;}
 
-void Dp::shadow(bool value){shading=value;}
+
 
 //--------------------------------------------------------
 //(Configurações)
@@ -280,7 +312,7 @@ int Dp::spacing(int n){
 //Modo de corte:
 void Display::distribution(slice_mode x){corte=x;}
 
-int Display::n_lines(){ return asst_buf.size()+shading; }
+int Display::n_lines(){ return asst_buf.size(); }
 
 void Display::clear(){asst_buf.clear();}
 

@@ -15,13 +15,9 @@ int main(){
         Tm tm={Bg(Blue()+150),Fg(Underline())};
         
         Dp dp;
-        dp.title("Title");
-        dp.write(".........");
-        dp.write(".........");
-        dp.subtitle("subtitle");
-        dp.write(".........");
-        dp.write(".........");
-        dp.show();
+        dp.show("Olá mundo!!!");
+        dp.show("Randolfo!!!");
+        dp.show("pedro papel tesoura!!!");
         
         return 0;
 }

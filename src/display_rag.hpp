@@ -21,68 +21,77 @@
 #include "directions_rag.hpp"
 #include "clear_rag.hpp"
 
-///Alias de função iniciar Display:
-class Display;
-///Abrevição do nome da classe:
- 
-
-
-
 //Modos de corte de texto:
 enum slice_mode{SMART,JOUST};
 using slice_mode=enum slice_mode;
-
-
 
 class Display{
 //------------------------------------------------------------------------------------------------
 // Fields
 //------------------------------------------------------------------------------------------------
-	struct Line{                                                     ///< Define a custumização de uma linha
-		std::string str;
-		std::string efc;
-		int theme;
-	};
 	
-	Theme tm=Theme(                                     ///< Tema do display                                     
+//-------------------------------------------------------------
+// Text
+//-------------------------------------------------------------	
+	Theme tm=Theme(                                    ///< Tema do display                                     
 		{
 			Cls::Red(),                                       ///< Fundo principal 
 		    Cls::Blue(),                                      ///< Fundo para titulos 
 			Cls::Blue()-115                               ///< Fundo para subtitulos
 		},
 		{
-			Cls::Green()
+			Cls::White(),                                    ///< Foreground padrão
 		}
-	);                                
-		
+	);
+	
+	struct Line{                                                ///< Define a custumização de uma linha
+		std::string str;                                       ///< Conteudo da linha 
+		std::string efc;                                       ///< efeito da linha
+		int theme;                                                ///< Tipo de linha(Titulo,subtitulos,normal)
+	};
+	
+	
 	enum Titles{
 		NORMAL=0,                                               /// Background padrão
 		TITLE=1,                                                      /// Background para títulos
 		SUBTITLES=2                                              /// Background de subtitulos           
 	};
 	
-	Bg shade=Cls::Black();                              ///< Cor da sombra.
+	slice_mode corte=SMART;                            ///< Modo de organização de texto.
 	
+//-------------------------------------------------------------
+// Buffer
+//-------------------------------------------------------------		
+
 	std::vector<Line> asst_buf;	                        ///< Buffer de tratamento de strings.
 	std::vector<std::string> main_buf;             ///< Buffer de exibição.
 	std::vector<Display*> dps;                            ///< Buffer para multplos display.
 
-	bool shading=true;                                          /// Criar sombra.
-
+//-------------------------------------------------------------
+// Space
+//-------------------------------------------------------------	
 	Rigth rigth=2;                                                     ///< Deslocamento para direita.
 	Down down=2;                                                   ///< Deslocamento para baixo.
-			   
-	int sb_side=2;                                                      ///< Tamanho da sombra lateral.
-
-	slice_mode corte=SMART;                                ///< Modo de organização de texto.
-
+	
 	int   
 		w=21,                                                                ///< Largura do display.	
 		x=2,                                                                   ///< Distanciamento horizontal.
 		y=2,                                                                   ///< Distanciamento vertical.
 		b=2;                                                                   ///< Espaçamento texto.
 
-		const std::string fg_shadow="░";                 ///< Detable do sombreamento
+//-------------------------------------------------------------
+// Shadow
+//-------------------------------------------------------------
+	bool shading=false;                                  /// Criar sombra.
+	
+	int side_sdw=2;                                            ///< Tamanho da sombra lateral.	
+	
+	Bg bg_sdw=Cls::Black();                        ///< Cor do background da sombra.
+	
+	Fg fg_sdw=Cls::White();                         ///< Cor do foreground da sombra .
+	
+	const std::string str_sdw="░";                   ///< Detable do sombreamento (░,╳,╬,┋,┼,╪,╫,╏,╋)
+	
 //------------------------------------------------------------------------------------------------
 // Methods
 //------------------------------------------------------------------------------------------------		
@@ -123,7 +132,7 @@ private:
 	//2 → Preenchaer linha
 	void   draw_line(std::string,std::string,Bg);     
 	
-	void draw_shadow(int,int=1);
+	void draw_shadow(int,int=2);
 	
 	//Checar tamanho do terminal:
 	bool size_terminal(int);
@@ -134,26 +143,17 @@ private:
 	/// Motor de animação da janelas: 
 	void engine();
 	
-
-	
-
-	
-public:
-
 //------------------------------------------------------------------------------------------------
 // Headings and subheadings
 //------------------------------------------------------------------------------------------------
+public:
+	void title(std::string);
 
-void title(std::string);
+	void subtitle(std::string,int=SUBTITLES);
 
-void subtitle(std::string,int=SUBTITLES);
-
-//Fabricação:	
+	//Fabricação:	
 	Display();
 	Display(Theme);
-private:
-	void init_theme();
-public:
 	
 	//Exposição:	
 	//0 → Mostrar display:

@@ -17,6 +17,7 @@ int main(){
         Dp dp;
         dp.title("Title");
         dp.write(".........");
+        dp.write(".........");
         dp.subtitle("subtitle");
         dp.write(".........");
         dp.write(".........");

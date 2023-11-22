@@ -118,8 +118,8 @@ int Dp::loop(const char *c){
 // Draw Shadow
 //--------------------------------------------------------
 void Dp::draw_shadow(int limit,int i){
-	for(;i<limit;i++) main_buf[i]+=fill(sb_side,shade,fg_shadow);
-	main_buf.push_back(Rigth(sb_side)+fill(size(),shade,fg_shadow));
+	for(;i<limit;i++) main_buf[i]+=fg_sdw+fill(side_sdw,bg_sdw,str_sdw);
+	main_buf.push_back(Rigth(side_sdw)+fg_sdw.str()+fill(size(),bg_sdw,str_sdw));
 }
 
 //------------------------------------------------------------------------------------------------
@@ -143,7 +143,7 @@ string Dp::fill(int count,Bg bg,string ctr){
 	return str;
 }
 
-int Dp::size(){ return w+b+sb_side;  }
+int Dp::size(){ return w+b+side_sdw;  }
 
 /*
 void Dp::show(int grupo,int x,int y)

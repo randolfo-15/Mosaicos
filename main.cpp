@@ -15,9 +15,9 @@ int main(){
         Tm tm={Bg(Blue()+150),Fg(Underline())};
         
         Dp dp;
-        dp.show("Olá mundo!!!");
-        dp.show("Randolfo!!!");
-        dp.show("pedro papel tesoura!!!");
+        dp.show(Fg(Reverse()),"Olá mundo!!!");
+        dp.show(Bg(Magenta()),"Randolfo!!!");
+        dp.show(Bg(Yellow()),Fg(Blink()),"pedro papel tesoura!!!");
         
         return 0;
 }

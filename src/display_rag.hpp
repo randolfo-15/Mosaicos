@@ -34,9 +34,11 @@ class Display{
 // Shows
 //-------------------------------------------------------------
 enum prints{
-	BKG,
-	FRG,
-	BFG
+	DFT,                                                            ///< Exibe contéudo do buffer.
+	STR,                                                            ///< Exibe uma string
+	BKG,                                                            ///< Exibir com background modificado.
+	FRG,                                                            ///< Exibir com foreground modificado.
+	BFG                                                             ///< Exibir foreground  e background modificado.
 };
 	
 //-------------------------------------------------------------
@@ -138,7 +140,7 @@ private:
 	/// Motor de animação da janelas: 
 	void engine();
 	
-	void print(Bg*,Fg*,std::string str);
+	void print(prints,Bg*,Fg*,std::string="");
 	
 //------------------------------------------------------------------------------------------------
 // Headings and subheadings
@@ -167,7 +169,7 @@ public:
 	void show(Foreground,std::string);
 	void show(Background,std::string);
 	void show(Background,Foreground,std::string);
-	
+
 	/*void show(int grupo,int x,int y);*/
 	
 	//Atualizar Janela:

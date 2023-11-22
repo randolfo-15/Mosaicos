@@ -75,43 +75,29 @@ void  Dp::update_width(int size){ if(w<size) w=size; }
 //------------------------------------------------------------------------------------------------
 // Show
 //------------------------------------------------------------------------------------------------
-void Dp::print(Bg* bg,Fg* fg,std::string str){
-	switch (1) {
+void Dp::print(prints option,Bg* bg,Fg* fg,std::string str){
+	switch (option) {
+		case STR: write(str);                break;
 		case BKG: write(*bg,str);       break;
 		case FRG: write(*fg,str);         break;
 		case BFG: write(*bg,*fg,str); break;
-		default:    write(str);
+		case DFT:;
 	}
 	draw_display();
 	engine();
 	clear_memory();
 }
 
-void Dp::show(){
-	draw_display();   
-	engine(); 
-}
+void Dp::show(){print(DFT,&tm.bgs[DFT],&tm.fgs[DFT]); }
 
-void Dp::show(string str){
-	write(str);
-	draw_display();
-	engine();
-	clear_memory();
-}
+void Dp::show(string str){ print(STR,&tm.bgs[DFT],&tm.fgs[DFT],str); }
 
-void Dp::show(Fg fg,string str){
-	write(fg,str);
-	draw_display();
-	engine();
-	clear_memory();
-}
+void Dp::show(Fg fg,string str){print(FRG,&tm.bgs[DFT],&fg,str);}
 
-void Dp::show(Bg bg,string str){
-	write(bg,str);
-	draw_display();
-	engine();
-	clear_memory();
-}
+void Dp::show(Bg bg,string str){ print(BKG,&bg,&tm.fgs[DFT],str); }
+
+void Dp::show(Bg bg,Fg fg,string str){ print(BFG,&bg,&fg,str); }
+
 //------------------------------------------------------------------------------------------------
 // Draw Display
 //------------------------------------------------------------------------------------------------

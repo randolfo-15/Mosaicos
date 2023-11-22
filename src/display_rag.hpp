@@ -132,7 +132,7 @@ private:
 	//2 → Preenchaer linha
 	void   draw_line(std::string,std::string,Bg);     
 	
-	void draw_shadow(int,int=2);
+	void draw_shadow(int,int=1);
 	
 	//Checar tamanho do terminal:
 	bool size_terminal(int);

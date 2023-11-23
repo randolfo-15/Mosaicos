@@ -15,14 +15,7 @@ int main(){
         Tm tm={Bg(Blue()+150),Fg(Underline())};
         
         Dp dp;
-        dp.title("Title...");
-        dp.write("text ......");
-        dp.write("text ......");
-        dp.subtitle("subtitle");
-        dp.write("Outro objeto");
-        dp.write("text ......");
-        dp.write("text ......");
-        dp.write("end ......");
+
         cout<<dp<<"Randolfo";
         
         return 0;

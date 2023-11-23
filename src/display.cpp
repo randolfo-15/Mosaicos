@@ -38,21 +38,21 @@ bool Dp:: check_bg(int bg){return (bg<tm.bgs.size())?true:throw;}
 //------------------------------------------------------------------------------------------------
 // Write
 //------------------------------------------------------------------------------------------------
-void Dp::write(string str){ format(str,"",NORMAL); }
+void Dp::write(string str){ format(str,""); }
 
-void Dp::write(Fg  fg,string str){ format(str,fg.str(),NORMAL); }
+void Dp::write(Fg  fg,string str){ format(str,fg.str()); }
 
-void Dp::write(Bg bg,string str){ format(str,bg.str(),NORMAL); }
+void Dp::write(Bg bg,string str){ format(str,bg.str()); }
 
-void Dp::write(Bg bg,Fg fg,string str){ format(str,bg.str()+fg.str(),NORMAL); }
+void Dp::write(Bg bg,Fg fg,string str){ format(str,bg.str()+fg.str()); }
 
-void Dp::write(Clr clr,string str){ format(str,Bg(clr).str(),NORMAL); }
+void Dp::write(Clr clr,string str){ format(str,Bg(clr).str()); }
 
-void Dp:: write(Hlg efc,string str){ format(str,Fg(efc).str(),NORMAL); }
+void Dp:: write(Hlg efc,string str){ format(str,Fg(efc).str()); }
 
-void Dp::write(Clr  clr,Hlg efc,string str){ format(str,Bg(clr).str()+Fg(efc).str(),NORMAL); }
+void Dp::write(Clr  clr,Hlg efc,string str){ format(str,Bg(clr).str()+Fg(efc).str()); }
 
-void Dp::format(string str,string efc,int th){ write_aux_buffer(slice_text(str,str.size()),efc,th); }
+void Dp::format(string str,string efc,int th){ salve(slice_text(str,str.size()),efc,th); }
 
 string Dp::slice_text(string line,size_t size){
 	for(int n=size/w, pos=size; n>0 ; n--){
@@ -62,7 +62,7 @@ string Dp::slice_text(string line,size_t size){
 	return line;
 }
 
-void Dp::write_aux_buffer(string text,string efc,int th,string line){
+void Dp::salve(string text,string efc,int th,string line){
 	std::stringstream sstr(text);                                                                   ///< 1 Recebe o coteudo da linha.
 	while(getline(sstr,line,'\n')){                                                                     ///< 2 Busca por interrupções.
 		update_width(line.size());                                                                      ///< 3 Atualiza o tamanho do display.
@@ -93,11 +93,11 @@ string Dp::fill(int count,Bg bg){
 //------------------------------------------------------------------------------------------------
 // Build display
 //------------------------------------------------------------------------------------------------
-string Dp::build(){
+void Dp::build(){
 	draw_display();
-	string buf=down();
-	for(string& line:main_buf) buf+=rigth()+tm()+line+tm()+Clr::br()+'\n';
-	return buf;
+	image=down();
+	for(string& line:main_buf) image+=rigth()+tm()+line+tm()+Clr::br()+'\n';
+	
 }
 
 //------------------------------------------------------------------------------------------------
@@ -113,7 +113,7 @@ int Display::n_dps(){return dps.size();}
 int Display::n_lines(){ return asst_buf.size(); }
 
 //------------------------------------------------------------------------------------------------
-// Space
+// Proportions
 //------------------------------------------------------------------------------------------------
 void  Dp::update_width(int size){ if(w<size) w=size; }
 
@@ -147,7 +147,7 @@ int Dp::edge(){ return b;}
 //------------------------------------------------------------------------------------------------
 // Operator
 //------------------------------------------------------------------------------------------------
-std::ostream& operator<<(std::ostream& out,Display dp){ return out<<dp.build(); }
+std::ostream& operator<<(std::ostream& out,Display dp){ return out<<dp.image; }
 
 /*
 void Dp::show(int grupo,int x,int y)

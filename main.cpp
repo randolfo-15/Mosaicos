@@ -15,8 +15,13 @@ int main(){
         Tm tm={Bg(Blue()+150),Fg(Underline())};
         
         Dp dp;
-
-        cout<<dp<<"Randolfo";
+        dp.title("Title...");
+        dp.write("....");
+        dp.write("....");
+        dp.write("....");
         
+        cout<<dp<<"Randolfo\n";
+        dp.write("pppp");
+        cout<<dp<<"end\n";
         return 0;
 }

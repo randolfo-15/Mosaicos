@@ -10,6 +10,7 @@ using std::string;
 
 const char Dp::BOLD[]="\33[1m";
 
+
 //------------------------------------------------------------------------------------------------
 // Build class
 //------------------------------------------------------------------------------------------------
@@ -21,38 +22,38 @@ Dp::Display(Tm theme):tm(theme){}
 // Headings and subheadings
 //------------------------------------------------------------------------------------------------
 
-void Dp::title(string str,int bg){ if(check_bg(bg)) format(str,BOLD,bg);}
+void Dp::title(string str,int bg){ if(check_bg(bg)) create_line(str,BOLD,bg);}
 
-void Dp::title(Fg fg,string str,int bg){ if(check_bg(bg)) format(str,fg.str(),bg); }
+void Dp::title(Fg fg,string str,int bg){ if(check_bg(bg)) create_line(str,fg.str(),bg); }
 
-void Dp::title(Hlg efc,string str,int bg){ if(check_bg(bg)) format(str,Fg(efc).str(),bg); }
+void Dp::title(Hlg efc,string str,int bg){ if(check_bg(bg)) create_line(str,Fg(efc).str(),bg); }
 
-void Dp::subtitle(string str,int bg){ if(check_bg(bg))format(str,BOLD,bg); }
+void Dp::subtitle(string str,int bg){ if(check_bg(bg))create_line(str,BOLD,bg); }
 
-void Dp::subtitle(Fg fg,string str,int bg){ if(check_bg(bg)) format(str,fg.str(),bg); }
+void Dp::subtitle(Fg fg,string str,int bg){ if(check_bg(bg)) create_line(str,fg.str(),bg); }
 
-void Dp::subtitle(Hlg efc,string str,int bg){ if(check_bg(bg)) format(str,Fg(efc).str(),bg); }
+void Dp::subtitle(Hlg efc,string str,int bg){ if(check_bg(bg)) create_line(str,Fg(efc).str(),bg); }
 
 bool Dp:: check_bg(int bg){return (bg<tm.bgs.size())?true:throw;}
 
 //------------------------------------------------------------------------------------------------
 // Write
 //------------------------------------------------------------------------------------------------
-void Dp::write(string str){ format(str,""); }
+void Dp::write(string str){ create_line(str,""); }
 
-void Dp::write(Fg  fg,string str){ format(str,fg.str()); }
+void Dp::write(Fg  fg,string str){ create_line(str,fg.str()); }
 
-void Dp::write(Bg bg,string str){ format(str,bg.str()); }
+void Dp::write(Bg bg,string str){ create_line(str,bg.str()); }
 
-void Dp::write(Bg bg,Fg fg,string str){ format(str,bg.str()+fg.str()); }
+void Dp::write(Bg bg,Fg fg,string str){ create_line(str,bg.str()+fg.str()); }
 
-void Dp::write(Clr clr,string str){ format(str,Bg(clr).str()); }
+void Dp::write(Clr clr,string str){ create_line(str,Bg(clr).str()); }
 
-void Dp:: write(Hlg efc,string str){ format(str,Fg(efc).str()); }
+void Dp:: write(Hlg efc,string str){ create_line(str,Fg(efc).str()); }
 
-void Dp::write(Clr  clr,Hlg efc,string str){ format(str,Bg(clr).str()+Fg(efc).str()); }
+void Dp::write(Clr  clr,Hlg efc,string str){ create_line(str,Bg(clr).str()+Fg(efc).str()); }
 
-void Dp::format(string str,string efc,int th){ salve(slice_text(str,str.size()),efc,th); }
+void Dp::create_line(string str,string efc,int th){ salve(slice_text(str,str.size()),efc,th); }
 
 string Dp::slice_text(string line,size_t size){
 	for(int n=size/w, pos=size; n>0 ; n--){
@@ -74,14 +75,27 @@ void Dp::salve(string text,string efc,int th,string line){
 //------------------------------------------------------------------------------------------------
 // Draw Display
 //------------------------------------------------------------------------------------------------
+string Dp::build(){
+	draw_display();
+	draw_contour();
+	changer=false;
+	return img;
+}
+
 void Display::draw_display(){ for(Line ln:asst_buf) draw_line(ln.str,ln.efc,tm.bg(ln.theme)); }
 
 void Display::draw_line(string line,string efc,Bg bg){
-	string aux=fill(b,bg)+efc+line;                                            ///< Desenhar lado esquerdo a line.
+	string aux=fill(b,bg)+efc+line;											///< Desenhar lado esquerdo a line.
 	aux+=Clr::br()+bg+tm.fg();                                                  ///< Encerra efeitos
 	int limit=w-line.size()+b+size_line(line.c_str());                ///< Definir N° caracter que completa janela.
 	while(limit--) aux.push_back(' ');                                       ///< Desenhar lado direito a line
+	changer=true;																		///< Atualiza a flag de alterações.
 	main_buf.push_back(aux);                                                  ///< Salva o contéudo 
+}
+
+void Dp::draw_contour(){
+	img=down();
+	for(string& line:main_buf) img+=rigth()+tm()+line+tm()+Clr::br()+'\n';
 }
 
 string Dp::fill(int count,Bg bg){
@@ -90,16 +104,7 @@ string Dp::fill(int count,Bg bg){
 	return str;
 }
 
-//------------------------------------------------------------------------------------------------
-// Build display
-//------------------------------------------------------------------------------------------------
-void Dp::build(){
-	draw_display();
-	image=down();
-	for(string& line:main_buf) image+=rigth()+tm()+line+tm()+Clr::br()+'\n';
-	
-}
-
+string Dp::show(){ return (changer)?build():img; }
 //------------------------------------------------------------------------------------------------
 // Memory
 //------------------------------------------------------------------------------------------------
@@ -107,11 +112,6 @@ void Dp::clear(){
 	asst_buf.resize(0);
 	main_buf.resize(0);
 }
-
-int Display::n_dps(){return dps.size();}
-
-int Display::n_lines(){ return asst_buf.size(); }
-
 //------------------------------------------------------------------------------------------------
 // Proportions
 //------------------------------------------------------------------------------------------------
@@ -141,13 +141,12 @@ int Dp::vertical(){return y;}
 void Dp::edge(int n){ b=n; }
 
 int Dp::edge(){ return b;}
-
 ///\warning
 
 //------------------------------------------------------------------------------------------------
 // Operator
 //------------------------------------------------------------------------------------------------
-std::ostream& operator<<(std::ostream& out,Display dp){ return out<<dp.image; }
+std::ostream& operator<<(std::ostream& out,Display dp){ return out<<dp.show(); }
 
 /*
 void Dp::show(int grupo,int x,int y)
@@ -183,10 +182,10 @@ void Dp::show(int grupo,int x,int y)
 			//O primeiro define o space_x de todos:
 			dp->x_dp.value(this->x_dp.spc_int);
 				
-			//O texto é formatado:
+			//O texto é create_lineado:
 			dp->draw();
 
-			//Coipiar os dados formatados do display:
+			//Coipiar os dados create_lineados do display:
 			std::vector<string> buf;
 			//dp->copy(&buf);		
 
@@ -228,33 +227,7 @@ void Dp::show(int grupo,int x,int y)
 
 //*********************** Texto *************************
 //Modo de corte:
-void Display::distribution(slice_mode x){corte=x;}
-
-void Display::insert(int pos,Hlg efc,string t){
-	
-	string aux=slice_text(t,t.size());
-	aux.push_back('\n');
-	std::stringstream sstr(aux);
-	string line;
-	while(getline(sstr,line,'\n')){
-		update_width(line.size());
-		//asst_buf.insert(asst_buf.begin()+pos,{line,tm});      ///\warning Não estamos passando o tema do objeto!!!
-		pos++;
-	}
-}
-
-void Display::remove(int pos){ asst_buf.erase(asst_buf.begin()+pos); }
-
-
-
-
-
-
-
-
-
-
-
+//void Display::distribution(slice_mode x){corte=x;}
 
 //Autosomar:
 void Display::operator+=(Display& dp){dps.push_back(&dp);}

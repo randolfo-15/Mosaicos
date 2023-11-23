@@ -23,7 +23,7 @@ int main(){
         dp.write("text ......");
         dp.write("text ......");
         dp.write("end ......");
-        dp.show();
+        cout<<dp<<"Randolfo";
         
         return 0;
 }

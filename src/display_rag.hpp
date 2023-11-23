@@ -8,6 +8,7 @@
 #ifndef  DISPLAY_RAG_HPP
 #define DISPLAY_RAG_HPP
 
+#include <ostream>
 #include <unistd.h> 
 #include <sys/wait.h>
 #include <cstdlib>
@@ -165,20 +166,7 @@ private:
 	
 	std::string fill(int,Bg);                                                                    ///< Preencher espaços:
 		
-	void engine(int,int=0);                                                                    ///< Motor de animação da janelas:
-	
-	void print(prints,Bg*,Fg*,std::string="");                                   ///< Distribui os modos de exibição.
-	
-	void action();                                                                                     ///< Expoe o contéudo
-	
-public:
-	void show();                   	
-	void show(std::string);
-	void show(Foreground,std::string);
-	void show(Background,std::string);
-	void show(Background,Foreground,std::string);	
-	
-	void update();    ///\note ????
+	std::string build();                                                                          ///< Motor de animação da janelas:
 	
 //------------------------------------------------------------------------------------------------
 // Operations:
@@ -192,10 +180,12 @@ public:
 	Display* operator>>(Display&);
 	Display* operator[](int);                 //Find.
 	void operator*=(int);                       //Multiplicar.
-
+	friend std::ostream& operator<<(std::ostream&,Display);
 };using Dp=Display;
 
 Dp* operator<<(Dp*,Dp&);  //Inserir display:
 Dp* operator>>(Dp*,Dp&);  //remover display:
+
+std::ostream& operator<<(std::ostream&,Display);
 
 #endif // display_rag.hpp

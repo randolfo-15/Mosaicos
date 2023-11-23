@@ -7,12 +7,11 @@
 
 #include "display_rag.hpp"
 using std::string;
-using std::cout;
 
 const char Dp::BOLD[]="\33[1m";
 
 //------------------------------------------------------------------------------------------------
-// Build
+// Build class
 //------------------------------------------------------------------------------------------------
 Dp::Display(){}
 
@@ -71,39 +70,6 @@ void Dp::write_aux_buffer(string text,string efc,int th,string line){
 	}
 }
 
-//------------------------------------------------------------------------------------------------
-// Show
-//------------------------------------------------------------------------------------------------
-void Dp::show(){print(DFT,&tm.bgs[DFT],&tm.fgs[DFT]); }
-
-void Dp::show(string str){ print(STR,&tm.bgs[DFT],&tm.fgs[DFT],str); }
-
-void Dp::show(Fg fg,string str){print(FRG,&tm.bgs[DFT],&fg,str);}
-
-void Dp::show(Bg bg,string str){ print(BKG,&bg,&tm.fgs[DFT],str); }
-
-void Dp::show(Bg bg,Fg fg,string str){ print(BFG,&bg,&fg,str); }
-
-void Dp::print(prints option,Bg* bg,Fg* fg,std::string str){
-	switch (option) {
-		case STR:write(str);                action();  break;
-		case BKG:write(*bg,str);       action();  break;
-		case FRG:write(*fg,str);         action();  break;
-		case BFG:write(*bg,*fg,str); action();  break;
-		case DFT:action();
-	}
-}
-
-void Display::update(){ cout<<Clear_screen::total()<<down;}
-
-//------------------------------------------------------------------------------------------------
-// Menu action
-//------------------------------------------------------------------------------------------------
-void Dp::action(){
-	draw_display();                           ///< 1.
-	engine(main_buf.size());           ///< 2.
-	clear();                                          ///< 3.
-}
 
 //------------------------------------------------------------------------------------------------
 // Draw Display
@@ -125,29 +91,13 @@ string Dp::fill(int count,Bg bg){
 }
 
 //------------------------------------------------------------------------------------------------
-// Engene
+// Build display
 //------------------------------------------------------------------------------------------------
-void Dp::engine(int size,int i){
-	cout<<down;
-	/*
-	 * for(string& line:main_buf) 
-		cout<<rigth
-				<<tm()
-				<<line
-				<<tm()
-				<<Clr::br()<<'\n';
-    */
-	for(;i<size-1;i++)
-		cout<<rigth
-			    <<tm()
-				<<main_buf[i]
-				<<tm()
-				<<Clr::br()<<'\n';
-			cout<<rigth
-			    <<tm()
-				<<main_buf[i]
-				<<tm()
-				<<Clr::br();
+string Dp::build(){
+	draw_display();
+	string buf=down();
+	for(string& line:main_buf) buf+=rigth()+tm()+line+tm()+Clr::br()+'\n';
+	return buf;
 }
 
 //------------------------------------------------------------------------------------------------
@@ -193,6 +143,11 @@ void Dp::edge(int n){ b=n; }
 int Dp::edge(){ return b;}
 
 ///\warning
+
+//------------------------------------------------------------------------------------------------
+// Operator
+//------------------------------------------------------------------------------------------------
+std::ostream& operator<<(std::ostream& out,Display dp){ return out<<dp.build(); }
 
 /*
 void Dp::show(int grupo,int x,int y)
@@ -290,9 +245,16 @@ void Display::insert(int pos,Hlg efc,string t){
 
 void Display::remove(int pos){ asst_buf.erase(asst_buf.begin()+pos); }
 
-//-------------------------------------------------------------
-// Operator
-//-------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
 
 //Autosomar:
 void Display::operator+=(Display& dp){dps.push_back(&dp);}

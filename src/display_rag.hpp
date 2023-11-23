@@ -95,17 +95,11 @@ private:
 //---------------------------------------
 // Alignment
 //---------------------------------------
-public:
-	enum format{													///< Alinhamento do texto.
-		SMART,															///< Distribui as palavras sem fragmentação.
-		JOUST																///< Alinhamento justificado.
-	};
-	static const format Smart;								///< Variável estatica que define alinhamento sem corte
-	static const format Joust;								///< Variável estatica para alinhamento justificado.
-	
-	void alignment(format);
+public:	
+	void joust(bool);
 private:
-	format corte=SMART;										///< Modo de organização de texto.
+	void joust(std::string&,int);
+	bool alignment=true;										///< Modo de organização de texto.
 	std::string slice_text(std::string,size_t);		///< Estrutura disposição do texto.
 //---------------------------------------
 // Display Line Builders

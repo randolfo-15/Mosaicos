@@ -55,9 +55,11 @@ void Dp::write(Clr  clr,Hlg efc,string str){ create_line(str,Bg(clr).str()+Fg(ef
 
 void Dp::create_line(string str,string efc,int th){ salve(slice_text(str,str.size()),efc,th); }
 
+void joust(std::string& line,int i){ /*if((line.find(' ')!=-1))*/while(line[i]!=' ')i--;  }
+
 string Dp::slice_text(string line,size_t size){
 	for(int n=size/w, pos=size; n>0 ; n--){
-		if((line.find(' ')!=-1)&&!corte) while(line[pos-1]!=' ') pos--;               ///< 1 	Busca inicio da Palavra:
+		//if(alignment) joust(line,pos-1);
 		if((pos>0)&&(pos<size-1)) line.insert(line.begin()+pos,'\n');            ///< 2 Inserir '\n'
 	}
 	return line;

@@ -8,8 +8,7 @@
 #include "display_rag.hpp"
 using std::string;
 
-const char Dp::BOLD[]="\33[1m";
-
+const Hlg Dp::bold=Efc::Bold();
 
 //------------------------------------------------------------------------------------------------
 // Build class
@@ -22,58 +21,44 @@ Dp::Display(Tm theme):tm(theme){}
 // Headings and subheadings
 //------------------------------------------------------------------------------------------------
 
-void Dp::title(string str,int bg){ if(check_bg(bg)) create_line(str,BOLD,bg);}
+void Dp::title(string str,int head){ if(check_bg(head)) split_rows({str,tm.bg(head),bold});}
 
-void Dp::title(Fg fg,string str,int bg){ if(check_bg(bg)) create_line(str,fg.str(),bg); }
+void Dp::title(Fg fg,string str,int head){ if(check_bg(head)) split_rows({str,tm.bg(head),fg});}
 
-void Dp::title(Hlg efc,string str,int bg){ if(check_bg(bg)) create_line(str,Fg(efc).str(),bg); }
+void Dp::title(Hlg efc,string str,int head){ if(check_bg(head)) split_rows({str,tm.bg(head),Fg(efc)}); }
 
-void Dp::subtitle(string str,int bg){ if(check_bg(bg))create_line(str,BOLD,bg); }
+void Dp::subtitle(string str,int head){ if(check_bg(head)) title(str,head); }
 
-void Dp::subtitle(Fg fg,string str,int bg){ if(check_bg(bg)) create_line(str,fg.str(),bg); }
+void Dp::subtitle(Fg fg,string str,int head){ if(check_bg(head)) title(fg,str,head); }
 
-void Dp::subtitle(Hlg efc,string str,int bg){ if(check_bg(bg)) create_line(str,Fg(efc).str(),bg); }
+void Dp::subtitle(Hlg efc,string str,int head){ if(check_bg(head)) title(efc,str,head); }
 
 bool Dp:: check_bg(int bg){return (bg<tm.bgs.size())?true:throw;}
 
 //------------------------------------------------------------------------------------------------
 // Write
 //------------------------------------------------------------------------------------------------
-void Dp::write(string str){ create_line(str,""); }
+void Dp::write(string str){ split_rows({str,tm.bg(),tm.fg()}); }
 
-void Dp::write(Fg  fg,string str){ create_line(str,fg.str()); }
+void Dp::write(Fg  fg,string str){ split_rows({str,tm.bg(),fg}); }
 
-void Dp::write(Bg bg,string str){ create_line(str,bg.str()); }
+void Dp::write(Bg bg,string str){ split_rows({str,bg,tm.fg()}); }
 
-void Dp::write(Bg bg,Fg fg,string str){ create_line(str,bg.str()+fg.str()); }
+void Dp::write(Bg bg,Fg fg,string str){ split_rows({str,bg,fg}); }
 
-void Dp::write(Clr clr,string str){ create_line(str,Bg(clr).str()); }
+void Dp::write(Clr clr,string str){ split_rows({str,Bg(clr),tm.fg()}); }
 
-void Dp:: write(Hlg efc,string str){ create_line(str,Fg(efc).str()); }
+void Dp:: write(Hlg efc,string str){ split_rows({str,tm.bg(),Fg(efc)}); }
 
-void Dp::write(Clr  clr,Hlg efc,string str){ create_line(str,Bg(clr).str()+Fg(efc).str()); }
+void Dp::write(Clr  clr,Hlg efc,string str){ split_rows({str,Bg(clr),Fg(efc)}); }
 
-void Dp::create_line(string str,string efc,int th){ salve(slice_text(str,str.size()),efc,th); }
-
-void joust(std::string& line,int i){ /*if((line.find(' ')!=-1))*/while(line[i]!=' ')i--;  }
-
-string Dp::slice_text(string line,size_t size){
-	for(int n=size/w, pos=size; n>0 ; n--){
-		//if(alignment) joust(line,pos-1);
-		if((pos>0)&&(pos<size-1)) line.insert(line.begin()+pos,'\n');            ///< 2 Inserir '\n'
-	}
-	return line;
+void Dp::split_rows(Line ln,string tmp){
+	std::stringstream sstr(ln.str);
+	while(getline(sstr,tmp,'\n')){
+		update_width(tmp.size());
+		line.push_back({tmp,ln.bg,ln.fg});
+	} 
 }
-
-void Dp::salve(string text,string efc,int th,string line){
-	std::stringstream sstr(text);                                                                   ///< 1 Recebe o coteudo da linha.
-	while(getline(sstr,line,'\n')){                                                                     ///< 2 Busca por interrupções.
-		update_width(line.size());                                                                      ///< 3 Atualiza o tamanho do display.
-		asst_buf.push_back({line,efc,th});                                                        ///< 4 Adiciona nova linha ao buffer aux.
-	}
-}
-
-
 //------------------------------------------------------------------------------------------------
 // Draw Display
 //------------------------------------------------------------------------------------------------
@@ -84,15 +69,18 @@ string Dp::build(){
 	return img;
 }
 
-void Display::draw_display(){ for(Line ln:asst_buf) draw_line(ln.str,ln.efc,tm.bg(ln.theme)); }
+void Display::draw_display(){ for(Line& ln:line) draw_line(ln); }
 
-void Display::draw_line(string line,string efc,Bg bg){
-	string aux=fill(b,bg)+efc+line;											///< Desenhar lado esquerdo a line.
-	aux+=Clr::br()+bg+tm.fg();                                                  ///< Encerra efeitos
-	int limit=w-line.size()+b+size_line(line.c_str());                ///< Definir N° caracter que completa janela.
+void Display::draw_line(Line& line){
+	
+	
+	string aux=fill(b,line.bg)+line.fg+line.str;							///< Desenhar lado esquerdo a line.
+	aux+=Clr::br()+line.bg+tm.fg();                                          ///< Encerra efeitos
+	int limit=w-line.str.size()+b+size_line(line.str.c_str());    ///< Definir N° caracter que completa janela.
 	while(limit--) aux.push_back(' ');                                       ///< Desenhar lado direito a line
 	changer=true;																		///< Atualiza a flag de alterações.
 	main_buf.push_back(aux);                                                  ///< Salva o contéudo 
+	
 }
 
 void Dp::draw_contour(){
@@ -111,8 +99,8 @@ string Dp::show(){ return (changer)?build():img; }
 // Memory
 //------------------------------------------------------------------------------------------------
 void Dp::clear(){
-	asst_buf.resize(0);
-	main_buf.resize(0);
+	//asst_buf.resize(0);
+	//main_buf.resize(0);
 }
 //------------------------------------------------------------------------------------------------
 // Proportions

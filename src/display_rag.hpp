@@ -79,39 +79,28 @@ public:
 // Write
 //-----------------------------------------------------------------------------------------------
 private:
-	static const char BOLD[];								///< String do comando bold
-	
-	struct Line{														///< Estrutura para composção de uma linha.
-		std::string str;												///< Contéudo da linha. 
-		std::string efc;												///< Efeito da linha.
-		int theme;														///< Tipo de linha(Titulo,subtitulos,normal)
-	};
-	
+	static const Hlg bold;
+
 	enum Titles{
 		NORMAL=0,													/// Background padrão
 		TITLE=1,															/// Background para títulos
 		SUBTITLES=2												/// Background de subtitulos           
 	};
-//---------------------------------------
-// Alignment
-//---------------------------------------
-public:	
-	void joust(bool);
-private:
-	void joust(std::string&,int);
-	bool alignment=true;										///< Modo de organização de texto.
-	std::string slice_text(std::string,size_t);		///< Estrutura disposição do texto.
+	
+	struct Line{														///< Estrutura para composção de uma linha.
+		std::string str;												///< Contéudo da linha. 
+		Bg bg;																///< Background da linha
+		Fg fg;																///< Foreground da linha.
+	};
 //---------------------------------------
 // Display Line Builders
 //---------------------------------------
 private:
-	void create_line(std::string str,std::string efc,int=NORMAL);	///< Dividir texto e salvar linhas.
-		
-	void salve(std::string,std::string,int,std::string="");					///< Gravar em memoria auxiliar.
-
+	void split_rows(Line,std::string="");													///< Divide o contéudo das string por \n
+	
 	void draw_display();																				///< Lista o conjunto de linhas do buffer auxiliar.
 	void draw_contour();																			///< Insere os detalhamentos de contorno da linha.
-	void draw_line(std::string,std::string,Bg);										///< Desenha a linha.
+	void draw_line(Line&);																			///< Desenha a linha.
 	
 	int size_line(const char *str);																///< Contanta número de caracteres especiais.
 	int loop(const char *c);																		///< Método auxiliar para contagem de caracteres          
@@ -149,7 +138,7 @@ public:
 // Memory
 //------------------------------------------------------------------------------------------------		
 private:
-	std::vector<Line> asst_buf;							///< Buffer de tratamento de strings.
+	std::vector<Line> line;									///< Buffer de tratamento de strings.
 	std::vector<std::string> main_buf;				///< Buffer de exibição.
 	std::vector<Display*> dps;							///< Buffer para multplos display.
 	
@@ -168,7 +157,9 @@ public:
 	Display* operator>>(Display&);
 	Display* operator[](int);                 //Find.
 	void operator*=(int);                       //Multiplicar.
+	
 	friend std::ostream& operator<<(std::ostream&,Display);
+
 };using Dp=Display;
 
 Dp* operator<<(Dp*,Dp&);  //Inserir display:

@@ -20,7 +20,6 @@ Dp::Display(Tm theme):tm(theme){}
 //------------------------------------------------------------------------------------------------
 // Headings and subheadings
 //------------------------------------------------------------------------------------------------
-
 void Dp::title(string str,int head){ if(check_bg(head)) split_rows({str,tm.bg(head),bold,head});}
 
 void Dp::title(Fg fg,string str,int head){ if(check_bg(head)) split_rows({str,tm.bg(head),fg,head});}
@@ -68,11 +67,11 @@ string Dp::build(){
 	return img;
 }
 
-void Display::draw_display(){ for(Line& ln : lines) draw_line(ln,complement(ln.str,ln.str.size())); }
+void Display::draw_display(){ for(Line& ln : lines) draw_line(ln,complement(ln.str)); }
 
 void Display::draw_line(Line& line,int attach){ line.str=fill(b,tm.bg(line.type))+line()+fill(attach,tm.bg(line.type)); }
 
-int Dp::complement(string str,int size){ return (width()+accentuation(str))-size; }
+int Dp::complement(string str){ return (width()+accentuation(str))-str.size(); }
 
 void Dp::draw_contour(){
 	img=down();

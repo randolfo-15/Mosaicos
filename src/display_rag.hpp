@@ -65,7 +65,7 @@ private:
 //---------------------------------------	
 	int accentuation(std::string);						///< Contanta número de caracteres especiais.
 	int loop(const char *c);									///< Método auxiliar para contagem de caracteres
-	int complement(std::string,int);					///< Complementa de caracteres para desenhar a janela
+	int complement(std::string);							///< Complementa de caracteres para desenhar a janela
 //---------------------------------------
 // Setting
 //---------------------------------------

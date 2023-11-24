@@ -21,7 +21,11 @@ Str::Str(string new_str){buf.push_back(new_str);}
 //----------------------------------------------------------------------------------
 // Cast
 //----------------------------------------------------------------------------------
-string Str::str(string soma){ for(auto st:buf) soma+=st; return soma; }
+string Str::str(){
+    string soma;
+    for(auto st:buf) soma+=st;
+    return soma; 
+}
 
 //----------------------------------------------------------------------------------
 // Addition
@@ -38,7 +42,3 @@ void Str::operator+=(string st){ buf.push_back(st); }
 
 std::ostream& operator<<(std::ostream& out,Str st){ return out<<st.str(); }
 
-//----------------------------------------------------------------------------------
-// Get
-//----------------------------------------------------------------------------------
-string Str::operator()(){return str();}

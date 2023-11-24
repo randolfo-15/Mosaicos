@@ -14,6 +14,7 @@
 #include <cstdlib>
 #include <sstream>
 #include <fstream>
+#include <vector>
 #include "background.hpp"
 #include "colour.hpp"
 #include "effect.hpp"
@@ -109,13 +110,16 @@ private:
 	void split_rows(Line,std::string="");													///< Divide o contéudo das string por \n
 	
 	void draw_display();																				///< Lista o conjunto de linhas do buffer auxiliar.
-	void draw_contour();																			///< Insere os detalhamentos de contorno da linha.
+	std::string position(std::vector<Line>::iterator,int);					///< Insere os detalhamentos de contorno da linha.
 	void draw_line(Line&,int);																	///< Desenha a linha.
+	
+	std::string end();																					///< Retorna encerramento de string.
 	
 	std::string build();																				///< Motor de animação da janelas.
 	
 protected:
 	std::string fill(int,Bg);																			///< Preencher espaços:
+	std::string empty(int);																		///< Cria uma string vazia.
 	std::string show();																				///< retorna a imagem do distema atual.
 //---------------------------------------
 // Writes

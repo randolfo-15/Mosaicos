@@ -21,7 +21,7 @@ int main(){
         dp.write(Green(),"....");
         dp.write("....");
         dp.write("pppp");
-        cout<<dp<<"end\n";
+        cout<<dp<<Rigth(10)<<"end\n";
         dp.write("pppp");
         cout<<dp<<"end\n";
         

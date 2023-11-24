@@ -5,8 +5,10 @@
  * \date 21/09/22
  ******************************************************/
 
+#include "colour.hpp"
 #include "display_rag.hpp"
 using std::string;
+using std::vector;
 
 const Hlg Dp::bold=Efc::Bold();
 
@@ -14,7 +16,6 @@ const Hlg Dp::bold=Efc::Bold();
 // Build class
 //------------------------------------------------------------------------------------------------
 Dp::Display(){}
-
 Dp::Display(Tm theme):tm(theme){} 
 
 //------------------------------------------------------------------------------------------------
@@ -63,8 +64,7 @@ void Dp::split_rows(Line ln,string tmp){
 //------------------------------------------------------------------------------------------------
 string Dp::build(){
 	draw_display();
-	draw_contour();
-	return img;
+	return  down.str()+position(lines.begin(),lines.size());
 }
 
 void Display::draw_display(){ for(Line& ln : lines) draw_line(ln,complement(ln.str)); }
@@ -73,16 +73,13 @@ void Display::draw_line(Line& line,int attach){ line.str=fill(b,tm.bg(line.type)
 
 int Dp::complement(string str){ return (width()+accentuation(str))-str.size(); }
 
-void Dp::draw_contour(){
-	img=down();
-	for(Line line:lines) img+=rigth()+tm()+line.str+tm()+Clr::br()+'\n';
-}
+string Dp::position( vector<Line>::iterator line,int count){ return (count)?rigth.str()+line->str+end()+position(line+1,count-1):""; }
 
-string Dp::fill(int count,Bg bg){
-	string str=bg.str();
-	while(count--) str+=' ';
-	return str;
-}
+string Dp::fill(int count,Bg bg){ return bg+empty(count); }
+
+string Dp::empty(int count){return (count)?" "+empty(count-1):"";}
+
+string Dp::end(){return Clr::br()+'\n';}
 
 string Dp::show(){ return (changer)?build():img; }
 //------------------------------------------------------------------------------------------------
@@ -126,9 +123,8 @@ int Dp::edge(){ return b;}
 //------------------------------------------------------------------------------------------------
 std::ostream& operator<<(std::ostream& out,Display dp){ return out<<dp.show(); }
 
-string Dp::Line::operator()(){return bg.str()+fg.str()+str+Clr::br();
-	
-}
+string Dp::Line::operator()(){return bg.str()+fg.str()+str; }
+
 /*
 void Dp::show(int grupo,int x,int y)
 {

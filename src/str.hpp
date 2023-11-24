@@ -15,8 +15,6 @@ class Str{
     friend Display;
     protected:
         std::vector<std::string> buf;
-        std::string str(std::string="");
-        std::string operator()();
         
         Str();
         Str(size_t);
@@ -25,6 +23,7 @@ class Str{
         void operator+=(std::string);
         
     public:
+        std::string str();
         friend std::string operator+(std::string,Str);
         std::string operator+(std::string);
         

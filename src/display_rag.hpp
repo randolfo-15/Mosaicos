@@ -59,6 +59,13 @@ private:
 	bool size_terminal(int);									///< Calcula a dimenção do terminal atual. \warning
 	
 	void  update_width(int);									///< Atualizar largura do display.
+
+//---------------------------------------
+// Draw display
+//---------------------------------------	
+	int accentuation(std::string);						///< Contanta número de caracteres especiais.
+	int loop(const char *c);									///< Método auxiliar para contagem de caracteres
+	int complement(std::string,int);					///< Complementa de caracteres para desenhar a janela
 //---------------------------------------
 // Setting
 //---------------------------------------
@@ -91,6 +98,9 @@ private:
 		std::string str;												///< Contéudo da linha. 
 		Bg bg;																///< Background da linha
 		Fg fg;																///< Foreground da linha.
+		int type=NORMAL;										///< Aponta o grau do titulo.
+		
+		std::string operator()();								///< Retorna a string colorida e com efeito.
 	};
 //---------------------------------------
 // Display Line Builders
@@ -100,11 +110,8 @@ private:
 	
 	void draw_display();																				///< Lista o conjunto de linhas do buffer auxiliar.
 	void draw_contour();																			///< Insere os detalhamentos de contorno da linha.
-	void draw_line(Line&);																			///< Desenha a linha.
+	void draw_line(Line&,int);																	///< Desenha a linha.
 	
-	int size_line(const char *str);																///< Contanta número de caracteres especiais.
-	int loop(const char *c);																		///< Método auxiliar para contagem de caracteres          
-                                                        
 	std::string build();																				///< Motor de animação da janelas.
 	
 protected:
@@ -138,8 +145,7 @@ public:
 // Memory
 //------------------------------------------------------------------------------------------------		
 private:
-	std::vector<Line> line;									///< Buffer de tratamento de strings.
-	std::vector<std::string> main_buf;				///< Buffer de exibição.
+	std::vector<Line> lines;									///< Buffer de tratamento de strings.
 	std::vector<Display*> dps;							///< Buffer para multplos display.
 	
 public:

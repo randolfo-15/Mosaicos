@@ -21,11 +21,11 @@ Dp::Display(Tm theme):tm(theme){}
 // Headings and subheadings
 //------------------------------------------------------------------------------------------------
 
-void Dp::title(string str,int head){ if(check_bg(head)) split_rows({str,tm.bg(head),bold});}
+void Dp::title(string str,int head){ if(check_bg(head)) split_rows({str,tm.bg(head),bold,head});}
 
-void Dp::title(Fg fg,string str,int head){ if(check_bg(head)) split_rows({str,tm.bg(head),fg});}
+void Dp::title(Fg fg,string str,int head){ if(check_bg(head)) split_rows({str,tm.bg(head),fg,head});}
 
-void Dp::title(Hlg efc,string str,int head){ if(check_bg(head)) split_rows({str,tm.bg(head),Fg(efc)}); }
+void Dp::title(Hlg efc,string str,int head){ if(check_bg(head)) split_rows({str,tm.bg(head),Fg(efc),head}); }
 
 void Dp::subtitle(string str,int head){ if(check_bg(head)) title(str,head); }
 
@@ -56,7 +56,7 @@ void Dp::split_rows(Line ln,string tmp){
 	std::stringstream sstr(ln.str);
 	while(getline(sstr,tmp,'\n')){
 		update_width(tmp.size());
-		line.push_back({tmp,ln.bg,ln.fg});
+		lines.push_back({tmp,ln.bg,ln.fg,ln.type});
 	} 
 }
 //------------------------------------------------------------------------------------------------
@@ -65,27 +65,18 @@ void Dp::split_rows(Line ln,string tmp){
 string Dp::build(){
 	draw_display();
 	draw_contour();
-	changer=false;
 	return img;
 }
 
-void Display::draw_display(){ for(Line& ln:line) draw_line(ln); }
+void Display::draw_display(){ for(Line& ln : lines) draw_line(ln,complement(ln.str,ln.str.size())); }
 
-void Display::draw_line(Line& line){
-	
-	
-	string aux=fill(b,line.bg)+line.fg+line.str;							///< Desenhar lado esquerdo a line.
-	aux+=Clr::br()+line.bg+tm.fg();                                          ///< Encerra efeitos
-	int limit=w-line.str.size()+b+size_line(line.str.c_str());    ///< Definir N° caracter que completa janela.
-	while(limit--) aux.push_back(' ');                                       ///< Desenhar lado direito a line
-	changer=true;																		///< Atualiza a flag de alterações.
-	main_buf.push_back(aux);                                                  ///< Salva o contéudo 
-	
-}
+void Display::draw_line(Line& line,int attach){ line.str=fill(b,tm.bg(line.type))+line()+fill(attach,tm.bg(line.type)); }
+
+int Dp::complement(string str,int size){ return (width()+accentuation(str))-size; }
 
 void Dp::draw_contour(){
 	img=down();
-	for(string& line:main_buf) img+=rigth()+tm()+line+tm()+Clr::br()+'\n';
+	for(Line line:lines) img+=rigth()+tm()+line.str+tm()+Clr::br()+'\n';
 }
 
 string Dp::fill(int count,Bg bg){
@@ -98,16 +89,14 @@ string Dp::show(){ return (changer)?build():img; }
 //------------------------------------------------------------------------------------------------
 // Memory
 //------------------------------------------------------------------------------------------------
-void Dp::clear(){
-	//asst_buf.resize(0);
-	//main_buf.resize(0);
-}
+void Dp::clear(){ lines.resize(0); }
+
 //------------------------------------------------------------------------------------------------
 // Proportions
 //------------------------------------------------------------------------------------------------
 void  Dp::update_width(int size){ if(w<size) w=size; }
 
-int Dp::size_line(const char *vet){ return loop(vet)/2; }
+int Dp::accentuation(string str){ return loop(str.c_str())/2; }
 
 int Dp::loop(const char *c){
 	if(!c[0]) return 0;
@@ -138,6 +127,9 @@ int Dp::edge(){ return b;}
 //------------------------------------------------------------------------------------------------
 std::ostream& operator<<(std::ostream& out,Display dp){ return out<<dp.show(); }
 
+string Dp::Line::operator()(){return bg.str()+fg.str()+str+Clr::br();
+	
+}
 /*
 void Dp::show(int grupo,int x,int y)
 {

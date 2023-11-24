@@ -36,9 +36,6 @@ private:
 		},
 			{ Cls::White() }										///< Foreground padrão
 	);
-	
-	std::string img;												///< Sequência de strings que formam o display.
-	bool changer=true;											///< Checa se ouve alguma alteração no display.
 //---------------------------------------
 // Builders
 //---------------------------------------
@@ -64,8 +61,8 @@ private:
 //---------------------------------------
 // Draw display
 //---------------------------------------	
-	int accentuation(std::string);						///< Contanta número de caracteres especiais.
-	int loop(const char *c);									///< Método auxiliar para contagem de caracteres
+	int accentuation(std::string,int=0);				///< Contanta número de caracteres especiais.
+	
 	int complement(std::string);							///< Complementa de caracteres para desenhar a janela
 //---------------------------------------
 // Setting
@@ -100,18 +97,23 @@ private:
 		Bg bg;																///< Background da linha
 		Fg fg;																///< Foreground da linha.
 		int type=NORMAL;										///< Aponta o grau do titulo.
+		std::string img;											///< Desenho da linha
 		
 		std::string operator()();								///< Retorna a string colorida e com efeito.
 	};
+	std::string img;												///< Sequência de strings que formam o display.
+	
+	bool changer=false;										///< Checa se ouve alguma alteração no display.
 //---------------------------------------
 // Display Line Builders
 //---------------------------------------
 private:
 	void split_rows(Line,std::string="");													///< Divide o contéudo das string por \n
 	
+	std::string straighten(std::vector<Line>::iterator,int);				///< Insere os detalhamentos de contorno da linha.
+	
 	void draw_display();																				///< Lista o conjunto de linhas do buffer auxiliar.
-	std::string position(std::vector<Line>::iterator,int);					///< Insere os detalhamentos de contorno da linha.
-	void draw_line(Line&,int);																	///< Desenha a linha.
+	std::string draw_line(Line&,int=0);													///< Desenha a linha.
 	
 	std::string end();																					///< Retorna encerramento de string.
 	
@@ -168,14 +170,14 @@ public:
 	Display* operator[](int);                 //Find.
 	void operator*=(int);                       //Multiplicar.
 	
-	friend std::ostream& operator<<(std::ostream&,Display);
+	friend std::ostream& operator<<(std::ostream&,Display&);
 
 };using Dp=Display;
 
 Dp* operator<<(Dp*,Dp&);  //Inserir display:
 Dp* operator>>(Dp*,Dp&);  //remover display:
 
-std::ostream& operator<<(std::ostream&,Display);
+std::ostream& operator<<(std::ostream&,Display&);
 
 ///static void read(Dp,std::vector<string>*questions,std::vector<string>*answers, int n=0);    \warning
 

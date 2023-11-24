@@ -5,7 +5,6 @@
  * \date 21/09/22
  ******************************************************/
 
-#include "colour.hpp"
 #include "display_rag.hpp"
 using std::string;
 using std::vector;
@@ -34,7 +33,6 @@ void Dp::subtitle(Fg fg,string str,int head){ if(check_bg(head)) title(fg,str,he
 void Dp::subtitle(Hlg efc,string str,int head){ if(check_bg(head)) title(efc,str,head); }
 
 bool Dp:: check_bg(int bg){return (bg<tm.bgs.size())?true:throw;}
-
 //------------------------------------------------------------------------------------------------
 // Write
 //------------------------------------------------------------------------------------------------
@@ -53,6 +51,7 @@ void Dp:: write(Hlg efc,string str){ split_rows({str,tm.bg(),Fg(efc)}); }
 void Dp::write(Clr  clr,Hlg efc,string str){ split_rows({str,Bg(clr),Fg(efc)}); }
 
 void Dp::split_rows(Line ln,string tmp){
+	changer=true;
 	std::stringstream sstr(ln.str);
 	while(getline(sstr,tmp,'\n')){
 		update_width(tmp.size());
@@ -62,18 +61,19 @@ void Dp::split_rows(Line ln,string tmp){
 //------------------------------------------------------------------------------------------------
 // Draw Display
 //------------------------------------------------------------------------------------------------
-string Dp::build(){
+string Dp::build(){   
+	changer=false;
 	draw_display();
-	return  down.str()+position(lines.begin(),lines.size());
+	return  down.str()+straighten(lines.begin(),lines.size());
 }
 
-void Display::draw_display(){ for(Line& ln : lines) draw_line(ln,complement(ln.str)); }
+void Display::draw_display(){ for(Line& ln : lines) ln.img = draw_line(ln,complement(ln.str)); }
 
-void Display::draw_line(Line& line,int attach){ line.str=fill(b,tm.bg(line.type))+line()+fill(attach,tm.bg(line.type)); }
+string Display::draw_line(Line& line,int attach){ return fill(b,tm.bg(line.type))+line()+fill(attach,tm.bg(line.type)); }
 
 int Dp::complement(string str){ return (width()+accentuation(str))-str.size(); }
 
-string Dp::position( vector<Line>::iterator line,int count){ return (count)?rigth.str()+line->str+end()+position(line+1,count-1):""; }
+string Dp::straighten( vector<Line>::iterator line,int cnt){ return (cnt)?rigth.str()+line->img+end()+straighten(line+1,cnt-1):""; }
 
 string Dp::fill(int count,Bg bg){ return bg+empty(count); }
 
@@ -81,7 +81,9 @@ string Dp::empty(int count){return (count)?" "+empty(count-1):"";}
 
 string Dp::end(){return Clr::br()+'\n';}
 
-string Dp::show(){ return (changer)?build():img; }
+int Dp::accentuation(string str,int soma){ for(char c:str) soma+=(c<0)? 1:0; return soma/2;}
+
+string Dp::show(){ return (changer)?(img=build()):img; }
 //------------------------------------------------------------------------------------------------
 // Memory
 //------------------------------------------------------------------------------------------------
@@ -90,15 +92,7 @@ void Dp::clear(){ lines.resize(0); }
 //------------------------------------------------------------------------------------------------
 // Proportions
 //------------------------------------------------------------------------------------------------
-void  Dp::update_width(int size){ if(w<size) w=size; }
-
-int Dp::accentuation(string str){ return loop(str.c_str())/2; }
-
-int Dp::loop(const char *c){
-	if(!c[0]) return 0;
-	else if(c[0]<0) return 1+loop(c+1);
-	else return 0+loop(c+1);
-}
+void  Dp::update_width(int size){  if(w<size) w=size; }
 
 ///\warning Precisamos descobrir o tamanho do terminal e redesenhar janela.
 void Dp::width(int n){if(n>=0) w=n; } 
@@ -121,7 +115,7 @@ int Dp::edge(){ return b;}
 //------------------------------------------------------------------------------------------------
 // Operator
 //------------------------------------------------------------------------------------------------
-std::ostream& operator<<(std::ostream& out,Display dp){ return out<<dp.show(); }
+std::ostream& operator<<(std::ostream& out,Display& dp){ return out<<dp.show(); }
 
 string Dp::Line::operator()(){return bg.str()+fg.str()+str; }
 

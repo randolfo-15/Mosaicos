@@ -16,14 +16,21 @@ int main(){
         
         Dp dp;
         dp.title("Title...");
-        dp.write("Google Tradutor - Um intérprete\n no seu smartphone ou computador. Tradutor. Traduzir agora.\n Entenda seu mundo e se comunique em\n outros idiomas com o Google Tradutor. Traduza textos, falas, imagens,\n documentos, sites e muito mais nos seus dispositivos.");
-        dp.subtitle("subtitle...");
-        dp.write(Green(),"....");
         dp.write("....");
         dp.write("pppp");
         cout<<dp<<Rigth(10)<<"end\n";
-        dp.write("pppp");
+        cout<<dp<<Rigth(10)<<"end\n";
+        
+        dp.write("Google Tradutor - Um intérprete\n no seççu smartphone ou computador. Tradutor. Traduzir agora.\n Entenda seu mundo e se comunique em\n outros idiomas com o Google Tradutor. Traduza textos, falas, imagens,\n documentos, sites e muito mais nos seus dispositivos.");
+        
         cout<<dp<<"end\n";
+        
+        dp.write("pppp");
+        
+        dp.subtitle("subtitle...");
+        dp.write(Green(),"....");
+        cout<<dp<<"end\n";
+        
         
         return 0;
 }

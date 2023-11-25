@@ -6,10 +6,9 @@
  ******************************************************/
 
 #include "display_rag.hpp"
+#include <vector>
 using std::string;
 using std::vector;
-
-const Hlg Dp::bold=Efc::Bold();
 
 //------------------------------------------------------------------------------------------------
 // Build class
@@ -20,7 +19,7 @@ Dp::Display(Tm theme):tm(theme){}
 //------------------------------------------------------------------------------------------------
 // Headings and subheadings
 //------------------------------------------------------------------------------------------------
-void Dp::title(string str,int head){ if(check_bg(head)) split_rows({str,tm.bg(head),bold,head});}
+void Dp::title(string str,int head){ if(check_bg(head)) split_rows({str,tm.bg(head),tm.fg(head),head});}
 
 void Dp::title(Fg fg,string str,int head){ if(check_bg(head)) split_rows({str,tm.bg(head),fg,head});}
 
@@ -118,6 +117,7 @@ int Dp::edge(){ return b;}
 std::ostream& operator<<(std::ostream& out,Display& dp){ return out<<dp.show(); }
 
 string Dp::Line::operator()(){return bg.str()+fg.str()+str; }
+
 
 /*
 void Dp::show(int grupo,int x,int y)

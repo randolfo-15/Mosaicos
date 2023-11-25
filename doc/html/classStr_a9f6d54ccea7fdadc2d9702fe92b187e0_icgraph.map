@@ -1,0 +1,17 @@
+<map id="Str::str" name="Str::str">
+<area shape="rect" id="Node000001" title=" " alt="" coords="390,136,454,164"/>
+<area shape="rect" id="Node000002" href="$classDisplay.html#aff68881c09f41172cfb03e76ae99c664" title="Motor de animação da janelas." alt="" coords="199,5,308,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="404,124,378,84,360,65,341,48,307,32,310,27,343,44,364,61,382,81,409,121"/>
+<area shape="rect" id="Node000004" href="$structDisplay_1_1Line.html#af2b695d1a57a4833ca238e46ba71997a" title="Retorna a string colorida e com efeito." alt="" coords="165,57,342,85"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="389,129,341,100,310,88,312,83,343,95,391,124"/>
+<area shape="rect" id="Node000005" href="$classGround.html#ade1d1d84b40d4019b0b815d0ff9cfd88" title=" " alt="" coords="183,109,324,137"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="374,145,324,137,325,132,375,140"/>
+<area shape="rect" id="Node000006" href="$classTheme.html#a92ed9bb9f0a9211f0fd5fd6b8a66fe23" title=" " alt="" coords="184,161,323,189"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="375,160,324,167,323,162,374,154"/>
+<area shape="rect" id="Node000007" href="$structDirections.html#a718a1f89a7524feb73790beef88b6e79" title=" " alt="" coords="173,213,334,241"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="391,175,343,203,311,215,309,210,341,198,388,171"/>
+<area shape="rect" id="Node000008" href="$str_8cpp.html#a2e0fb0e433a15a57deaa0fa6afbf2bf8" title=" " alt="" coords="210,265,297,293"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="409,179,382,218,364,238,343,255,321,266,298,274,297,269,319,262,341,250,360,234,378,215,404,176"/>
+<area shape="rect" id="Node000003" href="$classDisplay.html#a41c7b479921bb4aedae03a866f4e8e10" title="retorna a imagem do distema atual." alt="" coords="5,5,117,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="183,22,117,22,117,17,183,17"/>
+</map>

@@ -27,7 +27,7 @@ var hierarchy =
       [ "Effect::Tachado", "structEffect_1_1Tachado.html", null ],
       [ "Effect::Underline", "structEffect_1_1Underline.html", null ]
     ] ],
-    [ "Line", "classLine.html", null ],
+    [ "Display::Line", "structDisplay_1_1Line.html", null ],
     [ "Str", "classStr.html", [
       [ "Directions", "structDirections.html", [
         [ "Down", "structDown.html", null ],

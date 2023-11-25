@@ -1,11 +1,12 @@
 var searchData=
 [
-  ['dark_0',['Dark',['../structEffect_1_1Dark.html#a0fc6363ed1d90d8034f4e4525066f1bb',1,'Effect::Dark']]],
-  ['directions_1',['directions',['../structDirections.html#a7a36f30cffacf07648253c043eb6033d',1,'Directions::Directions()'],['../structDirections.html#aa1b5604ecd54ee5edbdcc67e80bc61a0',1,'Directions::Directions(int)'],['../structDirections.html#a3c62b5a2432bd594b4a6aeb253850947',1,'Directions::Directions(char, int=1)']]],
-  ['display_2',['display',['../classDisplay.html#afec8fd0111a7915ead06ec02b5f6d2f8',1,'Display::Display()'],['../classDisplay.html#acfb76d40ba4258feee0c783e306add95',1,'Display::Display(Theme)']]],
-  ['dist_5fx_3',['dist_x',['../classDisplay.html#a57db6b43b6b5139f502fa2d3579873b9',1,'Display']]],
-  ['dist_5fy_4',['dist_y',['../classDisplay.html#ad0e710dfeb68db46e50535c23048d374',1,'Display']]],
-  ['distribution_5',['distribution',['../classDisplay.html#ae29d43f45d232ad7e1c599488c785a02',1,'Display']]],
-  ['down_6',['Down',['../structDown.html#a9151edfc7c2bd982505b326721bb0d3a',1,'Down']]],
-  ['draw_7',['draw',['../classDisplay.html#aeaf7e796530aa5177ff8e7e906ba82e3',1,'Display']]]
+  ['check_0',['check',['../structColour.html#aef8c6ee662ec6221a03113a44d18878e',1,'Colour']]],
+  ['check_5fbg_1',['check_bg',['../classDisplay.html#a02ac36651c91ada6065bc805931bd103',1,'Display']]],
+  ['clear_2',['clear',['../structClear.html#a6576aaa78926175cf34f0ef1789890c1',1,'Clear::Clear()'],['../classDisplay.html#ad2d68880afe161d2bc4d90695cf1de50',1,'Display::clear()']]],
+  ['clear_5fline_3',['Clear_line',['../structClear__line.html#a23ee7b9c0e08ca4b4c2b6de371ea7561',1,'Clear_line']]],
+  ['clear_5fscreen_4',['Clear_screen',['../structClear__screen.html#ab22e3d2cf1462d21bcc90cb6dd5e36f7',1,'Clear_screen']]],
+  ['colour_5',['colour',['../structColour.html#aa54b6a3943c429f54ecd6d9634b3f13c',1,'Colour::Colour()'],['../structColour.html#ab2c8410bcabafb84cdacc70978e6ffe7',1,'Colour::Colour(nivel_red, nivel_blue, nivel_green)']]],
+  ['complement_6',['complement',['../classDisplay.html#aaa70f85672210a05d8bbcffbf13876d2',1,'Display']]],
+  ['copy_5fcolour_7',['copy_colour',['../classGround.html#a2e498551ca8c12f67df861026b1921ac',1,'Ground']]],
+  ['cyan_8',['Cyan',['../structColors_1_1Cyan.html#a66af896d2e61a4f969e7cfebea34b40f',1,'Colors::Cyan']]]
 ];

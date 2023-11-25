@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['gray_0',['Gray',['../structColors_1_1Gray.html#a8a6019838ebef08f77616da4bb92fa03',1,'Colors::Gray']]],
-  ['green_1',['green',['../structColors_1_1Green.html#a7cab789a98cb94ed2981ff58390b8d45',1,'Colors::Green::Green()'],['../structColour.html#a7828ec8ad9b877a93298a671bc44e03b',1,'Colour::green(nivel)'],['../structColour.html#a420810d3406c60010965da6a880c9efa',1,'Colour::green()']]],
-  ['ground_2',['Ground',['../classGround.html#a6c458d7eacc7fed8ed340d53811ff083',1,'Ground']]]
+  ['fg_0',['fg',['../classTheme.html#a768a835053905a8322ddc8655180a702',1,'Theme::fg(int=0)'],['../classTheme.html#a06ff93255be6d08818b6a3b512e81504',1,'Theme::fg(Highlight, int=0)'],['../classTheme.html#af0f8ed35aa6134842faa17eaff7470c1',1,'Theme::fg(Colour, int=0)']]],
+  ['fill_1',['fill',['../classDisplay.html#ad0e52097ee8d0d2ae09b70e51ec26ca6',1,'Display']]],
+  ['foreground_2',['foreground',['../structForeground.html#a171919d91ff4cb012942cca134ffb484',1,'Foreground::Foreground()'],['../structForeground.html#af3268dce7dd69b766cab07370dc86c93',1,'Foreground::Foreground(Colour)'],['../structForeground.html#a12fa105a66218701e58f068269bac2b9',1,'Foreground::Foreground(Highlight)'],['../structForeground.html#ae1a45010e090bd31ff3b05e04fdba2d4',1,'Foreground::Foreground(Colour, Highlight)']]]
 ];

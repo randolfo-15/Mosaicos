@@ -1,0 +1,15 @@
+<map id="Display::Line" name="Display::Line">
+<area shape="rect" id="Node000001" title=" " alt="" coords="46,300,151,328"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,64,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="32,49,27,87,25,134,28,185,40,234,60,270,85,298,82,302,56,274,35,236,23,186,20,134,22,86,27,48"/>
+<area shape="rect" id="Node000004" href="$classGround.html" title="Define a coloração de background de uma letra." alt="" coords="92,98,161,126"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="48,46,66,72,99,95,96,100,63,76,44,49"/>
+<area shape="rect" id="Node000003" href="$structBackground.html" title=" " alt="" coords="49,208,148,235"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="101,251,101,300,96,300,96,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="122,142,104,208,99,207,117,140"/>
+<area shape="rect" id="Node000006" href="$structForeground.html" title=" " alt="" coords="171,208,266,235"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="150,136,210,206,206,209,146,140"/>
+<area shape="rect" id="Node000005" href="$classStr.html" title=" " alt="" coords="119,5,158,33"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="137,49,131,98,126,97,132,48"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="191,247,118,302,114,298,188,242"/>
+</map>

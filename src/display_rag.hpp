@@ -84,8 +84,6 @@ public:
 // Write
 //-----------------------------------------------------------------------------------------------
 private:
-	static const Hlg bold;
-
 	enum Titles{
 		NORMAL=0,													/// Background padrão
 		TITLE=1,															/// Background para títulos
@@ -104,6 +102,7 @@ private:
 	std::string img;												///< Sequência de strings que formam o display.
 	
 	bool changer=false;										///< Checa se ouve alguma alteração no display.
+	
 //---------------------------------------
 // Display Line Builders
 //---------------------------------------
@@ -161,6 +160,11 @@ public:
 // Operations:
 //------------------------------------------------------------------------------------------------
 public:
+	friend std::ostream& operator<<(std::ostream&,Display&);
+	
+	
+
+	
 	friend Display* operator<<(Display*,Display&);
 	friend Display* operator>>(Display*,Display&);
 	void operator+=(Display&);
@@ -170,7 +174,6 @@ public:
 	Display* operator[](int);                 //Find.
 	void operator*=(int);                       //Multiplicar.
 	
-	friend std::ostream& operator<<(std::ostream&,Display&);
 
 };using Dp=Display;
 

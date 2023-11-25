@@ -8,7 +8,9 @@ var classTheme =
     [ "fg", "classTheme.html#af0f8ed35aa6134842faa17eaff7470c1", null ],
     [ "fg", "classTheme.html#a06ff93255be6d08818b6a3b512e81504", null ],
     [ "fg", "classTheme.html#a768a835053905a8322ddc8655180a702", null ],
+    [ "operator()", "classTheme.html#a92ed9bb9f0a9211f0fd5fd6b8a66fe23", null ],
     [ "operator<<", "classTheme.html#ad203dcc433c24058246fcd76233e5483", null ],
     [ "bgs", "classTheme.html#af946a2c2a3ed9ac1e47f70dcee3dc58a", null ],
+    [ "Display", "classTheme.html#ac3aae06cc8896dbcc7917db90cd0dbcf", null ],
     [ "fgs", "classTheme.html#ab3c6c95a3e4fb564ded49011b37c3884", null ]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['joust_0',['JOUST',['../display__rag_8hpp.html#a3c64cfc93652f9ee27e999b3f1859b39acb6e60a0745b4ace673b25add4c310bd',1,'display_rag.hpp']]]
+  ['normal_0',['NORMAL',['../classDisplay.html#a0990d9ce6bbe54261f38ce8899cb5d72a3d084dc95bdb704f8f7dfeb5e7ee853c',1,'Display']]]
 ];

@@ -36,7 +36,7 @@ Fg Tm::fg(int i){ return fgs[i];  }
 		
 Bg Tm::bg(int i){ return bgs[i]; }
 
-string Tm::operator()(){return bgs[0]+""+fgs[0]+"" ;}
+string Tm::operator()(){return bgs[0].str()+fgs[0].str() ;}
 
 //--------------------------------------------------------------
 // Setting

@@ -94,7 +94,6 @@ $(document).ready(function(){initNavTree('display__rag_8hpp.html',''); initResiz
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">display_rag.hpp File Reference</div></div>
 </div><!--header-->
@@ -102,13 +101,17 @@ $(document).ready(function(){initNavTree('display__rag_8hpp.html',''); initResiz
 
 <p>Arquivo de definição da classe display,shadow,space.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;unistd.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;ostream&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
 <code>#include &lt;sys/wait.h&gt;</code><br />
 <code>#include &lt;cstdlib&gt;</code><br />
 <code>#include &lt;sstream&gt;</code><br />
 <code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;<a class="el" href="background_8hpp_source.html">background.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="colour_8hpp_source.html">colour.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="effect_8hpp_source.html">effect.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="foreground_8hpp_source.html">foreground.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="theme_8hpp_source.html">theme.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="directions__rag_8hpp_source.html">directions_rag.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="clear__rag_8hpp_source.html">clear_rag.hpp</a>&quot;</code><br />
@@ -117,57 +120,61 @@ Include dependency graph for display_rag.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="display__rag_8hpp__incl.png" border="0" usemap="#asrc_2display__rag_8hpp" alt=""/></div>
 <map name="asrc_2display__rag_8hpp" id="asrc_2display__rag_8hpp">
-<area shape="rect" title="Arquivo de definição da classe display,shadow,space." alt="" coords="399,5,546,33"/>
-<area shape="rect" title=" " alt="" coords="5,81,79,109"/>
-<area shape="poly" title=" " alt="" coords="399,33,261,53,94,83,93,78,260,48,398,27"/>
-<area shape="rect" title=" " alt="" coords="102,81,190,109"/>
-<area shape="poly" title=" " alt="" coords="414,36,205,83,204,78,413,31"/>
-<area shape="rect" title=" " alt="" coords="214,81,278,109"/>
-<area shape="poly" title=" " alt="" coords="433,36,294,81,292,76,431,31"/>
-<area shape="rect" title=" " alt="" coords="302,81,377,109"/>
-<area shape="poly" title=" " alt="" coords="450,36,377,76,375,71,448,31"/>
-<area shape="rect" title=" " alt="" coords="401,81,473,109"/>
-<area shape="poly" title=" " alt="" coords="469,35,452,68,447,66,464,32"/>
-<area shape="rect" href="colour_8hpp.html" title="Arquivo de definição Foreground Background e Efeitos." alt="" coords="673,308,761,336"/>
-<area shape="poly" title=" " alt="" coords="478,33,510,158,529,223,544,258,569,279,598,294,658,311,656,316,596,299,566,283,540,262,524,225,504,159,473,34"/>
-<area shape="rect" href="effect_8hpp.html" title="Arquivo de definição efeitos." alt="" coords="786,308,872,336"/>
-<area shape="poly" title=" " alt="" coords="483,32,534,111,563,154,588,182,636,220,687,252,782,299,780,304,685,257,632,224,584,186,559,157,529,114,478,35"/>
-<area shape="rect" href="theme_8hpp.html" title="Arquivo de definição de temas das janelas." alt="" coords="676,81,768,109"/>
-<area shape="poly" title=" " alt="" coords="518,31,664,74,662,79,516,36"/>
-<area shape="rect" href="directions__rag_8hpp.html" title="Arquivo de definição da classe Directions" alt="" coords="1113,232,1254,260"/>
-<area shape="poly" title=" " alt="" coords="547,24,694,39,872,65,959,83,1037,103,1102,127,1148,155,1160,168,1169,184,1181,216,1176,218,1165,186,1156,171,1144,159,1100,132,1036,108,958,88,871,71,693,45,547,29"/>
-<area shape="rect" href="clear__rag_8hpp.html" title="Arquivo de definição da classe Directions" alt="" coords="1025,157,1134,184"/>
-<area shape="poly" title=" " alt="" coords="547,31,657,51,780,78,913,114,1025,149,1024,154,911,120,779,84,656,57,546,36"/>
-<area shape="rect" title=" " alt="" coords="869,384,927,411"/>
-<area shape="poly" title=" " alt="" coords="750,334,855,376,853,381,748,339"/>
-<area shape="poly" title=" " alt="" coords="843,334,877,370,873,374,839,338"/>
-<area shape="rect" title=" " alt="" coords="951,384,1013,411"/>
-<area shape="poly" title=" " alt="" coords="857,334,942,374,940,379,855,339"/>
-<area shape="rect" title=" " alt="" coords="760,384,844,411"/>
-<area shape="poly" title=" " alt="" coords="826,337,814,370,809,368,821,335"/>
-<area shape="rect" href="foreground_8hpp.html" title="Arquivo de definição Foreground." alt="" coords="731,157,852,184"/>
-<area shape="poly" title=" " alt="" coords="736,107,770,143,767,147,732,111"/>
-<area shape="rect" href="background_8hpp.html" title="Arquivo de definição Background." alt="" coords="875,157,1001,184"/>
-<area shape="poly" title=" " alt="" coords="761,107,886,149,884,154,760,112"/>
-<area shape="rect" title=" " alt="" coords="598,157,707,184"/>
-<area shape="poly" title=" " alt="" coords="712,111,677,147,674,143,708,107"/>
-<area shape="rect" href="ground_8hpp.html" title="Arquivo de definição ground." alt="" coords="744,232,839,260"/>
-<area shape="poly" title=" " alt="" coords="794,185,794,217,789,217,789,185"/>
-<area shape="poly" title=" " alt="" coords="780,262,743,299,739,295,776,259"/>
-<area shape="poly" title=" " alt="" coords="800,259,818,293,813,295,796,262"/>
-<area shape="rect" href="str_8hpp.html" title="Arquivo de definição do modelo de string usado." alt="" coords="972,308,1037,336"/>
-<area shape="poly" title=" " alt="" coords="830,258,958,302,956,307,829,263"/>
-<area shape="poly" title=" " alt="" coords="987,338,931,377,928,373,984,334"/>
-<area shape="poly" title=" " alt="" coords="1003,337,993,370,988,368,998,335"/>
-<area shape="rect" title=" " alt="" coords="1038,384,1113,411"/>
-<area shape="poly" title=" " alt="" coords="1019,334,1054,371,1051,374,1015,338"/>
-<area shape="poly" title=" " alt="" coords="913,187,832,228,830,223,911,182"/>
-<area shape="poly" title=" " alt="" coords="1152,263,1052,304,1050,299,1150,258"/>
-<area shape="poly" title=" " alt="" coords="1069,187,1021,240,963,310,917,373,913,370,959,306,1017,236,1065,183"/>
-<area shape="poly" title=" " alt="" coords="1082,185,1079,368,1073,368,1076,184"/>
-<area shape="poly" title=" " alt="" coords="1099,183,1154,221,1151,226,1096,187"/>
-<area shape="rect" title=" " alt="" coords="862,232,942,260"/>
-<area shape="poly" title=" " alt="" coords="1049,187,949,229,947,224,1047,182"/>
+<area shape="rect" title="Arquivo de definição da classe display,shadow,space." alt="" coords="746,5,894,33"/>
+<area shape="rect" title=" " alt="" coords="18,384,94,411"/>
+<area shape="poly" title=" " alt="" coords="746,25,646,30,521,41,384,58,247,84,205,90,162,92,85,95,53,100,29,113,14,135,8,169,8,247,11,281,20,314,44,369,39,371,15,315,6,282,3,248,3,169,9,133,26,109,51,95,84,89,162,87,204,85,246,78,383,53,521,35,646,25,746,20"/>
+<area shape="rect" title=" " alt="" coords="935,81,1009,109"/>
+<area shape="poly" title=" " alt="" coords="848,31,933,72,930,76,846,36"/>
+<area shape="rect" title=" " alt="" coords="1032,81,1120,109"/>
+<area shape="poly" title=" " alt="" coords="866,31,1018,74,1017,79,865,36"/>
+<area shape="rect" title=" " alt="" coords="1144,81,1208,109"/>
+<area shape="poly" title=" " alt="" coords="895,30,1002,50,1129,78,1128,83,1001,56,894,36"/>
+<area shape="rect" title=" " alt="" coords="1232,81,1307,109"/>
+<area shape="poly" title=" " alt="" coords="894,27,1040,47,1217,78,1216,83,1039,52,894,32"/>
+<area shape="rect" title=" " alt="" coords="1331,81,1403,109"/>
+<area shape="poly" title=" " alt="" coords="894,24,1082,43,1197,58,1316,78,1315,83,1196,64,1081,48,894,29"/>
+<area shape="rect" title=" " alt="" coords="458,384,521,411"/>
+<area shape="poly" title=" " alt="" coords="834,32,854,56,875,88,893,127,900,169,900,249,888,260,857,274,757,312,536,384,535,379,756,307,855,269,885,255,895,246,895,169,888,129,871,91,850,59,830,35"/>
+<area shape="rect" href="background_8hpp.html" title="Arquivo de definição Background." alt="" coords="407,157,532,184"/>
+<area shape="poly" title=" " alt="" coords="754,36,681,55,605,83,547,116,499,149,496,145,544,111,603,79,680,50,753,31"/>
+<area shape="rect" href="colour_8hpp.html" title="Arquivo de definição Foreground Background e Efeitos." alt="" coords="383,308,471,336"/>
+<area shape="poly" title=" " alt="" coords="747,35,650,54,543,82,494,99,451,117,418,137,397,158,394,170,397,184,408,242,421,292,416,294,403,243,392,185,389,170,392,155,414,133,449,112,492,94,542,77,649,49,746,30"/>
+<area shape="rect" href="effect_8hpp.html" title="Arquivo de definição efeitos." alt="" coords="496,308,582,336"/>
+<area shape="poly" title=" " alt="" coords="827,33,835,62,840,101,839,145,833,166,824,186,802,213,777,237,748,257,717,274,654,299,598,314,596,309,653,294,715,269,745,253,773,233,798,210,819,183,828,164,833,144,835,102,829,63,822,34"/>
+<area shape="rect" href="foreground_8hpp.html" title="Arquivo de definição Foreground." alt="" coords="689,157,810,184"/>
+<area shape="poly" title=" " alt="" coords="816,34,764,144,760,141,812,32"/>
+<area shape="rect" href="theme_8hpp.html" title="Arquivo de definição de temas das janelas." alt="" coords="616,81,707,109"/>
+<area shape="poly" title=" " alt="" coords="793,36,704,77,702,72,791,31"/>
+<area shape="rect" href="directions__rag_8hpp.html" title="Arquivo de definição da classe Directions" alt="" coords="248,232,389,260"/>
+<area shape="poly" title=" " alt="" coords="746,23,643,25,525,34,470,42,420,52,380,66,352,83,331,113,321,149,317,185,318,217,312,217,312,185,315,147,327,110,349,79,378,61,419,47,469,36,525,28,642,20,746,17"/>
+<area shape="rect" href="clear__rag_8hpp.html" title="Arquivo de definição da classe Directions" alt="" coords="129,157,239,184"/>
+<area shape="poly" title=" " alt="" coords="746,27,506,46,386,62,337,72,301,83,274,97,250,113,209,148,205,144,246,109,272,92,299,79,336,67,385,57,506,41,745,22"/>
+<area shape="rect" href="ground_8hpp.html" title="Arquivo de definição ground." alt="" coords="464,232,558,260"/>
+<area shape="poly" title=" " alt="" coords="479,184,498,217,493,220,474,186"/>
+<area shape="rect" href="str_8hpp.html" title="Arquivo de definição do modelo de string usado." alt="" coords="293,308,358,336"/>
+<area shape="poly" title=" " alt="" coords="479,263,373,305,371,300,477,258"/>
+<area shape="poly" title=" " alt="" coords="497,263,455,300,451,296,494,259"/>
+<area shape="poly" title=" " alt="" coords="518,260,531,293,526,294,513,262"/>
+<area shape="poly" title=" " alt="" coords="293,335,109,384,108,379,292,330"/>
+<area shape="poly" title=" " alt="" coords="356,334,448,375,445,380,354,339"/>
+<area shape="rect" title=" " alt="" coords="312,384,371,411"/>
+<area shape="poly" title=" " alt="" coords="331,336,338,368,333,369,326,337"/>
+<area shape="poly" title=" " alt="" coords="413,338,370,375,366,371,410,334"/>
+<area shape="poly" title=" " alt="" coords="532,338,509,372,504,369,528,335"/>
+<area shape="poly" title=" " alt="" coords="504,339,386,382,385,377,502,334"/>
+<area shape="rect" title=" " alt="" coords="545,384,629,411"/>
+<area shape="poly" title=" " alt="" coords="549,335,572,369,568,372,545,338"/>
+<area shape="poly" title=" " alt="" coords="707,187,569,230,567,225,706,182"/>
+<area shape="poly" title=" " alt="" coords="628,112,519,153,517,148,626,107"/>
+<area shape="poly" title=" " alt="" coords="679,107,724,145,720,149,675,111"/>
+<area shape="rect" title=" " alt="" coords="556,157,665,184"/>
+<area shape="poly" title=" " alt="" coords="654,111,631,145,626,142,650,108"/>
+<area shape="poly" title=" " alt="" coords="323,260,325,292,320,293,317,261"/>
+<area shape="poly" title=" " alt="" coords="151,187,118,206,90,234,73,267,64,303,58,368,52,368,58,302,68,265,86,231,115,202,149,183"/>
+<area shape="poly" title=" " alt="" coords="169,187,153,202,139,220,131,239,134,259,149,281,167,302,211,336,257,362,299,380,297,385,254,367,208,340,164,306,145,285,130,261,126,239,134,217,149,198,165,183"/>
+<area shape="poly" title=" " alt="" coords="209,183,283,223,281,227,207,187"/>
+<area shape="rect" title=" " alt="" coords="144,232,224,260"/>
+<area shape="poly" title=" " alt="" coords="187,185,187,217,181,217,181,185"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -185,25 +192,15 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLine.html">Line</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html">Display</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDisplay_1_1Line.html">Display::Line</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a39553f78f5afc73a07943d81ac8d6455" id="r_a39553f78f5afc73a07943d81ac8d6455"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="display__rag_8hpp.html#a39553f78f5afc73a07943d81ac8d6455">Dp</a> = <a class="el" href="classDisplay.html">Display</a></td></tr>
-<tr class="memdesc:a39553f78f5afc73a07943d81ac8d6455"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abrevição do nome da classe:  <br /></td></tr>
 <tr class="separator:a39553f78f5afc73a07943d81ac8d6455"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9850bd23621dd1e3ba9ed54b6ee7cef9" id="r_a9850bd23621dd1e3ba9ed54b6ee7cef9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="display__rag_8hpp.html#a9850bd23621dd1e3ba9ed54b6ee7cef9">slice_mode</a> = enum <a class="el" href="display__rag_8hpp.html#a3c64cfc93652f9ee27e999b3f1859b39">slice_mode</a></td></tr>
-<tr class="separator:a9850bd23621dd1e3ba9ed54b6ee7cef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a3c64cfc93652f9ee27e999b3f1859b39" id="r_a3c64cfc93652f9ee27e999b3f1859b39"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="display__rag_8hpp.html#a3c64cfc93652f9ee27e999b3f1859b39">slice_mode</a> { <a class="el" href="display__rag_8hpp.html#a3c64cfc93652f9ee27e999b3f1859b39ad77fe182b2be925d654220a317fa5fbe">SMART</a>
-, <a class="el" href="display__rag_8hpp.html#a3c64cfc93652f9ee27e999b3f1859b39acb6e60a0745b4ace673b25add4c310bd">JOUST</a>
- }</td></tr>
-<tr class="separator:a3c64cfc93652f9ee27e999b3f1859b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -211,6 +208,8 @@ Functions</h2></td></tr>
 <tr class="separator:a09bd0b0191c7dd576fc161186bc0d839"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83bd6d1d8ba0f72cd9ab0bdefe98fe64" id="r_a83bd6d1d8ba0f72cd9ab0bdefe98fe64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="display__rag_8hpp.html#a39553f78f5afc73a07943d81ac8d6455">Dp</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="display__rag_8hpp.html#a83bd6d1d8ba0f72cd9ab0bdefe98fe64">operator&gt;&gt;</a> (<a class="el" href="display__rag_8hpp.html#a39553f78f5afc73a07943d81ac8d6455">Dp</a> *, <a class="el" href="display__rag_8hpp.html#a39553f78f5afc73a07943d81ac8d6455">Dp</a> &amp;)</td></tr>
 <tr class="separator:a83bd6d1d8ba0f72cd9ab0bdefe98fe64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abab1c17ecf64ae4014145df0754578d1" id="r_abab1c17ecf64ae4014145df0754578d1"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="display__rag_8hpp.html#abab1c17ecf64ae4014145df0754578d1">operator&lt;&lt;</a> (std::ostream &amp;, <a class="el" href="classDisplay.html">Display</a> &amp;)</td></tr>
+<tr class="separator:abab1c17ecf64ae4014145df0754578d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Arquivo de definição da classe display,shadow,space. </p>
@@ -232,52 +231,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Abrevição do nome da classe: </p>
-
-<p class="definition">Definition at line <a class="el" href="display__rag_8hpp_source.html#l00025">25</a> of file <a class="el" href="display__rag_8hpp_source.html">display_rag.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a9850bd23621dd1e3ba9ed54b6ee7cef9" name="a9850bd23621dd1e3ba9ed54b6ee7cef9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9850bd23621dd1e3ba9ed54b6ee7cef9">&#9670;&#160;</a></span>slice_mode</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="display__rag_8hpp.html#a3c64cfc93652f9ee27e999b3f1859b39">slice_mode</a> =  enum <a class="el" href="display__rag_8hpp.html#a3c64cfc93652f9ee27e999b3f1859b39">slice_mode</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="display__rag_8hpp_source.html#l00045">45</a> of file <a class="el" href="display__rag_8hpp_source.html">display_rag.hpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a3c64cfc93652f9ee27e999b3f1859b39" name="a3c64cfc93652f9ee27e999b3f1859b39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c64cfc93652f9ee27e999b3f1859b39">&#9670;&#160;</a></span>slice_mode</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="display__rag_8hpp.html#a3c64cfc93652f9ee27e999b3f1859b39">slice_mode</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3c64cfc93652f9ee27e999b3f1859b39ad77fe182b2be925d654220a317fa5fbe" name="a3c64cfc93652f9ee27e999b3f1859b39ad77fe182b2be925d654220a317fa5fbe"></a>SMART&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3c64cfc93652f9ee27e999b3f1859b39acb6e60a0745b4ace673b25add4c310bd" name="a3c64cfc93652f9ee27e999b3f1859b39acb6e60a0745b4ace673b25add4c310bd"></a>JOUST&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-<p class="definition">Definition at line <a class="el" href="display__rag_8hpp_source.html#l00044">44</a> of file <a class="el" href="display__rag_8hpp_source.html">display_rag.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="display__rag_8hpp_source.html#l00180">180</a> of file <a class="el" href="display__rag_8hpp_source.html">display_rag.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a09bd0b0191c7dd576fc161186bc0d839" name="a09bd0b0191c7dd576fc161186bc0d839"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09bd0b0191c7dd576fc161186bc0d839">&#9670;&#160;</a></span>operator&lt;&lt;()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a09bd0b0191c7dd576fc161186bc0d839">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -302,7 +262,38 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00184">184</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00170">170</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abab1c17ecf64ae4014145df0754578d1" name="abab1c17ecf64ae4014145df0754578d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abab1c17ecf64ae4014145df0754578d1">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classDisplay.html">Display</a> &amp;&#160;</td>
+          <td class="paramname"><em>dp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section warning"><dt>Warning</dt><dd></dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00165">165</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
 
 </div>
 </div>
@@ -332,7 +323,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00185">185</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00171">171</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
 
 </div>
 </div>

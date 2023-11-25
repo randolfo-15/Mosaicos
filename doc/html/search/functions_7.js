@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['init_0',['init',['../structDirections.html#a73576383d42018f0ef829e5ae7c443a9',1,'Directions::init()'],['../classGround.html#af2a69055746aea9c213c69d460ef379a',1,'Ground::init()']]],
-  ['insert_1',['insert',['../classDisplay.html#a6e5e8fa336487a72fd9949390c6154e3',1,'Display']]],
-  ['italic_2',['Italic',['../structEffect_1_1Italic.html#a8ac5ffe247fa9efd71b6eb4eb480a78a',1,'Effect::Italic']]]
+  ['hidden_0',['Hidden',['../structEffect_1_1Hidden.html#a190393a3d5bebebb72a0ede6b0798138',1,'Effect::Hidden']]],
+  ['highlight_1',['highlight',['../classHighlight.html#ac9f3842d0e9abb83dfa9bcee498d1d0b',1,'Highlight::Highlight()'],['../classHighlight.html#a3d27206128385f08587f88f098202042',1,'Highlight::Highlight(int)']]],
+  ['horizontal_2',['horizontal',['../classDisplay.html#ac1aa9a84297b32bcd523b5c07311ad0e',1,'Display::horizontal(int)'],['../classDisplay.html#a3fcb7d088b571f8ab3a3688c94767ee5',1,'Display::horizontal()']]]
 ];

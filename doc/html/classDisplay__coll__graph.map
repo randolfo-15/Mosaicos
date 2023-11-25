@@ -1,21 +1,18 @@
 <map id="Display" name="Display">
-<area shape="rect" id="Node000001" title=" " alt="" coords="129,268,199,295"/>
-<area shape="rect" id="Node000002" href="$classTheme.html" title="Define um conjunto de cores e comportamentos de uma janela." alt="" coords="5,175,72,203"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,210,107,241,143,265,141,269,104,246,64,215"/>
-<area shape="rect" id="Node000003" href="$structBackground.html" title=" " alt="" coords="259,175,357,203"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="281,214,235,246,192,269,189,265,232,241,278,210"/>
-<area shape="rect" id="Node000004" href="$classGround.html" title="Define a coloração de background de uma letra." alt="" coords="272,98,341,126"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="310,141,310,175,305,175,304,141"/>
-<area shape="rect" id="Node000005" href="$classStr.html" title=" " alt="" coords="212,5,252,33"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="254,44,298,96,294,99,250,47"/>
-<area shape="rect" id="Node000008" href="$structDirections.html" title=" " alt="" coords="162,98,249,126"/>
-<area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="226,48,212,98,206,97,221,47"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="277,5,336,33"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="309,48,309,98,304,98,304,48"/>
-<area shape="rect" id="Node000007" href="$structRigth.html" title=" " alt="" coords="96,175,152,203"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="132,217,140,243,155,266,150,268,135,245,127,219"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="182,138,140,177,136,173,178,134"/>
-<area shape="rect" id="Node000009" href="$structDown.html" title=" " alt="" coords="176,175,234,203"/>
-<area shape="poly" id="edge10_Node000009_Node000008" title=" " alt="" coords="208,141,208,175,203,175,203,141"/>
-<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="195,218,172,268,167,266,190,216"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="170,252,240,280"/>
+<area shape="rect" id="Node000002" href="$classTheme.html" title="Define um conjunto de cores e comportamentos de uma janela." alt="" coords="5,159,72,187"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,193,127,226,176,249,173,254,125,230,69,198"/>
+<area shape="rect" id="Node000003" href="$structRigth.html" title=" " alt="" coords="96,159,152,187"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="144,197,168,226,192,250,188,253,164,230,140,201"/>
+<area shape="rect" id="Node000004" href="$structDirections.html" title=" " alt="" coords="120,82,208,110"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="152,125,133,160,128,158,147,123"/>
+<area shape="rect" id="Node000006" href="$structDown.html" title=" " alt="" coords="176,159,234,187"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="181,123,200,158,196,160,176,125"/>
+<area shape="rect" id="Node000005" href="$classStr.html" title=" " alt="" coords="144,5,184,33"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="167,48,167,82,161,82,161,48"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="208,202,208,252,203,252,203,202"/>
+<area shape="rect" id="Node000007" href="$classHighlight.html" title=" " alt="" coords="258,159,339,187"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="280,200,251,230,224,254,220,249,247,226,276,196"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="363,159,421,187"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="361,198,302,230,242,255,240,250,300,226,358,193"/>
 </map>

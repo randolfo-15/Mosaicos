@@ -11,21 +11,27 @@
 #include <vector>
 #include <ostream>
 class Display;
+class Theme;
+
 class Str{
     friend Display;
+    friend Theme;
+    
     protected:
         std::vector<std::string> buf;
         
         Str();
         Str(size_t);
         Str(std::string);
-
-        void operator+=(std::string);
-        
-    public:
         std::string str();
+        
+        void operator+=(std::string);
         friend std::string operator+(std::string,Str);
         std::string operator+(std::string);
+    
+public:
+        
+        
         
         friend std::ostream& operator<<(std::ostream&,Str);
 };

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['left_0',['Left',['../structLeft.html#a7be426d69a518c62081500f5a787b4f9',1,'Left']]],
-  ['line_1',['Line',['../classLine.html#ae1c0f1486149b9fdae0c398526b42939',1,'Line']]],
-  ['loop_2',['loop',['../classDisplay.html#a635eb4b97ef2b16a0de5f6f2e3541e49',1,'Display']]]
+  ['init_0',['init',['../structDirections.html#a73576383d42018f0ef829e5ae7c443a9',1,'Directions::init()'],['../classGround.html#af2a69055746aea9c213c69d460ef379a',1,'Ground::init()']]],
+  ['italic_1',['Italic',['../structEffect_1_1Italic.html#a8ac5ffe247fa9efd71b6eb4eb480a78a',1,'Effect::Italic']]]
 ];

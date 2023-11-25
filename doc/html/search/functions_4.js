@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['fg_0',['fg',['../classTheme.html#a768a835053905a8322ddc8655180a702',1,'Theme::fg(int=0)'],['../classTheme.html#a06ff93255be6d08818b6a3b512e81504',1,'Theme::fg(Highlight, int=0)'],['../classTheme.html#af0f8ed35aa6134842faa17eaff7470c1',1,'Theme::fg(Colour, int=0)']]],
-  ['fill_1',['fill',['../classDisplay.html#ad0e52097ee8d0d2ae09b70e51ec26ca6',1,'Display']]],
-  ['foreground_2',['foreground',['../structForeground.html#a171919d91ff4cb012942cca134ffb484',1,'Foreground::Foreground()'],['../structForeground.html#af3268dce7dd69b766cab07370dc86c93',1,'Foreground::Foreground(Colour)'],['../structForeground.html#a12fa105a66218701e58f068269bac2b9',1,'Foreground::Foreground(Highlight)'],['../structForeground.html#ae1a45010e090bd31ff3b05e04fdba2d4',1,'Foreground::Foreground(Colour, Highlight)']]],
-  ['format_3',['format',['../classDisplay.html#a205d5608025e26b8c824b913c44edcae',1,'Display']]],
-  ['format_5fline_4',['format_line',['../classDisplay.html#ae2f0fe8e1cb1473424b4780ce99546a2',1,'Display']]]
+  ['edge_0',['edge',['../classDisplay.html#a7d3f91e84a198bc9dd3854f7b5763dfd',1,'Display::edge(int)'],['../classDisplay.html#af0ef024c5fb116a1a4dc0d1ef769a84d',1,'Display::edge()']]],
+  ['empty_1',['empty',['../classDisplay.html#a61bf97fddf1bf913f39869d34dc7dfc8',1,'Display']]],
+  ['end_2',['end',['../classDisplay.html#a87f6056bd7603edf0a62cd16865d45be',1,'Display']]]
 ];

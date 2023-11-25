@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['part_0',['part',['../structClear.html#accc5e7b275d7acb6d660db63076b501b',1,'Clear::part()'],['../structClear.html#a65c6929ef715b487b653559723cddc77',1,'Clear::part(int)']]],
-  ['pixel_1',['pixel',['../structColour.html#ab4ddd5bcabe322a2f817c131b0bb9dd1',1,'Colour']]],
-  ['plan_2',['plan',['../structBackground.html#a92f55f5a6fdf27360f18757bf3b1418c',1,'Background::PLAN'],['../structForeground.html#afe2c161c58ec2c09c9a32b39c07b52e9',1,'Foreground::PLAN'],['../classGround.html#a1fdde7f2564d9e271e1d5560135288f6a392a0d4f8c6d8877dbee5a3b683cf0e4',1,'Ground::PLAN']]],
-  ['pontos_20de_20salto_20de_20linha_3',['Definir pontos de salto de linha',['..//home/randolfo/Documentos/Mosaicos/src/display.cpp#autotoc_md0',1,'']]]
+  ['r_0',['R',['../classGround.html#a1fdde7f2564d9e271e1d5560135288f6a76b16f63d6091ff5860e186971904ef0',1,'Ground']]],
+  ['red_1',['red',['../structColors_1_1Red.html',1,'Colors::Red'],['../structColour.html#af019c5ba882abc868957780a4ef2d078',1,'Colour::red(nivel)'],['../structColour.html#a8a659c3844b77d63472a1b1864ca8e00',1,'Colour::red()'],['../structColour.html#a75f9c790990a9046a85618397708adf0a535393d5878619167021d5e683adbf15',1,'Colour::RED'],['../structColors_1_1Red.html#ac010a2bcec6571efb9ab8caa00914e56',1,'Colors::Red::Red()']]],
+  ['reverse_2',['reverse',['../structEffect_1_1Reverse.html',1,'Effect::Reverse'],['../structEffect_1_1Reverse.html#ae8b39371bd03543588bfc15fd9bad09f',1,'Effect::Reverse::Reverse()']]],
+  ['rgb_3',['rgb',['../structColour.html#a7ba74b55466a0f66e9dd7eb2a05e177d',1,'Colour::rgb'],['../structColour.html#a75f9c790990a9046a85618397708adf0',1,'Colour::RGB']]],
+  ['rigth_4',['rigth',['../structRigth.html',1,'Rigth'],['../structRigth.html#a8a475943573796986916993ae446b117',1,'Rigth::Rigth()'],['../classDisplay.html#a943c21b5bd7d4d2f2c4d3006c9cc4dcb',1,'Display::rigth']]]
 ];

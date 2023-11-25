@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['hidden_0',['Hidden',['../structEffect_1_1Hidden.html#a190393a3d5bebebb72a0ede6b0798138',1,'Effect::Hidden']]],
-  ['highlight_1',['highlight',['../classHighlight.html#ac9f3842d0e9abb83dfa9bcee498d1d0b',1,'Highlight::Highlight()'],['../classHighlight.html#a3d27206128385f08587f88f098202042',1,'Highlight::Highlight(int)']]]
+  ['gray_0',['Gray',['../structColors_1_1Gray.html#a8a6019838ebef08f77616da4bb92fa03',1,'Colors::Gray']]],
+  ['green_1',['green',['../structColors_1_1Green.html#a7cab789a98cb94ed2981ff58390b8d45',1,'Colors::Green::Green()'],['../structColour.html#a7828ec8ad9b877a93298a671bc44e03b',1,'Colour::green(nivel)'],['../structColour.html#a420810d3406c60010965da6a880c9efa',1,'Colour::green()']]],
+  ['ground_2',['Ground',['../classGround.html#a6c458d7eacc7fed8ed340d53811ff083',1,'Ground']]]
 ];

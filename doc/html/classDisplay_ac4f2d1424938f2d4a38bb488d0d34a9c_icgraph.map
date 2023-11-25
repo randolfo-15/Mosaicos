@@ -1,0 +1,7 @@
+<map id="Display::straighten" name="Display::straighten">
+<area shape="rect" id="Node000001" title="Insere os detalhamentos de contorno da linha." alt="" coords="322,5,465,33"/>
+<area shape="rect" id="Node000002" href="$classDisplay.html#aff68881c09f41172cfb03e76ae99c664" title="Motor de animação da janelas." alt="" coords="165,5,274,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="306,22,275,22,275,17,306,17"/>
+<area shape="rect" id="Node000003" href="$classDisplay.html#a41c7b479921bb4aedae03a866f4e8e10" title="retorna a imagem do distema atual." alt="" coords="5,5,117,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="149,22,117,22,117,17,149,17"/>
+</map>

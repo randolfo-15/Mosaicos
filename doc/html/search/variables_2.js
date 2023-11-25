@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['clss_0',['clss',['../structBackground.html#ae11b64316ec4b08096d301e29792f75d',1,'Background::CLSS'],['../structForeground.html#acaf10037a553e8eb5256f42eac669dfd',1,'Foreground::CLSS']]],
-  ['colorless_1',['colorless',['../classGround.html#a42cdd723e1ac02c5d1e2d3a8a01f7a53',1,'Ground']]],
-  ['corte_2',['corte',['../classDisplay.html#a9ba6660aec3dcb5fbacd1546fa96f227',1,'Display']]]
+  ['display_0',['display',['../classStr.html#a039e217d87f0758d04860e4ddc5bb619',1,'Str::Display'],['../classTheme.html#ac3aae06cc8896dbcc7917db90cd0dbcf',1,'Theme::Display']]],
+  ['down_1',['down',['../classDisplay.html#afcfbf36e2dfa67afbc5f89d11e54a09f',1,'Display']]],
+  ['dps_2',['dps',['../classDisplay.html#a33ca69b3036c8588a194a254f03c99de',1,'Display']]]
 ];

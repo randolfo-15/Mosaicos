@@ -119,7 +119,7 @@ string Dp::operator+(Dp dp){ return (lines.size()>=dp.lines.size())? add(*this,d
 string Dp::add(Dp& a,Dp& b,string image,int i){
 	a.build();
 	b.build();
-	for(;i<b.lines.size();i++) image+=a.rigth+a.lines[i].img+Clr::br()+"  "+b.lines[i].img+end();
+	for(;i<b.lines.size();i++) image+=a.rigth+a.lines[i].img+b.rigth+b.lines[i].img+end();
 	for(;i<a.lines.size();i++) image+=a.rigth+a.lines[i].img+end();
 	return image;
 }

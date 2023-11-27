@@ -147,6 +147,7 @@ public:
 	friend std::ostream& operator<<(std::ostream&,Display&);		///< Exibe o contéudo do buffer
 	
 	std::string operator+(Display);																	///< Define qual display e desenhado primeiro.
+private:
 	std::string add(Display&,Display&,std::string="",int=0);
 	
 };using Dp=Display;

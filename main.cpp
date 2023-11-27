@@ -16,6 +16,7 @@ using namespace Efc;
 int main(){
         
         Dp a,b,c;
+        
         a.title("...");
         b.title("...");
         a.write(Yellow(),"a");

@@ -106,6 +106,7 @@ protected:
 	std::string fill(int,Bg);																			///< Preencher espaços:
 	std::string empty(int);																		///< Cria uma string vazia.
 	std::string show();																				///< retorna a imagem do distema atual.
+	void sort();																								///< Ordena os displays
 //---------------------------------------
 // Writes
 //---------------------------------------
@@ -135,6 +136,7 @@ public:
 //------------------------------------------------------------------------------------------------		
 private:
 	std::vector<Line> lines;																		///< Buffer de tratamento de strings.
+	std::vector<Display*> dps;																///< Conjunto  para multiplos display.
 	
 public:
 	void clear();																							///< Limpa contéudo do display.	
@@ -142,14 +144,13 @@ public:
 // Operations:
 //------------------------------------------------------------------------------------------------
 public:
+	
 	friend std::ostream& operator<<(std::ostream&,Display&);		///< Exibe o contéudo do buffer
 	
-	std::string operator+(Display);																	///< Define qual display e desenhado primeiro.
-private:
-	std::string add(Display&,Display&,std::string="",int=0);
-	
+	void operator+=(Display&);																	///< Adiciona um display a nossa direita.
+		
 };using Dp=Display;
 
-std::ostream& operator<<(std::ostream&,Display&);						// Exibe o contéudo do buffer
+std::ostream& operator<<(std::ostream&,Display&);						///< Exibe o contéudo do buffer
 
 #endif // display_rag.hpp

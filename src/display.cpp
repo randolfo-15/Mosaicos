@@ -13,9 +13,9 @@ using std::vector;
 //------------------------------------------------------------------------------------------------
 // Build class
 //------------------------------------------------------------------------------------------------
-Dp::Display(){}
-Dp::Display(Tm theme):tm(theme){} 
+Dp::Display(){dps.push_back(this);}
 
+Dp::Display(Tm theme):tm(theme){dps.push_back(this);} 
 //------------------------------------------------------------------------------------------------
 // Headings and subheadings
 //------------------------------------------------------------------------------------------------
@@ -62,27 +62,37 @@ void Dp::split_rows(Line ln,string tmp){
 //------------------------------------------------------------------------------------------------
 string Dp::build(){   
 	changer=false;
+	sort();
 	draw_display();
-	return  down.str()+straighten(lines.begin(),lines.size());
+	return  down.str()+straighten(dps[0]->lines.begin(),dps[0]->lines.size());
 }
 
-void Display::draw_display(){ for(Line& ln : lines) ln.img = draw_line(ln,complement(ln.str)); }
+void Display::draw_display(){ 
+	for(Dp* dp:dps){ int i=0;
+		for(Line& ln : dp->lines) dps[0]->lines[i++].img += draw_line(ln,complement(ln.str))+dp->rigth; 
+	}
+}
 
 string Display::draw_line(Line& line,int attach){ return fill(b,tm.bg(line.type))+line()+Clr::br()+fill(attach,tm.bg(line.type)); }
 
-int Dp::complement(string str){ return (width()+accentuation(str))-str.size(); }
-
 string Dp::straighten( vector<Line>::iterator line,int cnt){ return (cnt)?rigth.str()+line->img+end()+straighten(line+1,cnt-1):""; }
+
+int Dp::accentuation(string str,int soma){ for(char c:str) soma+=(c<0)? 1:0; return soma/2;}
+
+string Dp::show(){ return (changer)?(img=build()):img; }
+
+string Dp::end(){return Clr::br()+'\n';}
+
+int Dp::complement(string str){ return (width()+accentuation(str))-str.size(); }
 
 string Dp::fill(int count,Bg bg){ return bg+empty(count); }
 
 string Dp::empty(int count){return (count)?" "+empty(count-1):"";}
 
-string Dp::end(){return Clr::br()+'\n';}
-
-int Dp::accentuation(string str,int soma){ for(char c:str) soma+=(c<0)? 1:0; return soma/2;}
-
-string Dp::show(){ return (changer)?(img=build()):img; }
+void Dp::sort(){
+	auto fx=[](Dp*a,Dp*b){ return (a->lines.size()>b->lines.size()); };
+	std::sort(dps.begin(),dps.end(),fx);
+}
 //------------------------------------------------------------------------------------------------
 // Memory
 //------------------------------------------------------------------------------------------------
@@ -110,15 +120,7 @@ int Dp::edge(){ return b;}
 //------------------------------------------------------------------------------------------------
 std::ostream& operator<<(std::ostream& out,Display& dp){ return out<<dp.show(); }
 
-string Dp::operator+(Dp dp){ return (lines.size()>=dp.lines.size())? add(*this,dp,down.str()):add(dp,*this,dp.down.str()); }
-
-string Dp::add(Dp& a,Dp& b,string image,int i){
-	a.build();
-	b.build();
-	for(;i<b.lines.size();i++) image+=a.rigth+a.lines[i].img+b.rigth+b.lines[i].img+end();
-	for(;i<a.lines.size();i++) image+=a.rigth+a.lines[i].img+end();
-	return image;
-}
+void Dp::operator+=(Dp& dp){ dps.push_back(&dp); }
 
 //------------------------------------
 // Line

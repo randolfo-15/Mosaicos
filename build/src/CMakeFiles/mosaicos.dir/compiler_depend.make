@@ -747,39 +747,21 @@ src/CMakeFiles/mosaicos.dir/display.cpp.o: /home/randolfo/Documentos/Mosaicos/sr
   /usr/include/asm/errno.h \
   /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/byteswap.h \
-  /usr/include/bits/confname.h \
   /usr/include/bits/cpu-set.h \
   /usr/include/bits/endian.h \
   /usr/include/bits/endianness.h \
-  /usr/include/bits/environments.h \
   /usr/include/bits/errno.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
-  /usr/include/bits/getopt_core.h \
-  /usr/include/bits/getopt_posix.h \
   /usr/include/bits/libc-header-start.h \
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
-  /usr/include/bits/posix_opt.h \
   /usr/include/bits/pthread_stack_min-dynamic.h \
   /usr/include/bits/pthreadtypes-arch.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/sched.h \
   /usr/include/bits/select.h \
   /usr/include/bits/setjmp.h \
-  /usr/include/bits/sigaction.h \
-  /usr/include/bits/sigcontext.h \
-  /usr/include/bits/sigevent-consts.h \
-  /usr/include/bits/siginfo-arch.h \
-  /usr/include/bits/siginfo-consts-arch.h \
-  /usr/include/bits/siginfo-consts.h \
-  /usr/include/bits/signal_ext.h \
-  /usr/include/bits/signum-arch.h \
-  /usr/include/bits/signum-generic.h \
-  /usr/include/bits/sigstack.h \
-  /usr/include/bits/sigstksz.h \
-  /usr/include/bits/sigthread.h \
-  /usr/include/bits/ss_flags.h \
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdio_lim.h \
   /usr/include/bits/stdlib-float.h \
@@ -798,25 +780,17 @@ src/CMakeFiles/mosaicos.dir/display.cpp.o: /home/randolfo/Documentos/Mosaicos/sr
   /usr/include/bits/types/__locale_t.h \
   /usr/include/bits/types/__mbstate_t.h \
   /usr/include/bits/types/__sigset_t.h \
-  /usr/include/bits/types/__sigval_t.h \
   /usr/include/bits/types/clock_t.h \
   /usr/include/bits/types/clockid_t.h \
   /usr/include/bits/types/cookie_io_functions_t.h \
   /usr/include/bits/types/error_t.h \
-  /usr/include/bits/types/idtype_t.h \
   /usr/include/bits/types/locale_t.h \
   /usr/include/bits/types/mbstate_t.h \
-  /usr/include/bits/types/sig_atomic_t.h \
-  /usr/include/bits/types/sigevent_t.h \
-  /usr/include/bits/types/siginfo_t.h \
   /usr/include/bits/types/sigset_t.h \
-  /usr/include/bits/types/sigval_t.h \
-  /usr/include/bits/types/stack_t.h \
   /usr/include/bits/types/struct_FILE.h \
   /usr/include/bits/types/struct___jmp_buf_tag.h \
   /usr/include/bits/types/struct_itimerspec.h \
   /usr/include/bits/types/struct_sched_param.h \
-  /usr/include/bits/types/struct_sigstack.h \
   /usr/include/bits/types/struct_timespec.h \
   /usr/include/bits/types/struct_timeval.h \
   /usr/include/bits/types/struct_tm.h \
@@ -825,7 +799,6 @@ src/CMakeFiles/mosaicos.dir/display.cpp.o: /home/randolfo/Documentos/Mosaicos/sr
   /usr/include/bits/types/wint_t.h \
   /usr/include/bits/typesizes.h \
   /usr/include/bits/uintn-identity.h \
-  /usr/include/bits/unistd_ext.h \
   /usr/include/bits/waitflags.h \
   /usr/include/bits/waitstatus.h \
   /usr/include/bits/wchar.h \
@@ -843,7 +816,6 @@ src/CMakeFiles/mosaicos.dir/display.cpp.o: /home/randolfo/Documentos/Mosaicos/sr
   /usr/include/c++/13.2.1/bits/basic_string.tcc \
   /usr/include/c++/13.2.1/bits/char_traits.h \
   /usr/include/c++/13.2.1/bits/charconv.h \
-  /usr/include/c++/13.2.1/bits/codecvt.h \
   /usr/include/c++/13.2.1/bits/concept_check.h \
   /usr/include/c++/13.2.1/bits/cpp_type_traits.h \
   /usr/include/c++/13.2.1/bits/cxxabi_forced.h \
@@ -851,7 +823,6 @@ src/CMakeFiles/mosaicos.dir/display.cpp.o: /home/randolfo/Documentos/Mosaicos/sr
   /usr/include/c++/13.2.1/bits/exception.h \
   /usr/include/c++/13.2.1/bits/exception_defines.h \
   /usr/include/c++/13.2.1/bits/exception_ptr.h \
-  /usr/include/c++/13.2.1/bits/fstream.tcc \
   /usr/include/c++/13.2.1/bits/functexcept.h \
   /usr/include/c++/13.2.1/bits/functional_hash.h \
   /usr/include/c++/13.2.1/bits/hash_bytes.h \
@@ -916,7 +887,6 @@ src/CMakeFiles/mosaicos.dir/display.cpp.o: /home/randolfo/Documentos/Mosaicos/sr
   /usr/include/c++/13.2.1/ext/numeric_traits.h \
   /usr/include/c++/13.2.1/ext/string_conversions.h \
   /usr/include/c++/13.2.1/ext/type_traits.h \
-  /usr/include/c++/13.2.1/fstream \
   /usr/include/c++/13.2.1/initializer_list \
   /usr/include/c++/13.2.1/ios \
   /usr/include/c++/13.2.1/iosfwd \
@@ -938,10 +908,8 @@ src/CMakeFiles/mosaicos.dir/display.cpp.o: /home/randolfo/Documentos/Mosaicos/sr
   /usr/include/c++/13.2.1/typeinfo \
   /usr/include/c++/13.2.1/vector \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h \
-  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
-  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++locale.h \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h \
@@ -957,12 +925,10 @@ src/CMakeFiles/mosaicos.dir/display.cpp.o: /home/randolfo/Documentos/Mosaicos/sr
   /usr/include/features.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/gnu/stubs.h \
-  /usr/include/linux/close_range.h \
   /usr/include/linux/errno.h \
   /usr/include/locale.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
-  /usr/include/signal.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
@@ -970,10 +936,7 @@ src/CMakeFiles/mosaicos.dir/display.cpp.o: /home/randolfo/Documentos/Mosaicos/sr
   /usr/include/sys/select.h \
   /usr/include/sys/single_threaded.h \
   /usr/include/sys/types.h \
-  /usr/include/sys/ucontext.h \
-  /usr/include/sys/wait.h \
   /usr/include/time.h \
-  /usr/include/unistd.h \
   /usr/include/wchar.h \
   /usr/include/wctype.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stdarg.h \
@@ -1937,47 +1900,13 @@ src/CMakeFiles/mosaicos.dir/theme.cpp.o: /home/randolfo/Documentos/Mosaicos/src/
 
 /home/randolfo/Documentos/Mosaicos/src/effect.cpp:
 
-/usr/include/unistd.h:
-
-/usr/include/signal.h:
-
-/usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++io.h:
-
-/usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/basic_file.h:
-
 /usr/include/c++/13.2.1/sstream:
-
-/usr/include/bits/unistd_ext.h:
-
-/usr/include/bits/types/struct_sigstack.h:
-
-/usr/include/bits/types/sigevent_t.h:
-
-/usr/include/bits/types/__sigval_t.h:
-
-/usr/include/bits/sigstksz.h:
-
-/usr/include/bits/signum-arch.h:
-
-/usr/include/bits/siginfo-arch.h:
-
-/usr/include/bits/sigaction.h:
-
-/usr/include/bits/getopt_posix.h:
-
-/usr/include/bits/sigstack.h:
-
-/usr/include/bits/siginfo-consts-arch.h:
-
-/usr/include/bits/getopt_core.h:
 
 /home/randolfo/Documentos/Mosaicos/src/foreground.hpp:
 
 /usr/include/c++/13.2.1/iostream:
 
 /usr/include/c++/13.2.1/bits/istream.tcc:
-
-/usr/include/bits/confname.h:
 
 /home/randolfo/Documentos/Mosaicos/src/directions_rag.hpp:
 
@@ -2021,19 +1950,13 @@ src/CMakeFiles/mosaicos.dir/theme.cpp.o: /home/randolfo/Documentos/Mosaicos/src/
 
 /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/ctype_inline.h:
 
-/usr/include/bits/environments.h:
-
 /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h:
 
 /home/randolfo/Documentos/Mosaicos/src/colour.cpp:
 
 /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h:
 
-/usr/include/c++/13.2.1/fstream:
-
 /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++locale.h:
-
-/usr/include/bits/siginfo-consts.h:
 
 /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++config.h:
 
@@ -2057,8 +1980,6 @@ src/CMakeFiles/mosaicos.dir/theme.cpp.o: /home/randolfo/Documentos/Mosaicos/src/
 
 /usr/include/c++/13.2.1/initializer_list:
 
-/usr/include/bits/types/idtype_t.h:
-
 /usr/include/c++/13.2.1/ext/type_traits.h:
 
 /usr/include/c++/13.2.1/ext/string_conversions.h:
@@ -2075,15 +1996,11 @@ src/CMakeFiles/mosaicos.dir/theme.cpp.o: /home/randolfo/Documentos/Mosaicos/src/
 
 /usr/include/c++/13.2.1/cwchar:
 
-/usr/include/c++/13.2.1/bits/codecvt.h:
-
 /usr/include/c++/13.2.1/iosfwd:
 
 /usr/include/c++/13.2.1/cstdlib:
 
 /usr/include/c++/13.2.1/cctype:
-
-/usr/include/c++/13.2.1/bits/fstream.tcc:
 
 /usr/include/c++/13.2.1/bits/uses_allocator.h:
 
@@ -2115,11 +2032,7 @@ src/CMakeFiles/mosaicos.dir/theme.cpp.o: /home/randolfo/Documentos/Mosaicos/src/
 
 /usr/include/bits/types/cookie_io_functions_t.h:
 
-/usr/include/bits/types/siginfo_t.h:
-
 /usr/include/bits/sched.h:
-
-/usr/include/bits/posix_opt.h:
 
 /usr/include/bits/atomic_wide_counter.h:
 
@@ -2145,8 +2058,6 @@ src/CMakeFiles/mosaicos.dir/theme.cpp.o: /home/randolfo/Documentos/Mosaicos/src/
 
 /usr/include/bits/types/error_t.h:
 
-/usr/include/linux/close_range.h:
-
 /usr/include/bits/stdint-intn.h:
 
 /usr/include/c++/13.2.1/pstl/execution_defs.h:
@@ -2160,10 +2071,6 @@ src/CMakeFiles/mosaicos.dir/theme.cpp.o: /home/randolfo/Documentos/Mosaicos/src/
 /home/randolfo/Documentos/Mosaicos/src/colour.hpp:
 
 /usr/include/bits/thread-shared-types.h:
-
-/usr/include/bits/types/stack_t.h:
-
-/usr/include/bits/sigevent-consts.h:
 
 /usr/include/c++/13.2.1/bits/new_allocator.h:
 
@@ -2180,8 +2087,6 @@ src/CMakeFiles/mosaicos.dir/theme.cpp.o: /home/randolfo/Documentos/Mosaicos/src/
 /usr/include/bits/uintn-identity.h:
 
 /usr/include/bits/long-double.h:
-
-/usr/include/sys/wait.h:
 
 /usr/include/bits/stdlib-float.h:
 
@@ -2239,8 +2144,6 @@ src/CMakeFiles/mosaicos.dir/theme.cpp.o: /home/randolfo/Documentos/Mosaicos/src/
 
 /usr/include/bits/libc-header-start.h:
 
-/usr/include/bits/ss_flags.h:
-
 /usr/include/bits/types/struct_FILE.h:
 
 /home/randolfo/Documentos/Mosaicos/src/effect.hpp:
@@ -2285,15 +2188,11 @@ src/CMakeFiles/mosaicos.dir/theme.cpp.o: /home/randolfo/Documentos/Mosaicos/src/
 
 /usr/include/bits/types/timer_t.h:
 
-/usr/include/bits/sigcontext.h:
-
 /home/randolfo/Documentos/Mosaicos/src/ground.hpp:
 
 /usr/include/bits/types/wint_t.h:
 
 /usr/include/c++/13.2.1/bits/stl_pair.h:
-
-/usr/include/bits/signum-generic.h:
 
 /usr/include/c++/13.2.1/backward/binders.h:
 
@@ -2323,8 +2222,6 @@ src/CMakeFiles/mosaicos.dir/theme.cpp.o: /home/randolfo/Documentos/Mosaicos/src/
 
 /usr/include/c++/13.2.1/bits/charconv.h:
 
-/usr/include/bits/sigthread.h:
-
 /usr/include/c++/13.2.1/bits/uses_allocator_args.h:
 
 /usr/include/c++/13.2.1/bits/cxxabi_forced.h:
@@ -2348,8 +2245,6 @@ src/CMakeFiles/mosaicos.dir/theme.cpp.o: /home/randolfo/Documentos/Mosaicos/src/
 /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/gthr.h:
 
 /usr/include/c++/13.2.1/bits/stl_iterator.h:
-
-/usr/include/bits/types/sigval_t.h:
 
 /usr/include/c++/13.2.1/bits/exception_ptr.h:
 
@@ -2401,8 +2296,6 @@ src/CMakeFiles/mosaicos.dir/theme.cpp.o: /home/randolfo/Documentos/Mosaicos/src/
 
 /usr/include/c++/13.2.1/bits/requires_hosted.h:
 
-/usr/include/bits/types/sig_atomic_t.h:
-
 /usr/include/c++/13.2.1/bits/vector.tcc:
 
 /usr/include/bits/typesizes.h:
@@ -2436,10 +2329,6 @@ src/CMakeFiles/mosaicos.dir/theme.cpp.o: /home/randolfo/Documentos/Mosaicos/src/
 /usr/include/bits/types/clockid_t.h:
 
 /usr/include/c++/13.2.1/bits/stl_uninitialized.h:
-
-/usr/include/sys/ucontext.h:
-
-/usr/include/bits/signal_ext.h:
 
 /usr/include/c++/13.2.1/bits/postypes.h:
 

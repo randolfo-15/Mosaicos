@@ -9,16 +9,7 @@
 #define DISPLAY_RAG_HPP
 
 #include <ostream>
-#include <unistd.h> 
-#include <sys/wait.h>
-#include <cstdlib>
 #include <sstream>
-#include <fstream>
-#include <vector>
-#include "background.hpp"
-#include "colour.hpp"
-#include "effect.hpp"
-#include "foreground.hpp"
 #include "theme.hpp"
 #include "directions_rag.hpp"
 #include "clear_rag.hpp"
@@ -34,7 +25,11 @@ private:
 			Cls::Blue(),											///< Fundo para titulos 
 			Cls::Blue()-135										///< Fundo para subtitulos
 		},
-			{ Cls::White() }										///< Foreground padrão
+		{
+			Fg(Cls::White()),									///< Foreground padrão para escrita
+			Fg(Cls::White(),Efc::Bold()),				///< Foreground para títulos
+			Fg(Cls::White(),Efc::Bold())				///< Foreground para subtitulos
+		}										
 	);
 //---------------------------------------
 // Builders
@@ -54,16 +49,7 @@ private:
 		y=2,																	///< Distanciamento vertical.
 		b=2;																	///< Espaçamento texto.	
 		
-	bool size_terminal(int);									///< Calcula a dimenção do terminal atual. \warning
-	
 	void  update_width(int);									///< Atualizar largura do display.
-
-//---------------------------------------
-// Draw display
-//---------------------------------------	
-	int accentuation(std::string,int=0);				///< Contanta número de caracteres especiais.
-	
-	int complement(std::string);							///< Complementa de caracteres para desenhar a janela
 //---------------------------------------
 // Setting
 //---------------------------------------
@@ -100,7 +86,7 @@ private:
 		std::string operator()();								///< Retorna a string colorida e com efeito.
 	};
 	std::string img;												///< Sequência de strings que formam o display.
-	
+
 	bool changer=false;										///< Checa se ouve alguma alteração no display.
 	
 //---------------------------------------
@@ -108,15 +94,15 @@ private:
 //---------------------------------------
 private:
 	void split_rows(Line,std::string="");													///< Divide o contéudo das string por \n
+	void draw_display();																				///< Lista o conjunto de linhas do buffer.
 	
 	std::string straighten(std::vector<Line>::iterator,int);				///< Insere os detalhamentos de contorno da linha.
-	
-	void draw_display();																				///< Lista o conjunto de linhas do buffer auxiliar.
 	std::string draw_line(Line&,int=0);													///< Desenha a linha.
-	
+	std::string build();																				///< Motor de animação da janelas.
 	std::string end();																					///< Retorna encerramento de string.
 	
-	std::string build();																				///< Motor de animação da janelas.
+	int accentuation(std::string,int=0);													///< Contanta número de caracteres especiais.
+	int complement(std::string);																///< Complementa de caracteres para desenhar a janela
 	
 protected:
 	std::string fill(int,Bg);																			///< Preencher espaços:
@@ -150,38 +136,21 @@ public:
 // Memory
 //------------------------------------------------------------------------------------------------		
 private:
-	std::vector<Line> lines;									///< Buffer de tratamento de strings.
-	std::vector<Display*> dps;							///< Buffer para multplos display.
+	std::vector<Line> lines;																		///< Buffer de tratamento de strings.
 	
 public:
-	void clear();														///< Limpa contéudo do display.
-	
+	void clear();																							///< Limpa contéudo do display.	
 //------------------------------------------------------------------------------------------------
 // Operations:
 //------------------------------------------------------------------------------------------------
 public:
-	friend std::ostream& operator<<(std::ostream&,Display&);
+	friend std::ostream& operator<<(std::ostream&,Display&);		///< Exibe o contéudo do buffer
 	
+	std::string operator+(Display);																	///< Define qual display e desenhado primeiro.
+	std::string add(Display&,Display&,std::string="",int=0);
 	
-
-	
-	friend Display* operator<<(Display*,Display&);
-	friend Display* operator>>(Display*,Display&);
-	void operator+=(Display&);
-	void operator-=(Display&);
-	Display* operator<<(Display&);
-	Display* operator>>(Display&);
-	Display* operator[](int);                 //Find.
-	void operator*=(int);                       //Multiplicar.
-	
-
 };using Dp=Display;
 
-Dp* operator<<(Dp*,Dp&);  //Inserir display:
-Dp* operator>>(Dp*,Dp&);  //remover display:
-
-std::ostream& operator<<(std::ostream&,Display&);
-
-///static void read(Dp,std::vector<string>*questions,std::vector<string>*answers, int n=0);    \warning
+std::ostream& operator<<(std::ostream&,Display&);						// Exibe o contéudo do buffer
 
 #endif // display_rag.hpp

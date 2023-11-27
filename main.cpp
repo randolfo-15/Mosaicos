@@ -16,9 +16,10 @@ using namespace Efc;
 int main(){
         
         Dp a,b,c;
-        
+        b.horizontal(7);
         a.title("...");
         b.title("...");
+        cout<<b<<'\n';
         a.write(Yellow(),"a");
         a.write(Yellow(),"a");
         a.write(Yellow(),"a");

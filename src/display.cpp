@@ -94,19 +94,15 @@ void Dp::clear(){ lines.resize(0); }
 void  Dp::update_width(int size){  if(w<size) w=size; }
 
 void Dp::width(int n){if(n>=0) w=n; } 
-
 int Dp::width(){ return w+b;}
 
-void Dp::horizontal(int n){ x=n;}
+void Dp::horizontal(int n){ rigth.size(n);}
+int Dp::horizontal(){return rigth.size(); }
 
-int Dp::horizontal(){return x; }
-
-void Dp::vertical(int n){ y=n;}
-
-int Dp::vertical(){return y;}
+void Dp::vertical(int n){ down.size(n); }
+int Dp::vertical(){ return down.size(); }
 
 void Dp::edge(int n){ b=n; }
-
 int Dp::edge(){ return b;}
 
 //------------------------------------------------------------------------------------------------

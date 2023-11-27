@@ -45,8 +45,6 @@ private:
 	Down down=2;													///< Deslocamento para baixo.
 	int   
 		w=21,																///< Largura do display.	
-		x=2,																	///< Distanciamento horizontal.
-		y=2,																	///< Distanciamento vertical.
 		b=2;																	///< Espaçamento texto.	
 		
 	void  update_width(int);									///< Atualizar largura do display.

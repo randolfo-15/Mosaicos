@@ -10,12 +10,19 @@
 using std::string;
 using std::vector;
 
+int Dp::ID=0;
+
 //------------------------------------------------------------------------------------------------
 // Build class
 //------------------------------------------------------------------------------------------------
-Dp::Display(){dps.push_back(this);}
+Dp::Display(){init();}
 
-Dp::Display(Tm theme):tm(theme){dps.push_back(this);} 
+Dp::Display(Tm theme):tm(theme){init();} 
+
+void Dp::init(){  
+	dps.push_back(this);
+	id=ID++;
+}
 //------------------------------------------------------------------------------------------------
 // Headings and subheadings
 //------------------------------------------------------------------------------------------------
@@ -119,9 +126,16 @@ int Dp::edge(){ return b;}
 // Operator
 //------------------------------------------------------------------------------------------------
 std::ostream& operator<<(std::ostream& out,Display& dp){ return out<<dp.show(); }
-
+//------------------------------------
+// Addition
+//------------------------------------
 void Dp::operator+=(Dp& dp){ dps.push_back(&dp); }
-
+void Dp::operator+=(Dp dp){ *this=*this+dp;  }
+Dp Dp::operator+(Dp dp){ return copy(dp,*this); }
+//------------------------------------
+// Assist
+//------------------------------------
+Dp Dp::copy(Dp src,Dp tmp){  for(Dp* dp:src.dps) tmp.dps.push_back(dp); return tmp; }
 //------------------------------------
 // Line
 //------------------------------------

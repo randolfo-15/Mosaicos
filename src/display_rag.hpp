@@ -19,6 +19,9 @@ class Display{
 // Build
 //------------------------------------------------------------------------------------------------	
 private:
+	static int ID;														///< Contador universal de display
+	int id;																	///< Identificador de um display
+	
 	Theme tm=Theme(											///< Tema do display                                     
 		{
 			Cls::Red(),												///< Fundo principal 
@@ -31,6 +34,7 @@ private:
 			Fg(Cls::White(),Efc::Bold())				///< Foreground para subtitulos
 		}										
 	);
+	void init();															///< Inicializador padrão de um display.
 //---------------------------------------
 // Builders
 //---------------------------------------
@@ -143,12 +147,25 @@ public:
 //------------------------------------------------------------------------------------------------
 // Operations:
 //------------------------------------------------------------------------------------------------
-public:
-	
+//------------------------------------
+// Assist
+//------------------------------------	
+private:
+	Display copy(Display,Display);																///< Copia os displays de um objeto display.
+//------------------------------------
+// Show
+//------------------------------------
+public: 
 	friend std::ostream& operator<<(std::ostream&,Display&);		///< Exibe o contéudo do buffer
-	
+//------------------------------------
+// Addition
+//------------------------------------
+public:
 	void operator+=(Display&);																	///< Adiciona um display a nossa direita.
-		
+	void operator+=(Display);																		///< Adiciona um display a nossa direita.
+	Display operator+(Display);																	///< Soma o contéudo de displays
+
+	
 };using Dp=Display;
 
 std::ostream& operator<<(std::ostream&,Display&);						///< Exibe o contéudo do buffer

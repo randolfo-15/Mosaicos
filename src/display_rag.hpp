@@ -18,9 +18,9 @@ class Display{
 //------------------------------------------------------------------------------------------------
 // Build
 //------------------------------------------------------------------------------------------------	
-private:
+public:
 	static int ID;														///< Contador universal de display
-	int id;																	///< Identificador de um display
+	 int id;														///< Identificador de um display
 	
 	Theme tm=Theme(											///< Tema do display                                     
 		{
@@ -34,7 +34,6 @@ private:
 			Fg(Cls::White(),Efc::Bold())				///< Foreground para subtitulos
 		}										
 	);
-	void init();															///< Inicializador padrão de um display.
 //---------------------------------------
 // Builders
 //---------------------------------------
@@ -96,7 +95,7 @@ private:
 //---------------------------------------
 private:
 	void split_rows(Line,std::string="");													///< Divide o contéudo das string por \n
-	void draw_display();																				///< Lista o conjunto de linhas do buffer.
+	void draw_display(int=0);																	///< Lista o conjunto de linhas do buffer.
 	
 	std::string straighten(std::vector<Line>::iterator,int);				///< Insere os detalhamentos de contorno da linha.
 	std::string draw_line(Line&,int=0);													///< Desenha a linha.
@@ -152,6 +151,9 @@ public:
 //------------------------------------	
 private:
 	Display copy(Display,Display);																///< Copia os displays de um objeto display.
+	void remove(int);																						///< Remove um display do buffer.
+	Display remove(Display,int);																	///< Renove um display de uma copia.
+	int 	find(int,int,int=0);																				///< Pesquisa um display a parte de sua id;
 //------------------------------------
 // Show
 //------------------------------------
@@ -164,7 +166,12 @@ public:
 	void operator+=(Display&);																	///< Adiciona um display a nossa direita.
 	void operator+=(Display);																		///< Adiciona um display a nossa direita.
 	Display operator+(Display);																	///< Soma o contéudo de displays
-
+//------------------------------------
+// Subtration
+//------------------------------------	
+public:
+	void operator-=(Display);																		///< Adiciona um display a nossa direita.
+	Display operator-(Display);																	///< Soma o contéudo de displays
 	
 };using Dp=Display;
 

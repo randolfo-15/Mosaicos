@@ -29,9 +29,9 @@ int main(){
         c.write("ccc");
         c.write("ccc");
         
-        c+=b+a;
+        c=b+a+c;
         
-        cout<<a.id<<b.id<<c.id<<'\n';
+        cout<<c<<'\n';
         
         return 0;
 }

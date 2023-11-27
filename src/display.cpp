@@ -15,14 +15,11 @@ int Dp::ID=0;
 //------------------------------------------------------------------------------------------------
 // Build class
 //------------------------------------------------------------------------------------------------
-Dp::Display(){init();}
+Dp::Display():id(ID++){dps.push_back(this);}
 
-Dp::Display(Tm theme):tm(theme){init();} 
+Dp::Display(Tm theme):id(ID++),tm(theme){} 
 
-void Dp::init(){  
-	dps.push_back(this);
-	id=ID++;
-}
+
 //------------------------------------------------------------------------------------------------
 // Headings and subheadings
 //------------------------------------------------------------------------------------------------
@@ -74,8 +71,8 @@ string Dp::build(){
 	return  down.str()+straighten(dps[0]->lines.begin(),dps[0]->lines.size());
 }
 
-void Display::draw_display(){ 
-	for(Dp* dp:dps){ int i=0;
+void Display::draw_display(int i){ 
+	for(Dp* dp:dps){ i=0;
 		for(Line& ln : dp->lines) dps[0]->lines[i++].img += draw_line(ln,complement(ln.str))+dp->rigth; 
 	}
 }
@@ -132,10 +129,20 @@ std::ostream& operator<<(std::ostream& out,Display& dp){ return out<<dp.show(); 
 void Dp::operator+=(Dp& dp){ dps.push_back(&dp); }
 void Dp::operator+=(Dp dp){ *this=*this+dp;  }
 Dp Dp::operator+(Dp dp){ return copy(dp,*this); }
+
+void Dp::operator-=(Dp dp){ remove(dp.id); }
+Dp Dp::operator-(Dp dp){  return remove(*this,dp.id); }
+
 //------------------------------------
 // Assist
 //------------------------------------
 Dp Dp::copy(Dp src,Dp tmp){  for(Dp* dp:src.dps) tmp.dps.push_back(dp); return tmp; }
+
+Dp Dp::remove(Dp dp,int id){   dp.remove(id);  return dp;}
+
+void Dp::remove(int id){ ((id=find(id,dps.size()))>=0)?dps.erase(dps.begin()+id):throw;  }
+
+int 	Dp::find(int id,int size,int i){  return  (i>=size)?-1:(id==dps[i]->id)?i:find(id,size,i+1); }
 //------------------------------------
 // Line
 //------------------------------------

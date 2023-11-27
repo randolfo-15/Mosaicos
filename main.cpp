@@ -19,9 +19,12 @@ int main(){
         a.title("A");
         a.write("aaa");
         a.write("aaa");
+        a.write("aaa");
         
         
         b.title("B");
+        b.write("bbb");
+        b.write("bbb");
         b.write("bbb");
         b.write("bbb");
         

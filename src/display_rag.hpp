@@ -9,10 +9,9 @@
 #define DISPLAY_RAG_HPP
 
 #include <ostream>
-#include <sstream>
 #include "theme.hpp"
 #include "directions_rag.hpp"
-#include "clear_rag.hpp"
+
 
 class Display{
 //------------------------------------------------------------------------------------------------
@@ -154,6 +153,7 @@ private:
 	void remove(int);																						///< Remove um display do buffer.
 	Display remove(Display,int);																	///< Renove um display de uma copia.
 	int 	find(int,int,int=0);																				///< Pesquisa um display a parte de sua id;
+	static bool compare(Display*,Display*);															///< Compara o número de linhas de dois display.
 //------------------------------------
 // Show
 //------------------------------------
@@ -166,6 +166,7 @@ public:
 	void operator+=(Display&);																	///< Adiciona um display a nossa direita.
 	void operator+=(Display);																		///< Adiciona um display a nossa direita.
 	Display operator+(Display);																	///< Soma o contéudo de displays
+	
 //------------------------------------
 // Subtration
 //------------------------------------	

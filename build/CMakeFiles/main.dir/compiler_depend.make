@@ -118,7 +118,6 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
   /usr/include/c++/13.2.1/bits/range_access.h \
   /usr/include/c++/13.2.1/bits/refwrap.h \
   /usr/include/c++/13.2.1/bits/requires_hosted.h \
-  /usr/include/c++/13.2.1/bits/sstream.tcc \
   /usr/include/c++/13.2.1/bits/std_abs.h \
   /usr/include/c++/13.2.1/bits/stl_algo.h \
   /usr/include/c++/13.2.1/bits/stl_algobase.h \
@@ -168,7 +167,6 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
   /usr/include/c++/13.2.1/pstl/execution_defs.h \
   /usr/include/c++/13.2.1/pstl/glue_algorithm_defs.h \
   /usr/include/c++/13.2.1/pstl/pstl_config.h \
-  /usr/include/c++/13.2.1/sstream \
   /usr/include/c++/13.2.1/stdexcept \
   /usr/include/c++/13.2.1/streambuf \
   /usr/include/c++/13.2.1/string \
@@ -267,8 +265,6 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
 /usr/include/c++/13.2.1/streambuf:
 
 /usr/include/c++/13.2.1/stdexcept:
-
-/usr/include/c++/13.2.1/sstream:
 
 /usr/include/c++/13.2.1/pstl/pstl_config.h:
 
@@ -391,12 +387,6 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
 /usr/include/bits/select.h:
 
 /usr/include/c++/13.2.1/bits/istream.tcc:
-
-/usr/include/gnu/stubs-64.h:
-
-/usr/include/c++/13.2.1/bits/stl_iterator_base_types.h:
-
-/usr/include/c++/13.2.1/bits/move.h:
 
 /usr/include/c++/13.2.1/cerrno:
 
@@ -580,6 +570,12 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
 
 /usr/include/c++/13.2.1/bits/ostream.tcc:
 
+/usr/include/gnu/stubs-64.h:
+
+/usr/include/c++/13.2.1/bits/move.h:
+
+/usr/include/c++/13.2.1/bits/stl_iterator_base_types.h:
+
 /usr/include/linux/errno.h:
 
 /usr/include/c++/13.2.1/bits/hash_bytes.h:
@@ -608,13 +604,11 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
 
 /usr/include/c++/13.2.1/bits/postypes.h:
 
-/usr/include/c++/13.2.1/bits/requires_hosted.h:
-
 /usr/include/bits/wchar.h:
 
 /usr/include/c++/13.2.1/bits/predefined_ops.h:
 
-/usr/include/c++/13.2.1/bits/sstream.tcc:
+/usr/include/c++/13.2.1/bits/requires_hosted.h:
 
 /usr/include/c++/13.2.1/bits/vector.tcc:
 

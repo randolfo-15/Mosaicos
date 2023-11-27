@@ -6,7 +6,7 @@
  ******************************************************/
 
 #include "display_rag.hpp"
-#include <vector>
+#include <sstream>
 using std::string;
 using std::vector;
 
@@ -53,8 +53,7 @@ void Dp:: write(Hlg efc,string str){ split_rows({str,tm.bg(),Fg(efc)}); }
 
 void Dp::write(Clr  clr,Hlg efc,string str){ split_rows({str,Bg(clr),Fg(efc)}); }
 
-void Dp::split_rows(Line ln,string tmp){
-	changer=true;
+void Dp::split_rows(Line ln,string tmp){     (changer=true);
 	std::stringstream sstr(ln.str);
 	while(getline(sstr,tmp,'\n')){
 		update_width(tmp.size());
@@ -64,8 +63,7 @@ void Dp::split_rows(Line ln,string tmp){
 //------------------------------------------------------------------------------------------------
 // Draw Display
 //------------------------------------------------------------------------------------------------
-string Dp::build(){   
-	changer=false;
+string Dp::build(){     (changer=false);
 	sort();
 	draw_display();
 	return  down.str()+straighten(dps[0]->lines.begin(),dps[0]->lines.size());
@@ -93,15 +91,11 @@ string Dp::fill(int count,Bg bg){ return bg+empty(count); }
 
 string Dp::empty(int count){return (count)?" "+empty(count-1):"";}
 
-void Dp::sort(){
-	auto fx=[](Dp*a,Dp*b){ return (a->lines.size()>b->lines.size()); };
-	std::sort(dps.begin(),dps.end(),fx);
-}
+void Dp::sort(){ std::sort(dps.begin(),dps.end(),compare); }
 //------------------------------------------------------------------------------------------------
 // Memory
 //------------------------------------------------------------------------------------------------
-void Dp::clear(){ lines.resize(0); }
-
+void Dp::clear(){ dps.clear(); lines.resize(0); }
 //------------------------------------------------------------------------------------------------
 // Proportions
 //------------------------------------------------------------------------------------------------
@@ -129,10 +123,11 @@ std::ostream& operator<<(std::ostream& out,Display& dp){ return out<<dp.show(); 
 void Dp::operator+=(Dp& dp){ dps.push_back(&dp); }
 void Dp::operator+=(Dp dp){ *this=*this+dp;  }
 Dp Dp::operator+(Dp dp){ return copy(dp,*this); }
-
+//------------------------------------
+// Subtration
+//------------------------------------
 void Dp::operator-=(Dp dp){ remove(dp.id); }
 Dp Dp::operator-(Dp dp){  return remove(*this,dp.id); }
-
 //------------------------------------
 // Assist
 //------------------------------------
@@ -143,9 +138,9 @@ Dp Dp::remove(Dp dp,int id){   dp.remove(id);  return dp;}
 void Dp::remove(int id){ ((id=find(id,dps.size()))>=0)?dps.erase(dps.begin()+id):throw;  }
 
 int 	Dp::find(int id,int size,int i){  return  (i>=size)?-1:(id==dps[i]->id)?i:find(id,size,i+1); }
+
+bool Dp::compare(Dp*a,Dp*b){ return (a->lines.size()>b->lines.size()); }
 //------------------------------------
 // Line
 //------------------------------------
 string Dp::Line::operator()(){return bg.str()+fg.str()+str; }
-
- 

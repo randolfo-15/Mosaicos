@@ -164,6 +164,4 @@ CMakeFiles/main.dir/main.cpp.o: \
  /home/randolfo/Documentos/Mosaicos/src/clear_rag.hpp \
  /home/randolfo/Documentos/Mosaicos/src/directions_rag.hpp \
  /home/randolfo/Documentos/Mosaicos/src/display_rag.hpp \
- /usr/include/c++/13.2.1/sstream /usr/include/c++/13.2.1/bits/sstream.tcc \
- /home/randolfo/Documentos/Mosaicos/src/theme.hpp \
- /home/randolfo/Documentos/Mosaicos/src/clear_rag.hpp
+ /home/randolfo/Documentos/Mosaicos/src/theme.hpp

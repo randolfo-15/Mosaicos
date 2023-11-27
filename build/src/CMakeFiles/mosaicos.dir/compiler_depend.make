@@ -732,7 +732,6 @@ src/CMakeFiles/mosaicos.dir/directions.cpp.o: /home/randolfo/Documentos/Mosaicos
 
 src/CMakeFiles/mosaicos.dir/display.cpp.o: /home/randolfo/Documentos/Mosaicos/src/display.cpp \
   /home/randolfo/Documentos/Mosaicos/src/background.hpp \
-  /home/randolfo/Documentos/Mosaicos/src/clear_rag.hpp \
   /home/randolfo/Documentos/Mosaicos/src/colour.hpp \
   /home/randolfo/Documentos/Mosaicos/src/directions_rag.hpp \
   /home/randolfo/Documentos/Mosaicos/src/display_rag.hpp \
@@ -890,7 +889,6 @@ src/CMakeFiles/mosaicos.dir/display.cpp.o: /home/randolfo/Documentos/Mosaicos/sr
   /usr/include/c++/13.2.1/initializer_list \
   /usr/include/c++/13.2.1/ios \
   /usr/include/c++/13.2.1/iosfwd \
-  /usr/include/c++/13.2.1/iostream \
   /usr/include/c++/13.2.1/istream \
   /usr/include/c++/13.2.1/new \
   /usr/include/c++/13.2.1/ostream \

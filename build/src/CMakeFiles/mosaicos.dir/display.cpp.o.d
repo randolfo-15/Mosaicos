@@ -135,9 +135,7 @@ src/CMakeFiles/mosaicos.dir/display.cpp.o: \
  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/ctype_inline.h \
  /usr/include/c++/13.2.1/bits/locale_facets.tcc \
  /usr/include/c++/13.2.1/bits/basic_ios.tcc \
- /usr/include/c++/13.2.1/bits/ostream.tcc /usr/include/c++/13.2.1/sstream \
- /usr/include/c++/13.2.1/istream /usr/include/c++/13.2.1/bits/istream.tcc \
- /usr/include/c++/13.2.1/bits/sstream.tcc \
+ /usr/include/c++/13.2.1/bits/ostream.tcc \
  /home/randolfo/Documentos/Mosaicos/src/theme.hpp \
  /home/randolfo/Documentos/Mosaicos/src/foreground.hpp \
  /home/randolfo/Documentos/Mosaicos/src/ground.hpp \
@@ -159,5 +157,6 @@ src/CMakeFiles/mosaicos.dir/display.cpp.o: \
  /usr/include/c++/13.2.1/pstl/execution_defs.h \
  /home/randolfo/Documentos/Mosaicos/src/background.hpp \
  /home/randolfo/Documentos/Mosaicos/src/directions_rag.hpp \
- /home/randolfo/Documentos/Mosaicos/src/clear_rag.hpp \
- /usr/include/c++/13.2.1/iostream
+ /usr/include/c++/13.2.1/sstream /usr/include/c++/13.2.1/istream \
+ /usr/include/c++/13.2.1/bits/istream.tcc \
+ /usr/include/c++/13.2.1/bits/sstream.tcc

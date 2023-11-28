@@ -16,6 +16,7 @@ using namespace Efc;
 int main(){
         
         Dp a,b,c;
+        
         a.title("A");
         a.write("aaa");
         a.write("aaa");
@@ -31,8 +32,16 @@ int main(){
         c.title("C");
         c.write("ccc");
         c.write("ccc");
+        c.write("ccc");
+        c.write("ccc");
+        c.write("ccc");
+        c.write("ccc");
+        Dp d;
         
-        c=b+a+c;
+        d.title("D");
+        d.write("ddd");
+        d.write("ddd");
+        c=b+a;
         
         cout<<c<<'\n';
         

@@ -17,7 +17,7 @@ int Dp::ID=0;
 //------------------------------------------------------------------------------------------------
 Dp::Display():id(ID++){dps.push_back(this);}
 
-Dp::Display(Tm theme):id(ID++),tm(theme){} 
+Dp::Display(Tm theme):id(ID++),tm(theme){ dps.push_back(this); } 
 
 
 //------------------------------------------------------------------------------------------------
@@ -128,6 +128,11 @@ Dp Dp::operator+(Dp dp){ return copy(dp,*this); }
 //------------------------------------
 void Dp::operator-=(Dp dp){ remove(dp.id); }
 Dp Dp::operator-(Dp dp){  return remove(*this,dp.id); }
+
+//------------------------------------
+// Assign
+//------------------------------------	
+///void Dp::operator=(Dp src){ for(Dp* dp:src.dps) dps.push_back(dp);  } ///\warning
 //------------------------------------
 // Assist
 //------------------------------------
@@ -140,7 +145,12 @@ void Dp::remove(int id){ ((id=find(id,dps.size()))>=0)?dps.erase(dps.begin()+id)
 int 	Dp::find(int id,int size,int i){  return  (i>=size)?-1:(id==dps[i]->id)?i:find(id,size,i+1); }
 
 bool Dp::compare(Dp*a,Dp*b){ return (a->lines.size()>b->lines.size()); }
+
+
 //------------------------------------
 // Line
 //------------------------------------
-string Dp::Line::operator()(){return bg.str()+fg.str()+str; }
+string Dp::Line::operator()(){
+	img.clear();
+	return bg.str()+fg.str()+str; 
+}

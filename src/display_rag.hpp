@@ -166,13 +166,16 @@ public:
 	void operator+=(Display&);																	///< Adiciona um display a nossa direita.
 	void operator+=(Display);																		///< Adiciona um display a nossa direita.
 	Display operator+(Display);																	///< Soma o contéudo de displays
-	
 //------------------------------------
 // Subtration
 //------------------------------------	
 public:
 	void operator-=(Display);																		///< Adiciona um display a nossa direita.
 	Display operator-(Display);																	///< Soma o contéudo de displays
+//------------------------------------
+// Assign
+//------------------------------------	
+	///void operator=(Display); \warning
 	
 };using Dp=Display;
 

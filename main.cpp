@@ -14,8 +14,10 @@ using namespace Cls;
 using namespace Efc;
 
 int main(){
-        
         Dp a,b,c,d;
+        
+        
+        
         a.edge(5);
         a.width(3);
         a.title(" A");
@@ -28,6 +30,6 @@ int main(){
         b.write("bbb");
         b.write("bbb");
         
-         cout<<b+a<<'\n';
+         cout<<a+b+a<<'\n';
         return 0;
 }

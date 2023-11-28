@@ -69,11 +69,11 @@ string Dp::build(){     (changer=false);
 
 void Display::draw_display(int i){ 
 	for(Dp* dp:dps){ i=0;
-		for(Line& ln : dp->lines) line_img[i++]+=draw_line(ln,complement(ln.str,dp->w,dp->b))+dp->rigth;
+		for(Line& ln : dp->lines) line_img[i++]+=draw_line(ln,dp->b,complement(ln.str,dp->w,dp->b))+dp->rigth;
 	}
 }
 
-string Display::draw_line(Line& line,int attach){ return fill(b,tm.bg(line.type))+line()+Clr::br()+fill(attach,tm.bg(line.type)); }
+string Display::draw_line(Line& line,int b,int attach){ return fill(b,tm.bg(line.type))+line()+Clr::br()+fill(attach,tm.bg(line.type)); }
 
 string Dp::straighten( vector<string>::iterator line,int cnt){  return (cnt)?rigth.str()+*line+end()+straighten(line+1,cnt-1):""; }
 

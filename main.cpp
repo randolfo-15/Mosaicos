@@ -16,7 +16,7 @@ using namespace Efc;
 int main(){
         
         Dp a,b,c,d;
-        
+        a.edge(5);
         a.width(3);
         a.title(" A");
         a.write("aaa");
@@ -28,6 +28,6 @@ int main(){
         b.write("bbb");
         b.write("bbb");
         
-         cout<<a+b<<'\n';
+         cout<<b+a<<'\n';
         return 0;
 }

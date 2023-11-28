@@ -96,7 +96,7 @@ private:
 	void draw_display(int=0);																	///< Lista o conjunto de linhas do buffer.
 	
 	std::string straighten(std::vector<std::string>::iterator,int);	///< Insere os detalhamentos de contorno da linha.
-	std::string draw_line(Line&,int=0);													///< Desenha a linha.
+	std::string draw_line(Line&,int b,int=0);											///< Desenha a linha.
 	std::string build();																				///< Motor de animação da janelas.
 	std::string end();																					///< Retorna encerramento de string.
 	

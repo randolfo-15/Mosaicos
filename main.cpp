@@ -15,13 +15,12 @@ using namespace Efc;
 
 int main(){
         
-        Dp a,b,c;
+        Dp a,b,c,d;
         
         a.title("A");
         a.write("aaa");
         a.write("aaa");
         a.write("aaa");
-        
         
         b.title("B");
         b.write("bbb");
@@ -31,19 +30,13 @@ int main(){
         
         c.title("C");
         c.write("ccc");
-        c.write("ccc");
-        c.write("ccc");
-        c.write("ccc");
-        c.write("ccc");
-        c.write("ccc");
-        Dp d;
+        
         
         d.title("D");
         d.write("ddd");
         d.write("ddd");
-        c=b+a;
+        b=a+b+c+d;
         
-        cout<<c<<'\n';
-        
+         cout<<b<<'\n';
         return 0;
 }

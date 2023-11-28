@@ -18,8 +18,6 @@ int Dp::ID=0;
 Dp::Display():id(ID++){dps.push_back(this);}
 
 Dp::Display(Tm theme):id(ID++),tm(theme){ dps.push_back(this); } 
-
-
 //------------------------------------------------------------------------------------------------
 // Headings and subheadings
 //------------------------------------------------------------------------------------------------
@@ -65,19 +63,20 @@ void Dp::split_rows(Line ln,string tmp){     (changer=true);
 //------------------------------------------------------------------------------------------------
 string Dp::build(){     (changer=false);
 	sort();
+	line_img.resize(dps[0]->lines.size());
 	draw_display();
-	return  down.str()+straighten(dps[0]->lines.begin(),dps[0]->lines.size());
+	return  down.str()+straighten(line_img.begin(),line_img.size());
 }
 
 void Display::draw_display(int i){ 
 	for(Dp* dp:dps){ i=0;
-		for(Line& ln : dp->lines) dps[0]->lines[i++].img += draw_line(ln,complement(ln.str))+dp->rigth; 
+		for(Line& ln : dp->lines) line_img[i++]+=draw_line(ln,complement(ln.str))+dp->rigth;
 	}
 }
 
 string Display::draw_line(Line& line,int attach){ return fill(b,tm.bg(line.type))+line()+Clr::br()+fill(attach,tm.bg(line.type)); }
 
-string Dp::straighten( vector<Line>::iterator line,int cnt){ return (cnt)?rigth.str()+line->img+end()+straighten(line+1,cnt-1):""; }
+string Dp::straighten( vector<string>::iterator line,int cnt){  return (cnt)?rigth.str()+*line+end()+straighten(line+1,cnt-1):""; }
 
 int Dp::accentuation(string str,int soma){ for(char c:str) soma+=(c<0)? 1:0; return soma/2;}
 
@@ -116,27 +115,25 @@ int Dp::edge(){ return b;}
 //------------------------------------------------------------------------------------------------
 // Operator
 //------------------------------------------------------------------------------------------------
-std::ostream& operator<<(std::ostream& out,Display& dp){ return out<<dp.show(); }
+std::ostream& operator<<(std::ostream& out,Display dp){ return out<<dp.show(); }
 //------------------------------------
 // Addition
 //------------------------------------
-void Dp::operator+=(Dp& dp){ dps.push_back(&dp); }
-void Dp::operator+=(Dp dp){ *this=*this+dp;  }
-Dp Dp::operator+(Dp dp){ return copy(dp,*this); }
+void Dp::operator+=(Dp dp){ this->dps=(*this+dp).dps;  }
+Dp Dp::operator+(Dp dp){ return copy(&dp,*this); }
 //------------------------------------
 // Subtration
 //------------------------------------
 void Dp::operator-=(Dp dp){ remove(dp.id); }
 Dp Dp::operator-(Dp dp){  return remove(*this,dp.id); }
-
 //------------------------------------
 // Assign
-//------------------------------------	
-///void Dp::operator=(Dp src){ for(Dp* dp:src.dps) dps.push_back(dp);  } ///\warning
+//------------------------------------
+void Dp::operator=(Dp src){ dps.clear(); for(Dp* dp:src.dps) dps.push_back(dp); }
 //------------------------------------
 // Assist
 //------------------------------------
-Dp Dp::copy(Dp src,Dp tmp){  for(Dp* dp:src.dps) tmp.dps.push_back(dp); return tmp; }
+Dp Dp::copy(Dp* src,Dp tmp){  for(Dp* dp:src->dps) tmp.dps.push_back(dp); return tmp; }
 
 Dp Dp::remove(Dp dp,int id){   dp.remove(id);  return dp;}
 
@@ -145,12 +142,7 @@ void Dp::remove(int id){ ((id=find(id,dps.size()))>=0)?dps.erase(dps.begin()+id)
 int 	Dp::find(int id,int size,int i){  return  (i>=size)?-1:(id==dps[i]->id)?i:find(id,size,i+1); }
 
 bool Dp::compare(Dp*a,Dp*b){ return (a->lines.size()>b->lines.size()); }
-
-
 //------------------------------------
 // Line
 //------------------------------------
-string Dp::Line::operator()(){
-	img.clear();
-	return bg.str()+fg.str()+str; 
-}
+string Dp::Line::operator()(){  return bg.str()+fg.str()+str; }

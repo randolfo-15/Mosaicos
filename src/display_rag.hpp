@@ -19,7 +19,7 @@ class Display{
 //------------------------------------------------------------------------------------------------	
 public:
 	static int ID;														///< Contador universal de display
-	 int id;														///< Identificador de um display
+	 int id;																	///< Identificador de um display
 	
 	Theme tm=Theme(											///< Tema do display                                     
 		{
@@ -81,7 +81,7 @@ private:
 		Bg bg;																///< Background da linha
 		Fg fg;																///< Foreground da linha.
 		int type=NORMAL;										///< Aponta o grau do titulo.
-		std::string img;											///< Desenho da linha
+		//std::string img;											///< Desenho da linha
 		
 		std::string operator()();								///< Retorna a string colorida e com efeito.
 	};
@@ -96,7 +96,7 @@ private:
 	void split_rows(Line,std::string="");													///< Divide o contéudo das string por \n
 	void draw_display(int=0);																	///< Lista o conjunto de linhas do buffer.
 	
-	std::string straighten(std::vector<Line>::iterator,int);				///< Insere os detalhamentos de contorno da linha.
+	std::string straighten(std::vector<std::string>::iterator,int);	///< Insere os detalhamentos de contorno da linha.
 	std::string draw_line(Line&,int=0);													///< Desenha a linha.
 	std::string build();																				///< Motor de animação da janelas.
 	std::string end();																					///< Retorna encerramento de string.
@@ -139,7 +139,7 @@ public:
 private:
 	std::vector<Line> lines;																		///< Buffer de tratamento de strings.
 	std::vector<Display*> dps;																///< Conjunto  para multiplos display.
-	
+	std::vector<std::string> line_img;													///< Contem a imagem da linha atual.
 public:
 	void clear();																							///< Limpa contéudo do display.	
 //------------------------------------------------------------------------------------------------
@@ -149,36 +149,36 @@ public:
 // Assist
 //------------------------------------	
 private:
-	Display copy(Display,Display);																///< Copia os displays de um objeto display.
-	void remove(int);																						///< Remove um display do buffer.
-	Display remove(Display,int);																	///< Renove um display de uma copia.
-	int 	find(int,int,int=0);																				///< Pesquisa um display a parte de sua id;
-	static bool compare(Display*,Display*);															///< Compara o número de linhas de dois display.
+	Display copy(Display*,Display);															///< Copia os displays de um objeto display.
+	void remove(int);																					///< Remove um display do buffer.
+	Display remove(Display,int);																///< Renove um display de uma copia.
+	int 	find(int,int,int=0);																			///< Pesquisa um display a parte de sua id;
+	static bool compare(Display*,Display*);											///< Compara o número de linhas de dois display.
 //------------------------------------
 // Show
 //------------------------------------
 public: 
-	friend std::ostream& operator<<(std::ostream&,Display&);		///< Exibe o contéudo do buffer
+	friend std::ostream& operator<<(std::ostream&,Display);	///< Exibe o contéudo do buffer
 //------------------------------------
 // Addition
 //------------------------------------
 public:
-	void operator+=(Display&);																	///< Adiciona um display a nossa direita.
-	void operator+=(Display);																		///< Adiciona um display a nossa direita.
-	Display operator+(Display);																	///< Soma o contéudo de displays
+	void operator+=(Display);																	///< Adiciona um display a nossa direita.
+	Display operator+(Display);																///< Soma o contéudo de displays
 //------------------------------------
 // Subtration
 //------------------------------------	
 public:
-	void operator-=(Display);																		///< Adiciona um display a nossa direita.
-	Display operator-(Display);																	///< Soma o contéudo de displays
+	void operator-=(Display);																	///< Adiciona um display a nossa direita.
+	Display operator-(Display);																///< Soma o contéudo de displays
 //------------------------------------
 // Assign
 //------------------------------------	
-	///void operator=(Display); \warning
+public:
+	void operator=(Display);
 	
 };using Dp=Display;
 
-std::ostream& operator<<(std::ostream&,Display&);						///< Exibe o contéudo do buffer
+std::ostream& operator<<(std::ostream&,Display);					///< Exibe o contéudo do buffer
 
 #endif // display_rag.hpp

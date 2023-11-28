@@ -62,15 +62,14 @@ void Dp::split_rows(Line ln,string tmp){     (changer=true);
 // Draw Display
 //------------------------------------------------------------------------------------------------
 string Dp::build(){     (changer=false);
-	sort();
-	line_img.resize(dps[0]->lines.size());
+	line_img.resize(sort());
 	draw_display();
 	return  down.str()+straighten(line_img.begin(),line_img.size());
 }
 
 void Display::draw_display(int i){ 
 	for(Dp* dp:dps){ i=0;
-		for(Line& ln : dp->lines) line_img[i++]+=draw_line(ln,complement(ln.str))+dp->rigth;
+		for(Line& ln : dp->lines) line_img[i++]+=draw_line(ln,complement(ln.str,dp->w,dp->b))+dp->rigth;
 	}
 }
 
@@ -80,21 +79,23 @@ string Dp::straighten( vector<string>::iterator line,int cnt){  return (cnt)?rig
 
 int Dp::accentuation(string str,int soma){ for(char c:str) soma+=(c<0)? 1:0; return soma/2;}
 
-string Dp::show(){ return (changer)?(img=build()):img; }
+string Dp::show(){ return (!dps.size())?"EMPTY":(changer)?(img=build()):img; }
 
 string Dp::end(){return Clr::br()+'\n';}
 
-int Dp::complement(string str){ return (width()+accentuation(str))-str.size(); }
+int Dp::complement(string str,int w,int b){ return (w+b+accentuation(str))-str.size(); }
 
 string Dp::fill(int count,Bg bg){ return bg+empty(count); }
 
 string Dp::empty(int count){return (count)?" "+empty(count-1):"";}
 
-void Dp::sort(){ std::sort(dps.begin(),dps.end(),compare); }
+int Dp::sort(){ std::sort(dps.begin(),dps.end(),compare);  return dps[0]->lines.size();}
 //------------------------------------------------------------------------------------------------
 // Memory
 //------------------------------------------------------------------------------------------------
-void Dp::clear(){ dps.clear(); lines.resize(0); }
+void Dp::disassemble(){ dps.clear();  dps.push_back(this); }
+
+void Dp::clear(){ dps.clear();}
 //------------------------------------------------------------------------------------------------
 // Proportions
 //------------------------------------------------------------------------------------------------

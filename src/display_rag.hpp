@@ -81,7 +81,6 @@ private:
 		Bg bg;																///< Background da linha
 		Fg fg;																///< Foreground da linha.
 		int type=NORMAL;										///< Aponta o grau do titulo.
-		//std::string img;											///< Desenho da linha
 		
 		std::string operator()();								///< Retorna a string colorida e com efeito.
 	};
@@ -102,13 +101,12 @@ private:
 	std::string end();																					///< Retorna encerramento de string.
 	
 	int accentuation(std::string,int=0);													///< Contanta número de caracteres especiais.
-	int complement(std::string);																///< Complementa de caracteres para desenhar a janela
+	int complement(std::string,int w,int b);											///< Complementa de caracteres para desenhar a janela
 	
 protected:
 	std::string fill(int,Bg);																			///< Preencher espaços:
 	std::string empty(int);																		///< Cria uma string vazia.
 	std::string show();																				///< retorna a imagem do distema atual.
-	void sort();																								///< Ordena os displays
 //---------------------------------------
 // Writes
 //---------------------------------------
@@ -141,7 +139,8 @@ private:
 	std::vector<Display*> dps;																///< Conjunto  para multiplos display.
 	std::vector<std::string> line_img;													///< Contem a imagem da linha atual.
 public:
-	void clear();																							///< Limpa contéudo do display.	
+	void disassemble();																				///< Remove os displays apontados
+	void clear();																							///< Limpa o display completamente.
 //------------------------------------------------------------------------------------------------
 // Operations:
 //------------------------------------------------------------------------------------------------
@@ -149,11 +148,16 @@ public:
 // Assist
 //------------------------------------	
 private:
-	Display copy(Display*,Display);															///< Copia os displays de um objeto display.
 	void remove(int);																					///< Remove um display do buffer.
 	Display remove(Display,int);																///< Renove um display de uma copia.
+
+	Display copy(Display*,Display);															///< Copia os displays de um objeto display.
+	
 	int 	find(int,int,int=0);																			///< Pesquisa um display a parte de sua id;
+	
 	static bool compare(Display*,Display*);											///< Compara o número de linhas de dois display.
+	
+	int sort();																								///< Ordena os displays
 //------------------------------------
 // Show
 //------------------------------------

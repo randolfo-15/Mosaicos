@@ -17,26 +17,17 @@ int main(){
         
         Dp a,b,c,d;
         
-        a.title("A");
+        a.width(3);
+        a.title(" A");
         a.write("aaa");
         a.write("aaa");
         a.write("aaa");
         
-        b.title("B");
-        b.write("bbb");
+        b.title(" B");
         b.write("bbb");
         b.write("bbb");
         b.write("bbb");
         
-        c.title("C");
-        c.write("ccc");
-        
-        
-        d.title("D");
-        d.write("ddd");
-        d.write("ddd");
-        b=a+b+c+d;
-        
-         cout<<b<<'\n';
+         cout<<a+b<<'\n';
         return 0;
 }

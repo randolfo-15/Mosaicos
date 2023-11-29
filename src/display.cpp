@@ -54,7 +54,7 @@ void Dp::write(Clr  clr,Hlg efc,string str){ split_rows({str,Tm(Bg(clr),Fg(efc))
 void Dp::split_rows(Line ln,string tmp){(changer=true);
 	std::stringstream sstr(ln.str);
 	while(getline(sstr,tmp,'\n')){
-		update_width(tmp.size());
+		update_width(tmp.size()-disregard(" "+tmp,"%F")-disregard(" "+tmp,"%X")-disregard(" "+tmp,"%G"));
 		lines.push_back({tmp,ln.tm,ln.tt});
 	} 
 }
@@ -69,15 +69,17 @@ string Dp::build(){(changer=false);
 
 void Display::draw_display(int i){ 
 	for(Dp* dp:dps){ i=0;
-		for(Line& ln : dp->lines) line_img[i++]+=draw_line(&ln,&dp->tm,dp->b,complete(ln.str,dp->w,dp->b))+side(&dp->rigth);
+		for(Line& ln : dp->lines) line_img[i++]+=draw_line(&ln,&dp->tm,dp->b,complete(&ln.str,dp->w,dp->b))+side(&dp->rigth);
 	}
 }
+
+int Dp::disregard(string str,string sb, int sm){ for(int i=0;(i=str.find(sb,i))>0;sm+=2,i++)  if(!i)break; return sm;  return sm; }
 
 string Display::draw_line(Line* line,Tm* tm,int b,int add){ return fill(b,tm->bg(line->tt))+line->form()+Clr::br()+fill(add,tm->bg(line->tt)); }
 
 string Dp::straighten( vector<string>::iterator line,int cnt){  return (cnt)?rigth.str()+*line+end(cnt)+straighten(line+1,cnt-1):""; }
 
-int Dp::accentuation(string str,int soma){ for(char c:str) soma+=(c<0)? 1:0; return soma/2;}
+int Dp::accentuation(string str,int soma){  for(char c:str) soma+=(c<0)? 1:0; return soma/2; }
 
 string Dp::show(){ return (!dps.size())?"EMPTY":(changer)?(img=build()):img; }
 
@@ -85,11 +87,11 @@ string Dp::end(int cnt){return (cnt>1)?Clr::br()+'\n':Clr::br();}
 
 string Dp::side(Directions* dr){ return (dr->size())?dr->str():"";}
 
-int Dp::complete(string str,int w,int b){ return (w+b+accentuation(str))-str.size(); }
+int Dp::complete(string* str,int w,int b){ return (w+b+accentuation(*str))-str->size(); }
 
 string Dp::fill(int count,Bg bg){ return bg+empty(count); }
 
-string Dp::empty(int count){return (count)?" "+empty(count-1):"";}
+string Dp::empty(int count){return (count>0)?" "+empty(count-1):"";}
 
 int Dp::sort(){ std::sort(dps.begin(),dps.end(),compare);  return dps[0]->lines.size();}
 //------------------------------------------------------------------------------------------------
@@ -148,7 +150,14 @@ bool Dp::compare(Dp*a,Dp*b){ return (a->lines.size()>b->lines.size()); }
 //------------------------------------
 // Line
 //------------------------------------
-string Dp::Line::form(){  
-	
+string Dp::Line::form(int i){  
+	for(int i=0;(i=str.find("%F",i))>0;i++) str.replace(i,2,"\033[5m");
+	for(int i=0;(i=str.find("%G",i))>0;i++) str.replace(i,2,"\033[1m");
+	for(int i=0;(i=str.find("%X",i))>0;i++) str.replace(i,2,"\033[0m"+tm());
+	/*
+	while((i=str.find("%F",i))>=0) { str.replace(i,2,"\033[5m"); }
+	i=0;while((i=str.find("%G",i))>=0) { str.replace(i,2,"\033[1m"); }
+	i=0;while((i=str.find("%X",i))>=0) { str.replace(i,2,"\033[0m"); }
+	*/
 	return tm()+str; 
 }

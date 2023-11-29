@@ -81,7 +81,7 @@ private:
 		Theme tm;														///< Tema da linha.
 		int tt=NORMAL;											///< Aponta o grau do titulo.
 		
-		std::string form();										///< Retorna a string colorida e com efeito.
+		std::string form(int =0);								///< Retorna a string colorida e com efeito.
 	};
 	std::string img;												///< Sequência de strings que formam o display.
 
@@ -101,7 +101,9 @@ private:
 	std::string side(Directions*);																///< Define distanciamento lateral.
 	
 	int accentuation(std::string,int=0);													///< Contanta número de caracteres especiais.
-	int complete(std::string,int w,int b);												///< Complementa de caracteres para desenhar a janela
+	int complete(std::string*,int w,int b);												///< Complementa de caracteres para desenhar a janela.
+	int disregard(std::string,std::string,int=0);									///< Desconcidera um conjunto de caracteres.
+	///int diff();																									///< Retorna a diferença de termos removidos
 	
 protected:
 	std::string fill(int,Bg);																			///< Preencher espaços:

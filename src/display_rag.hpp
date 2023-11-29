@@ -78,11 +78,10 @@ private:
 	
 	struct Line{														///< Estrutura para composção de uma linha.
 		std::string str;												///< Contéudo da linha. 
-		Bg bg;																///< Background da linha
-		Fg fg;																///< Foreground da linha.
+		Theme tm;														///< Tema da linha.
 		int tt=NORMAL;											///< Aponta o grau do titulo.
 		
-		std::string form();								///< Retorna a string colorida e com efeito.
+		std::string form();										///< Retorna a string colorida e com efeito.
 	};
 	std::string img;												///< Sequência de strings que formam o display.
 

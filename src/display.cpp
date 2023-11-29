@@ -21,11 +21,11 @@ Dp::Display(Tm theme):id(ID++),tm(theme){ dps.push_back(this); }
 //------------------------------------------------------------------------------------------------
 // Headings and subheadings
 //------------------------------------------------------------------------------------------------
-void Dp::title(string str,int head){ if(check_bg(head)) split_rows({str,tm.bg(head),tm.fg(head),head});}
+void Dp::title(string str,int head){ if(check_bg(head)) split_rows({str,Tm(tm.bg(head),tm.fg(head)),head});}
 
-void Dp::title(Fg fg,string str,int head){ if(check_bg(head)) split_rows({str,tm.bg(head),fg,head});}
+void Dp::title(Fg fg,string str,int head){ if(check_bg(head)) split_rows({str,Tm(tm.bg(head),fg),head});}
 
-void Dp::title(Hlg efc,string str,int head){ if(check_bg(head)) split_rows({str,tm.bg(head),Fg(efc),head}); }
+void Dp::title(Hlg efc,string str,int head){ if(check_bg(head)) split_rows({str,Tm(tm.bg(head),Fg(efc)),head}); }
 
 void Dp::subtitle(string str,int head){ if(check_bg(head)) title(str,head); }
 
@@ -37,25 +37,25 @@ bool Dp:: check_bg(int bg){return (bg<tm.bgs.size())?true:throw ;}
 //------------------------------------------------------------------------------------------------
 // Write
 //------------------------------------------------------------------------------------------------
-void Dp::write(string str){ split_rows({str,tm.bg(),tm.fg()}); }
+void Dp::write(string str){ split_rows({str,Tm(tm.bg(),tm.fg())}); }
 
-void Dp::write(Fg  fg,string str){ split_rows({str,tm.bg(),fg}); }
+void Dp::write(Fg  fg,string str){ split_rows({str,Tm(tm.bg(),fg)}); }
 
-void Dp::write(Bg bg,string str){ split_rows({str,bg,tm.fg()}); }
+void Dp::write(Bg bg,string str){ split_rows({str,Tm(bg,tm.fg())}); }
 
-void Dp::write(Bg bg,Fg fg,string str){ split_rows({str,bg,fg}); }
+void Dp::write(Bg bg,Fg fg,string str){ split_rows({str,Tm(bg,fg)}); }
 
-void Dp::write(Clr clr,string str){ split_rows({str,tm.bg(),Fg(clr)}); }
+void Dp::write(Clr clr,string str){ split_rows({str,Tm(tm.bg(),Fg(clr))}); }
 
-void Dp:: write(Hlg efc,string str){ split_rows({str,tm.bg(),Fg(efc)}); }
+void Dp:: write(Hlg efc,string str){ split_rows({str,Tm(tm.bg(),Fg(efc))}); }
 
-void Dp::write(Clr  clr,Hlg efc,string str){ split_rows({str,Bg(clr),Fg(efc)}); }
+void Dp::write(Clr  clr,Hlg efc,string str){ split_rows({str,Tm(Bg(clr),Fg(efc))}); }
 
 void Dp::split_rows(Line ln,string tmp){(changer=true);
 	std::stringstream sstr(ln.str);
 	while(getline(sstr,tmp,'\n')){
 		update_width(tmp.size());
-		lines.push_back({tmp,ln.bg,ln.fg,ln.tt});
+		lines.push_back({tmp,ln.tm,ln.tt});
 	} 
 }
 //------------------------------------------------------------------------------------------------
@@ -148,4 +148,7 @@ bool Dp::compare(Dp*a,Dp*b){ return (a->lines.size()>b->lines.size()); }
 //------------------------------------
 // Line
 //------------------------------------
-string Dp::Line::form(){  return bg.str()+fg.str()+str; }
+string Dp::Line::form(){  
+	
+	return tm()+str; 
+}

@@ -22,32 +22,33 @@ int main(){
               
                         // Foreground:
                         {Fg(Black(),Bold()),
-                        Fg(Black(),Underline()+Blink())
+                        Fg(Black(),Underline())
                 }
         );
         
         Dp a,b(tm);
-        a.horizontal(0);
-        b.horizontal(0);
+        
+        a.horizontal(2);
+        b.horizontal(2);
         a.vertical(2);
-        b.vertical(0);
+        b.vertical(2);
+        
         a.edge(1);
         a.width(1);
         a.title(Underline()," A ");
         a.write("aaa");
-        a.write("aaa");
-        a.write("aaa");
-        
         
         b.edge(1);
         b.width(1);
         b.title(" B ");
         b.write("bbb");
-        b.write("bbb");
-        b.write("bbb");
+        a.write({Green()},"aa#Fa");
+        b.write({Green()},"bbb");
         
-         cout<<a+b+a<<'\n';
-         cout<<a+b+a<<'\n';
+         cout<<a+b+a+b<<'\n';
+         cout<<b+a+b+a<<'\n';
+         cout<<a+b+a+b<<'\n';
+         cout<<b+a+b+a<<'\n';
         
         return 0;
 }

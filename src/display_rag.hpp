@@ -80,9 +80,9 @@ private:
 		std::string str;												///< Contéudo da linha. 
 		Bg bg;																///< Background da linha
 		Fg fg;																///< Foreground da linha.
-		int type=NORMAL;										///< Aponta o grau do titulo.
+		int tt=NORMAL;											///< Aponta o grau do titulo.
 		
-		std::string operator()();								///< Retorna a string colorida e com efeito.
+		std::string form();								///< Retorna a string colorida e com efeito.
 	};
 	std::string img;												///< Sequência de strings que formam o display.
 
@@ -96,7 +96,7 @@ private:
 	void draw_display(int=0);																	///< Lista o conjunto de linhas do buffer.
 	
 	std::string straighten(std::vector<std::string>::iterator,int);	///< Insere os detalhamentos de contorno da linha.
-	std::string draw_line(Line&,int b,int=0);											///< Desenha a linha.
+	std::string draw_line(Line*,Tm*,int b,int=0);									///< Desenha a linha.
 	std::string build();																				///< Motor de animação da janelas.
 	std::string end();																					///< Retorna encerramento de string.
 	

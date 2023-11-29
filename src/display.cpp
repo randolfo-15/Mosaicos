@@ -55,7 +55,7 @@ void Dp::split_rows(Line ln,string tmp){     (changer=true);
 	std::stringstream sstr(ln.str);
 	while(getline(sstr,tmp,'\n')){
 		update_width(tmp.size());
-		lines.push_back({tmp,ln.bg,ln.fg,ln.type});
+		lines.push_back({tmp,ln.bg,ln.fg,ln.tt});
 	} 
 }
 //------------------------------------------------------------------------------------------------
@@ -69,11 +69,11 @@ string Dp::build(){     (changer=false);
 
 void Display::draw_display(int i){ 
 	for(Dp* dp:dps){ i=0;
-		for(Line& ln : dp->lines) line_img[i++]+=draw_line(ln,dp->b,complement(ln.str,dp->w,dp->b))+dp->rigth;
+		for(Line& ln : dp->lines) line_img[i++]+=draw_line(&ln,&dp->tm,dp->b,complement(ln.str,dp->w,dp->b))+dp->rigth;
 	}
 }
 
-string Display::draw_line(Line& line,int b,int attach){ return fill(b,tm.bg(line.type))+line()+Clr::br()+fill(attach,tm.bg(line.type)); }
+string Display::draw_line(Line* line,Tm* tm,int b,int add){ return fill(b,tm->bg(line->tt))+line->form()+Clr::br()+fill(add,tm->bg(line->tt)); }
 
 string Dp::straighten( vector<string>::iterator line,int cnt){  return (cnt)?rigth.str()+*line+end()+straighten(line+1,cnt-1):""; }
 
@@ -146,4 +146,4 @@ bool Dp::compare(Dp*a,Dp*b){ return (a->lines.size()>b->lines.size()); }
 //------------------------------------
 // Line
 //------------------------------------
-string Dp::Line::operator()(){  return bg.str()+fg.str()+str; }
+string Dp::Line::form(){  return bg.str()+fg.str()+str; }

@@ -14,22 +14,26 @@ using namespace Cls;
 using namespace Efc;
 
 int main(){
-        Dp a,b,c,d;
+        Tm tm({Magenta(),Yellow()},{Fg(Black(),Bold()),Fg(Black(),Underline())});
         
+        Dp a,b(tm);
         
-        
-        a.edge(5);
-        a.width(3);
-        a.title(" A");
+        a.edge(1);
+        a.width(1);
+        a.title(Underline()," A ");
         a.write("aaa");
         a.write("aaa");
         a.write("aaa");
         
-        b.title(" B");
+        
+        b.edge(1);
+        b.width(1);
+        b.title(" B ");
         b.write("bbb");
         b.write("bbb");
         b.write("bbb");
         
          cout<<a+b+a<<'\n';
+        
         return 0;
 }

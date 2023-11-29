@@ -1,0 +1,20 @@
+<map id="Display::draw_display" name="Display::draw_display">
+<area shape="rect" id="Node000001" title="Lista o conjunto de linhas do buffer." alt="" coords="5,59,169,86"/>
+<area shape="rect" id="Node000002" href="$classDisplay.html#a10fcb45a07452eaa4fb9945338caf8d7" title="Complementa de caracteres para desenhar a janela." alt="" coords="217,32,376,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,59,201,55,201,61,169,65"/>
+<area shape="rect" id="Node000003" href="$classDisplay.html#aa6481f312f80e4be3a98433b1df37eba" title="Desenha a linha." alt="" coords="226,84,367,112"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="169,80,211,85,211,90,169,85"/>
+<area shape="rect" id="Node000004" href="$classTheme.html#a9c96eee9fbb56e755bb4a9055df87b7a" title="(Get) padrão para background." alt="" coords="451,5,541,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="343,81,375,69,423,43,439,37,441,42,425,48,377,74,345,86"/>
+<area shape="rect" id="Node000005" href="$structColour.html#aaa9d78c6f845863d4c2df60b31b1966a" title=" " alt="" coords="454,57,538,85"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="367,86,438,76,439,81,367,91"/>
+<area shape="rect" id="Node000006" href="$classDisplay.html#ad0e52097ee8d0d2ae09b70e51ec26ca6" title="Preencher espaços:" alt="" coords="449,109,542,137"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="367,104,434,113,433,118,367,109"/>
+<area shape="rect" id="Node000008" href="$structDisplay_1_1Line.html#a9f0374d9ab05fc689c54fddc24bf2716" title="Retorna a string colorida e com efeito." alt="" coords="424,161,567,189"/>
+<area shape="poly" id="edge8_Node000003_Node000008" title=" " alt="" coords="334,110,425,146,443,153,441,158,423,151,332,115"/>
+<area shape="rect" id="Node000007" href="$classDisplay.html#a61bf97fddf1bf913f39869d34dc7dfc8" title="Cria uma string vazia." alt="" coords="615,109,735,137"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="543,121,600,121,600,126,543,126"/>
+<area shape="poly" id="edge7_Node000007_Node000007" title=" " alt="" coords="644,110,639,100,643,91,655,85,675,83,696,85,708,92,705,96,695,90,675,88,657,90,647,95,644,100,648,108"/>
+<area shape="rect" id="Node000009" href="$classStr.html#a9f6d54ccea7fdadc2d9702fe92b187e0" title=" " alt="" coords="643,161,707,189"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="568,173,627,173,627,178,568,178"/>
+</map>

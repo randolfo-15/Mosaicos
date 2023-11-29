@@ -1,0 +1,5 @@
+<map id="Display::vertical" name="Display::vertical">
+<area shape="rect" id="Node000001" title="Retorna o valor do distanciamento vertical." alt="" coords="5,5,132,33"/>
+<area shape="rect" id="Node000002" href="$structDirections.html#a59be9044cae925f334b715d990ee6681" title=" " alt="" coords="180,5,301,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,17,164,17,164,22,132,22"/>
+</map>

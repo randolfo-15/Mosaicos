@@ -1,9 +1,5 @@
 <map id="src/clear_rag.hpp" name="src/clear_rag.hpp">
-<area shape="rect" id="Node000001" title="Arquivo de definição da classe Directions" alt="" coords="65,5,197,33"/>
-<area shape="rect" id="Node000002" href="$clear_8cpp.html" title="Arquivo de implementação da classe Clear" alt="" coords="5,81,108,109"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,46,72,82,68,79,105,42"/>
-<area shape="rect" id="Node000003" href="$display__rag_8hpp.html" title="Arquivo de definição da classe display,shadow,space." alt="" coords="132,81,280,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="157,42,194,79,191,82,154,46"/>
-<area shape="rect" id="Node000004" href="$display_8cpp.html" title="Arquivo de aplicação da classe display,shadow,space." alt="" coords="148,157,264,184"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="209,124,209,156,203,156,203,124"/>
+<area shape="rect" id="Node000001" title="Arquivo de definição da classe Directions" alt="" coords="5,5,138,33"/>
+<area shape="rect" id="Node000002" href="$clear_8cpp.html" title="Arquivo de implementação da classe Clear" alt="" coords="20,81,123,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,49,74,81,69,81,69,49"/>
 </map>

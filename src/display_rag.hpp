@@ -98,10 +98,11 @@ private:
 	std::string straighten(std::vector<std::string>::iterator,int);	///< Insere os detalhamentos de contorno da linha.
 	std::string draw_line(Line*,Tm*,int b,int=0);									///< Desenha a linha.
 	std::string build();																				///< Motor de animação da janelas.
-	std::string end();																					///< Retorna encerramento de string.
+	std::string end(int);																				///< Retorna encerramento de string.
+	std::string side(Directions*);																///< Define distanciamento lateral.
 	
 	int accentuation(std::string,int=0);													///< Contanta número de caracteres especiais.
-	int complement(std::string,int w,int b);											///< Complementa de caracteres para desenhar a janela
+	int complete(std::string,int w,int b);												///< Complementa de caracteres para desenhar a janela
 	
 protected:
 	std::string fill(int,Bg);																			///< Preencher espaços:

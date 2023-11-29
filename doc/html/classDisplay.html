@@ -97,6 +97,7 @@ $(document).ready(function(){initNavTree('classDisplay.html',''); initResizable(
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
@@ -111,22 +112,20 @@ Collaboration diagram for Display:</div>
 <div class="dyncontent">
 <div class="center"><img src="classDisplay__coll__graph.png" border="0" usemap="#aDisplay_coll__map" alt="Collaboration graph"/></div>
 <map name="aDisplay_coll__map" id="aDisplay_coll__map">
-<area shape="rect" title=" " alt="" coords="170,252,240,280"/>
+<area shape="rect" title=" " alt="" coords="129,252,199,280"/>
 <area shape="rect" href="classTheme.html" title="Define um conjunto de cores e comportamentos de uma janela." alt="" coords="5,159,72,187"/>
-<area shape="poly" title=" " alt="" coords="72,193,127,226,176,249,173,254,125,230,69,198"/>
+<area shape="poly" title=" " alt="" coords="65,196,102,226,140,249,137,254,99,230,62,200"/>
 <area shape="rect" href="structRigth.html" title=" " alt="" coords="96,159,152,187"/>
-<area shape="poly" title=" " alt="" coords="144,197,168,226,192,250,188,253,164,230,140,201"/>
+<area shape="poly" title=" " alt="" coords="129,202,136,227,153,250,148,253,131,229,124,203"/>
 <area shape="rect" href="structDirections.html" title=" " alt="" coords="120,82,208,110"/>
 <area shape="poly" title=" " alt="" coords="152,125,133,160,128,158,147,123"/>
 <area shape="rect" href="structDown.html" title=" " alt="" coords="176,159,234,187"/>
 <area shape="poly" title=" " alt="" coords="181,123,200,158,196,160,176,125"/>
 <area shape="rect" href="classStr.html" title=" " alt="" coords="144,5,184,33"/>
 <area shape="poly" title=" " alt="" coords="167,48,167,82,161,82,161,48"/>
-<area shape="poly" title=" " alt="" coords="208,202,208,252,203,252,203,202"/>
-<area shape="rect" href="classHighlight.html" title=" " alt="" coords="258,159,339,187"/>
-<area shape="poly" title=" " alt="" coords="280,200,251,230,224,254,220,249,247,226,276,196"/>
-<area shape="rect" title=" " alt="" coords="363,159,421,187"/>
-<area shape="poly" title=" " alt="" coords="361,198,302,230,242,255,240,250,300,226,358,193"/>
+<area shape="poly" title=" " alt="" coords="195,202,172,253,167,251,190,200"/>
+<area shape="rect" title=" " alt="" coords="259,159,317,187"/>
+<area shape="poly" title=" " alt="" coords="268,200,233,230,193,254,191,249,230,226,264,196"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -206,21 +205,26 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aae09b8f73cb0498ec00d607601c539f7" id="r_aae09b8f73cb0498ec00d607601c539f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#aae09b8f73cb0498ec00d607601c539f7">subtitle</a> (<a class="el" href="classHighlight.html">Highlight</a>, std::string, int=<a class="el" href="classDisplay.html#a0990d9ce6bbe54261f38ce8899cb5d72ab5409d4d60c024184d47a5262548024e">SUBTITLES</a>)</td></tr>
 <tr class="memdesc:aae09b8f73cb0498ec00d607601c539f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtitulo recebendo algum padrão de realce.  <br /></td></tr>
 <tr class="separator:aae09b8f73cb0498ec00d607601c539f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5401de5850b9de12ce34575688c7ffea" id="r_a5401de5850b9de12ce34575688c7ffea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a5401de5850b9de12ce34575688c7ffea">disassemble</a> ()</td></tr>
+<tr class="memdesc:a5401de5850b9de12ce34575688c7ffea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove os displays apontados.  <br /></td></tr>
+<tr class="separator:a5401de5850b9de12ce34575688c7ffea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2d68880afe161d2bc4d90695cf1de50" id="r_ad2d68880afe161d2bc4d90695cf1de50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#ad2d68880afe161d2bc4d90695cf1de50">clear</a> ()</td></tr>
-<tr class="memdesc:ad2d68880afe161d2bc4d90695cf1de50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Limpa contéudo do display.  <br /></td></tr>
+<tr class="memdesc:ad2d68880afe161d2bc4d90695cf1de50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Limpa o display completamente.  <br /></td></tr>
 <tr class="separator:ad2d68880afe161d2bc4d90695cf1de50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4f48a03a3d904142a7209955ace6f90" id="r_ac4f48a03a3d904142a7209955ace6f90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#ac4f48a03a3d904142a7209955ace6f90">operator+=</a> (<a class="el" href="classDisplay.html">Display</a> &amp;)</td></tr>
-<tr class="separator:ac4f48a03a3d904142a7209955ace6f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07861e321bcac8bb52057681c9c76d46" id="r_a07861e321bcac8bb52057681c9c76d46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a07861e321bcac8bb52057681c9c76d46">operator-=</a> (<a class="el" href="classDisplay.html">Display</a> &amp;)</td></tr>
-<tr class="separator:a07861e321bcac8bb52057681c9c76d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa01b76dca1c3a94b38f9a42268490095" id="r_aa01b76dca1c3a94b38f9a42268490095"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDisplay.html">Display</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#aa01b76dca1c3a94b38f9a42268490095">operator&lt;&lt;</a> (<a class="el" href="classDisplay.html">Display</a> &amp;)</td></tr>
-<tr class="separator:aa01b76dca1c3a94b38f9a42268490095"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab91992709d9fac7c0ef26ac4e29ce69c" id="r_ab91992709d9fac7c0ef26ac4e29ce69c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDisplay.html">Display</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#ab91992709d9fac7c0ef26ac4e29ce69c">operator&gt;&gt;</a> (<a class="el" href="classDisplay.html">Display</a> &amp;)</td></tr>
-<tr class="separator:ab91992709d9fac7c0ef26ac4e29ce69c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e962b1d2e5b5aa54ec0e7c284d23252" id="r_a6e962b1d2e5b5aa54ec0e7c284d23252"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDisplay.html">Display</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a6e962b1d2e5b5aa54ec0e7c284d23252">operator[]</a> (int)</td></tr>
-<tr class="separator:a6e962b1d2e5b5aa54ec0e7c284d23252"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9cf21fc0c3b62e96de18a146bec8b71" id="r_ad9cf21fc0c3b62e96de18a146bec8b71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#ad9cf21fc0c3b62e96de18a146bec8b71">operator*=</a> (int)</td></tr>
-<tr class="separator:ad9cf21fc0c3b62e96de18a146bec8b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7007366b6e144afb0c54486368abe9ec" id="r_a7007366b6e144afb0c54486368abe9ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a7007366b6e144afb0c54486368abe9ec">operator+=</a> (<a class="el" href="classDisplay.html">Display</a>)</td></tr>
+<tr class="memdesc:a7007366b6e144afb0c54486368abe9ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adiciona um display a nossa direita.  <br /></td></tr>
+<tr class="separator:a7007366b6e144afb0c54486368abe9ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafa2c87c2cbe3bab0199dfd105e0eb6c" id="r_aafa2c87c2cbe3bab0199dfd105e0eb6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDisplay.html">Display</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#aafa2c87c2cbe3bab0199dfd105e0eb6c">operator+</a> (<a class="el" href="classDisplay.html">Display</a>)</td></tr>
+<tr class="memdesc:aafa2c87c2cbe3bab0199dfd105e0eb6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Soma o contéudo de displays.  <br /></td></tr>
+<tr class="separator:aafa2c87c2cbe3bab0199dfd105e0eb6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0e9816c5d7c8d7d40585b8c6046cadd" id="r_ad0e9816c5d7c8d7d40585b8c6046cadd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#ad0e9816c5d7c8d7d40585b8c6046cadd">operator-=</a> (<a class="el" href="classDisplay.html">Display</a>)</td></tr>
+<tr class="memdesc:ad0e9816c5d7c8d7d40585b8c6046cadd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adiciona um display a nossa direita.  <br /></td></tr>
+<tr class="separator:ad0e9816c5d7c8d7d40585b8c6046cadd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c29ada9b2865ab4961866b1a5f13db7" id="r_a4c29ada9b2865ab4961866b1a5f13db7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDisplay.html">Display</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a4c29ada9b2865ab4961866b1a5f13db7">operator-</a> (<a class="el" href="classDisplay.html">Display</a>)</td></tr>
+<tr class="memdesc:a4c29ada9b2865ab4961866b1a5f13db7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Soma o contéudo de displays.  <br /></td></tr>
+<tr class="separator:a4c29ada9b2865ab4961866b1a5f13db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7334a681fc76dac3152dc627bf3cae0c" id="r_a7334a681fc76dac3152dc627bf3cae0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a7334a681fc76dac3152dc627bf3cae0c">operator=</a> (<a class="el" href="classDisplay.html">Display</a>)</td></tr>
+<tr class="separator:a7334a681fc76dac3152dc627bf3cae0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -244,42 +248,63 @@ Private Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:ab8442fb0116cd7e9f13626a67bb95b15" id="r_ab8442fb0116cd7e9f13626a67bb95b15"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#ab8442fb0116cd7e9f13626a67bb95b15">size_terminal</a> (int)</td></tr>
-<tr class="memdesc:ab8442fb0116cd7e9f13626a67bb95b15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula a dimenção do terminal atual.  <br /></td></tr>
-<tr class="separator:ab8442fb0116cd7e9f13626a67bb95b15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54b68897383da25eb9ad55d0bd06d9ed" id="r_a54b68897383da25eb9ad55d0bd06d9ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a54b68897383da25eb9ad55d0bd06d9ed">update_width</a> (int)</td></tr>
 <tr class="memdesc:a54b68897383da25eb9ad55d0bd06d9ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atualizar largura do display.  <br /></td></tr>
 <tr class="separator:a54b68897383da25eb9ad55d0bd06d9ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac43a3b15a1e2992a014ecbc77f31b657" id="r_ac43a3b15a1e2992a014ecbc77f31b657"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#ac43a3b15a1e2992a014ecbc77f31b657">accentuation</a> (std::string, int=0)</td></tr>
-<tr class="memdesc:ac43a3b15a1e2992a014ecbc77f31b657"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contanta número de caracteres especiais.  <br /></td></tr>
-<tr class="separator:ac43a3b15a1e2992a014ecbc77f31b657"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa70f85672210a05d8bbcffbf13876d2" id="r_aaa70f85672210a05d8bbcffbf13876d2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#aaa70f85672210a05d8bbcffbf13876d2">complement</a> (std::string)</td></tr>
-<tr class="memdesc:aaa70f85672210a05d8bbcffbf13876d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Complementa de caracteres para desenhar a janela.  <br /></td></tr>
-<tr class="separator:aaa70f85672210a05d8bbcffbf13876d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac65df6f8c0e3c3906f5f299bd683dddd" id="r_ac65df6f8c0e3c3906f5f299bd683dddd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#ac65df6f8c0e3c3906f5f299bd683dddd">split_rows</a> (<a class="el" href="structDisplay_1_1Line.html">Line</a>, std::string=&quot;&quot;)</td></tr>
 <tr class="memdesc:ac65df6f8c0e3c3906f5f299bd683dddd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Divide o contéudo das string por <br  />
 .  <br /></td></tr>
 <tr class="separator:ac65df6f8c0e3c3906f5f299bd683dddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4f2d1424938f2d4a38bb488d0d34a9c" id="r_ac4f2d1424938f2d4a38bb488d0d34a9c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#ac4f2d1424938f2d4a38bb488d0d34a9c">straighten</a> (std::vector&lt; <a class="el" href="structDisplay_1_1Line.html">Line</a> &gt;::iterator, int)</td></tr>
-<tr class="memdesc:ac4f2d1424938f2d4a38bb488d0d34a9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insere os detalhamentos de contorno da linha.  <br /></td></tr>
-<tr class="separator:ac4f2d1424938f2d4a38bb488d0d34a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a543cf1e0ecf05ef82f5550c6a34b99" id="r_a5a543cf1e0ecf05ef82f5550c6a34b99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a5a543cf1e0ecf05ef82f5550c6a34b99">draw_display</a> ()</td></tr>
-<tr class="memdesc:a5a543cf1e0ecf05ef82f5550c6a34b99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lista o conjunto de linhas do buffer auxiliar.  <br /></td></tr>
-<tr class="separator:a5a543cf1e0ecf05ef82f5550c6a34b99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a079abfbcb3f1562a9040f81c6da28b9b" id="r_a079abfbcb3f1562a9040f81c6da28b9b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a079abfbcb3f1562a9040f81c6da28b9b">draw_line</a> (<a class="el" href="structDisplay_1_1Line.html">Line</a> &amp;, int=0)</td></tr>
-<tr class="memdesc:a079abfbcb3f1562a9040f81c6da28b9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Desenha a linha.  <br /></td></tr>
-<tr class="separator:a079abfbcb3f1562a9040f81c6da28b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87f6056bd7603edf0a62cd16865d45be" id="r_a87f6056bd7603edf0a62cd16865d45be"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a87f6056bd7603edf0a62cd16865d45be">end</a> ()</td></tr>
-<tr class="memdesc:a87f6056bd7603edf0a62cd16865d45be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna encerramento de string.  <br /></td></tr>
-<tr class="separator:a87f6056bd7603edf0a62cd16865d45be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7067b1c2ae91dfb50b501a5bf108f0d7" id="r_a7067b1c2ae91dfb50b501a5bf108f0d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a7067b1c2ae91dfb50b501a5bf108f0d7">draw_display</a> (int=0)</td></tr>
+<tr class="memdesc:a7067b1c2ae91dfb50b501a5bf108f0d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lista o conjunto de linhas do buffer.  <br /></td></tr>
+<tr class="separator:a7067b1c2ae91dfb50b501a5bf108f0d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4186ace929fef67df659e37be359e154" id="r_a4186ace929fef67df659e37be359e154"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a4186ace929fef67df659e37be359e154">straighten</a> (std::vector&lt; std::string &gt;::iterator, int)</td></tr>
+<tr class="memdesc:a4186ace929fef67df659e37be359e154"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insere os detalhamentos de contorno da linha.  <br /></td></tr>
+<tr class="separator:a4186ace929fef67df659e37be359e154"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6481f312f80e4be3a98433b1df37eba" id="r_aa6481f312f80e4be3a98433b1df37eba"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#aa6481f312f80e4be3a98433b1df37eba">draw_line</a> (<a class="el" href="structDisplay_1_1Line.html">Line</a> *, <a class="el" href="theme_8hpp.html#a7158349f22ece2d8e787601d902885da">Tm</a> *, int <a class="el" href="classDisplay.html#a7221198a1d0b6144f04ae2c06616ed7b">b</a>, int=0)</td></tr>
+<tr class="memdesc:aa6481f312f80e4be3a98433b1df37eba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Desenha a linha.  <br /></td></tr>
+<tr class="separator:aa6481f312f80e4be3a98433b1df37eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff68881c09f41172cfb03e76ae99c664" id="r_aff68881c09f41172cfb03e76ae99c664"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#aff68881c09f41172cfb03e76ae99c664">build</a> ()</td></tr>
 <tr class="memdesc:aff68881c09f41172cfb03e76ae99c664"><td class="mdescLeft">&#160;</td><td class="mdescRight">Motor de animação da janelas.  <br /></td></tr>
 <tr class="separator:aff68881c09f41172cfb03e76ae99c664"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87f6056bd7603edf0a62cd16865d45be" id="r_a87f6056bd7603edf0a62cd16865d45be"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a87f6056bd7603edf0a62cd16865d45be">end</a> ()</td></tr>
+<tr class="memdesc:a87f6056bd7603edf0a62cd16865d45be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna encerramento de string.  <br /></td></tr>
+<tr class="separator:a87f6056bd7603edf0a62cd16865d45be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac43a3b15a1e2992a014ecbc77f31b657" id="r_ac43a3b15a1e2992a014ecbc77f31b657"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#ac43a3b15a1e2992a014ecbc77f31b657">accentuation</a> (std::string, int=0)</td></tr>
+<tr class="memdesc:ac43a3b15a1e2992a014ecbc77f31b657"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contanta número de caracteres especiais.  <br /></td></tr>
+<tr class="separator:ac43a3b15a1e2992a014ecbc77f31b657"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10fcb45a07452eaa4fb9945338caf8d7" id="r_a10fcb45a07452eaa4fb9945338caf8d7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a10fcb45a07452eaa4fb9945338caf8d7">complement</a> (std::string, int <a class="el" href="classDisplay.html#a82c8322cb8111833c106420e8b43ec9a">w</a>, int <a class="el" href="classDisplay.html#a7221198a1d0b6144f04ae2c06616ed7b">b</a>)</td></tr>
+<tr class="memdesc:a10fcb45a07452eaa4fb9945338caf8d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Complementa de caracteres para desenhar a janela.  <br /></td></tr>
+<tr class="separator:a10fcb45a07452eaa4fb9945338caf8d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02ac36651c91ada6065bc805931bd103" id="r_a02ac36651c91ada6065bc805931bd103"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a02ac36651c91ada6065bc805931bd103">check_bg</a> (int)</td></tr>
 <tr class="separator:a02ac36651c91ada6065bc805931bd103"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa31f39bec0a4f7771df0a6a81c956838" id="r_aa31f39bec0a4f7771df0a6a81c956838"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#aa31f39bec0a4f7771df0a6a81c956838">remove</a> (int)</td></tr>
+<tr class="memdesc:aa31f39bec0a4f7771df0a6a81c956838"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove um display do buffer.  <br /></td></tr>
+<tr class="separator:aa31f39bec0a4f7771df0a6a81c956838"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a186b0542158834e6302d268ab89d1e" id="r_a6a186b0542158834e6302d268ab89d1e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDisplay.html">Display</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a6a186b0542158834e6302d268ab89d1e">remove</a> (<a class="el" href="classDisplay.html">Display</a>, int)</td></tr>
+<tr class="memdesc:a6a186b0542158834e6302d268ab89d1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renove um display de uma copia.  <br /></td></tr>
+<tr class="separator:a6a186b0542158834e6302d268ab89d1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a77a17e5050130123bee4c1c9d483f1" id="r_a5a77a17e5050130123bee4c1c9d483f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDisplay.html">Display</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a5a77a17e5050130123bee4c1c9d483f1">copy</a> (<a class="el" href="classDisplay.html">Display</a> *, <a class="el" href="classDisplay.html">Display</a>)</td></tr>
+<tr class="memdesc:a5a77a17e5050130123bee4c1c9d483f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copia os displays de um objeto display.  <br /></td></tr>
+<tr class="separator:a5a77a17e5050130123bee4c1c9d483f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0701623daedc4af828c4d9ed11e8292c" id="r_a0701623daedc4af828c4d9ed11e8292c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a0701623daedc4af828c4d9ed11e8292c">find</a> (int, int, int=0)</td></tr>
+<tr class="memdesc:a0701623daedc4af828c4d9ed11e8292c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pesquisa um display a parte de sua id;.  <br /></td></tr>
+<tr class="separator:a0701623daedc4af828c4d9ed11e8292c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc861f4b66cb4984a864cae3272764b7" id="r_abc861f4b66cb4984a864cae3272764b7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#abc861f4b66cb4984a864cae3272764b7">sort</a> ()</td></tr>
+<tr class="memdesc:abc861f4b66cb4984a864cae3272764b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ordena os displays.  <br /></td></tr>
+<tr class="separator:abc861f4b66cb4984a864cae3272764b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a227974f4eea136999a64e5b34b0a7234" id="r_a227974f4eea136999a64e5b34b0a7234"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a227974f4eea136999a64e5b34b0a7234">compare</a> (<a class="el" href="classDisplay.html">Display</a> *, <a class="el" href="classDisplay.html">Display</a> *)</td></tr>
+<tr class="memdesc:a227974f4eea136999a64e5b34b0a7234"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compara o número de linhas de dois display.  <br /></td></tr>
+<tr class="separator:a227974f4eea136999a64e5b34b0a7234"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:aa70babd42a7c07cd37f8e06933e36703" id="r_aa70babd42a7c07cd37f8e06933e36703"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#aa70babd42a7c07cd37f8e06933e36703">id</a></td></tr>
+<tr class="memdesc:aa70babd42a7c07cd37f8e06933e36703"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identificador de um display.  <br /></td></tr>
+<tr class="separator:aa70babd42a7c07cd37f8e06933e36703"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb739cd7e89a59161a25e51575f0afd7" id="r_adb739cd7e89a59161a25e51575f0afd7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTheme.html">Theme</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#adb739cd7e89a59161a25e51575f0afd7">tm</a></td></tr>
 <tr class="separator:adb739cd7e89a59161a25e51575f0afd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a943c21b5bd7d4d2f2c4d3006c9cc4dcb" id="r_a943c21b5bd7d4d2f2c4d3006c9cc4dcb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structRigth.html">Rigth</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a943c21b5bd7d4d2f2c4d3006c9cc4dcb">rigth</a> =2</td></tr>
@@ -291,12 +316,6 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a82c8322cb8111833c106420e8b43ec9a" id="r_a82c8322cb8111833c106420e8b43ec9a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a82c8322cb8111833c106420e8b43ec9a">w</a> =21</td></tr>
 <tr class="memdesc:a82c8322cb8111833c106420e8b43ec9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Largura do display.  <br /></td></tr>
 <tr class="separator:a82c8322cb8111833c106420e8b43ec9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac28e56ecf7afa5d14bee4e17e46e81be" id="r_ac28e56ecf7afa5d14bee4e17e46e81be"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#ac28e56ecf7afa5d14bee4e17e46e81be">x</a> =2</td></tr>
-<tr class="memdesc:ac28e56ecf7afa5d14bee4e17e46e81be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Distanciamento horizontal.  <br /></td></tr>
-<tr class="separator:ac28e56ecf7afa5d14bee4e17e46e81be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26f6d9501d6d60ecb0f08e842f446e93" id="r_a26f6d9501d6d60ecb0f08e842f446e93"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a26f6d9501d6d60ecb0f08e842f446e93">y</a> =2</td></tr>
-<tr class="memdesc:a26f6d9501d6d60ecb0f08e842f446e93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Distanciamento vertical.  <br /></td></tr>
-<tr class="separator:a26f6d9501d6d60ecb0f08e842f446e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7221198a1d0b6144f04ae2c06616ed7b" id="r_a7221198a1d0b6144f04ae2c06616ed7b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a7221198a1d0b6144f04ae2c06616ed7b">b</a> =2</td></tr>
 <tr class="memdesc:a7221198a1d0b6144f04ae2c06616ed7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Espaçamento texto. <br  />
   <br /></td></tr>
@@ -311,26 +330,27 @@ Private Attributes</h2></td></tr>
 <tr class="memdesc:a833bdc83a8b3fd5b21395dffd89f7ba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer de tratamento de strings.  <br /></td></tr>
 <tr class="separator:a833bdc83a8b3fd5b21395dffd89f7ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33ca69b3036c8588a194a254f03c99de" id="r_a33ca69b3036c8588a194a254f03c99de"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classDisplay.html">Display</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a33ca69b3036c8588a194a254f03c99de">dps</a></td></tr>
-<tr class="memdesc:a33ca69b3036c8588a194a254f03c99de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer para multplos display.  <br /></td></tr>
+<tr class="memdesc:a33ca69b3036c8588a194a254f03c99de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conjunto para multiplos display.  <br /></td></tr>
 <tr class="separator:a33ca69b3036c8588a194a254f03c99de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44cd8eb4b928ec300d7d04dc9e449ade" id="r_a44cd8eb4b928ec300d7d04dc9e449ade"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a44cd8eb4b928ec300d7d04dc9e449ade">line_img</a></td></tr>
+<tr class="memdesc:a44cd8eb4b928ec300d7d04dc9e449ade"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contem a imagem da linha atual.  <br /></td></tr>
+<tr class="separator:a44cd8eb4b928ec300d7d04dc9e449ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
-<tr class="memitem:aa44ede61ea7a0b032f48ed3739e49a68" id="r_aa44ede61ea7a0b032f48ed3739e49a68"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="effect_8hpp.html#a7ccc0febbb931e2be4f87bce35658bb3">Hlg</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#aa44ede61ea7a0b032f48ed3739e49a68">bold</a> =Efc::Bold()</td></tr>
-<tr class="separator:aa44ede61ea7a0b032f48ed3739e49a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e16f5849c0e63fcb7126841941db103" id="r_a9e16f5849c0e63fcb7126841941db103"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a9e16f5849c0e63fcb7126841941db103">ID</a> =0</td></tr>
+<tr class="memdesc:a9e16f5849c0e63fcb7126841941db103"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contador universal de display.  <br /></td></tr>
+<tr class="separator:a9e16f5849c0e63fcb7126841941db103"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:abab1c17ecf64ae4014145df0754578d1" id="r_abab1c17ecf64ae4014145df0754578d1"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#abab1c17ecf64ae4014145df0754578d1">operator&lt;&lt;</a> (std::ostream &amp;, <a class="el" href="classDisplay.html">Display</a> &amp;)</td></tr>
-<tr class="separator:abab1c17ecf64ae4014145df0754578d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc2df8c626cb0c8b91632417e9f80023" id="r_adc2df8c626cb0c8b91632417e9f80023"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDisplay.html">Display</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#adc2df8c626cb0c8b91632417e9f80023">operator&lt;&lt;</a> (<a class="el" href="classDisplay.html">Display</a> *, <a class="el" href="classDisplay.html">Display</a> &amp;)</td></tr>
-<tr class="separator:adc2df8c626cb0c8b91632417e9f80023"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34a821ed3bf83b46826cf3ebbba8c391" id="r_a34a821ed3bf83b46826cf3ebbba8c391"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDisplay.html">Display</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#a34a821ed3bf83b46826cf3ebbba8c391">operator&gt;&gt;</a> (<a class="el" href="classDisplay.html">Display</a> *, <a class="el" href="classDisplay.html">Display</a> &amp;)</td></tr>
-<tr class="separator:a34a821ed3bf83b46826cf3ebbba8c391"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa03c450135594a403c5a68d7fe30b89a" id="r_aa03c450135594a403c5a68d7fe30b89a"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDisplay.html#aa03c450135594a403c5a68d7fe30b89a">operator&lt;&lt;</a> (std::ostream &amp;, <a class="el" href="classDisplay.html">Display</a>)</td></tr>
+<tr class="memdesc:aa03c450135594a403c5a68d7fe30b89a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exibe o contéudo do buffer.  <br /></td></tr>
+<tr class="separator:aa03c450135594a403c5a68d7fe30b89a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="display__rag_8hpp_source.html#l00026">26</a> of file <a class="el" href="display__rag_8hpp_source.html">display_rag.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="display__rag_8hpp_source.html#l00016">16</a> of file <a class="el" href="display__rag_8hpp_source.html">display_rag.hpp</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a0990d9ce6bbe54261f38ce8899cb5d72" name="a0990d9ce6bbe54261f38ce8899cb5d72"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0990d9ce6bbe54261f38ce8899cb5d72">&#9670;&#160;</a></span>Titles</h2>
@@ -359,7 +379,7 @@ Friends</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="display__rag_8hpp_source.html#l00089">89</a> of file <a class="el" href="display__rag_8hpp_source.html">display_rag.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="display__rag_8hpp_source.html#l00073">73</a> of file <a class="el" href="display__rag_8hpp_source.html">display_rag.hpp</a>.</p>
 
 </div>
 </div>
@@ -403,7 +423,7 @@ Friends</h2></td></tr>
 
 <p>Construtor para um tema especifico. </p>
 
-<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00019">19</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00020">20</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
 
 </div>
 </div>
@@ -471,30 +491,39 @@ Friends</h2></td></tr>
 
 <p>Motor de animação da janelas. </p>
 
-<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00065">65</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00064">64</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classDisplay_aff68881c09f41172cfb03e76ae99c664_cgraph.png" border="0" usemap="#aclassDisplay_aff68881c09f41172cfb03e76ae99c664_cgraph" alt=""/></div>
 <map name="aclassDisplay_aff68881c09f41172cfb03e76ae99c664_cgraph" id="aclassDisplay_aff68881c09f41172cfb03e76ae99c664_cgraph">
-<area shape="rect" title="Motor de animação da janelas." alt="" coords="5,83,115,110"/>
-<area shape="rect" href="classDisplay.html#a5a543cf1e0ecf05ef82f5550c6a34b99" title="Lista o conjunto de linhas do buffer auxiliar." alt="" coords="163,31,326,58"/>
-<area shape="poly" title=" " alt="" coords="111,79,177,61,179,66,113,85"/>
-<area shape="rect" href="classStr.html#a9f6d54ccea7fdadc2d9702fe92b187e0" title=" " alt="" coords="212,83,277,110"/>
-<area shape="poly" title=" " alt="" coords="115,94,197,94,197,99,115,99"/>
-<area shape="rect" href="classDisplay.html#ac4f2d1424938f2d4a38bb488d0d34a9c" title="Insere os detalhamentos de contorno da linha." alt="" coords="173,135,316,162"/>
-<area shape="poly" title=" " alt="" coords="113,108,179,127,177,132,111,114"/>
-<area shape="rect" href="classDisplay.html#aaa70f85672210a05d8bbcffbf13876d2" title="Complementa de caracteres para desenhar a janela." alt="" coords="374,5,533,33"/>
-<area shape="poly" title=" " alt="" coords="326,32,358,28,359,33,326,37"/>
-<area shape="rect" href="classDisplay.html#a079abfbcb3f1562a9040f81c6da28b9b" title="Desenha a linha." alt="" coords="384,57,524,85"/>
-<area shape="poly" title=" " alt="" coords="327,52,369,58,368,63,326,58"/>
-<area shape="rect" href="classTheme.html#a9c96eee9fbb56e755bb4a9055df87b7a" title="(Get) padrão para background." alt="" coords="583,31,673,58"/>
-<area shape="poly" title=" " alt="" coords="524,58,567,51,568,56,525,63"/>
-<area shape="rect" href="classDisplay.html#ad0e52097ee8d0d2ae09b70e51ec26ca6" title="Preencher espaços:" alt="" coords="581,83,675,110"/>
-<area shape="poly" title=" " alt="" coords="525,79,566,85,565,90,524,84"/>
-<area shape="rect" href="classDisplay.html#a61bf97fddf1bf913f39869d34dc7dfc8" title="Cria uma string vazia." alt="" coords="723,83,842,110"/>
-<area shape="poly" title=" " alt="" coords="675,94,707,94,707,99,675,99"/>
-<area shape="poly" title=" " alt="" coords="755,83,751,74,754,64,765,58,782,56,801,58,811,65,808,69,799,63,782,61,767,63,758,68,756,73,760,81"/>
+<area shape="rect" title="Motor de animação da janelas." alt="" coords="5,237,115,265"/>
+<area shape="rect" href="classDisplay.html#a7067b1c2ae91dfb50b501a5bf108f0d7" title="Lista o conjunto de linhas do buffer." alt="" coords="163,109,326,137"/>
+<area shape="poly" title=" " alt="" coords="80,235,209,144,212,148,83,239"/>
+<area shape="rect" href="classStr.html#a9f6d54ccea7fdadc2d9702fe92b187e0" title=" " alt="" coords="800,187,865,214"/>
+<area shape="poly" title=" " alt="" coords="115,245,784,201,785,206,115,250"/>
+<area shape="rect" href="classDisplay.html#abc861f4b66cb4984a864cae3272764b7" title="Ordena os displays." alt="" coords="193,263,296,290"/>
+<area shape="poly" title=" " alt="" coords="115,256,179,265,178,270,114,261"/>
+<area shape="rect" href="classDisplay.html#a4186ace929fef67df659e37be359e154" title="Insere os detalhamentos de contorno da linha." alt="" coords="173,315,316,342"/>
+<area shape="poly" title=" " alt="" coords="89,263,164,299,183,307,181,312,162,304,86,268"/>
+<area shape="rect" href="classDisplay.html#a10fcb45a07452eaa4fb9945338caf8d7" title="Complementa de caracteres para desenhar a janela." alt="" coords="374,57,533,85"/>
+<area shape="poly" title=" " alt="" coords="303,106,379,87,381,92,304,111"/>
+<area shape="rect" href="classDisplay.html#aa6481f312f80e4be3a98433b1df37eba" title="Desenha a linha." alt="" coords="384,109,524,137"/>
+<area shape="poly" title=" " alt="" coords="326,121,368,121,368,126,326,126"/>
+<area shape="rect" href="classTheme.html#a9c96eee9fbb56e755bb4a9055df87b7a" title="(Get) padrão para background." alt="" coords="608,5,698,33"/>
+<area shape="poly" title=" " alt="" coords="508,106,532,94,546,82,555,70,565,57,580,44,592,36,595,41,583,48,569,60,560,73,550,86,535,99,510,111"/>
+<area shape="rect" href="structColour.html#aaa9d78c6f845863d4c2df60b31b1966a" title=" " alt="" coords="611,57,695,85"/>
+<area shape="poly" title=" " alt="" coords="509,106,595,83,596,89,510,111"/>
+<area shape="rect" href="classDisplay.html#ad0e52097ee8d0d2ae09b70e51ec26ca6" title="Preencher espaços:" alt="" coords="606,109,700,137"/>
+<area shape="poly" title=" " alt="" coords="524,121,591,121,591,126,524,126"/>
+<area shape="rect" href="structDisplay_1_1Line.html#a9f0374d9ab05fc689c54fddc24bf2716" title="Retorna a string colorida e com efeito." alt="" coords="581,161,725,189"/>
+<area shape="poly" title=" " alt="" coords="510,135,583,154,581,159,509,140"/>
+<area shape="rect" href="classDisplay.html#a61bf97fddf1bf913f39869d34dc7dfc8" title="Cria uma string vazia." alt="" coords="773,109,892,137"/>
+<area shape="poly" title=" " alt="" coords="700,121,757,121,757,126,700,126"/>
+<area shape="poly" title=" " alt="" coords="801,110,796,100,800,91,812,85,832,83,854,85,865,92,863,96,852,90,832,88,814,90,804,95,801,100,806,108"/>
+<area shape="poly" title=" " alt="" coords="726,183,785,191,784,197,725,188"/>
+<area shape="rect" href="classDisplay.html#a227974f4eea136999a64e5b34b0a7234" title="Compara o número de linhas de dois display." alt="" coords="387,263,521,290"/>
+<area shape="poly" title=" " alt="" coords="296,274,371,274,371,279,296,279"/>
 </map>
 </div>
 <div class="dynheader">
@@ -553,14 +582,68 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Limpa contéudo do display. </p>
+<p>Limpa o display completamente. </p>
 
-<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00091">91</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00098">98</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
 
 </div>
 </div>
-<a id="aaa70f85672210a05d8bbcffbf13876d2" name="aaa70f85672210a05d8bbcffbf13876d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa70f85672210a05d8bbcffbf13876d2">&#9670;&#160;</a></span>complement()</h2>
+<a id="a227974f4eea136999a64e5b34b0a7234" name="a227974f4eea136999a64e5b34b0a7234"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a227974f4eea136999a64e5b34b0a7234">&#9670;&#160;</a></span>compare()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Dp::compare </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDisplay.html">Display</a> *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classDisplay.html">Display</a> *&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compara o número de linhas de dois display. </p>
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00145">145</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDisplay_a227974f4eea136999a64e5b34b0a7234_icgraph.png" border="0" usemap="#aclassDisplay_a227974f4eea136999a64e5b34b0a7234_icgraph" alt=""/></div>
+<map name="aclassDisplay_a227974f4eea136999a64e5b34b0a7234_icgraph" id="aclassDisplay_a227974f4eea136999a64e5b34b0a7234_icgraph">
+<area shape="rect" title="Compara o número de linhas de dois display." alt="" coords="472,5,607,33"/>
+<area shape="rect" href="classDisplay.html#abc861f4b66cb4984a864cae3272764b7" title="Ordena os displays." alt="" coords="322,5,424,33"/>
+<area shape="poly" title=" " alt="" coords="457,22,425,22,425,17,457,17"/>
+<area shape="rect" href="classDisplay.html#aff68881c09f41172cfb03e76ae99c664" title="Motor de animação da janelas." alt="" coords="165,5,274,33"/>
+<area shape="poly" title=" " alt="" coords="306,22,274,22,274,17,306,17"/>
+<area shape="rect" href="classDisplay.html#a41c7b479921bb4aedae03a866f4e8e10" title="retorna a imagem do distema atual." alt="" coords="5,5,117,33"/>
+<area shape="poly" title=" " alt="" coords="149,22,117,22,117,17,149,17"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a10fcb45a07452eaa4fb9945338caf8d7" name="a10fcb45a07452eaa4fb9945338caf8d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10fcb45a07452eaa4fb9945338caf8d7">&#9670;&#160;</a></span>complement()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -572,8 +655,24 @@ Here is the caller graph for this function:</div>
           <td class="memname">int Display::complement </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -587,10 +686,10 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classDisplay_aaa70f85672210a05d8bbcffbf13876d2_icgraph.png" border="0" usemap="#aclassDisplay_aaa70f85672210a05d8bbcffbf13876d2_icgraph" alt=""/></div>
-<map name="aclassDisplay_aaa70f85672210a05d8bbcffbf13876d2_icgraph" id="aclassDisplay_aaa70f85672210a05d8bbcffbf13876d2_icgraph">
+<div class="center"><img src="classDisplay_a10fcb45a07452eaa4fb9945338caf8d7_icgraph.png" border="0" usemap="#aclassDisplay_a10fcb45a07452eaa4fb9945338caf8d7_icgraph" alt=""/></div>
+<map name="aclassDisplay_a10fcb45a07452eaa4fb9945338caf8d7_icgraph" id="aclassDisplay_a10fcb45a07452eaa4fb9945338caf8d7_icgraph">
 <area shape="rect" title="Complementa de caracteres para desenhar a janela." alt="" coords="533,5,693,33"/>
-<area shape="rect" href="classDisplay.html#a5a543cf1e0ecf05ef82f5550c6a34b99" title="Lista o conjunto de linhas do buffer auxiliar." alt="" coords="322,5,485,33"/>
+<area shape="rect" href="classDisplay.html#a7067b1c2ae91dfb50b501a5bf108f0d7" title="Lista o conjunto de linhas do buffer." alt="" coords="322,5,485,33"/>
 <area shape="poly" title=" " alt="" coords="518,22,486,22,486,17,518,17"/>
 <area shape="rect" href="classDisplay.html#aff68881c09f41172cfb03e76ae99c664" title="Motor de animação da janelas." alt="" coords="165,5,274,33"/>
 <area shape="poly" title=" " alt="" coords="307,22,275,22,275,17,307,17"/>
@@ -601,8 +700,79 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a5a543cf1e0ecf05ef82f5550c6a34b99" name="a5a543cf1e0ecf05ef82f5550c6a34b99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a543cf1e0ecf05ef82f5550c6a34b99">&#9670;&#160;</a></span>draw_display()</h2>
+<a id="a5a77a17e5050130123bee4c1c9d483f1" name="a5a77a17e5050130123bee4c1c9d483f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a77a17e5050130123bee4c1c9d483f1">&#9670;&#160;</a></span>copy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="display__rag_8hpp.html#a39553f78f5afc73a07943d81ac8d6455">Dp</a> Dp::copy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDisplay.html">Display</a> *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classDisplay.html">Display</a>&#160;</td>
+          <td class="paramname"><em>tmp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copia os displays de um objeto display. </p>
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00137">137</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDisplay_a5a77a17e5050130123bee4c1c9d483f1_icgraph.png" border="0" usemap="#aclassDisplay_a5a77a17e5050130123bee4c1c9d483f1_icgraph" alt=""/></div>
+<map name="aclassDisplay_a5a77a17e5050130123bee4c1c9d483f1_icgraph" id="aclassDisplay_a5a77a17e5050130123bee4c1c9d483f1_icgraph">
+<area shape="rect" title="Copia os displays de um objeto display." alt="" coords="197,5,305,33"/>
+<area shape="rect" href="classDisplay.html#aafa2c87c2cbe3bab0199dfd105e0eb6c" title="Soma o contéudo de displays." alt="" coords="5,5,149,33"/>
+<area shape="poly" title=" " alt="" coords="181,22,149,22,149,17,181,17"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5401de5850b9de12ce34575688c7ffea" name="a5401de5850b9de12ce34575688c7ffea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5401de5850b9de12ce34575688c7ffea">&#9670;&#160;</a></span>disassemble()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dp::disassemble </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove os displays apontados. </p>
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00096">96</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7067b1c2ae91dfb50b501a5bf108f0d7" name="a7067b1c2ae91dfb50b501a5bf108f0d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7067b1c2ae91dfb50b501a5bf108f0d7">&#9670;&#160;</a></span>draw_display()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -613,7 +783,8 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void Display::draw_display </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em> = <code>0</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -624,34 +795,40 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Lista o conjunto de linhas do buffer auxiliar. </p>
+<p>Lista o conjunto de linhas do buffer. </p>
 
-<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00071">71</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00070">70</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classDisplay_a5a543cf1e0ecf05ef82f5550c6a34b99_cgraph.png" border="0" usemap="#aclassDisplay_a5a543cf1e0ecf05ef82f5550c6a34b99_cgraph" alt=""/></div>
-<map name="aclassDisplay_a5a543cf1e0ecf05ef82f5550c6a34b99_cgraph" id="aclassDisplay_a5a543cf1e0ecf05ef82f5550c6a34b99_cgraph">
-<area shape="rect" title="Lista o conjunto de linhas do buffer auxiliar." alt="" coords="5,32,169,60"/>
-<area shape="rect" href="classDisplay.html#aaa70f85672210a05d8bbcffbf13876d2" title="Complementa de caracteres para desenhar a janela." alt="" coords="217,5,376,33"/>
-<area shape="poly" title=" " alt="" coords="168,33,201,29,201,34,169,38"/>
-<area shape="rect" href="classDisplay.html#a079abfbcb3f1562a9040f81c6da28b9b" title="Desenha a linha." alt="" coords="226,57,367,85"/>
-<area shape="poly" title=" " alt="" coords="169,53,211,58,211,64,169,58"/>
-<area shape="rect" href="classTheme.html#a9c96eee9fbb56e755bb4a9055df87b7a" title="(Get) padrão para background." alt="" coords="426,31,516,58"/>
-<area shape="poly" title=" " alt="" coords="367,58,409,51,410,56,367,63"/>
-<area shape="rect" href="classDisplay.html#ad0e52097ee8d0d2ae09b70e51ec26ca6" title="Preencher espaços:" alt="" coords="424,83,517,110"/>
-<area shape="poly" title=" " alt="" coords="367,79,409,85,408,90,367,84"/>
-<area shape="rect" href="classDisplay.html#a61bf97fddf1bf913f39869d34dc7dfc8" title="Cria uma string vazia." alt="" coords="565,83,685,110"/>
-<area shape="poly" title=" " alt="" coords="518,94,550,94,550,99,518,99"/>
-<area shape="poly" title=" " alt="" coords="598,83,593,74,597,64,608,58,625,56,643,58,653,65,650,69,641,63,625,61,609,63,601,68,599,73,603,81"/>
+<div class="center"><img src="classDisplay_a7067b1c2ae91dfb50b501a5bf108f0d7_cgraph.png" border="0" usemap="#aclassDisplay_a7067b1c2ae91dfb50b501a5bf108f0d7_cgraph" alt=""/></div>
+<map name="aclassDisplay_a7067b1c2ae91dfb50b501a5bf108f0d7_cgraph" id="aclassDisplay_a7067b1c2ae91dfb50b501a5bf108f0d7_cgraph">
+<area shape="rect" title="Lista o conjunto de linhas do buffer." alt="" coords="5,59,169,86"/>
+<area shape="rect" href="classDisplay.html#a10fcb45a07452eaa4fb9945338caf8d7" title="Complementa de caracteres para desenhar a janela." alt="" coords="217,32,376,60"/>
+<area shape="poly" title=" " alt="" coords="168,59,201,55,201,61,169,65"/>
+<area shape="rect" href="classDisplay.html#aa6481f312f80e4be3a98433b1df37eba" title="Desenha a linha." alt="" coords="226,84,367,112"/>
+<area shape="poly" title=" " alt="" coords="169,80,211,85,211,90,169,85"/>
+<area shape="rect" href="classTheme.html#a9c96eee9fbb56e755bb4a9055df87b7a" title="(Get) padrão para background." alt="" coords="451,5,541,33"/>
+<area shape="poly" title=" " alt="" coords="343,81,375,69,423,43,439,37,441,42,425,48,377,74,345,86"/>
+<area shape="rect" href="structColour.html#aaa9d78c6f845863d4c2df60b31b1966a" title=" " alt="" coords="454,57,538,85"/>
+<area shape="poly" title=" " alt="" coords="367,86,438,76,439,81,367,91"/>
+<area shape="rect" href="classDisplay.html#ad0e52097ee8d0d2ae09b70e51ec26ca6" title="Preencher espaços:" alt="" coords="449,109,542,137"/>
+<area shape="poly" title=" " alt="" coords="367,104,434,113,433,118,367,109"/>
+<area shape="rect" href="structDisplay_1_1Line.html#a9f0374d9ab05fc689c54fddc24bf2716" title="Retorna a string colorida e com efeito." alt="" coords="424,161,567,189"/>
+<area shape="poly" title=" " alt="" coords="334,110,425,146,443,153,441,158,423,151,332,115"/>
+<area shape="rect" href="classDisplay.html#a61bf97fddf1bf913f39869d34dc7dfc8" title="Cria uma string vazia." alt="" coords="615,109,735,137"/>
+<area shape="poly" title=" " alt="" coords="543,121,600,121,600,126,543,126"/>
+<area shape="poly" title=" " alt="" coords="644,110,639,100,643,91,655,85,675,83,696,85,708,92,705,96,695,90,675,88,657,90,647,95,644,100,648,108"/>
+<area shape="rect" href="classStr.html#a9f6d54ccea7fdadc2d9702fe92b187e0" title=" " alt="" coords="643,161,707,189"/>
+<area shape="poly" title=" " alt="" coords="568,173,627,173,627,178,568,178"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classDisplay_a5a543cf1e0ecf05ef82f5550c6a34b99_icgraph.png" border="0" usemap="#aclassDisplay_a5a543cf1e0ecf05ef82f5550c6a34b99_icgraph" alt=""/></div>
-<map name="aclassDisplay_a5a543cf1e0ecf05ef82f5550c6a34b99_icgraph" id="aclassDisplay_a5a543cf1e0ecf05ef82f5550c6a34b99_icgraph">
-<area shape="rect" title="Lista o conjunto de linhas do buffer auxiliar." alt="" coords="322,5,485,33"/>
+<div class="center"><img src="classDisplay_a7067b1c2ae91dfb50b501a5bf108f0d7_icgraph.png" border="0" usemap="#aclassDisplay_a7067b1c2ae91dfb50b501a5bf108f0d7_icgraph" alt=""/></div>
+<map name="aclassDisplay_a7067b1c2ae91dfb50b501a5bf108f0d7_icgraph" id="aclassDisplay_a7067b1c2ae91dfb50b501a5bf108f0d7_icgraph">
+<area shape="rect" title="Lista o conjunto de linhas do buffer." alt="" coords="322,5,485,33"/>
 <area shape="rect" href="classDisplay.html#aff68881c09f41172cfb03e76ae99c664" title="Motor de animação da janelas." alt="" coords="165,5,274,33"/>
 <area shape="poly" title=" " alt="" coords="307,22,275,22,275,17,307,17"/>
 <area shape="rect" href="classDisplay.html#a41c7b479921bb4aedae03a866f4e8e10" title="retorna a imagem do distema atual." alt="" coords="5,5,117,33"/>
@@ -661,8 +838,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a079abfbcb3f1562a9040f81c6da28b9b" name="a079abfbcb3f1562a9040f81c6da28b9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a079abfbcb3f1562a9040f81c6da28b9b">&#9670;&#160;</a></span>draw_line()</h2>
+<a id="aa6481f312f80e4be3a98433b1df37eba" name="aa6481f312f80e4be3a98433b1df37eba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6481f312f80e4be3a98433b1df37eba">&#9670;&#160;</a></span>draw_line()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -673,14 +850,26 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">string Display::draw_line </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structDisplay_1_1Line.html">Line</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structDisplay_1_1Line.html">Line</a> *&#160;</td>
           <td class="paramname"><em>line</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="theme_8hpp.html#a7158349f22ece2d8e787601d902885da">Tm</a> *&#160;</td>
+          <td class="paramname"><em>tm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>attach</em> = <code>0</code>&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>add</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -697,29 +886,35 @@ Here is the caller graph for this function:</div>
 
 <p>Desenha a linha. </p>
 
-<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00073">73</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00076">76</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classDisplay_a079abfbcb3f1562a9040f81c6da28b9b_cgraph.png" border="0" usemap="#aclassDisplay_a079abfbcb3f1562a9040f81c6da28b9b_cgraph" alt=""/></div>
-<map name="aclassDisplay_a079abfbcb3f1562a9040f81c6da28b9b_cgraph" id="aclassDisplay_a079abfbcb3f1562a9040f81c6da28b9b_cgraph">
-<area shape="rect" title="Desenha a linha." alt="" coords="5,32,146,60"/>
-<area shape="rect" href="classTheme.html#a9c96eee9fbb56e755bb4a9055df87b7a" title="(Get) padrão para background." alt="" coords="195,5,286,33"/>
-<area shape="poly" title=" " alt="" coords="146,32,179,26,180,32,147,37"/>
-<area shape="rect" href="classDisplay.html#ad0e52097ee8d0d2ae09b70e51ec26ca6" title="Preencher espaços:" alt="" coords="194,57,287,85"/>
-<area shape="poly" title=" " alt="" coords="146,54,179,59,178,64,146,59"/>
-<area shape="rect" href="classDisplay.html#a61bf97fddf1bf913f39869d34dc7dfc8" title="Cria uma string vazia." alt="" coords="335,57,454,85"/>
-<area shape="poly" title=" " alt="" coords="288,69,319,69,319,74,288,74"/>
-<area shape="poly" title=" " alt="" coords="367,58,363,48,367,39,377,33,395,31,413,33,423,39,420,44,411,38,395,36,379,38,371,42,368,48,372,56"/>
+<div class="center"><img src="classDisplay_aa6481f312f80e4be3a98433b1df37eba_cgraph.png" border="0" usemap="#aclassDisplay_aa6481f312f80e4be3a98433b1df37eba_cgraph" alt=""/></div>
+<map name="aclassDisplay_aa6481f312f80e4be3a98433b1df37eba_cgraph" id="aclassDisplay_aa6481f312f80e4be3a98433b1df37eba_cgraph">
+<area shape="rect" title="Desenha a linha." alt="" coords="5,84,146,112"/>
+<area shape="rect" href="classTheme.html#a9c96eee9fbb56e755bb4a9055df87b7a" title="(Get) padrão para background." alt="" coords="220,5,311,33"/>
+<area shape="poly" title=" " alt="" coords="107,81,193,43,210,37,212,42,195,48,109,86"/>
+<area shape="rect" href="structColour.html#aaa9d78c6f845863d4c2df60b31b1966a" title=" " alt="" coords="223,57,308,85"/>
+<area shape="poly" title=" " alt="" coords="146,85,207,77,208,82,146,91"/>
+<area shape="rect" href="classDisplay.html#ad0e52097ee8d0d2ae09b70e51ec26ca6" title="Preencher espaços:" alt="" coords="219,109,312,137"/>
+<area shape="poly" title=" " alt="" coords="146,105,204,112,203,118,146,110"/>
+<area shape="rect" href="structDisplay_1_1Line.html#a9f0374d9ab05fc689c54fddc24bf2716" title="Retorna a string colorida e com efeito." alt="" coords="194,161,337,189"/>
+<area shape="poly" title=" " alt="" coords="110,110,195,146,212,153,210,158,193,151,108,115"/>
+<area shape="rect" href="classDisplay.html#a61bf97fddf1bf913f39869d34dc7dfc8" title="Cria uma string vazia." alt="" coords="385,109,504,137"/>
+<area shape="poly" title=" " alt="" coords="313,121,370,121,370,126,313,126"/>
+<area shape="poly" title=" " alt="" coords="413,110,408,100,412,91,425,85,445,83,466,85,478,92,475,96,464,90,445,88,426,90,416,95,414,100,418,108"/>
+<area shape="rect" href="classStr.html#a9f6d54ccea7fdadc2d9702fe92b187e0" title=" " alt="" coords="413,161,477,189"/>
+<area shape="poly" title=" " alt="" coords="338,173,397,173,397,178,338,178"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classDisplay_a079abfbcb3f1562a9040f81c6da28b9b_icgraph.png" border="0" usemap="#aclassDisplay_a079abfbcb3f1562a9040f81c6da28b9b_icgraph" alt=""/></div>
-<map name="aclassDisplay_a079abfbcb3f1562a9040f81c6da28b9b_icgraph" id="aclassDisplay_a079abfbcb3f1562a9040f81c6da28b9b_icgraph">
+<div class="center"><img src="classDisplay_aa6481f312f80e4be3a98433b1df37eba_icgraph.png" border="0" usemap="#aclassDisplay_aa6481f312f80e4be3a98433b1df37eba_icgraph" alt=""/></div>
+<map name="aclassDisplay_aa6481f312f80e4be3a98433b1df37eba_icgraph" id="aclassDisplay_aa6481f312f80e4be3a98433b1df37eba_icgraph">
 <area shape="rect" title="Desenha a linha." alt="" coords="533,5,674,33"/>
-<area shape="rect" href="classDisplay.html#a5a543cf1e0ecf05ef82f5550c6a34b99" title="Lista o conjunto de linhas do buffer auxiliar." alt="" coords="322,5,485,33"/>
+<area shape="rect" href="classDisplay.html#a7067b1c2ae91dfb50b501a5bf108f0d7" title="Lista o conjunto de linhas do buffer." alt="" coords="322,5,485,33"/>
 <area shape="poly" title=" " alt="" coords="518,22,486,22,486,17,518,17"/>
 <area shape="rect" href="classDisplay.html#aff68881c09f41172cfb03e76ae99c664" title="Motor de animação da janelas." alt="" coords="165,5,274,33"/>
 <area shape="poly" title=" " alt="" coords="307,22,275,22,275,17,307,17"/>
@@ -747,7 +942,7 @@ Here is the caller graph for this function:</div>
 
 <p>Retorna o espaçamento em relação a borda. </p>
 
-<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00113">113</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00114">114</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
 
 </div>
 </div>
@@ -769,7 +964,7 @@ Here is the caller graph for this function:</div>
 
 <p>Atualiza o distanciamento em relação a borda. </p>
 
-<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00111">111</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00113">113</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
 
 </div>
 </div>
@@ -799,7 +994,7 @@ Here is the caller graph for this function:</div>
 
 <p>Cria uma string vazia. </p>
 
-<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00081">81</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00090">90</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -818,9 +1013,9 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="948,16,939,10,923,8,907,10,899,14,896,20,900,28,895,30,891,20,895,11,905,5,923,3,941,5,951,11"/>
 <area shape="rect" href="classDisplay.html#ad0e52097ee8d0d2ae09b70e51ec26ca6" title="Preencher espaços:" alt="" coords="722,29,815,57"/>
 <area shape="poly" title=" " alt="" coords="847,46,815,46,815,41,847,41"/>
-<area shape="rect" href="classDisplay.html#a079abfbcb3f1562a9040f81c6da28b9b" title="Desenha a linha." alt="" coords="533,29,674,57"/>
+<area shape="rect" href="classDisplay.html#aa6481f312f80e4be3a98433b1df37eba" title="Desenha a linha." alt="" coords="533,29,674,57"/>
 <area shape="poly" title=" " alt="" coords="706,46,674,46,674,41,706,41"/>
-<area shape="rect" href="classDisplay.html#a5a543cf1e0ecf05ef82f5550c6a34b99" title="Lista o conjunto de linhas do buffer auxiliar." alt="" coords="322,29,485,57"/>
+<area shape="rect" href="classDisplay.html#a7067b1c2ae91dfb50b501a5bf108f0d7" title="Lista o conjunto de linhas do buffer." alt="" coords="322,29,485,57"/>
 <area shape="poly" title=" " alt="" coords="518,46,486,46,486,41,518,41"/>
 <area shape="rect" href="classDisplay.html#aff68881c09f41172cfb03e76ae99c664" title="Motor de animação da janelas." alt="" coords="165,29,274,57"/>
 <area shape="poly" title=" " alt="" coords="307,46,275,46,275,41,307,41"/>
@@ -856,7 +1051,7 @@ Here is the caller graph for this function:</div>
 
 <p>Retorna encerramento de string. </p>
 
-<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00083">83</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00084">84</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -906,7 +1101,7 @@ Here is the call graph for this function:</div>
 
 <p>Preencher espaços: </p>
 
-<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00079">79</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00088">88</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -924,14 +1119,86 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classDisplay_ad0e52097ee8d0d2ae09b70e51ec26ca6_icgraph.png" border="0" usemap="#aclassDisplay_ad0e52097ee8d0d2ae09b70e51ec26ca6_icgraph" alt=""/></div>
 <map name="aclassDisplay_ad0e52097ee8d0d2ae09b70e51ec26ca6_icgraph" id="aclassDisplay_ad0e52097ee8d0d2ae09b70e51ec26ca6_icgraph">
 <area shape="rect" title="Preencher espaços:" alt="" coords="722,5,815,33"/>
-<area shape="rect" href="classDisplay.html#a079abfbcb3f1562a9040f81c6da28b9b" title="Desenha a linha." alt="" coords="533,5,674,33"/>
+<area shape="rect" href="classDisplay.html#aa6481f312f80e4be3a98433b1df37eba" title="Desenha a linha." alt="" coords="533,5,674,33"/>
 <area shape="poly" title=" " alt="" coords="706,22,674,22,674,17,706,17"/>
-<area shape="rect" href="classDisplay.html#a5a543cf1e0ecf05ef82f5550c6a34b99" title="Lista o conjunto de linhas do buffer auxiliar." alt="" coords="322,5,485,33"/>
+<area shape="rect" href="classDisplay.html#a7067b1c2ae91dfb50b501a5bf108f0d7" title="Lista o conjunto de linhas do buffer." alt="" coords="322,5,485,33"/>
 <area shape="poly" title=" " alt="" coords="518,22,486,22,486,17,518,17"/>
 <area shape="rect" href="classDisplay.html#aff68881c09f41172cfb03e76ae99c664" title="Motor de animação da janelas." alt="" coords="165,5,274,33"/>
 <area shape="poly" title=" " alt="" coords="307,22,275,22,275,17,307,17"/>
 <area shape="rect" href="classDisplay.html#a41c7b479921bb4aedae03a866f4e8e10" title="retorna a imagem do distema atual." alt="" coords="5,5,117,33"/>
 <area shape="poly" title=" " alt="" coords="149,22,117,22,117,17,149,17"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0701623daedc4af828c4d9ed11e8292c" name="a0701623daedc4af828c4d9ed11e8292c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0701623daedc4af828c4d9ed11e8292c">&#9670;&#160;</a></span>find()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Dp::find </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pesquisa um display a parte de sua id;. </p>
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00143">143</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDisplay_a0701623daedc4af828c4d9ed11e8292c_cgraph.png" border="0" usemap="#aclassDisplay_a0701623daedc4af828c4d9ed11e8292c_cgraph" alt=""/></div>
+<map name="aclassDisplay_a0701623daedc4af828c4d9ed11e8292c_cgraph" id="aclassDisplay_a0701623daedc4af828c4d9ed11e8292c_cgraph">
+<area shape="rect" title="Pesquisa um display a parte de sua id;." alt="" coords="5,29,107,57"/>
+<area shape="poly" title=" " alt="" coords="37,30,34,20,37,11,44,5,56,3,69,5,75,12,72,16,66,10,56,8,46,10,41,14,40,20,42,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDisplay_a0701623daedc4af828c4d9ed11e8292c_icgraph.png" border="0" usemap="#aclassDisplay_a0701623daedc4af828c4d9ed11e8292c_icgraph" alt=""/></div>
+<map name="aclassDisplay_a0701623daedc4af828c4d9ed11e8292c_icgraph" id="aclassDisplay_a0701623daedc4af828c4d9ed11e8292c_icgraph">
+<area shape="rect" title="Pesquisa um display a parte de sua id;." alt="" coords="377,57,478,85"/>
+<area shape="poly" title=" " alt="" coords="455,44,445,38,428,36,411,38,402,43,400,48,404,56,399,58,395,48,398,39,410,33,428,31,447,33,458,40"/>
+<area shape="rect" href="classDisplay.html#aa31f39bec0a4f7771df0a6a81c956838" title="Remove um display do buffer." alt="" coords="202,57,329,85"/>
+<area shape="poly" title=" " alt="" coords="361,74,329,74,329,69,361,69"/>
+<area shape="rect" href="classDisplay.html#a4c29ada9b2865ab4961866b1a5f13db7" title="Soma o contéudo de displays." alt="" coords="11,5,148,33"/>
+<area shape="poly" title=" " alt="" coords="198,55,131,36,132,31,200,50"/>
+<area shape="rect" href="classDisplay.html#ad0e9816c5d7c8d7d40585b8c6046cadd" title="Adiciona um display a nossa direita." alt="" coords="5,57,154,85"/>
+<area shape="poly" title=" " alt="" coords="186,74,154,74,154,69,186,69"/>
+<area shape="rect" href="classDisplay.html#a6a186b0542158834e6302d268ab89d1e" title="Renove um display de uma copia." alt="" coords="16,109,143,137"/>
+<area shape="poly" title=" " alt="" coords="200,92,132,111,131,106,198,87"/>
 </map>
 </div>
 
@@ -954,7 +1221,17 @@ Here is the caller graph for this function:</div>
 
 <p>Retorna o valor do distanciamento horizontal. </p>
 
-<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00105">105</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00108">108</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDisplay_a3fcb7d088b571f8ab3a3688c94767ee5_cgraph.png" border="0" usemap="#aclassDisplay_a3fcb7d088b571f8ab3a3688c94767ee5_cgraph" alt=""/></div>
+<map name="aclassDisplay_a3fcb7d088b571f8ab3a3688c94767ee5_cgraph" id="aclassDisplay_a3fcb7d088b571f8ab3a3688c94767ee5_cgraph">
+<area shape="rect" title="Retorna o valor do distanciamento horizontal." alt="" coords="5,5,148,33"/>
+<area shape="rect" href="structDirections.html#a59be9044cae925f334b715d990ee6681" title=" " alt="" coords="196,5,317,33"/>
+<area shape="poly" title=" " alt="" coords="148,17,180,17,180,22,148,22"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -976,127 +1253,269 @@ Here is the caller graph for this function:</div>
 
 <p>Atualiza o valor do distanciamento horizontal. </p>
 
-<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00103">103</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00107">107</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDisplay_ac1aa9a84297b32bcd523b5c07311ad0e_cgraph.png" border="0" usemap="#aclassDisplay_ac1aa9a84297b32bcd523b5c07311ad0e_cgraph" alt=""/></div>
+<map name="aclassDisplay_ac1aa9a84297b32bcd523b5c07311ad0e_cgraph" id="aclassDisplay_ac1aa9a84297b32bcd523b5c07311ad0e_cgraph">
+<area shape="rect" title="Atualiza o valor do distanciamento horizontal." alt="" coords="5,5,148,33"/>
+<area shape="rect" href="structDirections.html#a59be9044cae925f334b715d990ee6681" title=" " alt="" coords="196,5,317,33"/>
+<area shape="poly" title=" " alt="" coords="148,17,180,17,180,22,148,22"/>
+</map>
+</div>
 
 </div>
 </div>
-<a id="ad9cf21fc0c3b62e96de18a146bec8b71" name="ad9cf21fc0c3b62e96de18a146bec8b71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9cf21fc0c3b62e96de18a146bec8b71">&#9670;&#160;</a></span>operator*=()</h2>
+<a id="aafa2c87c2cbe3bab0199dfd105e0eb6c" name="aafa2c87c2cbe3bab0199dfd105e0eb6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafa2c87c2cbe3bab0199dfd105e0eb6c">&#9670;&#160;</a></span>operator+()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Display::operator*= </td>
+          <td class="memname"><a class="el" href="display__rag_8hpp.html#a39553f78f5afc73a07943d81ac8d6455">Dp</a> Dp::operator+ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDisplay.html">Display</a>&#160;</td>
+          <td class="paramname"><em>dp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Soma o contéudo de displays. </p>
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00124">124</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDisplay_aafa2c87c2cbe3bab0199dfd105e0eb6c_cgraph.png" border="0" usemap="#aclassDisplay_aafa2c87c2cbe3bab0199dfd105e0eb6c_cgraph" alt=""/></div>
+<map name="aclassDisplay_aafa2c87c2cbe3bab0199dfd105e0eb6c_cgraph" id="aclassDisplay_aafa2c87c2cbe3bab0199dfd105e0eb6c_cgraph">
+<area shape="rect" title="Soma o contéudo de displays." alt="" coords="5,5,149,33"/>
+<area shape="rect" href="classDisplay.html#a5a77a17e5050130123bee4c1c9d483f1" title="Copia os displays de um objeto display." alt="" coords="197,5,305,33"/>
+<area shape="poly" title=" " alt="" coords="149,17,181,17,181,22,149,22"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7007366b6e144afb0c54486368abe9ec" name="a7007366b6e144afb0c54486368abe9ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7007366b6e144afb0c54486368abe9ec">&#9670;&#160;</a></span>operator+=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dp::operator+= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDisplay.html">Display</a>&#160;</td>
+          <td class="paramname"><em>dp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adiciona um display a nossa direita. </p>
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00123">123</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4c29ada9b2865ab4961866b1a5f13db7" name="a4c29ada9b2865ab4961866b1a5f13db7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c29ada9b2865ab4961866b1a5f13db7">&#9670;&#160;</a></span>operator-()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="display__rag_8hpp.html#a39553f78f5afc73a07943d81ac8d6455">Dp</a> Dp::operator- </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDisplay.html">Display</a>&#160;</td>
+          <td class="paramname"><em>dp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Soma o contéudo de displays. </p>
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00129">129</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDisplay_a4c29ada9b2865ab4961866b1a5f13db7_cgraph.png" border="0" usemap="#aclassDisplay_a4c29ada9b2865ab4961866b1a5f13db7_cgraph" alt=""/></div>
+<map name="aclassDisplay_a4c29ada9b2865ab4961866b1a5f13db7_cgraph" id="aclassDisplay_a4c29ada9b2865ab4961866b1a5f13db7_cgraph">
+<area shape="rect" title="Soma o contéudo de displays." alt="" coords="5,29,143,57"/>
+<area shape="rect" href="classDisplay.html#aa31f39bec0a4f7771df0a6a81c956838" title="Remove um display do buffer." alt="" coords="191,29,318,57"/>
+<area shape="poly" title=" " alt="" coords="143,41,175,41,175,46,143,46"/>
+<area shape="rect" href="classDisplay.html#a0701623daedc4af828c4d9ed11e8292c" title="Pesquisa um display a parte de sua id;." alt="" coords="366,29,467,57"/>
+<area shape="poly" title=" " alt="" coords="318,41,350,41,350,46,318,46"/>
+<area shape="poly" title=" " alt="" coords="388,30,384,20,387,11,399,5,417,3,436,5,447,12,444,16,434,10,417,8,400,10,391,15,389,20,393,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad0e9816c5d7c8d7d40585b8c6046cadd" name="ad0e9816c5d7c8d7d40585b8c6046cadd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0e9816c5d7c8d7d40585b8c6046cadd">&#9670;&#160;</a></span>operator-=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dp::operator-= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDisplay.html">Display</a>&#160;</td>
+          <td class="paramname"><em>dp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adiciona um display a nossa direita. </p>
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00128">128</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDisplay_ad0e9816c5d7c8d7d40585b8c6046cadd_cgraph.png" border="0" usemap="#aclassDisplay_ad0e9816c5d7c8d7d40585b8c6046cadd_cgraph" alt=""/></div>
+<map name="aclassDisplay_ad0e9816c5d7c8d7d40585b8c6046cadd_cgraph" id="aclassDisplay_ad0e9816c5d7c8d7d40585b8c6046cadd_cgraph">
+<area shape="rect" title="Adiciona um display a nossa direita." alt="" coords="5,29,154,57"/>
+<area shape="rect" href="classDisplay.html#aa31f39bec0a4f7771df0a6a81c956838" title="Remove um display do buffer." alt="" coords="202,29,329,57"/>
+<area shape="poly" title=" " alt="" coords="154,41,186,41,186,46,154,46"/>
+<area shape="rect" href="classDisplay.html#a0701623daedc4af828c4d9ed11e8292c" title="Pesquisa um display a parte de sua id;." alt="" coords="377,29,478,57"/>
+<area shape="poly" title=" " alt="" coords="329,41,361,41,361,46,329,46"/>
+<area shape="poly" title=" " alt="" coords="399,30,395,20,398,11,410,5,428,3,447,5,458,12,455,16,445,10,428,8,411,10,402,15,400,20,404,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7334a681fc76dac3152dc627bf3cae0c" name="a7334a681fc76dac3152dc627bf3cae0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7334a681fc76dac3152dc627bf3cae0c">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dp::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDisplay.html">Display</a>&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00133">133</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6a186b0542158834e6302d268ab89d1e" name="a6a186b0542158834e6302d268ab89d1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a186b0542158834e6302d268ab89d1e">&#9670;&#160;</a></span>remove() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="display__rag_8hpp.html#a39553f78f5afc73a07943d81ac8d6455">Dp</a> Dp::remove </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDisplay.html">Display</a>&#160;</td>
+          <td class="paramname"><em>dp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Renove um display de uma copia. </p>
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00139">139</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDisplay_a6a186b0542158834e6302d268ab89d1e_cgraph.png" border="0" usemap="#aclassDisplay_a6a186b0542158834e6302d268ab89d1e_cgraph" alt=""/></div>
+<map name="aclassDisplay_a6a186b0542158834e6302d268ab89d1e_cgraph" id="aclassDisplay_a6a186b0542158834e6302d268ab89d1e_cgraph">
+<area shape="rect" title="Renove um display de uma copia." alt="" coords="5,29,133,57"/>
+<area shape="rect" href="classDisplay.html#aa31f39bec0a4f7771df0a6a81c956838" title="Remove um display do buffer." alt="" coords="181,29,308,57"/>
+<area shape="poly" title=" " alt="" coords="133,41,165,41,165,46,133,46"/>
+<area shape="rect" href="classDisplay.html#a0701623daedc4af828c4d9ed11e8292c" title="Pesquisa um display a parte de sua id;." alt="" coords="356,29,457,57"/>
+<area shape="poly" title=" " alt="" coords="308,41,340,41,340,46,308,46"/>
+<area shape="poly" title=" " alt="" coords="378,30,374,20,377,11,389,5,407,3,426,5,437,12,434,16,424,10,407,8,390,10,381,15,379,20,383,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa31f39bec0a4f7771df0a6a81c956838" name="aa31f39bec0a4f7771df0a6a81c956838"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa31f39bec0a4f7771df0a6a81c956838">&#9670;&#160;</a></span>remove() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dp::remove </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>n</em></td><td>)</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00224">224</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+<p>Remove um display do buffer. </p>
 
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00141">141</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDisplay_aa31f39bec0a4f7771df0a6a81c956838_cgraph.png" border="0" usemap="#aclassDisplay_aa31f39bec0a4f7771df0a6a81c956838_cgraph" alt=""/></div>
+<map name="aclassDisplay_aa31f39bec0a4f7771df0a6a81c956838_cgraph" id="aclassDisplay_aa31f39bec0a4f7771df0a6a81c956838_cgraph">
+<area shape="rect" title="Remove um display do buffer." alt="" coords="5,29,133,57"/>
+<area shape="rect" href="classDisplay.html#a0701623daedc4af828c4d9ed11e8292c" title="Pesquisa um display a parte de sua id;." alt="" coords="181,29,282,57"/>
+<area shape="poly" title=" " alt="" coords="133,41,165,41,165,46,133,46"/>
+<area shape="poly" title=" " alt="" coords="203,30,198,20,202,11,213,5,231,3,251,5,261,12,258,16,249,10,231,8,215,10,206,15,204,20,208,28"/>
+</map>
 </div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDisplay_aa31f39bec0a4f7771df0a6a81c956838_icgraph.png" border="0" usemap="#aclassDisplay_aa31f39bec0a4f7771df0a6a81c956838_icgraph" alt=""/></div>
+<map name="aclassDisplay_aa31f39bec0a4f7771df0a6a81c956838_icgraph" id="aclassDisplay_aa31f39bec0a4f7771df0a6a81c956838_icgraph">
+<area shape="rect" title="Remove um display do buffer." alt="" coords="202,57,329,85"/>
+<area shape="rect" href="classDisplay.html#a4c29ada9b2865ab4961866b1a5f13db7" title="Soma o contéudo de displays." alt="" coords="11,5,148,33"/>
+<area shape="poly" title=" " alt="" coords="198,55,131,36,132,31,200,50"/>
+<area shape="rect" href="classDisplay.html#ad0e9816c5d7c8d7d40585b8c6046cadd" title="Adiciona um display a nossa direita." alt="" coords="5,57,154,85"/>
+<area shape="poly" title=" " alt="" coords="186,74,154,74,154,69,186,69"/>
+<area shape="rect" href="classDisplay.html#a6a186b0542158834e6302d268ab89d1e" title="Renove um display de uma copia." alt="" coords="16,109,143,137"/>
+<area shape="poly" title=" " alt="" coords="200,92,132,111,131,106,198,87"/>
+</map>
 </div>
-<a id="ac4f48a03a3d904142a7209955ace6f90" name="ac4f48a03a3d904142a7209955ace6f90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4f48a03a3d904142a7209955ace6f90">&#9670;&#160;</a></span>operator+=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Display::operator+= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classDisplay.html">Display</a> &amp;&#160;</td>
-          <td class="paramname"><em>dp</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00206">206</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a07861e321bcac8bb52057681c9c76d46" name="a07861e321bcac8bb52057681c9c76d46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07861e321bcac8bb52057681c9c76d46">&#9670;&#160;</a></span>operator-=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Display::operator-= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classDisplay.html">Display</a> &amp;&#160;</td>
-          <td class="paramname"><em>dp</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00209">209</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
-
-</div>
-</div>
-<a id="aa01b76dca1c3a94b38f9a42268490095" name="aa01b76dca1c3a94b38f9a42268490095"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa01b76dca1c3a94b38f9a42268490095">&#9670;&#160;</a></span>operator&lt;&lt;()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="display__rag_8hpp.html#a39553f78f5afc73a07943d81ac8d6455">Dp</a> * Display::operator&lt;&lt; </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classDisplay.html">Display</a> &amp;&#160;</td>
-          <td class="paramname"><em>dp</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00214">214</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
-
-</div>
-</div>
-<a id="ab91992709d9fac7c0ef26ac4e29ce69c" name="ab91992709d9fac7c0ef26ac4e29ce69c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab91992709d9fac7c0ef26ac4e29ce69c">&#9670;&#160;</a></span>operator&gt;&gt;()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="display__rag_8hpp.html#a39553f78f5afc73a07943d81ac8d6455">Dp</a> * Display::operator&gt;&gt; </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classDisplay.html">Display</a> &amp;&#160;</td>
-          <td class="paramname"><em>dp</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00219">219</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a6e962b1d2e5b5aa54ec0e7c284d23252" name="a6e962b1d2e5b5aa54ec0e7c284d23252"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e962b1d2e5b5aa54ec0e7c284d23252">&#9670;&#160;</a></span>operator[]()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="display__rag_8hpp.html#a39553f78f5afc73a07943d81ac8d6455">Dp</a> * Display::operator[] </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>i</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00241">241</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
 
 </div>
 </div>
@@ -1125,39 +1544,48 @@ Here is the caller graph for this function:</div>
 
 <p>retorna a imagem do distema atual. </p>
 
-<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00087">87</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00082">82</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classDisplay_a41c7b479921bb4aedae03a866f4e8e10_cgraph.png" border="0" usemap="#aclassDisplay_a41c7b479921bb4aedae03a866f4e8e10_cgraph" alt=""/></div>
 <map name="aclassDisplay_a41c7b479921bb4aedae03a866f4e8e10_cgraph" id="aclassDisplay_a41c7b479921bb4aedae03a866f4e8e10_cgraph">
-<area shape="rect" title="retorna a imagem do distema atual." alt="" coords="5,83,117,110"/>
-<area shape="rect" href="classDisplay.html#aff68881c09f41172cfb03e76ae99c664" title="Motor de animação da janelas." alt="" coords="165,83,274,110"/>
-<area shape="poly" title=" " alt="" coords="117,94,149,94,149,99,117,99"/>
-<area shape="rect" href="classDisplay.html#a5a543cf1e0ecf05ef82f5550c6a34b99" title="Lista o conjunto de linhas do buffer auxiliar." alt="" coords="322,31,485,58"/>
-<area shape="poly" title=" " alt="" coords="271,79,337,61,338,66,272,85"/>
-<area shape="rect" href="classStr.html#a9f6d54ccea7fdadc2d9702fe92b187e0" title=" " alt="" coords="372,83,436,110"/>
-<area shape="poly" title=" " alt="" coords="274,94,356,94,356,99,274,99"/>
-<area shape="rect" href="classDisplay.html#ac4f2d1424938f2d4a38bb488d0d34a9c" title="Insere os detalhamentos de contorno da linha." alt="" coords="332,135,475,162"/>
-<area shape="poly" title=" " alt="" coords="272,108,338,127,337,132,271,114"/>
-<area shape="rect" href="classDisplay.html#aaa70f85672210a05d8bbcffbf13876d2" title="Complementa de caracteres para desenhar a janela." alt="" coords="533,5,693,33"/>
-<area shape="poly" title=" " alt="" coords="485,32,517,28,518,33,486,37"/>
-<area shape="rect" href="classDisplay.html#a079abfbcb3f1562a9040f81c6da28b9b" title="Desenha a linha." alt="" coords="543,57,683,85"/>
-<area shape="poly" title=" " alt="" coords="486,52,528,58,527,63,485,58"/>
-<area shape="rect" href="classTheme.html#a9c96eee9fbb56e755bb4a9055df87b7a" title="(Get) padrão para background." alt="" coords="742,31,833,58"/>
-<area shape="poly" title=" " alt="" coords="683,58,726,51,727,56,684,63"/>
-<area shape="rect" href="classDisplay.html#ad0e52097ee8d0d2ae09b70e51ec26ca6" title="Preencher espaços:" alt="" coords="741,83,834,110"/>
-<area shape="poly" title=" " alt="" coords="684,79,725,85,724,90,683,84"/>
-<area shape="rect" href="classDisplay.html#a61bf97fddf1bf913f39869d34dc7dfc8" title="Cria uma string vazia." alt="" coords="882,83,1001,110"/>
-<area shape="poly" title=" " alt="" coords="835,94,866,94,866,99,835,99"/>
-<area shape="poly" title=" " alt="" coords="914,83,910,74,914,64,924,58,942,56,960,58,970,65,967,69,958,63,942,61,926,63,918,68,915,73,919,81"/>
+<area shape="rect" title="retorna a imagem do distema atual." alt="" coords="5,237,117,265"/>
+<area shape="rect" href="classDisplay.html#aff68881c09f41172cfb03e76ae99c664" title="Motor de animação da janelas." alt="" coords="165,237,274,265"/>
+<area shape="poly" title=" " alt="" coords="117,249,149,249,149,254,117,254"/>
+<area shape="rect" href="classDisplay.html#a7067b1c2ae91dfb50b501a5bf108f0d7" title="Lista o conjunto de linhas do buffer." alt="" coords="322,109,485,137"/>
+<area shape="poly" title=" " alt="" coords="240,235,369,144,372,148,243,239"/>
+<area shape="rect" href="classStr.html#a9f6d54ccea7fdadc2d9702fe92b187e0" title=" " alt="" coords="960,187,1024,214"/>
+<area shape="poly" title=" " alt="" coords="274,245,944,201,944,206,274,250"/>
+<area shape="rect" href="classDisplay.html#abc861f4b66cb4984a864cae3272764b7" title="Ordena os displays." alt="" coords="353,263,455,290"/>
+<area shape="poly" title=" " alt="" coords="275,256,338,265,337,270,274,261"/>
+<area shape="rect" href="classDisplay.html#a4186ace929fef67df659e37be359e154" title="Insere os detalhamentos de contorno da linha." alt="" coords="332,315,475,342"/>
+<area shape="poly" title=" " alt="" coords="248,263,323,299,342,307,340,312,321,304,246,268"/>
+<area shape="rect" href="classDisplay.html#a10fcb45a07452eaa4fb9945338caf8d7" title="Complementa de caracteres para desenhar a janela." alt="" coords="533,57,693,85"/>
+<area shape="poly" title=" " alt="" coords="462,106,539,87,540,92,463,111"/>
+<area shape="rect" href="classDisplay.html#aa6481f312f80e4be3a98433b1df37eba" title="Desenha a linha." alt="" coords="543,109,683,137"/>
+<area shape="poly" title=" " alt="" coords="485,121,527,121,527,126,485,126"/>
+<area shape="rect" href="classTheme.html#a9c96eee9fbb56e755bb4a9055df87b7a" title="(Get) padrão para background." alt="" coords="767,5,858,33"/>
+<area shape="poly" title=" " alt="" coords="667,106,691,94,706,82,715,70,724,57,739,44,752,36,754,41,742,48,728,60,719,73,710,86,694,99,669,111"/>
+<area shape="rect" href="structColour.html#aaa9d78c6f845863d4c2df60b31b1966a" title=" " alt="" coords="770,57,855,85"/>
+<area shape="poly" title=" " alt="" coords="668,106,754,83,756,89,670,111"/>
+<area shape="rect" href="classDisplay.html#ad0e52097ee8d0d2ae09b70e51ec26ca6" title="Preencher espaços:" alt="" coords="766,109,859,137"/>
+<area shape="poly" title=" " alt="" coords="684,121,750,121,750,126,684,126"/>
+<area shape="rect" href="structDisplay_1_1Line.html#a9f0374d9ab05fc689c54fddc24bf2716" title="Retorna a string colorida e com efeito." alt="" coords="741,161,884,189"/>
+<area shape="poly" title=" " alt="" coords="670,135,742,154,741,159,668,140"/>
+<area shape="rect" href="classDisplay.html#a61bf97fddf1bf913f39869d34dc7dfc8" title="Cria uma string vazia." alt="" coords="932,109,1051,137"/>
+<area shape="poly" title=" " alt="" coords="860,121,917,121,917,126,860,126"/>
+<area shape="poly" title=" " alt="" coords="960,110,955,100,959,91,972,85,992,83,1013,85,1025,92,1022,96,1011,90,992,88,973,90,963,95,961,100,965,108"/>
+<area shape="poly" title=" " alt="" coords="885,183,944,191,944,197,884,188"/>
+<area shape="rect" href="classDisplay.html#a227974f4eea136999a64e5b34b0a7234" title="Compara o número de linhas de dois display." alt="" coords="546,263,680,290"/>
+<area shape="poly" title=" " alt="" coords="455,274,530,274,530,279,455,279"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="ab8442fb0116cd7e9f13626a67bb95b15" name="ab8442fb0116cd7e9f13626a67bb95b15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8442fb0116cd7e9f13626a67bb95b15">&#9670;&#160;</a></span>size_terminal()</h2>
+<a id="abc861f4b66cb4984a864cae3272764b7" name="abc861f4b66cb4984a864cae3272764b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc861f4b66cb4984a864cae3272764b7">&#9670;&#160;</a></span>sort()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1166,9 +1594,8 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Display::size_terminal </td>
+          <td class="memname">int Dp::sort </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -1180,8 +1607,31 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Calcula a dimenção do terminal atual. </p>
-<dl class="section warning"><dt>Warning</dt><dd></dd></dl>
+<p>Ordena os displays. </p>
+
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00092">92</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDisplay_abc861f4b66cb4984a864cae3272764b7_cgraph.png" border="0" usemap="#aclassDisplay_abc861f4b66cb4984a864cae3272764b7_cgraph" alt=""/></div>
+<map name="aclassDisplay_abc861f4b66cb4984a864cae3272764b7_cgraph" id="aclassDisplay_abc861f4b66cb4984a864cae3272764b7_cgraph">
+<area shape="rect" title="Ordena os displays." alt="" coords="5,5,108,33"/>
+<area shape="rect" href="classDisplay.html#a227974f4eea136999a64e5b34b0a7234" title="Compara o número de linhas de dois display." alt="" coords="156,5,290,33"/>
+<area shape="poly" title=" " alt="" coords="108,17,140,17,140,22,108,22"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDisplay_abc861f4b66cb4984a864cae3272764b7_icgraph.png" border="0" usemap="#aclassDisplay_abc861f4b66cb4984a864cae3272764b7_icgraph" alt=""/></div>
+<map name="aclassDisplay_abc861f4b66cb4984a864cae3272764b7_icgraph" id="aclassDisplay_abc861f4b66cb4984a864cae3272764b7_icgraph">
+<area shape="rect" title="Ordena os displays." alt="" coords="322,5,424,33"/>
+<area shape="rect" href="classDisplay.html#aff68881c09f41172cfb03e76ae99c664" title="Motor de animação da janelas." alt="" coords="165,5,274,33"/>
+<area shape="poly" title=" " alt="" coords="306,22,274,22,274,17,306,17"/>
+<area shape="rect" href="classDisplay.html#a41c7b479921bb4aedae03a866f4e8e10" title="retorna a imagem do distema atual." alt="" coords="5,5,117,33"/>
+<area shape="poly" title=" " alt="" coords="149,22,117,22,117,17,149,17"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -1224,8 +1674,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="ac4f2d1424938f2d4a38bb488d0d34a9c" name="ac4f2d1424938f2d4a38bb488d0d34a9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4f2d1424938f2d4a38bb488d0d34a9c">&#9670;&#160;</a></span>straighten()</h2>
+<a id="a4186ace929fef67df659e37be359e154" name="a4186ace929fef67df659e37be359e154"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4186ace929fef67df659e37be359e154">&#9670;&#160;</a></span>straighten()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1236,7 +1686,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">std::string Display::straighten </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="structDisplay_1_1Line.html">Line</a> &gt;::iterator&#160;</td>
+          <td class="paramtype">std::vector&lt; std::string &gt;::iterator&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -1262,8 +1712,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classDisplay_ac4f2d1424938f2d4a38bb488d0d34a9c_icgraph.png" border="0" usemap="#aclassDisplay_ac4f2d1424938f2d4a38bb488d0d34a9c_icgraph" alt=""/></div>
-<map name="aclassDisplay_ac4f2d1424938f2d4a38bb488d0d34a9c_icgraph" id="aclassDisplay_ac4f2d1424938f2d4a38bb488d0d34a9c_icgraph">
+<div class="center"><img src="classDisplay_a4186ace929fef67df659e37be359e154_icgraph.png" border="0" usemap="#aclassDisplay_a4186ace929fef67df659e37be359e154_icgraph" alt=""/></div>
+<map name="aclassDisplay_a4186ace929fef67df659e37be359e154_icgraph" id="aclassDisplay_a4186ace929fef67df659e37be359e154_icgraph">
 <area shape="rect" title="Insere os detalhamentos de contorno da linha." alt="" coords="322,5,465,33"/>
 <area shape="rect" href="classDisplay.html#aff68881c09f41172cfb03e76ae99c664" title="Motor de animação da janelas." alt="" coords="165,5,274,33"/>
 <area shape="poly" title=" " alt="" coords="306,22,275,22,275,17,306,17"/>
@@ -1504,7 +1954,7 @@ Here is the caller graph for this function:</div>
 
 <p>Atualizar largura do display. </p>
 
-<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00096">96</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00102">102</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
 
 </div>
 </div>
@@ -1525,7 +1975,17 @@ Here is the caller graph for this function:</div>
 
 <p>Retorna o valor do distanciamento vertical. </p>
 
-<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00109">109</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00111">111</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDisplay_aea385f91d9b9845a376c630acdbb7007_cgraph.png" border="0" usemap="#aclassDisplay_aea385f91d9b9845a376c630acdbb7007_cgraph" alt=""/></div>
+<map name="aclassDisplay_aea385f91d9b9845a376c630acdbb7007_cgraph" id="aclassDisplay_aea385f91d9b9845a376c630acdbb7007_cgraph">
+<area shape="rect" title="Retorna o valor do distanciamento vertical." alt="" coords="5,5,132,33"/>
+<area shape="rect" href="structDirections.html#a59be9044cae925f334b715d990ee6681" title=" " alt="" coords="180,5,301,33"/>
+<area shape="poly" title=" " alt="" coords="132,17,164,17,164,22,132,22"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -1547,7 +2007,17 @@ Here is the caller graph for this function:</div>
 
 <p>Atualiza o valor do distanciamento vertical. </p>
 
-<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00107">107</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00110">110</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDisplay_afca611c2113aab34cf63118d8f94c4a3_cgraph.png" border="0" usemap="#aclassDisplay_afca611c2113aab34cf63118d8f94c4a3_cgraph" alt=""/></div>
+<map name="aclassDisplay_afca611c2113aab34cf63118d8f94c4a3_cgraph" id="aclassDisplay_afca611c2113aab34cf63118d8f94c4a3_cgraph">
+<area shape="rect" title="Atualiza o valor do distanciamento vertical." alt="" coords="5,5,132,33"/>
+<area shape="rect" href="structDirections.html#a59be9044cae925f334b715d990ee6681" title=" " alt="" coords="180,5,301,33"/>
+<area shape="poly" title=" " alt="" coords="132,17,164,17,164,22,132,22"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -1568,7 +2038,7 @@ Here is the caller graph for this function:</div>
 
 <p>Retorna a largura do display. </p>
 
-<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00101">101</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00105">105</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
 
 </div>
 </div>
@@ -1589,9 +2059,8 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Atualiza a largura do display. </p>
-<dl class="section warning"><dt>Warning</dt><dd>Precisamos descobrir o tamanho do terminal e redesenhar janela. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00099">99</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00104">104</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
 
 </div>
 </div>
@@ -1808,46 +2277,8 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Symbol Documentation</h2>
-<a id="adc2df8c626cb0c8b91632417e9f80023" name="adc2df8c626cb0c8b91632417e9f80023"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc2df8c626cb0c8b91632417e9f80023">&#9670;&#160;</a></span>operator&lt;&lt; <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classDisplay.html">Display</a> * operator&lt;&lt; </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classDisplay.html">Display</a> *&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classDisplay.html">Display</a> &amp;&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00229">229</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
-
-</div>
-</div>
-<a id="abab1c17ecf64ae4014145df0754578d1" name="abab1c17ecf64ae4014145df0754578d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abab1c17ecf64ae4014145df0754578d1">&#9670;&#160;</a></span>operator&lt;&lt; <span class="overload">[2/2]</span></h2>
+<a id="aa03c450135594a403c5a68d7fe30b89a" name="aa03c450135594a403c5a68d7fe30b89a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa03c450135594a403c5a68d7fe30b89a">&#9670;&#160;</a></span>operator&lt;&lt;</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1864,7 +2295,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classDisplay.html">Display</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classDisplay.html">Display</a>&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -1879,47 +2310,10 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section warning"><dt>Warning</dt><dd></dd></dl>
+
+<p>Exibe o contéudo do buffer. </p>
 
 <p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00119">119</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a34a821ed3bf83b46826cf3ebbba8c391" name="a34a821ed3bf83b46826cf3ebbba8c391"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34a821ed3bf83b46826cf3ebbba8c391">&#9670;&#160;</a></span>operator&gt;&gt;</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classDisplay.html">Display</a> * operator&gt;&gt; </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classDisplay.html">Display</a> *&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classDisplay.html">Display</a> &amp;&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="display_8cpp_source.html#l00235">235</a> of file <a class="el" href="display_8cpp_source.html">display.cpp</a>.</p>
 
 </div>
 </div>
@@ -1947,31 +2341,7 @@ Here is the caller graph for this function:</div>
 <p>Espaçamento texto. <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="display__rag_8hpp_source.html#l00055">55</a> of file <a class="el" href="display__rag_8hpp_source.html">display_rag.hpp</a>.</p>
-
-</div>
-</div>
-<a id="aa44ede61ea7a0b032f48ed3739e49a68" name="aa44ede61ea7a0b032f48ed3739e49a68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa44ede61ea7a0b032f48ed3739e49a68">&#9670;&#160;</a></span>bold</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="effect_8hpp.html#a7ccc0febbb931e2be4f87bce35658bb3">Hlg</a> Dp::bold =Efc::Bold()</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="display__rag_8hpp_source.html#l00087">87</a> of file <a class="el" href="display__rag_8hpp_source.html">display_rag.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="display__rag_8hpp_source.html#l00050">50</a> of file <a class="el" href="display__rag_8hpp_source.html">display_rag.hpp</a>.</p>
 
 </div>
 </div>
@@ -1997,7 +2367,7 @@ Here is the caller graph for this function:</div>
 
 <p>Checa se ouve alguma alteração no display. </p>
 
-<p class="definition">Definition at line <a class="el" href="display__rag_8hpp_source.html#l00106">106</a> of file <a class="el" href="display__rag_8hpp_source.html">display_rag.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="display__rag_8hpp_source.html#l00089">89</a> of file <a class="el" href="display__rag_8hpp_source.html">display_rag.hpp</a>.</p>
 
 </div>
 </div>
@@ -2023,7 +2393,7 @@ Here is the caller graph for this function:</div>
 
 <p>Deslocamento para baixo. </p>
 
-<p class="definition">Definition at line <a class="el" href="display__rag_8hpp_source.html#l00050">50</a> of file <a class="el" href="display__rag_8hpp_source.html">display_rag.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="display__rag_8hpp_source.html#l00047">47</a> of file <a class="el" href="display__rag_8hpp_source.html">display_rag.hpp</a>.</p>
 
 </div>
 </div>
@@ -2047,9 +2417,61 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Buffer para multplos display. </p>
+<p>Conjunto para multiplos display. </p>
 
-<p class="definition">Definition at line <a class="el" href="display__rag_8hpp_source.html#l00156">156</a> of file <a class="el" href="display__rag_8hpp_source.html">display_rag.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="display__rag_8hpp_source.html#l00139">139</a> of file <a class="el" href="display__rag_8hpp_source.html">display_rag.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a9e16f5849c0e63fcb7126841941db103" name="a9e16f5849c0e63fcb7126841941db103"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e16f5849c0e63fcb7126841941db103">&#9670;&#160;</a></span>ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Dp::ID =0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Contador universal de display. </p>
+
+<p class="definition">Definition at line <a class="el" href="display__rag_8hpp_source.html#l00021">21</a> of file <a class="el" href="display__rag_8hpp_source.html">display_rag.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aa70babd42a7c07cd37f8e06933e36703" name="aa70babd42a7c07cd37f8e06933e36703"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa70babd42a7c07cd37f8e06933e36703">&#9670;&#160;</a></span>id</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Display::id</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Identificador de um display. </p>
+
+<p class="definition">Definition at line <a class="el" href="display__rag_8hpp_source.html#l00022">22</a> of file <a class="el" href="display__rag_8hpp_source.html">display_rag.hpp</a>.</p>
 
 </div>
 </div>
@@ -2075,7 +2497,33 @@ Here is the caller graph for this function:</div>
 
 <p>Sequência de strings que formam o display. </p>
 
-<p class="definition">Definition at line <a class="el" href="display__rag_8hpp_source.html#l00104">104</a> of file <a class="el" href="display__rag_8hpp_source.html">display_rag.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="display__rag_8hpp_source.html#l00087">87</a> of file <a class="el" href="display__rag_8hpp_source.html">display_rag.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a44cd8eb4b928ec300d7d04dc9e449ade" name="a44cd8eb4b928ec300d7d04dc9e449ade"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44cd8eb4b928ec300d7d04dc9e449ade">&#9670;&#160;</a></span>line_img</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::string&gt; Display::line_img</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Contem a imagem da linha atual. </p>
+
+<p class="definition">Definition at line <a class="el" href="display__rag_8hpp_source.html#l00140">140</a> of file <a class="el" href="display__rag_8hpp_source.html">display_rag.hpp</a>.</p>
 
 </div>
 </div>
@@ -2101,7 +2549,7 @@ Here is the caller graph for this function:</div>
 
 <p>Buffer de tratamento de strings. </p>
 
-<p class="definition">Definition at line <a class="el" href="display__rag_8hpp_source.html#l00155">155</a> of file <a class="el" href="display__rag_8hpp_source.html">display_rag.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="display__rag_8hpp_source.html#l00138">138</a> of file <a class="el" href="display__rag_8hpp_source.html">display_rag.hpp</a>.</p>
 
 </div>
 </div>
@@ -2127,7 +2575,7 @@ Here is the caller graph for this function:</div>
 
 <p>Deslocamento para direita. </p>
 
-<p class="definition">Definition at line <a class="el" href="display__rag_8hpp_source.html#l00049">49</a> of file <a class="el" href="display__rag_8hpp_source.html">display_rag.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="display__rag_8hpp_source.html#l00046">46</a> of file <a class="el" href="display__rag_8hpp_source.html">display_rag.hpp</a>.</p>
 
 </div>
 </div>
@@ -2156,14 +2604,19 @@ Here is the caller graph for this function:</div>
 <div class="line">            <a class="code hl_struct" href="structColors_1_1Blue.html">Cls::Blue</a>(),                                            </div>
 <div class="line">            <a class="code hl_struct" href="structColors_1_1Blue.html">Cls::Blue</a>()-135                                     </div>
 <div class="line">        },</div>
-<div class="line">            { <a class="code hl_struct" href="structColors_1_1White.html">Cls::White</a>() }                                        </div>
+<div class="line">        {</div>
+<div class="line">            <a class="code hl_typedef" href="foreground_8hpp.html#a996f35833e13bdc262107b486cbc1815">Fg</a>(<a class="code hl_struct" href="structColors_1_1White.html">Cls::White</a>()),                                   </div>
+<div class="line">            <a class="code hl_typedef" href="foreground_8hpp.html#a996f35833e13bdc262107b486cbc1815">Fg</a>(<a class="code hl_struct" href="structColors_1_1White.html">Cls::White</a>(),Efc::Bold()),               </div>
+<div class="line">            <a class="code hl_typedef" href="foreground_8hpp.html#a996f35833e13bdc262107b486cbc1815">Fg</a>(<a class="code hl_struct" href="structColors_1_1White.html">Cls::White</a>(),Efc::Bold())                </div>
+<div class="line">        }                                       </div>
 <div class="line">    )</div>
 <div class="ttc" id="aclassTheme_html"><div class="ttname"><a href="classTheme.html">Theme</a></div><div class="ttdoc">Define um conjunto de cores e comportamentos de uma janela.</div><div class="ttdef"><b>Definition</b> <a href="theme_8hpp_source.html#l00016">theme.hpp:16</a></div></div>
+<div class="ttc" id="aforeground_8hpp_html_a996f35833e13bdc262107b486cbc1815"><div class="ttname"><a href="foreground_8hpp.html#a996f35833e13bdc262107b486cbc1815">Fg</a></div><div class="ttdeci">Foreground Fg</div><div class="ttdef"><b>Definition</b> <a href="foreground_8hpp_source.html#l00024">foreground.hpp:24</a></div></div>
 <div class="ttc" id="astructColors_1_1Blue_html"><div class="ttname"><a href="structColors_1_1Blue.html">Colors::Blue</a></div><div class="ttdef"><b>Definition</b> <a href="colour_8hpp_source.html#l00077">colour.hpp:77</a></div></div>
 <div class="ttc" id="astructColors_1_1Red_html"><div class="ttname"><a href="structColors_1_1Red.html">Colors::Red</a></div><div class="ttdef"><b>Definition</b> <a href="colour_8hpp_source.html#l00075">colour.hpp:75</a></div></div>
 <div class="ttc" id="astructColors_1_1White_html"><div class="ttname"><a href="structColors_1_1White.html">Colors::White</a></div><div class="ttdef"><b>Definition</b> <a href="colour_8hpp_source.html#l00083">colour.hpp:83</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="display__rag_8hpp_source.html#l00031">31</a> of file <a class="el" href="display__rag_8hpp_source.html">display_rag.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="display__rag_8hpp_source.html#l00024">24</a> of file <a class="el" href="display__rag_8hpp_source.html">display_rag.hpp</a>.</p>
 
 </div>
 </div>
@@ -2189,59 +2642,7 @@ Here is the caller graph for this function:</div>
 
 <p>Largura do display. </p>
 
-<p class="definition">Definition at line <a class="el" href="display__rag_8hpp_source.html#l00052">52</a> of file <a class="el" href="display__rag_8hpp_source.html">display_rag.hpp</a>.</p>
-
-</div>
-</div>
-<a id="ac28e56ecf7afa5d14bee4e17e46e81be" name="ac28e56ecf7afa5d14bee4e17e46e81be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac28e56ecf7afa5d14bee4e17e46e81be">&#9670;&#160;</a></span>x</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Display::x =2</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Distanciamento horizontal. </p>
-
-<p class="definition">Definition at line <a class="el" href="display__rag_8hpp_source.html#l00053">53</a> of file <a class="el" href="display__rag_8hpp_source.html">display_rag.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a26f6d9501d6d60ecb0f08e842f446e93" name="a26f6d9501d6d60ecb0f08e842f446e93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26f6d9501d6d60ecb0f08e842f446e93">&#9670;&#160;</a></span>y</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Display::y =2</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Distanciamento vertical. </p>
-
-<p class="definition">Definition at line <a class="el" href="display__rag_8hpp_source.html#l00054">54</a> of file <a class="el" href="display__rag_8hpp_source.html">display_rag.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="display__rag_8hpp_source.html#l00049">49</a> of file <a class="el" href="display__rag_8hpp_source.html">display_rag.hpp</a>.</p>
 
 </div>
 </div>

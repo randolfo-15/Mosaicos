@@ -1,0 +1,12 @@
+<map id="Display::find" name="Display::find">
+<area shape="rect" id="Node000001" title="Pesquisa um display a parte de sua id;." alt="" coords="377,57,478,85"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="455,44,445,38,428,36,411,38,402,43,400,48,404,56,399,58,395,48,398,39,410,33,428,31,447,33,458,40"/>
+<area shape="rect" id="Node000002" href="$classDisplay.html#aa31f39bec0a4f7771df0a6a81c956838" title="Remove um display do buffer." alt="" coords="202,57,329,85"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="361,74,329,74,329,69,361,69"/>
+<area shape="rect" id="Node000003" href="$classDisplay.html#a4c29ada9b2865ab4961866b1a5f13db7" title="Soma o contéudo de displays." alt="" coords="11,5,148,33"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="198,55,131,36,132,31,200,50"/>
+<area shape="rect" id="Node000004" href="$classDisplay.html#ad0e9816c5d7c8d7d40585b8c6046cadd" title="Adiciona um display a nossa direita." alt="" coords="5,57,154,85"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="186,74,154,74,154,69,186,69"/>
+<area shape="rect" id="Node000005" href="$classDisplay.html#a6a186b0542158834e6302d268ab89d1e" title="Renove um display de uma copia." alt="" coords="16,109,143,137"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="200,92,132,111,131,106,198,87"/>
+</map>

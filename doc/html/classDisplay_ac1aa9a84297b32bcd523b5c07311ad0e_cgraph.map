@@ -1,0 +1,5 @@
+<map id="Display::horizontal" name="Display::horizontal">
+<area shape="rect" id="Node000001" title="Atualiza o valor do distanciamento horizontal." alt="" coords="5,5,148,33"/>
+<area shape="rect" id="Node000002" href="$structDirections.html#a59be9044cae925f334b715d990ee6681" title=" " alt="" coords="196,5,317,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,17,180,17,180,22,148,22"/>
+</map>

@@ -14,11 +14,13 @@ var searchData=
   ['clss_11',['clss',['../structBackground.html#ae11b64316ec4b08096d301e29792f75d',1,'Background::CLSS'],['../structForeground.html#acaf10037a553e8eb5256f42eac669dfd',1,'Foreground::CLSS']]],
   ['colorless_12',['colorless',['../classGround.html#a42cdd723e1ac02c5d1e2d3a8a01f7a53',1,'Ground']]],
   ['colors_13',['Colors',['../namespaceColors.html',1,'']]],
-  ['colour_14',['colour',['../structColour.html#aa54b6a3943c429f54ecd6d9634b3f13c',1,'Colour::Colour()'],['../structColour.html',1,'Colour'],['../structColour.html#ab2c8410bcabafb84cdacc70978e6ffe7',1,'Colour::Colour()']]],
+  ['colour_14',['colour',['../structColour.html#ab2c8410bcabafb84cdacc70978e6ffe7',1,'Colour::Colour()'],['../structColour.html',1,'Colour'],['../structColour.html#aa54b6a3943c429f54ecd6d9634b3f13c',1,'Colour::Colour()']]],
   ['colour_2ecpp_15',['colour.cpp',['../colour_8cpp.html',1,'']]],
   ['colour_2ehpp_16',['colour.hpp',['../colour_8hpp.html',1,'']]],
-  ['complement_17',['complement',['../classDisplay.html#aaa70f85672210a05d8bbcffbf13876d2',1,'Display']]],
-  ['components_18',['components',['../classGround.html#a1fdde7f2564d9e271e1d5560135288f6',1,'Ground']]],
-  ['copy_5fcolour_19',['copy_colour',['../classGround.html#a2e498551ca8c12f67df861026b1921ac',1,'Ground']]],
-  ['cyan_20',['cyan',['../structColors_1_1Cyan.html#a66af896d2e61a4f969e7cfebea34b40f',1,'Colors::Cyan::Cyan()'],['../structColors_1_1Cyan.html',1,'Colors::Cyan']]]
+  ['compare_17',['compare',['../classDisplay.html#a227974f4eea136999a64e5b34b0a7234',1,'Display']]],
+  ['complement_18',['complement',['../classDisplay.html#a10fcb45a07452eaa4fb9945338caf8d7',1,'Display']]],
+  ['components_19',['components',['../classGround.html#a1fdde7f2564d9e271e1d5560135288f6',1,'Ground']]],
+  ['copy_20',['copy',['../classDisplay.html#a5a77a17e5050130123bee4c1c9d483f1',1,'Display']]],
+  ['copy_5fcolour_21',['copy_colour',['../classGround.html#a2e498551ca8c12f67df861026b1921ac',1,'Ground']]],
+  ['cyan_22',['cyan',['../structColors_1_1Cyan.html#a66af896d2e61a4f969e7cfebea34b40f',1,'Colors::Cyan::Cyan()'],['../structColors_1_1Cyan.html',1,'Colors::Cyan']]]
 ];

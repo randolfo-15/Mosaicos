@@ -1,17 +1,22 @@
 <map id="Str::str" name="Str::str">
-<area shape="rect" id="Node000001" title=" " alt="" coords="390,136,454,164"/>
-<area shape="rect" id="Node000002" href="$classDisplay.html#aff68881c09f41172cfb03e76ae99c664" title="Motor de animação da janelas." alt="" coords="199,5,308,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="404,124,378,84,360,65,341,48,307,32,310,27,343,44,364,61,382,81,409,121"/>
-<area shape="rect" id="Node000004" href="$structDisplay_1_1Line.html#af2b695d1a57a4833ca238e46ba71997a" title="Retorna a string colorida e com efeito." alt="" coords="165,57,342,85"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="389,129,341,100,310,88,312,83,343,95,391,124"/>
-<area shape="rect" id="Node000005" href="$classGround.html#ade1d1d84b40d4019b0b815d0ff9cfd88" title=" " alt="" coords="183,109,324,137"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="374,145,324,137,325,132,375,140"/>
-<area shape="rect" id="Node000006" href="$classTheme.html#a92ed9bb9f0a9211f0fd5fd6b8a66fe23" title=" " alt="" coords="184,161,323,189"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="375,160,324,167,323,162,374,154"/>
-<area shape="rect" id="Node000007" href="$structDirections.html#a718a1f89a7524feb73790beef88b6e79" title=" " alt="" coords="173,213,334,241"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="391,175,343,203,311,215,309,210,341,198,388,171"/>
-<area shape="rect" id="Node000008" href="$str_8cpp.html#a2e0fb0e433a15a57deaa0fa6afbf2bf8" title=" " alt="" coords="210,265,297,293"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="409,179,382,218,364,238,343,255,321,266,298,274,297,269,319,262,341,250,360,234,378,215,404,176"/>
-<area shape="rect" id="Node000003" href="$classDisplay.html#a41c7b479921bb4aedae03a866f4e8e10" title="retorna a imagem do distema atual." alt="" coords="5,5,117,33"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="183,22,117,22,117,17,183,17"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="931,154,995,182"/>
+<area shape="rect" id="Node000002" href="$classDisplay.html#aff68881c09f41172cfb03e76ae99c664" title="Motor de animação da janelas." alt="" coords="165,50,274,78"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="947,141,921,100,903,81,882,66,801,35,716,17,629,9,543,10,462,17,387,27,272,52,271,47,386,22,461,11,543,4,629,4,717,12,803,30,884,62,907,77,925,97,952,138"/>
+<area shape="rect" id="Node000004" href="$structDisplay_1_1Line.html#a9f0374d9ab05fc689c54fddc24bf2716" title="Retorna a string colorida e com efeito." alt="" coords="731,75,874,103"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="929,147,882,118,852,106,854,101,884,114,932,143"/>
+<area shape="rect" id="Node000007" href="$classGround.html#ade1d1d84b40d4019b0b815d0ff9cfd88" title=" " alt="" coords="732,127,873,155"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="915,163,873,156,874,150,916,158"/>
+<area shape="rect" id="Node000008" href="$classTheme.html#a92ed9bb9f0a9211f0fd5fd6b8a66fe23" title=" " alt="" coords="733,179,872,207"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="916,178,873,185,872,180,915,173"/>
+<area shape="rect" id="Node000009" href="$structDirections.html#a718a1f89a7524feb73790beef88b6e79" title=" " alt="" coords="722,231,883,259"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="931,193,884,221,854,233,852,228,882,216,929,189"/>
+<area shape="rect" id="Node000010" href="$str_8cpp.html#a2e0fb0e433a15a57deaa0fa6afbf2bf8" title=" " alt="" coords="759,283,846,311"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="949,197,922,236,885,273,848,290,845,286,881,268,918,233,945,194"/>
+<area shape="rect" id="Node000003" href="$classDisplay.html#a41c7b479921bb4aedae03a866f4e8e10" title="retorna a imagem do distema atual." alt="" coords="5,50,117,78"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="149,67,117,67,117,61,149,61"/>
+<area shape="rect" id="Node000005" href="$classDisplay.html#aa6481f312f80e4be3a98433b1df37eba" title="Desenha a linha." alt="" coords="533,75,674,103"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="715,92,674,92,674,87,715,87"/>
+<area shape="rect" id="Node000006" href="$classDisplay.html#a7067b1c2ae91dfb50b501a5bf108f0d7" title="Lista o conjunto de linhas do buffer." alt="" coords="322,75,485,103"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="518,92,486,92,486,87,518,87"/>
+<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="306,79,274,74,275,69,307,73"/>
 </map>

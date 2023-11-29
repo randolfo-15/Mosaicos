@@ -1,0 +1,8 @@
+<map id="Display::remove" name="Display::remove">
+<area shape="rect" id="Node000001" title="Renove um display de uma copia." alt="" coords="5,29,133,57"/>
+<area shape="rect" id="Node000002" href="$classDisplay.html#aa31f39bec0a4f7771df0a6a81c956838" title="Remove um display do buffer." alt="" coords="181,29,308,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,41,165,41,165,46,133,46"/>
+<area shape="rect" id="Node000003" href="$classDisplay.html#a0701623daedc4af828c4d9ed11e8292c" title="Pesquisa um display a parte de sua id;." alt="" coords="356,29,457,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="308,41,340,41,340,46,308,46"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="378,30,374,20,377,11,389,5,407,3,426,5,437,12,434,16,424,10,407,8,390,10,381,15,379,20,383,28"/>
+</map>

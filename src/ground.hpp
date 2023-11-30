@@ -17,8 +17,6 @@ class Ground:public Str{
         void operator=(Colour);
         virtual void operator=(Highlight)=0;
         std::string operator!();
-        //void operator--();
-        //void operator++();
         
     protected:
         Ground(Colour,const char* plan,const char* clss,Highlight=Hlg());

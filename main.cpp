@@ -14,45 +14,28 @@ using namespace Cls;
 using namespace Efc;
 
 int main(){
-        Tm tm(
-                {
-                        // Background:
-                        Magenta(),
-                        Yellow()},
-              
-                        // Foreground:
-                        {Fg(Black(),Bold()),
-                        Fg(Black(),Underline())
-                }
-        );
-        
-        Dp a,b(tm);
-        
-        a.horizontal(2);
-        b.horizontal(2);
-        a.vertical(2);
-        b.vertical(2);
-        
+        Dp a;
+        a.width(3);
         a.edge(1);
-        a.width(1);
-        a.title(Underline()," A ");
+        
+        a.title(" A");
+        a.write("aaa");
+        a.write("aaa");
         a.write("aaa");
         
+        Tm tm({Magenta(),Yellow()},{Fg(Black()),Fg(Black())});
+        
+        Dp b(tm);
+        b.width(3);
         b.edge(1);
-        b.width(1);
-        b.title(" B ");
-        b.write("bbb");
+        Bg g=Green();
+        b.title(" B");
+        b.write("b%Gb%Xb",{&g});
+        b.write("%Gb%Xb%Gb%X",{&g,&g});
+        b.write("b%Gb%Xb",{&g});
         
-        a.write({Green()},"a%Fa%Xa");
-        
-        b.write({Green()},"bbb");
-        
-        //cout<<a<<'\n';
-        
-         cout<<a+b+a+b<<'\n';
-         cout<<b+a+b+a<<'\n';
-         cout<<a+b+a+b<<'\n';
-         cout<<b+a+b+a<<'\n';
-        
+        cout<<a+b+a<<'\n';
+        cout<<b+a+b<<'\n';
+        cout<<a+b+a<<'\n';
         return 0;
 }

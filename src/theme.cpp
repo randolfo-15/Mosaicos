@@ -32,9 +32,9 @@ Tm::Theme(Bgs baks,Fgs fors){
 //--------------------------------------------------------------
 // Getting
 //--------------------------------------------------------------
-Fg Tm::fg(int i){ return fgs[i];  }              
+Fg Tm::fg(int i){ return (i<fgs.size())?fgs[i]:fgs[0];  }              
 		
-Bg Tm::bg(int i){ return bgs[i]; }
+Bg Tm::bg(int i){ return (i<bgs.size())?bgs[i]:bgs[0]; }
 
 string Tm::operator()(){return bgs[0].str()+fgs[0].str() ;}
 

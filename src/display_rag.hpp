@@ -9,6 +9,7 @@
 #define DISPLAY_RAG_HPP
 
 #include <ostream>
+#include "effect.hpp"
 #include "theme.hpp"
 #include "directions_rag.hpp"
 
@@ -82,11 +83,12 @@ private:
 	struct Line{																	///< Estrutura para composção de uma linha.
 		friend Display;
 		std::string str;															///< Contéudo da linha. 
-		Theme tm;																	///< Tema da linha.
 		int tt=NORMAL;														///< Aponta o grau do titulo.
-			
-		std::string replace(std::string,std::string);		///< Subistui o conteudo da linha.
-		std::string form(int =0);											///< Retorna a string colorida e com efeito.
+		std::vector<Ground*> gd{};										///< Tema da linha.
+		
+		Line(std::string,int,std::vector<Ground*>);
+		std::string replace(std::string,Tm*,int=0);					///< Subistui o conteudo da linha.
+		std::string form(Tm*,int =0);											///< Retorna a string colorida e com efeito.
 	};
 	std::string img;												///< Sequência de strings que formam o display.
 
@@ -118,13 +120,8 @@ protected:
 // Writes
 //---------------------------------------
 public:
-	void write(std::string);																		///< Mode de escrita padrão
-	void write(Foreground,std::string);													///< foreground custumizado.
-	void write(Background,std::string);													///< background custumizado.
-	void write(Background,Foreground,std::string);							///< Com foreground e background custumizado.
-	void write(Colour,std::string);															///< Com uma cor de letra especifica
-	void write(Highlight,std::string);														///< Com um efeito de letra especifico.
-	void write(Colour,Highlight,std::string);											///< Com com uma cor e efeito de letra especifica.
+	void write(std::string);
+	void write(std::string,std::initializer_list<Ground*>);
 //---------------------------------------
 // Headings
 //---------------------------------------
@@ -132,12 +129,9 @@ private:
 	bool check_bg(int);
 public:
 	void title(std::string,int=TITLE);														///< Titulo padrão
-	void title(Foreground,std::string,int=TITLE);									///< Titulo com alguma modificação a nivel foreground
-	void title(Highlight,std::string,int=TITLE);										///< Titulo recebendo algum padrão de realce
 	
 	void subtitle(std::string,int=SUBTITLES);										///< Subtitulo padrão
-	void subtitle(Foreground,std::string,int=SUBTITLES);					///< Subtitulo com alguma modificação a nivel foreground
-	void subtitle(Highlight,std::string,int=SUBTITLES);						///< Subtitulo	 recebendo algum padrão de realce
+	
 //------------------------------------------------------------------------------------------------
 // Memory
 //------------------------------------------------------------------------------------------------		

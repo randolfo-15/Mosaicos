@@ -29,6 +29,7 @@ int main(){
         b.width(3);
         b.edge(1);
         Bg g=Green();
+        Fg bl=Blink();
         b.title(" B");
         b.write("b%Gb%Xb",{&g});
         b.write("%Gb%Xb%Gb%X",{&g,&g});

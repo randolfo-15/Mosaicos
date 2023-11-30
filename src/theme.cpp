@@ -38,6 +38,7 @@ Bg Tm::bg(int i){ return (i<bgs.size())?bgs[i]:bgs[0]; }
 
 string Tm::operator()(){return bgs[0].str()+fgs[0].str() ;}
 
+string Tm::operator()(int i){ return (bg(i)).str()+(fg(i)).str();}
 //--------------------------------------------------------------
 // Setting
 //--------------------------------------------------------------

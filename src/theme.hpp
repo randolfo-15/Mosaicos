@@ -21,6 +21,7 @@ class Theme{
 		
 		friend std::ostream& operator<<(std::ostream&,Theme);
 		std::string operator()();
+		std::string operator()(int);
 		
 	public:		
 		/// Construtor padrão.

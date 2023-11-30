@@ -87,7 +87,8 @@ private:
 		std::vector<Ground*> gd{};										///< Tema da linha.
 		
 		Line(std::string,int,std::vector<Ground*>);
-		std::string replace(std::string,Tm*,int=0);					///< Subistui o conteudo da linha.
+		std::string replace(std::string*,Tm*,int=0);				///< Subistui o conteudo da linha.
+		std::string treat(std::string,Tm*);								///< Define a string de saida. 
 		std::string form(Tm*,int =0);											///< Retorna a string colorida e com efeito.
 	};
 	std::string img;												///< Sequência de strings que formam o display.

@@ -146,11 +146,12 @@ bool Dp::compare(Dp*a,Dp*b){ return (a->lines.size()>b->lines.size()); }
 
 Dp::Line::Line(string st,int n,vector<Gd*> lt):str(st),tt(n),gd(lt){}
 
-string Dp::Line::replace(string str,Tm* tm,int efc){ 
-	if(gd.size()) 
-		for(const string sb: Dp::sig) 
-			for(int i=0;(i=str.find(sb,i))>=0;i++,efc++) str.replace(i,2,(sb!="%X")?gd[efc]->str():tm->bg(tt).str()+tm->fg(tt)); 
-	return str;
+string Dp::Line::replace(string* str,Tm* tm,int ef){ 
+	for(const string sb: Dp::sig) 
+		for(int i=0;(i=str->find(sb,i))>=0;i++,ef++) str->replace(i,2,(sb!="%X")?gd[ef]->str():(*tm)(tt)); 
+	return *str;
 }
 
-string Dp::Line::form(Tm* tm, int i){  return tm->bg(tt).str()+tm->fg(tt)+replace(str,tm)+Clr::br(); }
+string Dp::Line::treat(string str,Tm* tm){ return  (gd.size())?replace(&str,tm):str; }
+
+string Dp::Line::form(Tm* tm, int i){  return (*tm)(tt)+treat(str,tm)+Clr::br(); }

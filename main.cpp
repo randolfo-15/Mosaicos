@@ -34,22 +34,23 @@ int main(){
         b.vertical(2);
         
         a.edge(1);
-        //a.width(1);
+        a.width(1);
         a.title(Underline()," A ");
         a.write("aaa");
         
         b.edge(1);
-        //b.width(1);
+        b.width(1);
         b.title(" B ");
         b.write("bbb");
-        a.write({Green()},"a%Ga%Xa");
+        a.write({Green()},"a%Fa%Xa");
         b.write({Green()},"bbb");
-        cout<<a<<'\n';
-        /*
+        
+        //cout<<a<<'\n';
+        
          cout<<a+b+a+b<<'\n';
          cout<<b+a+b+a<<'\n';
          cout<<a+b+a+b<<'\n';
          cout<<b+a+b+a<<'\n';
-        */
+        
         return 0;
 }

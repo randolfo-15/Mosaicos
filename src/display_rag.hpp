@@ -102,7 +102,7 @@ private:
 	
 	int accentuation(std::string,int=0);													///< Contanta número de caracteres especiais.
 	int complete(std::string*,int w,int b);												///< Complementa de caracteres para desenhar a janela.
-	int disregard(std::string,std::string,int=0);									///< Desconcidera um conjunto de caracteres.
+	int diff(std::string,std::string,int=0);												///< Desconcidera um conjunto de caracteres.
 	///int diff();																									///< Retorna a diferença de termos removidos
 	
 protected:

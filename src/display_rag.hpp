@@ -33,6 +33,9 @@ private:
 			Fg(Cls::White(),Efc::Bold())				///< Foreground para subtitulos
 		}										
 	);
+	
+	static  const std::string sig[3];	///< Conjunto de simbolos aceitos.
+	
 //---------------------------------------
 // Builders
 //---------------------------------------
@@ -76,12 +79,14 @@ private:
 		SUBTITLES=2												/// Background de subtitulos           
 	};
 	
-	struct Line{														///< Estrutura para composção de uma linha.
-		std::string str;												///< Contéudo da linha. 
-		Theme tm;														///< Tema da linha.
-		int tt=NORMAL;											///< Aponta o grau do titulo.
-		
-		std::string form(int =0);								///< Retorna a string colorida e com efeito.
+	struct Line{																	///< Estrutura para composção de uma linha.
+		friend Display;
+		std::string str;															///< Contéudo da linha. 
+		Theme tm;																	///< Tema da linha.
+		int tt=NORMAL;														///< Aponta o grau do titulo.
+			
+		std::string replace(std::string,std::string);		///< Subistui o conteudo da linha.
+		std::string form(int =0);											///< Retorna a string colorida e com efeito.
 	};
 	std::string img;												///< Sequência de strings que formam o display.
 
@@ -102,8 +107,8 @@ private:
 	
 	int accentuation(std::string,int=0);													///< Contanta número de caracteres especiais.
 	int complete(std::string*,int w,int b);												///< Complementa de caracteres para desenhar a janela.
-	int diff(std::string,std::string,int=0);												///< Desconcidera um conjunto de caracteres.
-	///int diff();																									///< Retorna a diferença de termos removidos
+	int diff(std::string,int=0);																	///< Desconcidera um conjunto de caracteres.
+
 	
 protected:
 	std::string fill(int,Bg);																			///< Preencher espaços:

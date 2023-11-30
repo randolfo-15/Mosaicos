@@ -42,7 +42,9 @@ int main(){
         b.width(1);
         b.title(" B ");
         b.write("bbb");
+        
         a.write({Green()},"a%Fa%Xa");
+        
         b.write({Green()},"bbb");
         
         //cout<<a<<'\n';

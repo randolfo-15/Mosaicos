@@ -15,25 +15,35 @@ using namespace Efc;
 
 int main(){
         Dp a;
-        a.width(3);
+        
+        //a.width(3);
         a.edge(1);
         
-        a.title(" A");
-        a.write("aaa");
-        a.write("aaa");
-        a.write("aaa");
         
-        Tm tm({Magenta(),Yellow()},{Fg(Black()),Fg(Black())});
+        
+        Tm tm({Magenta(),Yellow(),Yellow()},{Fg(Black()),Fg(Black())});
         
         Dp b(tm);
-        b.width(3);
+        //b.width(3);
         b.edge(1);
         Bg g=Green();
+        Bg y=Yellow();
         Fg bl=Blink();
         b.title(" B");
+        
         b.write("b%Gb%Xb",{&g});
-        b.write("%Gb%Xb%Gb%X",{&g,&g});
+        b.subtitle("sub B");
+        b.write("%Gb%X%Gb%X%X%Gb%X",{&g,&bl,&g});
         b.write("b%Gb%Xb",{&g});
+        
+        a.title(" %GA%X",{&y});
+        Fg u=Underline();
+        Fg t=Tachado();
+        
+        a.write("%Ga%X%Gaa%X",{&u,&t});
+        a.write("a%Ga%Xa",{&bl});
+        a.subtitle("sub %GA%X",{&bl});
+        a.write("                aaa");
         
         cout<<a+b+a<<'\n';
         cout<<b+a+b<<'\n';

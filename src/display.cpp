@@ -16,8 +16,7 @@ using list_gd=std::initializer_list<Ground*>;
 
 int Dp::ID=0;
 
-const string Dp::sig[3]{			///< Signos
-	"%F",										///< Foreground
+const string Dp::sig[2]{			///< Signos
 	"%G",										///< Background
 	"%X"										///< Neutro
 };
@@ -31,11 +30,14 @@ Dp::Display(Tm theme):id(ID++),tm(theme){ dps.push_back(this); }
 //------------------------------------------------------------------------------------------------
 // Headings and subheadings
 //------------------------------------------------------------------------------------------------
-void Dp::title(string str,int head){ if(check_bg(head)) split_rows({str,head,{}});}
+void Dp::title(string str,int head){  split_rows({str,head,{}}); }
 
-void Dp::subtitle(string str,int head){ if(check_bg(head)) title(str,head); }
+void Dp::title(string str,list_gd lt,int head){ split_rows({str,head,lt}); }
 
-bool Dp:: check_bg(int bg){return (bg<tm.bgs.size())?true:throw ;}
+void Dp::subtitle(string str,int head){ split_rows({str,head,{}}); }
+
+void Dp::subtitle(string str,list_gd lt,int head ){ split_rows({str,head,lt}); }
+
 //------------------------------------------------------------------------------------------------
 // Write
 //------------------------------------------------------------------------------------------------
@@ -148,10 +150,10 @@ Dp::Line::Line(string st,int n,vector<Gd*> lt):str(st),tt(n),gd(lt){}
 
 string Dp::Line::replace(string* str,Tm* tm,int ef){ 
 	for(const string sb: Dp::sig) 
-		for(int i=0;(i=str->find(sb,i))>=0;i++,ef++) str->replace(i,2,(sb!="%X")?gd[ef]->str():(*tm)(tt)); 
+		for(int i=0;(i=str->find(sb,i))>=0;i++,ef++) str->replace(i,2,(sb!="%X")?gd[ef]->str():Clr::br()+(*tm)(tt)); 
 	return *str;
 }
 
-string Dp::Line::treat(string str,Tm* tm){ return  (gd.size())?replace(&str,tm):str; }
+string Dp::Line::treat(string str,Tm* tm){ return (gd.size())?replace(&str,tm):str; }
 
 string Dp::Line::form(Tm* tm, int i){  return (*tm)(tt)+treat(str,tm)+Clr::br(); }

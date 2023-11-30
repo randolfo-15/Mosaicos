@@ -35,7 +35,7 @@ private:
 		}										
 	);
 	
-	static  const std::string sig[3];	///< Conjunto de simbolos aceitos.
+	static  const std::string sig[2];	///< Conjunto de simbolos aceitos.
 	
 //---------------------------------------
 // Builders
@@ -129,9 +129,10 @@ public:
 private:
 	bool check_bg(int);
 public:
-	void title(std::string,int=TITLE);														///< Titulo padrão
-	
-	void subtitle(std::string,int=SUBTITLES);										///< Subtitulo padrão
+	void title(std::string,int=TITLE);																				///< Titulo padrão
+	void title(std::string,std::initializer_list<Ground*>,int=TITLE);						///< Titulo custumizado
+	void subtitle(std::string,int=SUBTITLES);																///< Subtitulo padrão
+	void subtitle(std::string,std::initializer_list<Ground*>,int=SUBTITLES);		///< Subtitulo custumizado
 	
 //------------------------------------------------------------------------------------------------
 // Memory

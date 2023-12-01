@@ -16,10 +16,11 @@ const char
 //------------------------------------------------------------------------------------------------
 // Build
 //------------------------------------------------------------------------------------------------
-Gd::Ground(Clr clr,const char* plan,const char* clss,Hlg efc):
+Gd::Ground(Clr cl,const char* plan,const char* clss,Hlg efc):
     Str(7),
+    clr(cl),
     colorless(clss)
-    { init(clr,plan,efc); }
+    { init(cl,plan,efc); }
 
 void Gd::init(Clr clr,const char* plan,Hlg efc){
     buf[HEAD]=BEG;
@@ -38,8 +39,7 @@ void Gd::copy_colour(Clr new_clr){
 //------------------------------------------------------------------------------------------------
 // Assign
 //------------------------------------------------------------------------------------------------
-void Gd::operator=(Clr clr){ copy_colour(clr); }
-
+void Gd::operator=(Clr cl){ clr=cl; copy_colour(cl); }
 //------------------------------------------------------------------------------------------------
 // Deny
 //------------------------------------------------------------------------------------------------
@@ -50,3 +50,4 @@ std::string Gd::operator!(){ return buf[HEAD]+colorless+buf[TAIL];}
 //------------------------------------------------------------------------------------------------
 std::string Gd::operator()(){return str();}
 
+Colour Gd::colour(){ return clr;}

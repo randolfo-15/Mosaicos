@@ -4,41 +4,36 @@
  * \author Randolfo Augusto
  * \date 21/09/22
  ******************************************************/
-
-
 #include "display_rag.hpp"
+#include "effect.hpp"
 #include <sstream>
-
 using std::string;
 using std::vector;
 using list_gd=std::initializer_list<Ground*>;
-
 
 int Dp::ID=0;
 
 const char 
 	Dp::Line::G[3]{"%G"},									///< Background
-	Dp::Line::X[3]{"%X"};									///< Neutro
-	
+	Dp::Line::X[3]{"%X"};									///< Neutro	
 //------------------------------------------------------------------------------------------------
 // Build class
 //------------------------------------------------------------------------------------------------
 Dp::Display():id(ID++){dps.push_back(this);}
 
-Dp::Display(Tm theme):id(ID++),tm(theme){ dps.push_back(this); } 
+Dp::Display(Tm theme):id(ID++),tm(theme),dft(theme.fg().colour(),Efc::Bold()){ dps.push_back(this); } 
 
 Dp::Line::Line(string st,int n,vector<Gd*> lt):str(st),tt(n),gd(lt){ diff=count_(G," "+st)+count_(X," "+st); }
 //------------------------------------------------------------------------------------------------
 // Headings and subheadings
 //------------------------------------------------------------------------------------------------
-void Dp::title(string str,int head){  split_rows(str,head,{}); }
+void Dp::title(string str,int head){  split_rows(Line::G+str+Line::X,head,{&dft}); }
 
 void Dp::title(string str,list_gd lt,int head){ split_rows(str,head,lt); }
 
-void Dp::subtitle(string str,int head){ split_rows(str,head,{}); }
+void Dp::subtitle(string str,int head){ title(str,head); }
 
 void Dp::subtitle(string str,list_gd lt,int head ){ split_rows(str,head,lt); }
-
 //------------------------------------------------------------------------------------------------
 // Write
 //------------------------------------------------------------------------------------------------
@@ -65,8 +60,7 @@ string Dp::build(){(changer=false);
 
 void Display::draw_display(int i){ 
 	for(Dp* dp:dps){ i=0;
-		for(Line& ln : dp->lines) line_img[i++]+=draw_line(&ln,&dp->tm,dp->b,complete(&ln.str,dp->w,dp->b,ln.diff))+side(&dp->rigth);
-	}
+		for(Line& ln : dp->lines) line_img[i++]+=draw_line(&ln,&dp->tm,dp->b,complete(&ln.str,dp->w,dp->b,ln.diff))+side(&dp->rigth);}
 }
 
 string Display::draw_line(Line* line,Tm* tm,int b,int add){ return fill(b,tm->bg(line->tt))+line->form(tm)+fill(add,tm->bg(line->tt)); }

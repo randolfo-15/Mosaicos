@@ -16,7 +16,9 @@ class Ground:public Str{
     public:
         void operator=(Colour);
         virtual void operator=(Highlight)=0;
+        
         std::string operator!();
+        Colour colour();
         
     protected:
         Ground(Colour,const char* plan,const char* clss,Highlight=Hlg());
@@ -39,6 +41,7 @@ class Ground:public Str{
         };
         
     private:
+        Clr clr;
         void copy_colour(Colour);
         
         void init(Colour,const char*,Hlg);

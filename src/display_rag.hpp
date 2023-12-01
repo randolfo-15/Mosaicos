@@ -35,7 +35,7 @@ private:
 			Fg(Cls::White(),Efc::Bold())				///< Foreground para subtitulos
 		}										
 	);
-	
+	Fg dft=Efc::Bold();
 //---------------------------------------
 // Builders
 //---------------------------------------

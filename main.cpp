@@ -41,7 +41,7 @@ int main(){
         Fg t=Tachado();
         
         a.write("%Ga%X%Gaa%X",{&u,&t});
-        a.write("a%Ga%Xa",{&bl});
+        a.write("a%Ga%X\na",{&bl});
         a.subtitle("sub %GA%X",{&bl});
         a.write("                aaa");
         

@@ -9,6 +9,7 @@
 #define DISPLAY_RAG_HPP
 
 #include <ostream>
+#include <string>
 #include "effect.hpp"
 #include "theme.hpp"
 #include "directions_rag.hpp"
@@ -34,8 +35,6 @@ private:
 			Fg(Cls::White(),Efc::Bold())				///< Foreground para subtitulos
 		}										
 	);
-	
-	static  const std::string sig[2];	///< Conjunto de simbolos aceitos.
 	
 //---------------------------------------
 // Builders
@@ -80,18 +79,29 @@ private:
 		SUBTITLES=2												/// Background de subtitulos           
 	};
 	
-	struct Line{																	///< Estrutura para composção de uma linha.
+	struct Line{																			///< Estrutura para composção de uma linha.
 		friend Display;
-		std::string str;															///< Contéudo da linha. 
-		int tt=NORMAL;														///< Aponta o grau do titulo.
-		std::vector<Ground*> gd{};										///< Tema da linha.
+		std::string str;																	///< Contéudo da linha. 
+		int tt=NORMAL;																///< Aponta o grau do titulo.
+		std::vector<Ground*> gd{};											///< Tema da linha.
+		int diff;																					///< Quantidade de simbolos a se descontar
 		
-		Line(std::string,int,std::vector<Ground*>);
-		std::string replace(std::string*,Tm*,int=0);				///< Subistui o conteudo da linha.
+		static  const char
+			G[3],																				///< Subistitui por um ground.
+			X[3];																				///< Subistitui por um neutro.
+		
+		Line(std::string,int,std::vector<Ground*>);				///< Buffer de efeitos
+		
+		int count_(const char*,std::string,int=0);					///< Conta o numero de %G ou %X.
+		std::string replace_G(std::string, int=0);					///< Subistitui %G.
+		std::string replace_X(std::string, Tm*);						///< Subistitui %X.
+		
+		std::string replace(std::string,Tm*);							///< Subistui o conteudo da linha.
 		std::string treat(std::string,Tm*);								///< Define a string de saida. 
 		std::string form(Tm*,int =0);											///< Retorna a string colorida e com efeito.
 	};
-	std::string img;												///< Sequência de strings que formam o display.
+	
+	std::string img;												///< Cópia do ultimo display.
 
 	bool changer=false;										///< Checa se ouve alguma alteração no display.
 	
@@ -99,7 +109,9 @@ private:
 // Display Line Builders
 //---------------------------------------
 private:
-	void split_rows(Line,std::string="");													///< Divide o contéudo das string por \n
+	/// Divide o contéudo das string por \n
+	void split_rows(std::string,int,std::initializer_list<Ground*>,std::string="");
+	
 	void draw_display(int=0);																	///< Lista o conjunto de linhas do buffer.
 	
 	std::string straighten(std::vector<std::string>::iterator,int);	///< Insere os detalhamentos de contorno da linha.
@@ -109,9 +121,7 @@ private:
 	std::string side(Directions*);																///< Define distanciamento lateral.
 	
 	int accentuation(std::string,int=0);													///< Contanta número de caracteres especiais.
-	int complete(std::string*,int w,int b);												///< Complementa de caracteres para desenhar a janela.
-	int diff(std::string,int=0);																	///< Desconcidera um conjunto de caracteres.
-
+	int complete(std::string*,int w,int b,int diff);									///< Complementa de caracteres para desenhar a janela.
 	
 protected:
 	std::string fill(int,Bg);																			///< Preencher espaços:

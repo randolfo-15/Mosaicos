@@ -92,9 +92,9 @@ private:
 		
 		Line(std::string,int,std::vector<Ground*>);				///< Buffer de efeitos
 		
-		int count_(const char*,std::string,int=0);					///< Conta o numero de %G ou %X.
-		std::string replace_G(std::string, int=0);					///< Subistitui %G.
-		std::string replace_X(std::string, Tm*);						///< Subistitui %X.
+		int count_(const char*,int i=0,int sm =0);						///< Conta o numero de %G ou %X.
+		std::string replace_G(std::string, int=0,int ef=0);		///< Subistitui %G.
+		std::string replace_X(std::string, Tm*,int=0);			///< Subistitui %X.
 		
 		std::string replace(std::string,Tm*);							///< Subistui o conteudo da linha.
 		std::string treat(std::string,Tm*);								///< Define a string de saida. 

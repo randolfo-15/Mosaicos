@@ -5,7 +5,6 @@
  * \date 21/09/22
  ******************************************************/
 #include "display_rag.hpp"
-#include "effect.hpp"
 #include <sstream>
 using std::string;
 using std::vector;
@@ -23,7 +22,7 @@ Dp::Display():id(ID++){dps.push_back(this);}
 
 Dp::Display(Tm theme):id(ID++),tm(theme),dft(theme.fg().colour(),Efc::Bold()){ dps.push_back(this); } 
 
-Dp::Line::Line(string st,int n,vector<Gd*> lt):str(st),tt(n),gd(lt){ diff=count_(G," "+st)+count_(X," "+st); }
+Dp::Line::Line(string st,int n,vector<Gd*> lt):str(st),tt(n),gd(lt){ diff=count_(G)+count_(X); }
 //------------------------------------------------------------------------------------------------
 // Headings and subheadings
 //------------------------------------------------------------------------------------------------
@@ -148,11 +147,11 @@ bool Dp::compare(Dp*a,Dp*b){ return (a->lines.size()>b->lines.size()); }
 //------------------------------------
 // Line
 //------------------------------------
-int Dp::Line::count_(const char* sig,string str,int sm){ for(int i=0;(i=str.find(sig,i))>=0;sm+=2,i++)  if(!i)break; return sm; }
+int Dp::Line::count_(const char* dft,int i,int sm){ return ((i=str.find(dft,i))>=0)? count_(dft,i+1,sm+2) : sm;  }
 
-string Dp::Line::replace_G(string str,int ef){ for(int i=0;(i=str.find(G,i))>=0;i++,ef++) str.replace(i,2,gd[ef]->str()); return str; }
+string Dp::Line::replace_G(string str,int i,int ef){ return  ((i=str.find(G,i))>=0)? replace_G(str.replace(i,2,gd[ef]->str()),i+1,ef+1) : str;  }
 
-string Dp::Line::replace_X(string str,Tm* tm){for(int i=0;(i=str.find(X,i))>=0;i++) str.replace(i,2,Clr::br()+(*tm)(tt)); return str; }
+string Dp::Line::replace_X(string str,Tm* tm,int i){ return  ((i=str.find(X,i))>=0)? replace_X(str.replace(i,2,Clr::br()+(*tm)(tt)),tm,i+1) : str;  }
 
 string Dp::Line::replace(string str,Tm* tm){  return replace_X( replace_G(str),tm);}
 

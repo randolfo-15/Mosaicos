@@ -6,6 +6,8 @@
  ******************************************************/
 #include "display_rag.hpp"
 #include <sstream>
+#include <string>
+#include <vector>
 using std::string;
 using std::vector;
 using list_gd=std::initializer_list<Ground*>;
@@ -40,7 +42,7 @@ void Dp::write(string str){ split_rows(str,NORMAL,{}); }
 
 void Dp::write(string str,list_gd lt){ split_rows(str,NORMAL,lt); }
 
-void Dp::split_rows(string str,int head,list_gd lt,string tmp){(changer=true);
+void Dp::split_rows(string str,int head,list_gd lt,string tmp){
 	std::stringstream sstr(str);
 	while(getline(sstr,tmp,'\n')){
 		Line line(tmp,head,lt);
@@ -51,15 +53,13 @@ void Dp::split_rows(string str,int head,list_gd lt,string tmp){(changer=true);
 //------------------------------------------------------------------------------------------------
 // Draw Display
 //------------------------------------------------------------------------------------------------
-string Dp::build(){(changer=false);
-	line_img.resize(sort());
-	draw_display();
-	return  side(&down)+straighten(line_img.begin(),line_img.size());
-}
+string Dp::build(){int size=n_lines(); return  (size)?side(&down)+straighten(draw_display(size),size):"";}
 
-void Display::draw_display(int i){ 
+vector<string>::iterator Display::draw_display(int size,int i){ 
+	line_img.resize(size);
 	for(Dp* dp:dps){ i=0;
 		for(Line& ln : dp->lines) line_img[i++]+=draw_line(&ln,&dp->tm,dp->b,complete(&ln.str,dp->w,dp->b,ln.diff))+side(&dp->rigth);}
+	return line_img.begin();
 }
 
 string Display::draw_line(Line* line,Tm* tm,int b,int add){ return fill(b,tm->bg(line->tt))+line->form(tm)+fill(add,tm->bg(line->tt)); }
@@ -67,8 +67,6 @@ string Display::draw_line(Line* line,Tm* tm,int b,int add){ return fill(b,tm->bg
 string Dp::straighten( vector<string>::iterator line,int cnt){  return (cnt)?rigth.str()+*line+end(cnt)+straighten(line+1,cnt-1):""; }
 
 int Dp::accentuation(string str,int soma){  for(char c:str) soma+=(c<0)? 1:0; return soma/2; }
-
-string Dp::show(){ return (!dps.size())?"EMPTY":(changer)?(img=build()):img; }
 
 string Dp::end(int cnt){return (cnt>1)?Clr::br()+'\n':Clr::br();}
 
@@ -80,7 +78,9 @@ string Dp::fill(int count,Bg bg){ return bg+empty(count); }
 
 string Dp::empty(int count){return (count>0)?" "+empty(count-1):"";}
 
-int Dp::sort(){ std::sort(dps.begin(),dps.end(),compare);  return dps[0]->lines.size();}
+int Dp::top_line(){ std::sort(dps.begin(),dps.end(),compare);  return dps[0]->lines.size(); }
+
+int Dp::n_lines(){  return (dps.size())?top_line():0;} 
 //------------------------------------------------------------------------------------------------
 // Memory
 //------------------------------------------------------------------------------------------------
@@ -115,7 +115,7 @@ void Dp::edge(int n){ b=n; }
 //------------------------------------------------------------------------------------------------
 // Operator
 //------------------------------------------------------------------------------------------------
-std::ostream& operator<<(std::ostream& out,Display dp){ return out<<dp.show(); }
+std::ostream& operator<<(std::ostream& out,Display dp){ return out<<dp.build(); }
 //------------------------------------
 // Addition
 //------------------------------------
@@ -149,12 +149,12 @@ bool Dp::compare(Dp*a,Dp*b){ return (a->lines.size()>b->lines.size()); }
 //------------------------------------
 int Dp::Line::count_(const char* dft,int i,int sm){ return ((i=str.find(dft,i))>=0)? count_(dft,i+1,sm+2) : sm;  }
 
-string Dp::Line::replace_G(string str,int i,int ef){ return  ((i=str.find(G,i))>=0)? replace_G(str.replace(i,2,gd[ef]->str()),i+1,ef+1) : str;  }
+string* Dp::Line::replace_G(string* str,int i,int ef){ return  ((i=str->find(G,i))>=0)? replace_G(&str->replace(i,2,gd[ef]->str()),i+1,ef+1) : str;  }
 
-string Dp::Line::replace_X(string str,Tm* tm,int i){ return  ((i=str.find(X,i))>=0)? replace_X(str.replace(i,2,Clr::br()+(*tm)(tt)),tm,i+1) : str;  }
+string Dp::Line::replace_X(string* str,Tm* tm,int i){ return  ((i=str->find(X,i))>=0)? replace_X(&str->replace(i,2,Clr::br()+(*tm)(tt)),tm,i+1):*str;  }
 
-string Dp::Line::replace(string str,Tm* tm){  return replace_X( replace_G(str),tm);}
+string Dp::Line::replace(string str,Tm* tm){  return replace_X( replace_G(&str),tm);}
 
-string Dp::Line::treat(string str,Tm* tm){ return (gd.size())?replace(str,tm):str; }
+string Dp::Line::treat(Tm* tm){ return (gd.size())?replace(str,tm):str; }
 
-string Dp::Line::form(Tm* tm, int i){  return (*tm)(tt)+treat(str,tm)+Clr::br(); }
+string Dp::Line::form(Tm* tm, int i){  return (*tm)(tt)+treat(tm)+Clr::br(); }

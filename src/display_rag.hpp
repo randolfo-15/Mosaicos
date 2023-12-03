@@ -93,30 +93,24 @@ private:
 		Line(std::string,int,std::vector<Ground*>);				///< Buffer de efeitos
 		
 		int count_(const char*,int i=0,int sm =0);						///< Conta o numero de %G ou %X.
-		std::string replace_G(std::string, int=0,int ef=0);		///< Subistitui %G.
-		std::string replace_X(std::string, Tm*,int=0);			///< Subistitui %X.
+		std::string* replace_G(std::string*, int=0,int ef=0);		///< Subistitui %G.
+		std::string replace_X(std::string*, Tm*,int=0);			///< Subistitui %X.
 		
 		std::string replace(std::string,Tm*);							///< Subistui o conteudo da linha.
-		std::string treat(std::string,Tm*);								///< Define a string de saida. 
+		std::string treat(Tm*);													///< Define a string de saida. 
 		std::string form(Tm*,int =0);											///< Retorna a string colorida e com efeito.
 	};
-	
-	std::string img;												///< Cópia do ultimo display.
-
-	bool changer=false;										///< Checa se ouve alguma alteração no display.
-	
 //---------------------------------------
 // Display Line Builders
 //---------------------------------------
 private:
 	/// Divide o contéudo das string por \n
 	void split_rows(std::string,int,std::initializer_list<Ground*>,std::string="");
-	
-	void draw_display(int=0);																	///< Lista o conjunto de linhas do buffer.
+	std::vector<std::string>::iterator draw_display(int,int=0);			///< Lista o conjunto de linhas do buffer.
 	
 	std::string straighten(std::vector<std::string>::iterator,int);	///< Insere os detalhamentos de contorno da linha.
 	std::string draw_line(Line*,Tm*,int b,int=0);									///< Desenha a linha.
-	std::string build();																				///< Motor de animação da janelas.
+	
 	std::string end(int);																				///< Retorna encerramento de string.
 	std::string side(Directions*);																///< Define distanciamento lateral.
 	
@@ -126,14 +120,14 @@ private:
 protected:
 	std::string fill(int,Bg);																			///< Preencher espaços:
 	std::string empty(int);																		///< Cria uma string vazia.
-	std::string show();																				///< retorna a imagem do distema atual.
 //---------------------------------------
 // Writes
 //---------------------------------------
 public:
 	void write(std::string);
 	void write(std::string,std::initializer_list<Ground*>);
-//---------------------------------------
+	std::string build();																				///< Construi a imagem do display.
+	//---------------------------------------
 // Headings
 //---------------------------------------
 private:
@@ -170,7 +164,8 @@ private:
 	
 	static bool compare(Display*,Display*);											///< Compara o número de linhas de dois display.
 	
-	int sort();																								///< Ordena os displays
+	int top_line();																							///< Ordena os displays
+	int n_lines();																							///< Retorna o numero de linhas do maior display.
 //------------------------------------
 // Show
 //------------------------------------

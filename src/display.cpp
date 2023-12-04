@@ -11,6 +11,8 @@
 using std::string;
 using std::vector;
 using list_gd=std::initializer_list<Ground*>;
+using list_str=vector<string>::iterator;
+using list_dp=vector<Display*>::iterator;
 
 int Dp::ID=0;
 
@@ -53,18 +55,18 @@ void Dp::split_rows(string str,int head,list_gd lt,string tmp){
 //------------------------------------------------------------------------------------------------
 // Draw Display
 //------------------------------------------------------------------------------------------------
-string Dp::build(){int size=n_lines(); return  (size)?side(&down)+straighten(draw_display(size),size):"";}
-
 vector<string>::iterator Display::draw_display(int size,int i){ 
 	line_img.resize(size);
 	for(Dp* dp:dps){ i=0;
-		for(Line& ln : dp->lines) line_img[i++]+=draw_line(&ln,&dp->tm,dp->b,complete(&ln.str,dp->w,dp->b,ln.diff))+side(&dp->rigth);}
+		for(Line& ln : dp->lines) line_img[i++]+=draw_line(&ln,&dp->tm,dp->b,complete(&ln.str,dp->w,dp->b,ln.diff))+side(&dp->rigth);}	
 	return line_img.begin();
 }
 
+string Dp::build(){int size=n_lines(); return  (size)?side(&down)+straighten(draw_display(size),size):"";}
+
 string Display::draw_line(Line* line,Tm* tm,int b,int add){ return fill(b,tm->bg(line->tt))+line->form(tm)+fill(add,tm->bg(line->tt)); }
 
-string Dp::straighten( vector<string>::iterator line,int cnt){  return (cnt)?rigth.str()+*line+end(cnt)+straighten(line+1,cnt-1):""; }
+string Dp::straighten( list_str line,int cnt){  return (cnt)?rigth.str()+*line+end(cnt)+straighten(line+1,cnt-1):""; }
 
 int Dp::accentuation(string str,int soma){  for(char c:str) soma+=(c<0)? 1:0; return soma/2; }
 

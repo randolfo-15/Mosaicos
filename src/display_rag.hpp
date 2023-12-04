@@ -106,6 +106,7 @@ private:
 private:
 	/// Divide o contéudo das string por \n
 	void split_rows(std::string,int,std::initializer_list<Ground*>,std::string="");
+	
 	std::vector<std::string>::iterator draw_display(int,int=0);			///< Lista o conjunto de linhas do buffer.
 	
 	std::string straighten(std::vector<std::string>::iterator,int);	///< Insere os detalhamentos de contorno da linha.
@@ -117,6 +118,9 @@ private:
 	int accentuation(std::string,int=0);													///< Contanta número de caracteres especiais.
 	int complete(std::string*,int w,int b,int diff);									///< Complementa de caracteres para desenhar a janela.
 	
+	int top_line();																							///< Ordena os displays
+	int n_lines();																							///< Retorna o numero de linhas do maior display.
+	
 protected:
 	std::string fill(int,Bg);																			///< Preencher espaços:
 	std::string empty(int);																		///< Cria uma string vazia.
@@ -124,14 +128,12 @@ protected:
 // Writes
 //---------------------------------------
 public:
-	void write(std::string);
-	void write(std::string,std::initializer_list<Ground*>);
+	void write(std::string);																		///< Escrita padrão.
+	void write(std::string,std::initializer_list<Ground*>);				///< Escrita perssonalizada.
 	std::string build();																				///< Construi a imagem do display.
-	//---------------------------------------
+//---------------------------------------
 // Headings
 //---------------------------------------
-private:
-	bool check_bg(int);
 public:
 	void title(std::string,int=TITLE);																				///< Titulo padrão
 	void title(std::string,std::initializer_list<Ground*>,int=TITLE);						///< Titulo custumizado
@@ -163,9 +165,6 @@ private:
 	int 	find(int,int,int=0);																			///< Pesquisa um display a parte de sua id;
 	
 	static bool compare(Display*,Display*);											///< Compara o número de linhas de dois display.
-	
-	int top_line();																							///< Ordena os displays
-	int n_lines();																							///< Retorna o numero de linhas do maior display.
 //------------------------------------
 // Show
 //------------------------------------

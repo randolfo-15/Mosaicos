@@ -7,12 +7,12 @@
 #include "display_rag.hpp"
 #include <sstream>
 #include <string>
-#include <vector>
 using std::string;
 using std::vector;
+
 using list_gd=std::initializer_list<Ground*>;
 using list_str=vector<string>::iterator;
-using list_dp=vector<Display*>::iterator;
+
 
 int Dp::ID=0;
 

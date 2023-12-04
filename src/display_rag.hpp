@@ -4,13 +4,10 @@
  * \author Randolfo Augusto
  * \date 21/09/22
  ******************************************************/
-
 #ifndef  DISPLAY_RAG_HPP
 #define DISPLAY_RAG_HPP
 
 #include <ostream>
-#include <string>
-#include "effect.hpp"
 #include "theme.hpp"
 #include "directions_rag.hpp"
 
@@ -169,7 +166,7 @@ private:
 // Show
 //------------------------------------
 public: 
-	friend std::ostream& operator<<(std::ostream&,Display);	///< Exibe o contéudo do buffer
+	friend std::ostream& operator<<(std::ostream&,Display);		///< Exibe o contéudo do buffer
 //------------------------------------
 // Addition
 //------------------------------------
@@ -190,6 +187,6 @@ public:
 	
 };using Dp=Display;
 
-std::ostream& operator<<(std::ostream&,Display);					///< Exibe o contéudo do buffer
+std::ostream& operator<<(std::ostream&,Display);						///< Exibe o contéudo do buffer
 
 #endif // display_rag.hpp

@@ -45,7 +45,7 @@ int main(){
         a.subtitle("sub %GA%X",{&bl});
         a.write("                aaa");
         
-       // b.clear();
+       
         string x=(a+b+a).build();
         string w=(b+a+b).build();
         cout<<x<<'\n';

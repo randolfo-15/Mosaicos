@@ -1,5 +1,5 @@
-build/*
-build
-diagram
-paths
-Doxyfile
+./build/*
+./build
+./diagram
+./paths
+./Doxyfile

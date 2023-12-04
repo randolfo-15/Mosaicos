@@ -1,2 +1,0 @@
-/usr/bin/ar qc ../Library/libmosaicos.a CMakeFiles/mosaicos.dir/str.cpp.o CMakeFiles/mosaicos.dir/colour.cpp.o CMakeFiles/mosaicos.dir/effect.cpp.o CMakeFiles/mosaicos.dir/ground.cpp.o CMakeFiles/mosaicos.dir/foreground.cpp.o CMakeFiles/mosaicos.dir/background.cpp.o CMakeFiles/mosaicos.dir/theme.cpp.o CMakeFiles/mosaicos.dir/directions.cpp.o CMakeFiles/mosaicos.dir/clear.cpp.o CMakeFiles/mosaicos.dir/display.cpp.o
-/usr/bin/ranlib ../Library/libmosaicos.a

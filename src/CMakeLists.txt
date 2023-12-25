@@ -18,7 +18,6 @@ target_sources(mosaicos
         clear.cpp
         display.cpp
         
-        
     PUBLIC FILE_SET HEADERS 
         FILES 
             str.hpp

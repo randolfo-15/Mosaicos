@@ -17,11 +17,13 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/Library)
 option(SHARED_LIBRARY FALSE)
 
 add_subdirectory(src)
-
+if(EXISTS main.cpp)
 add_executable(main main.cpp)
 
 target_link_libraries(main PRIVATE mosaicos)
 target_include_directories(main PRIVATE mosaicos)
+
+endif()
 
 install_file_config()
 

@@ -6,7 +6,6 @@
  ******************************************************/
 #include "display_rag.hpp"
 #include <sstream>
-#include <string>
 using std::string;
 using std::vector;
 
@@ -45,7 +44,7 @@ void Dp::write(string str){ split_rows(str,NORMAL,{}); }
 void Dp::write(string str,list_gd lt){ split_rows(str,NORMAL,lt); }
 
 void Dp::split_rows(string str,int head,list_gd lt,string tmp){
-	std::stringstream sstr(str);
+	std::stringstream sstr(str+" ");
 	while(getline(sstr,tmp,'\n')){
 		Line line(tmp,head,lt);
 		update_width(tmp.size()-line.diff);

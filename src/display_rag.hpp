@@ -17,6 +17,7 @@ class Display{
 // Build
 //------------------------------------------------------------------------------------------------	
 private:
+	
 	static int ID;														///< Contador universal de display
 	 int id;																	///< Identificador de um display
 	

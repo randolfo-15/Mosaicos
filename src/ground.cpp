@@ -6,48 +6,53 @@
  *****************************************************************/
 
 #include "ground.hpp"
-using std::to_string;
+#include <sstream>
+using std::stoi;
+
 
 const char 
     Gd::BEG[6]="\033[",
-    Gd::l_l[2]=";",
     Gd::END[2]="m";
 
 //------------------------------------------------------------------------------------------------
 // Build
 //------------------------------------------------------------------------------------------------
-Gd::Ground(Clr cl,const char* plan,const char* clss,Hlg efc):
-    Str(7),
-    clr(cl),
-    colorless(clss)
-    { init(cl,plan,efc); }
+Gd::Ground():Ground(Clr(),"",Hlg()){}
 
-void Gd::init(Clr clr,const char* plan,Hlg efc){
+Gd::Ground(Clr cl,const char* plan,Hlg efc):
+    Str(7)
+{ 
     buf[HEAD]=BEG;
     buf[PLAN]=plan;
-    copy_colour(clr);
-    buf[Efcts]=efc();
+    buf[RGB]=cl();
+    buf[HLG]=efc();
     buf[TAIL]=END;
-}
-
-void Gd::copy_colour(Clr new_clr){
-    buf[R]=to_string(new_clr.red())+l_l;
-    buf[G]=to_string(new_clr.green())+l_l;
-    buf[B]=to_string(new_clr.blue());
 }
 
 //------------------------------------------------------------------------------------------------
 // Assign
 //------------------------------------------------------------------------------------------------
-void Gd::operator=(Clr cl){ clr=cl; copy_colour(cl); }
+void Gd::operator=(Clr new_clr){ buf[RGB]=new_clr(); }
+
+void Gd::operator=(Hlg efc){buf[HLG]=efc();}
+
 //------------------------------------------------------------------------------------------------
 // Deny
 //------------------------------------------------------------------------------------------------
-std::string Gd::operator!(){ return buf[HEAD]+colorless+buf[TAIL];}
+std::string Gd::operator!(){ return buf[HEAD]+"0"+buf[TAIL];}
 
 //------------------------------------------------------------------------------------------------
 // Getting
 //------------------------------------------------------------------------------------------------
 std::string Gd::operator()(){return str();}
 
-Colour Gd::colour(){ return clr;}
+Clr Gd::colour(){  return cast_colour(); }
+
+Clr Gd::cast_colour(Clr clr,std::string tmp,int cor){ 
+    std::stringstream sstr(buf[RGB]);
+    while(getline(sstr,tmp,';')) switch (cor++) {
+            case(Clr::RED):      clr.red(stoi(tmp));      break;
+            case(Clr::GREEN): clr.green(stoi(tmp)); break;
+            case(Clr::BLUE):    clr.blue(stoi(tmp));    break; 
+    } return clr;
+}

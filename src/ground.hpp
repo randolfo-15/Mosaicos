@@ -11,43 +11,47 @@
 #include "colour.hpp"
 #include "effect.hpp"
 
-/// Define a coloração de background de uma letra.
 class Ground:public Str{    
-    public:
-        void operator=(Colour);
-        virtual void operator=(Highlight)=0;
-        
-        std::string operator!();
-        Colour colour();
-        
-    protected:
-        Ground(Colour,const char* plan,const char* clss,Highlight=Hlg());
-        
-        std::string operator()();
-        
-        static const char 
-            BEG[6],
-            l_l[2],
-            END[2];
+//------------------------------------------------------------------------------------------------
+//  Build
+//------------------------------------------------------------------------------------------------ 
+public:         Ground();                                                                                        ///< Construtor padrão.
+protected:  Ground(Colour,const char* plan,Highlight=Hlg());                ///< Construtor para derivados.
 
-        enum components{
+//------------------------------------------------------------------------------------------------
+// Colour
+//------------------------------------------------------------------------------------------------ 
+public:    Colour colour();                                                                                 ///< Obterm cor do ground.
+private:  Colour cast_colour(Clr=Clr(),std::string="",int=0);                     ///< Converge string em cor.
+    
+//------------------------------------------------------------------------------------------------
+//  Fields
+//------------------------------------------------------------------------------------------------
+private:
+        static const char 
+            BEG[6],     ///< Inicializa corpo do ground.
+            END[2];     ///< Finaliza corpo do ground.
+
+protected:
+    enum components{
             HEAD,       ///< Cabeçario padrão para cores (033)
             PLAN,       ///< Define em plano estamos (background | foreground)
-            R,               ///< Tonalidade de Vermelho
-            G,               ///< Tonalidade de Verde
-            B,               ///< Tonalidade de azul
-            Efcts,         ///< Define um conjunto de efeitos 
-            TAIL            ///< Siguino de termino de formula (m)
-        };
-        
-    private:
-        Clr clr;
-        void copy_colour(Colour);
-        
-        void init(Colour,const char*,Hlg);
-        
-        std::string colorless;
-        
+            RGB,          ///< Tonalidade
+            HLG,          ///< Define um conjunto de efeitos 
+            TAIL          ///< Siguino de termino de formula (m)
+    };
+    
+
+//------------------------------------------------------------------------------------------------
+// Operator
+//------------------------------------------------------------------------------------------------ 
+public:
+    void operator=(Colour);                                                                                 ///< Atribui cor ao ground
+    void operator=(Highlight);                                                                            ///< Atribui efeito ao ground.
+    virtual std::string operator!();                                                                    ///< Desligar coloração ou efeito.
+    
+protected: std::string operator()();                                                                ///< cast de ground para string
+    
 };using  Gd=Ground;
 
 #endif // ground.hpp

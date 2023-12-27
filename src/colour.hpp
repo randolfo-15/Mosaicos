@@ -23,6 +23,7 @@ struct Colour{
 	Colour(nivel_red,nivel_blue,nivel_green);
 	
 	static std::string br();
+	enum RGB{RED,GREEN,BLUE};
 	
 	void red(nivel);
 	void green(nivel);
@@ -45,6 +46,7 @@ struct Colour{
 	void operator--();
 	
 	void operator=(Colour);
+	std::string operator()();
 	
 	protected:
 		static const nivel 
@@ -60,7 +62,7 @@ struct Colour{
 		/// Somatorio de propriedades das cores.
 		Colour sum(const nivel*,const nivel*,bool,Colour=Colour(),int=0); 
 
-		enum RGB{RED,GREEN,BLUE};
+		
 		
 		nivel rgb[3]={MAX,MAX,MAX};
 		

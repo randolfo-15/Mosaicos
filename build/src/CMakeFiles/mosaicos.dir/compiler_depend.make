@@ -1388,6 +1388,7 @@ src/CMakeFiles/mosaicos.dir/ground.cpp.o: /home/randolfo/Documentos/Mosaicos/src
   /usr/include/c++/13.2.1/bits/hash_bytes.h \
   /usr/include/c++/13.2.1/bits/invoke.h \
   /usr/include/c++/13.2.1/bits/ios_base.h \
+  /usr/include/c++/13.2.1/bits/istream.tcc \
   /usr/include/c++/13.2.1/bits/locale_classes.h \
   /usr/include/c++/13.2.1/bits/locale_classes.tcc \
   /usr/include/c++/13.2.1/bits/locale_facets.h \
@@ -1406,6 +1407,7 @@ src/CMakeFiles/mosaicos.dir/ground.cpp.o: /home/randolfo/Documentos/Mosaicos/src
   /usr/include/c++/13.2.1/bits/range_access.h \
   /usr/include/c++/13.2.1/bits/refwrap.h \
   /usr/include/c++/13.2.1/bits/requires_hosted.h \
+  /usr/include/c++/13.2.1/bits/sstream.tcc \
   /usr/include/c++/13.2.1/bits/std_abs.h \
   /usr/include/c++/13.2.1/bits/stl_algo.h \
   /usr/include/c++/13.2.1/bits/stl_algobase.h \
@@ -1448,11 +1450,13 @@ src/CMakeFiles/mosaicos.dir/ground.cpp.o: /home/randolfo/Documentos/Mosaicos/src
   /usr/include/c++/13.2.1/initializer_list \
   /usr/include/c++/13.2.1/ios \
   /usr/include/c++/13.2.1/iosfwd \
+  /usr/include/c++/13.2.1/istream \
   /usr/include/c++/13.2.1/new \
   /usr/include/c++/13.2.1/ostream \
   /usr/include/c++/13.2.1/pstl/execution_defs.h \
   /usr/include/c++/13.2.1/pstl/glue_algorithm_defs.h \
   /usr/include/c++/13.2.1/pstl/pstl_config.h \
+  /usr/include/c++/13.2.1/sstream \
   /usr/include/c++/13.2.1/stdexcept \
   /usr/include/c++/13.2.1/streambuf \
   /usr/include/c++/13.2.1/string \

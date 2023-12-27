@@ -1,9 +1,15 @@
+#include "src/colour.hpp"
 #include "src/display_rag.hpp"
 #include <iostream>
+using namespace Colors;
+using namespace Effect;
+
 using std::cout;
 int main(){
-    Dp dp;
-    dp.write("\nOla mundo\n");
-    cout<<dp<<'\n';
+    
+    Gd gd=Bg(Yellow());
+    Fg fg=gd.colour();
+    cout<<fg<<"Ola mundo"<<!gd<<'\n';
+    
     return 0;
 }

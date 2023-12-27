@@ -8,21 +8,21 @@
 #include "foreground.hpp"
 
 const char
-    Fg::PLAN[6]="38;2;",
-    Fg::CLSS[3]="39";
+    Fg::PLAN[6]="38;2;";
 
 //------------------------------------------------------------------------------------------------
 // Build
 //------------------------------------------------------------------------------------------------
-Fg::Foreground():Gd(Cls::White(),Fg::PLAN,CLSS){}
+Fg::Foreground():Gd(Cls::White(),Fg::PLAN){}
 
-Fg::Foreground(Highlight efc):Gd(Cls::White(),Fg::PLAN,CLSS){*this=efc;}
+Fg::Foreground(Highlight efc):Gd(Cls::White(),Fg::PLAN){*this=efc;}
 
-Fg::Foreground(Colour new_clr):Ground(new_clr,Fg::PLAN,CLSS){}
+Fg::Foreground(Colour new_clr):Ground(new_clr,Fg::PLAN){}
 
-Fg::Foreground(Colour new_clr,Hlg efc):Ground(new_clr,Fg::PLAN,CLSS,efc){}
+Fg::Foreground(Colour new_clr,Hlg efc):Ground(new_clr,Fg::PLAN,efc){}
 
 //------------------------------------------------------------------------------------------------
-// Assign
+// Operator
 //------------------------------------------------------------------------------------------------
-void Fg::operator=(Hlg efc){buf[Efcts]=efc();}
+std::string Fg::operator!(){ return buf[HEAD]+"39"+buf[TAIL];}
+

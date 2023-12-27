@@ -10,14 +10,13 @@
 #include "ground.hpp"
 
 struct Background:public Ground{
-    static const char
-        PLAN[6],
-        CLSS[3];
+    static const char PLAN[6];
                             
     Background();
     Background(Colour);
-
-    private: void operator=(Highlight) override;
+    
+    std::string operator!() override;                                                                    
+    private: void operator=(Highlight);
 
 };using Bg=Background;
 

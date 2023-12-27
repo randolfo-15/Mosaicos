@@ -10,17 +10,15 @@
 #include "ground.hpp"
 
 struct Foreground:public Ground{
-    static const char
-        PLAN[6],
-        CLSS[3];
-
     Foreground();
     Foreground(Colour);
     Foreground(Highlight);
     Foreground(Colour,Highlight);
-        
-    void operator=(Highlight) override;
-        
+    
+    std::string operator!() override;                                                                    
+    
+    private: static const char PLAN[6];
+    
 };using Fg= Foreground;
 
 #endif // foreground.hpp

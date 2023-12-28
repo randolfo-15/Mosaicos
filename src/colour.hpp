@@ -20,9 +20,6 @@ struct Colour{
 	
 	Colour(nivel_red,nivel_blue,nivel_green);
 	
-	static std::string br();   ///< @warning 
-	
-	
 	void red(nivel);
 	void green(nivel);
 	void blue(nivel);

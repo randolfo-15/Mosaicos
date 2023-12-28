@@ -18,7 +18,7 @@ class Highlight{
 	friend Ground;
 	friend Foreground;	
 	
-	std::vector<int> buf;
+	std::vector<int> buff;
 	
 	public:
 		Highlight();
@@ -30,11 +30,11 @@ class Highlight{
 		void operator-=(Highlight);
 		
 	protected:
-		std::string operator()();
+		virtual std::string operator()();
 		Highlight(int);
 		
 	private:
-		std::string str(std::string="");
+		virtual std::string strg(std::string="");
 }; using Hlg=Highlight;
 
 namespace Effect{

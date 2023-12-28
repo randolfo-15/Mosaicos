@@ -62,14 +62,16 @@ void Gd::operator=(Hlg efc){ buf[HLG]=efc(); }
 // Deny
 //------------------------------------------------------------------------------------------------
 std::string Gd::operator!(){ return buf[HEAD]+"0"+buf[TAIL];}
-
+std::string Gd::operator()(){ return " "; }
 //------------------------------------------------------------------------------------------------
 // Getting
 //------------------------------------------------------------------------------------------------
-std::string Gd::operator()(){return str();}
-
-Hlg Gd::highlight(){ return Hlg(); }
+Hlg Gd::highlight(){ return *this; }
 
 Clr Gd::colour(){  return *this; }
+//------------------------------------------------------------------------------------------------
+// Cast
+//------------------------------------------------------------------------------------------------
+string Gd::to_str(Clr* c){ return to_str(c->red())+";"+to_str(c->green())+";"+to_str(c->blue()); }
 
-string Gd::to_str(Clr* clr){ return string(to_string(clr->red())+";"+to_string(clr->green())+";"+to_string(clr->blue())); }
+string Gd::to_str(nivel tone){ return to_string(tone) ; }

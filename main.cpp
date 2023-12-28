@@ -6,12 +6,11 @@ using namespace Effect;
 
 using std::cout;
 int main(){
-    Clr clr;
+    Bg bg,bg1=Red(),bg2=Green();
+    bg1+=bg2;
+    cout<<bg1<<"                  "<<'\n';
+    bg1-=bg2;
+    cout<<bg<<"                  "<<'\n';
     
-    Gd gd;
-    Bg bg,bg1=Yellow(),bg2=Blue();
-    Fg fg;
-    bg1-=bg-50;
-    cout<<bg1<<"         "<<'\n';
     return 0;
 }

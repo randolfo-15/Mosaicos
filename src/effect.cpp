@@ -13,7 +13,7 @@ using std::to_string;
 //------------------------------------------------------------------------------------------------
 Hlg::Highlight(){}
 
-Hlg::Highlight(int efc){ buf.push_back(efc); }
+Hlg::Highlight(int efc){ buff.push_back(efc); }
 
 //------------------------------------------------------------------------------------------------
 // Addition
@@ -24,7 +24,7 @@ Hlg Hlg::operator+(Hlg efc){
     return tmp;
 }
 
-void Hlg::operator+=(Hlg other){ for(int efc : other.buf) buf.push_back(efc) ; }
+void Hlg::operator+=(Hlg other){ for(int efc : other.buff) buff.push_back(efc) ; }
 
 //------------------------------------------------------------------------------------------------
 // Subtration
@@ -35,17 +35,14 @@ Hlg Hlg::operator-(Hlg efc){
     return tmp;
 }
 
-void Hlg::operator-=(Hlg efc){ for(int efc:efc.buf) buf.erase(std::find(buf.begin(),buf.end(),efc)); }
+void Hlg::operator-=(Hlg efc){ for(int efc:efc.buff) buff.erase(std::find(buff.begin(),buff.end(),efc)); }
 
 //------------------------------------------------------------------------------------------------
 // Getting
 //------------------------------------------------------------------------------------------------
-string Hlg::str(string my_str){ 
-    for(int efc:buf) my_str+=";"+to_string(efc); 
-    return my_str;
-}
+string Hlg::strg(string my_str){ for(int efc:buff) my_str+=";"+to_string(efc);  return my_str; }
 
-std::string Hlg::operator()(){ return str(); }
+std::string Hlg::operator()(){ return strg(); }
 
 //------------------------------------------------------------------------------------------------
 // Derived

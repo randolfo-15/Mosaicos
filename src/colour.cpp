@@ -7,7 +7,6 @@
 
 #include "colour.hpp"
 using std::string;
-using std::to_string;
 
 const Clr::nivel 
     Clr::MAX=255,
@@ -84,13 +83,6 @@ Clr Clr::sum(const nivel* clr0,const nivel* clr1,bool operation, Clr clr,int i){
 }
 
 Clr::nivel Clr::check(short n){ return (n<0)?0:n; }
-
-
-
-//------------------------------------------------------------------------------------------------
-// Break
-//------------------------------------------------------------------------------------------------
-string Clr::br(){ return "\033[0m"; }
 
 //------------------------------------------------------------------------------------------------
 // Derivedcopy_colour(cl);

@@ -11,7 +11,7 @@
 #include "colour.hpp"
 #include "effect.hpp"
 
-class Ground:public Str,public Colour{    
+class Ground:public Str,public Colour,public Highlight{    
 //------------------------------------------------------------------------------------------------
 //  Build
 //------------------------------------------------------------------------------------------------ 
@@ -24,9 +24,12 @@ protected:  Ground(Colour,const char* plan,Highlight=Hlg());                ///<
 public:   
     Clr  colour();                                                                                                   ///< Obterm cor do ground.
     Hlg highlight();                                                                                              ///< Obtem highlight do ground
-
-private:  std::string to_str(Clr*);                                                                   ///< Cast colour para string.
-    
+//-------------------------------------
+// Cast
+//-------------------------------------
+private:  
+    std::string to_str(Clr*);                                                                               ///< Cast colour para string.
+    std::string to_str(nivel);                                                                              ///< Cast de colour para string
 //------------------------------------------------------------------------------------------------
 //  Fields
 //------------------------------------------------------------------------------------------------
@@ -80,9 +83,7 @@ public:
 // Deny    
 //-------------------------------------    
     virtual std::string operator!();                                                                    ///< Desligar coloração ou efeito.
-//! \warning
-    std::string operator()();
-    
+    std::string operator()() override; 
 };using  Gd=Ground;
 
 #endif // ground.hpp

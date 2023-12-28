@@ -18,7 +18,7 @@ struct Foreground:public Ground{
     std::string operator!() override;                                                                    
     
     private: static const char PLAN[6];
-    
+
 };using Fg= Foreground;
 
 #endif // foreground.hpp

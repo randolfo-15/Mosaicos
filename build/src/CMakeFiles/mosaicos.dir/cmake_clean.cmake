@@ -9,8 +9,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/mosaicos.dir/colour.cpp.o.d"
   "CMakeFiles/mosaicos.dir/directions.cpp.o"
   "CMakeFiles/mosaicos.dir/directions.cpp.o.d"
-  "CMakeFiles/mosaicos.dir/display.cpp.o"
-  "CMakeFiles/mosaicos.dir/display.cpp.o.d"
   "CMakeFiles/mosaicos.dir/effect.cpp.o"
   "CMakeFiles/mosaicos.dir/effect.cpp.o.d"
   "CMakeFiles/mosaicos.dir/foreground.cpp.o"

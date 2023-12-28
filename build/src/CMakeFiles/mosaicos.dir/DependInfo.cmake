@@ -12,7 +12,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/randolfo/Documentos/Mosaicos/src/clear.cpp" "src/CMakeFiles/mosaicos.dir/clear.cpp.o" "gcc" "src/CMakeFiles/mosaicos.dir/clear.cpp.o.d"
   "/home/randolfo/Documentos/Mosaicos/src/colour.cpp" "src/CMakeFiles/mosaicos.dir/colour.cpp.o" "gcc" "src/CMakeFiles/mosaicos.dir/colour.cpp.o.d"
   "/home/randolfo/Documentos/Mosaicos/src/directions.cpp" "src/CMakeFiles/mosaicos.dir/directions.cpp.o" "gcc" "src/CMakeFiles/mosaicos.dir/directions.cpp.o.d"
-  "/home/randolfo/Documentos/Mosaicos/src/display.cpp" "src/CMakeFiles/mosaicos.dir/display.cpp.o" "gcc" "src/CMakeFiles/mosaicos.dir/display.cpp.o.d"
   "/home/randolfo/Documentos/Mosaicos/src/effect.cpp" "src/CMakeFiles/mosaicos.dir/effect.cpp.o" "gcc" "src/CMakeFiles/mosaicos.dir/effect.cpp.o.d"
   "/home/randolfo/Documentos/Mosaicos/src/foreground.cpp" "src/CMakeFiles/mosaicos.dir/foreground.cpp.o" "gcc" "src/CMakeFiles/mosaicos.dir/foreground.cpp.o.d"
   "/home/randolfo/Documentos/Mosaicos/src/ground.cpp" "src/CMakeFiles/mosaicos.dir/ground.cpp.o" "gcc" "src/CMakeFiles/mosaicos.dir/ground.cpp.o.d"

@@ -6,7 +6,6 @@
  ******************************************************/
 
 #include "colour.hpp"
-#include <string>
 using std::string;
 using std::to_string;
 
@@ -54,6 +53,8 @@ void Clr::operator+=(nivel n){ nivel pixels[BASE]={n,n,n}; *this=sum(rgb,pixels,
 
 void Clr::operator++(){*this=sum(rgb,pixel,true);}
 
+void Clr::operator++(int){ *this=sum(rgb,pixel,true); }
+
 void Clr::operator+=(Clr clr){*this=sum(this->rgb,clr.rgb,true);}
 
 //------------------------------------------------------------------------------------------------
@@ -66,6 +67,8 @@ Colour Clr::operator-(nivel n){ nivel pixels[BASE]={n,n,n}; return sum(rgb,pixel
 void Clr::operator-=(nivel n){ nivel pixels[BASE]={n,n,n}; *this= sum(rgb,pixels,false);}
 
 void Clr::operator--(){*this=sum(rgb,pixel,false);}
+
+void Clr::operator--(int){ *this=sum(rgb,pixel,false); }
 
 void Clr::operator-=(Clr clr){ *this=sum(this->rgb,clr.rgb,false); }
 
@@ -82,12 +85,12 @@ Clr Clr::sum(const nivel* clr0,const nivel* clr1,bool operation, Clr clr,int i){
 
 Clr::nivel Clr::check(short n){ return (n<0)?0:n; }
 
-string Clr::operator()(){ return string(to_string(rgb[RED])+";"+to_string(rgb[GREEN])+";"+to_string(rgb[BLUE])); }
+
 
 //------------------------------------------------------------------------------------------------
 // Break
 //------------------------------------------------------------------------------------------------
-std::string Clr::br(){ return "\033[0m"; }
+string Clr::br(){ return "\033[0m"; }
 
 //------------------------------------------------------------------------------------------------
 // Derivedcopy_colour(cl);

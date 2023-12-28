@@ -11,7 +11,7 @@
 #include "colour.hpp"
 #include "effect.hpp"
 
-class Ground:public Str{    
+class Ground:public Str,public Colour{    
 //------------------------------------------------------------------------------------------------
 //  Build
 //------------------------------------------------------------------------------------------------ 
@@ -21,8 +21,11 @@ protected:  Ground(Colour,const char* plan,Highlight=Hlg());                ///<
 //------------------------------------------------------------------------------------------------
 // Colour
 //------------------------------------------------------------------------------------------------ 
-public:    Colour colour();                                                                                 ///< Obterm cor do ground.
-private:  Colour cast_colour(Clr=Clr(),std::string="",int=0);                     ///< Converge string em cor.
+public:   
+    Clr  colour();                                                                                                   ///< Obterm cor do ground.
+    Hlg highlight();                                                                                              ///< Obtem highlight do ground
+
+private:  std::string to_str(Clr*);                                                                   ///< Cast colour para string.
     
 //------------------------------------------------------------------------------------------------
 //  Fields
@@ -40,17 +43,45 @@ protected:
             HLG,          ///< Define um conjunto de efeitos 
             TAIL          ///< Siguino de termino de formula (m)
     };
-    
 
 //------------------------------------------------------------------------------------------------
 // Operator
 //------------------------------------------------------------------------------------------------ 
+
+//-------------------------------------
+// Addition
+//-------------------------------------
 public:
-    void operator=(Colour);                                                                                 ///< Atribui cor ao ground
-    void operator=(Highlight);                                                                            ///< Atribui efeito ao ground.
-    virtual std::string operator!();                                                                    ///< Desligar coloração ou efeito.
+    Colour operator+(Colour) override;
+	Colour operator+(nivel) override;
+	void operator+=(Colour) override;
+	void operator+=(nivel) override;
+	void operator++(int) override;
+    void operator++() override;
     
-protected: std::string operator()();                                                                ///< cast de ground para string
+//-------------------------------------
+// Subtration
+//-------------------------------------
+public:	
+    Colour operator-(Colour) override;
+	Colour operator-(nivel) override;
+	void operator-=(Colour) override;
+	void operator-=(nivel) override;
+    void operator--(int) override;
+	void operator--() override;
+
+//-------------------------------------
+// Assign
+//-------------------------------------
+public:
+    void operator=(Colour) override;                                                                ///< Atribui cor ao ground
+    void operator=(Highlight);                                                                            ///< Atribui efeito ao ground.
+//-------------------------------------
+// Deny    
+//-------------------------------------    
+    virtual std::string operator!();                                                                    ///< Desligar coloração ou efeito.
+//! \warning
+    std::string operator()();
     
 };using  Gd=Ground;
 

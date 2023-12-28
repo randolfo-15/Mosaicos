@@ -7,8 +7,8 @@
 
 #include "ground.hpp"
 #include <sstream>
-using std::stoi;
-
+using std::string;
+using std::to_string;
 
 const char 
     Gd::BEG[6]="\033[",
@@ -19,22 +19,44 @@ const char
 //------------------------------------------------------------------------------------------------
 Gd::Ground():Ground(Clr(),"",Hlg()){}
 
-Gd::Ground(Clr cl,const char* plan,Hlg efc):
-    Str(7)
+Gd::Ground(Clr clr,const char* plan,Hlg efc):
+    Str(7),
+    Colour(clr.red(),clr.green(),clr.blue())
 { 
     buf[HEAD]=BEG;
     buf[PLAN]=plan;
-    buf[RGB]=cl();
+    buf[RGB]=to_str(&clr);
     buf[HLG]=efc();
     buf[TAIL]=END;
 }
 
 //------------------------------------------------------------------------------------------------
-// Assign
+// Operator
 //------------------------------------------------------------------------------------------------
-void Gd::operator=(Clr new_clr){ buf[RGB]=new_clr(); }
+//-------------------------------------
+// Assign
+//-------------------------------------
+void Gd::operator=(Clr clr){   buf[RGB]=to_str(&clr); }
+void Gd::operator=(Hlg efc){ buf[HLG]=efc(); }
+//-------------------------------------
+// Addition
+//-------------------------------------
+    Colour Gd::operator+(Colour clr){ return this->Clr::operator+(clr); }
+    Colour Gd::operator+(nivel n){ return  this->Clr::operator+(n); }
+    void Gd::operator+=(Colour clr){ this->Clr::operator+=(clr); }
+	void Gd::operator+=(nivel n){this->Clr::operator+=(n); }
+	void Gd::operator++(int){ this->Clr::operator++(1); }
+	void Gd::operator++(){ this->Clr::operator++();  }
 
-void Gd::operator=(Hlg efc){buf[HLG]=efc();}
+//-------------------------------------
+// Subtration
+//-------------------------------------
+    Colour Gd::operator-(Colour clr){ return this->Clr::operator-(clr); }
+    Colour Gd::operator-(nivel n){ return  this->Clr::operator-(n); }
+	void Gd::operator-=(Colour clr){ this->Clr::operator-=(clr); }
+	void Gd::operator-=(nivel n){ this->Clr::operator-=(n); }
+	void Gd::operator--(int){ this->Clr::operator--(1); }
+	void Gd::operator--(){ this->Clr::operator--();  }
 
 //------------------------------------------------------------------------------------------------
 // Deny
@@ -46,13 +68,8 @@ std::string Gd::operator!(){ return buf[HEAD]+"0"+buf[TAIL];}
 //------------------------------------------------------------------------------------------------
 std::string Gd::operator()(){return str();}
 
-Clr Gd::colour(){  return cast_colour(); }
+Hlg Gd::highlight(){ return Hlg(); }
 
-Clr Gd::cast_colour(Clr clr,std::string tmp,int cor){ 
-    std::stringstream sstr(buf[RGB]);
-    while(getline(sstr,tmp,';')) switch (cor++) {
-            case(Clr::RED):      clr.red(stoi(tmp));      break;
-            case(Clr::GREEN): clr.green(stoi(tmp)); break;
-            case(Clr::BLUE):    clr.blue(stoi(tmp));    break; 
-    } return clr;
-}
+Clr Gd::colour(){  return *this; }
+
+string Gd::to_str(Clr* clr){ return string(to_string(clr->red())+";"+to_string(clr->green())+";"+to_string(clr->blue())); }

@@ -16,7 +16,7 @@ target_sources(mosaicos
         theme.cpp
         directions.cpp
         clear.cpp
-        display.cpp
+        # display.cpp
         
     PUBLIC FILE_SET HEADERS 
         FILES 
@@ -29,7 +29,7 @@ target_sources(mosaicos
             theme.hpp
             directions_rag.hpp
             clear_rag.hpp
-            display_rag.hpp
+            # display_rag.hpp
             
 )
  

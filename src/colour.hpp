@@ -4,26 +4,24 @@
  * \author Randolfo Augusto
  * \date 20/09/22
  *****************************************************************/
-
 #ifndef COLOUR_HPP
 #define COLOUR_HPP
 
 #include <string>
 
 struct Colour{
+	
 	using nivel= unsigned char;
 	using nivel_red=unsigned char;
 	using nivel_green=unsigned char;
 	using nivel_blue=unsigned char;
 		
-
-		
 	Colour();
 	
 	Colour(nivel_red,nivel_blue,nivel_green);
 	
-	static std::string br();
-	enum RGB{RED,GREEN,BLUE};
+	static std::string br();   ///< @warning 
+	
 	
 	void red(nivel);
 	void green(nivel);
@@ -33,22 +31,26 @@ struct Colour{
 	nivel green();
 	nivel blue();
 	
-	Colour operator+(Colour);
-	Colour operator+(nivel);
-	void operator+=(Colour);
-	void operator+=(nivel);
-	void operator++();
+	virtual Colour operator+(Colour);
+	virtual Colour operator+(nivel);
+	virtual void operator+=(Colour);
+	virtual void operator+=(nivel);
+	virtual void operator++();
+	virtual void operator++(int); 
 	
-	Colour operator-(Colour);
-	Colour operator-(nivel);
-	void operator-=(Colour);
-	void operator-=(nivel);
-	void operator--();
+	virtual Colour operator-(Colour);
+	virtual Colour operator-(nivel);
+	virtual void operator-=(Colour);
+	virtual void operator-=(nivel);
+	virtual void operator--();
+	virtual void operator--(int);
 	
-	void operator=(Colour);
-	std::string operator()();
+	virtual void operator=(Colour);
+	
 	
 	protected:
+		enum  RGB{RED,GREEN,BLUE};
+		
 		static const nivel 
 		MAX,
 		MIN,
@@ -62,12 +64,9 @@ struct Colour{
 		/// Somatorio de propriedades das cores.
 		Colour sum(const nivel*,const nivel*,bool,Colour=Colour(),int=0); 
 
-		
-		
-		nivel rgb[3]={MAX,MAX,MAX};
-		
 		static const nivel pixel[3];
 		
+		protected: nivel rgb[3]={MAX,MAX,MAX};
 };using Clr = Colour;
 
 

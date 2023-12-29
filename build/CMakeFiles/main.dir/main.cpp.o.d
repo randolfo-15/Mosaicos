@@ -159,5 +159,6 @@ CMakeFiles/main.dir/main.cpp.o: \
  /usr/include/c++/13.2.1/pstl/execution_defs.h \
  /home/randolfo/Documentos/Mosaicos/src/background.hpp \
  /home/randolfo/Documentos/Mosaicos/src/directions_rag.hpp \
+ /home/randolfo/Documentos/Mosaicos/src/effect.hpp \
  /usr/include/c++/13.2.1/iostream /usr/include/c++/13.2.1/istream \
  /usr/include/c++/13.2.1/bits/istream.tcc

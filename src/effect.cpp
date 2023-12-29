@@ -38,11 +38,13 @@ Hlg Hlg::operator-(Hlg efc){
 void Hlg::operator-=(Hlg efc){ for(int efc:efc.buff) buff.erase(std::find(buff.begin(),buff.end(),efc)); }
 
 //------------------------------------------------------------------------------------------------
-// Getting
+// Cast
 //------------------------------------------------------------------------------------------------
-string Hlg::strg(string my_str){ for(int efc:buff) my_str+=";"+to_string(efc);  return my_str; }
-
-std::string Hlg::operator()(){ return strg(); }
+string Hlg::to_str(){ 
+    string my_str;
+    for(int efc:buff) my_str+=";"+to_string(efc); 
+    return my_str;
+}
 
 //------------------------------------------------------------------------------------------------
 // Derived
@@ -66,5 +68,3 @@ Reverse::Reverse():Hlg(7){}
 Hidden::Hidden():Hlg(8){}
 
 Tachado::Tachado():Hlg(9){}
-
-

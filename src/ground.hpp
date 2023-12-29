@@ -40,11 +40,11 @@ private:
 
 protected:
     enum components{
-            HEAD,       ///< Cabeçario padrão para cores (033)
-            PLAN,       ///< Define em plano estamos (background | foreground)
+            HEAD,        ///< Cabeçario padrão para cores (033)
+            PLAN,        ///< Define em plano estamos (background | foreground)
             RGB,          ///< Tonalidade
             HLG,          ///< Define um conjunto de efeitos 
-            TAIL          ///< Siguino de termino de formula (m)
+            TAIL           ///< Siguino de termino de formula (m)
     };
 
 //------------------------------------------------------------------------------------------------
@@ -55,6 +55,9 @@ protected:
 // Addition
 //-------------------------------------
 public:
+    Highlight operator+(Highlight) override;
+    void operator+=(Highlight) override;
+    
     Colour operator+(Colour) override;
 	Colour operator+(nivel) override;
 	void operator+=(Colour) override;
@@ -66,6 +69,9 @@ public:
 // Subtration
 //-------------------------------------
 public:	
+    Highlight operator-(Highlight) override;
+    void operator-=(Highlight) override;
+    
     Colour operator-(Colour) override;
 	Colour operator-(nivel) override;
 	void operator-=(Colour) override;
@@ -83,7 +89,7 @@ public:
 // Deny    
 //-------------------------------------    
     virtual std::string operator!();                                                                    ///< Desligar coloração ou efeito.
-    std::string operator()() override; 
+    
 };using  Gd=Ground;
 
 #endif // ground.hpp

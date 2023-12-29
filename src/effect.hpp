@@ -11,32 +11,41 @@
 #include <vector>
 #include <algorithm>
 
-class Ground;
-class Foreground;
-
 class Highlight{
-	friend Ground;
-	friend Foreground;	
-	
-	std::vector<int> buff;
-	
-	public:
-		Highlight();
-	
-		Highlight operator+(Highlight);
-		void operator+=(Highlight);
-		
-		Highlight operator-(Highlight);
-		void operator-=(Highlight);
-		
-	protected:
-		virtual std::string operator()();
-		Highlight(int);
-		
-	private:
-		virtual std::string strg(std::string="");
+//------------------------------------------------------------------------------------------------
+//  Build
+//------------------------------------------------------------------------------------------------
+public:			Highlight();
+protected: 	Highlight(int);
+//------------------------------------------------------------------------------------------------
+// Operator
+//------------------------------------------------------------------------------------------------	
+//-------------------------------------
+// Addition
+//-------------------------------------
+public:
+		virtual Highlight operator+(Highlight);
+		virtual void operator+=(Highlight);
+//-------------------------------------
+// Subtration
+//-------------------------------------
+public:
+		virtual Highlight operator-(Highlight);
+		virtual void operator-=(Highlight);
+//-------------------------------------
+// Cast
+//-------------------------------------
+public: virtual std::string to_str();
+//------------------------------------------------------------------------------------------------
+// Field
+//------------------------------------------------------------------------------------------------	
+private:std::vector<int> buff;
+
 }; using Hlg=Highlight;
 
+//------------------------------------------------------------------------------------------------
+// Derivation
+//------------------------------------------------------------------------------------------------	
 namespace Effect{
 		struct Normal:public Highlight{Normal();};
 		struct Italic: public Highlight{ Italic(); };

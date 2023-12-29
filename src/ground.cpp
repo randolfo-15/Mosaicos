@@ -26,7 +26,7 @@ Gd::Ground(Clr clr,const char* plan,Hlg efc):
     buf[HEAD]=BEG;
     buf[PLAN]=plan;
     buf[RGB]=to_str(&clr);
-    buf[HLG]=efc();
+    buf[HLG]=efc.to_str();
     buf[TAIL]=END;
 }
 
@@ -37,10 +37,13 @@ Gd::Ground(Clr clr,const char* plan,Hlg efc):
 // Assign
 //-------------------------------------
 void Gd::operator=(Clr clr){   buf[RGB]=to_str(&clr); }
-void Gd::operator=(Hlg efc){ buf[HLG]=efc(); }
+void Gd::operator=(Hlg efc){ buf[HLG]=efc.to_str(); }
 //-------------------------------------
 // Addition
 //-------------------------------------
+    void Gd::operator+=(Highlight hlg){ this->Hlg::operator+=(hlg); buf[HLG]=this->Hlg::to_str();}
+    Highlight Gd::operator+(Highlight hlg){return this->Hlg::operator+(hlg);}
+    
     Colour Gd::operator+(Colour clr){ return this->Clr::operator+(clr); }
     Colour Gd::operator+(nivel n){ return  this->Clr::operator+(n); }
     void Gd::operator+=(Colour clr){ this->Clr::operator+=(clr); }
@@ -51,6 +54,9 @@ void Gd::operator=(Hlg efc){ buf[HLG]=efc(); }
 //-------------------------------------
 // Subtration
 //-------------------------------------
+    void Gd::operator-=(Highlight hlg){ this->Hlg::operator-=(hlg); buf[HLG]=this->Hlg::to_str();}
+    Highlight Gd::operator-(Highlight hlg){return this->Hlg::operator-(hlg);}
+    
     Colour Gd::operator-(Colour clr){ return this->Clr::operator-(clr); }
     Colour Gd::operator-(nivel n){ return  this->Clr::operator-(n); }
 	void Gd::operator-=(Colour clr){ this->Clr::operator-=(clr); }
@@ -62,7 +68,7 @@ void Gd::operator=(Hlg efc){ buf[HLG]=efc(); }
 // Deny
 //------------------------------------------------------------------------------------------------
 std::string Gd::operator!(){ return buf[HEAD]+"0"+buf[TAIL];}
-std::string Gd::operator()(){ return " "; }
+
 //------------------------------------------------------------------------------------------------
 // Getting
 //------------------------------------------------------------------------------------------------

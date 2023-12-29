@@ -17,19 +17,18 @@ class Ground:public Str,public Colour, public Highlight{
 //------------------------------------------------------------------------------------------------ 
 public:        Ground();                                                                                        ///< Construtor padrão.
 protected:  Ground(Colour,const char* plan,Highlight=Hlg());                ///< Construtor para derivados.
-
-//------------------------------------------------------------------------------------------------
-// Colour
-//------------------------------------------------------------------------------------------------ 
+//-------------------------------------
+// Setting
+//-------------------------------------
+public:
+    void operator=(Colour) override;                                                           ///< Atribui cor ao ground
+    void operator=(Highlight) override;                                                       ///< Atribui efeito ao ground.
+//-------------------------------------
+// Getting
+//-------------------------------------
 public:   
-    Clr  colour();                                                                                                   ///< Obterm cor do ground.
-    Hlg highlight();                                                                                              ///< Obtem highlight do ground
-//-------------------------------------
-// Cast
-//-------------------------------------
-private:  
-    std::string to_str(Clr*);                                                                               ///< Cast colour para string.
-    std::string to_str(nivel);                                                                              ///< Cast de colour para string
+    Clr  clr();                                                                                               ///< Obterm cor do ground.
+    Hlg hlg();                                                                                              ///< Obtem highlight do ground
 //------------------------------------------------------------------------------------------------
 //  Fields
 //------------------------------------------------------------------------------------------------
@@ -80,15 +79,9 @@ public:
 	void operator--() override;
 
 //-------------------------------------
-// Assign
-//-------------------------------------
-public:
-    void operator=(Colour) override;                                              ///< Atribui cor ao ground
-    void operator=(Highlight) override;                                         ///< Atribui efeito ao ground.
-//-------------------------------------
 // Deny    
 //-------------------------------------    
-    virtual std::string operator!();                                                                    ///< Desligar coloração ou efeito.
+    virtual std::string operator!();                                                  ///< Desligar coloração ou efeito.
     
 };using  Gd=Ground;
 

@@ -20,6 +20,7 @@ target_sources(mosaicos
         
     PUBLIC FILE_SET HEADERS 
         FILES 
+            gd_rag.hpp
             str.hpp
             colour.hpp
             effect.hpp

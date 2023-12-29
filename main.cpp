@@ -7,8 +7,8 @@ using namespace Effect;
 
 using std::cout;
 int main(){
-    Fg fg=Yellow();
-    fg+=Blink()+Underline()-Blink();
+    Fg fg=Yellow()+Red();
+    fg+=Blink()+Underline();
     
     cout<<fg<<"   sssssss ssssss"<<'\n';
     return 0;

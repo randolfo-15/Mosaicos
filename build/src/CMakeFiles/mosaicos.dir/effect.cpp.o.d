@@ -137,6 +137,7 @@ src/CMakeFiles/mosaicos.dir/effect.cpp.o: \
  /usr/include/c++/13.2.1/bits/ostream.tcc /usr/include/c++/13.2.1/istream \
  /usr/include/c++/13.2.1/bits/istream.tcc \
  /home/randolfo/Documentos/Mosaicos/src/effect.hpp \
+ /home/randolfo/Documentos/Mosaicos/src/gd_rag.hpp \
  /usr/include/c++/13.2.1/vector \
  /usr/include/c++/13.2.1/bits/stl_uninitialized.h \
  /usr/include/c++/13.2.1/bits/stl_vector.h \

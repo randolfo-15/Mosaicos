@@ -7,6 +7,7 @@
 
 #include "colour.hpp"
 using std::string;
+using std::to_string;
 
 const Clr::nivel 
     Clr::MAX=255,
@@ -83,6 +84,10 @@ Clr Clr::sum(const nivel* clr0,const nivel* clr1,bool operation, Clr clr,int i){
 }
 
 Clr::nivel Clr::check(short n){ return (n<0)?0:n; }
+//------------------------------------------------------------------------------------------------
+// Cast
+//------------------------------------------------------------------------------------------------
+string Clr::to_str(int i){ return (i<2)? to_string(rgb[i])+";"+to_str(i+1):to_string(rgb[i]); }
 
 //------------------------------------------------------------------------------------------------
 // Derivedcopy_colour(cl);

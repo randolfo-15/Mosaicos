@@ -8,6 +8,7 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
   /home/randolfo/Documentos/Mosaicos/src/display_rag.hpp \
   /home/randolfo/Documentos/Mosaicos/src/effect.hpp \
   /home/randolfo/Documentos/Mosaicos/src/foreground.hpp \
+  /home/randolfo/Documentos/Mosaicos/src/gd_rag.hpp \
   /home/randolfo/Documentos/Mosaicos/src/ground.hpp \
   /home/randolfo/Documentos/Mosaicos/src/str.hpp \
   /home/randolfo/Documentos/Mosaicos/src/theme.hpp \
@@ -359,15 +360,15 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
 
 /usr/include/c++/13.2.1/bits/allocator.h:
 
+/home/randolfo/Documentos/Mosaicos/src/gd_rag.hpp:
+
 /usr/include/bits/select.h:
 
-/usr/include/c++/13.2.1/type_traits:
+/usr/include/c++/13.2.1/bits/istream.tcc:
 
-/usr/include/bits/types/clock_t.h:
+/usr/include/c++/13.2.1/cerrno:
 
-/usr/include/bits/types/__fpos_t.h:
-
-/usr/include/asm-generic/errno.h:
+/usr/include/bits/types/__sigset_t.h:
 
 /usr/include/asm-generic/errno-base.h:
 
@@ -377,15 +378,13 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
 
 /usr/include/bits/locale.h:
 
-/usr/include/c++/13.2.1/bits/istream.tcc:
+/usr/include/c++/13.2.1/type_traits:
 
-/usr/include/bits/struct_rwlock.h:
+/usr/include/bits/types/clock_t.h:
 
-/usr/include/bits/types/struct_itimerspec.h:
+/usr/include/bits/types/__fpos_t.h:
 
-/usr/include/c++/13.2.1/cerrno:
-
-/usr/include/bits/types/__sigset_t.h:
+/usr/include/asm-generic/errno.h:
 
 /usr/include/bits/types/struct_FILE.h:
 
@@ -466,6 +465,10 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
 /usr/include/c++/13.2.1/bits/range_access.h:
 
 /usr/include/bits/pthreadtypes-arch.h:
+
+/usr/include/bits/struct_rwlock.h:
+
+/usr/include/bits/types/struct_itimerspec.h:
 
 /usr/include/bits/types/struct_sched_param.h:
 
@@ -585,6 +588,14 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
 
 /usr/include/c++/13.2.1/bits/stl_construct.h:
 
+/usr/include/c++/13.2.1/bits/streambuf_iterator.h:
+
+/usr/include/bits/setjmp.h:
+
+/usr/include/c++/13.2.1/bits/exception.h:
+
+/usr/include/c++/13.2.1/bits/stl_iterator_base_funcs.h:
+
 /usr/include/c++/13.2.1/string_view:
 
 /usr/include/bits/types/clockid_t.h:
@@ -594,11 +605,3 @@ CMakeFiles/main.dir/main.cpp.o: /home/randolfo/Documentos/Mosaicos/main.cpp \
 /usr/include/c++/13.2.1/bits/postypes.h:
 
 /usr/include/c++/13.2.1/bits/streambuf.tcc:
-
-/usr/include/bits/setjmp.h:
-
-/usr/include/c++/13.2.1/bits/exception.h:
-
-/usr/include/c++/13.2.1/bits/stl_iterator_base_funcs.h:
-
-/usr/include/c++/13.2.1/bits/streambuf_iterator.h:

@@ -1,6 +1,7 @@
 CMakeFiles/main.dir/main.cpp.o: \
  /home/randolfo/Documentos/Mosaicos/main.cpp /usr/include/stdc-predef.h \
  /home/randolfo/Documentos/Mosaicos/src/colour.hpp \
+ /home/randolfo/Documentos/Mosaicos/src/gd_rag.hpp \
  /usr/include/c++/13.2.1/string \
  /usr/include/c++/13.2.1/bits/requires_hosted.h \
  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++config.h \

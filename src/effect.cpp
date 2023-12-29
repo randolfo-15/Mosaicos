@@ -51,11 +51,7 @@ void Hlg::operator=(Highlight hlg){ buff.assign(hlg.buff.begin(),hlg.buff.end())
 //------------------------------------------------------------------------------------------------
 // Cast
 //------------------------------------------------------------------------------------------------
-string Hlg::to_str(){ 
-    string my_str;
-    for(int efc:buff) my_str+=";"+to_string(efc); 
-    return my_str;
-}
+string Hlg::to_str(string str){  for(int hlg:buff) str+=";"+to_string(hlg); return str; }
 
 //------------------------------------------------------------------------------------------------
 // Derived

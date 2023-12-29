@@ -7,9 +7,11 @@
 #ifndef COLOUR_HPP
 #define COLOUR_HPP
 
+#include "gd_rag.hpp"
 #include <string>
 
 struct Colour{
+	friend Ground;
 	
 	using nivel= unsigned char;
 	using nivel_red=unsigned char;
@@ -64,6 +66,9 @@ struct Colour{
 		static const nivel pixel[3];
 		
 		protected: nivel rgb[3]={MAX,MAX,MAX};
+		
+		std::string to_str(int=0);
+		
 };using Clr = Colour;
 
 

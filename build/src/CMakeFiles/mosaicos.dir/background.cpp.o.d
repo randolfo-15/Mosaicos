@@ -144,4 +144,5 @@ src/CMakeFiles/mosaicos.dir/background.cpp.o: \
  /usr/include/c++/13.2.1/bits/basic_ios.tcc \
  /usr/include/c++/13.2.1/bits/ostream.tcc \
  /home/randolfo/Documentos/Mosaicos/src/colour.hpp \
+ /home/randolfo/Documentos/Mosaicos/src/gd_rag.hpp \
  /home/randolfo/Documentos/Mosaicos/src/effect.hpp

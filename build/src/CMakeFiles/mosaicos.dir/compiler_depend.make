@@ -5,6 +5,7 @@ src/CMakeFiles/mosaicos.dir/background.cpp.o: /home/randolfo/Documentos/Mosaicos
   /home/randolfo/Documentos/Mosaicos/src/background.hpp \
   /home/randolfo/Documentos/Mosaicos/src/colour.hpp \
   /home/randolfo/Documentos/Mosaicos/src/effect.hpp \
+  /home/randolfo/Documentos/Mosaicos/src/gd_rag.hpp \
   /home/randolfo/Documentos/Mosaicos/src/ground.hpp \
   /home/randolfo/Documentos/Mosaicos/src/str.hpp \
   /usr/include/alloca.h \
@@ -392,6 +393,7 @@ src/CMakeFiles/mosaicos.dir/clear.cpp.o: /home/randolfo/Documentos/Mosaicos/src/
 
 src/CMakeFiles/mosaicos.dir/colour.cpp.o: /home/randolfo/Documentos/Mosaicos/src/colour.cpp \
   /home/randolfo/Documentos/Mosaicos/src/colour.hpp \
+  /home/randolfo/Documentos/Mosaicos/src/gd_rag.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -724,6 +726,7 @@ src/CMakeFiles/mosaicos.dir/directions.cpp.o: /home/randolfo/Documentos/Mosaicos
 
 src/CMakeFiles/mosaicos.dir/effect.cpp.o: /home/randolfo/Documentos/Mosaicos/src/effect.cpp \
   /home/randolfo/Documentos/Mosaicos/src/effect.hpp \
+  /home/randolfo/Documentos/Mosaicos/src/gd_rag.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -919,6 +922,7 @@ src/CMakeFiles/mosaicos.dir/foreground.cpp.o: /home/randolfo/Documentos/Mosaicos
   /home/randolfo/Documentos/Mosaicos/src/colour.hpp \
   /home/randolfo/Documentos/Mosaicos/src/effect.hpp \
   /home/randolfo/Documentos/Mosaicos/src/foreground.hpp \
+  /home/randolfo/Documentos/Mosaicos/src/gd_rag.hpp \
   /home/randolfo/Documentos/Mosaicos/src/ground.hpp \
   /home/randolfo/Documentos/Mosaicos/src/str.hpp \
   /usr/include/alloca.h \
@@ -1112,6 +1116,7 @@ src/CMakeFiles/mosaicos.dir/foreground.cpp.o: /home/randolfo/Documentos/Mosaicos
 src/CMakeFiles/mosaicos.dir/ground.cpp.o: /home/randolfo/Documentos/Mosaicos/src/ground.cpp \
   /home/randolfo/Documentos/Mosaicos/src/colour.hpp \
   /home/randolfo/Documentos/Mosaicos/src/effect.hpp \
+  /home/randolfo/Documentos/Mosaicos/src/gd_rag.hpp \
   /home/randolfo/Documentos/Mosaicos/src/ground.hpp \
   /home/randolfo/Documentos/Mosaicos/src/str.hpp \
   /usr/include/alloca.h \
@@ -1257,7 +1262,6 @@ src/CMakeFiles/mosaicos.dir/ground.cpp.o: /home/randolfo/Documentos/Mosaicos/src
   /usr/include/c++/13.2.1/initializer_list \
   /usr/include/c++/13.2.1/ios \
   /usr/include/c++/13.2.1/iosfwd \
-  /usr/include/c++/13.2.1/iostream \
   /usr/include/c++/13.2.1/istream \
   /usr/include/c++/13.2.1/new \
   /usr/include/c++/13.2.1/ostream \
@@ -1502,6 +1506,7 @@ src/CMakeFiles/mosaicos.dir/theme.cpp.o: /home/randolfo/Documentos/Mosaicos/src/
   /home/randolfo/Documentos/Mosaicos/src/colour.hpp \
   /home/randolfo/Documentos/Mosaicos/src/effect.hpp \
   /home/randolfo/Documentos/Mosaicos/src/foreground.hpp \
+  /home/randolfo/Documentos/Mosaicos/src/gd_rag.hpp \
   /home/randolfo/Documentos/Mosaicos/src/ground.hpp \
   /home/randolfo/Documentos/Mosaicos/src/str.hpp \
   /home/randolfo/Documentos/Mosaicos/src/theme.hpp \
@@ -1832,6 +1837,10 @@ src/CMakeFiles/mosaicos.dir/theme.cpp.o: /home/randolfo/Documentos/Mosaicos/src/
 
 /usr/include/c++/13.2.1/bits/stl_bvector.h:
 
+/usr/include/c++/13.2.1/bits/utility.h:
+
+/usr/include/bits/types/__locale_t.h:
+
 /usr/include/c++/13.2.1/bits/locale_facets.tcc:
 
 /usr/include/bits/types/__FILE.h:
@@ -1862,18 +1871,6 @@ src/CMakeFiles/mosaicos.dir/theme.cpp.o: /home/randolfo/Documentos/Mosaicos/src/
 
 /usr/include/bits/types/sigset_t.h:
 
-/usr/include/c++/13.2.1/ext/alloc_traits.h:
-
-/usr/include/bits/struct_mutex.h:
-
-/usr/include/bits/cpu-set.h:
-
-/home/randolfo/Documentos/Mosaicos/src/background.cpp:
-
-/usr/include/bits/uintn-identity.h:
-
-/usr/include/bits/long-double.h:
-
 /usr/include/bits/stdlib-float.h:
 
 /usr/include/bits/time64.h:
@@ -1892,6 +1889,8 @@ src/CMakeFiles/mosaicos.dir/theme.cpp.o: /home/randolfo/Documentos/Mosaicos/src/
 
 /usr/include/c++/13.2.1/bits/basic_string.h:
 
+/usr/include/asm-generic/errno-base.h:
+
 /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
 
 /usr/include/bits/types/struct___jmp_buf_tag.h:
@@ -1903,8 +1902,6 @@ src/CMakeFiles/mosaicos.dir/theme.cpp.o: /home/randolfo/Documentos/Mosaicos/src/
 /usr/include/bits/types/__fpos_t.h:
 
 /usr/include/asm-generic/errno.h:
-
-/usr/include/asm-generic/errno-base.h:
 
 /usr/include/bits/types/time_t.h:
 
@@ -1930,7 +1927,29 @@ src/CMakeFiles/mosaicos.dir/theme.cpp.o: /home/randolfo/Documentos/Mosaicos/src/
 
 /usr/include/bits/libc-header-start.h:
 
+/usr/include/bits/types/__fpos64_t.h:
+
+/usr/include/bits/types/locale_t.h:
+
+/usr/include/c++/13.2.1/bits/allocator.h:
+
+/home/randolfo/Documentos/Mosaicos/src/gd_rag.hpp:
+
+/usr/include/bits/select.h:
+
 /usr/include/bits/types/struct_FILE.h:
+
+/usr/include/c++/13.2.1/ext/alloc_traits.h:
+
+/usr/include/bits/struct_mutex.h:
+
+/usr/include/bits/cpu-set.h:
+
+/home/randolfo/Documentos/Mosaicos/src/background.cpp:
+
+/usr/include/bits/uintn-identity.h:
+
+/usr/include/bits/long-double.h:
 
 /home/randolfo/Documentos/Mosaicos/src/effect.hpp:
 
@@ -1952,19 +1971,11 @@ src/CMakeFiles/mosaicos.dir/theme.cpp.o: /home/randolfo/Documentos/Mosaicos/src/
 
 /usr/include/bits/pthread_stack_min-dynamic.h:
 
-/usr/include/bits/types/__fpos64_t.h:
-
-/usr/include/bits/types/locale_t.h:
-
-/usr/include/c++/13.2.1/bits/allocator.h:
-
-/usr/include/bits/select.h:
-
 /usr/include/gnu/stubs.h:
 
-/usr/include/bits/pthreadtypes-arch.h:
-
 /usr/include/c++/13.2.1/bits/range_access.h:
+
+/usr/include/bits/pthreadtypes-arch.h:
 
 /usr/include/bits/types/timer_t.h:
 
@@ -2053,10 +2064,6 @@ src/CMakeFiles/mosaicos.dir/theme.cpp.o: /home/randolfo/Documentos/Mosaicos/src/
 /usr/include/c++/13.2.1/bits/locale_classes.tcc:
 
 /usr/include/c++/13.2.1/bits/memoryfwd.h:
-
-/usr/include/bits/types/__locale_t.h:
-
-/usr/include/c++/13.2.1/bits/utility.h:
 
 /home/randolfo/Documentos/Mosaicos/src/theme.hpp:
 

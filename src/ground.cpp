@@ -4,11 +4,9 @@
  * \author Randolfo Augusto
  * \date 20/11/23
  *****************************************************************/
-#include <iostream>
 #include "ground.hpp"
 #include <sstream>
 using std::string;
-using std::to_string;
 
 const char 
     Gd::BEG[6]="\033[",
@@ -19,15 +17,15 @@ const char
 //------------------------------------------------------------------------------------------------
 Gd::Ground():Ground(Clr(),"",Hlg()){}
 
-Gd::Ground(Clr clr,const char* plan,Hlg efc):
+Gd::Ground(Clr clr,const char* plan,Hlg hlg):
     Str(5),
-    Colour(clr.red(),clr.green(),clr.blue())
-//    Highlight(efc)
+    Colour(clr.red(),clr.green(),clr.blue()),
+    Highlight(hlg)
 { 
     buf[HEAD]=BEG;
     buf[PLAN]=plan;
-    buf[RGB]=to_str(&clr);
-    buf[HLG]=efc.to_str();
+    buf[RGB]=clr.to_str();
+    buf[HLG]=hlg.to_str();
     buf[TAIL]=END;
 }
 
@@ -37,7 +35,7 @@ Gd::Ground(Clr clr,const char* plan,Hlg efc):
 //-------------------------------------
 // Assign
 //-------------------------------------
-void Gd::operator=(Clr clr){   buf[RGB]=to_str(&clr); }
+void Gd::operator=(Clr clr){   buf[RGB]=clr.to_str();  }
 
 void Gd::operator=(Hlg hlg){ buf[HLG]=hlg.to_str(); }
 
@@ -73,14 +71,7 @@ void Gd::operator=(Hlg hlg){ buf[HLG]=hlg.to_str(); }
 std::string Gd::operator!(){ return buf[HEAD]+"0"+buf[TAIL];}
 
 //------------------------------------------------------------------------------------------------
-// Getting
+// Components
 //------------------------------------------------------------------------------------------------
-Hlg Gd::highlight(){ return Hlg(); }
-
-Clr Gd::colour(){  return *this; }
-//------------------------------------------------------------------------------------------------
-// Cast
-//------------------------------------------------------------------------------------------------
-string Gd::to_str(Clr* c){ return to_str(c->red())+";"+to_str(c->green())+";"+to_str(c->blue()); }
-
-string Gd::to_str(nivel tone){ return to_string(tone) ; }
+Hlg Gd::hlg(){ return *this; }
+Clr  Gd::clr(){   return *this; }

@@ -1,0 +1,8 @@
+<map id="Display::side" name="Display::side">
+<area shape="rect" id="Node000001" title="Define distanciamento lateral." alt="" coords="374,5,478,33"/>
+<area shape="rect" id="Node000002" href="$classDisplay.html#aff68881c09f41172cfb03e76ae99c664" title="Construi a imagem do display." alt="" coords="5,5,115,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="358,22,115,22,115,17,358,17"/>
+<area shape="rect" id="Node000003" href="$classDisplay.html#a8cc9ff01e63517d85184886ea25df050" title="Lista o conjunto de linhas do buffer." alt="" coords="163,31,326,58"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="359,31,327,36,326,30,358,26"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="147,34,115,29,116,24,148,29"/>
+</map>

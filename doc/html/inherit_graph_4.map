@@ -1,21 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classHighlight.html" title=" " alt="" coords="5,213,86,241"/>
-<area shape="rect" id="Node000001" href="$structEffect_1_1Blink.html" title=" " alt="" coords="149,5,248,33"/>
-<area shape="poly" id="edge12_Node000000_Node000001" title=" " alt="" coords="51,197,62,163,79,122,102,81,132,44,150,31,153,36,135,48,106,84,83,124,67,165,56,199"/>
-<area shape="rect" id="Node000002" href="$structEffect_1_1Bold.html" title=" " alt="" coords="151,57,246,85"/>
-<area shape="poly" id="edge13_Node000000_Node000002" title=" " alt="" coords="57,198,87,147,108,120,132,96,152,83,155,88,135,100,112,123,91,150,62,201"/>
-<area shape="rect" id="Node000003" href="$structEffect_1_1Dark.html" title=" " alt="" coords="150,109,247,137"/>
-<area shape="poly" id="edge14_Node000000_Node000003" title=" " alt="" coords="68,201,98,174,132,148,156,135,158,140,135,152,101,178,72,205"/>
-<area shape="rect" id="Node000004" href="$structEffect_1_1Hidden.html" title=" " alt="" coords="142,161,255,189"/>
-<area shape="poly" id="edge15_Node000000_Node000004" title=" " alt="" coords="99,206,154,187,156,192,101,211"/>
-<area shape="rect" id="Node000005" href="$structEffect_1_1Italic.html" title=" " alt="" coords="149,213,248,241"/>
-<area shape="poly" id="edge16_Node000000_Node000005" title=" " alt="" coords="101,225,149,225,149,230,101,230"/>
-<area shape="rect" id="Node000006" href="$structEffect_1_1Normal.html" title=" " alt="" coords="141,265,256,293"/>
-<area shape="poly" id="edge17_Node000000_Node000006" title=" " alt="" coords="101,243,156,262,154,267,99,248"/>
-<area shape="rect" id="Node000007" href="$structEffect_1_1Reverse.html" title=" " alt="" coords="139,317,258,345"/>
-<area shape="poly" id="edge18_Node000000_Node000007" title=" " alt="" coords="72,250,101,277,135,302,158,314,156,319,132,307,98,281,68,254"/>
-<area shape="rect" id="Node000008" href="$structEffect_1_1Tachado.html" title=" " alt="" coords="139,369,258,397"/>
-<area shape="poly" id="edge19_Node000000_Node000008" title=" " alt="" coords="62,254,91,305,112,331,135,354,155,367,152,371,132,359,108,335,87,308,57,256"/>
-<area shape="rect" id="Node000009" href="$structEffect_1_1Underline.html" title=" " alt="" coords="134,421,263,449"/>
-<area shape="poly" id="edge20_Node000000_Node000009" title=" " alt="" coords="56,256,67,290,83,330,106,371,135,407,153,419,150,423,132,410,102,374,79,332,62,292,51,257"/>
+<area shape="rect" id="Node000000" href="$classTheme.html" title="Define um conjunto de cores e comportamentos de uma janela." alt="" coords="5,5,72,33"/>
 </map>

@@ -1,0 +1,7 @@
+<map id="Display::n_lines" name="Display::n_lines">
+<area shape="rect" id="Node000001" title="Retorna o numero de linhas do maior display." alt="" coords="5,5,129,33"/>
+<area shape="rect" id="Node000002" href="$classDisplay.html#a07648956496c282838d558a69482042e" title="Ordena os displays." alt="" coords="177,5,306,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,17,161,17,161,22,129,22"/>
+<area shape="rect" id="Node000003" href="$classDisplay.html#a227974f4eea136999a64e5b34b0a7234" title="Compara o número de linhas de dois display." alt="" coords="354,5,488,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="307,17,339,17,339,22,307,22"/>
+</map>

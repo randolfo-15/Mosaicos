@@ -1,9 +1,9 @@
 <map id="Display::compare" name="Display::compare">
-<area shape="rect" id="Node000001" title="Compara o número de linhas de dois display." alt="" coords="472,5,607,33"/>
-<area shape="rect" id="Node000002" href="$classDisplay.html#abc861f4b66cb4984a864cae3272764b7" title="Ordena os displays." alt="" coords="322,5,424,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="457,22,425,22,425,17,457,17"/>
-<area shape="rect" id="Node000003" href="$classDisplay.html#aff68881c09f41172cfb03e76ae99c664" title="Motor de animação da janelas." alt="" coords="165,5,274,33"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="306,22,274,22,274,17,306,17"/>
-<area shape="rect" id="Node000004" href="$classDisplay.html#a41c7b479921bb4aedae03a866f4e8e10" title="retorna a imagem do distema atual." alt="" coords="5,5,117,33"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="149,22,117,22,117,17,149,17"/>
+<area shape="rect" id="Node000001" title="Compara o número de linhas de dois display." alt="" coords="511,5,646,33"/>
+<area shape="rect" id="Node000002" href="$classDisplay.html#a07648956496c282838d558a69482042e" title="Ordena os displays." alt="" coords="334,5,463,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="495,22,464,22,464,17,495,17"/>
+<area shape="rect" id="Node000003" href="$classDisplay.html#aa259c7a95a1b6d7a4c1057905f3b14d0" title="Retorna o numero de linhas do maior display." alt="" coords="163,5,286,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="318,22,286,22,286,17,318,17"/>
+<area shape="rect" id="Node000004" href="$classDisplay.html#aff68881c09f41172cfb03e76ae99c664" title="Construi a imagem do display." alt="" coords="5,5,115,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="147,22,115,22,115,17,147,17"/>
 </map>

@@ -6,6 +6,5 @@ var searchData=
   ['blink_3',['Blink',['../structEffect_1_1Blink.html#ac12677d7d9c9124398540ea4a8181790',1,'Effect::Blink']]],
   ['blue_4',['blue',['../structColors_1_1Blue.html#a9d651f490444e19870d08ef55f51255c',1,'Colors::Blue::Blue()'],['../structColour.html#a7a9d445a6099579e04ea7308899a82ba',1,'Colour::blue(nivel)'],['../structColour.html#ad474b81a90cabd535fe1c190d8becf99',1,'Colour::blue()']]],
   ['bold_5',['Bold',['../structEffect_1_1Bold.html#a546db02099615a693b6a4fed3ec89188',1,'Effect::Bold']]],
-  ['br_6',['br',['../structColour.html#aaa9d78c6f845863d4c2df60b31b1966a',1,'Colour']]],
-  ['build_7',['build',['../classDisplay.html#aff68881c09f41172cfb03e76ae99c664',1,'Display']]]
+  ['build_6',['build',['../classDisplay.html#aff68881c09f41172cfb03e76ae99c664',1,'Display']]]
 ];

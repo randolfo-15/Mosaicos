@@ -9,7 +9,6 @@
 
 #include <string>
 #include <vector>
-#include <algorithm>
 
 class Highlight{
 //------------------------------------------------------------------------------------------------
@@ -17,6 +16,12 @@ class Highlight{
 //------------------------------------------------------------------------------------------------
 public:			Highlight();
 protected: 	Highlight(int);
+
+//------------------------------------------------------------------------------------------------
+// Find
+//------------------------------------------------------------------------------------------------
+private: int find(int,int=0);
+
 //------------------------------------------------------------------------------------------------
 // Operator
 //------------------------------------------------------------------------------------------------	
@@ -24,14 +29,18 @@ protected: 	Highlight(int);
 // Addition
 //-------------------------------------
 public:
-		virtual Highlight operator+(Highlight);
-		virtual void operator+=(Highlight);
+	virtual Highlight operator+(Highlight);
+	virtual void operator+=(Highlight);
 //-------------------------------------
 // Subtration
 //-------------------------------------
 public:
-		virtual Highlight operator-(Highlight);
-		virtual void operator-=(Highlight);
+	virtual Highlight operator-(Highlight);
+	virtual void operator-=(Highlight);
+//-------------------------------------
+// Assign
+//-------------------------------------
+	virtual void operator=(Highlight);
 //-------------------------------------
 // Cast
 //-------------------------------------

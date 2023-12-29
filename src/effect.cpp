@@ -4,6 +4,7 @@
  * \author Randolfo Augusto
  * \date 21/09/22
  ******************************************************/
+#include <iostream>
 #include "effect.hpp"
 using std::string;
 using std::to_string;
@@ -14,28 +15,38 @@ using std::to_string;
 Hlg::Highlight(){}
 
 Hlg::Highlight(int efc){ buff.push_back(efc); }
+//-------------------------------------
+// Find
+//-------------------------------------
+int Hlg::find(int key,int i){ return (i>=buff.size())?(-1):(key==buff[i])?(i):find(key,i+1); }
 
 //------------------------------------------------------------------------------------------------
-// Addition
+// Operators
 //------------------------------------------------------------------------------------------------
+//-------------------------------------
+//  Addition
+//-------------------------------------
 Hlg Hlg::operator+(Hlg efc){ 
     Hlg tmp=*this; 
     tmp+=efc;
     return tmp;
 }
+void Hlg::operator+=(Hlg hlg){ for(int key : hlg.buff) if(find(key)<0) buff.push_back(key) ; }
 
-void Hlg::operator+=(Hlg other){ for(int efc : other.buff) buff.push_back(efc) ; }
-
-//------------------------------------------------------------------------------------------------
+//-------------------------------------
 // Subtration
-//------------------------------------------------------------------------------------------------
+//-------------------------------------
 Hlg Hlg::operator-(Hlg efc){
     Hlg tmp=*this;
     tmp-=efc;
     return tmp;
 }
+void Hlg::operator-=(Hlg hlg){ int i; for(int key:hlg.buff) if((i=find(key))>=0) buff.erase(buff.begin()+i); }
 
-void Hlg::operator-=(Hlg efc){ for(int efc:efc.buff) buff.erase(std::find(buff.begin(),buff.end(),efc)); }
+//-------------------------------------
+// Assign
+//-------------------------------------
+void Hlg::operator=(Highlight hlg){ buff.assign(hlg.buff.begin(),hlg.buff.end()); }
 
 //------------------------------------------------------------------------------------------------
 // Cast

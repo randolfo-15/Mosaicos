@@ -1,0 +1,7 @@
+<map id="Display::Line::form" name="Display::Line::form">
+<area shape="rect" id="Node000001" title="Retorna a string colorida e com efeito." alt="" coords="5,5,149,33"/>
+<area shape="rect" id="Node000002" href="$structDisplay_1_1Line.html#a73576715328192a9dd1b7cb2233f68e5" title="Define a string de saida." alt="" coords="197,5,340,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,17,181,17,181,22,149,22"/>
+<area shape="rect" id="Node000003" href="$structDisplay_1_1Line.html#a7c3b12f2b87fba611508c3cb0d4cf125" title="Subistui o conteudo da linha." alt="" coords="388,5,548,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="340,17,372,17,372,22,340,22"/>
+</map>

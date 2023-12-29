@@ -1,0 +1,7 @@
+<map id="Display::side" name="Display::side">
+<area shape="rect" id="Node000001" title="Define distanciamento lateral." alt="" coords="5,32,110,60"/>
+<area shape="rect" id="Node000002" href="$structDirections.html#a59be9044cae925f334b715d990ee6681" title=" " alt="" coords="158,5,279,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,35,142,29,142,34,111,40"/>
+<area shape="rect" id="Node000003" href="$classStr.html#a9f6d54ccea7fdadc2d9702fe92b187e0" title=" " alt="" coords="186,57,251,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="111,51,171,61,170,66,110,57"/>
+</map>

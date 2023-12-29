@@ -1,0 +1,5 @@
+<map id="Display::n_lines" name="Display::n_lines">
+<area shape="rect" id="Node000001" title="Retorna o numero de linhas do maior display." alt="" coords="163,5,286,33"/>
+<area shape="rect" id="Node000002" href="$classDisplay.html#aff68881c09f41172cfb03e76ae99c664" title="Construi a imagem do display." alt="" coords="5,5,115,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,22,115,22,115,17,147,17"/>
+</map>

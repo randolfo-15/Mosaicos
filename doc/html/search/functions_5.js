@@ -4,5 +4,5 @@ var searchData=
   ['fill_1',['fill',['../classDisplay.html#ad0e52097ee8d0d2ae09b70e51ec26ca6',1,'Display']]],
   ['find_2',['find',['../classDisplay.html#a0701623daedc4af828c4d9ed11e8292c',1,'Display']]],
   ['foreground_3',['foreground',['../structForeground.html#a171919d91ff4cb012942cca134ffb484',1,'Foreground::Foreground()'],['../structForeground.html#af3268dce7dd69b766cab07370dc86c93',1,'Foreground::Foreground(Colour)'],['../structForeground.html#a12fa105a66218701e58f068269bac2b9',1,'Foreground::Foreground(Highlight)'],['../structForeground.html#ae1a45010e090bd31ff3b05e04fdba2d4',1,'Foreground::Foreground(Colour, Highlight)']]],
-  ['form_4',['form',['../structDisplay_1_1Line.html#a9f0374d9ab05fc689c54fddc24bf2716',1,'Display::Line']]]
+  ['form_4',['form',['../structDisplay_1_1Line.html#a47bfc579622ccdd3195a7ab4827ebcce',1,'Display::Line']]]
 ];

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['max_0',['MAX',['../structColour.html#a45a0a10fe883c53eda01923575604e67',1,'Colour']]],
-  ['min_1',['MIN',['../structColour.html#a57d9770c276a86d5e371ea07e70abc6b',1,'Colour']]],
-  ['my_5fsize_2',['my_size',['../structDirections.html#aaefda438c97133a9d83c2461b905987c',1,'Directions']]]
+  ['pixel_0',['pixel',['../structColour.html#ab4ddd5bcabe322a2f817c131b0bb9dd1',1,'Colour']]],
+  ['plan_1',['plan',['../structBackground.html#a92f55f5a6fdf27360f18757bf3b1418c',1,'Background::PLAN'],['../structForeground.html#afe2c161c58ec2c09c9a32b39c07b52e9',1,'Foreground::PLAN']]]
 ];

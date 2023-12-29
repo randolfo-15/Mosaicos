@@ -4,7 +4,7 @@
  * \author Randolfo Augusto
  * \date 20/11/23
  *****************************************************************/
-
+#include <iostream>
 #include "ground.hpp"
 #include <sstream>
 using std::string;
@@ -21,7 +21,8 @@ Gd::Ground():Ground(Clr(),"",Hlg()){}
 
 Gd::Ground(Clr clr,const char* plan,Hlg efc):
     Str(7),
-    Colour(clr.red(),clr.green(),clr.blue())
+    Colour(clr.red(),clr.green(),clr.blue()),
+    Highlight(efc)
 { 
     buf[HEAD]=BEG;
     buf[PLAN]=plan;
@@ -37,7 +38,9 @@ Gd::Ground(Clr clr,const char* plan,Hlg efc):
 // Assign
 //-------------------------------------
 void Gd::operator=(Clr clr){   buf[RGB]=to_str(&clr); }
-void Gd::operator=(Hlg efc){ buf[HLG]=efc.to_str(); }
+
+void Gd::operator=(Hlg hlg){ buf[HLG]=hlg.to_str(); }
+
 //-------------------------------------
 // Addition
 //-------------------------------------

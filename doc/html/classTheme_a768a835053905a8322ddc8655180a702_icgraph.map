@@ -1,11 +1,5 @@
 <map id="Theme::fg" name="Theme::fg">
-<area shape="rect" id="Node000001" title="(Get) padrão para foreground." alt="" coords="730,5,817,33"/>
-<area shape="rect" id="Node000002" href="$classDisplay.html#ae2f0fe8e1cb1473424b4780ce99546a2" title=" " alt="" coords="529,5,682,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="714,22,682,22,682,17,714,17"/>
-<area shape="rect" id="Node000003" href="$classDisplay.html#a00a18b2ae554d58a54df89fc11624190" title=" " alt="" coords="322,5,481,33"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="513,22,482,22,482,17,513,17"/>
-<area shape="rect" id="Node000004" href="$classDisplay.html#aeaf7e796530aa5177ff8e7e906ba82e3" title=" " alt="" coords="165,5,274,33"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="306,22,275,22,275,17,306,17"/>
-<area shape="rect" id="Node000005" href="$classDisplay.html#a8f37df54881eebc4eba88190f77b854b" title=" " alt="" coords="5,5,117,33"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="149,22,117,22,117,17,149,17"/>
+<area shape="rect" id="Node000001" title="(Get) padrão para foreground." alt="" coords="193,5,280,33"/>
+<area shape="rect" id="Node000002" href="$classTheme.html#a0b6a90ddb90db4ed1b2fea01f11540fa" title=" " alt="" coords="5,5,145,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,22,145,22,145,17,177,17"/>
 </map>

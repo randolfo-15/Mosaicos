@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['r_0',['R',['../classGround.html#a1fdde7f2564d9e271e1d5560135288f6a76b16f63d6091ff5860e186971904ef0',1,'Ground']]],
-  ['red_1',['RED',['../structColour.html#a75f9c790990a9046a85618397708adf0a535393d5878619167021d5e683adbf15',1,'Colour']]]
+  ['size_0',['SIZE',['../structDirections.html#a6a13799cb4e5d15f1f326e4dd364d89da5791e344e019bd0afbad88c089be6758',1,'Directions']]],
+  ['subtitles_1',['SUBTITLES',['../classDisplay.html#a0990d9ce6bbe54261f38ce8899cb5d72ab5409d4d60c024184d47a5262548024e',1,'Display']]]
 ];

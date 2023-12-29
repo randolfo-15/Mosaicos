@@ -13,7 +13,11 @@ var hierarchy =
       [ "Colors::Magenta", "structColors_1_1Magenta.html", null ],
       [ "Colors::Red", "structColors_1_1Red.html", null ],
       [ "Colors::White", "structColors_1_1White.html", null ],
-      [ "Colors::Yellow", "structColors_1_1Yellow.html", null ]
+      [ "Colors::Yellow", "structColors_1_1Yellow.html", null ],
+      [ "Ground", "classGround.html", [
+        [ "Background", "structBackground.html", null ],
+        [ "Foreground", "structForeground.html", null ]
+      ] ]
     ] ],
     [ "Display", "classDisplay.html", null ],
     [ "Highlight", "classHighlight.html", [
@@ -25,7 +29,8 @@ var hierarchy =
       [ "Effect::Normal", "structEffect_1_1Normal.html", null ],
       [ "Effect::Reverse", "structEffect_1_1Reverse.html", null ],
       [ "Effect::Tachado", "structEffect_1_1Tachado.html", null ],
-      [ "Effect::Underline", "structEffect_1_1Underline.html", null ]
+      [ "Effect::Underline", "structEffect_1_1Underline.html", null ],
+      [ "Ground", "classGround.html", null ]
     ] ],
     [ "Display::Line", "structDisplay_1_1Line.html", null ],
     [ "Str", "classStr.html", [
@@ -35,10 +40,7 @@ var hierarchy =
         [ "Rigth", "structRigth.html", null ],
         [ "Up", "structUp.html", null ]
       ] ],
-      [ "Ground", "classGround.html", [
-        [ "Background", "structBackground.html", null ],
-        [ "Foreground", "structForeground.html", null ]
-      ] ]
+      [ "Ground", "classGround.html", null ]
     ] ],
     [ "Theme", "classTheme.html", null ]
 ];

@@ -1,0 +1,7 @@
+<map id="Theme::operator()" name="Theme::operator()">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,32,145,60"/>
+<area shape="rect" id="Node000002" href="$classTheme.html#a9c96eee9fbb56e755bb4a9055df87b7a" title="(Get) padrão para background." alt="" coords="193,5,283,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,32,177,26,178,32,146,37"/>
+<area shape="rect" id="Node000003" href="$classTheme.html#a768a835053905a8322ddc8655180a702" title="(Get) padrão para foreground." alt="" coords="194,57,282,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="146,54,179,59,178,65,145,59"/>
+</map>

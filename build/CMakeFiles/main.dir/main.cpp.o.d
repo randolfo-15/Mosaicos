@@ -149,14 +149,6 @@ CMakeFiles/main.dir/main.cpp.o: \
  /usr/include/c++/13.2.1/bits/vector.tcc \
  /home/randolfo/Documentos/Mosaicos/src/colour.hpp \
  /home/randolfo/Documentos/Mosaicos/src/effect.hpp \
- /usr/include/c++/13.2.1/algorithm \
- /usr/include/c++/13.2.1/bits/stl_algo.h \
- /usr/include/c++/13.2.1/bits/algorithmfwd.h \
- /usr/include/c++/13.2.1/bits/stl_heap.h \
- /usr/include/c++/13.2.1/bits/uniform_int_dist.h \
- /usr/include/c++/13.2.1/bits/stl_tempbuf.h \
- /usr/include/c++/13.2.1/pstl/glue_algorithm_defs.h \
- /usr/include/c++/13.2.1/pstl/execution_defs.h \
  /home/randolfo/Documentos/Mosaicos/src/background.hpp \
  /home/randolfo/Documentos/Mosaicos/src/directions_rag.hpp \
  /home/randolfo/Documentos/Mosaicos/src/effect.hpp \

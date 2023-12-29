@@ -1,29 +1,37 @@
 <map id="Display::build" name="Display::build">
-<area shape="rect" id="Node000001" title="Motor de animação da janelas." alt="" coords="5,237,115,265"/>
-<area shape="rect" id="Node000002" href="$classDisplay.html#a7067b1c2ae91dfb50b501a5bf108f0d7" title="Lista o conjunto de linhas do buffer." alt="" coords="163,109,326,137"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,235,209,144,212,148,83,239"/>
-<area shape="rect" id="Node000010" href="$classStr.html#a9f6d54ccea7fdadc2d9702fe92b187e0" title=" " alt="" coords="800,187,865,214"/>
-<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="115,245,784,201,785,206,115,250"/>
-<area shape="rect" id="Node000011" href="$classDisplay.html#abc861f4b66cb4984a864cae3272764b7" title="Ordena os displays." alt="" coords="193,263,296,290"/>
-<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="115,256,179,265,178,270,114,261"/>
-<area shape="rect" id="Node000013" href="$classDisplay.html#a4186ace929fef67df659e37be359e154" title="Insere os detalhamentos de contorno da linha." alt="" coords="173,315,316,342"/>
-<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="89,263,164,299,183,307,181,312,162,304,86,268"/>
-<area shape="rect" id="Node000003" href="$classDisplay.html#a10fcb45a07452eaa4fb9945338caf8d7" title="Complementa de caracteres para desenhar a janela." alt="" coords="374,57,533,85"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="303,106,379,87,381,92,304,111"/>
-<area shape="rect" id="Node000004" href="$classDisplay.html#aa6481f312f80e4be3a98433b1df37eba" title="Desenha a linha." alt="" coords="384,109,524,137"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="326,121,368,121,368,126,326,126"/>
-<area shape="rect" id="Node000005" href="$classTheme.html#a9c96eee9fbb56e755bb4a9055df87b7a" title="(Get) padrão para background." alt="" coords="608,5,698,33"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="508,106,532,94,546,82,555,70,565,57,580,44,592,36,595,41,583,48,569,60,560,73,550,86,535,99,510,111"/>
-<area shape="rect" id="Node000006" href="$structColour.html#aaa9d78c6f845863d4c2df60b31b1966a" title=" " alt="" coords="611,57,695,85"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="509,106,595,83,596,89,510,111"/>
-<area shape="rect" id="Node000007" href="$classDisplay.html#ad0e52097ee8d0d2ae09b70e51ec26ca6" title="Preencher espaços:" alt="" coords="606,109,700,137"/>
-<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="524,121,591,121,591,126,524,126"/>
-<area shape="rect" id="Node000009" href="$structDisplay_1_1Line.html#a9f0374d9ab05fc689c54fddc24bf2716" title="Retorna a string colorida e com efeito." alt="" coords="581,161,725,189"/>
-<area shape="poly" id="edge9_Node000004_Node000009" title=" " alt="" coords="510,135,583,154,581,159,509,140"/>
-<area shape="rect" id="Node000008" href="$classDisplay.html#a61bf97fddf1bf913f39869d34dc7dfc8" title="Cria uma string vazia." alt="" coords="773,109,892,137"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="700,121,757,121,757,126,700,126"/>
-<area shape="poly" id="edge8_Node000008_Node000008" title=" " alt="" coords="801,110,796,100,800,91,812,85,832,83,854,85,865,92,863,96,852,90,832,88,814,90,804,95,801,100,806,108"/>
-<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="726,183,785,191,784,197,725,188"/>
-<area shape="rect" id="Node000012" href="$classDisplay.html#a227974f4eea136999a64e5b34b0a7234" title="Compara o número de linhas de dois display." alt="" coords="387,263,521,290"/>
-<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="296,274,371,274,371,279,296,279"/>
+<area shape="rect" id="Node000001" title="Construi a imagem do display." alt="" coords="5,187,115,214"/>
+<area shape="rect" id="Node000002" href="$classDisplay.html#a8cc9ff01e63517d85184886ea25df050" title="Lista o conjunto de linhas do buffer." alt="" coords="163,111,326,138"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,184,162,154,191,142,193,147,164,159,95,189"/>
+<area shape="rect" id="Node000011" href="$classDisplay.html#a5ac8559c2cb9b6db6b0d63a3d25120ea" title="Define distanciamento lateral." alt="" coords="392,161,496,189"/>
+<area shape="poly" id="edge17_Node000001_Node000011" title=" " alt="" coords="115,194,376,177,377,182,115,200"/>
+<area shape="rect" id="Node000014" href="$classDisplay.html#aa259c7a95a1b6d7a4c1057905f3b14d0" title="Retorna o numero de linhas do maior display." alt="" coords="183,212,306,240"/>
+<area shape="poly" id="edge14_Node000001_Node000014" title=" " alt="" coords="115,205,167,213,167,218,114,211"/>
+<area shape="rect" id="Node000017" href="$classDisplay.html#a4186ace929fef67df659e37be359e154" title="Insere os detalhamentos de contorno da linha." alt="" coords="173,264,316,292"/>
+<area shape="poly" id="edge18_Node000001_Node000017" title=" " alt="" coords="89,212,164,249,183,256,181,261,162,254,86,217"/>
+<area shape="rect" id="Node000003" href="$classDisplay.html#acb1ce586c300e28f3ce2ac1088a08445" title="Complementa de caracteres para desenhar a janela." alt="" coords="375,57,513,85"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="298,107,374,87,376,92,300,113"/>
+<area shape="rect" id="Node000004" href="$classDisplay.html#aa6481f312f80e4be3a98433b1df37eba" title="Desenha a linha." alt="" coords="374,109,514,137"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="326,121,359,121,359,126,326,127"/>
+<area shape="poly" id="edge11_Node000002_Node000011" title=" " alt="" coords="302,136,377,156,376,161,301,141"/>
+<area shape="rect" id="Node000005" href="$classTheme.html#a9c96eee9fbb56e755bb4a9055df87b7a" title="(Get) padrão para background." alt="" coords="589,5,679,33"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="490,106,513,94,527,82,536,70,546,57,561,44,573,36,576,41,564,48,550,60,540,73,531,86,516,99,493,111"/>
+<area shape="rect" id="Node000006" href="$classDisplay.html#ad0e52097ee8d0d2ae09b70e51ec26ca6" title="Preencher espaços:" alt="" coords="587,57,681,85"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="497,106,572,85,573,90,498,111"/>
+<area shape="rect" id="Node000008" href="$structDisplay_1_1Line.html#a47bfc579622ccdd3195a7ab4827ebcce" title="Retorna a string colorida e com efeito." alt="" coords="562,109,706,137"/>
+<area shape="poly" id="edge8_Node000004_Node000008" title=" " alt="" coords="515,121,547,121,547,126,515,126"/>
+<area shape="rect" id="Node000007" href="$classDisplay.html#a61bf97fddf1bf913f39869d34dc7dfc8" title="Cria uma string vazia." alt="" coords="766,57,885,85"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="681,69,750,69,750,74,681,74"/>
+<area shape="poly" id="edge7_Node000007_Node000007" title=" " alt="" coords="792,58,787,48,791,39,804,33,825,31,848,33,860,40,858,44,846,38,825,36,806,38,795,43,792,48,797,55"/>
+<area shape="rect" id="Node000009" href="$structDisplay_1_1Line.html#a73576715328192a9dd1b7cb2233f68e5" title="Define a string de saida." alt="" coords="754,109,897,137"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="706,121,738,121,738,126,706,126"/>
+<area shape="rect" id="Node000010" href="$structDisplay_1_1Line.html#a7c3b12f2b87fba611508c3cb0d4cf125" title="Subistui o conteudo da linha." alt="" coords="945,109,1105,137"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="897,121,929,121,929,126,897,126"/>
+<area shape="rect" id="Node000012" href="$structDirections.html#a59be9044cae925f334b715d990ee6681" title=" " alt="" coords="573,161,695,189"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="497,173,558,173,558,178,497,178"/>
+<area shape="rect" id="Node000013" href="$classStr.html#a9f6d54ccea7fdadc2d9702fe92b187e0" title=" " alt="" coords="602,213,666,241"/>
+<area shape="poly" id="edge13_Node000011_Node000013" title=" " alt="" coords="497,187,588,212,586,217,496,192"/>
+<area shape="rect" id="Node000015" href="$classDisplay.html#a07648956496c282838d558a69482042e" title="Ordena os displays." alt="" coords="380,239,509,266"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="307,231,364,239,363,244,306,237"/>
+<area shape="rect" id="Node000016" href="$classDisplay.html#a227974f4eea136999a64e5b34b0a7234" title="Compara o número de linhas de dois display." alt="" coords="567,265,701,293"/>
+<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="510,259,552,265,551,270,509,264"/>
 </map>

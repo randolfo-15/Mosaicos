@@ -1,0 +1,7 @@
+<map id="Ground::operator++" name="Ground::operator++">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,159,33"/>
+<area shape="rect" id="Node000002" href="$structColour.html#a4140fe524dc3e4e9f6c0167590ef81a7" title=" " alt="" coords="207,5,355,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,17,191,17,191,22,159,22"/>
+<area shape="rect" id="Node000003" href="$structColour.html#a9e3be34f09da5fb644ef3157ec0b8c7d" title="Somatorio de propriedades das cores." alt="" coords="403,5,502,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="355,17,387,17,387,22,355,22"/>
+</map>

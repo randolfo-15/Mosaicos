@@ -15,7 +15,7 @@ class Ground:public Str,public Colour,public Highlight{
 //------------------------------------------------------------------------------------------------
 //  Build
 //------------------------------------------------------------------------------------------------ 
-public:         Ground();                                                                                        ///< Construtor padrão.
+public:        Ground();                                                                                        ///< Construtor padrão.
 protected:  Ground(Colour,const char* plan,Highlight=Hlg());                ///< Construtor para derivados.
 
 //------------------------------------------------------------------------------------------------
@@ -84,7 +84,7 @@ public:
 //-------------------------------------
 public:
     void operator=(Colour) override;                                                                ///< Atribui cor ao ground
-    void operator=(Highlight);                                                                            ///< Atribui efeito ao ground.
+    void operator=(Highlight) override;                                                           ///< Atribui efeito ao ground.
 //-------------------------------------
 // Deny    
 //-------------------------------------    

@@ -94,11 +94,10 @@ $(document).ready(function(){initNavTree('structColour.html',''); initResizable(
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-types">Protected Types</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="structColour-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Colour Struct Reference</div></div>
@@ -111,25 +110,31 @@ Inheritance diagram for Colour:</div>
 <div class="dyncontent">
 <div class="center"><img src="structColour__inherit__graph.png" border="0" usemap="#aColour_inherit__map" alt="Inheritance graph"/></div>
 <map name="aColour_inherit__map" id="aColour_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,213,69,241"/>
+<area shape="rect" title=" " alt="" coords="5,240,69,268"/>
 <area shape="rect" href="structColors_1_1Black.html" title=" " alt="" coords="127,5,234,33"/>
-<area shape="poly" title=" " alt="" coords="41,197,50,163,65,122,86,81,115,44,133,31,136,36,119,48,91,84,70,124,55,165,46,199"/>
+<area shape="poly" title=" " alt="" coords="39,224,47,185,61,137,83,88,115,44,132,31,135,36,119,48,88,90,66,139,52,186,45,225"/>
 <area shape="rect" href="structColors_1_1Blue.html" title=" " alt="" coords="131,57,230,85"/>
-<area shape="poly" title=" " alt="" coords="47,198,73,147,92,120,115,96,134,83,137,88,118,100,96,123,78,149,52,200"/>
+<area shape="poly" title=" " alt="" coords="44,224,69,161,89,126,115,96,133,83,136,88,118,100,93,129,74,163,49,226"/>
 <area shape="rect" href="structColors_1_1Cyan.html" title=" " alt="" coords="129,109,232,137"/>
-<area shape="poly" title=" " alt="" coords="58,200,84,173,115,148,138,135,140,140,118,152,87,177,62,203"/>
+<area shape="poly" title=" " alt="" coords="51,225,78,186,115,148,136,135,138,140,118,152,82,189,56,228"/>
 <area shape="rect" href="structColors_1_1Gray.html" title=" " alt="" coords="130,161,231,189"/>
-<area shape="poly" title=" " alt="" coords="82,208,139,187,141,192,84,213"/>
+<area shape="poly" title=" " alt="" coords="69,229,115,199,141,187,143,192,118,204,71,233"/>
 <area shape="rect" href="structColors_1_1Green.html" title=" " alt="" coords="126,213,235,241"/>
-<area shape="poly" title=" " alt="" coords="84,225,126,225,126,230,84,230"/>
+<area shape="poly" title=" " alt="" coords="84,243,125,235,126,240,85,248"/>
 <area shape="rect" href="structColors_1_1Magenta.html" title=" " alt="" coords="117,265,244,293"/>
-<area shape="poly" title=" " alt="" coords="84,241,141,262,139,267,82,246"/>
+<area shape="poly" title=" " alt="" coords="85,259,117,265,116,271,84,265"/>
 <area shape="rect" href="structColors_1_1Red.html" title=" " alt="" coords="133,317,228,345"/>
-<area shape="poly" title=" " alt="" coords="62,251,87,277,118,302,140,314,138,319,115,307,84,281,58,255"/>
+<area shape="poly" title=" " alt="" coords="72,274,118,302,143,314,141,319,115,307,69,279"/>
 <area shape="rect" href="structColors_1_1White.html" title=" " alt="" coords="126,369,235,397"/>
-<area shape="poly" title=" " alt="" coords="52,254,78,305,96,331,118,354,137,366,134,371,115,359,92,335,73,308,47,257"/>
+<area shape="poly" title=" " alt="" coords="56,280,82,318,118,354,138,367,136,371,115,359,78,321,51,283"/>
 <area shape="rect" href="structColors_1_1Yellow.html" title=" " alt="" coords="125,421,236,449"/>
-<area shape="poly" title=" " alt="" coords="46,256,55,290,70,330,91,371,119,407,136,419,133,423,115,410,86,374,65,332,50,291,41,257"/>
+<area shape="poly" title=" " alt="" coords="49,282,74,344,94,377,118,407,136,419,133,423,115,410,89,380,69,346,44,284"/>
+<area shape="rect" href="classGround.html" title=" " alt="" coords="146,473,215,501"/>
+<area shape="poly" title=" " alt="" coords="45,282,52,321,66,368,88,416,119,459,132,469,147,476,144,481,129,473,115,462,83,419,61,370,47,322,39,283"/>
+<area shape="rect" href="structBackground.html" title=" " alt="" coords="292,447,390,474"/>
+<area shape="poly" title=" " alt="" coords="229,476,291,466,292,471,230,482"/>
+<area shape="rect" href="structForeground.html" title=" " alt="" coords="294,499,388,526"/>
+<area shape="poly" title=" " alt="" coords="230,492,294,502,293,508,229,497"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -162,33 +167,45 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a420810d3406c60010965da6a880c9efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad474b81a90cabd535fe1c190d8becf99" id="r_ad474b81a90cabd535fe1c190d8becf99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structColour.html#a04b862e169f09105b42d115bae898116">nivel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structColour.html#ad474b81a90cabd535fe1c190d8becf99">blue</a> ()</td></tr>
 <tr class="separator:ad474b81a90cabd535fe1c190d8becf99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee0dfded9aee4493f696b5233bdfc2fd" id="r_aee0dfded9aee4493f696b5233bdfc2fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structColour.html">Colour</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structColour.html#aee0dfded9aee4493f696b5233bdfc2fd">operator+</a> (<a class="el" href="structColour.html">Colour</a>)</td></tr>
-<tr class="separator:aee0dfded9aee4493f696b5233bdfc2fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47528bd91920784dca5319e2ab8a8738" id="r_a47528bd91920784dca5319e2ab8a8738"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structColour.html">Colour</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structColour.html#a47528bd91920784dca5319e2ab8a8738">operator+</a> (<a class="el" href="structColour.html#a04b862e169f09105b42d115bae898116">nivel</a>)</td></tr>
+<tr class="memitem:ac0b77e3677806b01f2395167bb858530" id="r_ac0b77e3677806b01f2395167bb858530"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structColour.html">Colour</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structColour.html#ac0b77e3677806b01f2395167bb858530">operator+</a> (<a class="el" href="structColour.html">Colour</a>)</td></tr>
+<tr class="separator:ac0b77e3677806b01f2395167bb858530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47528bd91920784dca5319e2ab8a8738" id="r_a47528bd91920784dca5319e2ab8a8738"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structColour.html">Colour</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structColour.html#a47528bd91920784dca5319e2ab8a8738">operator+</a> (<a class="el" href="structColour.html#a04b862e169f09105b42d115bae898116">nivel</a>)</td></tr>
 <tr class="separator:a47528bd91920784dca5319e2ab8a8738"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d4d083e54929a298682e418370876b0" id="r_a9d4d083e54929a298682e418370876b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structColour.html#a9d4d083e54929a298682e418370876b0">operator+=</a> (<a class="el" href="structColour.html">Colour</a>)</td></tr>
-<tr class="separator:a9d4d083e54929a298682e418370876b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28479ec5dfd054460aae350ea12411af" id="r_a28479ec5dfd054460aae350ea12411af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structColour.html#a28479ec5dfd054460aae350ea12411af">operator+=</a> (<a class="el" href="structColour.html#a04b862e169f09105b42d115bae898116">nivel</a>)</td></tr>
+<tr class="memitem:a40be3f9c46f936ff06f7529fe896d84b" id="r_a40be3f9c46f936ff06f7529fe896d84b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structColour.html#a40be3f9c46f936ff06f7529fe896d84b">operator+=</a> (<a class="el" href="structColour.html">Colour</a>)</td></tr>
+<tr class="separator:a40be3f9c46f936ff06f7529fe896d84b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28479ec5dfd054460aae350ea12411af" id="r_a28479ec5dfd054460aae350ea12411af"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structColour.html#a28479ec5dfd054460aae350ea12411af">operator+=</a> (<a class="el" href="structColour.html#a04b862e169f09105b42d115bae898116">nivel</a>)</td></tr>
 <tr class="separator:a28479ec5dfd054460aae350ea12411af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4140fe524dc3e4e9f6c0167590ef81a7" id="r_a4140fe524dc3e4e9f6c0167590ef81a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structColour.html#a4140fe524dc3e4e9f6c0167590ef81a7">operator++</a> ()</td></tr>
+<tr class="memitem:a4140fe524dc3e4e9f6c0167590ef81a7" id="r_a4140fe524dc3e4e9f6c0167590ef81a7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structColour.html#a4140fe524dc3e4e9f6c0167590ef81a7">operator++</a> ()</td></tr>
 <tr class="separator:a4140fe524dc3e4e9f6c0167590ef81a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54b9aa4d19906547a633b0b7d3e6e43e" id="r_a54b9aa4d19906547a633b0b7d3e6e43e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structColour.html">Colour</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structColour.html#a54b9aa4d19906547a633b0b7d3e6e43e">operator-</a> (<a class="el" href="structColour.html">Colour</a>)</td></tr>
-<tr class="separator:a54b9aa4d19906547a633b0b7d3e6e43e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a581ad8cf25162b06419292db39ab77f5" id="r_a581ad8cf25162b06419292db39ab77f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structColour.html">Colour</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structColour.html#a581ad8cf25162b06419292db39ab77f5">operator-</a> (<a class="el" href="structColour.html#a04b862e169f09105b42d115bae898116">nivel</a>)</td></tr>
+<tr class="memitem:af4d93275b7dd7b4c79d78bff5e70fe43" id="r_af4d93275b7dd7b4c79d78bff5e70fe43"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structColour.html#af4d93275b7dd7b4c79d78bff5e70fe43">operator++</a> (int)</td></tr>
+<tr class="separator:af4d93275b7dd7b4c79d78bff5e70fe43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab59ae2e5ecb01c7ae5855a28826e7198" id="r_ab59ae2e5ecb01c7ae5855a28826e7198"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structColour.html">Colour</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structColour.html#ab59ae2e5ecb01c7ae5855a28826e7198">operator-</a> (<a class="el" href="structColour.html">Colour</a>)</td></tr>
+<tr class="separator:ab59ae2e5ecb01c7ae5855a28826e7198"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a581ad8cf25162b06419292db39ab77f5" id="r_a581ad8cf25162b06419292db39ab77f5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structColour.html">Colour</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structColour.html#a581ad8cf25162b06419292db39ab77f5">operator-</a> (<a class="el" href="structColour.html#a04b862e169f09105b42d115bae898116">nivel</a>)</td></tr>
 <tr class="separator:a581ad8cf25162b06419292db39ab77f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c143797a6cdb21c9dfa531ff3014541" id="r_a0c143797a6cdb21c9dfa531ff3014541"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structColour.html#a0c143797a6cdb21c9dfa531ff3014541">operator-=</a> (<a class="el" href="structColour.html">Colour</a>)</td></tr>
-<tr class="separator:a0c143797a6cdb21c9dfa531ff3014541"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29ee3e4ad4284a49a31aa8011590c36c" id="r_a29ee3e4ad4284a49a31aa8011590c36c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structColour.html#a29ee3e4ad4284a49a31aa8011590c36c">operator-=</a> (<a class="el" href="structColour.html#a04b862e169f09105b42d115bae898116">nivel</a>)</td></tr>
+<tr class="memitem:a01ab0dd81c091116c1e3e51ef39d6ffe" id="r_a01ab0dd81c091116c1e3e51ef39d6ffe"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structColour.html#a01ab0dd81c091116c1e3e51ef39d6ffe">operator-=</a> (<a class="el" href="structColour.html">Colour</a>)</td></tr>
+<tr class="separator:a01ab0dd81c091116c1e3e51ef39d6ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29ee3e4ad4284a49a31aa8011590c36c" id="r_a29ee3e4ad4284a49a31aa8011590c36c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structColour.html#a29ee3e4ad4284a49a31aa8011590c36c">operator-=</a> (<a class="el" href="structColour.html#a04b862e169f09105b42d115bae898116">nivel</a>)</td></tr>
 <tr class="separator:a29ee3e4ad4284a49a31aa8011590c36c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdc6696279d5ad3d27d7867b7bbaf0cd" id="r_afdc6696279d5ad3d27d7867b7bbaf0cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structColour.html#afdc6696279d5ad3d27d7867b7bbaf0cd">operator--</a> ()</td></tr>
+<tr class="memitem:afdc6696279d5ad3d27d7867b7bbaf0cd" id="r_afdc6696279d5ad3d27d7867b7bbaf0cd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structColour.html#afdc6696279d5ad3d27d7867b7bbaf0cd">operator--</a> ()</td></tr>
 <tr class="separator:afdc6696279d5ad3d27d7867b7bbaf0cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f9f133999b65f0392a8bf3a49af9359" id="r_a7f9f133999b65f0392a8bf3a49af9359"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structColour.html#a7f9f133999b65f0392a8bf3a49af9359">operator=</a> (<a class="el" href="structColour.html">Colour</a>)</td></tr>
-<tr class="separator:a7f9f133999b65f0392a8bf3a49af9359"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a436a8988f550d78ed5425c1f1db4e2da" id="r_a436a8988f550d78ed5425c1f1db4e2da"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structColour.html#a436a8988f550d78ed5425c1f1db4e2da">operator--</a> (int)</td></tr>
+<tr class="separator:a436a8988f550d78ed5425c1f1db4e2da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dafdbfe2fef9053a44e45cefb7cfe96" id="r_a7dafdbfe2fef9053a44e45cefb7cfe96"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structColour.html#a7dafdbfe2fef9053a44e45cefb7cfe96">operator=</a> (<a class="el" href="structColour.html">Colour</a>)</td></tr>
+<tr class="separator:a7dafdbfe2fef9053a44e45cefb7cfe96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aaa9d78c6f845863d4c2df60b31b1966a" id="r_aaa9d78c6f845863d4c2df60b31b1966a"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structColour.html#aaa9d78c6f845863d4c2df60b31b1966a">br</a> ()</td></tr>
-<tr class="separator:aaa9d78c6f845863d4c2df60b31b1966a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-types" name="pro-types"></a>
+Protected Types</h2></td></tr>
+<tr class="memitem:a75f9c790990a9046a85618397708adf0" id="r_a75f9c790990a9046a85618397708adf0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structColour.html#a75f9c790990a9046a85618397708adf0">RGB</a> { <a class="el" href="structColour.html#a75f9c790990a9046a85618397708adf0a535393d5878619167021d5e683adbf15">RED</a>
+, <a class="el" href="structColour.html#a75f9c790990a9046a85618397708adf0aa2d14e4bd3f93d6dd4dbdbd5a32f0d0d">GREEN</a>
+, <a class="el" href="structColour.html#a75f9c790990a9046a85618397708adf0acf43caf0a85a2a4ed0aa1ed399850e22">BLUE</a>
+ }</td></tr>
+<tr class="separator:a75f9c790990a9046a85618397708adf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a7ba74b55466a0f66e9dd7eb2a05e177d" id="r_a7ba74b55466a0f66e9dd7eb2a05e177d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structColour.html#a04b862e169f09105b42d115bae898116">nivel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structColour.html#a7ba74b55466a0f66e9dd7eb2a05e177d">rgb</a> [3] ={<a class="el" href="structColour.html#a45a0a10fe883c53eda01923575604e67">MAX</a>,<a class="el" href="structColour.html#a45a0a10fe883c53eda01923575604e67">MAX</a>,<a class="el" href="structColour.html#a45a0a10fe883c53eda01923575604e67">MAX</a>}</td></tr>
+<tr class="separator:a7ba74b55466a0f66e9dd7eb2a05e177d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
@@ -201,14 +218,6 @@ Static Protected Attributes</h2></td></tr>
 <tr class="memitem:a7aff1b6f504eaf348692844809ac330d" id="r_a7aff1b6f504eaf348692844809ac330d"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="structColour.html#a04b862e169f09105b42d115bae898116">nivel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structColour.html#a7aff1b6f504eaf348692844809ac330d">BASE</a> =3</td></tr>
 <tr class="separator:a7aff1b6f504eaf348692844809ac330d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:a75f9c790990a9046a85618397708adf0" id="r_a75f9c790990a9046a85618397708adf0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structColour.html#a75f9c790990a9046a85618397708adf0">RGB</a> { <a class="el" href="structColour.html#a75f9c790990a9046a85618397708adf0a535393d5878619167021d5e683adbf15">RED</a>
-, <a class="el" href="structColour.html#a75f9c790990a9046a85618397708adf0aa2d14e4bd3f93d6dd4dbdbd5a32f0d0d">GREEN</a>
-, <a class="el" href="structColour.html#a75f9c790990a9046a85618397708adf0acf43caf0a85a2a4ed0aa1ed399850e22">BLUE</a>
- }</td></tr>
-<tr class="separator:a75f9c790990a9046a85618397708adf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:aef8c6ee662ec6221a03113a44d18878e" id="r_aef8c6ee662ec6221a03113a44d18878e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structColour.html#a04b862e169f09105b42d115bae898116">nivel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structColour.html#aef8c6ee662ec6221a03113a44d18878e">check</a> (short)</td></tr>
@@ -218,11 +227,6 @@ Private Member Functions</h2></td></tr>
 <tr class="memdesc:a9e3be34f09da5fb644ef3157ec0b8c7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Somatorio de propriedades das cores.  <br /></td></tr>
 <tr class="separator:a9e3be34f09da5fb644ef3157ec0b8c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a7ba74b55466a0f66e9dd7eb2a05e177d" id="r_a7ba74b55466a0f66e9dd7eb2a05e177d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structColour.html#a04b862e169f09105b42d115bae898116">nivel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structColour.html#a7ba74b55466a0f66e9dd7eb2a05e177d">rgb</a> [3] ={<a class="el" href="structColour.html#a45a0a10fe883c53eda01923575604e67">MAX</a>,<a class="el" href="structColour.html#a45a0a10fe883c53eda01923575604e67">MAX</a>,<a class="el" href="structColour.html#a45a0a10fe883c53eda01923575604e67">MAX</a>}</td></tr>
-<tr class="separator:a7ba74b55466a0f66e9dd7eb2a05e177d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
 <tr class="memitem:ab4ddd5bcabe322a2f817c131b0bb9dd1" id="r_ab4ddd5bcabe322a2f817c131b0bb9dd1"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="structColour.html#a04b862e169f09105b42d115bae898116">nivel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structColour.html#ab4ddd5bcabe322a2f817c131b0bb9dd1">pixel</a> [3] ={1,1,1}</td></tr>
@@ -230,7 +234,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="colour_8hpp_source.html#l00013">13</a> of file <a class="el" href="colour_8hpp_source.html">colour.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="colour_8hpp_source.html#l00012">12</a> of file <a class="el" href="colour_8hpp_source.html">colour.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a04b862e169f09105b42d115bae898116" name="a04b862e169f09105b42d115bae898116"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a04b862e169f09105b42d115bae898116">&#9670;&#160;</a></span>nivel</h2>
@@ -312,7 +316,7 @@ Static Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -322,7 +326,7 @@ Static Private Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="a75f9c790990a9046a85618397708adf0acf43caf0a85a2a4ed0aa1ed399850e22" name="a75f9c790990a9046a85618397708adf0acf43caf0a85a2a4ed0aa1ed399850e22"></a>BLUE&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="colour_8hpp_source.html#l00063">63</a> of file <a class="el" href="colour_8hpp_source.html">colour.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="colour_8hpp_source.html#l00049">49</a> of file <a class="el" href="colour_8hpp_source.html">colour.hpp</a>.</p>
 
 </div>
 </div>
@@ -342,7 +346,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="colour_8cpp_source.html#l00020">20</a> of file <a class="el" href="colour_8cpp_source.html">colour.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="colour_8cpp_source.html#l00021">21</a> of file <a class="el" href="colour_8cpp_source.html">colour.cpp</a>.</p>
 
 </div>
 </div>
@@ -378,7 +382,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="colour_8cpp_source.html#l00022">22</a> of file <a class="el" href="colour_8cpp_source.html">colour.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="colour_8cpp_source.html#l00023">23</a> of file <a class="el" href="colour_8cpp_source.html">colour.cpp</a>.</p>
 
 </div>
 </div>
@@ -398,7 +402,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="colour_8cpp_source.html#l00041">41</a> of file <a class="el" href="colour_8cpp_source.html">colour.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="colour_8cpp_source.html#l00042">42</a> of file <a class="el" href="colour_8cpp_source.html">colour.cpp</a>.</p>
 
 </div>
 </div>
@@ -418,50 +422,15 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="colour_8cpp_source.html#l00032">32</a> of file <a class="el" href="colour_8cpp_source.html">colour.cpp</a>.</p>
-
-</div>
-</div>
-<a id="aaa9d78c6f845863d4c2df60b31b1966a" name="aaa9d78c6f845863d4c2df60b31b1966a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa9d78c6f845863d4c2df60b31b1966a">&#9670;&#160;</a></span>br()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string Clr::br </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="colour_8cpp_source.html#l00085">85</a> of file <a class="el" href="colour_8cpp_source.html">colour.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="colour_8cpp_source.html#l00033">33</a> of file <a class="el" href="colour_8cpp_source.html">colour.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="structColour_aaa9d78c6f845863d4c2df60b31b1966a_icgraph.png" border="0" usemap="#astructColour_aaa9d78c6f845863d4c2df60b31b1966a_icgraph" alt=""/></div>
-<map name="astructColour_aaa9d78c6f845863d4c2df60b31b1966a_icgraph" id="astructColour_aaa9d78c6f845863d4c2df60b31b1966a_icgraph">
-<area shape="rect" title=" " alt="" coords="722,32,806,60"/>
-<area shape="rect" href="classDisplay.html#aa6481f312f80e4be3a98433b1df37eba" title="Desenha a linha." alt="" coords="533,5,674,33"/>
-<area shape="poly" title=" " alt="" coords="706,39,674,33,674,28,707,34"/>
-<area shape="rect" href="classDisplay.html#a87f6056bd7603edf0a62cd16865d45be" title="Retorna encerramento de string." alt="" coords="553,57,654,85"/>
-<area shape="poly" title=" " alt="" coords="707,58,655,66,654,61,706,52"/>
-<area shape="rect" href="classDisplay.html#a7067b1c2ae91dfb50b501a5bf108f0d7" title="Lista o conjunto de linhas do buffer." alt="" coords="322,5,485,33"/>
-<area shape="poly" title=" " alt="" coords="518,22,486,22,486,17,518,17"/>
-<area shape="rect" href="classDisplay.html#aff68881c09f41172cfb03e76ae99c664" title="Motor de animação da janelas." alt="" coords="165,5,274,33"/>
-<area shape="poly" title=" " alt="" coords="307,22,275,22,275,17,307,17"/>
-<area shape="rect" href="classDisplay.html#a41c7b479921bb4aedae03a866f4e8e10" title="retorna a imagem do distema atual." alt="" coords="5,5,117,33"/>
-<area shape="poly" title=" " alt="" coords="149,22,117,22,117,17,149,17"/>
+<div class="center"><img src="structColour_a7a9d445a6099579e04ea7308899a82ba_icgraph.png" border="0" usemap="#astructColour_a7a9d445a6099579e04ea7308899a82ba_icgraph" alt=""/></div>
+<map name="astructColour_a7a9d445a6099579e04ea7308899a82ba_icgraph" id="astructColour_a7a9d445a6099579e04ea7308899a82ba_icgraph">
+<area shape="rect" title=" " alt="" coords="167,5,266,33"/>
+<area shape="rect" href="classGround.html#a3d16df1f4f4a5a21f9fce8a20163a130" title="Cast colour para string." alt="" coords="5,5,119,33"/>
+<area shape="poly" title=" " alt="" coords="151,22,119,22,119,17,151,17"/>
 </map>
 </div>
 
@@ -493,7 +462,7 @@ Here is the caller graph for this function:</div>
 
 <p>Verifica o Max, e Min aceito para uma cor. </p>
 
-<p class="definition">Definition at line <a class="el" href="colour_8cpp_source.html#l00080">80</a> of file <a class="el" href="colour_8cpp_source.html">colour.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="colour_8cpp_source.html#l00085">85</a> of file <a class="el" href="colour_8cpp_source.html">colour.cpp</a>.</p>
 
 </div>
 </div>
@@ -512,7 +481,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="colour_8cpp_source.html#l00039">39</a> of file <a class="el" href="colour_8cpp_source.html">colour.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="colour_8cpp_source.html#l00040">40</a> of file <a class="el" href="colour_8cpp_source.html">colour.cpp</a>.</p>
 
 </div>
 </div>
@@ -532,25 +501,57 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="colour_8cpp_source.html#l00030">30</a> of file <a class="el" href="colour_8cpp_source.html">colour.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="colour_8cpp_source.html#l00031">31</a> of file <a class="el" href="colour_8cpp_source.html">colour.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="structColour_a7828ec8ad9b877a93298a671bc44e03b_icgraph.png" border="0" usemap="#astructColour_a7828ec8ad9b877a93298a671bc44e03b_icgraph" alt=""/></div>
+<map name="astructColour_a7828ec8ad9b877a93298a671bc44e03b_icgraph" id="astructColour_a7828ec8ad9b877a93298a671bc44e03b_icgraph">
+<area shape="rect" title=" " alt="" coords="167,5,275,33"/>
+<area shape="rect" href="classGround.html#a3d16df1f4f4a5a21f9fce8a20163a130" title="Cast colour para string." alt="" coords="5,5,119,33"/>
+<area shape="poly" title=" " alt="" coords="151,22,119,22,119,17,151,17"/>
+</map>
+</div>
 
 </div>
 </div>
-<a id="aee0dfded9aee4493f696b5233bdfc2fd" name="aee0dfded9aee4493f696b5233bdfc2fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee0dfded9aee4493f696b5233bdfc2fd">&#9670;&#160;</a></span>operator+() <span class="overload">[1/2]</span></h2>
+<a id="ac0b77e3677806b01f2395167bb858530" name="ac0b77e3677806b01f2395167bb858530"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0b77e3677806b01f2395167bb858530">&#9670;&#160;</a></span>operator+() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structColour.html">Colour</a> Colour::operator+ </td>
+          <td class="memname">virtual <a class="el" href="structColour.html">Colour</a> Colour::operator+ </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structColour.html">Colour</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classGround.html#adf6e23e843e02d0043bb51454e5b2457">Ground</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="structColour_ac0b77e3677806b01f2395167bb858530_icgraph.png" border="0" usemap="#astructColour_ac0b77e3677806b01f2395167bb858530_icgraph" alt=""/></div>
+<map name="astructColour_ac0b77e3677806b01f2395167bb858530_icgraph" id="astructColour_ac0b77e3677806b01f2395167bb858530_icgraph">
+<area shape="rect" title=" " alt="" coords="196,32,333,60"/>
+<area shape="rect" href="classGround.html#adf6e23e843e02d0043bb51454e5b2457" title=" " alt="" coords="5,5,148,33"/>
+<area shape="poly" title=" " alt="" coords="180,37,148,32,149,27,181,31"/>
+<area shape="rect" href="classGround.html#a704a0a85fc9de437e8751e75b787f4d8" title=" " alt="" coords="5,57,148,85"/>
+<area shape="poly" title=" " alt="" coords="181,60,149,64,148,59,180,55"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -559,6 +560,9 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="structColour.html">Colour</a> Clr::operator+ </td>
@@ -568,9 +572,16 @@ Here is the caller graph for this function:</div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="colour_8cpp_source.html#l00048">48</a> of file <a class="el" href="colour_8cpp_source.html">colour.cpp</a>.</p>
+<p>Reimplemented in <a class="el" href="classGround.html#a704a0a85fc9de437e8751e75b787f4d8">Ground</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="colour_8cpp_source.html#l00049">49</a> of file <a class="el" href="colour_8cpp_source.html">colour.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -585,10 +596,13 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a4140fe524dc3e4e9f6c0167590ef81a7" name="a4140fe524dc3e4e9f6c0167590ef81a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4140fe524dc3e4e9f6c0167590ef81a7">&#9670;&#160;</a></span>operator++()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4140fe524dc3e4e9f6c0167590ef81a7">&#9670;&#160;</a></span>operator++() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Clr::operator++ </td>
@@ -597,9 +611,16 @@ Here is the call graph for this function:</div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="colour_8cpp_source.html#l00052">52</a> of file <a class="el" href="colour_8cpp_source.html">colour.cpp</a>.</p>
+<p>Reimplemented in <a class="el" href="classGround.html#a37820f40afbda8b20598ada2321a7270">Ground</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="colour_8cpp_source.html#l00053">53</a> of file <a class="el" href="colour_8cpp_source.html">colour.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -610,24 +631,98 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="154,17,186,17,186,22,154,22"/>
 </map>
 </div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="structColour_a4140fe524dc3e4e9f6c0167590ef81a7_icgraph.png" border="0" usemap="#astructColour_a4140fe524dc3e4e9f6c0167590ef81a7_icgraph" alt=""/></div>
+<map name="astructColour_a4140fe524dc3e4e9f6c0167590ef81a7_icgraph" id="astructColour_a4140fe524dc3e4e9f6c0167590ef81a7_icgraph">
+<area shape="rect" title=" " alt="" coords="207,32,355,60"/>
+<area shape="rect" href="classGround.html#a37820f40afbda8b20598ada2321a7270" title=" " alt="" coords="5,5,159,33"/>
+<area shape="poly" title=" " alt="" coords="191,36,159,32,159,27,192,31"/>
+<area shape="rect" href="classGround.html#ace3c93963e59f04c0e4fcf7c0fc75920" title=" " alt="" coords="5,57,159,85"/>
+<area shape="poly" title=" " alt="" coords="192,60,159,64,159,59,191,55"/>
+</map>
+</div>
 
 </div>
 </div>
-<a id="a9d4d083e54929a298682e418370876b0" name="a9d4d083e54929a298682e418370876b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d4d083e54929a298682e418370876b0">&#9670;&#160;</a></span>operator+=() <span class="overload">[1/2]</span></h2>
+<a id="af4d93275b7dd7b4c79d78bff5e70fe43" name="af4d93275b7dd7b4c79d78bff5e70fe43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4d93275b7dd7b4c79d78bff5e70fe43">&#9670;&#160;</a></span>operator++() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Colour::operator+= </td>
+          <td class="memname">void Clr::operator++ </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classGround.html#ace3c93963e59f04c0e4fcf7c0fc75920">Ground</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="colour_8cpp_source.html#l00055">55</a> of file <a class="el" href="colour_8cpp_source.html">colour.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="structColour_af4d93275b7dd7b4c79d78bff5e70fe43_cgraph.png" border="0" usemap="#astructColour_af4d93275b7dd7b4c79d78bff5e70fe43_cgraph" alt=""/></div>
+<map name="astructColour_af4d93275b7dd7b4c79d78bff5e70fe43_cgraph" id="astructColour_af4d93275b7dd7b4c79d78bff5e70fe43_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,154,33"/>
+<area shape="rect" href="structColour.html#a9e3be34f09da5fb644ef3157ec0b8c7d" title="Somatorio de propriedades das cores." alt="" coords="202,5,301,33"/>
+<area shape="poly" title=" " alt="" coords="154,17,186,17,186,22,154,22"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a40be3f9c46f936ff06f7529fe896d84b" name="a40be3f9c46f936ff06f7529fe896d84b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40be3f9c46f936ff06f7529fe896d84b">&#9670;&#160;</a></span>operator+=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Colour::operator+= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structColour.html">Colour</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classGround.html#abcda0bf2d33dae807c88332094949b4b">Ground</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="structColour_a40be3f9c46f936ff06f7529fe896d84b_icgraph.png" border="0" usemap="#astructColour_a40be3f9c46f936ff06f7529fe896d84b_icgraph" alt=""/></div>
+<map name="astructColour_a40be3f9c46f936ff06f7529fe896d84b_icgraph" id="astructColour_a40be3f9c46f936ff06f7529fe896d84b_icgraph">
+<area shape="rect" title=" " alt="" coords="207,32,355,60"/>
+<area shape="rect" href="classGround.html#abcda0bf2d33dae807c88332094949b4b" title=" " alt="" coords="5,5,159,33"/>
+<area shape="poly" title=" " alt="" coords="191,36,159,32,159,27,192,31"/>
+<area shape="rect" href="classGround.html#a532332fadbde31323b2a2c10193e2f7d" title=" " alt="" coords="5,57,159,85"/>
+<area shape="poly" title=" " alt="" coords="192,60,159,64,159,59,191,55"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -636,6 +731,9 @@ Here is the call graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Clr::operator+= </td>
@@ -645,9 +743,16 @@ Here is the call graph for this function:</div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="colour_8cpp_source.html#l00050">50</a> of file <a class="el" href="colour_8cpp_source.html">colour.cpp</a>.</p>
+<p>Reimplemented in <a class="el" href="classGround.html#a532332fadbde31323b2a2c10193e2f7d">Ground</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="colour_8cpp_source.html#l00051">51</a> of file <a class="el" href="colour_8cpp_source.html">colour.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -661,21 +766,43 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a54b9aa4d19906547a633b0b7d3e6e43e" name="a54b9aa4d19906547a633b0b7d3e6e43e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54b9aa4d19906547a633b0b7d3e6e43e">&#9670;&#160;</a></span>operator-() <span class="overload">[1/2]</span></h2>
+<a id="ab59ae2e5ecb01c7ae5855a28826e7198" name="ab59ae2e5ecb01c7ae5855a28826e7198"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab59ae2e5ecb01c7ae5855a28826e7198">&#9670;&#160;</a></span>operator-() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structColour.html">Colour</a> Colour::operator- </td>
+          <td class="memname">virtual <a class="el" href="structColour.html">Colour</a> Colour::operator- </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structColour.html">Colour</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classGround.html#a5264a671c14e6dfed0146ec42f393c7b">Ground</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="structColour_ab59ae2e5ecb01c7ae5855a28826e7198_icgraph.png" border="0" usemap="#astructColour_ab59ae2e5ecb01c7ae5855a28826e7198_icgraph" alt=""/></div>
+<map name="astructColour_ab59ae2e5ecb01c7ae5855a28826e7198_icgraph" id="astructColour_ab59ae2e5ecb01c7ae5855a28826e7198_icgraph">
+<area shape="rect" title=" " alt="" coords="190,32,321,60"/>
+<area shape="rect" href="classGround.html#a5264a671c14e6dfed0146ec42f393c7b" title=" " alt="" coords="5,5,142,33"/>
+<area shape="poly" title=" " alt="" coords="174,37,141,32,142,27,175,31"/>
+<area shape="rect" href="classGround.html#a0f130175826c5a6f162d265fdb603d96" title=" " alt="" coords="5,57,142,85"/>
+<area shape="poly" title=" " alt="" coords="175,60,142,64,141,59,174,54"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -684,6 +811,9 @@ Here is the call graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="structColour.html">Colour</a> Clr::operator- </td>
@@ -693,9 +823,16 @@ Here is the call graph for this function:</div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="colour_8cpp_source.html#l00061">61</a> of file <a class="el" href="colour_8cpp_source.html">colour.cpp</a>.</p>
+<p>Reimplemented in <a class="el" href="classGround.html#a0f130175826c5a6f162d265fdb603d96">Ground</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="colour_8cpp_source.html#l00064">64</a> of file <a class="el" href="colour_8cpp_source.html">colour.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -710,10 +847,13 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="afdc6696279d5ad3d27d7867b7bbaf0cd" name="afdc6696279d5ad3d27d7867b7bbaf0cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afdc6696279d5ad3d27d7867b7bbaf0cd">&#9670;&#160;</a></span>operator--()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afdc6696279d5ad3d27d7867b7bbaf0cd">&#9670;&#160;</a></span>operator--() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Clr::operator-- </td>
@@ -722,9 +862,16 @@ Here is the call graph for this function:</div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="colour_8cpp_source.html#l00065">65</a> of file <a class="el" href="colour_8cpp_source.html">colour.cpp</a>.</p>
+<p>Reimplemented in <a class="el" href="classGround.html#aee049d314127ca6e6f078023fa0f88fb">Ground</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="colour_8cpp_source.html#l00068">68</a> of file <a class="el" href="colour_8cpp_source.html">colour.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -735,24 +882,98 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="142,17,174,17,174,22,142,22"/>
 </map>
 </div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="structColour_afdc6696279d5ad3d27d7867b7bbaf0cd_icgraph.png" border="0" usemap="#astructColour_afdc6696279d5ad3d27d7867b7bbaf0cd_icgraph" alt=""/></div>
+<map name="astructColour_afdc6696279d5ad3d27d7867b7bbaf0cd_icgraph" id="astructColour_afdc6696279d5ad3d27d7867b7bbaf0cd_icgraph">
+<area shape="rect" title=" " alt="" coords="195,32,331,60"/>
+<area shape="rect" href="classGround.html#aee049d314127ca6e6f078023fa0f88fb" title=" " alt="" coords="5,5,147,33"/>
+<area shape="poly" title=" " alt="" coords="179,37,147,32,147,27,180,31"/>
+<area shape="rect" href="classGround.html#a35d64f320f2a5e60d2c3c937a00f6805" title=" " alt="" coords="5,57,147,85"/>
+<area shape="poly" title=" " alt="" coords="180,60,147,64,147,59,179,54"/>
+</map>
+</div>
 
 </div>
 </div>
-<a id="a0c143797a6cdb21c9dfa531ff3014541" name="a0c143797a6cdb21c9dfa531ff3014541"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c143797a6cdb21c9dfa531ff3014541">&#9670;&#160;</a></span>operator-=() <span class="overload">[1/2]</span></h2>
+<a id="a436a8988f550d78ed5425c1f1db4e2da" name="a436a8988f550d78ed5425c1f1db4e2da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a436a8988f550d78ed5425c1f1db4e2da">&#9670;&#160;</a></span>operator--() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Colour::operator-= </td>
+          <td class="memname">void Clr::operator-- </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classGround.html#a35d64f320f2a5e60d2c3c937a00f6805">Ground</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="colour_8cpp_source.html#l00070">70</a> of file <a class="el" href="colour_8cpp_source.html">colour.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="structColour_a436a8988f550d78ed5425c1f1db4e2da_cgraph.png" border="0" usemap="#astructColour_a436a8988f550d78ed5425c1f1db4e2da_cgraph" alt=""/></div>
+<map name="astructColour_a436a8988f550d78ed5425c1f1db4e2da_cgraph" id="astructColour_a436a8988f550d78ed5425c1f1db4e2da_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,142,33"/>
+<area shape="rect" href="structColour.html#a9e3be34f09da5fb644ef3157ec0b8c7d" title="Somatorio de propriedades das cores." alt="" coords="190,5,289,33"/>
+<area shape="poly" title=" " alt="" coords="142,17,174,17,174,22,142,22"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a01ab0dd81c091116c1e3e51ef39d6ffe" name="a01ab0dd81c091116c1e3e51ef39d6ffe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01ab0dd81c091116c1e3e51ef39d6ffe">&#9670;&#160;</a></span>operator-=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Colour::operator-= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structColour.html">Colour</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classGround.html#a0472a8b63979e7a632422b9e73527faf">Ground</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="structColour_a01ab0dd81c091116c1e3e51ef39d6ffe_icgraph.png" border="0" usemap="#astructColour_a01ab0dd81c091116c1e3e51ef39d6ffe_icgraph" alt=""/></div>
+<map name="astructColour_a01ab0dd81c091116c1e3e51ef39d6ffe_icgraph" id="astructColour_a01ab0dd81c091116c1e3e51ef39d6ffe_icgraph">
+<area shape="rect" title=" " alt="" coords="201,32,343,60"/>
+<area shape="rect" href="classGround.html#a0472a8b63979e7a632422b9e73527faf" title=" " alt="" coords="5,5,153,33"/>
+<area shape="poly" title=" " alt="" coords="185,37,152,32,153,27,186,31"/>
+<area shape="rect" href="classGround.html#aa0955a76e19c32c4f3d677df61219270" title=" " alt="" coords="5,57,153,85"/>
+<area shape="poly" title=" " alt="" coords="186,60,153,64,153,59,185,55"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -761,6 +982,9 @@ Here is the call graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Clr::operator-= </td>
@@ -770,9 +994,16 @@ Here is the call graph for this function:</div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="colour_8cpp_source.html#l00063">63</a> of file <a class="el" href="colour_8cpp_source.html">colour.cpp</a>.</p>
+<p>Reimplemented in <a class="el" href="classGround.html#aa0955a76e19c32c4f3d677df61219270">Ground</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="colour_8cpp_source.html#l00066">66</a> of file <a class="el" href="colour_8cpp_source.html">colour.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -786,21 +1017,31 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a7f9f133999b65f0392a8bf3a49af9359" name="a7f9f133999b65f0392a8bf3a49af9359"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f9f133999b65f0392a8bf3a49af9359">&#9670;&#160;</a></span>operator=()</h2>
+<a id="a7dafdbfe2fef9053a44e45cefb7cfe96" name="a7dafdbfe2fef9053a44e45cefb7cfe96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dafdbfe2fef9053a44e45cefb7cfe96">&#9670;&#160;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Colour::operator= </td>
+          <td class="memname">virtual void Colour::operator= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structColour.html">Colour</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classGround.html#a5a08608ee2d39e4c40b9167ed2c23a20">Ground</a>.</p>
 
 </div>
 </div>
@@ -819,7 +1060,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="colour_8cpp_source.html#l00037">37</a> of file <a class="el" href="colour_8cpp_source.html">colour.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="colour_8cpp_source.html#l00038">38</a> of file <a class="el" href="colour_8cpp_source.html">colour.cpp</a>.</p>
 
 </div>
 </div>
@@ -839,7 +1080,17 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="colour_8cpp_source.html#l00028">28</a> of file <a class="el" href="colour_8cpp_source.html">colour.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="colour_8cpp_source.html#l00029">29</a> of file <a class="el" href="colour_8cpp_source.html">colour.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="structColour_af019c5ba882abc868957780a4ef2d078_icgraph.png" border="0" usemap="#astructColour_af019c5ba882abc868957780a4ef2d078_icgraph" alt=""/></div>
+<map name="astructColour_af019c5ba882abc868957780a4ef2d078_icgraph" id="astructColour_af019c5ba882abc868957780a4ef2d078_icgraph">
+<area shape="rect" title=" " alt="" coords="167,5,259,33"/>
+<area shape="rect" href="classGround.html#a3d16df1f4f4a5a21f9fce8a20163a130" title="Cast colour para string." alt="" coords="5,5,119,33"/>
+<area shape="poly" title=" " alt="" coords="151,22,119,22,119,17,151,17"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -901,19 +1152,31 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="structColour_a9e3be34f09da5fb644ef3157ec0b8c7d_icgraph.png" border="0" usemap="#astructColour_a9e3be34f09da5fb644ef3157ec0b8c7d_icgraph" alt=""/></div>
 <map name="astructColour_a9e3be34f09da5fb644ef3157ec0b8c7d_icgraph" id="astructColour_a9e3be34f09da5fb644ef3157ec0b8c7d_icgraph">
-<area shape="rect" title="Somatorio de propriedades das cores." alt="" coords="202,136,301,164"/>
-<area shape="rect" href="structColour.html#a47528bd91920784dca5319e2ab8a8738" title=" " alt="" coords="11,5,148,33"/>
-<area shape="poly" title=" " alt="" coords="229,125,196,86,152,48,129,36,131,31,155,44,200,82,234,122"/>
-<area shape="rect" href="structColour.html#a4140fe524dc3e4e9f6c0167590ef81a7" title=" " alt="" coords="5,57,154,85"/>
-<area shape="poly" title=" " alt="" coords="211,130,153,100,123,88,125,83,155,95,214,126"/>
-<area shape="rect" href="structColour.html#a28479ec5dfd054460aae350ea12411af" title=" " alt="" coords="5,109,154,137"/>
-<area shape="poly" title=" " alt="" coords="186,142,154,137,155,132,187,137"/>
-<area shape="rect" href="structColour.html#a581ad8cf25162b06419292db39ab77f5" title=" " alt="" coords="14,161,145,189"/>
-<area shape="poly" title=" " alt="" coords="186,162,146,168,145,163,186,157"/>
-<area shape="rect" href="structColour.html#afdc6696279d5ad3d27d7867b7bbaf0cd" title=" " alt="" coords="11,213,148,241"/>
-<area shape="poly" title=" " alt="" coords="213,174,155,203,124,215,122,210,153,198,210,169"/>
-<area shape="rect" href="structColour.html#a29ee3e4ad4284a49a31aa8011590c36c" title=" " alt="" coords="8,265,151,293"/>
-<area shape="poly" title=" " alt="" coords="233,178,199,217,155,255,131,267,129,262,152,250,195,213,229,175"/>
+<area shape="rect" title="Somatorio de propriedades das cores." alt="" coords="403,188,502,216"/>
+<area shape="rect" href="structColour.html#a47528bd91920784dca5319e2ab8a8738" title=" " alt="" coords="212,5,350,33"/>
+<area shape="poly" title=" " alt="" coords="438,175,406,111,382,77,353,48,334,36,336,31,357,44,386,74,411,108,443,172"/>
+<area shape="rect" href="structColour.html#a4140fe524dc3e4e9f6c0167590ef81a7" title=" " alt="" coords="207,57,355,85"/>
+<area shape="poly" title=" " alt="" coords="431,177,397,138,354,100,330,88,333,83,356,96,401,134,435,174"/>
+<area shape="rect" href="structColour.html#af4d93275b7dd7b4c79d78bff5e70fe43" title=" " alt="" coords="207,109,355,137"/>
+<area shape="poly" title=" " alt="" coords="413,182,354,152,324,140,326,135,356,147,415,178"/>
+<area shape="rect" href="structColour.html#a28479ec5dfd054460aae350ea12411af" title=" " alt="" coords="207,161,355,189"/>
+<area shape="poly" title=" " alt="" coords="387,194,355,189,356,184,388,189"/>
+<area shape="rect" href="structColour.html#a581ad8cf25162b06419292db39ab77f5" title=" " alt="" coords="215,213,347,241"/>
+<area shape="poly" title=" " alt="" coords="388,214,347,220,346,215,387,209"/>
+<area shape="rect" href="structColour.html#afdc6696279d5ad3d27d7867b7bbaf0cd" title=" " alt="" coords="213,265,349,293"/>
+<area shape="poly" title=" " alt="" coords="414,226,356,255,326,267,324,262,354,250,412,221"/>
+<area shape="rect" href="structColour.html#a436a8988f550d78ed5425c1f1db4e2da" title=" " alt="" coords="213,317,349,345"/>
+<area shape="poly" title=" " alt="" coords="434,230,401,269,356,307,333,319,330,314,354,302,397,265,430,227"/>
+<area shape="rect" href="structColour.html#a29ee3e4ad4284a49a31aa8011590c36c" title=" " alt="" coords="210,369,352,397"/>
+<area shape="poly" title=" " alt="" coords="443,231,410,295,386,329,357,359,336,371,333,367,353,354,382,325,406,292,438,229"/>
+<area shape="rect" href="classGround.html#a37820f40afbda8b20598ada2321a7270" title=" " alt="" coords="5,32,159,60"/>
+<area shape="poly" title=" " alt="" coords="191,62,159,58,159,53,192,57"/>
+<area shape="rect" href="classGround.html#ace3c93963e59f04c0e4fcf7c0fc75920" title=" " alt="" coords="5,84,159,112"/>
+<area shape="poly" title=" " alt="" coords="192,86,159,90,159,85,191,81"/>
+<area shape="rect" href="classGround.html#aee049d314127ca6e6f078023fa0f88fb" title=" " alt="" coords="11,240,153,268"/>
+<area shape="poly" title=" " alt="" coords="197,271,153,265,153,260,198,266"/>
+<area shape="rect" href="classGround.html#a35d64f320f2a5e60d2c3c937a00f6805" title=" " alt="" coords="11,292,153,320"/>
+<area shape="poly" title=" " alt="" coords="198,293,153,299,153,294,197,288"/>
 </map>
 </div>
 
@@ -940,7 +1203,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="colour_8hpp_source.html#l00054">54</a> of file <a class="el" href="colour_8hpp_source.html">colour.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="colour_8hpp_source.html#l00055">55</a> of file <a class="el" href="colour_8hpp_source.html">colour.hpp</a>.</p>
 
 </div>
 </div>
@@ -964,7 +1227,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="colour_8hpp_source.html#l00053">53</a> of file <a class="el" href="colour_8hpp_source.html">colour.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="colour_8hpp_source.html#l00054">54</a> of file <a class="el" href="colour_8hpp_source.html">colour.hpp</a>.</p>
 
 </div>
 </div>
@@ -988,7 +1251,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="colour_8hpp_source.html#l00051">51</a> of file <a class="el" href="colour_8hpp_source.html">colour.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="colour_8hpp_source.html#l00052">52</a> of file <a class="el" href="colour_8hpp_source.html">colour.hpp</a>.</p>
 
 </div>
 </div>
@@ -1012,7 +1275,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="colour_8hpp_source.html#l00052">52</a> of file <a class="el" href="colour_8hpp_source.html">colour.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="colour_8hpp_source.html#l00053">53</a> of file <a class="el" href="colour_8hpp_source.html">colour.hpp</a>.</p>
 
 </div>
 </div>
@@ -1036,7 +1299,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="colour_8hpp_source.html#l00067">67</a> of file <a class="el" href="colour_8hpp_source.html">colour.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="colour_8hpp_source.html#l00064">64</a> of file <a class="el" href="colour_8hpp_source.html">colour.hpp</a>.</p>
 
 </div>
 </div>
@@ -1055,12 +1318,12 @@ Here is the caller graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="colour_8hpp_source.html#l00065">65</a> of file <a class="el" href="colour_8hpp_source.html">colour.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="colour_8hpp_source.html#l00066">66</a> of file <a class="el" href="colour_8hpp_source.html">colour.hpp</a>.</p>
 
 </div>
 </div>

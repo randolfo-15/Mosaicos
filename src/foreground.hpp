@@ -16,6 +16,7 @@ struct Foreground:public Ground{
     Foreground(Colour,Highlight);
     
     std::string operator!() override;                                                                    
+    void operator=(Hlg) override;
     
     private: static const char PLAN[6];
 

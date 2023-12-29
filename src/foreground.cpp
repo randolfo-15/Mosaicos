@@ -26,3 +26,4 @@ Fg::Foreground(Colour new_clr,Hlg efc):Ground(new_clr,Fg::PLAN,efc){}
 //------------------------------------------------------------------------------------------------
 std::string Fg::operator!(){ return buf[HEAD]+"39"+buf[TAIL];}
 
+void Fg::operator=(Hlg hlg){this->Gd::operator=(hlg); }

@@ -20,9 +20,9 @@ const char
 Gd::Ground():Ground(Clr(),"",Hlg()){}
 
 Gd::Ground(Clr clr,const char* plan,Hlg efc):
-    Str(7),
-    Colour(clr.red(),clr.green(),clr.blue()),
-    Highlight(efc)
+    Str(5),
+    Colour(clr.red(),clr.green(),clr.blue())
+//    Highlight(efc)
 { 
     buf[HEAD]=BEG;
     buf[PLAN]=plan;
@@ -75,7 +75,7 @@ std::string Gd::operator!(){ return buf[HEAD]+"0"+buf[TAIL];}
 //------------------------------------------------------------------------------------------------
 // Getting
 //------------------------------------------------------------------------------------------------
-Hlg Gd::highlight(){ return *this; }
+Hlg Gd::highlight(){ return Hlg(); }
 
 Clr Gd::colour(){  return *this; }
 //------------------------------------------------------------------------------------------------

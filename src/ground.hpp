@@ -11,7 +11,7 @@
 #include "colour.hpp"
 #include "effect.hpp"
 
-class Ground:public Str,public Colour,public Highlight{    
+class Ground:public Str,public Colour, public Highlight{    
 //------------------------------------------------------------------------------------------------
 //  Build
 //------------------------------------------------------------------------------------------------ 
@@ -83,8 +83,8 @@ public:
 // Assign
 //-------------------------------------
 public:
-    void operator=(Colour) override;                                                                ///< Atribui cor ao ground
-    void operator=(Highlight) override;                                                           ///< Atribui efeito ao ground.
+    void operator=(Colour) override;                                              ///< Atribui cor ao ground
+    void operator=(Highlight) override;                                         ///< Atribui efeito ao ground.
 //-------------------------------------
 // Deny    
 //-------------------------------------    

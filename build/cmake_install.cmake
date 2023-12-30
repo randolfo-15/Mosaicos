@@ -1,8 +1,8 @@
-# Install script for directory: /home/randolfo/Documentos/Mosaicos
+# Install script for directory: /data/data/com.termux/files/home/Mosaicos
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,75 +39,75 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+  set(CMAKE_OBJDUMP "/data/data/com.termux/files/usr/bin/llvm-objdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/randolfo/Documentos/Mosaicos/build/src/cmake_install.cmake")
+  include("/data/data/com.termux/files/home/Mosaicos/build/src/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/lib/cmake/Mosaicos/MosaicosConfig.cmake;/lib/cmake/Mosaicos/MosaicosConfigVersion.cmake")
+   "/data/data/com.termux/files/usr/lib/cmake/Mosaicos/MosaicosConfig.cmake;/data/data/com.termux/files/usr/lib/cmake/Mosaicos/MosaicosConfigVersion.cmake")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/lib/cmake/Mosaicos" TYPE FILE FILES
-    "/home/randolfo/Documentos/Mosaicos/build/Library/MosaicosConfig.cmake"
-    "/home/randolfo/Documentos/Mosaicos/build/Library/MosaicosConfigVersion.cmake"
+  file(INSTALL DESTINATION "/data/data/com.termux/files/usr/lib/cmake/Mosaicos" TYPE FILE FILES
+    "/data/data/com.termux/files/home/Mosaicos/build/Library/MosaicosConfig.cmake"
+    "/data/data/com.termux/files/home/Mosaicos/build/Library/MosaicosConfigVersion.cmake"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "lib" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/usr/local/lib/libmosaicos.a")
+   "/data/data/com.termux/files/usr/lib/libmosaicos.a")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/lib" TYPE STATIC_LIBRARY FILES "/home/randolfo/Documentos/Mosaicos/build/Library/libmosaicos.a")
+  file(INSTALL DESTINATION "/data/data/com.termux/files/usr/lib" TYPE STATIC_LIBRARY FILES "/data/data/com.termux/files/home/Mosaicos/build/Library/libmosaicos.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "head" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/usr/local/include/mosaicos/gd_rag.hpp;/usr/local/include/mosaicos/str.hpp;/usr/local/include/mosaicos/colour.hpp;/usr/local/include/mosaicos/effect.hpp;/usr/local/include/mosaicos/ground.hpp;/usr/local/include/mosaicos/foreground.hpp;/usr/local/include/mosaicos/background.hpp;/usr/local/include/mosaicos/theme.hpp;/usr/local/include/mosaicos/directions_rag.hpp;/usr/local/include/mosaicos/clear_rag.hpp;/usr/local/include/mosaicos/display_rag.hpp")
+   "/data/data/com.termux/files/usr/include/mosaicos/gd_rag.hpp;/data/data/com.termux/files/usr/include/mosaicos/str.hpp;/data/data/com.termux/files/usr/include/mosaicos/colour.hpp;/data/data/com.termux/files/usr/include/mosaicos/effect.hpp;/data/data/com.termux/files/usr/include/mosaicos/ground.hpp;/data/data/com.termux/files/usr/include/mosaicos/foreground.hpp;/data/data/com.termux/files/usr/include/mosaicos/background.hpp;/data/data/com.termux/files/usr/include/mosaicos/theme.hpp;/data/data/com.termux/files/usr/include/mosaicos/directions_rag.hpp;/data/data/com.termux/files/usr/include/mosaicos/clear_rag.hpp;/data/data/com.termux/files/usr/include/mosaicos/display_rag.hpp")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/mosaicos" TYPE FILE FILES
-    "/home/randolfo/Documentos/Mosaicos/src/gd_rag.hpp"
-    "/home/randolfo/Documentos/Mosaicos/src/str.hpp"
-    "/home/randolfo/Documentos/Mosaicos/src/colour.hpp"
-    "/home/randolfo/Documentos/Mosaicos/src/effect.hpp"
-    "/home/randolfo/Documentos/Mosaicos/src/ground.hpp"
-    "/home/randolfo/Documentos/Mosaicos/src/foreground.hpp"
-    "/home/randolfo/Documentos/Mosaicos/src/background.hpp"
-    "/home/randolfo/Documentos/Mosaicos/src/theme.hpp"
-    "/home/randolfo/Documentos/Mosaicos/src/directions_rag.hpp"
-    "/home/randolfo/Documentos/Mosaicos/src/clear_rag.hpp"
-    "/home/randolfo/Documentos/Mosaicos/src/display_rag.hpp"
+  file(INSTALL DESTINATION "/data/data/com.termux/files/usr/include/mosaicos" TYPE FILE FILES
+    "/data/data/com.termux/files/home/Mosaicos/src/gd_rag.hpp"
+    "/data/data/com.termux/files/home/Mosaicos/src/str.hpp"
+    "/data/data/com.termux/files/home/Mosaicos/src/colour.hpp"
+    "/data/data/com.termux/files/home/Mosaicos/src/effect.hpp"
+    "/data/data/com.termux/files/home/Mosaicos/src/ground.hpp"
+    "/data/data/com.termux/files/home/Mosaicos/src/foreground.hpp"
+    "/data/data/com.termux/files/home/Mosaicos/src/background.hpp"
+    "/data/data/com.termux/files/home/Mosaicos/src/theme.hpp"
+    "/data/data/com.termux/files/home/Mosaicos/src/directions_rag.hpp"
+    "/data/data/com.termux/files/home/Mosaicos/src/clear_rag.hpp"
+    "/data/data/com.termux/files/home/Mosaicos/src/display_rag.hpp"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/lib/cmake/Mosaicos/mosaicosTarget.cmake")
+  if(EXISTS "$ENV{DESTDIR}/data/data/com.termux/files/usr/lib/cmake/Mosaicos/mosaicosTarget.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
-         "$ENV{DESTDIR}/lib/cmake/Mosaicos/mosaicosTarget.cmake"
-         "/home/randolfo/Documentos/Mosaicos/build/CMakeFiles/Export/b8df47184eae61beb73d121f47255704/mosaicosTarget.cmake")
+         "$ENV{DESTDIR}/data/data/com.termux/files/usr/lib/cmake/Mosaicos/mosaicosTarget.cmake"
+         "/data/data/com.termux/files/home/Mosaicos/build/CMakeFiles/Export/90f3541046061d73a952b869545457c5/mosaicosTarget.cmake")
     if(_cmake_export_file_changed)
-      file(GLOB _cmake_old_config_files "$ENV{DESTDIR}/lib/cmake/Mosaicos/mosaicosTarget-*.cmake")
+      file(GLOB _cmake_old_config_files "$ENV{DESTDIR}/data/data/com.termux/files/usr/lib/cmake/Mosaicos/mosaicosTarget-*.cmake")
       if(_cmake_old_config_files)
         string(REPLACE ";" ", " _cmake_old_config_files_text "${_cmake_old_config_files}")
-        message(STATUS "Old export file \"$ENV{DESTDIR}/lib/cmake/Mosaicos/mosaicosTarget.cmake\" will be replaced.  Removing files [${_cmake_old_config_files_text}].")
+        message(STATUS "Old export file \"$ENV{DESTDIR}/data/data/com.termux/files/usr/lib/cmake/Mosaicos/mosaicosTarget.cmake\" will be replaced.  Removing files [${_cmake_old_config_files_text}].")
         unset(_cmake_old_config_files_text)
         file(REMOVE ${_cmake_old_config_files})
       endif()
@@ -116,24 +116,24 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     unset(_cmake_export_file_changed)
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/lib/cmake/Mosaicos/mosaicosTarget.cmake")
+   "/data/data/com.termux/files/usr/lib/cmake/Mosaicos/mosaicosTarget.cmake")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/lib/cmake/Mosaicos" TYPE FILE FILES "/home/randolfo/Documentos/Mosaicos/build/CMakeFiles/Export/b8df47184eae61beb73d121f47255704/mosaicosTarget.cmake")
+  file(INSTALL DESTINATION "/data/data/com.termux/files/usr/lib/cmake/Mosaicos" TYPE FILE FILES "/data/data/com.termux/files/home/Mosaicos/build/CMakeFiles/Export/90f3541046061d73a952b869545457c5/mosaicosTarget.cmake")
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-     "/lib/cmake/Mosaicos/mosaicosTarget-debug.cmake")
+     "/data/data/com.termux/files/usr/lib/cmake/Mosaicos/mosaicosTarget-debug.cmake")
     if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "/lib/cmake/Mosaicos" TYPE FILE FILES "/home/randolfo/Documentos/Mosaicos/build/CMakeFiles/Export/b8df47184eae61beb73d121f47255704/mosaicosTarget-debug.cmake")
+    file(INSTALL DESTINATION "/data/data/com.termux/files/usr/lib/cmake/Mosaicos" TYPE FILE FILES "/data/data/com.termux/files/home/Mosaicos/build/CMakeFiles/Export/90f3541046061d73a952b869545457c5/mosaicosTarget-debug.cmake")
   endif()
 endif()
 
@@ -145,5 +145,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/randolfo/Documentos/Mosaicos/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/data/data/com.termux/files/home/Mosaicos/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

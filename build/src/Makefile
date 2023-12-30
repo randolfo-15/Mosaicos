@@ -45,22 +45,22 @@ cmake_force:
 # Set environment variables for the build.
 
 # The shell in which to execute make rules.
-SHELL = /bin/sh
+SHELL = /data/data/com.termux/files/usr/bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /data/data/com.termux/files/usr/bin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E rm -f
+RM = /data/data/com.termux/files/usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/randolfo/Documentos/Mosaicos
+CMAKE_SOURCE_DIR = /data/data/com.termux/files/home/Mosaicos
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/randolfo/Documentos/Mosaicos/build
+CMAKE_BINARY_DIR = /data/data/com.termux/files/home/Mosaicos/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/randolfo/Documentos/Mosaicos/build
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/data/data/com.termux/files/usr/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/data/data/com.termux/files/usr/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -97,49 +97,49 @@ list_install_components/fast: list_install_components
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
+	/data/data/com.termux/files/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
+	/data/data/com.termux/files/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/data/data/com.termux/files/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/data/data/com.termux/files/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/data/data/com.termux/files/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/data/data/com.termux/files/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/randolfo/Documentos/Mosaicos/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/randolfo/Documentos/Mosaicos/build/CMakeFiles /home/randolfo/Documentos/Mosaicos/build/src//CMakeFiles/progress.marks
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/randolfo/Documentos/Mosaicos/build/CMakeFiles 0
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(CMAKE_COMMAND) -E cmake_progress_start /data/data/com.termux/files/home/Mosaicos/build/CMakeFiles /data/data/com.termux/files/home/Mosaicos/build/src//CMakeFiles/progress.marks
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/data/com.termux/files/home/Mosaicos/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/mosaicos.dir/rule:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/mosaicos.dir/rule
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/mosaicos.dir/rule
 .PHONY : src/CMakeFiles/mosaicos.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ mosaicos: src/CMakeFiles/mosaicos.dir/rule
 
 # fast build rule for target.
 mosaicos/fast:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/build
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/build
 .PHONY : mosaicos/fast
 
 background.o: background.cpp.o
@@ -180,7 +180,7 @@ background.o: background.cpp.o
 
 # target to build an object file
 background.cpp.o:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/background.cpp.o
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/background.cpp.o
 .PHONY : background.cpp.o
 
 background.i: background.cpp.i
@@ -188,7 +188,7 @@ background.i: background.cpp.i
 
 # target to preprocess a source file
 background.cpp.i:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/background.cpp.i
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/background.cpp.i
 .PHONY : background.cpp.i
 
 background.s: background.cpp.s
@@ -196,7 +196,7 @@ background.s: background.cpp.s
 
 # target to generate assembly for a file
 background.cpp.s:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/background.cpp.s
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/background.cpp.s
 .PHONY : background.cpp.s
 
 clear.o: clear.cpp.o
@@ -204,7 +204,7 @@ clear.o: clear.cpp.o
 
 # target to build an object file
 clear.cpp.o:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/clear.cpp.o
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/clear.cpp.o
 .PHONY : clear.cpp.o
 
 clear.i: clear.cpp.i
@@ -212,7 +212,7 @@ clear.i: clear.cpp.i
 
 # target to preprocess a source file
 clear.cpp.i:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/clear.cpp.i
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/clear.cpp.i
 .PHONY : clear.cpp.i
 
 clear.s: clear.cpp.s
@@ -220,7 +220,7 @@ clear.s: clear.cpp.s
 
 # target to generate assembly for a file
 clear.cpp.s:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/clear.cpp.s
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/clear.cpp.s
 .PHONY : clear.cpp.s
 
 colour.o: colour.cpp.o
@@ -228,7 +228,7 @@ colour.o: colour.cpp.o
 
 # target to build an object file
 colour.cpp.o:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/colour.cpp.o
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/colour.cpp.o
 .PHONY : colour.cpp.o
 
 colour.i: colour.cpp.i
@@ -236,7 +236,7 @@ colour.i: colour.cpp.i
 
 # target to preprocess a source file
 colour.cpp.i:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/colour.cpp.i
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/colour.cpp.i
 .PHONY : colour.cpp.i
 
 colour.s: colour.cpp.s
@@ -244,7 +244,7 @@ colour.s: colour.cpp.s
 
 # target to generate assembly for a file
 colour.cpp.s:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/colour.cpp.s
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/colour.cpp.s
 .PHONY : colour.cpp.s
 
 directions.o: directions.cpp.o
@@ -252,7 +252,7 @@ directions.o: directions.cpp.o
 
 # target to build an object file
 directions.cpp.o:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/directions.cpp.o
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/directions.cpp.o
 .PHONY : directions.cpp.o
 
 directions.i: directions.cpp.i
@@ -260,7 +260,7 @@ directions.i: directions.cpp.i
 
 # target to preprocess a source file
 directions.cpp.i:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/directions.cpp.i
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/directions.cpp.i
 .PHONY : directions.cpp.i
 
 directions.s: directions.cpp.s
@@ -268,7 +268,7 @@ directions.s: directions.cpp.s
 
 # target to generate assembly for a file
 directions.cpp.s:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/directions.cpp.s
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/directions.cpp.s
 .PHONY : directions.cpp.s
 
 display.o: display.cpp.o
@@ -276,7 +276,7 @@ display.o: display.cpp.o
 
 # target to build an object file
 display.cpp.o:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/display.cpp.o
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/display.cpp.o
 .PHONY : display.cpp.o
 
 display.i: display.cpp.i
@@ -284,7 +284,7 @@ display.i: display.cpp.i
 
 # target to preprocess a source file
 display.cpp.i:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/display.cpp.i
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/display.cpp.i
 .PHONY : display.cpp.i
 
 display.s: display.cpp.s
@@ -292,7 +292,7 @@ display.s: display.cpp.s
 
 # target to generate assembly for a file
 display.cpp.s:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/display.cpp.s
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/display.cpp.s
 .PHONY : display.cpp.s
 
 effect.o: effect.cpp.o
@@ -300,7 +300,7 @@ effect.o: effect.cpp.o
 
 # target to build an object file
 effect.cpp.o:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/effect.cpp.o
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/effect.cpp.o
 .PHONY : effect.cpp.o
 
 effect.i: effect.cpp.i
@@ -308,7 +308,7 @@ effect.i: effect.cpp.i
 
 # target to preprocess a source file
 effect.cpp.i:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/effect.cpp.i
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/effect.cpp.i
 .PHONY : effect.cpp.i
 
 effect.s: effect.cpp.s
@@ -316,7 +316,7 @@ effect.s: effect.cpp.s
 
 # target to generate assembly for a file
 effect.cpp.s:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/effect.cpp.s
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/effect.cpp.s
 .PHONY : effect.cpp.s
 
 foreground.o: foreground.cpp.o
@@ -324,7 +324,7 @@ foreground.o: foreground.cpp.o
 
 # target to build an object file
 foreground.cpp.o:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/foreground.cpp.o
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/foreground.cpp.o
 .PHONY : foreground.cpp.o
 
 foreground.i: foreground.cpp.i
@@ -332,7 +332,7 @@ foreground.i: foreground.cpp.i
 
 # target to preprocess a source file
 foreground.cpp.i:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/foreground.cpp.i
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/foreground.cpp.i
 .PHONY : foreground.cpp.i
 
 foreground.s: foreground.cpp.s
@@ -340,7 +340,7 @@ foreground.s: foreground.cpp.s
 
 # target to generate assembly for a file
 foreground.cpp.s:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/foreground.cpp.s
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/foreground.cpp.s
 .PHONY : foreground.cpp.s
 
 ground.o: ground.cpp.o
@@ -348,7 +348,7 @@ ground.o: ground.cpp.o
 
 # target to build an object file
 ground.cpp.o:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/ground.cpp.o
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/ground.cpp.o
 .PHONY : ground.cpp.o
 
 ground.i: ground.cpp.i
@@ -356,7 +356,7 @@ ground.i: ground.cpp.i
 
 # target to preprocess a source file
 ground.cpp.i:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/ground.cpp.i
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/ground.cpp.i
 .PHONY : ground.cpp.i
 
 ground.s: ground.cpp.s
@@ -364,7 +364,7 @@ ground.s: ground.cpp.s
 
 # target to generate assembly for a file
 ground.cpp.s:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/ground.cpp.s
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/ground.cpp.s
 .PHONY : ground.cpp.s
 
 str.o: str.cpp.o
@@ -372,7 +372,7 @@ str.o: str.cpp.o
 
 # target to build an object file
 str.cpp.o:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/str.cpp.o
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/str.cpp.o
 .PHONY : str.cpp.o
 
 str.i: str.cpp.i
@@ -380,7 +380,7 @@ str.i: str.cpp.i
 
 # target to preprocess a source file
 str.cpp.i:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/str.cpp.i
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/str.cpp.i
 .PHONY : str.cpp.i
 
 str.s: str.cpp.s
@@ -388,7 +388,7 @@ str.s: str.cpp.s
 
 # target to generate assembly for a file
 str.cpp.s:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/str.cpp.s
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/str.cpp.s
 .PHONY : str.cpp.s
 
 theme.o: theme.cpp.o
@@ -396,7 +396,7 @@ theme.o: theme.cpp.o
 
 # target to build an object file
 theme.cpp.o:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/theme.cpp.o
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/theme.cpp.o
 .PHONY : theme.cpp.o
 
 theme.i: theme.cpp.i
@@ -404,7 +404,7 @@ theme.i: theme.cpp.i
 
 # target to preprocess a source file
 theme.cpp.i:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/theme.cpp.i
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/theme.cpp.i
 .PHONY : theme.cpp.i
 
 theme.s: theme.cpp.s
@@ -412,7 +412,7 @@ theme.s: theme.cpp.s
 
 # target to generate assembly for a file
 theme.cpp.s:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/theme.cpp.s
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/theme.cpp.s
 .PHONY : theme.cpp.s
 
 # Help Target
@@ -469,6 +469,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/randolfo/Documentos/Mosaicos/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /data/data/com.termux/files/home/Mosaicos/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

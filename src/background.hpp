@@ -15,7 +15,7 @@ struct Background:public Ground{
     std::string operator!() override;
     
     private: 
-        void operator=(Highlight);
+        void operator=(Highlight) override;
         static const char PLAN[6];
         
 };using Bg=Background;

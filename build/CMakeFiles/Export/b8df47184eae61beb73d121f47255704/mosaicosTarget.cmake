@@ -62,7 +62,7 @@ if(NOT CMAKE_VERSION VERSION_LESS "3.23.0")
       FILE_SET "HEADERS"
       TYPE "HEADERS"
       BASE_DIRS "/usr/local/include/mosaicos"
-      FILES "/usr/local/include/mosaicos/gd_rag.hpp" "/usr/local/include/mosaicos/str.hpp" "/usr/local/include/mosaicos/colour.hpp" "/usr/local/include/mosaicos/effect.hpp" "/usr/local/include/mosaicos/ground.hpp" "/usr/local/include/mosaicos/foreground.hpp" "/usr/local/include/mosaicos/background.hpp" "/usr/local/include/mosaicos/theme.hpp" "/usr/local/include/mosaicos/directions_rag.hpp" "/usr/local/include/mosaicos/clear_rag.hpp"
+      FILES "/usr/local/include/mosaicos/gd_rag.hpp" "/usr/local/include/mosaicos/str.hpp" "/usr/local/include/mosaicos/colour.hpp" "/usr/local/include/mosaicos/effect.hpp" "/usr/local/include/mosaicos/ground.hpp" "/usr/local/include/mosaicos/foreground.hpp" "/usr/local/include/mosaicos/background.hpp" "/usr/local/include/mosaicos/theme.hpp" "/usr/local/include/mosaicos/directions_rag.hpp" "/usr/local/include/mosaicos/clear_rag.hpp" "/usr/local/include/mosaicos/display_rag.hpp"
   )
 else()
   set_property(TARGET Mosaicos::mosaicos

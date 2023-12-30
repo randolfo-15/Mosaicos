@@ -5,6 +5,7 @@
  * \date 21/09/22
  ******************************************************/
 #include "display_rag.hpp"
+#include <algorithm>
 #include <sstream>
 using std::string;
 using std::vector;
@@ -69,13 +70,13 @@ string Dp::straighten( list_str line,int cnt){  return (cnt)?rigth.str()+*line+e
 
 int Dp::accentuation(string str,int soma){  for(char c:str) soma+=(c<0)? 1:0; return soma/2; }
 
-string Dp::end(int cnt){return (cnt>1)?Clr::br()+'\n':Clr::br();}
+string Dp::end(int cnt){return (cnt>1)?br()+'\n':br();}
 
 string Dp::side(Directions* dr){ return (dr->size())?dr->str():"";}
 
 int Dp::complete(string* str,int w,int b,int diff){ return (w+b+accentuation(*str))-str->size()+diff ;}
 
-string Dp::fill(int count,Bg bg){ return bg+empty(count); }
+string Dp::fill(int count,Bg bg){ return bg.str()+empty(count); }
 
 string Dp::empty(int count){return (count>0)?" "+empty(count-1):"";}
 
@@ -152,10 +153,10 @@ int Dp::Line::count_(const char* dft,int i,int sm){ return ((i=str.find(dft,i))>
 
 string* Dp::Line::replace_G(string* str,int i,int ef){ return  ((i=str->find(G,i))>=0)? replace_G(&str->replace(i,2,gd[ef]->str()),i+1,ef+1) : str;  }
 
-string Dp::Line::replace_X(string* str,Tm* tm,int i){ return  ((i=str->find(X,i))>=0)? replace_X(&str->replace(i,2,Clr::br()+(*tm)(tt)),tm,i+1):*str;  }
+string Dp::Line::replace_X(string* str,Tm* tm,int i){ return  ((i=str->find(X,i))>=0)? replace_X(&str->replace(i,2,br()+(*tm)(tt)),tm,i+1):*str;  }
 
 string Dp::Line::replace(string str,Tm* tm){  return replace_X( replace_G(&str),tm);}
 
 string Dp::Line::treat(Tm* tm){ return (gd.size())?replace(str,tm):str; }
 
-string Dp::Line::form(Tm* tm, int i){  return (*tm)(tt)+treat(tm)+Clr::br(); }
+string Dp::Line::form(Tm* tm, int i){  return (*tm)(tt)+treat(tm)+br(); }

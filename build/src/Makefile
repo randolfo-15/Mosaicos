@@ -271,6 +271,30 @@ directions.cpp.s:
 	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/directions.cpp.s
 .PHONY : directions.cpp.s
 
+display.o: display.cpp.o
+.PHONY : display.o
+
+# target to build an object file
+display.cpp.o:
+	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/display.cpp.o
+.PHONY : display.cpp.o
+
+display.i: display.cpp.i
+.PHONY : display.i
+
+# target to preprocess a source file
+display.cpp.i:
+	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/display.cpp.i
+.PHONY : display.cpp.i
+
+display.s: display.cpp.s
+.PHONY : display.s
+
+# target to generate assembly for a file
+display.cpp.s:
+	cd /home/randolfo/Documentos/Mosaicos/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mosaicos.dir/build.make src/CMakeFiles/mosaicos.dir/display.cpp.s
+.PHONY : display.cpp.s
+
 effect.o: effect.cpp.o
 .PHONY : effect.o
 
@@ -416,6 +440,9 @@ help:
 	@echo "... directions.o"
 	@echo "... directions.i"
 	@echo "... directions.s"
+	@echo "... display.o"
+	@echo "... display.i"
+	@echo "... display.s"
 	@echo "... effect.o"
 	@echo "... effect.i"
 	@echo "... effect.s"

@@ -146,7 +146,10 @@ src/CMakeFiles/mosaicos.dir/display.cpp.o: \
  /usr/include/c++/13.2.1/bits/stl_bvector.h \
  /usr/include/c++/13.2.1/bits/vector.tcc \
  /home/randolfo/Documentos/Mosaicos/src/colour.hpp \
+ /home/randolfo/Documentos/Mosaicos/src/gd_rag.hpp \
  /home/randolfo/Documentos/Mosaicos/src/effect.hpp \
+ /home/randolfo/Documentos/Mosaicos/src/background.hpp \
+ /home/randolfo/Documentos/Mosaicos/src/directions_rag.hpp \
  /usr/include/c++/13.2.1/algorithm \
  /usr/include/c++/13.2.1/bits/stl_algo.h \
  /usr/include/c++/13.2.1/bits/algorithmfwd.h \
@@ -155,8 +158,6 @@ src/CMakeFiles/mosaicos.dir/display.cpp.o: \
  /usr/include/c++/13.2.1/bits/stl_tempbuf.h \
  /usr/include/c++/13.2.1/pstl/glue_algorithm_defs.h \
  /usr/include/c++/13.2.1/pstl/execution_defs.h \
- /home/randolfo/Documentos/Mosaicos/src/background.hpp \
- /home/randolfo/Documentos/Mosaicos/src/directions_rag.hpp \
  /usr/include/c++/13.2.1/sstream /usr/include/c++/13.2.1/istream \
  /usr/include/c++/13.2.1/bits/istream.tcc \
  /usr/include/c++/13.2.1/bits/sstream.tcc

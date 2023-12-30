@@ -195,6 +195,20 @@ src/CMakeFiles/mosaicos.dir/clear.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mosaicos.dir/clear.cpp.s"
 	cd /home/randolfo/Documentos/Mosaicos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/randolfo/Documentos/Mosaicos/src/clear.cpp -o CMakeFiles/mosaicos.dir/clear.cpp.s
 
+src/CMakeFiles/mosaicos.dir/display.cpp.o: src/CMakeFiles/mosaicos.dir/flags.make
+src/CMakeFiles/mosaicos.dir/display.cpp.o: /home/randolfo/Documentos/Mosaicos/src/display.cpp
+src/CMakeFiles/mosaicos.dir/display.cpp.o: src/CMakeFiles/mosaicos.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/randolfo/Documentos/Mosaicos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/CMakeFiles/mosaicos.dir/display.cpp.o"
+	cd /home/randolfo/Documentos/Mosaicos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mosaicos.dir/display.cpp.o -MF CMakeFiles/mosaicos.dir/display.cpp.o.d -o CMakeFiles/mosaicos.dir/display.cpp.o -c /home/randolfo/Documentos/Mosaicos/src/display.cpp
+
+src/CMakeFiles/mosaicos.dir/display.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mosaicos.dir/display.cpp.i"
+	cd /home/randolfo/Documentos/Mosaicos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/randolfo/Documentos/Mosaicos/src/display.cpp > CMakeFiles/mosaicos.dir/display.cpp.i
+
+src/CMakeFiles/mosaicos.dir/display.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mosaicos.dir/display.cpp.s"
+	cd /home/randolfo/Documentos/Mosaicos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/randolfo/Documentos/Mosaicos/src/display.cpp -o CMakeFiles/mosaicos.dir/display.cpp.s
+
 # Object files for target mosaicos
 mosaicos_OBJECTS = \
 "CMakeFiles/mosaicos.dir/str.cpp.o" \
@@ -205,7 +219,8 @@ mosaicos_OBJECTS = \
 "CMakeFiles/mosaicos.dir/background.cpp.o" \
 "CMakeFiles/mosaicos.dir/theme.cpp.o" \
 "CMakeFiles/mosaicos.dir/directions.cpp.o" \
-"CMakeFiles/mosaicos.dir/clear.cpp.o"
+"CMakeFiles/mosaicos.dir/clear.cpp.o" \
+"CMakeFiles/mosaicos.dir/display.cpp.o"
 
 # External object files for target mosaicos
 mosaicos_EXTERNAL_OBJECTS =
@@ -219,9 +234,10 @@ Library/libmosaicos.a: src/CMakeFiles/mosaicos.dir/background.cpp.o
 Library/libmosaicos.a: src/CMakeFiles/mosaicos.dir/theme.cpp.o
 Library/libmosaicos.a: src/CMakeFiles/mosaicos.dir/directions.cpp.o
 Library/libmosaicos.a: src/CMakeFiles/mosaicos.dir/clear.cpp.o
+Library/libmosaicos.a: src/CMakeFiles/mosaicos.dir/display.cpp.o
 Library/libmosaicos.a: src/CMakeFiles/mosaicos.dir/build.make
 Library/libmosaicos.a: src/CMakeFiles/mosaicos.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/randolfo/Documentos/Mosaicos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library ../Library/libmosaicos.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/randolfo/Documentos/Mosaicos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX static library ../Library/libmosaicos.a"
 	cd /home/randolfo/Documentos/Mosaicos/build/src && $(CMAKE_COMMAND) -P CMakeFiles/mosaicos.dir/cmake_clean_target.cmake
 	cd /home/randolfo/Documentos/Mosaicos/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mosaicos.dir/link.txt --verbose=$(VERBOSE)
 

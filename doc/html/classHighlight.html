@@ -94,6 +94,7 @@ $(document).ready(function(){initNavTree('classHighlight.html',''); initResizabl
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classHighlight-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Highlight Class Reference</div></div>
@@ -146,16 +147,25 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a514ee941e91175532e01e4d98d80c11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29150fd90b7d2de5915ab2122bf39ac6" id="r_a29150fd90b7d2de5915ab2122bf39ac6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHighlight.html#a29150fd90b7d2de5915ab2122bf39ac6">operator-=</a> (<a class="el" href="classHighlight.html">Highlight</a>)</td></tr>
 <tr class="separator:a29150fd90b7d2de5915ab2122bf39ac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04d09d10320a0524974eddab30172f85" id="r_a04d09d10320a0524974eddab30172f85"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHighlight.html#a04d09d10320a0524974eddab30172f85">to_str</a> ()</td></tr>
-<tr class="separator:a04d09d10320a0524974eddab30172f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2838b00a2e62638159f1d8088cf3d100" id="r_a2838b00a2e62638159f1d8088cf3d100"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHighlight.html#a2838b00a2e62638159f1d8088cf3d100">operator=</a> (<a class="el" href="classHighlight.html">Highlight</a>)</td></tr>
+<tr class="separator:a2838b00a2e62638159f1d8088cf3d100"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a3d27206128385f08587f88f098202042" id="r_a3d27206128385f08587f88f098202042"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHighlight.html#a3d27206128385f08587f88f098202042">Highlight</a> (int)</td></tr>
 <tr class="separator:a3d27206128385f08587f88f098202042"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ad06cb1cdb71b91fd8b6e55f3cb2a9ab3" id="r_ad06cb1cdb71b91fd8b6e55f3cb2a9ab3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHighlight.html#ad06cb1cdb71b91fd8b6e55f3cb2a9ab3">find</a> (int, int=0)</td></tr>
+<tr class="separator:ad06cb1cdb71b91fd8b6e55f3cb2a9ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76af33445b1d0895ded9da5f19d2eed3" id="r_a76af33445b1d0895ded9da5f19d2eed3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHighlight.html#a76af33445b1d0895ded9da5f19d2eed3">to_str</a> (std::string=&quot;&quot;)</td></tr>
+<tr class="separator:a76af33445b1d0895ded9da5f19d2eed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:acff8036737746b8d2557801ce2c314e5" id="r_acff8036737746b8d2557801ce2c314e5"><td class="memItemLeft" align="right" valign="top">friend&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHighlight.html#acff8036737746b8d2557801ce2c314e5">Ground</a></td></tr>
+<tr class="separator:acff8036737746b8d2557801ce2c314e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13501f31407893a0776b3f49632ce831" id="r_a13501f31407893a0776b3f49632ce831"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHighlight.html#a13501f31407893a0776b3f49632ce831">buff</a></td></tr>
 <tr class="separator:a13501f31407893a0776b3f49632ce831"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -178,7 +188,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="effect_8cpp_source.html#l00014">14</a> of file <a class="el" href="effect_8cpp_source.html">effect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="effect_8cpp_source.html#l00015">15</a> of file <a class="el" href="effect_8cpp_source.html">effect.cpp</a>.</p>
 
 </div>
 </div>
@@ -206,11 +216,75 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="effect_8cpp_source.html#l00016">16</a> of file <a class="el" href="effect_8cpp_source.html">effect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="effect_8cpp_source.html#l00017">17</a> of file <a class="el" href="effect_8cpp_source.html">effect.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad06cb1cdb71b91fd8b6e55f3cb2a9ab3" name="ad06cb1cdb71b91fd8b6e55f3cb2a9ab3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad06cb1cdb71b91fd8b6e55f3cb2a9ab3">&#9670;&#160;</a></span>find()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Hlg::find </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="effect_8cpp_source.html#l00021">21</a> of file <a class="el" href="effect_8cpp_source.html">effect.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classHighlight_ad06cb1cdb71b91fd8b6e55f3cb2a9ab3_cgraph.png" border="0" usemap="#aclassHighlight_ad06cb1cdb71b91fd8b6e55f3cb2a9ab3_cgraph" alt=""/></div>
+<map name="aclassHighlight_ad06cb1cdb71b91fd8b6e55f3cb2a9ab3_cgraph" id="aclassHighlight_ad06cb1cdb71b91fd8b6e55f3cb2a9ab3_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,118,57"/>
+<area shape="poly" title=" " alt="" coords="41,30,38,20,40,11,48,5,62,3,75,5,83,12,79,16,73,10,61,8,51,10,45,14,43,20,46,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classHighlight_ad06cb1cdb71b91fd8b6e55f3cb2a9ab3_icgraph.png" border="0" usemap="#aclassHighlight_ad06cb1cdb71b91fd8b6e55f3cb2a9ab3_icgraph" alt=""/></div>
+<map name="aclassHighlight_ad06cb1cdb71b91fd8b6e55f3cb2a9ab3_icgraph" id="aclassHighlight_ad06cb1cdb71b91fd8b6e55f3cb2a9ab3_icgraph">
+<area shape="rect" title=" " alt="" coords="420,32,532,60"/>
+<area shape="poly" title=" " alt="" coords="508,19,497,13,476,11,457,13,446,17,444,23,448,30,444,33,439,23,443,14,456,7,476,5,498,8,510,14"/>
+<area shape="rect" href="classHighlight.html#afd1632e64af86b26412418ae14435011" title=" " alt="" coords="207,5,372,33"/>
+<area shape="poly" title=" " alt="" coords="404,38,372,34,373,28,405,33"/>
+<area shape="rect" href="classHighlight.html#a29150fd90b7d2de5915ab2122bf39ac6" title=" " alt="" coords="210,57,369,85"/>
+<area shape="poly" title=" " alt="" coords="405,58,370,63,369,58,404,53"/>
+<area shape="rect" href="classGround.html#aef71e636d5ac26bbb622cc69e983a972" title=" " alt="" coords="5,5,159,33"/>
+<area shape="poly" title=" " alt="" coords="191,22,159,22,159,17,191,17"/>
+<area shape="rect" href="classGround.html#a3ead74b76c6220dd99cf089910fc0e5f" title=" " alt="" coords="8,57,156,85"/>
+<area shape="poly" title=" " alt="" coords="194,74,156,74,156,69,194,69"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a74970bf21af542eb966adf5b0fa8fdb5" name="a74970bf21af542eb966adf5b0fa8fdb5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a74970bf21af542eb966adf5b0fa8fdb5">&#9670;&#160;</a></span>operator+()</h2>
 
@@ -237,7 +311,7 @@ Private Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classGround.html#a860fe59a186bf6273f5b7764900e2fce">Ground</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="effect_8cpp_source.html#l00021">21</a> of file <a class="el" href="effect_8cpp_source.html">effect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="effect_8cpp_source.html#l00029">29</a> of file <a class="el" href="effect_8cpp_source.html">effect.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -264,7 +338,7 @@ Here is the caller graph for this function:</div>
           <td class="memname">void Hlg::operator+= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classHighlight.html">Highlight</a>&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
+          <td class="paramname"><em>hlg</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -277,7 +351,18 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classGround.html#aef71e636d5ac26bbb622cc69e983a972">Ground</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="effect_8cpp_source.html#l00027">27</a> of file <a class="el" href="effect_8cpp_source.html">effect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="effect_8cpp_source.html#l00034">34</a> of file <a class="el" href="effect_8cpp_source.html">effect.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classHighlight_afd1632e64af86b26412418ae14435011_cgraph.png" border="0" usemap="#aclassHighlight_afd1632e64af86b26412418ae14435011_cgraph" alt=""/></div>
+<map name="aclassHighlight_afd1632e64af86b26412418ae14435011_cgraph" id="aclassHighlight_afd1632e64af86b26412418ae14435011_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,171,57"/>
+<area shape="rect" href="classHighlight.html#ad06cb1cdb71b91fd8b6e55f3cb2a9ab3" title=" " alt="" coords="219,29,331,57"/>
+<area shape="poly" title=" " alt="" coords="171,41,203,41,203,46,171,46"/>
+<area shape="poly" title=" " alt="" coords="242,30,237,20,241,11,254,5,275,3,297,5,309,12,306,16,295,10,275,8,256,10,245,15,242,20,247,27"/>
+</map>
+</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -317,7 +402,7 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classGround.html#ae97f3bf4b413162ef9212b38bf86471a">Ground</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="effect_8cpp_source.html#l00032">32</a> of file <a class="el" href="effect_8cpp_source.html">effect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="effect_8cpp_source.html#l00039">39</a> of file <a class="el" href="effect_8cpp_source.html">effect.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -344,7 +429,7 @@ Here is the caller graph for this function:</div>
           <td class="memname">void Hlg::operator-= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classHighlight.html">Highlight</a>&#160;</td>
-          <td class="paramname"><em>efc</em></td><td>)</td>
+          <td class="paramname"><em>hlg</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -357,7 +442,18 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classGround.html#a3ead74b76c6220dd99cf089910fc0e5f">Ground</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="effect_8cpp_source.html#l00038">38</a> of file <a class="el" href="effect_8cpp_source.html">effect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="effect_8cpp_source.html#l00044">44</a> of file <a class="el" href="effect_8cpp_source.html">effect.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classHighlight_a29150fd90b7d2de5915ab2122bf39ac6_cgraph.png" border="0" usemap="#aclassHighlight_a29150fd90b7d2de5915ab2122bf39ac6_cgraph" alt=""/></div>
+<map name="aclassHighlight_a29150fd90b7d2de5915ab2122bf39ac6_cgraph" id="aclassHighlight_a29150fd90b7d2de5915ab2122bf39ac6_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,165,57"/>
+<area shape="rect" href="classHighlight.html#ad06cb1cdb71b91fd8b6e55f3cb2a9ab3" title=" " alt="" coords="213,29,325,57"/>
+<area shape="poly" title=" " alt="" coords="165,41,197,41,197,46,165,46"/>
+<area shape="poly" title=" " alt="" coords="237,30,232,20,236,11,248,5,269,3,291,5,302,12,300,16,289,10,269,8,250,10,240,15,237,20,242,27"/>
+</map>
+</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -371,8 +467,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a04d09d10320a0524974eddab30172f85" name="a04d09d10320a0524974eddab30172f85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04d09d10320a0524974eddab30172f85">&#9670;&#160;</a></span>to_str()</h2>
+<a id="a2838b00a2e62638159f1d8088cf3d100" name="a2838b00a2e62638159f1d8088cf3d100"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2838b00a2e62638159f1d8088cf3d100">&#9670;&#160;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -381,9 +477,10 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">string Hlg::to_str </td>
+          <td class="memname">void Hlg::operator= </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classHighlight.html">Highlight</a>&#160;</td>
+          <td class="paramname"><em>hlg</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -394,21 +491,47 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="effect_8cpp_source.html#l00043">43</a> of file <a class="el" href="effect_8cpp_source.html">effect.cpp</a>.</p>
+<p>Reimplemented in <a class="el" href="structBackground.html#a2c98ca535f7e0cb8814fb838bbff9256">Background</a>, <a class="el" href="classGround.html#a7ff3a1e8bdc1374ed15596f44062f3fe">Ground</a>, and <a class="el" href="structForeground.html#a34c0a4c9936162db9549b08d34c6cde0">Foreground</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="effect_8cpp_source.html#l00049">49</a> of file <a class="el" href="effect_8cpp_source.html">effect.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a76af33445b1d0895ded9da5f19d2eed3" name="a76af33445b1d0895ded9da5f19d2eed3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76af33445b1d0895ded9da5f19d2eed3">&#9670;&#160;</a></span>to_str()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Highlight::to_str </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"> = <code>&quot;&quot;</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classHighlight_a04d09d10320a0524974eddab30172f85_icgraph.png" border="0" usemap="#aclassHighlight_a04d09d10320a0524974eddab30172f85_icgraph" alt=""/></div>
-<map name="aclassHighlight_a04d09d10320a0524974eddab30172f85_icgraph" id="aclassHighlight_a04d09d10320a0524974eddab30172f85_icgraph">
-<area shape="rect" title=" " alt="" coords="207,84,332,112"/>
+<div class="center"><img src="classHighlight_a76af33445b1d0895ded9da5f19d2eed3_icgraph.png" border="0" usemap="#aclassHighlight_a76af33445b1d0895ded9da5f19d2eed3_icgraph" alt=""/></div>
+<map name="aclassHighlight_a76af33445b1d0895ded9da5f19d2eed3_icgraph" id="aclassHighlight_a76af33445b1d0895ded9da5f19d2eed3_icgraph">
+<area shape="rect" title=" " alt="" coords="207,57,332,85"/>
 <area shape="rect" href="classGround.html#aef71e636d5ac26bbb622cc69e983a972" title=" " alt="" coords="5,5,159,33"/>
-<area shape="poly" title=" " alt="" coords="226,79,158,48,126,36,128,31,160,43,228,75"/>
+<area shape="poly" title=" " alt="" coords="202,55,134,36,135,31,203,50"/>
 <area shape="rect" href="classGround.html#a3ead74b76c6220dd99cf089910fc0e5f" title=" " alt="" coords="8,57,156,85"/>
-<area shape="poly" title=" " alt="" coords="191,89,156,84,156,79,192,84"/>
-<area shape="rect" href="classGround.html#add213a6a5b6f07cc456354e0d6db4e15" title="Atribui efeito ao ground." alt="" coords="11,109,153,137"/>
-<area shape="poly" title=" " alt="" coords="192,111,154,116,153,111,191,106"/>
-<area shape="rect" href="classGround.html#a3d16df1f4f4a5a21f9fce8a20163a130" title="Cast colour para string." alt="" coords="25,161,139,189"/>
-<area shape="poly" title=" " alt="" coords="226,121,160,151,127,163,125,158,158,146,224,116"/>
+<area shape="poly" title=" " alt="" coords="191,74,156,74,156,69,191,69"/>
+<area shape="rect" href="classGround.html#a7ff3a1e8bdc1374ed15596f44062f3fe" title="Atribui efeito ao ground." alt="" coords="11,109,153,137"/>
+<area shape="poly" title=" " alt="" coords="203,92,135,111,134,106,202,87"/>
 </map>
 </div>
 
@@ -435,7 +558,31 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="effect_8hpp_source.html#l00042">42</a> of file <a class="el" href="effect_8hpp_source.html">effect.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="effect_8hpp_source.html#l00053">53</a> of file <a class="el" href="effect_8hpp_source.html">effect.hpp</a>.</p>
+
+</div>
+</div>
+<a id="acff8036737746b8d2557801ce2c314e5" name="acff8036737746b8d2557801ce2c314e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acff8036737746b8d2557801ce2c314e5">&#9670;&#160;</a></span>Ground</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend Highlight::Ground</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="effect_8hpp_source.html#l00015">15</a> of file <a class="el" href="effect_8hpp_source.html">effect.hpp</a>.</p>
 
 </div>
 </div>

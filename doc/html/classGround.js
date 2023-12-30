@@ -9,8 +9,8 @@ var classGround =
     ] ],
     [ "Ground", "classGround.html#a963b1a9c815179350de252eee6ea8021", null ],
     [ "Ground", "classGround.html#abeab0a066e804184d98ec8cf26afff75", null ],
-    [ "colour", "classGround.html#a1e05bda235d89dc708d41d5bf66400a3", null ],
-    [ "highlight", "classGround.html#a8749d5268209cbf9d4af08b026fe26bd", null ],
+    [ "clr", "classGround.html#a2c813b5c3d364d5b4d4bb64df0a8af60", null ],
+    [ "hlg", "classGround.html#af988c35d83484081557bf4927c95facc", null ],
     [ "operator!", "classGround.html#a371e5277c42c56ec574217857fd06da0", null ],
     [ "operator+", "classGround.html#adf6e23e843e02d0043bb51454e5b2457", null ],
     [ "operator+", "classGround.html#a860fe59a186bf6273f5b7764900e2fce", null ],
@@ -29,7 +29,5 @@ var classGround =
     [ "operator-=", "classGround.html#a3ead74b76c6220dd99cf089910fc0e5f", null ],
     [ "operator-=", "classGround.html#aa0955a76e19c32c4f3d677df61219270", null ],
     [ "operator=", "classGround.html#a5a08608ee2d39e4c40b9167ed2c23a20", null ],
-    [ "operator=", "classGround.html#add213a6a5b6f07cc456354e0d6db4e15", null ],
-    [ "to_str", "classGround.html#a3d16df1f4f4a5a21f9fce8a20163a130", null ],
-    [ "to_str", "classGround.html#a6f72f0b244cb5e622e307a8a016d3f68", null ]
+    [ "operator=", "classGround.html#a7ff3a1e8bdc1374ed15596f44062f3fe", null ]
 ];

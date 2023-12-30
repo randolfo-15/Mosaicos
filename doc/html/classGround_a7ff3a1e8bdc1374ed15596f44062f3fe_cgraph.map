@@ -1,0 +1,7 @@
+<map id="Ground::operator=" name="Ground::operator=">
+<area shape="rect" id="Node000001" title="Atribui efeito ao ground." alt="" coords="5,32,148,60"/>
+<area shape="rect" id="Node000002" href="$classGround.html#af988c35d83484081557bf4927c95facc" title="Obtem highlight do ground." alt="" coords="210,5,307,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,33,194,26,195,31,149,38"/>
+<area shape="rect" id="Node000003" href="$classHighlight.html#a76af33445b1d0895ded9da5f19d2eed3" title=" " alt="" coords="196,57,321,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="149,53,181,58,180,63,148,58"/>
+</map>

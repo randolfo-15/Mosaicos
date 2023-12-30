@@ -1,0 +1,34 @@
+<map id="src/gd_rag.hpp" name="src/gd_rag.hpp">
+<area shape="rect" id="Node000001" title="Arquivo de suporte a relações friends entre classes." alt="" coords="127,5,243,33"/>
+<area shape="rect" id="Node000002" href="$colour_8hpp.html" title="Arquivo de definição Foreground Background e Efeitos." alt="" coords="62,81,174,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,46,132,82,128,79,161,43"/>
+<area shape="rect" id="Node000014" href="$effect_8hpp.html" title="Arquivo de definição efeitos." alt="" coords="199,81,309,109"/>
+<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="210,43,244,79,240,82,206,46"/>
+<area shape="rect" id="Node000003" href="$colour_8cpp.html" title="Implementa cores e efeitos da lib mosaicos." alt="" coords="62,157,172,184"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="120,125,120,156,114,156,115,124"/>
+<area shape="rect" id="Node000004" href="$ground_8hpp.html" title="Arquivo de definição ground." alt="" coords="195,157,313,184"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="157,114,231,154,229,159,155,119"/>
+<area shape="rect" id="Node000010" href="$theme_8cpp.html" title="Arquivo de implementação da classe tema." alt="" coords="5,384,119,411"/>
+<area shape="poly" id="edge14_Node000002_Node000010" title=" " alt="" coords="87,120,68,137,52,158,31,204,24,243,27,284,38,335,46,360,57,382,52,384,41,362,33,336,22,285,19,243,26,202,48,155,64,134,84,116"/>
+<area shape="rect" id="Node000005" href="$background_8hpp.html" title="Arquivo de definição Background." alt="" coords="353,232,502,260"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="300,188,398,229,396,234,298,193"/>
+<area shape="rect" id="Node000011" href="$foreground_8hpp.html" title="Arquivo de definição Foreground." alt="" coords="46,232,190,260"/>
+<area shape="poly" id="edge10_Node000004_Node000011" title=" " alt="" coords="217,194,143,234,141,230,215,190"/>
+<area shape="rect" id="Node000013" href="$ground_8cpp.html" title="Arquivo de implementação de ground." alt="" coords="213,232,330,260"/>
+<area shape="poly" id="edge13_Node000004_Node000013" title=" " alt="" coords="263,199,271,231,266,233,258,200"/>
+<area shape="rect" id="Node000006" href="$background_8cpp.html" title="Arquivo de implementação Background." alt="" coords="354,308,501,336"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="430,276,430,308,425,308,425,276"/>
+<area shape="rect" id="Node000007" href="$theme_8hpp.html" title="Arquivo de definição de temas das janelas." alt="" coords="213,308,327,336"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="387,269,299,310,297,305,384,264"/>
+<area shape="rect" id="Node000008" href="$display__rag_8hpp.html" title="Arquivo de definição da classe display,shadow,space." alt="" coords="196,384,344,411"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="273,351,273,383,267,383,267,351"/>
+<area shape="poly" id="edge9_Node000007_Node000010" title=" " alt="" coords="220,344,100,386,98,381,218,339"/>
+<area shape="rect" id="Node000009" href="$display_8cpp.html" title="Arquivo de aplicação da classe display,shadow,space." alt="" coords="212,459,328,487"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="273,427,273,459,267,459,267,427"/>
+<area shape="poly" id="edge12_Node000011_Node000007" title=" " alt="" coords="160,265,244,305,242,310,158,269"/>
+<area shape="rect" id="Node000012" href="$foreground_8cpp.html" title="Arquivo de implementação Foreground." alt="" coords="47,308,189,336"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="121,276,121,308,115,308,115,276"/>
+<area shape="poly" id="edge17_Node000014_Node000004" title=" " alt="" coords="257,124,257,156,251,156,251,124"/>
+<area shape="rect" id="Node000015" href="$effect_8cpp.html" title="Arquivo de implementação efeitos." alt="" coords="337,157,446,184"/>
+<area shape="poly" id="edge16_Node000014_Node000015" title=" " alt="" coords="293,114,368,154,366,159,291,119"/>
+</map>

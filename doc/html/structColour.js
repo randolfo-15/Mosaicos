@@ -32,5 +32,7 @@ var structColour =
     [ "red", "structColour.html#a8a659c3844b77d63472a1b1864ca8e00", null ],
     [ "red", "structColour.html#af019c5ba882abc868957780a4ef2d078", null ],
     [ "sum", "structColour.html#a9e3be34f09da5fb644ef3157ec0b8c7d", null ],
+    [ "to_str", "structColour.html#aecb2577e6c0a589ce6790b9276ba1fd2", null ],
+    [ "Ground", "structColour.html#a7f4af3d7e19730cc2d17a33d86bbab1c", null ],
     [ "rgb", "structColour.html#a7ba74b55466a0f66e9dd7eb2a05e177d", null ]
 ];

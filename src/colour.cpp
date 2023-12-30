@@ -9,7 +9,7 @@
 using std::string;
 using std::to_string;
 
-const Clr::nivel 
+const nivel 
     Clr::MAX=255,
     Clr::MIN=0,
     Clr::HALF=127,
@@ -36,11 +36,11 @@ void Clr::blue(nivel value){rgb[BLUE]=value;}
 //------------------------------------------------------------------------------------------------
 // Getting
 //------------------------------------------------------------------------------------------------	
-Clr::nivel Clr::red(){ return rgb[RED];} 
+nivel Clr::red(){ return rgb[RED];} 
 
-Clr::nivel Clr::green(){ return rgb[GREEN]; }
+nivel Clr::green(){ return rgb[GREEN]; }
 
-Clr::nivel Clr::blue(){return rgb[BLUE];}
+nivel Clr::blue(){return rgb[BLUE];}
 
 //------------------------------------------------------------------------------------------------
 // Addition
@@ -83,7 +83,7 @@ Clr Clr::sum(const nivel* clr0,const nivel* clr1,bool operation, Clr clr,int i){
     return clr;
 }
 
-Clr::nivel Clr::check(short n){ return (n<0)?0:n; }
+nivel Clr::check(short n){ return (n<0)?0:n; }
 //------------------------------------------------------------------------------------------------
 // Cast
 //------------------------------------------------------------------------------------------------

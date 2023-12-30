@@ -1,0 +1,5 @@
+<map id="Ground::hlg" name="Ground::hlg">
+<area shape="rect" id="Node000001" title="Obtem highlight do ground." alt="" coords="196,5,292,33"/>
+<area shape="rect" id="Node000002" href="$classGround.html#a7ff3a1e8bdc1374ed15596f44062f3fe" title="Atribui efeito ao ground." alt="" coords="5,5,148,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,22,148,22,148,17,180,17"/>
+</map>

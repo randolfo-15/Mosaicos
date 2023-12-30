@@ -1,9 +1,9 @@
 <map id="src/effect.hpp" name="src/effect.hpp">
-<area shape="rect" id="Node000001" title="Arquivo de definição efeitos." alt="" coords="64,5,173,33"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,81,64,109"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,36,63,73,59,69,102,32"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="87,81,150,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="121,34,121,65,116,65,116,34"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="174,81,258,109"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="138,31,188,70,185,74,134,36"/>
+<area shape="rect" id="Node000001" title="Arquivo de definição efeitos." alt="" coords="97,5,207,33"/>
+<area shape="rect" id="Node000002" href="$gd__rag_8hpp.html" title="Arquivo de suporte a relações friends entre classes." alt="" coords="5,81,99,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,36,83,74,80,70,133,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="123,81,181,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="155,34,155,65,149,65,149,34"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="205,81,267,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="169,32,211,69,208,73,165,36"/>
 </map>

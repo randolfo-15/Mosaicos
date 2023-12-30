@@ -23,7 +23,7 @@ const char
 //------------------------------------------------------------------------------------------------
 Dp::Display():id(ID++){dps.push_back(this);}
 
-Dp::Display(Tm theme):id(ID++),tm(theme),dft(theme.fg().colour(),Efc::Bold()){ dps.push_back(this); } 
+Dp::Display(Tm theme):id(ID++),tm(theme),dft(theme.fg().clr(),Efc::Bold()){ dps.push_back(this); } 
 
 Dp::Line::Line(string st,int n,vector<Gd*> lt):str(st),tt(n),gd(lt){ diff=count_(G)+count_(X); }
 //------------------------------------------------------------------------------------------------

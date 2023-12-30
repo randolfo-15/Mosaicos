@@ -30,9 +30,6 @@ class Str{
         std::string operator+(std::string);
     
 public:
-        
-        
-        
         friend std::ostream& operator<<(std::ostream&,Str);
 };
 

@@ -1,0 +1,9 @@
+<map id="Highlight::to_str" name="Highlight::to_str">
+<area shape="rect" id="Node000001" title=" " alt="" coords="207,57,332,85"/>
+<area shape="rect" id="Node000002" href="$classGround.html#aef71e636d5ac26bbb622cc69e983a972" title=" " alt="" coords="5,5,159,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,55,134,36,135,31,203,50"/>
+<area shape="rect" id="Node000003" href="$classGround.html#a3ead74b76c6220dd99cf089910fc0e5f" title=" " alt="" coords="8,57,156,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="191,74,156,74,156,69,191,69"/>
+<area shape="rect" id="Node000004" href="$classGround.html#a7ff3a1e8bdc1374ed15596f44062f3fe" title="Atribui efeito ao ground." alt="" coords="11,109,153,137"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="203,92,135,111,134,106,202,87"/>
+</map>

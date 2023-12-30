@@ -10,7 +10,7 @@ var searchData=
   ['display_7',['display',['../classDisplay.html#acfb76d40ba4258feee0c783e306add95',1,'Display::Display(Theme)'],['../classDisplay.html#afec8fd0111a7915ead06ec02b5f6d2f8',1,'Display::Display()'],['../classDisplay.html',1,'Display'],['../structDisplay_1_1Line.html#aaa1c248991f09371d62d6d1333f1a3ee',1,'Display::Line::Display'],['../classStr.html#a039e217d87f0758d04860e4ddc5bb619',1,'Str::Display'],['../classTheme.html#ac3aae06cc8896dbcc7917db90cd0dbcf',1,'Theme::Display']]],
   ['display_2ecpp_8',['display.cpp',['../display_8cpp.html',1,'']]],
   ['display_5frag_2ehpp_9',['display_rag.hpp',['../display__rag_8hpp.html',1,'']]],
-  ['down_10',['down',['../structDown.html',1,'Down'],['../structDown.html#a9151edfc7c2bd982505b326721bb0d3a',1,'Down::Down()'],['../classDisplay.html#afcfbf36e2dfa67afbc5f89d11e54a09f',1,'Display::down']]],
+  ['down_10',['down',['../structDown.html',1,'Down'],['../classDisplay.html#afcfbf36e2dfa67afbc5f89d11e54a09f',1,'Display::down'],['../structDown.html#a9151edfc7c2bd982505b326721bb0d3a',1,'Down::Down()']]],
   ['dp_11',['Dp',['../display__rag_8hpp.html#a39553f78f5afc73a07943d81ac8d6455',1,'display_rag.hpp']]],
   ['dps_12',['dps',['../classDisplay.html#a33ca69b3036c8588a194a254f03c99de',1,'Display']]],
   ['draw_5fdisplay_13',['draw_display',['../classDisplay.html#a8cc9ff01e63517d85184886ea25df050',1,'Display']]],

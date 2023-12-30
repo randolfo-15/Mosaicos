@@ -1,5 +1,7 @@
 <map id="src/colour.hpp" name="src/colour.hpp">
-<area shape="rect" id="Node000001" title="Arquivo de definição Foreground Background e Efeitos." alt="" coords="5,5,117,33"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="32,81,90,109"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="64,34,64,65,58,65,58,34"/>
+<area shape="rect" id="Node000001" title="Arquivo de definição Foreground Background e Efeitos." alt="" coords="46,5,157,33"/>
+<area shape="rect" id="Node000002" href="$gd__rag_8hpp.html" title="Arquivo de suporte a relações friends entre classes." alt="" coords="5,81,99,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,35,71,69,67,66,90,32"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="123,81,181,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="113,32,136,66,132,70,108,35"/>
 </map>

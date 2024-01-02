@@ -1,1 +1,1 @@
-/data/data/com.termux/files/usr/bin/c++ -g CMakeFiles/main.dir/main.cpp.o -o main  Library/libmosaicos.a 
+/usr/bin/c++ -g CMakeFiles/main.dir/main.cpp.o -o main  Library/libmosaicos.a 

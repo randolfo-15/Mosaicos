@@ -41,22 +41,22 @@ cmake_force:
 # Set environment variables for the build.
 
 # The shell in which to execute make rules.
-SHELL = /data/data/com.termux/files/usr/bin/sh
+SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /data/data/com.termux/files/usr/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /data/data/com.termux/files/usr/bin/cmake -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data/data/com.termux/files/home/Mosaicos
+CMAKE_SOURCE_DIR = /home/randolfo/Documentos/Mosaicos
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data/data/com.termux/files/home/Mosaicos/build
+CMAKE_BINARY_DIR = /home/randolfo/Documentos/Mosaicos/build
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/mosaicos.dir/depend.make
@@ -70,144 +70,144 @@ include src/CMakeFiles/mosaicos.dir/progress.make
 include src/CMakeFiles/mosaicos.dir/flags.make
 
 src/CMakeFiles/mosaicos.dir/str.cpp.o: src/CMakeFiles/mosaicos.dir/flags.make
-src/CMakeFiles/mosaicos.dir/str.cpp.o: /data/data/com.termux/files/home/Mosaicos/src/str.cpp
+src/CMakeFiles/mosaicos.dir/str.cpp.o: /home/randolfo/Documentos/Mosaicos/src/str.cpp
 src/CMakeFiles/mosaicos.dir/str.cpp.o: src/CMakeFiles/mosaicos.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data/data/com.termux/files/home/Mosaicos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/mosaicos.dir/str.cpp.o"
-	cd /data/data/com.termux/files/home/Mosaicos/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mosaicos.dir/str.cpp.o -MF CMakeFiles/mosaicos.dir/str.cpp.o.d -o CMakeFiles/mosaicos.dir/str.cpp.o -c /data/data/com.termux/files/home/Mosaicos/src/str.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/randolfo/Documentos/Mosaicos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/mosaicos.dir/str.cpp.o"
+	cd /home/randolfo/Documentos/Mosaicos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mosaicos.dir/str.cpp.o -MF CMakeFiles/mosaicos.dir/str.cpp.o.d -o CMakeFiles/mosaicos.dir/str.cpp.o -c /home/randolfo/Documentos/Mosaicos/src/str.cpp
 
 src/CMakeFiles/mosaicos.dir/str.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mosaicos.dir/str.cpp.i"
-	cd /data/data/com.termux/files/home/Mosaicos/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/data/com.termux/files/home/Mosaicos/src/str.cpp > CMakeFiles/mosaicos.dir/str.cpp.i
+	cd /home/randolfo/Documentos/Mosaicos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/randolfo/Documentos/Mosaicos/src/str.cpp > CMakeFiles/mosaicos.dir/str.cpp.i
 
 src/CMakeFiles/mosaicos.dir/str.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mosaicos.dir/str.cpp.s"
-	cd /data/data/com.termux/files/home/Mosaicos/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/data/com.termux/files/home/Mosaicos/src/str.cpp -o CMakeFiles/mosaicos.dir/str.cpp.s
+	cd /home/randolfo/Documentos/Mosaicos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/randolfo/Documentos/Mosaicos/src/str.cpp -o CMakeFiles/mosaicos.dir/str.cpp.s
 
 src/CMakeFiles/mosaicos.dir/colour.cpp.o: src/CMakeFiles/mosaicos.dir/flags.make
-src/CMakeFiles/mosaicos.dir/colour.cpp.o: /data/data/com.termux/files/home/Mosaicos/src/colour.cpp
+src/CMakeFiles/mosaicos.dir/colour.cpp.o: /home/randolfo/Documentos/Mosaicos/src/colour.cpp
 src/CMakeFiles/mosaicos.dir/colour.cpp.o: src/CMakeFiles/mosaicos.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data/data/com.termux/files/home/Mosaicos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/mosaicos.dir/colour.cpp.o"
-	cd /data/data/com.termux/files/home/Mosaicos/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mosaicos.dir/colour.cpp.o -MF CMakeFiles/mosaicos.dir/colour.cpp.o.d -o CMakeFiles/mosaicos.dir/colour.cpp.o -c /data/data/com.termux/files/home/Mosaicos/src/colour.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/randolfo/Documentos/Mosaicos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/mosaicos.dir/colour.cpp.o"
+	cd /home/randolfo/Documentos/Mosaicos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mosaicos.dir/colour.cpp.o -MF CMakeFiles/mosaicos.dir/colour.cpp.o.d -o CMakeFiles/mosaicos.dir/colour.cpp.o -c /home/randolfo/Documentos/Mosaicos/src/colour.cpp
 
 src/CMakeFiles/mosaicos.dir/colour.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mosaicos.dir/colour.cpp.i"
-	cd /data/data/com.termux/files/home/Mosaicos/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/data/com.termux/files/home/Mosaicos/src/colour.cpp > CMakeFiles/mosaicos.dir/colour.cpp.i
+	cd /home/randolfo/Documentos/Mosaicos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/randolfo/Documentos/Mosaicos/src/colour.cpp > CMakeFiles/mosaicos.dir/colour.cpp.i
 
 src/CMakeFiles/mosaicos.dir/colour.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mosaicos.dir/colour.cpp.s"
-	cd /data/data/com.termux/files/home/Mosaicos/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/data/com.termux/files/home/Mosaicos/src/colour.cpp -o CMakeFiles/mosaicos.dir/colour.cpp.s
+	cd /home/randolfo/Documentos/Mosaicos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/randolfo/Documentos/Mosaicos/src/colour.cpp -o CMakeFiles/mosaicos.dir/colour.cpp.s
 
 src/CMakeFiles/mosaicos.dir/effect.cpp.o: src/CMakeFiles/mosaicos.dir/flags.make
-src/CMakeFiles/mosaicos.dir/effect.cpp.o: /data/data/com.termux/files/home/Mosaicos/src/effect.cpp
+src/CMakeFiles/mosaicos.dir/effect.cpp.o: /home/randolfo/Documentos/Mosaicos/src/effect.cpp
 src/CMakeFiles/mosaicos.dir/effect.cpp.o: src/CMakeFiles/mosaicos.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data/data/com.termux/files/home/Mosaicos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/mosaicos.dir/effect.cpp.o"
-	cd /data/data/com.termux/files/home/Mosaicos/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mosaicos.dir/effect.cpp.o -MF CMakeFiles/mosaicos.dir/effect.cpp.o.d -o CMakeFiles/mosaicos.dir/effect.cpp.o -c /data/data/com.termux/files/home/Mosaicos/src/effect.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/randolfo/Documentos/Mosaicos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/mosaicos.dir/effect.cpp.o"
+	cd /home/randolfo/Documentos/Mosaicos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mosaicos.dir/effect.cpp.o -MF CMakeFiles/mosaicos.dir/effect.cpp.o.d -o CMakeFiles/mosaicos.dir/effect.cpp.o -c /home/randolfo/Documentos/Mosaicos/src/effect.cpp
 
 src/CMakeFiles/mosaicos.dir/effect.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mosaicos.dir/effect.cpp.i"
-	cd /data/data/com.termux/files/home/Mosaicos/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/data/com.termux/files/home/Mosaicos/src/effect.cpp > CMakeFiles/mosaicos.dir/effect.cpp.i
+	cd /home/randolfo/Documentos/Mosaicos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/randolfo/Documentos/Mosaicos/src/effect.cpp > CMakeFiles/mosaicos.dir/effect.cpp.i
 
 src/CMakeFiles/mosaicos.dir/effect.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mosaicos.dir/effect.cpp.s"
-	cd /data/data/com.termux/files/home/Mosaicos/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/data/com.termux/files/home/Mosaicos/src/effect.cpp -o CMakeFiles/mosaicos.dir/effect.cpp.s
+	cd /home/randolfo/Documentos/Mosaicos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/randolfo/Documentos/Mosaicos/src/effect.cpp -o CMakeFiles/mosaicos.dir/effect.cpp.s
 
 src/CMakeFiles/mosaicos.dir/ground.cpp.o: src/CMakeFiles/mosaicos.dir/flags.make
-src/CMakeFiles/mosaicos.dir/ground.cpp.o: /data/data/com.termux/files/home/Mosaicos/src/ground.cpp
+src/CMakeFiles/mosaicos.dir/ground.cpp.o: /home/randolfo/Documentos/Mosaicos/src/ground.cpp
 src/CMakeFiles/mosaicos.dir/ground.cpp.o: src/CMakeFiles/mosaicos.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data/data/com.termux/files/home/Mosaicos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/mosaicos.dir/ground.cpp.o"
-	cd /data/data/com.termux/files/home/Mosaicos/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mosaicos.dir/ground.cpp.o -MF CMakeFiles/mosaicos.dir/ground.cpp.o.d -o CMakeFiles/mosaicos.dir/ground.cpp.o -c /data/data/com.termux/files/home/Mosaicos/src/ground.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/randolfo/Documentos/Mosaicos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/mosaicos.dir/ground.cpp.o"
+	cd /home/randolfo/Documentos/Mosaicos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mosaicos.dir/ground.cpp.o -MF CMakeFiles/mosaicos.dir/ground.cpp.o.d -o CMakeFiles/mosaicos.dir/ground.cpp.o -c /home/randolfo/Documentos/Mosaicos/src/ground.cpp
 
 src/CMakeFiles/mosaicos.dir/ground.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mosaicos.dir/ground.cpp.i"
-	cd /data/data/com.termux/files/home/Mosaicos/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/data/com.termux/files/home/Mosaicos/src/ground.cpp > CMakeFiles/mosaicos.dir/ground.cpp.i
+	cd /home/randolfo/Documentos/Mosaicos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/randolfo/Documentos/Mosaicos/src/ground.cpp > CMakeFiles/mosaicos.dir/ground.cpp.i
 
 src/CMakeFiles/mosaicos.dir/ground.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mosaicos.dir/ground.cpp.s"
-	cd /data/data/com.termux/files/home/Mosaicos/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/data/com.termux/files/home/Mosaicos/src/ground.cpp -o CMakeFiles/mosaicos.dir/ground.cpp.s
+	cd /home/randolfo/Documentos/Mosaicos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/randolfo/Documentos/Mosaicos/src/ground.cpp -o CMakeFiles/mosaicos.dir/ground.cpp.s
 
 src/CMakeFiles/mosaicos.dir/foreground.cpp.o: src/CMakeFiles/mosaicos.dir/flags.make
-src/CMakeFiles/mosaicos.dir/foreground.cpp.o: /data/data/com.termux/files/home/Mosaicos/src/foreground.cpp
+src/CMakeFiles/mosaicos.dir/foreground.cpp.o: /home/randolfo/Documentos/Mosaicos/src/foreground.cpp
 src/CMakeFiles/mosaicos.dir/foreground.cpp.o: src/CMakeFiles/mosaicos.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data/data/com.termux/files/home/Mosaicos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/mosaicos.dir/foreground.cpp.o"
-	cd /data/data/com.termux/files/home/Mosaicos/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mosaicos.dir/foreground.cpp.o -MF CMakeFiles/mosaicos.dir/foreground.cpp.o.d -o CMakeFiles/mosaicos.dir/foreground.cpp.o -c /data/data/com.termux/files/home/Mosaicos/src/foreground.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/randolfo/Documentos/Mosaicos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/mosaicos.dir/foreground.cpp.o"
+	cd /home/randolfo/Documentos/Mosaicos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mosaicos.dir/foreground.cpp.o -MF CMakeFiles/mosaicos.dir/foreground.cpp.o.d -o CMakeFiles/mosaicos.dir/foreground.cpp.o -c /home/randolfo/Documentos/Mosaicos/src/foreground.cpp
 
 src/CMakeFiles/mosaicos.dir/foreground.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mosaicos.dir/foreground.cpp.i"
-	cd /data/data/com.termux/files/home/Mosaicos/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/data/com.termux/files/home/Mosaicos/src/foreground.cpp > CMakeFiles/mosaicos.dir/foreground.cpp.i
+	cd /home/randolfo/Documentos/Mosaicos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/randolfo/Documentos/Mosaicos/src/foreground.cpp > CMakeFiles/mosaicos.dir/foreground.cpp.i
 
 src/CMakeFiles/mosaicos.dir/foreground.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mosaicos.dir/foreground.cpp.s"
-	cd /data/data/com.termux/files/home/Mosaicos/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/data/com.termux/files/home/Mosaicos/src/foreground.cpp -o CMakeFiles/mosaicos.dir/foreground.cpp.s
+	cd /home/randolfo/Documentos/Mosaicos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/randolfo/Documentos/Mosaicos/src/foreground.cpp -o CMakeFiles/mosaicos.dir/foreground.cpp.s
 
 src/CMakeFiles/mosaicos.dir/background.cpp.o: src/CMakeFiles/mosaicos.dir/flags.make
-src/CMakeFiles/mosaicos.dir/background.cpp.o: /data/data/com.termux/files/home/Mosaicos/src/background.cpp
+src/CMakeFiles/mosaicos.dir/background.cpp.o: /home/randolfo/Documentos/Mosaicos/src/background.cpp
 src/CMakeFiles/mosaicos.dir/background.cpp.o: src/CMakeFiles/mosaicos.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data/data/com.termux/files/home/Mosaicos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/mosaicos.dir/background.cpp.o"
-	cd /data/data/com.termux/files/home/Mosaicos/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mosaicos.dir/background.cpp.o -MF CMakeFiles/mosaicos.dir/background.cpp.o.d -o CMakeFiles/mosaicos.dir/background.cpp.o -c /data/data/com.termux/files/home/Mosaicos/src/background.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/randolfo/Documentos/Mosaicos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/mosaicos.dir/background.cpp.o"
+	cd /home/randolfo/Documentos/Mosaicos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mosaicos.dir/background.cpp.o -MF CMakeFiles/mosaicos.dir/background.cpp.o.d -o CMakeFiles/mosaicos.dir/background.cpp.o -c /home/randolfo/Documentos/Mosaicos/src/background.cpp
 
 src/CMakeFiles/mosaicos.dir/background.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mosaicos.dir/background.cpp.i"
-	cd /data/data/com.termux/files/home/Mosaicos/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/data/com.termux/files/home/Mosaicos/src/background.cpp > CMakeFiles/mosaicos.dir/background.cpp.i
+	cd /home/randolfo/Documentos/Mosaicos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/randolfo/Documentos/Mosaicos/src/background.cpp > CMakeFiles/mosaicos.dir/background.cpp.i
 
 src/CMakeFiles/mosaicos.dir/background.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mosaicos.dir/background.cpp.s"
-	cd /data/data/com.termux/files/home/Mosaicos/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/data/com.termux/files/home/Mosaicos/src/background.cpp -o CMakeFiles/mosaicos.dir/background.cpp.s
+	cd /home/randolfo/Documentos/Mosaicos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/randolfo/Documentos/Mosaicos/src/background.cpp -o CMakeFiles/mosaicos.dir/background.cpp.s
 
 src/CMakeFiles/mosaicos.dir/theme.cpp.o: src/CMakeFiles/mosaicos.dir/flags.make
-src/CMakeFiles/mosaicos.dir/theme.cpp.o: /data/data/com.termux/files/home/Mosaicos/src/theme.cpp
+src/CMakeFiles/mosaicos.dir/theme.cpp.o: /home/randolfo/Documentos/Mosaicos/src/theme.cpp
 src/CMakeFiles/mosaicos.dir/theme.cpp.o: src/CMakeFiles/mosaicos.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data/data/com.termux/files/home/Mosaicos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/mosaicos.dir/theme.cpp.o"
-	cd /data/data/com.termux/files/home/Mosaicos/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mosaicos.dir/theme.cpp.o -MF CMakeFiles/mosaicos.dir/theme.cpp.o.d -o CMakeFiles/mosaicos.dir/theme.cpp.o -c /data/data/com.termux/files/home/Mosaicos/src/theme.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/randolfo/Documentos/Mosaicos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/mosaicos.dir/theme.cpp.o"
+	cd /home/randolfo/Documentos/Mosaicos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mosaicos.dir/theme.cpp.o -MF CMakeFiles/mosaicos.dir/theme.cpp.o.d -o CMakeFiles/mosaicos.dir/theme.cpp.o -c /home/randolfo/Documentos/Mosaicos/src/theme.cpp
 
 src/CMakeFiles/mosaicos.dir/theme.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mosaicos.dir/theme.cpp.i"
-	cd /data/data/com.termux/files/home/Mosaicos/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/data/com.termux/files/home/Mosaicos/src/theme.cpp > CMakeFiles/mosaicos.dir/theme.cpp.i
+	cd /home/randolfo/Documentos/Mosaicos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/randolfo/Documentos/Mosaicos/src/theme.cpp > CMakeFiles/mosaicos.dir/theme.cpp.i
 
 src/CMakeFiles/mosaicos.dir/theme.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mosaicos.dir/theme.cpp.s"
-	cd /data/data/com.termux/files/home/Mosaicos/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/data/com.termux/files/home/Mosaicos/src/theme.cpp -o CMakeFiles/mosaicos.dir/theme.cpp.s
+	cd /home/randolfo/Documentos/Mosaicos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/randolfo/Documentos/Mosaicos/src/theme.cpp -o CMakeFiles/mosaicos.dir/theme.cpp.s
 
 src/CMakeFiles/mosaicos.dir/directions.cpp.o: src/CMakeFiles/mosaicos.dir/flags.make
-src/CMakeFiles/mosaicos.dir/directions.cpp.o: /data/data/com.termux/files/home/Mosaicos/src/directions.cpp
+src/CMakeFiles/mosaicos.dir/directions.cpp.o: /home/randolfo/Documentos/Mosaicos/src/directions.cpp
 src/CMakeFiles/mosaicos.dir/directions.cpp.o: src/CMakeFiles/mosaicos.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data/data/com.termux/files/home/Mosaicos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/mosaicos.dir/directions.cpp.o"
-	cd /data/data/com.termux/files/home/Mosaicos/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mosaicos.dir/directions.cpp.o -MF CMakeFiles/mosaicos.dir/directions.cpp.o.d -o CMakeFiles/mosaicos.dir/directions.cpp.o -c /data/data/com.termux/files/home/Mosaicos/src/directions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/randolfo/Documentos/Mosaicos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/mosaicos.dir/directions.cpp.o"
+	cd /home/randolfo/Documentos/Mosaicos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mosaicos.dir/directions.cpp.o -MF CMakeFiles/mosaicos.dir/directions.cpp.o.d -o CMakeFiles/mosaicos.dir/directions.cpp.o -c /home/randolfo/Documentos/Mosaicos/src/directions.cpp
 
 src/CMakeFiles/mosaicos.dir/directions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mosaicos.dir/directions.cpp.i"
-	cd /data/data/com.termux/files/home/Mosaicos/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/data/com.termux/files/home/Mosaicos/src/directions.cpp > CMakeFiles/mosaicos.dir/directions.cpp.i
+	cd /home/randolfo/Documentos/Mosaicos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/randolfo/Documentos/Mosaicos/src/directions.cpp > CMakeFiles/mosaicos.dir/directions.cpp.i
 
 src/CMakeFiles/mosaicos.dir/directions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mosaicos.dir/directions.cpp.s"
-	cd /data/data/com.termux/files/home/Mosaicos/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/data/com.termux/files/home/Mosaicos/src/directions.cpp -o CMakeFiles/mosaicos.dir/directions.cpp.s
+	cd /home/randolfo/Documentos/Mosaicos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/randolfo/Documentos/Mosaicos/src/directions.cpp -o CMakeFiles/mosaicos.dir/directions.cpp.s
 
 src/CMakeFiles/mosaicos.dir/clear.cpp.o: src/CMakeFiles/mosaicos.dir/flags.make
-src/CMakeFiles/mosaicos.dir/clear.cpp.o: /data/data/com.termux/files/home/Mosaicos/src/clear.cpp
+src/CMakeFiles/mosaicos.dir/clear.cpp.o: /home/randolfo/Documentos/Mosaicos/src/clear.cpp
 src/CMakeFiles/mosaicos.dir/clear.cpp.o: src/CMakeFiles/mosaicos.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data/data/com.termux/files/home/Mosaicos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/mosaicos.dir/clear.cpp.o"
-	cd /data/data/com.termux/files/home/Mosaicos/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mosaicos.dir/clear.cpp.o -MF CMakeFiles/mosaicos.dir/clear.cpp.o.d -o CMakeFiles/mosaicos.dir/clear.cpp.o -c /data/data/com.termux/files/home/Mosaicos/src/clear.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/randolfo/Documentos/Mosaicos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/mosaicos.dir/clear.cpp.o"
+	cd /home/randolfo/Documentos/Mosaicos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mosaicos.dir/clear.cpp.o -MF CMakeFiles/mosaicos.dir/clear.cpp.o.d -o CMakeFiles/mosaicos.dir/clear.cpp.o -c /home/randolfo/Documentos/Mosaicos/src/clear.cpp
 
 src/CMakeFiles/mosaicos.dir/clear.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mosaicos.dir/clear.cpp.i"
-	cd /data/data/com.termux/files/home/Mosaicos/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/data/com.termux/files/home/Mosaicos/src/clear.cpp > CMakeFiles/mosaicos.dir/clear.cpp.i
+	cd /home/randolfo/Documentos/Mosaicos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/randolfo/Documentos/Mosaicos/src/clear.cpp > CMakeFiles/mosaicos.dir/clear.cpp.i
 
 src/CMakeFiles/mosaicos.dir/clear.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mosaicos.dir/clear.cpp.s"
-	cd /data/data/com.termux/files/home/Mosaicos/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/data/com.termux/files/home/Mosaicos/src/clear.cpp -o CMakeFiles/mosaicos.dir/clear.cpp.s
+	cd /home/randolfo/Documentos/Mosaicos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/randolfo/Documentos/Mosaicos/src/clear.cpp -o CMakeFiles/mosaicos.dir/clear.cpp.s
 
 src/CMakeFiles/mosaicos.dir/display.cpp.o: src/CMakeFiles/mosaicos.dir/flags.make
-src/CMakeFiles/mosaicos.dir/display.cpp.o: /data/data/com.termux/files/home/Mosaicos/src/display.cpp
+src/CMakeFiles/mosaicos.dir/display.cpp.o: /home/randolfo/Documentos/Mosaicos/src/display.cpp
 src/CMakeFiles/mosaicos.dir/display.cpp.o: src/CMakeFiles/mosaicos.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data/data/com.termux/files/home/Mosaicos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/CMakeFiles/mosaicos.dir/display.cpp.o"
-	cd /data/data/com.termux/files/home/Mosaicos/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mosaicos.dir/display.cpp.o -MF CMakeFiles/mosaicos.dir/display.cpp.o.d -o CMakeFiles/mosaicos.dir/display.cpp.o -c /data/data/com.termux/files/home/Mosaicos/src/display.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/randolfo/Documentos/Mosaicos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/CMakeFiles/mosaicos.dir/display.cpp.o"
+	cd /home/randolfo/Documentos/Mosaicos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mosaicos.dir/display.cpp.o -MF CMakeFiles/mosaicos.dir/display.cpp.o.d -o CMakeFiles/mosaicos.dir/display.cpp.o -c /home/randolfo/Documentos/Mosaicos/src/display.cpp
 
 src/CMakeFiles/mosaicos.dir/display.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mosaicos.dir/display.cpp.i"
-	cd /data/data/com.termux/files/home/Mosaicos/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/data/com.termux/files/home/Mosaicos/src/display.cpp > CMakeFiles/mosaicos.dir/display.cpp.i
+	cd /home/randolfo/Documentos/Mosaicos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/randolfo/Documentos/Mosaicos/src/display.cpp > CMakeFiles/mosaicos.dir/display.cpp.i
 
 src/CMakeFiles/mosaicos.dir/display.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mosaicos.dir/display.cpp.s"
-	cd /data/data/com.termux/files/home/Mosaicos/build/src && /data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/data/com.termux/files/home/Mosaicos/src/display.cpp -o CMakeFiles/mosaicos.dir/display.cpp.s
+	cd /home/randolfo/Documentos/Mosaicos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/randolfo/Documentos/Mosaicos/src/display.cpp -o CMakeFiles/mosaicos.dir/display.cpp.s
 
 # Object files for target mosaicos
 mosaicos_OBJECTS = \
@@ -237,19 +237,19 @@ Library/libmosaicos.a: src/CMakeFiles/mosaicos.dir/clear.cpp.o
 Library/libmosaicos.a: src/CMakeFiles/mosaicos.dir/display.cpp.o
 Library/libmosaicos.a: src/CMakeFiles/mosaicos.dir/build.make
 Library/libmosaicos.a: src/CMakeFiles/mosaicos.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/data/data/com.termux/files/home/Mosaicos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX static library ../Library/libmosaicos.a"
-	cd /data/data/com.termux/files/home/Mosaicos/build/src && $(CMAKE_COMMAND) -P CMakeFiles/mosaicos.dir/cmake_clean_target.cmake
-	cd /data/data/com.termux/files/home/Mosaicos/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mosaicos.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/randolfo/Documentos/Mosaicos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX static library ../Library/libmosaicos.a"
+	cd /home/randolfo/Documentos/Mosaicos/build/src && $(CMAKE_COMMAND) -P CMakeFiles/mosaicos.dir/cmake_clean_target.cmake
+	cd /home/randolfo/Documentos/Mosaicos/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mosaicos.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/mosaicos.dir/build: Library/libmosaicos.a
 .PHONY : src/CMakeFiles/mosaicos.dir/build
 
 src/CMakeFiles/mosaicos.dir/clean:
-	cd /data/data/com.termux/files/home/Mosaicos/build/src && $(CMAKE_COMMAND) -P CMakeFiles/mosaicos.dir/cmake_clean.cmake
+	cd /home/randolfo/Documentos/Mosaicos/build/src && $(CMAKE_COMMAND) -P CMakeFiles/mosaicos.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/mosaicos.dir/clean
 
 src/CMakeFiles/mosaicos.dir/depend:
-	cd /data/data/com.termux/files/home/Mosaicos/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data/data/com.termux/files/home/Mosaicos /data/data/com.termux/files/home/Mosaicos/src /data/data/com.termux/files/home/Mosaicos/build /data/data/com.termux/files/home/Mosaicos/build/src /data/data/com.termux/files/home/Mosaicos/build/src/CMakeFiles/mosaicos.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/randolfo/Documentos/Mosaicos/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/randolfo/Documentos/Mosaicos /home/randolfo/Documentos/Mosaicos/src /home/randolfo/Documentos/Mosaicos/build /home/randolfo/Documentos/Mosaicos/build/src /home/randolfo/Documentos/Mosaicos/build/src/CMakeFiles/mosaicos.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : src/CMakeFiles/mosaicos.dir/depend
 

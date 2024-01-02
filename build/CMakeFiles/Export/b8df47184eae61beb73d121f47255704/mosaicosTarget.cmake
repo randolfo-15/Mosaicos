@@ -47,13 +47,13 @@ unset(_cmake_expected_targets)
 
 
 # The installation prefix configured by this project.
-set(_IMPORT_PREFIX "")
+set(_IMPORT_PREFIX "/usr/local")
 
 # Create imported target Mosaicos::mosaicos
 add_library(Mosaicos::mosaicos STATIC IMPORTED)
 
 set_target_properties(Mosaicos::mosaicos PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/data/data/com.termux/files/usr/include/mosaicos"
+  INTERFACE_INCLUDE_DIRECTORIES "/usr/local//include/mosaicos"
 )
 
 if(NOT CMAKE_VERSION VERSION_LESS "3.23.0")
@@ -61,13 +61,13 @@ if(NOT CMAKE_VERSION VERSION_LESS "3.23.0")
     INTERFACE
       FILE_SET "HEADERS"
       TYPE "HEADERS"
-      BASE_DIRS "/data/data/com.termux/files/usr/include/mosaicos"
-      FILES "/data/data/com.termux/files/usr/include/mosaicos/gd_rag.hpp" "/data/data/com.termux/files/usr/include/mosaicos/str.hpp" "/data/data/com.termux/files/usr/include/mosaicos/colour.hpp" "/data/data/com.termux/files/usr/include/mosaicos/effect.hpp" "/data/data/com.termux/files/usr/include/mosaicos/ground.hpp" "/data/data/com.termux/files/usr/include/mosaicos/foreground.hpp" "/data/data/com.termux/files/usr/include/mosaicos/background.hpp" "/data/data/com.termux/files/usr/include/mosaicos/theme.hpp" "/data/data/com.termux/files/usr/include/mosaicos/directions_rag.hpp" "/data/data/com.termux/files/usr/include/mosaicos/clear_rag.hpp" "/data/data/com.termux/files/usr/include/mosaicos/display_rag.hpp"
+      BASE_DIRS "/usr/local/include/mosaicos"
+      FILES "/usr/local/include/mosaicos/gd_rag.hpp" "/usr/local/include/mosaicos/str.hpp" "/usr/local/include/mosaicos/colour.hpp" "/usr/local/include/mosaicos/effect.hpp" "/usr/local/include/mosaicos/ground.hpp" "/usr/local/include/mosaicos/foreground.hpp" "/usr/local/include/mosaicos/background.hpp" "/usr/local/include/mosaicos/theme.hpp" "/usr/local/include/mosaicos/directions_rag.hpp" "/usr/local/include/mosaicos/clear_rag.hpp" "/usr/local/include/mosaicos/display_rag.hpp"
   )
 else()
   set_property(TARGET Mosaicos::mosaicos
     APPEND PROPERTY INTERFACE_INCLUDE_DIRECTORIES
-      "/data/data/com.termux/files/usr/include/mosaicos"
+      "/usr/local/include/mosaicos"
   )
 endif()
 

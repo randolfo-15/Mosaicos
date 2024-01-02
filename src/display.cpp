@@ -68,16 +68,7 @@ string Display::draw_line(Line* line,Tm* tm,int b,int add){ return fill(b,tm->bg
 
 string Dp::straighten( list_str line,int cnt){  return (cnt)?rigth.str()+*line+end(cnt)+straighten(line+1,cnt-1):""; }
 
-
-int loop(const char *c){	
-	if(!c[0]) return 0;
-	else if(c[0]<0) return 1+loop(c+1);
-	else return 0+loop(c+1);
-}
-
-
-
-int Dp::accentuation(string str,int soma){  /*for(char c:str) soma+=(c<0)? 1:0; return soma/2;*/return loop(str.c_str())/2; }
+int Dp::accentuation(string str,int soma){ for(char c:str) soma+=(c<0)? 1:0; return soma/2; }
 
 string Dp::end(int cnt){return (cnt>1)?br()+'\n':br();}
 

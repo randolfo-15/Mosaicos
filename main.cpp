@@ -1,3 +1,4 @@
+#include "src/clear_rag.hpp"
 #include "src/display_rag.hpp"
 #include <iostream>
 
@@ -6,9 +7,7 @@ using namespace Effect;
 
 using std::cout;
 int main(){
-    Dp dp;
-    Fg bg=Yellow();
-    dp.write("\n%GOlá mundo!!!%X\n",{&bg});
-    cout<<dp<<'\n';
+    Clear_screen cls;
+    cout<<cls<<'\n';
     return 0;
 }

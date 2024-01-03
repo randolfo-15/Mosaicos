@@ -6,6 +6,7 @@
  ******************************************************/
 
 #include "clear_rag.hpp"
+#include "directions_rag.hpp"
 using std::string;
 
 string Clear::flag=" ";

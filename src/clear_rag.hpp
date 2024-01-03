@@ -1,6 +1,6 @@
 /*!*****************************************************
- *	\file clear_rag.hpp
-* \brief Arquivo de definição da classe __Directions__
+ * \file clear_rag.hpp
+ * \brief Arquivo de definição da classe __Directions__
  * \author Randolfo Augusto
  * \date 21/09/22
  ******************************************************/
@@ -11,10 +11,10 @@
 #include <string>
 #include <ostream>
 #include <iostream>
-#include "directions_rag.hpp"
 
 struct Clear{
-    static std::string  total();
+    
+    static std::string total();
     static std::string part();
     static std::string part(int);
     
@@ -25,6 +25,10 @@ struct Clear{
 };
 
 std::ostream& operator<<(std::ostream&,Clear);
+
+//-------------------------------------------------------------------------
+// Derived
+//-------------------------------------------------------------------------
 
 struct Clear_screen:public Clear{ Clear_screen(); };using C_sn=Clear_screen;
 

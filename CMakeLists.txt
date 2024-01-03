@@ -9,7 +9,7 @@ project(Mosaicos
 include(cmake/InstalationTools.cmake)
 
 # Tipo de compilação:
-set(CMAKE_BUILD_TYPE "Debug")
+set(CMAKE_BUILD_TYPE "Release")
 
 # Diretorio de artefatos construidos:
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/Library)

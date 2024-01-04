@@ -7,8 +7,9 @@ project(Mosaicos
         LANGUAGES CXX
 )
 
-#set(CMAKE_CXX_COMPILER clang)
-#SET (CMAKE_CXX_FLAGS  "-Wall")
+# Suprimir avisos: 
+add_definitions(-w)
+
 include(cmake/InstalationTools.cmake)
 
 # Tipo de compilação:

@@ -6,6 +6,9 @@ project(Mosaicos
         HOMEPAGE_URL "https://gitlab.com/Randolfo-15/dp_rag.git"
         LANGUAGES CXX
 )
+
+#set(CMAKE_CXX_COMPILER clang)
+#SET (CMAKE_CXX_FLAGS  "-Wall")
 include(cmake/InstalationTools.cmake)
 
 # Tipo de compilação:

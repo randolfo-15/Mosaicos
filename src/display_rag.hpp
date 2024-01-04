@@ -79,16 +79,16 @@ private:
 	
 	struct Line{																			///< Estrutura para composção de uma linha.
 		friend Display;
-		std::string str;																	///< Contéudo da linha. 
-		int tt=NORMAL;																///< Aponta o grau do titulo.
-		std::vector<Ground*> gd{};											///< Tema da linha.
+		std::string str;																		///< Contéudo da linha. 
+		int tt=NORMAL;																	///< Aponta o grau do titulo.
+		std::vector<Ground> gd{};												///< Tema da linha.
 		int diff;																					///< Quantidade de simbolos a se descontar
 		
 		static  const char
 			G[3],																				///< Subistitui por um ground.
 			X[3];																				///< Subistitui por um neutro.
 		
-		Line(std::string,int,std::vector<Ground*>);				///< Buffer de efeitos
+		Line(std::string,int,std::vector<Ground>);				///< Buffer de efeitos
 		
 		int count_(const char*,int i=0,int sm =0);						///< Conta o numero de %G ou %X.
 		std::string* replace_G(std::string*, int=0,int ef=0);		///< Subistitui %G.
@@ -103,7 +103,7 @@ private:
 //---------------------------------------
 private:
 	/// Divide o contéudo das string por \n
-	void split_rows(std::string,int,std::initializer_list<Ground*>,std::string="");
+	void split_rows(std::string,int,std::initializer_list<Ground>,std::string="");
 	
 	std::vector<std::string>::iterator draw_display(int,int=0);			///< Lista o conjunto de linhas do buffer.
 	
@@ -127,16 +127,16 @@ protected:
 //---------------------------------------
 public:
 	void write(std::string);																		///< Escrita padrão.
-	void write(std::string,std::initializer_list<Ground*>);				///< Escrita perssonalizada.
+	void write(std::string,std::initializer_list<Ground>);					///< Escrita perssonalizada.
 	std::string build();																				///< Construi a imagem do display.
 //---------------------------------------
 // Headings
 //---------------------------------------
 public:
 	void title(std::string,int=TITLE);																				///< Titulo padrão
-	void title(std::string,std::initializer_list<Ground*>,int=TITLE);						///< Titulo custumizado
+	void title(std::string,std::initializer_list<Ground>,int=TITLE);							///< Titulo custumizado
 	void subtitle(std::string,int=SUBTITLES);																///< Subtitulo padrão
-	void subtitle(std::string,std::initializer_list<Ground*>,int=SUBTITLES);		///< Subtitulo custumizado
+	void subtitle(std::string,std::initializer_list<Ground>,int=SUBTITLES);			///< Subtitulo custumizado
 	
 //------------------------------------------------------------------------------------------------
 // Memory

@@ -70,7 +70,7 @@ public:
 protected:	
 	enum  RGB{RED,GREEN,BLUE};
 
-	nivel rgb[3]={MAX,MAX,MAX};	
+	nivel rgb[3]{MAX,MAX,MAX};	
 	static const nivel pixel[3];
 //------------------------------------------------------------------------------------------------
 // Calculation

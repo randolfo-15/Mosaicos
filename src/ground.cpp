@@ -4,7 +4,7 @@
  * \author Randolfo Augusto
  * \date 20/11/23
  *****************************************************************/
-#include "ground.hpp"
+#include "ground_rag.hpp"
 #include <sstream>
 using std::string;
 

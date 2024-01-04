@@ -8,7 +8,7 @@
 #define DISPLAY_RAG_HPP
 
 #include <ostream>
-#include "theme.hpp"
+#include "theme_rag.hpp"
 #include "directions_rag.hpp"
 
 

@@ -1,7 +1,5 @@
-#include "src/clear_rag.hpp"
-#include "src/colour.hpp"
+#include "src/colour_rag.hpp"
 #include "src/display_rag.hpp"
-#include "src/effect.hpp"
 #include <iostream>
 
 using namespace Colors;
@@ -11,7 +9,7 @@ using std::cout;
 int main(){
     Dp dp;
     
-    dp.write("\n%GOla mundo%X\n",{Fg(Magenta(),Blink())});
+    dp.write("\n%GOla mundo%X\n",{Fg(Cls::Green(),Blink())});
     cout<<dp<<'\n';
     return 0;
 }

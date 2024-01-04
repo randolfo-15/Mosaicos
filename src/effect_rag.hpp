@@ -4,8 +4,8 @@
  * \author Randolfo Augusto
  * \date 21/09/22
  ******************************************************/
-#ifndef EFFECT_HPP
-#define EFFECT_HPP
+#ifndef EFFECT_RAG_HPP
+#define EFFECT_RAG_HPP
 
 #include "gd_rag.hpp"
 #include <string>
@@ -67,4 +67,4 @@ namespace Effect{
 		
 } namespace Efc = Effect;
 
-#endif //effect.hpp
+#endif //effect_rag.hpp

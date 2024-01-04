@@ -5,7 +5,7 @@
  * \date 20/11/23
  *****************************************************************/
 
-#include "foreground.hpp"
+#include "foreground_rag.hpp"
 
 const char
     Fg::PLAN[6]="38;2;";

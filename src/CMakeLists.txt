@@ -21,13 +21,13 @@ target_sources(mosaicos
     PUBLIC FILE_SET HEADERS 
         FILES 
             gd_rag.hpp
-            str.hpp
-            colour.hpp
-            effect.hpp
-            ground.hpp
-            foreground.hpp
-            background.hpp
-            theme.hpp
+            str_rag.hpp
+            colour_rag.hpp
+            effect_rag.hpp
+            ground_rag.hpp
+            foreground_rag.hpp
+            background_rag.hpp
+            theme_rag.hpp
             directions_rag.hpp
             clear_rag.hpp
             display_rag.hpp

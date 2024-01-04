@@ -5,7 +5,7 @@
  * \date 20/09/22
  ******************************************************/
 
-#include "colour.hpp"
+#include "colour_rag.hpp"
 using std::string;
 using std::to_string;
 

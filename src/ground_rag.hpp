@@ -4,12 +4,12 @@
  * \author Randolfo Augusto
  * \date 20/11/23
  *****************************************************************/
-#ifndef  GROUND_HPP
-#define GROUND_HPP 
+#ifndef  GROUND_RAG_HPP
+#define GROUND_RAG_HPP 
 
-#include "str.hpp"
-#include "colour.hpp"
-#include "effect.hpp"
+#include "str_rag.hpp"
+#include "colour_rag.hpp"
+#include "effect_rag.hpp"
 
 class Ground:public Str,public Colour, public Highlight{    
 //------------------------------------------------------------------------------------------------
@@ -90,4 +90,4 @@ public:
 //------------------------------------------------------------------------------------------------
 std::string br();
 
-#endif // ground.hpp
+#endif // ground_rag.hpp

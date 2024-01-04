@@ -4,10 +4,10 @@
  * \author Randolfo Augusto
  * \date 20/11/23
  *****************************************************************/
-#ifndef  BACKGROUND_HPP
-#define BACKGROUND_HPP
+#ifndef  BACKGROUND_RAG_HPP
+#define BACKGROUND_RAG_HPP
 
-#include "ground.hpp"
+#include "ground_rag.hpp"
 
 struct Background:public Ground{
     Background();
@@ -20,4 +20,4 @@ struct Background:public Ground{
         
 };using Bg=Background;
 
-#endif // background.hpp
+#endif // background_rag.hpp

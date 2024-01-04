@@ -5,11 +5,11 @@
  * \date 20/09/22
  ******************************************************/
  
-#ifndef THEME_HPP
-#define THEME_HPP
+#ifndef THEME_RAG_HPP
+#define THEME_RAG_HPP
 
-#include "foreground.hpp"
-#include "background.hpp"
+#include "foreground_rag.hpp"
+#include "background_rag.hpp"
 #include <initializer_list>
 
 /// Define um conjunto de cores e comportamentos de uma janela.
@@ -44,4 +44,4 @@ class Theme{
 
 std::ostream& operator<<(std::ostream&,Theme);
 
-#endif // theme.hpp
+#endif // theme_rag.hpp

@@ -4,8 +4,8 @@
  * \author Randolfo Augusto
  * \date 21/09/22
  ******************************************************/
-#ifndef STR_HPP
-#define STR_HPP
+#ifndef STR_RAG_HPP
+#define STR_RAG_HPP
 
 #include <string>
 #include <vector>
@@ -37,4 +37,4 @@ std::string operator-(std::string,Str);
 std::string operator+(std::string,Str);
 std::ostream& operator<<(std::ostream&,Str);
 
-#endif //str.hpp
+#endif //str_rag.hpp

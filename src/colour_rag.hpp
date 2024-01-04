@@ -4,8 +4,8 @@
  * \author Randolfo Augusto
  * \date 20/09/22
  *****************************************************************/
-#ifndef COLOUR_HPP
-#define COLOUR_HPP
+#ifndef COLOUR_RAG_HPP
+#define COLOUR_RAG_HPP
 
 #include "gd_rag.hpp"
 #include <string>
@@ -106,4 +106,4 @@ struct Gray:public Colour{Gray();};
 
 };namespace Cls =Colors;
 
-#endif // colour.hpp
+#endif // colour_rag.hpp

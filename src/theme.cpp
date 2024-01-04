@@ -5,8 +5,8 @@
  * \date 20/09/22
  ******************************************************/
 
-#include "theme.hpp" 
-#include "colour.hpp"
+#include "theme_rag.hpp" 
+#include "colour_rag.hpp"
 using std::string;
 using Bgs=std::initializer_list<Bg>;
 using Fgs=std::initializer_list<Fg>;

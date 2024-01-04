@@ -8,7 +8,7 @@
 #ifndef DIRECTIONS_RAG_HPP
 #define DIRECTIONS_RAG_HPP
 
-#include "str.hpp"
+#include "str_rag.hpp"
 
 struct Directions:public Str{
     Directions();

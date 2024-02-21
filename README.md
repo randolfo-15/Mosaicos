@@ -68,3 +68,5 @@ int main(){
 ____________
 ![hello](./img/hello.jpg)
 
+
+Para mais detalhes e duvidas consulte a [Documentação](./doc/html/index.html)

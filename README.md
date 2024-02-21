@@ -39,7 +39,7 @@ cmake -B build
 Por padrão geramos uma biblioteca estatica com este comando:
 
 3. Caso queira gerar um biblioteca dinâmica use:
-````cmake`
+```cmake
 cmake -B build -DSHARED_LIBRARY=ON
 ```
 4. Instalação:

@@ -5,7 +5,7 @@ Bem vindo ao Projeto Mosaicos
 para facilitar o uso do recursos de termanal como sintaxe hinglight e coloração de 
 backgrounds e foregrounds, através de objetos que simulam o compotamento destes componentes 
 ____________
-[Display](./img/display.jpg)
+![Display](./img/display.jpg)
 
 
 Mosaicos dispõe dos seguintes recursos
@@ -66,5 +66,5 @@ int main(){
 
 ### Saida:
 ____________
-[hello](./img/hello.jpg)
+![hello](./img/hello.jpg)
 

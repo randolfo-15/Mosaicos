@@ -24,16 +24,17 @@ Visando maximizar a ultilização da biblioteca usamos o cmake para construir a 
 seguindo os seguintes passos:
 
 1. Com o git clone o repositorio:
-    ``` 
-        git clone https://gitlab.com/Randolfo-15/Mosaicos.git
-    ```
+``` 
+    git clone https://gitlab.com/Randolfo-15/Mosaicos.git
+```
+
 2. Crie um diretorio para construir a biblioteca:
-    ```
-        cmake -B build
-    ```
+```
+    cmake -B build
+```
     Por padrão geramos uma biblioteca estatica com este comando:
 
 3. Caso queira gerar um biblioteca dinâmica use 
-    ```
-        cmake -B build -
-    ```
+```
+    cmake -B build -
+```

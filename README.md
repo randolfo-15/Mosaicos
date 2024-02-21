@@ -69,4 +69,4 @@ ____________
 ![hello](./img/hello.jpg)
 
 
-Para mais detalhes e duvidas consulte a [Documentação](./doc/html/index.html)
+Para mais detalhes e duvidas consulte nosso [Documentação](google ./doc/html/index.html)

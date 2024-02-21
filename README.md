@@ -69,4 +69,13 @@ ____________
 ![hello](./img/hello.jpg)
 
 
-Para mais detalhes e duvidas consulte nosso [Documentação](google ./doc/html/index.html)
+Para mais detalhes e duvidas consulte nosso documntação em seu browser favorito:
+
+#### ex: A parte do diretorio de construção da biblitéca com seu navegador faça: 
+___
+``` 
+google ./doc/html/index.html
+
+```
+
+

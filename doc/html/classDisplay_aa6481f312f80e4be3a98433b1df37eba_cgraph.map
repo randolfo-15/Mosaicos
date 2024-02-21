@@ -1,16 +1,20 @@
 <map id="Display::draw_line" name="Display::draw_line">
-<area shape="rect" id="Node000001" title="Desenha a linha." alt="" coords="5,57,146,85"/>
-<area shape="rect" id="Node000002" href="$classTheme.html#a9c96eee9fbb56e755bb4a9055df87b7a" title="(Get) padrão para background." alt="" coords="220,5,311,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,54,204,33,206,38,130,59"/>
-<area shape="rect" id="Node000003" href="$classDisplay.html#ad0e52097ee8d0d2ae09b70e51ec26ca6" title="Preencher espaços:" alt="" coords="219,57,312,85"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="146,69,204,69,204,74,146,74"/>
-<area shape="rect" id="Node000005" href="$structDisplay_1_1Line.html#a47bfc579622ccdd3195a7ab4827ebcce" title="Retorna a string colorida e com efeito." alt="" coords="194,109,337,137"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="130,83,198,102,197,107,128,88"/>
-<area shape="rect" id="Node000004" href="$classDisplay.html#a61bf97fddf1bf913f39869d34dc7dfc8" title="Cria uma string vazia." alt="" coords="397,57,516,85"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="312,69,381,69,381,74,312,74"/>
-<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="424,58,418,48,422,39,436,33,457,31,479,33,492,40,489,44,478,38,457,36,437,38,426,43,423,48,428,55"/>
-<area shape="rect" id="Node000006" href="$structDisplay_1_1Line.html#a73576715328192a9dd1b7cb2233f68e5" title="Define a string de saida." alt="" coords="385,109,528,137"/>
-<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="337,121,370,121,370,126,337,126"/>
-<area shape="rect" id="Node000007" href="$structDisplay_1_1Line.html#a7c3b12f2b87fba611508c3cb0d4cf125" title="Subistui o conteudo da linha." alt="" coords="576,109,737,137"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="529,121,561,121,561,126,529,126"/>
+<area shape="rect" id="Node000001" title="Desenha a linha." alt="" coords="5,81,146,109"/>
+<area shape="rect" id="Node000002" href="$classTheme.html#a9c96eee9fbb56e755bb4a9055df87b7a" title="(Get) padrão para background." alt="" coords="220,29,311,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,78,204,57,206,62,130,83"/>
+<area shape="rect" id="Node000003" href="$classDisplay.html#ad0e52097ee8d0d2ae09b70e51ec26ca6" title="Preencher espaços:" alt="" coords="219,81,312,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="146,93,204,93,204,98,146,98"/>
+<area shape="rect" id="Node000006" href="$structDisplay_1_1Line.html#a47bfc579622ccdd3195a7ab4827ebcce" title="Retorna a string colorida e com efeito." alt="" coords="194,133,337,161"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="130,107,198,126,197,131,128,112"/>
+<area shape="rect" id="Node000004" href="$classDisplay.html#a61bf97fddf1bf913f39869d34dc7dfc8" title="Cria uma string vazia." alt="" coords="397,29,516,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="312,80,387,59,389,64,313,85"/>
+<area shape="rect" id="Node000005" href="$classStr.html#a9f6d54ccea7fdadc2d9702fe92b187e0" title=" " alt="" coords="425,81,489,109"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="312,93,409,93,409,98,312,98"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="424,30,418,20,422,11,436,5,457,3,479,5,492,12,489,16,478,10,457,8,437,10,426,15,423,20,428,27"/>
+<area shape="rect" id="Node000007" href="$ground_8cpp.html#afae564030f6347fbc00fcf1bd6e8f8bf" title=" " alt="" coords="437,133,476,161"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="337,145,421,145,421,150,337,150"/>
+<area shape="rect" id="Node000008" href="$structDisplay_1_1Line.html#a73576715328192a9dd1b7cb2233f68e5" title="Define a string de saida." alt="" coords="385,185,528,213"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="320,159,389,178,388,183,319,164"/>
+<area shape="rect" id="Node000009" href="$structDisplay_1_1Line.html#a7c3b12f2b87fba611508c3cb0d4cf125" title="Subistui o conteudo da linha." alt="" coords="576,185,737,213"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="529,197,561,197,561,202,529,202"/>
 </map>

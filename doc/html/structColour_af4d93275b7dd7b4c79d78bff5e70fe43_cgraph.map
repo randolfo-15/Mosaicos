@@ -1,5 +1,7 @@
 <map id="Colour::operator++" name="Colour::operator++">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,5,154,33"/>
-<area shape="rect" id="Node000002" href="$structColour.html#a9e3be34f09da5fb644ef3157ec0b8c7d" title="Somatorio de propriedades das cores." alt="" coords="202,5,301,33"/>
+<area shape="rect" id="Node000002" href="$structColour.html#a94f911545605c4847eb623ab4b6df453" title="Somatorio de propriedades das cores." alt="" coords="202,5,301,33"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,17,186,17,186,22,154,22"/>
+<area shape="rect" id="Node000003" href="$structColour.html#a059f32a8b13cd336e71ab89916d2b644" title="Verifica o Max, e Min aceito para uma cor." alt="" coords="349,5,458,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="301,17,334,17,334,22,301,22"/>
 </map>

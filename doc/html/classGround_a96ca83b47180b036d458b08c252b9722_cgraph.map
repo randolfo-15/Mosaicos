@@ -1,0 +1,8 @@
+<map id="Ground::operator=" name="Ground::operator=">
+<area shape="rect" id="Node000001" title="Atribui cor ao ground." alt="" coords="5,44,148,72"/>
+<area shape="rect" id="Node000002" href="$classGround.html#a2c813b5c3d364d5b4d4bb64df0a8af60" title="Obterm cor do ground." alt="" coords="204,5,296,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,41,188,30,189,35,142,46"/>
+<area shape="rect" id="Node000003" href="$structColour.html#aecb2577e6c0a589ce6790b9276ba1fd2" title="Cast de cilour para Str." alt="" coords="196,81,304,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="144,70,181,78,180,83,143,75"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="220,82,215,72,219,63,231,57,250,55,271,57,282,64,279,68,269,62,250,60,232,62,222,67,220,72,224,80"/>
+</map>

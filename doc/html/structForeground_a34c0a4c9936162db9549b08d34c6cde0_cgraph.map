@@ -1,5 +1,10 @@
 <map id="Foreground::operator=" name="Foreground::operator=">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,174,33"/>
-<area shape="rect" id="Node000002" href="$classGround.html#a5a08608ee2d39e4c40b9167ed2c23a20" title="Atribui cor ao ground." alt="" coords="222,5,364,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,17,206,17,206,22,174,22"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,44,174,72"/>
+<area shape="rect" id="Node000002" href="$classGround.html#a96ca83b47180b036d458b08c252b9722" title="Atribui cor ao ground." alt="" coords="222,44,364,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,55,206,55,206,61,174,61"/>
+<area shape="rect" id="Node000003" href="$classGround.html#a2c813b5c3d364d5b4d4bb64df0a8af60" title="Obterm cor do ground." alt="" coords="420,5,512,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="357,41,404,30,405,35,358,46"/>
+<area shape="rect" id="Node000004" href="$structColour.html#aecb2577e6c0a589ce6790b9276ba1fd2" title="Cast de cilour para Str." alt="" coords="412,81,520,109"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="361,70,397,78,396,83,360,75"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="436,82,431,72,435,63,447,57,466,55,487,57,498,64,495,68,485,62,466,60,448,62,439,67,436,72,441,80"/>
 </map>

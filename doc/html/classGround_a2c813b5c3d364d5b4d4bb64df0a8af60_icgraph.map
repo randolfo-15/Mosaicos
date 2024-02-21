@@ -1,0 +1,9 @@
+<map id="Ground::clr" name="Ground::clr">
+<area shape="rect" id="Node000001" title="Obterm cor do ground." alt="" coords="412,32,504,60"/>
+<area shape="rect" id="Node000002" href="$classGround.html#aa1f5639f41552d48a6f6e9dd52f07186" title="Construtor para derivados." alt="" coords="231,5,355,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="396,39,355,32,355,27,397,33"/>
+<area shape="rect" id="Node000003" href="$classGround.html#a96ca83b47180b036d458b08c252b9722" title="Atribui cor ao ground." alt="" coords="222,57,364,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="397,58,365,63,364,58,396,53"/>
+<area shape="rect" id="Node000004" href="$structForeground.html#a34c0a4c9936162db9549b08d34c6cde0" title=" " alt="" coords="5,57,174,85"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="206,74,174,74,174,69,206,69"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="br" name="br">
+<area shape="rect" id="Node000001" title=" " alt="" coords="754,32,792,60"/>
+<area shape="rect" id="Node000002" href="$classDisplay.html#a47e4248f7830db7baceef9a508496993" title="Retorna encerramento de string." alt="" coords="583,5,685,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="738,42,684,32,686,26,739,37"/>
+<area shape="rect" id="Node000003" href="$structDisplay_1_1Line.html#a47bfc579622ccdd3195a7ab4827ebcce" title="Retorna a string colorida e com efeito." alt="" coords="562,57,706,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="739,55,707,61,706,55,738,49"/>
+<area shape="rect" id="Node000004" href="$classDisplay.html#aa6481f312f80e4be3a98433b1df37eba" title="Desenha a linha." alt="" coords="374,57,514,85"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="547,74,515,74,515,69,547,69"/>
+<area shape="rect" id="Node000005" href="$classDisplay.html#a8cc9ff01e63517d85184886ea25df050" title="Lista o conjunto de linhas do buffer." alt="" coords="163,57,326,85"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="359,74,326,74,326,69,359,69"/>
+<area shape="rect" id="Node000006" href="$classDisplay.html#aff68881c09f41172cfb03e76ae99c664" title="Construi a imagem do display." alt="" coords="5,57,115,85"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="147,74,115,74,115,69,147,69"/>
+</map>

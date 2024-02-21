@@ -1,13 +1,13 @@
 <map id="src/effect.cpp" name="src/effect.cpp">
-<area shape="rect" id="Node000001" title="Arquivo de implementação efeitos." alt="" coords="45,5,153,33"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="6,81,85,109"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,35,66,70,62,67,87,32"/>
-<area shape="rect" id="Node000003" href="$effect_8hpp.html" title="Arquivo de definição efeitos." alt="" coords="109,81,195,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="110,32,136,67,131,70,106,35"/>
-<area shape="rect" id="Node000004" href="$gd__rag_8hpp.html" title="Arquivo de suporte a relações friends entre classes." alt="" coords="5,157,99,184"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="136,111,83,150,80,145,133,107"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="123,157,181,184"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="155,109,155,141,149,141,149,109"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="205,157,267,184"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="169,107,211,144,208,148,165,111"/>
+<area shape="rect" id="Node000001" title="Arquivo de implementação efeitos." alt="" coords="51,5,159,33"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,81,85,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,35,67,70,63,67,92,32"/>
+<area shape="rect" id="Node000003" href="$effect__rag_8hpp.html" title=" " alt="" coords="109,81,224,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="118,32,148,67,144,71,114,35"/>
+<area shape="rect" id="Node000004" href="$gd__rag_8hpp.html" title="Arquivo de suporte a relações friends entre classes." alt="" coords="20,157,113,184"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="150,111,98,150,95,145,147,107"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="137,157,196,184"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="169,109,169,141,164,141,164,109"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="219,157,282,184"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="183,107,226,144,222,148,180,111"/>
 </map>

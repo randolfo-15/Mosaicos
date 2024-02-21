@@ -1,5 +1,9 @@
 <map id="Ground::operator&#45;=" name="Ground::operator&#45;=">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,5,153,33"/>
-<area shape="rect" id="Node000002" href="$structColour.html#a01ab0dd81c091116c1e3e51ef39d6ffe" title=" " alt="" coords="201,5,343,33"/>
+<area shape="rect" id="Node000002" href="$structColour.html#ab92aff4d5c1b8365ec1a71a3ed138f51" title=" " alt="" coords="201,5,343,33"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,17,186,17,186,22,153,22"/>
+<area shape="rect" id="Node000003" href="$structColour.html#a94f911545605c4847eb623ab4b6df453" title="Somatorio de propriedades das cores." alt="" coords="391,5,490,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="344,17,375,17,375,22,344,22"/>
+<area shape="rect" id="Node000004" href="$structColour.html#a059f32a8b13cd336e71ab89916d2b644" title="Verifica o Max, e Min aceito para uma cor." alt="" coords="538,5,648,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="491,17,523,17,523,22,491,22"/>
 </map>

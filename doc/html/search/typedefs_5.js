@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hlg_0',['Hlg',['../effect_8hpp.html#a7ccc0febbb931e2be4f87bce35658bb3',1,'effect.hpp']]]
+  ['hlg_0',['Hlg',['../effect__rag_8hpp.html#aee57e06b30ff83563cf2f7a01d517e5b',1,'effect_rag.hpp']]]
 ];

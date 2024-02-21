@@ -1,4 +1,10 @@
 <map id="Colour::to_str" name="Colour::to_str">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,114,57"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="77,16,70,10,59,8,49,10,43,14,42,20,45,28,40,30,37,20,39,11,47,5,60,3,73,5,80,12"/>
+<area shape="rect" id="Node000001" title="Cast de cilour para Str." alt="" coords="412,32,520,60"/>
+<area shape="poly" id="edge4_Node000001_Node000001" title=" " alt="" coords="495,19,485,13,466,11,448,13,439,17,436,23,441,30,436,33,431,23,435,14,447,7,466,5,487,8,498,14"/>
+<area shape="rect" id="Node000002" href="$classGround.html#aa1f5639f41552d48a6f6e9dd52f07186" title="Construtor para derivados." alt="" coords="231,5,355,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="397,38,355,31,355,26,397,33"/>
+<area shape="rect" id="Node000003" href="$classGround.html#a96ca83b47180b036d458b08c252b9722" title="Atribui cor ao ground." alt="" coords="222,57,364,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="397,59,365,63,364,58,396,53"/>
+<area shape="rect" id="Node000004" href="$structForeground.html#a34c0a4c9936162db9549b08d34c6cde0" title=" " alt="" coords="5,57,174,85"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="206,74,174,74,174,69,206,69"/>
 </map>

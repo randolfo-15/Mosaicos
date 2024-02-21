@@ -1,0 +1,12 @@
+<map id="Ground::Ground" name="Ground::Ground">
+<area shape="rect" id="Node000001" title="Construtor para derivados." alt="" coords="5,96,129,124"/>
+<area shape="rect" id="Node000002" href="$classGround.html#a2c813b5c3d364d5b4d4bb64df0a8af60" title="Obterm cor do ground." alt="" coords="193,5,286,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,93,175,43,188,38,190,42,178,48,92,98"/>
+<area shape="rect" id="Node000003" href="$classGround.html#af988c35d83484081557bf4927c95facc" title="Obtem highlight do ground." alt="" coords="191,57,288,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="129,93,175,83,177,88,130,99"/>
+<area shape="rect" id="Node000004" href="$structColour.html#aecb2577e6c0a589ce6790b9276ba1fd2" title="Cast de cilour para Str." alt="" coords="185,133,294,161"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="130,121,171,130,169,135,129,126"/>
+<area shape="rect" id="Node000005" href="$classHighlight.html#a76af33445b1d0895ded9da5f19d2eed3" title=" " alt="" coords="177,185,302,213"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="93,122,178,170,191,176,188,181,175,175,90,127"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="209,134,204,124,208,115,220,109,239,107,260,109,271,116,268,120,258,114,239,112,222,114,212,119,210,124,214,132"/>
+</map>

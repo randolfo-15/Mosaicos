@@ -25,16 +25,41 @@ seguindo os seguintes passos:
 
 1. Com o git clone o repositorio:
 ``` 
-    git clone https://gitlab.com/Randolfo-15/Mosaicos.git
+git clone https://gitlab.com/Randolfo-15/Mosaicos.git
 ```
 
 2. Crie um diretorio para construir a biblioteca:
 ```
-    cmake -B build
+cmake -B build
 ```
-    Por padrão geramos uma biblioteca estatica com este comando:
 
-3. Caso queira gerar um biblioteca dinâmica use 
+Por padrão geramos uma biblioteca estatica com este comando:
+
+3. Caso queira gerar um biblioteca dinâmica use:
 ```
-    cmake -B build -
+cmake -B build -DSHARED_LIBRARY=ON
 ```
+4. Instalação:
+```
+cmake --install build 
+```
+5. Após estes passos faça um hello_world:
+
+``` c++
+#include <Dp/display_rag.hpp>
+#include <iostream>
+
+using std::cout;
+
+int main(){
+   Dp dp;
+   dp.title("...");
+   dp.write("\nOla mundo\n");
+   cout<<dp<<'\n';
+   return 0;
+}
+
+```
+
+
+

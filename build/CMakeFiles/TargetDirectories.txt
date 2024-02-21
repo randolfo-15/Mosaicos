@@ -1,0 +1,14 @@
+/data/data/com.termux/files/home/Mosaicos/build/CMakeFiles/main.dir
+/data/data/com.termux/files/home/Mosaicos/build/CMakeFiles/edit_cache.dir
+/data/data/com.termux/files/home/Mosaicos/build/CMakeFiles/rebuild_cache.dir
+/data/data/com.termux/files/home/Mosaicos/build/CMakeFiles/list_install_components.dir
+/data/data/com.termux/files/home/Mosaicos/build/CMakeFiles/install.dir
+/data/data/com.termux/files/home/Mosaicos/build/CMakeFiles/install/local.dir
+/data/data/com.termux/files/home/Mosaicos/build/CMakeFiles/install/strip.dir
+/data/data/com.termux/files/home/Mosaicos/build/src/CMakeFiles/mosaicos.dir
+/data/data/com.termux/files/home/Mosaicos/build/src/CMakeFiles/edit_cache.dir
+/data/data/com.termux/files/home/Mosaicos/build/src/CMakeFiles/rebuild_cache.dir
+/data/data/com.termux/files/home/Mosaicos/build/src/CMakeFiles/list_install_components.dir
+/data/data/com.termux/files/home/Mosaicos/build/src/CMakeFiles/install.dir
+/data/data/com.termux/files/home/Mosaicos/build/src/CMakeFiles/install/local.dir
+/data/data/com.termux/files/home/Mosaicos/build/src/CMakeFiles/install/strip.dir

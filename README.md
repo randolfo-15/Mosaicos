@@ -24,23 +24,23 @@ Visando maximizar a ultilização da biblioteca usamos o cmake para construir a 
 seguindo os seguintes passos:
 
 1. Com o git clone o repositorio:
-``` 
+``` git
 git clone https://gitlab.com/Randolfo-15/Mosaicos.git
 ```
 
 2. Crie um diretorio para construir a biblioteca:
-```
+``` cmake
 cmake -B build
 ```
 
 Por padrão geramos uma biblioteca estatica com este comando:
 
 3. Caso queira gerar um biblioteca dinâmica use:
-```
+````cmake`
 cmake -B build -DSHARED_LIBRARY=ON
 ```
 4. Instalação:
-```
+``` cmake
 cmake --install build 
 ```
 5. Após estes passos faça um hello_world:
